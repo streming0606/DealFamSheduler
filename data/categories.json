@@ -1,0 +1,46 @@
+{
+  "categories": [
+    {
+      "id": "electronics",
+      "name": "Electronics",
+      "icon": "fas fa-laptop",
+      "description": "Gadgets, phones, laptops & electronics"
+    },
+    {
+      "id": "fashion",
+      "name": "Fashion",
+      "icon": "fas fa-tshirt", 
+      "description": "Clothing, accessories & footwear"
+    },
+    {
+      "id": "home",
+      "name": "Home",
+      "icon": "fas fa-home",
+      "description": "Furniture, decor & home essentials"
+    },
+    {
+      "id": "health",
+      "name": "Health",
+      "icon": "fas fa-heartbeat",
+      "description": "Health, beauty & personal care"
+    },
+    {
+      "id": "sports",
+      "name": "Sports",
+      "icon": "fas fa-dumbbell",
+      "description": "Sports equipment & fitness gear"
+    },
+    {
+      "id": "vehicle",
+      "name": "Vehicle",
+      "icon": "fas fa-car",
+      "description": "Auto parts & vehicle accessories"
+    },
+    {
+      "id": "books",
+      "name": "Books",
+      "icon": "fas fa-book",
+      "description": "Books, eBooks & educational material"
+    }
+  ]
+}
