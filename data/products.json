@@ -1,7 +1,31 @@
 {
-  "last_updated": "2025-09-06T19:08:28.213723+05:30",
-  "total_products": 7,
+  "last_updated": "2025-09-06T21:18:08.698181+05:30",
+  "total_products": 9,
   "products": [
+    {
+      "id": "product_night_1_20250906_154758",
+      "title": "Amazon Product B0CFFRBSGG",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/B0CFFRBSGG._AC_SL1500_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CFFRBSGG?tag=gadgetvill09f-21",
+      "price": "\u20b9Special Price",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2b50",
+      "category": "electronics",
+      "posted_date": "2025-09-06T21:17:58.579681+05:30",
+      "session_type": "night",
+      "asin": "B0CFFRBSGG"
+    },
+    {
+      "id": "product_night_2_20250906_154808",
+      "title": "TIMEWEAR Analog Day Date Functioning Stainless Steel Chain Watch for Men",
+      "image": "https://m.media-amazon.com/images/I/81nj6IlZpVL._AC_SL1500_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07MDGSP8F?tag=gadgetvill09f-21",
+      "price": "\u20b9379",
+      "rating": "\u2b50\u2b50\u2b50",
+      "category": "electronics",
+      "posted_date": "2025-09-06T21:18:08.436743+05:30",
+      "session_type": "night",
+      "asin": "B07MDGSP8F"
+    },
     {
       "id": "product_morning_1_20250906_133819",
       "title": "Amazon Product B0CFFRBSGG",
