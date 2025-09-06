@@ -1,0 +1,15 @@
+{
+  "last_updated": "2025-09-06T15:23:00+05:30",
+  "products": [
+    {
+      "id": "product_001",
+      "title": "Sample Product - iPhone 15 Pro Max",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/sample.jpg",
+      "affiliate_link": "https://amzn.to/sample123",
+      "price": "₹99,999",
+      "rating": "⭐⭐⭐⭐⭐",
+      "category": "electronics",
+      "posted_date": "2025-09-06T15:23:00+05:30"
+    }
+  ]
+}
