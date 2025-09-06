@@ -1,154 +1,42 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DealFam - Best Amazon Deals & Offers</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <meta name="description" content="Find the best Amazon deals and offers on Electronics, Fashion, Home, Health, Sports & more. Updated daily with exclusive discount codes.">
-</head>
-<body>
-    <!-- Header Section -->
-    <header class="header">
-        <div class="container">
-            <div class="logo">
-                <img src="images/logo.png" alt="DealFam Logo">
-                <h1>DealFam</h1>
-            </div>
-            <nav class="nav">
-                <a href="#home" class="nav-link active">Home</a>
-                <a href="#categories" class="nav-link">Categories</a>
-                <a href="#deals" class="nav-link">Latest Deals</a>
-            </nav>
-        </div>
-    </header>
+<!-- Add this right after the header -->
+<div class="amazon-banner">
+    <div class="container">
+        <i class="fab fa-amazon"></i>
+        Officially Connected to Amazon India • Secure Shopping • Trusted Partnership • Latest Deals
+    </div>
+</div>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <h2>🔥 Best Amazon Deals Updated Live!</h2>
-            <p>Discover amazing discounts on top products • Updated 4 times daily • Exclusive affiliate offers</p>
+<!-- Update the hero section -->
+<section class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <h2 class="sparkle">Exclusive Luxury Deals</h2>
+            <p>Curated premium products from Amazon • Hand-picked for discerning customers • Limited time offers</p>
             <div class="hero-stats">
                 <div class="stat">
                     <span class="stat-number" id="total-deals">0</span>
-                    <span class="stat-label">Active Deals</span>
+                    <span class="stat-label">Premium Deals</span>
                 </div>
                 <div class="stat">
                     <span class="stat-number">4x</span>
                     <span class="stat-label">Daily Updates</span>
                 </div>
                 <div class="stat">
-                    <span class="stat-number">⭐⭐⭐⭐⭐</span>
-                    <span class="stat-label">Top Rated</span>
+                    <span class="stat-number">100%</span>
+                    <span class="stat-label">Authentic</span>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Categories Section -->
-    <section id="categories" class="categories">
-        <div class="container">
-            <h2>🛍️ Shop by Category</h2>
-            <div class="category-grid">
-                <div class="category-card" data-category="electronics">
-                    <i class="fas fa-laptop"></i>
-                    <h3>Electronics</h3>
-                    <span class="deal-count">0 deals</span>
-                </div>
-                <div class="category-card" data-category="fashion">
-                    <i class="fas fa-tshirt"></i>
-                    <h3>Fashion</h3>
-                    <span class="deal-count">0 deals</span>
-                </div>
-                <div class="category-card" data-category="home">
-                    <i class="fas fa-home"></i>
-                    <h3>Home</h3>
-                    <span class="deal-count">0 deals</span>
-                </div>
-                <div class="category-card" data-category="health">
-                    <i class="fas fa-heartbeat"></i>
-                    <h3>Health</h3>
-                    <span class="deal-count">0 deals</span>
-                </div>
-                <div class="category-card" data-category="sports">
-                    <i class="fas fa-dumbbell"></i>
-                    <h3>Sports</h3>
-                    <span class="deal-count">0 deals</span>
-                </div>
-                <div class="category-card" data-category="vehicle">
-                    <i class="fas fa-car"></i>
-                    <h3>Vehicle</h3>
-                    <span class="deal-count">0 deals</span>
-                </div>
-                <div class="category-card" data-category="books">
-                    <i class="fas fa-book"></i>
-                    <h3>Books</h3>
-                    <span class="deal-count">0 deals</span>
-                </div>
-            </div>
+<!-- Update categories section -->
+<section id="categories" class="categories">
+    <div class="container">
+        <div class="section-title">
+            <h2>Premium Categories</h2>
+            <p>Discover handpicked products across luxury categories, each verified for quality and authenticity</p>
         </div>
-    </section>
-
-    <!-- Featured Deals Section -->
-    <section id="deals" class="deals">
-        <div class="container">
-            <div class="section-header">
-                <h2>🔥 Latest Hot Deals</h2>
-                <div class="filter-buttons">
-                    <button class="filter-btn active" data-filter="all">All Deals</button>
-                    <button class="filter-btn" data-filter="electronics">Electronics</button>
-                    <button class="filter-btn" data-filter="fashion">Fashion</button>
-                    <button class="filter-btn" data-filter="home">Home</button>
-                </div>
-            </div>
-            
-            <div class="products-grid" id="products-container">
-                <!-- Products will be loaded dynamically -->
-                <div class="loading">
-                    <i class="fas fa-spinner fa-spin"></i>
-                    <p>Loading amazing deals...</p>
-                </div>
-            </div>
-
-            <div class="load-more">
-                <button id="load-more-btn" class="btn-primary">Load More Deals</button>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <img src="images/logo.png" alt="DealFam" class="footer-logo">
-                    <p>Your trusted source for the best Amazon deals and offers. Updated multiple times daily.</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#categories">Categories</a></li>
-                        <li><a href="#deals">Latest Deals</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Categories</h4>
-                    <ul>
-                        <li><a href="#" data-category="electronics">Electronics</a></li>
-                        <li><a href="#" data-category="fashion">Fashion</a></li>
-                        <li><a href="#" data-category="home">Home & Garden</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 DealFam. All rights reserved. | Affiliate Disclosure: We may earn commission from purchases.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="js/script.js"></script>
-    <script src="js/update.js"></script>
-</body>
-</html>
+        <!-- Rest of categories code stays the same -->
+    </div>
+</section>
