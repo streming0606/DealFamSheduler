@@ -1,13 +1,47 @@
 {
-  "last_updated": "2025-09-06T15:23:00+05:30",
+  "last_updated": "2025-09-06T19:06:49.363673+05:30",
+  "total_products": 4,
   "products": [
+    {
+      "id": "product_morning_1_20250906_133640",
+      "title": "Amazon Product B0CFFRBSGG",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/B0CFFRBSGG.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CFFRBSGG?tag=gadgetvill09f-21",
+      "price": "\u20b9Special Price",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2b50",
+      "category": "electronics",
+      "posted_date": "2025-09-06T19:06:40.481318+05:30",
+      "session_type": "morning"
+    },
+    {
+      "id": "product_morning_2_20250906_133644",
+      "title": "Amazon Product B07MDGSP8F",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/B07MDGSP8F.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07MDGSP8F?tag=gadgetvill09f-21",
+      "price": "\u20b9Special Price",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2b50",
+      "category": "electronics",
+      "posted_date": "2025-09-06T19:06:44.852038+05:30",
+      "session_type": "morning"
+    },
+    {
+      "id": "product_morning_3_20250906_133649",
+      "title": "Amazon Product B0BJ9PFBK7",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/B0BJ9PFBK7.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0BJ9PFBK7?tag=gadgetvill09f-21",
+      "price": "\u20b9Special Price",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2b50",
+      "category": "electronics",
+      "posted_date": "2025-09-06T19:06:49.196969+05:30",
+      "session_type": "morning"
+    },
     {
       "id": "product_001",
       "title": "Sample Product - iPhone 15 Pro Max",
       "image": "https://images-na.ssl-images-amazon.com/images/I/sample.jpg",
       "affiliate_link": "https://amzn.to/sample123",
-      "price": "₹99,999",
-      "rating": "⭐⭐⭐⭐⭐",
+      "price": "\u20b999,999",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2b50",
       "category": "electronics",
       "posted_date": "2025-09-06T15:23:00+05:30"
     }
