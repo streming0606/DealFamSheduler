@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-09-07T23:11:32.511060+05:30",
-  "total_products": 21,
+  "last_updated": "2025-09-07T23:14:27.436817+05:30",
+  "total_products": 23,
   "products": [
+    {
+      "id": "product_morning_1_20250907_174402",
+      "title": "PHILIPS Air Fryer NA130/00, uses up to 90% less fat, 1700W, 6.2 Liter, with Rapid Air Technology (Black), Extra Large",
+      "image": "https://m.media-amazon.com/images/I/41nZb5+UVyL._AC_SL1500_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0D14861L9?tag=gadgetvill09f-21",
+      "original_url": "https://www.amazon.in/dp/B0D14861L9",
+      "price": "\u20b96,235.",
+      "rating": "\u2b50\u2b50\u2b50\u2b50",
+      "category": "electronics",
+      "posted_date": "2025-09-07T23:14:02.277844+05:30",
+      "session_type": "morning",
+      "asin": "B0D14861L9",
+      "source": "scraping"
+    },
+    {
+      "id": "product_morning_2_20250907_174416",
+      "title": "Stainless Steel Electric Kettle || 2 Litres, with Auto Shut-Off || Black and Silver || Power Indicator || 1500 Watts || ...",
+      "image": "https://m.media-amazon.com/images/I/61U7KvqwN3L._AC_SL1500_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DR58G9KS?tag=gadgetvill09f-21",
+      "original_url": "https://www.amazon.in/dp/B0DR58G9KS",
+      "price": "\u20b9549.",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2b50",
+      "category": "electronics",
+      "posted_date": "2025-09-07T23:14:16.208630+05:30",
+      "session_type": "morning",
+      "asin": "B0DR58G9KS",
+      "source": "scraping"
+    },
     {
       "id": "product_evening_1_20250907_174123",
       "title": "Electronics Product B0D14861L9",
