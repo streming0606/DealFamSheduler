@@ -77,6 +77,152 @@ function renderProducts() {
     }
 }
 
+
+
+
+
+
+
+
+
+
+// Banner Slider Functionality
+class BannerSlider {
+    constructor() {
+        this.currentSlide = 0;
+        this.totalSlides = document.querySelectorAll('.banner-slide').length;
+        this.slides = document.querySelectorAll('.banner-slide');
+        this.dots = document.querySelectorAll('.dot');
+        this.prevBtn = document.getElementById('prev-banner');
+        this.nextBtn = document.getElementById('next-banner');
+        this.autoSlideInterval = null;
+        this.init();
+    }
+    
+    init() {
+        if (this.totalSlides === 0) return;
+        
+        // Add event listeners
+        if (this.prevBtn) {
+            this.prevBtn.addEventListener('click', () => this.previousSlide());
+        }
+        
+        if (this.nextBtn) {
+            this.nextBtn.addEventListener('click', () => this.nextSlide());
+        }
+        
+        // Dot navigation
+        this.dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => this.goToSlide(index));
+        });
+        
+        // Auto slide
+        this.startAutoSlide();
+        
+        // Pause auto slide on hover
+        const heroSlider = document.querySelector('.hero-slider');
+        if (heroSlider) {
+            heroSlider.addEventListener('mouseenter', () => this.stopAutoSlide());
+            heroSlider.addEventListener('mouseleave', () => this.startAutoSlide());
+        }
+        
+        // Touch/Swipe support for mobile
+        this.addTouchSupport();
+    }
+    
+    goToSlide(slideIndex) {
+        // Remove active class from current slide and dot
+        this.slides[this.currentSlide].classList.remove('active');
+        this.dots[this.currentSlide].classList.remove('active');
+        
+        // Update current slide
+        this.currentSlide = slideIndex;
+        
+        // Add active class to new slide and dot
+        this.slides[this.currentSlide].classList.add('active');
+        this.dots[this.currentSlide].classList.add('active');
+    }
+    
+    nextSlide() {
+        const nextIndex = (this.currentSlide + 1) % this.totalSlides;
+        this.goToSlide(nextIndex);
+    }
+    
+    previousSlide() {
+        const prevIndex = (this.currentSlide - 1 + this.totalSlides) % this.totalSlides;
+        this.goToSlide(prevIndex);
+    }
+    
+    startAutoSlide() {
+        this.stopAutoSlide();
+        this.autoSlideInterval = setInterval(() => {
+            this.nextSlide();
+        }, 5000); // Change slide every 5 seconds
+    }
+    
+    stopAutoSlide() {
+        if (this.autoSlideInterval) {
+            clearInterval(this.autoSlideInterval);
+            this.autoSlideInterval = null;
+        }
+    }
+    
+    addTouchSupport() {
+        const heroSlider = document.querySelector('.hero-slider');
+        if (!heroSlider) return;
+        
+        let startX = 0;
+        let endX = 0;
+        
+        heroSlider.addEventListener('touchstart', (e) => {
+            startX = e.touches[0].clientX;
+        });
+        
+        heroSlider.addEventListener('touchmove', (e) => {
+            endX = e.touches[0].clientX;
+        });
+        
+        heroSlider.addEventListener('touchend', () => {
+            const diff = startX - endX;
+            const minSwipeDistance = 50;
+            
+            if (Math.abs(diff) > minSwipeDistance) {
+                if (diff > 0) {
+                    this.nextSlide();
+                } else {
+                    this.previousSlide();
+                }
+            }
+        });
+    }
+}
+
+// Initialize banner slider
+function initializeBannerSlider() {
+    if (document.querySelector('.hero-slider')) {
+        window.bannerSlider = new BannerSlider();
+    }
+}
+
+// Add to your existing initialization
+document.addEventListener('DOMContentLoaded', function() {
+    loadProducts();
+    setupEventListeners();
+    updateLastRefresh();
+    initializeEnhancements();
+    initializeBannerSlider(); // Add this line
+});
+
+
+
+
+
+
+
+
+
+
+
 // Enhanced createProductCard function (preserving your data structure)
 function createProductCard(product, index = 0) {
     const card = document.createElement('div');
