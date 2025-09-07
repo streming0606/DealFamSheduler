@@ -1,7 +1,23 @@
 {
-  "last_updated": "2025-09-07T21:18:17.783872+05:30",
-  "total_products": 15,
+  "last_updated": "2025-09-07T22:49:46.735426+05:30",
+  "total_products": 16,
   "products": [
+    {
+      "id": "product_evening_1_20250907_171941",
+      "title": "Electronics Product B0D14861L9",
+      "image": "",
+      "affiliate_link": "https://www.amazon.in/dp/B0D14861L9?tag=gadgetvill09f-21",
+      "original_url": "https://www.amazon.in/dp/B0D14861L9",
+      "price": "\u20b9Special Price",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2b50",
+      "category": "electronics",
+      "posted_date": "2025-09-07T22:49:41.162197+05:30",
+      "session_type": "evening",
+      "asin": "B0D14861L9",
+      "source": "scraping",
+      "link_index": 1,
+      "cycle_number": 1
+    },
     {
       "id": "product_night_1_20250907_154809",
       "title": "PHILIPS Air Fryer NA130/00, uses up to 90% less fat, 1700W, 6.2 Liter, with Rapid Air Technology (Black), Extra Large",
