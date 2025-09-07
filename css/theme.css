@@ -1,0 +1,92 @@
+/* Dark/Light Theme System for Thrift Zone */
+
+/* Light Theme (Default) */
+[data-theme="light"] {
+  --text-primary: #1a202c;
+  --text-secondary: #4a5568;
+  --text-muted: #718096;
+  --background: #ffffff;
+  --surface: #f7fafc;
+  --border: #e2e8f0;
+  --border-light: #f1f5f9;
+}
+
+/* Dark Theme */
+[data-theme="dark"] {
+  --text-primary: #f7fafc;
+  --text-secondary: #e2e8f0;
+  --text-muted: #a0aec0;
+  --background: #1a202c;
+  --surface: #2d3748;
+  --border: #4a5568;
+  --border-light: #2d3748;
+  
+  /* Adjust shadows for dark mode */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+  --shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.4), 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.4), 0 4px 6px -2px rgba(0, 0, 0, 0.3);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.4), 0 10px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+  position: relative;
+  overflow: hidden;
+}
+
+.theme-toggle i {
+  transition: var(--transition);
+}
+
+[data-theme="dark"] .theme-toggle i::before {
+  content: "\f185"; /* sun icon */
+}
+
+/* Dark mode specific adjustments */
+[data-theme="dark"] .hero {
+  background: linear-gradient(135deg, #2d3748 0%, #1a202c 100%);
+}
+
+[data-theme="dark"] .product-card {
+  background-color: var(--surface);
+  border-color: var(--border);
+}
+
+[data-theme="dark"] .category-card {
+  background-color: var(--surface);
+  border-color: var(--border);
+}
+
+[data-theme="dark"] .search-box {
+  background-color: var(--surface);
+  border-color: var(--border);
+}
+
+[data-theme="dark"] .mobile-nav {
+  background-color: var(--background);
+  border-right: 1px solid var(--border);
+}
+
+[data-theme="dark"] .footer {
+  background-color: #0f172a;
+}
+
+/* Smooth theme transition */
+* {
+  transition: background-color var(--transition), 
+              border-color var(--transition), 
+              color var(--transition),
+              box-shadow var(--transition);
+}
+
+/* Theme toggle animation */
+.theme-toggle.switching {
+  animation: themeSwitch 0.6s ease-in-out;
+}
+
+@keyframes themeSwitch {
+  0% { transform: rotate(0deg); }
+  50% { transform: rotate(180deg) scale(1.1); }
+  100% { transform: rotate(360deg); }
+}
