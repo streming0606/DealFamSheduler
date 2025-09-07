@@ -31,7 +31,7 @@
                 </div>
             </div>
 
-            <!-- Search Bar -->
+            <!-- Search Bar 
             <div class="search-container">
                 <div class="search-box">
                     <input type="text" id="search-input" placeholder="Search for deals, products..." autocomplete="off">
@@ -40,7 +40,52 @@
                     </button>
                 </div>
                 <div class="search-suggestions" id="search-suggestions"></div>
+            </div>-->
+
+
+
+
+
+
+
+
+
+<!-- Enhanced Search Container with Voice Search -->
+<div class="search-container">
+    <div class="search-box">
+        <input type="text" id="search-input" placeholder="Search for deals, products..." autocomplete="off">
+        <button class="voice-search-btn" id="voice-search-btn" title="Voice Search">
+            <i class="fas fa-microphone"></i>
+        </button>
+        <button class="search-btn" id="search-btn">
+            <i class="fas fa-search"></i>
+        </button>
+    </div>
+    <div class="search-suggestions" id="search-suggestions"></div>
+    <div class="voice-search-modal" id="voice-search-modal">
+        <div class="voice-modal-content">
+            <div class="voice-indicator">
+                <div class="voice-animation">
+                    <div class="voice-circle"></div>
+                    <div class="voice-circle"></div>
+                    <div class="voice-circle"></div>
+                </div>
+                <p id="voice-status">Listening...</p>
             </div>
+            <button class="voice-close-btn" id="voice-close-btn">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+            
+
+            
 
             <!-- Navigation & Actions -->
             <nav class="nav">
