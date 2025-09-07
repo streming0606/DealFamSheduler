@@ -1,7 +1,33 @@
 {
-  "last_updated": "2025-09-07T12:45:53.232140+05:30",
-  "total_products": 19,
+  "last_updated": "2025-09-07T13:15:02.477794+05:30",
+  "total_products": 21,
   "products": [
+    {
+      "id": "product_afternoon_1_20250907_074442",
+      "title": "(OG) TM Presents SIMPAR I CA Chewable Tablets for Dogs (20-40 kg)|| (1 Tablet)",
+      "image": "https://m.media-amazon.com/images/I/61vIs8ongyL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CFFRBSGG?tag=gadgetvill09f-21",
+      "price": "\u20b9899",
+      "rating": "\u2b50\u2b50\u2b50\u2b50 (4.9)",
+      "category": "electronics",
+      "posted_date": "2025-09-07T13:14:42.248560+05:30",
+      "session_type": "afternoon",
+      "asin": "B0CFFRBSGG",
+      "source": "serpapi"
+    },
+    {
+      "id": "product_afternoon_2_20250907_074453",
+      "title": "TIMEWEAR Analog Day Date Functioning Stainless Steel Chain Watch for Men",
+      "image": "https://m.media-amazon.com/images/I/81nj6IlZpVL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07MDGSP8F?tag=gadgetvill09f-21",
+      "price": "\u20b9379",
+      "rating": "\u2b50\u2b50\u2b50 (3.8)",
+      "category": "electronics",
+      "posted_date": "2025-09-07T13:14:53.866365+05:30",
+      "session_type": "afternoon",
+      "asin": "B07MDGSP8F",
+      "source": "serpapi"
+    },
     {
       "id": "product_evening_1_20250907_071544",
       "title": "(OG) TM Presents SIMPAR I CA Chewable Tablets for Dogs (20-40 kg)|| (1 Tablet)",
