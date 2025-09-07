@@ -17,13 +17,49 @@ const totalDealsSpan = document.getElementById('total-deals');
 const sortSelect = document.getElementById('sort-select');
 const viewToggle = document.getElementById('view-toggle');
 
-// Initialize the website (preserving your original initialization)
+
+
+
+
+// // Initialize the website (preserving your original initialization)
+// document.addEventListener('DOMContentLoaded', function() {
+//     loadProducts(); // Your existing function
+//     setupEventListeners();
+//     updateLastRefresh();
+//     initializeEnhancements(); // New enhancements
+// });
+
+
+
+
+
+
+
+// Update your DOMContentLoaded event listener
 document.addEventListener('DOMContentLoaded', function() {
-    loadProducts(); // Your existing function
+    loadProducts(); // Load products first
     setupEventListeners();
     updateLastRefresh();
-    initializeEnhancements(); // New enhancements
+    initializeEnhancements();
+    initializeBannerSlider();
+    
+    // Initialize search after a short delay to ensure products are loaded
+    setTimeout(() => {
+        initializeSearch();
+    }, 1000);
 });
+
+
+
+
+
+
+
+
+
+
+
+
 
 // Your original loadProducts function (UNCHANGED)
 async function loadProducts() {
