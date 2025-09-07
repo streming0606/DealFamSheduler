@@ -1,7 +1,21 @@
 {
-  "last_updated": "2025-09-07T22:58:53.566831+05:30",
-  "total_products": 20,
+  "last_updated": "2025-09-07T23:11:32.511060+05:30",
+  "total_products": 21,
   "products": [
+    {
+      "id": "product_evening_1_20250907_174123",
+      "title": "Electronics Product B0D14861L9",
+      "image": "",
+      "affiliate_link": "https://www.amazon.in/dp/B0D14861L9?tag=gadgetvill09f-21",
+      "original_url": "https://www.amazon.in/dp/B0D14861L9",
+      "price": "\u20b9Special Price",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2b50",
+      "category": "electronics",
+      "posted_date": "2025-09-07T23:11:23.679400+05:30",
+      "session_type": "evening",
+      "asin": "B0D14861L9",
+      "source": "scraping"
+    },
     {
       "id": "product_morning_1_20250907_172833",
       "title": "Electronics Product B0D14861L9",
