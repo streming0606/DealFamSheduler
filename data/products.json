@@ -1,7 +1,33 @@
 {
-  "last_updated": "2025-09-07T15:38:06.981561+05:30",
-  "total_products": 22,
+  "last_updated": "2025-09-07T16:11:44.927647+05:30",
+  "total_products": 8,
   "products": [
+    {
+      "id": "product_morning_1_20250907_104129",
+      "title": "Artkarri - A Frame Student Easel - 5 feet",
+      "image": "https://m.media-amazon.com/images/I/51tcB8KQSQL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0D14861L9?tag=gadgetvill09f-21",
+      "price": "\u20b9990",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2b50",
+      "category": "electronics",
+      "posted_date": "2025-09-07T16:11:29.278094+05:30",
+      "session_type": "morning",
+      "asin": "B0D14861L9",
+      "source": "serpapi"
+    },
+    {
+      "id": "product_morning_2_20250907_104137",
+      "title": "Moroccanoil Curl Enhancing Conditioner, 250 ml",
+      "image": "https://m.media-amazon.com/images/I/61Psx5mm5CL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DR58G9KS?tag=gadgetvill09f-21",
+      "price": "\u20b92,610",
+      "rating": "\u2b50\u2b50\u2b50\u2b50 (4.5)",
+      "category": "electronics",
+      "posted_date": "2025-09-07T16:11:37.985108+05:30",
+      "session_type": "morning",
+      "asin": "B0DR58G9KS",
+      "source": "serpapi"
+    },
     {
       "id": "product_evening_1_20250907_100758",
       "title": "(OG) TM Presents SIMPAR I CA Chewable Tablets for Dogs (20-40 kg)|| (1 Tablet)",
@@ -54,7 +80,6 @@
       "asin": "B0CFFRBSGG",
       "source": "serpapi"
     },
-   
     {
       "id": "product_night_1_20250906_154758",
       "title": "Amazon Product B0CFFRBSGG",
