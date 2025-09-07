@@ -1,7 +1,37 @@
 {
-  "last_updated": "2025-09-07T23:14:27.436817+05:30",
-  "total_products": 23,
+  "last_updated": "2025-09-07T23:37:54.924099+05:30",
+  "total_products": 25,
   "products": [
+    {
+      "id": "product_morning_1_20250907_180737",
+      "title": "Electronics Product B0D14861L9",
+      "image": "",
+      "affiliate_link": "https://www.amazon.in/dp/B0D14861L9?tag=gadgetvill09f-21",
+      "original_url": "https://www.amazon.in/dp/B0D14861L9",
+      "price": "\u20b9Special Price",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2b50",
+      "category": "electronics",
+      "posted_date": "2025-09-07T23:37:37.502413+05:30",
+      "session_type": "morning",
+      "asin": "B0D14861L9",
+      "source": "scraping",
+      "link_index": 1
+    },
+    {
+      "id": "product_morning_2_20250907_180746",
+      "title": "Electronics Product B0DR58G9KS",
+      "image": "",
+      "affiliate_link": "https://www.amazon.in/dp/B0DR58G9KS?tag=gadgetvill09f-21",
+      "original_url": "https://www.amazon.in/dp/B0DR58G9KS",
+      "price": "\u20b9Special Price",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2b50",
+      "category": "electronics",
+      "posted_date": "2025-09-07T23:37:46.837187+05:30",
+      "session_type": "morning",
+      "asin": "B0DR58G9KS",
+      "source": "scraping",
+      "link_index": 2
+    },
     {
       "id": "product_morning_1_20250907_174402",
       "title": "PHILIPS Air Fryer NA130/00, uses up to 90% less fat, 1700W, 6.2 Liter, with Rapid Air Technology (Black), Extra Large",
