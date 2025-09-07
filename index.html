@@ -3,44 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DealFam - Best Amazon Deals & Offers</title>
+    <title>Thrift Zone - Today's Best Deals & Offers</title>
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <meta name="description" content="Find the best Amazon deals and offers on Electronics, Fashion, Home, Health, Sports & more. Updated daily with exclusive discount codes.">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/theme.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <meta name="description" content="Thrift Zone - Find the best deals and offers on Electronics, Fashion, Home & more. Updated daily with exclusive discount codes.">
 </head>
 <body>
     <!-- Header Section -->
     <header class="header">
         <div class="container">
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <!-- Logo Section -->
             <div class="logo">
-                <img src="images/logo.png" alt="DealFam Logo">
-                <h1>DealFam</h1>
+                <img src="images/logo-icon.png" alt="Thrift Zone" class="logo-icon">
+                <div class="logo-text">
+                    <h1>Thrift Zone</h1>
+                    <span class="tagline">Smart Shopping Hub</span>
+                </div>
             </div>
+
+            <!-- Search Bar -->
+            <div class="search-container">
+                <div class="search-box">
+                    <input type="text" id="search-input" placeholder="Search for deals, products..." autocomplete="off">
+                    <button class="search-btn" id="search-btn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+                <div class="search-suggestions" id="search-suggestions"></div>
+            </div>
+
+            <!-- Navigation & Actions -->
             <nav class="nav">
                 <a href="#home" class="nav-link active">Home</a>
                 <a href="#categories" class="nav-link">Categories</a>
-                <a href="#deals" class="nav-link">Latest Deals</a>
+                <a href="#deals" class="nav-link">Today's Deals</a>
+                <a href="#about" class="nav-link">About</a>
             </nav>
+
+            <!-- Header Actions -->
+            <div class="header-actions">
+                <button class="theme-toggle" id="theme-toggle" title="Toggle Dark Mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="live-indicator">
+                    <span class="pulse"></span>
+                    <span class="text">Live</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <div class="mobile-nav" id="mobile-nav">
+            <div class="mobile-nav-header">
+                <h3>Menu</h3>
+                <button class="mobile-nav-close">&times;</button>
+            </div>
+            <div class="mobile-nav-content">
+                <a href="#home" class="mobile-nav-link">🏠 Home</a>
+                <a href="#categories" class="mobile-nav-link">📂 Categories</a>
+                <a href="#deals" class="mobile-nav-link">🔥 Today's Deals</a>
+                <a href="#about" class="mobile-nav-link">ℹ️ About</a>
+            </div>
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
+    <!-- Hero Banner Section -->
+    <section id="home" class="hero">
         <div class="container">
-            <h2>🔥 Best Amazon Deals Updated Live!</h2>
-            <p>Discover amazing discounts on top products • Updated 4 times daily • Exclusive affiliate offers</p>
-            <div class="hero-stats">
-                <div class="stat">
-                    <span class="stat-number" id="total-deals">0</span>
-                    <span class="stat-label">Active Deals</span>
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h2 class="hero-title">
+                        <span class="fire-emoji">🔥</span>
+                        Today's Loot Deals
+                        <span class="deal-badge">Live</span>
+                    </h2>
+                    <p class="hero-subtitle">Discover amazing discounts up to 80% OFF • Updated every hour • Exclusive offers</p>
+                    
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number" id="total-deals">0</span>
+                            <span class="stat-label">Active Deals</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">24/7</span>
+                            <span class="stat-label">Updates</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">80%</span>
+                            <span class="stat-label">Max Savings</span>
+                        </div>
+                    </div>
+
+                    <div class="hero-cta">
+                        <button class="btn-primary" onclick="scrollToDeals()">
+                            <i class="fas fa-bolt"></i>
+                            Explore Deals Now
+                        </button>
+                        <button class="btn-secondary" onclick="scrollToCategories()">
+                            <i class="fas fa-th-large"></i>
+                            Browse Categories
+                        </button>
+                    </div>
                 </div>
-                <div class="stat">
-                    <span class="stat-number">4x</span>
-                    <span class="stat-label">Daily Updates</span>
-                </div>
-                <div class="stat">
-                    <span class="stat-number">⭐⭐⭐⭐⭐</span>
-                    <span class="stat-label">Top Rated</span>
+
+                <div class="hero-visual">
+                    <div class="deal-preview-card">
+                        <div class="preview-badge">Deal of the Hour</div>
+                        <div class="preview-content">
+                            <div class="preview-image">🛍️</div>
+                            <div class="preview-text">
+                                <h4>Amazing Discounts</h4>
+                                <p class="preview-price">Up to <span>80% OFF</span></p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -49,70 +135,159 @@
     <!-- Categories Section -->
     <section id="categories" class="categories">
         <div class="container">
-            <h2>🛍️ Shop by Category</h2>
+            <div class="section-header">
+                <h2 class="section-title">Shop by Category</h2>
+                <p class="section-subtitle">Find the best deals across all categories</p>
+            </div>
+
             <div class="category-grid">
                 <div class="category-card" data-category="electronics">
-                    <i class="fas fa-laptop"></i>
-                    <h3>Electronics</h3>
+                    <div class="category-icon">
+                        <i class="fas fa-laptop"></i>
+                    </div>
+                    <h3 class="category-name">Electronics</h3>
+                    <p class="category-desc">Gadgets & Tech</p>
                     <span class="deal-count">0 deals</span>
                 </div>
+
                 <div class="category-card" data-category="fashion">
-                    <i class="fas fa-tshirt"></i>
-                    <h3>Fashion</h3>
+                    <div class="category-icon">
+                        <i class="fas fa-tshirt"></i>
+                    </div>
+                    <h3 class="category-name">Fashion</h3>
+                    <p class="category-desc">Clothing & Style</p>
                     <span class="deal-count">0 deals</span>
                 </div>
+
                 <div class="category-card" data-category="home">
-                    <i class="fas fa-home"></i>
-                    <h3>Home</h3>
+                    <div class="category-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3 class="category-name">Home</h3>
+                    <p class="category-desc">Furniture & Decor</p>
                     <span class="deal-count">0 deals</span>
                 </div>
+
                 <div class="category-card" data-category="health">
-                    <i class="fas fa-heartbeat"></i>
-                    <h3>Health</h3>
+                    <div class="category-icon">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <h3 class="category-name">Health</h3>
+                    <p class="category-desc">Beauty & Care</p>
                     <span class="deal-count">0 deals</span>
                 </div>
+
                 <div class="category-card" data-category="sports">
-                    <i class="fas fa-dumbbell"></i>
-                    <h3>Sports</h3>
+                    <div class="category-icon">
+                        <i class="fas fa-dumbbell"></i>
+                    </div>
+                    <h3 class="category-name">Sports</h3>
+                    <p class="category-desc">Fitness & Gear</p>
                     <span class="deal-count">0 deals</span>
                 </div>
+
                 <div class="category-card" data-category="vehicle">
-                    <i class="fas fa-car"></i>
-                    <h3>Vehicle</h3>
+                    <div class="category-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3 class="category-name">Vehicle</h3>
+                    <p class="category-desc">Auto Parts</p>
                     <span class="deal-count">0 deals</span>
                 </div>
+
                 <div class="category-card" data-category="books">
-                    <i class="fas fa-book"></i>
-                    <h3>Books</h3>
+                    <div class="category-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3 class="category-name">Books</h3>
+                    <p class="category-desc">Learning & Reading</p>
                     <span class="deal-count">0 deals</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Featured Deals Section -->
+    <!-- Deals Section -->
     <section id="deals" class="deals">
         <div class="container">
             <div class="section-header">
-                <h2>🔥 Latest Hot Deals</h2>
-                <div class="filter-buttons">
-                    <button class="filter-btn active" data-filter="all">All Deals</button>
-                    <button class="filter-btn" data-filter="electronics">Electronics</button>
-                    <button class="filter-btn" data-filter="fashion">Fashion</button>
-                    <button class="filter-btn" data-filter="home">Home</button>
+                <h2 class="section-title">🔥 Today's Hot Deals</h2>
+                <div class="deals-filter">
+                    <div class="filter-tabs">
+                        <button class="filter-btn active" data-filter="all">All Deals</button>
+                        <button class="filter-btn" data-filter="electronics">Electronics</button>
+                        <button class="filter-btn" data-filter="fashion">Fashion</button>
+                        <button class="filter-btn" data-filter="home">Home</button>
+                        <button class="filter-btn" data-filter="health">Health</button>
+                    </div>
+                    
+                    <div class="filter-options">
+                        <select class="sort-select" id="sort-select">
+                            <option value="latest">Latest First</option>
+                            <option value="price-low">Price: Low to High</option>
+                            <option value="price-high">Price: High to Low</option>
+                            <option value="discount">Highest Discount</option>
+                        </select>
+                        
+                        <button class="view-toggle" id="view-toggle" title="Toggle View">
+                            <i class="fas fa-th-large"></i>
+                        </button>
+                    </div>
                 </div>
             </div>
-            
+
+            <!-- Products Grid -->
             <div class="products-grid" id="products-container">
-                <!-- Products will be loaded dynamically -->
-                <div class="loading">
-                    <i class="fas fa-spinner fa-spin"></i>
+                <!-- Loading State -->
+                <div class="loading-state">
+                    <div class="loading-spinner">
+                        <div class="spinner"></div>
+                    </div>
                     <p>Loading amazing deals...</p>
                 </div>
             </div>
 
-            <div class="load-more">
-                <button id="load-more-btn" class="btn-primary">Load More Deals</button>
+            <!-- Load More Section -->
+            <div class="load-more-section">
+                <button id="load-more-btn" class="load-more-btn">
+                    <i class="fas fa-plus"></i>
+                    Load More Deals
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About Thrift Zone</h2>
+                    <p>Your trusted source for the best deals and offers from top e-commerce platforms. We curate amazing discounts and present them in a clean, easy-to-browse format.</p>
+                    
+                    <div class="features-grid">
+                        <div class="feature-item">
+                            <i class="fas fa-clock"></i>
+                            <h4>Real-time Updates</h4>
+                            <p>Deals updated every hour automatically</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <h4>Verified Offers</h4>
+                            <p>All deals are verified and working</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-mobile-alt"></i>
+                            <h4>Mobile Friendly</h4>
+                            <p>Optimized for all devices</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-heart"></i>
+                            <h4>Free to Use</h4>
+                            <p>Completely free for all users</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -122,33 +297,64 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <img src="images/logo.png" alt="DealFam" class="footer-logo">
-                    <p>Your trusted source for the best Amazon deals and offers. Updated multiple times daily.</p>
+                    <div class="footer-logo">
+                        <img src="images/logo-icon.png" alt="Thrift Zone">
+                        <h3>Thrift Zone</h3>
+                    </div>
+                    <p>Your smart shopping companion for the best deals and offers online.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-telegram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    </div>
                 </div>
+
                 <div class="footer-section">
                     <h4>Quick Links</h4>
                     <ul>
                         <li><a href="#home">Home</a></li>
                         <li><a href="#categories">Categories</a></li>
-                        <li><a href="#deals">Latest Deals</a></li>
+                        <li><a href="#deals">Today's Deals</a></li>
+                        <li><a href="#about">About Us</a></li>
                     </ul>
                 </div>
+
                 <div class="footer-section">
                     <h4>Categories</h4>
                     <ul>
                         <li><a href="#" data-category="electronics">Electronics</a></li>
                         <li><a href="#" data-category="fashion">Fashion</a></li>
                         <li><a href="#" data-category="home">Home & Garden</a></li>
+                        <li><a href="#" data-category="health">Health & Beauty</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="mailto:support@thriftzone.com">Contact Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">FAQ</a></li>
                     </ul>
                 </div>
             </div>
+
             <div class="footer-bottom">
-                <p>&copy; 2025 DealFam. All rights reserved. | Affiliate Disclosure: We may earn commission from purchases.</p>
+                <div class="footer-disclaimer">
+                    <p>&copy; 2025 Thrift Zone. All rights reserved.</p>
+                    <p class="affiliate-disclosure">
+                        <strong>Affiliate Disclosure:</strong> We may earn commission from purchases made through our links. This doesn't affect the price you pay.
+                    </p>
+                </div>
             </div>
         </div>
     </footer>
 
+    <!-- Scripts -->
     <script src="js/script.js"></script>
     <script src="js/update.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/search.js"></script>
 </body>
 </html>
