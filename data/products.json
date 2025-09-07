@@ -1,7 +1,20 @@
 {
-  "last_updated": "2025-09-07T11:48:23.631630+05:30",
-  "total_products": 17,
+  "last_updated": "2025-09-07T12:12:51.926211+05:30",
+  "total_products": 18,
   "products": [
+    {
+      "id": "product_evening_1_20250907_064244",
+      "title": "Amazon Deal B0CFFRBSGG",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/B0CFFRBSGG._AC_SL1500_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CFFRBSGG?tag=gadgetvill09f-21",
+      "price": "\u20b9Special Price",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2b50",
+      "category": "electronics",
+      "posted_date": "2025-09-07T12:12:44.520129+05:30",
+      "session_type": "evening",
+      "asin": "B0CFFRBSGG",
+      "source": "serpapi"
+    },
     {
       "id": "product_evening_1_20250907_061816",
       "title": "Amazon Deal B0CFFRBSGG",
