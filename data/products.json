@@ -1,7 +1,46 @@
 {
-  "last_updated": "2025-09-08T23:59:43.186143+05:30",
-  "total_products": 12,
+  "last_updated": "2025-09-09T00:03:09.810177+05:30",
+  "total_products": 15,
   "products": [
+    {
+      "id": "product_morning_1_20250908_183300",
+      "title": "Amazon Product B08TTRVWKY",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/B08TTRVWKY.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B08TTRVWKY?tag=gadgetvill09f-21",
+      "price": "\u20b9Special Price",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2b50",
+      "category": "electronics",
+      "posted_date": "2025-09-09T00:03:00.964632+05:30",
+      "session_type": "morning",
+      "asin": "B08TTRVWKY",
+      "original_link": "https://www.amazon.in/dp/B08TTRVWKY"
+    },
+    {
+      "id": "product_morning_2_20250908_183305",
+      "title": "Amazon Product B078HG2ZPS",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/B078HG2ZPS.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B078HG2ZPS?tag=gadgetvill09f-21",
+      "price": "\u20b9Special Price",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2b50",
+      "category": "electronics",
+      "posted_date": "2025-09-09T00:03:05.294581+05:30",
+      "session_type": "morning",
+      "asin": "B078HG2ZPS",
+      "original_link": "https://www.amazon.in/dp/B078HG2ZPS"
+    },
+    {
+      "id": "product_morning_3_20250908_183309",
+      "title": "Amazon Product B097XJQZ8H",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/B097XJQZ8H.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B097XJQZ8H?tag=gadgetvill09f-21",
+      "price": "\u20b9Special Price",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2b50",
+      "category": "electronics",
+      "posted_date": "2025-09-09T00:03:09.621143+05:30",
+      "session_type": "morning",
+      "asin": "B097XJQZ8H",
+      "original_link": "https://www.amazon.in/dp/B097XJQZ8H"
+    },
     {
       "id": "product_morning_1_20250908_182933",
       "title": "Amazon Product B08TTRVWKY",
