@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-09-08T22:07:32.286010+05:30",
-  "total_products": 17,
+  "last_updated": "2025-09-08T22:11:49.552183+05:30",
+  "total_products": 19,
   "products": [
+    {
+      "id": "product_morning_1_20250908_164131",
+      "title": "Cos-IQ Anti Chafing Roll-On Serum | For Men & Women | With Bioecolea & Inulin| Prevents Arm, Chest, Butt, Thigh, & Ball ...",
+      "image": "https://m.media-amazon.com/images/I/51GXMwrn9xL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B01N0YEZK8?tag=gadgetvill09f-21",
+      "price": "\u20b9447",
+      "rating": "\u2b50\u2b50\u2b50\u2b50 (4.7)",
+      "category": "electronics",
+      "posted_date": "2025-09-08T22:11:31.939157+05:30",
+      "session_type": "morning",
+      "asin": "B01N0YEZK8",
+      "source": "serpapi",
+      "link_index": 4
+    },
+    {
+      "id": "product_morning_2_20250908_164141",
+      "title": "IMECO Natural Laundry Liquid (1L Refill Pouch) | Liquid Detergent Front Load & Top Load Liquid Detergent | Eco-Friendly ...",
+      "image": "https://m.media-amazon.com/images/I/71C4RM6ImTL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07RX42D3D?tag=gadgetvill09f-21",
+      "price": "\u20b9169",
+      "rating": "\u2b50\u2b50\u2b50\u2b50 (4.9)",
+      "category": "electronics",
+      "posted_date": "2025-09-08T22:11:41.067084+05:30",
+      "session_type": "morning",
+      "asin": "B07RX42D3D",
+      "source": "serpapi",
+      "link_index": 5
+    },
     {
       "id": "product_morning_1_20250908_163710",
       "title": "Cos-IQ Anti Chafing Roll-On Serum | For Men & Women | With Bioecolea & Inulin| Prevents Arm, Chest, Butt, Thigh, & Ball ...",
