@@ -1,7 +1,33 @@
 {
-  "last_updated": "2025-09-07T23:48:03.182526+05:30",
-  "total_products": 31,
+  "last_updated": "2025-09-08T21:30:34.686824+05:30",
+  "total_products": 5,
   "products": [
+    {
+      "id": "product_morning_1_20250908_160011",
+      "title": "Cos-IQ Anti Chafing Roll-On Serum | For Men & Women | With Bioecolea & Inulin| Prevents Arm, Chest, Butt, Thigh, & Ball ...",
+      "image": "https://m.media-amazon.com/images/I/51GXMwrn9xL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B01N0YEZK8?tag=gadgetvill09f-21",
+      "price": "\u20b9447",
+      "rating": "\u2b50\u2b50\u2b50\u2b50 (4.7)",
+      "category": "electronics",
+      "posted_date": "2025-09-08T21:30:11.612478+05:30",
+      "session_type": "morning",
+      "asin": "B01N0YEZK8",
+      "source": "serpapi"
+    },
+    {
+      "id": "product_morning_2_20250908_160024",
+      "title": "IMECO Natural Laundry Liquid (1L Refill Pouch) | Liquid Detergent Front Load & Top Load Liquid Detergent | Eco-Friendly ...",
+      "image": "https://m.media-amazon.com/images/I/71C4RM6ImTL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07RX42D3D?tag=gadgetvill09f-21",
+      "price": "\u20b9169",
+      "rating": "\u2b50\u2b50\u2b50\u2b50 (4.9)",
+      "category": "electronics",
+      "posted_date": "2025-09-08T21:30:24.463874+05:30",
+      "session_type": "morning",
+      "asin": "B07RX42D3D",
+      "source": "serpapi"
+    },
     {
       "id": "product_morning_1_20250907_181745",
       "title": "Electronics Product B0D14861L9",
@@ -30,7 +56,6 @@
       "asin": "B0DR58G9KS",
       "source": "scraping"
     },
-   
     {
       "id": "product_001",
       "title": "Sample Product - iPhone 15 Pro Max",
