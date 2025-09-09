@@ -1,7 +1,43 @@
 {
-  "last_updated": "2025-09-09T11:19:31.750764+05:30",
-  "total_products": 27,
+  "last_updated": "2025-09-09T11:46:18.601606+05:30",
+  "total_products": 30,
   "products": [
+    {
+      "id": "product_morning_1_20250909_061609",
+      "title": "Amazon Product B074DJDCLZ",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/B074DJDCLZ.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B074DJDCLZ?tag=gadgetvill09f-21",
+      "price": "\u20b9Special Price",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2b50",
+      "category": "electronics",
+      "posted_date": "2025-09-09T11:46:09.781262+05:30",
+      "session_type": "morning",
+      "link_index": 23
+    },
+    {
+      "id": "product_morning_2_20250909_061614",
+      "title": "Amazon Product B0BD5R89RQ",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/B0BD5R89RQ.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0BD5R89RQ?tag=gadgetvill09f-21",
+      "price": "\u20b9Special Price",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2b50",
+      "category": "electronics",
+      "posted_date": "2025-09-09T11:46:14.117956+05:30",
+      "session_type": "morning",
+      "link_index": 24
+    },
+    {
+      "id": "product_morning_3_20250909_061618",
+      "title": "Amazon Product B09MFQMNF7",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/B09MFQMNF7.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B09MFQMNF7?tag=gadgetvill09f-21",
+      "price": "\u20b9Special Price",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2b50",
+      "category": "electronics",
+      "posted_date": "2025-09-09T11:46:18.458438+05:30",
+      "session_type": "morning",
+      "link_index": 25
+    },
     {
       "id": "product_morning_1_20250909_054922",
       "title": "Amazon Product B074DJDCLZ",
