@@ -1,7 +1,31 @@
 {
-  "last_updated": "2025-09-09T19:04:29.286648+05:30",
-  "total_products": 38,
+  "last_updated": "2025-09-09T19:08:40.623761+05:30",
+  "total_products": 40,
   "products": [
+    {
+      "id": "product_evening_1_20250909_133836",
+      "title": "Amazon Product B09MFQMNF7",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/B09MFQMNF7.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B09MFQMNF7?tag=gadgetvill09f-21",
+      "price": "\u20b9Special Price",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2b50",
+      "category": "electronics",
+      "posted_date": "2025-09-09T19:08:36.112964+05:30",
+      "session_type": "evening",
+      "link_index": 25
+    },
+    {
+      "id": "product_evening_2_20250909_133840",
+      "title": "Amazon Product B07H3K85H5",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/B07H3K85H5.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07H3K85H5?tag=gadgetvill09f-21",
+      "price": "\u20b9Special Price",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2b50",
+      "category": "electronics",
+      "posted_date": "2025-09-09T19:08:40.490645+05:30",
+      "session_type": "evening",
+      "link_index": 26
+    },
     {
       "id": "product_evening_1_20250909_133424",
       "title": "Amazon Product B074DJDCLZ",
