@@ -1,7 +1,22 @@
 {
-  "last_updated": "2025-09-09T19:08:40.623761+05:30",
-  "total_products": 40,
+  "last_updated": "2025-09-09T19:26:55.804246+05:30",
+  "total_products": 3,
+  "daily_target": 6,
   "products": [
+    {
+      "id": "product_evening_1_20250909_135655",
+      "title": "Amazon Product B0DG5TKLGG",
+      "image": "https://m.media-amazon.com/images/I/B0DG5TKLGG._AC_SL1500_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DG5TKLGG?tag=gadgetvill09f-21",
+      "price": "\u20b9Special Price",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2b50",
+      "category": "electronics",
+      "asin": "B0DG5TKLGG",
+      "data_source": "fallback",
+      "posted_date": "2025-09-09T19:26:55.639216+05:30",
+      "session_type": "evening",
+      "link_index": 29
+    },
     {
       "id": "product_evening_1_20250909_133836",
       "title": "Amazon Product B09MFQMNF7",
@@ -14,7 +29,6 @@
       "session_type": "evening",
       "link_index": 25
     },
-    
     {
       "id": "product_001",
       "title": "Sample Product - iPhone 15 Pro Max",
