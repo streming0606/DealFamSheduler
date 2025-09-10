@@ -1,8 +1,22 @@
 {
-  "last_updated": "2025-09-10T18:36:37.083011+05:30",
-  "total_products": 9,
+  "last_updated": "2025-09-10T21:20:51.793323+05:30",
+  "total_products": 10,
   "daily_target": 6,
   "products": [
+    {
+      "id": "product_night_1_20250910_155051",
+      "title": "Cookwell Bullet Mixer Grinder (5 Jars, 3 Blades, Silver) - Copper, 600 Watts - 2 Year Warranty",
+      "image": "https://m.media-amazon.com/images/I/81yobRRV8nL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B097XJQZ8H?tag=gadgetvill09f-21",
+      "price": "\u20b92,199",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B097XJQZ8H",
+      "data_source": "serpapi",
+      "posted_date": "2025-09-10T21:20:51.513329+05:30",
+      "session_type": "night",
+      "link_index": 13
+    },
     {
       "id": "product_morning_1_20250910_130630",
       "title": "RONOSH Weight Lifting Hand Grips,Gym Gloves for Boys and Girls with Strong Wrist Support,Anti-Slip R...",
