@@ -1,8 +1,36 @@
 {
-  "last_updated": "2025-09-10T13:42:13.105553+05:30",
-  "total_products": 7,
+  "last_updated": "2025-09-10T18:36:37.083011+05:30",
+  "total_products": 9,
   "daily_target": 6,
   "products": [
+    {
+      "id": "product_morning_1_20250910_130630",
+      "title": "RONOSH Weight Lifting Hand Grips,Gym Gloves for Boys and Girls with Strong Wrist Support,Anti-Slip R...",
+      "image": "https://m.media-amazon.com/images/I/51mdV6-KfsL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0F5RPZ268?tag=gadgetvill09f-21",
+      "price": "\u20b9220",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B0F5RPZ268",
+      "data_source": "serpapi",
+      "posted_date": "2025-09-10T18:36:30.309802+05:30",
+      "session_type": "morning",
+      "link_index": 9
+    },
+    {
+      "id": "product_morning_2_20250910_130636",
+      "title": "BOLTIX Sealing Clip - Portable Mini Sealing Machine Handheld Packet Sealer for Food, Snacks, Chips, ...",
+      "image": "https://m.media-amazon.com/images/I/51CqqLC8GAL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DBQB4Z1Z?tag=gadgetvill09f-21",
+      "price": "\u20b9299",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "fashion",
+      "asin": "B0DBQB4Z1Z",
+      "data_source": "serpapi",
+      "posted_date": "2025-09-10T18:36:36.936819+05:30",
+      "session_type": "morning",
+      "link_index": 10
+    },
     {
       "id": "product_morning_1_20250910_081206",
       "title": "Libra Roti Maker Machine - Electric Roti Maker with Non-Stick 8.5inch Plates and Durable Handle, Aut...",
