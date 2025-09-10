@@ -1,8 +1,36 @@
 {
-  "last_updated": "2025-09-10T13:19:47.060053+05:30",
-  "total_products": 16,
+  "last_updated": "2025-09-10T13:42:13.105553+05:30",
+  "total_products": 7,
   "daily_target": 6,
   "products": [
+    {
+      "id": "product_morning_1_20250910_081206",
+      "title": "Libra Roti Maker Machine - Electric Roti Maker with Non-Stick 8.5inch Plates and Durable Handle, Aut...",
+      "image": "https://m.media-amazon.com/images/I/71dhE+3McIL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B01N0YEZK8?tag=gadgetvill09f-21",
+      "price": "\u20b92,399",
+      "rating": "\u2b50\u2b50\u2b50\u2606\u2606",
+      "category": "electronics",
+      "asin": "B01N0YEZK8",
+      "data_source": "serpapi",
+      "posted_date": "2025-09-10T13:42:06.402344+05:30",
+      "session_type": "morning",
+      "link_index": 4
+    },
+    {
+      "id": "product_morning_2_20250910_081212",
+      "title": "Tosaa T2STSR Sandwich Gas Non-Stick Aluminium | Compatibility with Gas Stoves | Flame-Proof Design |...",
+      "image": "https://m.media-amazon.com/images/I/61BCPV2Lu4L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07RX42D3D?tag=gadgetvill09f-21",
+      "price": "\u20b9255",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B07RX42D3D",
+      "data_source": "serpapi",
+      "posted_date": "2025-09-10T13:42:12.960806+05:30",
+      "session_type": "morning",
+      "link_index": 5
+    },
     {
       "id": "product_afternoon_1_20250910_074939",
       "title": "Aivin Breeze Badminton Shoes for Men | Non Marking Badminton Shoes | Lightweight & Durable Badminton...",
@@ -59,7 +87,6 @@
       "session_type": "evening",
       "link_index": 17
     },
-   
     {
       "id": "product_001",
       "title": "Sample Product - iPhone 15 Pro Max",
