@@ -1,8 +1,22 @@
 {
-  "last_updated": "2025-09-10T11:40:39.788373+05:30",
-  "total_products": 11,
+  "last_updated": "2025-09-10T12:00:12.361488+05:30",
+  "total_products": 12,
   "daily_target": 6,
   "products": [
+    {
+      "id": "product_evening_1_20250910_063012",
+      "title": "Best Seller Item",
+      "image": "https://m.media-amazon.com/images/I/B07PW9MBXR._AC_SL1500_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07PW9MBXR?tag=gadgetvill09f-21",
+      "price": "\u20b9Special Price",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B07PW9MBXR",
+      "data_source": "fallback",
+      "posted_date": "2025-09-10T12:00:12.159506+05:30",
+      "session_type": "evening",
+      "link_index": 14
+    },
     {
       "id": "product_evening_1_20250910_061039",
       "title": "Best Seller Product - B088JTGHHV",
