@@ -1,8 +1,22 @@
 {
-  "last_updated": "2025-09-10T12:14:11.212810+05:30",
-  "total_products": 13,
+  "last_updated": "2025-09-10T12:22:29.468283+05:30",
+  "total_products": 14,
   "daily_target": 6,
   "products": [
+    {
+      "id": "product_evening_1_20250910_065229",
+      "title": "draval pack of 2 pair Hi-Tech Performance Athletic grip Socks for Men & Women | Crew Length, Anti-Sl...",
+      "image": "https://m.media-amazon.com/images/I/51Y7x2Ea5nL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FMKFLQQB?tag=gadgetvill09f-21",
+      "price": "\u20b9249",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2b50",
+      "category": "electronics",
+      "asin": "B0FMKFLQQB",
+      "data_source": "serpapi",
+      "posted_date": "2025-09-10T12:22:29.247365+05:30",
+      "session_type": "evening",
+      "link_index": 20
+    },
     {
       "id": "product_evening_1_20250910_064411",
       "title": "Nivia Wrist Support with Thumb Loop & Adjustable Velcro Strap for Men & Women, Compression Band for ...",
