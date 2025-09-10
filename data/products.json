@@ -1,8 +1,36 @@
 {
-  "last_updated": "2025-09-10T12:22:29.468283+05:30",
-  "total_products": 14,
+  "last_updated": "2025-09-10T13:19:47.060053+05:30",
+  "total_products": 16,
   "daily_target": 6,
   "products": [
+    {
+      "id": "product_afternoon_1_20250910_074939",
+      "title": "Aivin Breeze Badminton Shoes for Men | Non Marking Badminton Shoes | Lightweight & Durable Badminton...",
+      "image": "https://m.media-amazon.com/images/I/71xZAowrl5L._AC_UY218_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0F5WWQWT8?tag=gadgetvill09f-21",
+      "price": "\u20b9699",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "fashion",
+      "asin": "B0F5WWQWT8",
+      "data_source": "serpapi",
+      "posted_date": "2025-09-10T13:19:39.959363+05:30",
+      "session_type": "afternoon",
+      "link_index": 24
+    },
+    {
+      "id": "product_afternoon_2_20250910_074946",
+      "title": "TIMEX Classics Analog Watch for Men with Round Dial & Water Resistant Man's Wrist Watches",
+      "image": "https://m.media-amazon.com/images/I/71Kx6rgmlRS._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07H3K85H5?tag=gadgetvill09f-21",
+      "price": "\u20b91,193",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "fashion",
+      "asin": "B07H3K85H5",
+      "data_source": "serpapi",
+      "posted_date": "2025-09-10T13:19:46.704622+05:30",
+      "session_type": "afternoon",
+      "link_index": 25
+    },
     {
       "id": "product_evening_1_20250910_065229",
       "title": "draval pack of 2 pair Hi-Tech Performance Athletic grip Socks for Men & Women | Crew Length, Anti-Sl...",
