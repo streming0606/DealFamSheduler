@@ -1,8 +1,22 @@
 {
-  "last_updated": "2025-09-11T18:36:06.369020+05:30",
+  "last_updated": "2025-09-11T21:20:54.083560+05:30",
   "total_products": 16,
   "daily_target": 6,
   "products": [
+    {
+      "id": "product_night_1_20250911_155053",
+      "title": "Pathfinder Flip-Mat Classics: Watch Station",
+      "image": "https://m.media-amazon.com/images/I/91Wx+ubO9YL._AC_UY218_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/1640780602?tag=gadgetvill09f-21",
+      "price": "\u20b9890.25",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "fashion",
+      "asin": "1640780602",
+      "data_source": "serpapi",
+      "posted_date": "2025-09-11T21:20:53.841261+05:30",
+      "session_type": "night",
+      "link_index": 31
+    },
     {
       "id": "product_morning_1_20250911_130559",
       "title": "AGARO Regency Multi Cook Kettle With Steamer, 1.2L Inner Pot, Double Layered Body, Variable Temperat...",
