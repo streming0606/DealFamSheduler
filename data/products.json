@@ -1,8 +1,36 @@
 {
-  "last_updated": "2025-09-10T21:20:51.793323+05:30",
-  "total_products": 10,
+  "last_updated": "2025-09-11T10:18:01.924339+05:30",
+  "total_products": 12,
   "daily_target": 6,
   "products": [
+    {
+      "id": "product_morning_1_20250911_044754",
+      "title": "TIMEWEAR Analog Day Date Functioning Stainless Steel Chain Watch for Men",
+      "image": "https://m.media-amazon.com/images/I/81nj6IlZpVL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07MDGSP8F?tag=gadgetvill09f-21",
+      "price": "\u20b9379",
+      "rating": "\u2b50\u2b50\u2b50\u2606\u2606",
+      "category": "fashion",
+      "asin": "B07MDGSP8F",
+      "data_source": "serpapi",
+      "posted_date": "2025-09-11T10:17:54.995126+05:30",
+      "session_type": "morning",
+      "link_index": 17
+    },
+    {
+      "id": "product_morning_2_20250911_044801",
+      "title": "RC. ROYAL CLASS Men's Thick & Warm Woolen Calf Length Towel Multicolored Socks, Pack of 4, Winter We...",
+      "image": "https://m.media-amazon.com/images/I/91yH6VA5HzL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0BJ9PFBK7?tag=gadgetvill09f-21",
+      "price": "\u20b9210",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B0BJ9PFBK7",
+      "data_source": "serpapi",
+      "posted_date": "2025-09-11T10:18:01.780076+05:30",
+      "session_type": "morning",
+      "link_index": 18
+    },
     {
       "id": "product_night_1_20250910_155051",
       "title": "Cookwell Bullet Mixer Grinder (5 Jars, 3 Blades, Silver) - Copper, 600 Watts - 2 Year Warranty",
