@@ -1,8 +1,36 @@
 {
-  "last_updated": "2025-09-11T13:20:28.825049+05:30",
-  "total_products": 14,
+  "last_updated": "2025-09-11T18:36:06.369020+05:30",
+  "total_products": 16,
   "daily_target": 6,
   "products": [
+    {
+      "id": "product_morning_1_20250911_130559",
+      "title": "AGARO Regency Multi Cook Kettle With Steamer, 1.2L Inner Pot, Double Layered Body, Variable Temperat...",
+      "image": "https://m.media-amazon.com/images/I/71a+McifdvL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B071P7183Y?tag=gadgetvill09f-21",
+      "price": "\u20b91,799",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "home",
+      "asin": "B071P7183Y",
+      "data_source": "serpapi",
+      "posted_date": "2025-09-11T18:35:59.276615+05:30",
+      "session_type": "morning",
+      "link_index": 27
+    },
+    {
+      "id": "product_morning_2_20250911_130606",
+      "title": "Hack Athletics Professional 24\" Flexible Wrist Wraps with Thumb Loops - Wrist Support for Men and Wo...",
+      "image": "https://m.media-amazon.com/images/I/81Cidqy7Z0L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0BSDCFCWJ?tag=gadgetvill09f-21",
+      "price": "\u20b9550",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B0BSDCFCWJ",
+      "data_source": "serpapi",
+      "posted_date": "2025-09-11T18:36:06.029598+05:30",
+      "session_type": "morning",
+      "link_index": 28
+    },
     {
       "id": "product_afternoon_1_20250911_075021",
       "title": "Cookwell Bullet Mixer Grinder (5 Jars, 3 Blades, Silver) - Copper, 600 Watts - 2 Year Warranty",
