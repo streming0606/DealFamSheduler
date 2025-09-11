@@ -226,6 +226,17 @@
       "posted_date": "2025-09-10T12:14:11.030390+05:30",
       "session_type": "evening",
       "link_index": 17
-    }
+    },
+   
+    {
+      "id": "product_001",
+      "title": "Sample Product - iPhone 15 Pro Max",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/sample.jpg",
+      "affiliate_link": "https://amzn.to/sample123",
+      "price": "\u20b999,999",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2b50",
+      "category": "electronics",
+      "posted_date": "2025-09-06T15:23:00+05:30"
+    } 
   ]
 }
