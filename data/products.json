@@ -1,8 +1,36 @@
 {
-  "last_updated": "2025-09-11T10:18:01.924339+05:30",
-  "total_products": 12,
+  "last_updated": "2025-09-11T13:20:28.825049+05:30",
+  "total_products": 14,
   "daily_target": 6,
   "products": [
+    {
+      "id": "product_afternoon_1_20250911_075021",
+      "title": "Cookwell Bullet Mixer Grinder (5 Jars, 3 Blades, Silver) - Copper, 600 Watts - 2 Year Warranty",
+      "image": "https://m.media-amazon.com/images/I/81yobRRV8nL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B097XJQZ8H?tag=gadgetvill09f-21",
+      "price": "\u20b92,199",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B097XJQZ8H",
+      "data_source": "serpapi",
+      "posted_date": "2025-09-11T13:20:21.987047+05:30",
+      "session_type": "afternoon",
+      "link_index": 22
+    },
+    {
+      "id": "product_afternoon_2_20250911_075028",
+      "title": "XTRIM Knee Support for Men - Knee Wraps - Knee Stabilizer - Unisex Knee Bands for Sports, Squats, an...",
+      "image": "https://m.media-amazon.com/images/I/81L21BWFHFL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B074DJDCLZ?tag=gadgetvill09f-21",
+      "price": "\u20b9Special Price",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B074DJDCLZ",
+      "data_source": "serpapi",
+      "posted_date": "2025-09-11T13:20:28.662863+05:30",
+      "session_type": "afternoon",
+      "link_index": 23
+    },
     {
       "id": "product_morning_1_20250911_044754",
       "title": "TIMEWEAR Analog Day Date Functioning Stainless Steel Chain Watch for Men",
