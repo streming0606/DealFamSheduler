@@ -567,128 +567,45 @@ window.renderProducts = function() {
 
 
 
-// FIXED TESTIMONIALS FUNCTIONALITY
-function initializeTestimonials() {
+// SIMPLE TEST VERSION - Add this temporarily
+function testTestimonials() {
     const testimonialsGrid = document.getElementById('testimonials-grid');
-    if (!testimonialsGrid) {
-        console.log('Testimonials grid not found');
-        return;
+    if (testimonialsGrid) {
+        testimonialsGrid.innerHTML = `
+            <div class="testimonial-card">
+                <div class="testimonial-avatar">
+                    <img src="https://via.placeholder.com/80" alt="Test User">
+                </div>
+                <div class="testimonial-info">
+                    <div class="testimonial-name">Test User</div>
+                    <div class="testimonial-location">Test Location</div>
+                </div>
+                <div class="testimonial-rating">
+                    <i class="fas fa-star testimonial-star"></i>
+                    <i class="fas fa-star testimonial-star"></i>
+                    <i class="fas fa-star testimonial-star"></i>
+                    <i class="fas fa-star testimonial-star"></i>
+                    <i class="fas fa-star testimonial-star"></i>
+                </div>
+                <div class="testimonial-text">
+                    This is a test testimonial to check if the section is working properly.
+                </div>
+                <div class="testimonial-savings">
+                    ₹10,000 saved
+                </div>
+            </div>
+        `;
+        console.log('Test testimonial loaded');
+    } else {
+        console.log('Testimonials grid element not found');
     }
-
-    console.log('Initializing testimonials...'); // Debug log
-
-    // Sample testimonials data (embedded in code)
-    const testimonials = [
-        {
-            id: 1,
-            name: "Priya Sharma",
-            location: "Mumbai, Maharashtra",
-            avatar: "images/testimonials/user-1.jpg",
-            rating: 5,
-            text: "Thrift Zone has saved me thousands of rupees! I found my dream laptop at 60% off. The deals are genuine and the website is so easy to use.",
-            savings: "₹15,000 saved"
-        },
-        {
-            id: 2,
-            name: "Rahul Gupta",
-            location: "Delhi, NCR",
-            avatar: "images/testimonials/user-2.jpg",
-            rating: 5,
-            text: "Amazing platform for finding authentic deals! I bought my entire home setup from here. Customer service is excellent and delivery is always on time.",
-            savings: "₹25,000 saved"
-        },
-        {
-            id: 3,
-            name: "Sneha Patel",
-            location: "Ahmedabad, Gujarat",
-            avatar: "images/testimonials/user-3.jpg",
-            rating: 5,
-            text: "I'm addicted to Thrift Zone! Every day there are new deals. I've saved so much money on fashion and electronics. Highly recommended!",
-            savings: "₹12,500 saved"
-        }
-    ];
-
-    // Clear loading state
-    testimonialsGrid.innerHTML = '';
-
-    // Create testimonial cards
-    testimonials.forEach((testimonial, index) => {
-        const card = createTestimonialCard(testimonial);
-        testimonialsGrid.appendChild(card);
-
-        // Animate entrance
-        setTimeout(() => {
-            card.style.opacity = '1';
-            card.style.transform = 'translateY(0)';
-        }, index * 200);
-    });
-
-    console.log('Testimonials loaded successfully'); // Debug log
 }
 
-function createTestimonialCard(testimonial) {
-    const card = document.createElement('div');
-    card.className = 'testimonial-card';
-    card.style.opacity = '0';
-    card.style.transform = 'translateY(30px)';
-    card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-
-    // Generate stars
-    let stars = '';
-    for (let i = 0; i < 5; i++) {
-        stars += `<i class="fas fa-star testimonial-star"></i>`;
-    }
-
-    // Create placeholder image URL
-    const placeholderImage = `data:image/svg+xml;base64,${btoa(`
-        <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="40" cy="40" r="40" fill="#E5E7EB"/>
-            <circle cx="40" cy="30" r="12" fill="#9CA3AF"/>
-            <path d="M20 65 C20 55, 28 50, 40 50 C52 50, 60 55, 60 65" fill="#9CA3AF"/>
-        </svg>
-    `)}`;
-
-    card.innerHTML = `
-        <div class="testimonial-avatar">
-            <img src="${testimonial.avatar}" alt="${testimonial.name}" 
-                 onerror="this.src='${placeholderImage}'">
-        </div>
-        
-        <div class="testimonial-info">
-            <div class="testimonial-name">${testimonial.name}</div>
-            <div class="testimonial-location">${testimonial.location}</div>
-        </div>
-        
-        <div class="testimonial-rating">
-            ${stars}
-        </div>
-        
-        <div class="testimonial-text">
-            ${testimonial.text}
-        </div>
-        
-        <div class="testimonial-savings">
-            ${testimonial.savings}
-        </div>
-    `;
-
-    return card;
-}
-
-// FIXED: Add this to your existing DOMContentLoaded event
+// Test immediately
 document.addEventListener('DOMContentLoaded', function() {
-    console.log('DOM loaded, initializing everything...'); // Debug log
-    
-    loadProducts();
-    setupEventListeners();
-    updateLastRefresh();
-    initializeEnhancements();
-    
-    // Add testimonials initialization with delay
-    setTimeout(() => {
-        initializeTestimonials();
-    }, 1000); // 1 second delay to ensure everything is loaded
+    setTimeout(testTestimonials, 500);
 });
+
 
 
 
