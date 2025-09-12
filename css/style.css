@@ -1555,6 +1555,252 @@ p {
 
 
 
+
+
+
+
+
+/* HORIZONTAL SCROLL INDICATOR */
+.scroll-indicator {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 16px;
+    color: #6b7280;
+    font-size: 0.85rem;
+    padding: 8px 16px;
+    background: rgba(40, 116, 240, 0.05);
+    border-radius: 20px;
+    width: fit-content;
+    margin: 0 auto 16px auto;
+}
+
+@media (max-width: 768px) {
+    .scroll-indicator {
+        display: flex;
+    }
+    
+    .desktop-only {
+        display: none;
+    }
+}
+
+/* VIEW ALL BUTTON */
+.deals-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.view-all-btn {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: transform 0.2s ease;
+}
+
+.view-all-btn:hover {
+    transform: translateY(-2px);
+}
+
+/* ALL DEALS PAGE STYLES */
+.all-deals-page {
+    padding-top: 120px;
+    min-height: 100vh;
+}
+
+.page-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+}
+
+.breadcrumb a {
+    color: #2874F0;
+    text-decoration: none;
+}
+
+.breadcrumb i {
+    color: #6b7280;
+    font-size: 0.7rem;
+}
+
+.page-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 12px;
+    color: #1f2937;
+}
+
+.page-subtitle {
+    font-size: 1.1rem;
+    color: #6b7280;
+    margin-bottom: 30px;
+}
+
+.deals-stats {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 20px;
+}
+
+.deals-stats .stat {
+    text-align: center;
+    padding: 20px;
+    background: rgba(40, 116, 240, 0.05);
+    border-radius: 12px;
+    min-width: 120px;
+}
+
+.deals-stats .stat-number {
+    display: block;
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: #2874F0;
+    margin-bottom: 4px;
+}
+
+.deals-stats .stat-label {
+    font-size: 0.9rem;
+    color: #6b7280;
+    font-weight: 500;
+}
+
+/* DEALS FILTERS */
+.deals-filters {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    margin-bottom: 30px;
+    border: 1px solid #e5e7eb;
+}
+
+.filter-row {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.filter-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.filter-group label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #374151;
+}
+
+.filter-select {
+    padding: 8px 12px;
+    border: 2px solid #e5e7eb;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    background: white;
+    color: #374151;
+    cursor: pointer;
+}
+
+.filter-select:focus {
+    border-color: #2874F0;
+    outline: none;
+}
+
+.view-toggle-btn {
+    background: #f3f4f6;
+    border: 2px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 8px 12px;
+    cursor: pointer;
+    color: #6b7280;
+    font-size: 1rem;
+}
+
+.view-toggle-btn:hover {
+    border-color: #2874F0;
+    color: #2874F0;
+}
+
+/* ALL PRODUCTS GRID - VERTICAL LAYOUT */
+.all-products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 24px;
+    margin-bottom: 40px;
+}
+
+@media (max-width: 768px) {
+    .all-products-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+    
+    .page-title {
+        font-size: 2rem;
+    }
+    
+    .deals-stats {
+        flex-direction: column;
+        gap: 16px;
+    }
+    
+    .filter-row {
+        flex-direction: column;
+        gap: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .all-products-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Deals Section */
 .deals {
   padding: var(--spacing-3xl) 0;
