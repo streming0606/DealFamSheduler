@@ -1,8 +1,36 @@
 {
-  "last_updated": "2025-09-11T21:20:54.083560+05:30",
-  "total_products": 16,
+  "last_updated": "2025-09-12T10:16:27.286377+05:30",
+  "total_products": 19,
   "daily_target": 6,
   "products": [
+    {
+      "id": "product_morning_1_20250912_044620",
+      "title": "Boldfit Men's Black Slim Fit Track Pants - M (32 inches) - Yoga, Running, Workout & Training - Summe...",
+      "image": "https://m.media-amazon.com/images/I/519X02vsiPL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CGNH3B74?tag=gadgetvill09f-21",
+      "price": "\u20b9899",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B0CGNH3B74",
+      "data_source": "serpapi",
+      "posted_date": "2025-09-12T10:16:20.683483+05:30",
+      "session_type": "morning",
+      "link_index": 35
+    },
+    {
+      "id": "product_morning_2_20250912_044627",
+      "title": "Puma Mens Dazzler Sneaker",
+      "image": "https://m.media-amazon.com/images/I/51GOpp8rAJL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B09RGBXYSN?tag=gadgetvill09f-21",
+      "price": "\u20b91,599",
+      "rating": "\u2b50\u2b50\u2b50\u2606\u2606",
+      "category": "electronics",
+      "asin": "B09RGBXYSN",
+      "data_source": "serpapi",
+      "posted_date": "2025-09-12T10:16:27.011800+05:30",
+      "session_type": "morning",
+      "link_index": 36
+    },
     {
       "id": "product_night_1_20250911_155053",
       "title": "Pathfinder Flip-Mat Classics: Watch Station",
@@ -227,7 +255,6 @@
       "session_type": "evening",
       "link_index": 17
     },
-   
     {
       "id": "product_001",
       "title": "Sample Product - iPhone 15 Pro Max",
@@ -237,6 +264,6 @@
       "rating": "\u2b50\u2b50\u2b50\u2b50\u2b50",
       "category": "electronics",
       "posted_date": "2025-09-06T15:23:00+05:30"
-    } 
+    }
   ]
 }
