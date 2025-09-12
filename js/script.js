@@ -265,47 +265,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-
-
-
-// Navigation to All Deals Page
-function openAllDealsPage() {
-    window.location.href = 'deals.html';
-}
-
-// Enhanced renderProducts for horizontal scroll
-const originalRenderProducts = window.renderProducts;
-window.renderProducts = function() {
-    originalRenderProducts.call(this);
-    
-    // Add scroll indicators for mobile
-    if (window.innerWidth <= 768) {
-        addScrollIndicators();
-    }
-};
-
-function addScrollIndicators() {
-    const scrollIndicator = document.querySelector('.scroll-indicator');
-    if (scrollIndicator) {
-        scrollIndicator.style.display = 'flex';
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // Enhanced Product Card Functions
 function createProductCard(product, index = 0) {
     const card = document.createElement('div');
