@@ -563,6 +563,63 @@ window.renderProducts = function() {
 
 
 
+// Updated renderProducts function to show "View All" after 10 products
+function renderProducts() {
+    const filteredProducts = getFilteredProducts();
+    const sortedProducts = sortProducts(filteredProducts);
+    const productsToShow = sortedProducts.slice(0, displayedProducts + productsPerPage);
+    
+    if (productsToShow.length === 0) {
+        showEmptyState();
+        return;
+    }
+    
+    productsContainer.innerHTML = '';
+    
+    // Show maximum 10 products on homepage
+    const homepageLimit = 10;
+    const productsForHomepage = productsToShow.slice(0, homepageLimit);
+    
+    productsForHomepage.forEach((product, index) => {
+        const productCard = createProductCard(product, index);
+        productsContainer.appendChild(productCard);
+        
+        // Add entrance animation
+        setTimeout(() => {
+            productCard.style.opacity = '1';
+            productCard.style.transform = 'translateY(0)';
+        }, index * 50);
+    });
+    
+    displayedProducts = productsForHomepage.length;
+    
+    // Show "View All Deals" button if there are more than 10 products
+    const viewAllSection = document.getElementById('view-all-deals');
+    if (viewAllSection && sortedProducts.length > homepageLimit) {
+        viewAllSection.style.display = 'block';
+        loadMoreBtn.style.display = 'none'; // Hide load more on homepage
+    } else if (viewAllSection) {
+        viewAllSection.style.display = 'none';
+        // Show load more if less than 10 products but more available
+        if (displayedProducts < filteredProducts.length) {
+            loadMoreBtn.style.display = 'block';
+        } else {
+            loadMoreBtn.style.display = 'none';
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
