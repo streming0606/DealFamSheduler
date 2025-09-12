@@ -567,6 +567,182 @@ window.renderProducts = function() {
 
 
 
+// Testimonials Data and Functionality
+class TestimonialsManager {
+    constructor() {
+        this.testimonials = [
+            {
+                id: 1,
+                name: "Priya Sharma",
+                location: "Mumbai, Maharashtra",
+                avatar: "images/testimonials/user-1.jpg",
+                rating: 5,
+                text: "Thrift Zone has saved me thousands of rupees! I found my dream laptop at 60% off. The deals are genuine and the website is so easy to use.",
+                savings: "₹15,000 saved"
+            },
+            {
+                id: 2,
+                name: "Rahul Gupta",
+                location: "Delhi, NCR",
+                avatar: "images/testimonials/user-2.jpg",
+                rating: 5,
+                text: "Amazing platform for finding authentic deals! I bought my entire home setup from here. Customer service is excellent and delivery is always on time.",
+                savings: "₹25,000 saved"
+            },
+            {
+                id: 3,
+                name: "Sneha Patel",
+                location: "Ahmedabad, Gujarat",
+                avatar: "images/testimonials/user-3.jpg",
+                rating: 5,
+                text: "I'm addicted to Thrift Zone! Every day there are new deals. I've saved so much money on fashion and electronics. Highly recommended!",
+                savings: "₹12,500 saved"
+            },
+            {
+                id: 4,
+                name: "Amit Kumar",
+                location: "Bangalore, Karnataka",
+                avatar: "images/testimonials/user-4.jpg",
+                rating: 5,
+                text: "Best deals website ever! Found branded clothes at unbelievable prices. The blog section also has great shopping tips.",
+                savings: "₹8,000 saved"
+            },
+            {
+                id: 5,
+                name: "Kavya Reddy",
+                location: "Hyderabad, Telangana",
+                avatar: "images/testimonials/user-5.jpg",
+                rating: 4,
+                text: "Thrift Zone is my go-to for online shopping. The deals are updated regularly and I always find what I'm looking for at great prices.",
+                savings: "₹18,000 saved"
+            },
+            {
+                id: 6,
+                name: "Arjun Singh",
+                location: "Pune, Maharashtra",
+                avatar: "images/testimonials/user-6.jpg",
+                rating: 5,
+                text: "Incredible savings on every purchase! The website design is clean and the deals are categorized perfectly. Thank you Thrift Zone team!",
+                savings: "₹22,000 saved"
+            }
+        ];
+        this.currentTestimonials = [];
+        this.rotationInterval = null;
+    }
+
+    init() {
+        this.selectRandomTestimonials();
+        this.renderTestimonials();
+        this.startRotation();
+    }
+
+    selectRandomTestimonials() {
+        // Select 3 random testimonials
+        const shuffled = [...this.testimonials].sort(() => 0.5 - Math.random());
+        this.currentTestimonials = shuffled.slice(0, 3);
+    }
+
+    renderTestimonials() {
+        const container = document.getElementById('testimonials-grid');
+        if (!container) return;
+
+        container.innerHTML = '';
+
+        this.currentTestimonials.forEach((testimonial, index) => {
+            const testimonialCard = this.createTestimonialCard(testimonial);
+            container.appendChild(testimonialCard);
+
+            // Animate entrance
+            setTimeout(() => {
+                testimonialCard.style.opacity = '1';
+                testimonialCard.style.transform = 'translateY(0)';
+            }, index * 200);
+        });
+    }
+
+    createTestimonialCard(testimonial) {
+        const card = document.createElement('div');
+        card.className = 'testimonial-card';
+        card.style.opacity = '0';
+        card.style.transform = 'translateY(30px)';
+        card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+
+        // Generate stars
+        const stars = Array.from({length: 5}, (_, i) => 
+            `<i class="fas fa-star testimonial-star" style="--star-index: ${i}"></i>`
+        ).join('');
+
+        card.innerHTML = `
+            <div class="testimonial-avatar">
+                <img src="${testimonial.avatar}" alt="${testimonial.name}" 
+                     onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAiIGhlaWdodD0iODAiIHZpZXdCb3g9IjAgMCA4MCA4MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iNDAiIGN5PSI0MCIgcj0iNDAiIGZpbGw9IiNGM0Y0RjYiLz4KPHN2ZyB4PSIyMCIgeT0iMjAiIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSIjOUI5QkE0Ij4KPHBhdGggZD0iTTEyIDEyYzIuMjEgMCA0LTEuNzkgNC00cy0xLjc5LTQtNC00LTQgMS43OS00IDQgMS43OSA0IDQgNHptMCAyYy0yLjY3IDAtOCAxLjM0LTggNHYyaDE2di0yYzAtMi42Ni01LjMzLTQtOC00eiIvPgo8L3N2Zz4KPC9zdmc+'">
+            </div>
+            
+            <div class="testimonial-info">
+                <div class="testimonial-name">${testimonial.name}</div>
+                <div class="testimonial-location">${testimonial.location}</div>
+            </div>
+            
+            <div class="testimonial-rating">
+                ${stars}
+            </div>
+            
+            <div class="testimonial-text">
+                ${testimonial.text}
+            </div>
+            
+            <div class="testimonial-savings">
+                ${testimonial.savings}
+            </div>
+        `;
+
+        return card;
+    }
+
+    startRotation() {
+        // Rotate testimonials every 8 seconds
+        this.rotationInterval = setInterval(() => {
+            this.selectRandomTestimonials();
+            this.renderTestimonials();
+        }, 8000);
+    }
+
+    stopRotation() {
+        if (this.rotationInterval) {
+            clearInterval(this.rotationInterval);
+            this.rotationInterval = null;
+        }
+    }
+}
+
+// Initialize testimonials
+function initializeTestimonials() {
+    const testimonialsSection = document.getElementById('testimonials');
+    if (testimonialsSection) {
+        window.testimonialsManager = new TestimonialsManager();
+        window.testimonialsManager.init();
+
+        // Pause rotation on hover
+        testimonialsSection.addEventListener('mouseenter', () => {
+            window.testimonialsManager.stopRotation();
+        });
+
+        testimonialsSection.addEventListener('mouseleave', () => {
+            window.testimonialsManager.startRotation();
+        });
+    }
+}
+
+// Add to your existing DOMContentLoaded event
+document.addEventListener('DOMContentLoaded', function() {
+    loadProducts();
+    setupEventListeners();
+    updateLastRefresh();
+    initializeEnhancements();
+    initializeBannerSlider();
+    setupEnhancedNavigation();
+    initializeTestimonials(); // Add this line
+});
 
 
 
