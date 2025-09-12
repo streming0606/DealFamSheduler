@@ -1,0 +1,24 @@
+{
+  "testimonials": [
+    {
+      "id": 1,
+      "name": "Priya Sharma",
+      "location": "Mumbai, Maharashtra",
+      "avatar": "images/testimonials/user-1.jpg",
+      "rating": 5,
+      "text": "Thrift Zone has saved me thousands of rupees! I found my dream laptop at 60% off. The deals are genuine and the website is so easy to use.",
+      "savings": "₹15,000 saved",
+      "verified": true
+    },
+    {
+      "id": 2,
+      "name": "Rahul Gupta",
+      "location": "Delhi, NCR", 
+      "avatar": "images/testimonials/user-2.jpg",
+      "rating": 5,
+      "text": "Amazing platform for finding authentic deals! I bought my entire home setup from here. Customer service is excellent and delivery is always on time.",
+      "savings": "₹25,000 saved",
+      "verified": true
+    }
+  ]
+}
