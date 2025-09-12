@@ -1,8 +1,22 @@
 {
-  "last_updated": "2025-09-12T18:34:49.701129+05:30",
-  "total_products": 23,
+  "last_updated": "2025-09-12T21:20:29.252475+05:30",
+  "total_products": 24,
   "daily_target": 6,
   "products": [
+    {
+      "id": "product_night_1_20250912_155029",
+      "title": "SALTY ALPHA Anti Tarnish Stainless Steel Rocky Locket Neck Chain for Men | Stylish Pendant Necklace ...",
+      "image": "https://m.media-amazon.com/images/I/61fK6K4if3L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0C8KS8ZBC?tag=gadgetvill09f-21",
+      "price": "\u20b9399",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B0C8KS8ZBC",
+      "data_source": "serpapi",
+      "posted_date": "2025-09-12T21:20:29.082693+05:30",
+      "session_type": "night",
+      "link_index": 49
+    },
     {
       "id": "product_morning_1_20250912_130442",
       "title": "XTRIM X-Macho Leather Gym Gloves for Men & Women with Wrist Support Accessories for Weightlifting, H...",
