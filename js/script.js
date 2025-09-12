@@ -265,17 +265,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-
 // Enhanced Product Card Functions
+
 function createProductCard(product, index = 0) {
     const card = document.createElement('div');
     card.className = 'product-card';
     card.setAttribute('data-category', product.category);
-    card.style.opacity = '0';
-    card.style.transform = 'translateY(20px)';
-    card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
     
-    // Format date (your original logic)
+    // Format date
     const date = new Date(product.posted_date);
     const formattedDate = date.toLocaleDateString('en-IN');
     
@@ -297,7 +294,7 @@ function createProductCard(product, index = 0) {
             </div>
             
             <div class="product-top-actions">
-                <button class="action-btn wishlist-btn" onclick="toggleWishlist('${product.id}', this)" title="Add to wishlist">
+                <button class="wishlist-btn" onclick="toggleWishlist('${product.id}', this)" title="Add to wishlist">
                     <i class="far fa-heart"></i>
                 </button>
             </div>
@@ -310,50 +307,46 @@ function createProductCard(product, index = 0) {
             
             <div class="product-pricing">
                 <div class="price-section">
-                    <span class="price-current">
-                        <span class="currency">₹</span>${enhancedData.salePrice}
-                    </span>
+                    <span class="price-current">₹${enhancedData.salePrice}</span>
                     <span class="price-original">₹${enhancedData.originalPrice}</span>
                     <span class="price-discount-badge">${enhancedData.discountPercent}% OFF</span>
                 </div>
-                <div class="savings-amount">
-                    You Save ₹${enhancedData.savings}
-                </div>
+                <div class="savings-amount">You Save ₹${enhancedData.savings}</div>
             </div>
             
             <div class="product-urgency">
-                ${enhancedData.isLowStock ? `<div class="stock-indicator">Only ${enhancedData.stockCount} left!</div>` : ''}
-                ${enhancedData.isLimitedTime ? '<div class="limited-time-indicator">Limited Time Offer</div>' : ''}
+                ${enhancedData.isLowStock ? `<span class="stock-indicator">Only ${enhancedData.stockCount} left!</span>` : ''}
+                ${enhancedData.isLimitedTime ? '<span class="limited-time-indicator">Limited Time Offer</span>' : ''}
             </div>
             
             <div class="deal-countdown">
-                <div class="countdown-label">Deal Expires In</div>
+                <span class="countdown-label">Expires:</span>
                 <div class="countdown-timer" data-product-id="${product.id}">
                     <div class="countdown-unit">
-                        <div class="countdown-number" data-hours>02</div>
-                        <div class="countdown-text">Hours</div>
+                        <span class="countdown-number" data-hours>02</span>
+                        <span class="countdown-text">h</span>
                     </div>
                     <div class="countdown-unit">
-                        <div class="countdown-number" data-minutes>00</div>
-                        <div class="countdown-text">Mins</div>
+                        <span class="countdown-number" data-minutes>00</span>
+                        <span class="countdown-text">m</span>
                     </div>
                     <div class="countdown-unit">
-                        <div class="countdown-number" data-seconds>00</div>
-                        <div class="countdown-text">Secs</div>
+                        <span class="countdown-number" data-seconds>00</span>
+                        <span class="countdown-text">s</span>
                     </div>
                 </div>
             </div>
             
             <div class="product-social">
                 <div class="social-actions">
-                    <div class="social-action likes-action" onclick="toggleLike('${product.id}', this)">
+                    <button class="social-action likes-action" onclick="toggleLike('${product.id}', this)">
                         <i class="far fa-thumbs-up"></i>
                         <span>${enhancedData.likes}</span>
-                    </div>
-                    <div class="social-action" onclick="shareProduct('${product.id}')">
+                    </button>
+                    <button class="social-action" onclick="shareProduct('${product.id}')">
                         <i class="fas fa-share"></i>
                         <span>${enhancedData.shares}</span>
-                    </div>
+                    </button>
                 </div>
             </div>
             
@@ -363,16 +356,13 @@ function createProductCard(product, index = 0) {
                    class="deal-btn" 
                    onclick="trackClick('${product.id}')"
                    rel="noopener noreferrer">
-                    <div>
-                        <div class="deal-btn-text">
-                            <i class="fas fa-bolt"></i>
-                            Grab Deal Now
-                        </div>
-                        <div class="deal-btn-subtext">Free Delivery</div>
+                    <div class="deal-btn-text">
+                        <span><i class="fas fa-bolt"></i> Grab Deal Now</span>
+                        <span class="deal-btn-subtext">Free Delivery</span>
                     </div>
                 </a>
                 <div class="secondary-actions">
-                    <button class="quick-action-btn" onclick="addToWishlist('${product.id}')" title="Save for later">
+                    <button class="quick-action-btn" onclick="addToWishlist('${product.id}')" title="Save">
                         <i class="fas fa-bookmark"></i>
                     </button>
                 </div>
@@ -383,172 +373,6 @@ function createProductCard(product, index = 0) {
     return card;
 }
 
-// Enhanced product data generator
-function enhanceProductData(product) {
-    // Extract current price from product.price
-    const currentPriceMatch = product.price.match(/₹(\d+,?\d*)/);
-    const currentPrice = currentPriceMatch ? parseInt(currentPriceMatch[1].replace(',', '')) : 999;
-    
-    // Calculate enhanced pricing
-    const markup = 1.3 + (Math.random() * 0.7); // 30-100% markup for original price
-    const originalPrice = Math.round(currentPrice * markup);
-    const savings = originalPrice - currentPrice;
-    const discountPercent = Math.round((savings / originalPrice) * 100);
-    
-    // Generate random social proof
-    const likes = Math.floor(Math.random() * 500) + 10; // 10-510 likes
-    const shares = Math.floor(Math.random() * 100) + 5; // 5-105 shares
-    
-    // Random features
-    const isLimitedTime = Math.random() > 0.6; // 40% chance
-    const isLowStock = Math.random() > 0.7; // 30% chance
-    const stockCount = isLowStock ? Math.floor(Math.random() * 5) + 1 : Math.floor(Math.random() * 20) + 10;
-    
-    return {
-        salePrice: currentPrice.toLocaleString('en-IN'),
-        originalPrice: originalPrice.toLocaleString('en-IN'),
-        savings: savings.toLocaleString('en-IN'),
-        discountPercent,
-        likes,
-        shares,
-        isLimitedTime,
-        isLowStock,
-        stockCount
-    };
-}
-
-// Countdown timer functionality
-function initializeCountdowns() {
-    const countdowns = document.querySelectorAll('.countdown-timer');
-    
-    countdowns.forEach(countdown => {
-        const productId = countdown.dataset.productId;
-        startCountdown(countdown, 2 * 60 * 60 * 1000); // 2 hours in milliseconds
-    });
-}
-
-function startCountdown(element, duration) {
-    const hoursEl = element.querySelector('[data-hours]');
-    const minutesEl = element.querySelector('[data-minutes]');
-    const secondsEl = element.querySelector('[data-seconds]');
-    
-    let timeLeft = duration;
-    
-    const timer = setInterval(() => {
-        const hours = Math.floor(timeLeft / (1000 * 60 * 60));
-        const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
-        const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
-        
-        hoursEl.textContent = hours.toString().padStart(2, '0');
-        minutesEl.textContent = minutes.toString().padStart(2, '0');
-        secondsEl.textContent = seconds.toString().padStart(2, '0');
-        
-        timeLeft -= 1000;
-        
-        if (timeLeft < 0) {
-            clearInterval(timer);
-            // Handle expired deal
-            element.closest('.product-card').classList.add('deal-expired');
-            element.innerHTML = '<div style="color: #ef4444; font-weight: 700;">Deal Expired</div>';
-        }
-    }, 1000);
-}
-
-// Social interaction functions
-function toggleLike(productId, element) {
-    const isLiked = element.classList.contains('active');
-    const countSpan = element.querySelector('span');
-    const currentCount = parseInt(countSpan.textContent);
-    
-    if (isLiked) {
-        element.classList.remove('active');
-        element.querySelector('i').className = 'far fa-thumbs-up';
-        countSpan.textContent = currentCount - 1;
-    } else {
-        element.classList.add('active');
-        element.querySelector('i').className = 'fas fa-thumbs-up';
-        countSpan.textContent = currentCount + 1;
-        element.classList.add('action-success');
-        setTimeout(() => element.classList.remove('action-success'), 600);
-    }
-    
-    // Store like state
-    const likes = JSON.parse(localStorage.getItem('thriftzone_likes') || '{}');
-    likes[productId] = !isLiked;
-    localStorage.setItem('thriftzone_likes', JSON.stringify(likes));
-}
-
-// Enhanced share function
-function shareProduct(productId) {
-    const product = allProducts.find(p => p.id === productId);
-    if (!product) return;
-    
-    const shareData = {
-        title: `Amazing Deal: ${product.title}`,
-        text: `🔥 ${product.title}\n💰 ${product.price}\n⚡ Limited Time Offer!`,
-        url: product.affiliate_link
-    };
-    
-    if (navigator.share && navigator.canShare(shareData)) {
-        navigator.share(shareData);
-    } else {
-        // Fallback - copy to clipboard
-        const shareText = `${shareData.text}\n${shareData.url}`;
-        navigator.clipboard.writeText(shareText).then(() => {
-            showNotification('🎉 Deal link copied to clipboard!');
-            
-            // Increment share count
-            const shareBtn = event.target.closest('.social-action');
-            const countSpan = shareBtn.querySelector('span');
-            countSpan.textContent = parseInt(countSpan.textContent) + 1;
-            
-            shareBtn.classList.add('action-success');
-            setTimeout(() => shareBtn.classList.remove('action-success'), 600);
-        });
-    }
-}
-
-// Initialize enhanced features
-function initializeEnhancedCards() {
-    // Initialize countdowns after products are rendered
-    setTimeout(() => {
-        initializeCountdowns();
-        loadUserPreferences();
-    }, 500);
-}
-
-// Load user preferences for likes/saves
-function loadUserPreferences() {
-    const likes = JSON.parse(localStorage.getItem('thriftzone_likes') || '{}');
-    const wishlist = JSON.parse(localStorage.getItem('thriftzone_wishlist') || '[]');
-    
-    // Apply saved likes
-    Object.keys(likes).forEach(productId => {
-        if (likes[productId]) {
-            const likeBtn = document.querySelector(`[onclick*="${productId}"].likes-action`);
-            if (likeBtn) {
-                likeBtn.classList.add('active');
-                likeBtn.querySelector('i').className = 'fas fa-thumbs-up';
-            }
-        }
-    });
-    
-    // Apply saved wishlist items
-    wishlist.forEach(productId => {
-        const wishlistBtn = document.querySelector(`[onclick*="${productId}"].wishlist-btn`);
-        if (wishlistBtn) {
-            wishlistBtn.classList.add('active');
-            wishlistBtn.querySelector('i').className = 'fas fa-heart';
-        }
-    });
-}
-
-// Add to existing renderProducts function
-const originalRenderProducts = window.renderProducts;
-window.renderProducts = function() {
-    originalRenderProducts.call(this);
-    initializeEnhancedCards();
-};
 
 
 
