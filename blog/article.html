@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="article-title">Article Title - Thrift Zone Blog</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/theme.css">
+    <link rel="stylesheet" href="css/blog.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <meta name="description" id="article-description" content="">
+    <meta property="og:title" id="og-title" content="">
+    <meta property="og:description" id="og-description" content="">
+    <meta property="og:image" id="og-image" content="">
+    <meta property="og:url" id="og-url" content="">
+</head>
+<body>
+    <!-- Header (Same as blog index) -->
+    <header class="header">
+        <div class="container">
+            <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="logo">
+                <img src="../images/logo-icon.png" alt="Thrift Zone" class="logo-icon">
+                <div class="logo-text">
+                    <h1>Thrift Zone</h1>
+                    <span class="tagline">Smart Shopping Hub</span>
+                </div>
+            </div>
+
+            <div class="search-container">
+                <div class="search-box">
+                    <input type="text" id="search-input" placeholder="Search articles..." autocomplete="off">
+                    <button class="search-btn" id="search-btn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+
+            <nav class="nav">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="../index.html#categories" class="nav-link">Categories</a>
+                <a href="../index.html#deals" class="nav-link">Today's Deals</a>
+                <a href="index.html" class="nav-link active">Blog</a>
+                <a href="../index.html#about" class="nav-link">About</a>
+            </nav>
+
+            <div class="header-actions">
+                <button class="theme-toggle" id="theme-toggle" title="Toggle Dark Mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="live-indicator">
+                    <span class="pulse"></span>
+                    <span class="text">Live</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Article Content -->
+    <main class="article-main">
+        <div class="container">
+            <!-- Breadcrumbs -->
+            <nav class="breadcrumbs">
+                <a href="../index.html">Home</a>
+                <span class="separator">›</span>
+                <a href="index.html">Blog</a>
+                <span class="separator">›</span>
+                <span id="current-article">Article</span>
+            </nav>
+
+            <article class="article-content">
+                <!-- Article Header -->
+                <header class="article-header">
+                    <div class="article-category" id="article-category-badge">
+                        Loading...
+                    </div>
+                    <h1 class="article-title" id="main-article-title">
+                        Loading Article...
+                    </h1>
+                    <div class="article-meta">
+                        <div class="article-author">
+                            <img src="../images/author-avatar.png" alt="Author" class="author-avatar">
+                            <span class="author-name" id="article-author">Thrift Zone Team</span>
+                        </div>
+                        <div class="article-date">
+                            <i class="fas fa-calendar"></i>
+                            <span id="article-date">Loading...</span>
+                        </div>
+                        <div class="article-reading-time">
+                            <i class="fas fa-clock"></i>
+                            <span id="reading-time">5 min read</span>
+                        </div>
+                    </div>
+                    <div class="article-share">
+                        <span class="share-label">Share:</span>
+                        <button class="share-btn facebook" onclick="shareOnFacebook()">
+                            <i class="fab fa-facebook"></i>
+                        </button>
+                        <button class="share-btn twitter" onclick="shareOnTwitter()">
+                            <i class="fab fa-twitter"></i>
+                        </button>
+                        <button class="share-btn whatsapp" onclick="shareOnWhatsApp()">
+                            <i class="fab fa-whatsapp"></i>
+                        </button>
+                        <button class="share-btn copy" onclick="copyArticleLink()">
+                            <i class="fas fa-link"></i>
+                        </button>
+                    </div>
+                </header>
+
+                <!-- Article Featured Image -->
+                <div class="article-image">
+                    <img id="article-featured-image" src="" alt="" loading="eager">
+                </div>
+
+                <!-- Article Body -->
+                <div class="article-body" id="article-body">
+                    <!-- Content will be loaded here -->
+                </div>
+
+                <!-- Article Tags -->
+                <div class="article-tags" id="article-tags">
+                    <!-- Tags will be loaded here -->
+                </div>
+
+                <!-- Article Actions -->
+                <div class="article-actions">
+                    <button class="action-btn like-btn" onclick="likeArticle()">
+                        <i class="far fa-heart"></i>
+                        <span id="like-count">0</span>
+                    </button>
+                    <button class="action-btn share-btn" onclick="shareArticle()">
+                        <i class="fas fa-share"></i>
+                        Share
+                    </button>
+                    <button class="action-btn bookmark-btn" onclick="bookmarkArticle()">
+                        <i class="far fa-bookmark"></i>
+                        Save
+                    </button>
+                </div>
+            </article>
+
+            <!-- Related Articles -->
+            <section class="related-articles">
+                <h3>Related Articles</h3>
+                <div class="related-articles-grid" id="related-articles-grid">
+                    <!-- Related articles will be loaded here -->
+                </div>
+            </section>
+
+            <!-- Comments Section -->
+            <section class="comments-section">
+                <h3>Comments</h3>
+                <div class="comment-form">
+                    <textarea placeholder="Share your thoughts about this article..." id="comment-text"></textarea>
+                    <button class="submit-comment-btn" onclick="submitComment()">
+                        <i class="fas fa-paper-plane"></i>
+                        Post Comment
+                    </button>
+                </div>
+                <div class="comments-list" id="comments-list">
+                    <!-- Comments will be loaded here -->
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer (Same as blog index) -->
+    <footer class="footer">
+        <!-- Same footer content -->
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../js/script.js"></script>
+    <script src="../js/theme.js"></script>
+    <script src="js/blog.js"></script>
+    <script>
+        // Load specific article on page load
+        document.addEventListener('DOMContentLoaded', () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const articleId = urlParams.get('id');
+            if (articleId) {
+                loadArticle(articleId);
+            }
+        });
+    </script>
+</body>
+</html>
