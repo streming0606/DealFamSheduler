@@ -1,8 +1,36 @@
 {
-  "last_updated": "2025-09-12T10:16:27.286377+05:30",
-  "total_products": 19,
+  "last_updated": "2025-09-12T13:20:26.991099+05:30",
+  "total_products": 21,
   "daily_target": 6,
   "products": [
+    {
+      "id": "product_afternoon_1_20250912_075019",
+      "title": "Seznik Sealing Machine for Food Packets - Portable Handheld Sealing, Snacks, Chips, Fresh Storage - ...",
+      "image": "https://m.media-amazon.com/images/I/618nGDemysL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CZNL15LF?tag=gadgetvill09f-21",
+      "price": "\u20b9346",
+      "rating": "\u2b50\u2b50\u2b50\u2606\u2606",
+      "category": "home",
+      "asin": "B0CZNL15LF",
+      "data_source": "serpapi",
+      "posted_date": "2025-09-12T13:20:19.794694+05:30",
+      "session_type": "afternoon",
+      "link_index": 40
+    },
+    {
+      "id": "product_afternoon_2_20250912_075026",
+      "title": "Atom 10Kg Kitchen Weight Machine 6 Months Manufacturer Warranty, Digital Scale with LCD Display, Sca...",
+      "image": "https://m.media-amazon.com/images/I/71775fRr+gL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B083C6XMKQ?tag=gadgetvill09f-21",
+      "price": "\u20b9189",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "fashion",
+      "asin": "B083C6XMKQ",
+      "data_source": "serpapi",
+      "posted_date": "2025-09-12T13:20:26.797720+05:30",
+      "session_type": "afternoon",
+      "link_index": 41
+    },
     {
       "id": "product_morning_1_20250912_044620",
       "title": "Boldfit Men's Black Slim Fit Track Pants - M (32 inches) - Yoga, Running, Workout & Training - Summe...",
