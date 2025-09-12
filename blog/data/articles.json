@@ -1,0 +1,110 @@
+{
+  "articles": [
+    {
+      "id": "1",
+      "title": "Top 10 Amazon Deals This Week - Save Up to 70%",
+      "excerpt": "Discover the most amazing deals on Amazon this week including electronics, fashion, home appliances and more with incredible discounts.",
+      "content": "<h2>Amazing Deals You Can't Miss</h2><p>This week brings some of the most incredible deals we've seen all year. Whether you're looking for electronics, fashion, or home essentials, there's something for everyone.</p><h3>Top Deal Categories</h3><ul><li><strong>Electronics:</strong> Up to 60% off on smartphones, laptops, and accessories</li><li><strong>Fashion:</strong> Seasonal clearance with discounts up to 70%</li><li><strong>Home & Kitchen:</strong> Essential appliances at unbeatable prices</li><li><strong>Health & Beauty:</strong> Premium products at budget-friendly rates</li></ul><blockquote>\"The key to great deals is timing and knowing where to look. Our team scouts thousands of products daily to bring you only the best offers.\"</blockquote><h3>How to Maximize Your Savings</h3><p>To get the most out of these deals, we recommend:</p><ol><li>Compare prices across different platforms</li><li>Check for additional coupon codes</li><li>Read customer reviews before purchasing</li><li>Consider the total cost including shipping</li></ol><p>Remember, the best deals don't last long, so make sure to grab them while they're available!</p>",
+      "category": "deals",
+      "date": "2025-09-12",
+      "readTime": 5,
+      "image": "../images/blog/deals-week.jpg",
+      "tags": ["amazon", "deals", "discounts", "shopping", "electronics"],
+      "author": "Thrift Zone Team",
+      "featured": true,
+      "views": 1250,
+      "likes": 89
+    },
+    {
+      "id": "2",
+      "title": "How to Find the Best Electronics Deals Online",
+      "excerpt": "Learn proven strategies to find genuine electronics deals online and avoid fake discounts. Expert tips for smart tech shopping.",
+      "category": "tips",
+      "date": "2025-09-11",
+      "readTime": 8,
+      "image": "../images/blog/electronics-tips.jpg",
+      "tags": ["electronics", "shopping tips", "deals", "technology"],
+      "author": "Tech Expert",
+      "views": 890,
+      "likes": 67
+    },
+    {
+      "id": "3",
+      "title": "iPhone 15 Pro Review - Is It Worth the Upgrade?",
+      "excerpt": "Comprehensive review of iPhone 15 Pro including performance, camera quality, battery life, and value for money analysis.",
+      "category": "reviews",
+      "date": "2025-09-10",
+      "readTime": 12,
+      "image": "../images/blog/iphone15-review.jpg",
+      "tags": ["iphone", "review", "apple", "smartphone", "tech review"],
+      "author": "Mobile Expert",
+      "views": 2150,
+      "likes": 156
+    },
+    {
+      "id": "4",
+      "title": "Best Home Appliances Under ₹5000 This Month",
+      "excerpt": "Discover top-rated home appliances that won't break the bank. Perfect for budget-conscious homeowners looking for quality.",
+      "category": "guides",
+      "date": "2025-09-09",
+      "readTime": 7,
+      "image": "../images/blog/home-appliances.jpg",
+      "tags": ["home appliances", "budget", "buying guide", "kitchen"],
+      "author": "Home Expert",
+      "views": 654,
+      "likes": 43
+    },
+    {
+      "id": "5",
+      "title": "Fashion Week Special - Designer Clothes at 80% Off",
+      "excerpt": "Exclusive fashion deals from top designers. Limited time offers on premium clothing, shoes, and accessories.",
+      "category": "deals",
+      "date": "2025-09-08",
+      "readTime": 6,
+      "image": "../images/blog/fashion-deals.jpg",
+      "tags": ["fashion", "designer clothes", "discount", "style"],
+      "author": "Fashion Expert",
+      "views": 987,
+      "likes": 78
+    },
+    {
+      "id": "6",
+      "title": "Smart Shopping: How to Never Pay Full Price Again",
+      "excerpt": "Master the art of finding discounts, using cashback, and timing your purchases for maximum savings on everything you buy.",
+      "category": "tips",
+      "date": "2025-09-07",
+      "readTime": 10,
+      "image": "../images/blog/smart-shopping.jpg",
+      "tags": ["shopping tips", "cashback", "coupons", "savings"],
+      "author": "Savings Expert",
+      "views": 1567,
+      "likes": 124
+    },
+    {
+      "id": "7",
+      "title": "Gaming Laptop Under ₹50000 - Complete Buyers Guide",
+      "excerpt": "Find the perfect gaming laptop within your budget. Detailed comparison of specs, performance, and value for money.",
+      "category": "guides",
+      "date": "2025-09-06",
+      "readTime": 15,
+      "image": "../images/blog/gaming-laptop-guide.jpg",
+      "tags": ["gaming", "laptop", "buying guide", "technology"],
+      "author": "Gaming Expert",
+      "views": 2890,
+      "likes": 203
+    },
+    {
+      "id": "8",
+      "title": "Amazon Prime Day vs Big Billion Day - Which is Better?",
+      "excerpt": "Comprehensive comparison of India's biggest shopping events. Find out which platform offers better deals and discounts.",
+      "category": "news",
+      "date": "2025-09-05",
+      "readTime": 9,
+      "image": "../images/blog/sale-comparison.jpg",
+      "tags": ["amazon", "flipkart", "sale", "comparison", "deals"],
+      "author": "Deal Analyst",
+      "views": 1823,
+      "likes": 145
+    }
+  ]
+}
