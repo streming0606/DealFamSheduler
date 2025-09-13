@@ -2205,6 +2205,247 @@ p {
 
 
 
+/* HORIZONTAL SCROLLING DEALS SECTION */
+.horizontal-deals-container {
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+.horizontal-scroll-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.horizontal-products-scroll {
+    display: flex;
+    gap: 1.5rem;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 1rem 0;
+    flex: 1;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+
+.horizontal-products-scroll::-webkit-scrollbar {
+    display: none; /* WebKit */
+}
+
+/* Scroll Buttons */
+.scroll-btn {
+    width: 50px;
+    height: 50px;
+    background: var(--background);
+    border: 2px solid var(--primary-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: var(--transition);
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    flex-shrink: 0;
+    z-index: 10;
+}
+
+.scroll-btn:hover {
+    background: var(--primary-color);
+    color: white;
+    transform: scale(1.1);
+    box-shadow: var(--shadow-lg);
+}
+
+.scroll-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none;
+}
+
+/* Horizontal Product Cards */
+.horizontal-products-scroll .product-card {
+    flex: 0 0 280px; /* Fixed width, no shrinking */
+    max-width: 280px;
+    height: 420px;
+    margin-bottom: 0;
+}
+
+/* View All Section */
+.view-all-section {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.view-all-btn {
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-hover));
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: var(--radius-xl);
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    box-shadow: var(--shadow-md);
+    position: relative;
+    overflow: hidden;
+}
+
+.view-all-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-xl);
+}
+
+.view-all-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.5s ease;
+}
+
+.view-all-btn:hover::before {
+    left: 100%;
+}
+
+.deals-count {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 0.25rem 0.5rem;
+    border-radius: var(--radius);
+    font-size: 0.9rem;
+    margin-left: 0.5rem;
+}
+
+/* Full Products Section */
+.full-products-section {
+    animation: slideInUp 0.5s ease;
+}
+
+.full-section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid var(--border);
+}
+
+.back-to-preview-btn {
+    background: var(--surface);
+    border: 2px solid var(--border);
+    color: var(--text-primary);
+    padding: 0.75rem 1.5rem;
+    border-radius: var(--radius-lg);
+    cursor: pointer;
+    transition: var(--transition);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 500;
+}
+
+.back-to-preview-btn:hover {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+    background: var(--primary-color);
+    color: white;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .horizontal-scroll-wrapper {
+        gap: 0.5rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .scroll-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+    
+    .horizontal-products-scroll {
+        gap: 1rem;
+        padding: 0.5rem 0;
+    }
+    
+    .horizontal-products-scroll .product-card {
+        flex: 0 0 260px;
+        max-width: 260px;
+        height: 380px;
+    }
+    
+    .view-all-btn {
+        padding: 0.875rem 1.5rem;
+        font-size: 1rem;
+        width: 100%;
+        max-width: 320px;
+    }
+    
+    .full-section-header {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+    
+    .full-section-header h3 {
+        margin: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .horizontal-products-scroll .product-card {
+        flex: 0 0 240px;
+        max-width: 240px;
+        height: 360px;
+    }
+    
+    .horizontal-scroll-wrapper {
+        margin: 0 -1rem 1.5rem;
+        padding: 0 1rem;
+    }
+}
+
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Deals Section */
 .deals {
   padding: var(--spacing-3xl) 0;
