@@ -69,95 +69,6 @@ class ThriftZoneAuth {
             this.showLoginModal();
         });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// Enhanced Google Login with Better Error Handling
-async handleGoogleLogin() {
-    if (!this.supabase) {
-        this.showNotification('Google login not available in demo mode', 'warning');
-        return;
-    }
-
-    try {
-        // Show loading state
-        const googleButtons = document.querySelectorAll('.social-btn.google');
-        googleButtons.forEach(btn => {
-            btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Connecting...';
-            btn.disabled = true;
-        });
-
-        const { data, error } = await this.supabase.auth.signInWithOAuth({
-            provider: 'google',
-            options: {
-                redirectTo: `${window.location.origin}`,
-                queryParams: {
-                    access_type: 'offline',
-                    prompt: 'select_account', // This allows users to choose account
-                }
-            }
-        });
-
-        if (error) {
-            throw error;
-        }
-
-        // The page will redirect to Google, so we don't need to handle success here
-        
-    } catch (error) {
-        console.error('Google login error:', error);
-        
-        // Reset buttons
-        const googleButtons = document.querySelectorAll('.social-btn.google');
-        googleButtons.forEach(btn => {
-            btn.innerHTML = '<i class="fab fa-google"></i> Google';
-            btn.disabled = false;
-        });
-
-        // Show specific error messages
-        let errorMessage = 'Google login failed';
-        
-        if (error.message?.includes('provider is not enabled')) {
-            errorMessage = 'Google login is not configured. Please contact support.';
-        } else if (error.message?.includes('Invalid redirect URL')) {
-            errorMessage = 'Authentication setup error. Please contact support.';
-        } else if (error.message) {
-            errorMessage = error.message;
-        }
-
-        this.showNotification(errorMessage, 'error');
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-
         // Form submissions
         document.getElementById('login-form')?.addEventListener('submit', (e) => this.handleLogin(e));
         document.getElementById('signup-form')?.addEventListener('submit', (e) => this.handleSignup(e));
@@ -176,6 +87,39 @@ async handleGoogleLogin() {
             this.handleForgotPassword();
         });
 
+        // Profile and Wishlist navigation - ENHANCED PROTECTION
+        document.getElementById('profile-link')?.addEventListener('click', (e) => {
+            if (!this.isLoggedIn()) {
+                e.preventDefault();
+                this.showNotification('Please login to access your profile', 'warning');
+                this.showLoginModal();
+            }
+        });
+
+        document.getElementById('wishlist-link')?.addEventListener('click', (e) => {
+            if (!this.isLoggedIn()) {
+                e.preventDefault();
+                this.showNotification('Please login to access your wishlist', 'warning');
+                this.showLoginModal();
+            }
+        });
+
+        document.getElementById('mobile-profile-link')?.addEventListener('click', (e) => {
+            if (!this.isLoggedIn()) {
+                e.preventDefault();
+                this.showNotification('Please login to access your profile', 'warning');
+                this.showLoginModal();
+            }
+        });
+
+        document.getElementById('mobile-wishlist-link')?.addEventListener('click', (e) => {
+            if (!this.isLoggedIn()) {
+                e.preventDefault();
+                this.showNotification('Please login to access your wishlist', 'warning');
+                this.showLoginModal();
+            }
+        });
+
         // ESC key to close modal
         document.addEventListener('keydown', (e) => {
             if (e.key === 'Escape') this.hideAuthModal();
@@ -189,6 +133,8 @@ async handleGoogleLogin() {
             if (savedUser) {
                 this.currentUser = JSON.parse(savedUser);
                 this.updateUIForLoggedInUser(this.currentUser);
+            } else {
+                this.updateUIForLoggedOutUser();
             }
             return;
         }
@@ -198,9 +144,12 @@ async handleGoogleLogin() {
             if (session && session.user) {
                 this.currentUser = session.user;
                 this.updateUIForLoggedInUser(this.currentUser);
+            } else {
+                this.updateUIForLoggedOutUser();
             }
         } catch (error) {
             console.error('Error checking auth state:', error);
+            this.updateUIForLoggedOutUser();
         }
     }
 
@@ -384,6 +333,7 @@ async handleGoogleLogin() {
         }
     }
 
+    // Enhanced Google Login with Better Error Handling
     async handleGoogleLogin() {
         if (!this.supabase) {
             this.showNotification('Google login not available in demo mode', 'warning');
@@ -391,17 +341,52 @@ async handleGoogleLogin() {
         }
 
         try {
+            // Show loading state
+            const googleButtons = document.querySelectorAll('.social-btn.google');
+            googleButtons.forEach(btn => {
+                btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Connecting...';
+                btn.disabled = true;
+            });
+
             const { data, error } = await this.supabase.auth.signInWithOAuth({
                 provider: 'google',
                 options: {
-                    redirectTo: window.location.origin
+                    redirectTo: `${window.location.origin}`,
+                    queryParams: {
+                        access_type: 'offline',
+                        prompt: 'select_account', // This allows users to choose account
+                    }
                 }
             });
 
-            if (error) throw error;
+            if (error) {
+                throw error;
+            }
+
+            // The page will redirect to Google, so we don't need to handle success here
+            
         } catch (error) {
             console.error('Google login error:', error);
-            this.showNotification('Google login failed', 'error');
+            
+            // Reset buttons
+            const googleButtons = document.querySelectorAll('.social-btn.google');
+            googleButtons.forEach(btn => {
+                btn.innerHTML = '<i class="fab fa-google"></i> Google';
+                btn.disabled = false;
+            });
+
+            // Show specific error messages
+            let errorMessage = 'Google login failed';
+            
+            if (error.message?.includes('provider is not enabled')) {
+                errorMessage = 'Google login is not configured. Please contact support.';
+            } else if (error.message?.includes('Invalid redirect URL')) {
+                errorMessage = 'Authentication setup error. Please contact support.';
+            } else if (error.message) {
+                errorMessage = error.message;
+            }
+
+            this.showNotification(errorMessage, 'error');
         }
     }
 
@@ -448,7 +433,7 @@ async handleGoogleLogin() {
         }
     }
 
-    // UI Updates
+    // UI Updates - ENHANCED WITH LINK MANAGEMENT
     updateUIForLoggedInUser(user) {
         // Hide auth buttons
         document.getElementById('auth-buttons').style.display = 'none';
@@ -460,9 +445,13 @@ async handleGoogleLogin() {
         document.getElementById('mobile-user-actions').style.display = 'block';
         
         // Update user info
-        const displayName = user.user_metadata?.full_name || user.user_metadata?.display_name || user.email?.split('@')[0] || 'User';
+        const displayName = user.user_metadata?.full_name || 
+                           user.user_metadata?.display_name || 
+                           user.name || 
+                           user.email?.split('@')[0] || 
+                           'User';
         const email = user.email;
-        const avatarUrl = user.user_metadata?.avatar_url;
+        const avatarUrl = user.user_metadata?.avatar_url || user.avatar_url;
         
         // Desktop user info
         document.getElementById('user-name').textContent = displayName;
@@ -485,6 +474,9 @@ async handleGoogleLogin() {
             document.getElementById('user-avatar-img').style.display = 'none';
             document.getElementById('user-initial').style.display = 'block';
         }
+
+        // Enable protected links
+        this.enableProtectedLinks();
     }
 
     updateUIForLoggedOutUser() {
@@ -496,6 +488,50 @@ async handleGoogleLogin() {
         document.getElementById('user-profile').style.display = 'none';
         document.getElementById('mobile-user-info').style.display = 'none';
         document.getElementById('mobile-user-actions').style.display = 'none';
+
+        // Disable protected links
+        this.disableProtectedLinks();
+    }
+
+    // ENHANCED LINK MANAGEMENT
+    enableProtectedLinks() {
+        // Make sure profile and wishlist links are clickable and styled normally
+        const profileLinks = document.querySelectorAll('#profile-link, #mobile-profile-link');
+        const wishlistLinks = document.querySelectorAll('#wishlist-link, #mobile-wishlist-link');
+        
+        profileLinks.forEach(link => {
+            link.style.pointerEvents = 'auto';
+            link.style.opacity = '1';
+            link.style.cursor = 'pointer';
+            link.classList.remove('disabled-link');
+        });
+        
+        wishlistLinks.forEach(link => {
+            link.style.pointerEvents = 'auto';
+            link.style.opacity = '1';
+            link.style.cursor = 'pointer';
+            link.classList.remove('disabled-link');
+        });
+    }
+
+    disableProtectedLinks() {
+        // Disable profile and wishlist links when not logged in
+        const profileLinks = document.querySelectorAll('#profile-link, #mobile-profile-link');
+        const wishlistLinks = document.querySelectorAll('#wishlist-link, #mobile-wishlist-link');
+        
+        profileLinks.forEach(link => {
+            link.style.pointerEvents = 'none';
+            link.style.opacity = '0.5';
+            link.style.cursor = 'not-allowed';
+            link.classList.add('disabled-link');
+        });
+        
+        wishlistLinks.forEach(link => {
+            link.style.pointerEvents = 'none';
+            link.style.opacity = '0.5';
+            link.style.cursor = 'not-allowed';
+            link.classList.add('disabled-link');
+        });
     }
 
     // Loading States
@@ -606,6 +642,18 @@ const authAnimationStyles = `
     @keyframes slideInRight {
         from { transform: translateX(100%); opacity: 0; }
         to { transform: translateX(0); opacity: 1; }
+    }
+    
+    /* Disabled link styles */
+    .disabled-link {
+        opacity: 0.5 !important;
+        cursor: not-allowed !important;
+        pointer-events: none !important;
+    }
+    
+    .disabled-link:hover {
+        background: none !important;
+        color: var(--text-muted) !important;
     }
 `;
 
