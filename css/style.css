@@ -2487,203 +2487,117 @@ p {
 
 
 
-/* FIXED MOBILE LAYOUT - GRAB DEAL BUTTON ALWAYS VISIBLE */
+/* MOBILE UX ENHANCEMENTS */
 @media (max-width: 768px) {
-    .products-grid {
-        grid-template-columns: 1fr;
-        gap: 12px;
-        padding: 0 4px;
+    /* BETTER TOUCH TARGETS */
+    .filter-btn {
+        padding: 10px 16px; /* LARGER TOUCH AREA */
+        font-size: 0.85rem;
+        min-height: 44px;
     }
     
-    .product-card {
-        min-height: 280px; /* INCREASED HEIGHT TO FIT BUTTON */
-        max-height: none; /* REMOVE MAX HEIGHT RESTRICTION */
-        margin-bottom: 8px;
-        display: flex;
-        flex-direction: column;
+    .sort-select {
+        padding: 12px 16px;
+        font-size: 0.9rem;
+        min-height: 44px;
     }
     
-    .product-image-container {
-        height: 120px;
-        flex-shrink: 0;
+    /* COMPACT SECTION SPACING */
+    .deals {
+        padding: 30px 0; /* REDUCED PADDING */
     }
     
-    .product-info {
-        padding: 8px;
-        gap: 3px;
-        flex: 1;
-        display: flex;
-        flex-direction: column;
+    .deals-filter {
+        margin-bottom: 20px; /* REDUCED */
+        padding: 16px;
     }
     
-    .product-title {
-        font-size: 0.8rem;
-        height: 2.2em;
-        margin: 1px 0 3px 0;
-        flex-shrink: 0;
+    .filter-tabs {
+        gap: 8px;
+        flex-wrap: wrap;
     }
     
-    .product-pricing {
-        margin-bottom: 3px;
-        flex-shrink: 0;
+    .filter-options {
+        margin-top: 12px;
+        width: 100%;
     }
     
-    .price-current {
-        font-size: 0.95rem;
-    }
-    
-    .price-section {
-        gap: 4px;
-        margin-bottom: 1px;
-    }
-    
-    .savings-amount {
-        font-size: 0.65rem;
-    }
-    
-    .product-urgency {
-        gap: 6px;
-        margin-bottom: 3px;
-        font-size: 0.6rem;
-        flex-shrink: 0;
-    }
-    
-    .deal-countdown {
-        gap: 3px;
-        margin-bottom: 3px;
-        font-size: 0.6rem;
-        flex-shrink: 0;
-    }
-    
-    .countdown-number {
-        font-size: 0.65rem;
-    }
-    
-    .countdown-text {
-        font-size: 0.5rem;
-    }
-    
-    .product-social {
-        margin-bottom: 6px;
-        padding: 3px 0;
-        flex-shrink: 0;
-    }
-    
-    .social-actions {
-        gap: 10px;
-    }
-    
-    .social-action {
-        font-size: 0.7rem;
-        gap: 2px;
-    }
-    
-    /* FIXED PRODUCT ACTIONS - ALWAYS AT BOTTOM */
-    .product-actions {
-        margin-top: auto; /* PUSH TO BOTTOM */
-        padding-top: 8px;
-        gap: 6px;
-        flex-shrink: 0; /* PREVENT SHRINKING */
-        border-top: 1px solid #f3f4f6;
-    }
-    
-    .deal-btn {
-        padding: 10px 12px; /* INCREASED PADDING */
-        font-size: 0.8rem; /* READABLE SIZE */
-        border-radius: 6px;
-        min-height: 40px; /* MINIMUM HEIGHT */
-        display: flex !important; /* FORCE DISPLAY */
-        align-items: center;
+    /* PROFESSIONAL VIEW ALL BUTTON */
+    .view-all-btn {
+        padding: 14px 24px;
+        font-size: 1rem;
+        width: 100%;
+        max-width: 340px;
         justify-content: center;
-        gap: 4px;
+        border-radius: 12px;
     }
     
-    .deal-btn-text {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        line-height: 1.1;
+    .view-all-section {
+        margin: 24px 0;
     }
     
-    .deal-btn-subtext {
-        font-size: 0.65rem;
+    .view-all-subtitle {
+        margin-top: 8px;
+        font-size: 0.85rem;
     }
     
-    .quick-action-btn {
-        width: 32px;
-        height: 32px;
-        font-size: 0.75rem;
-        min-height: 32px; /* MINIMUM HEIGHT */
-        display: flex !important; /* FORCE DISPLAY */
+    /* BETTER LOADING STATES */
+    .loading-state {
+        padding: 40px 20px;
     }
     
-    .wishlist-btn {
-        width: 26px;
-        height: 26px;
-        font-size: 0.7rem;
-    }
-    
-    .badge {
-        padding: 2px 5px;
-        font-size: 0.6rem;
-    }
-    
-    .product-category {
-        font-size: 0.55rem;
-        padding: 2px 5px;
+    .loading-state p {
+        font-size: 0.9rem;
+        margin-top: 12px;
     }
 }
 
-/* EXTRA SMALL MOBILE FIX */
-@media (max-width: 480px) {
-    .product-card {
-        min-height: 260px; /* ENSURE ENOUGH HEIGHT */
-        max-height: none; /* NO MAX HEIGHT */
+/* PROFESSIONAL CARD HOVER EFFECTS - MOBILE */
+@media (max-width: 768px) {
+    .product-card:active {
+        transform: scale(0.98); /* SUBTLE PRESS EFFECT */
+        transition: transform 0.1s ease;
     }
     
-    .product-image-container {
-        height: 100px;
+    .deal-btn:active {
+        transform: scale(0.95);
+        background: var(--primary-hover);
     }
     
-    .product-info {
-        padding: 6px;
-        gap: 2px;
-    }
-    
-    .product-title {
-        font-size: 0.75rem;
-        height: 2em;
-    }
-    
-    .price-current {
-        font-size: 0.9rem;
-    }
-    
-    /* ENSURE BUTTON IS ALWAYS VISIBLE */
-    .product-actions {
-        margin-top: auto;
-        padding-top: 6px;
-        min-height: 44px; /* MINIMUM SPACE FOR BUTTON */
-    }
-    
-    .deal-btn {
-        padding: 8px 10px;
-        font-size: 0.75rem;
-        min-height: 36px;
-        display: flex !important;
-    }
-    
-    .deal-btn-subtext {
-        font-size: 0.6rem;
-    }
-    
-    .quick-action-btn {
-        width: 30px;
-        height: 30px;
-        min-height: 30px;
-        font-size: 0.7rem;
+    .wishlist-btn:active {
+        transform: scale(1.1);
     }
 }
+
+/* FIX SPACING ISSUES IN MOBILE */
+.product-info > * {
+    flex-shrink: 0; /* PREVENT ELEMENTS FROM SHRINKING */
+}
+
+.product-actions {
+    flex-shrink: 0 !important;
+    margin-top: auto !important; /* PUSH TO BOTTOM ALWAYS */
+    min-height: 52px; /* ENSURE CONSISTENT BUTTON AREA */
+}
+
+/* REMOVE EXCESSIVE MARGINS ON MOBILE */
+@media (max-width: 768px) {
+    .product-info > div {
+        margin-bottom: 6px !important;
+    }
+    
+    .product-info > div:last-child {
+        margin-bottom: 0 !important;
+    }
+    
+    .product-pricing,
+    .product-urgency,
+    .deal-countdown,
+    .product-social {
+        margin-bottom: 6px !important;
+    }
+}
+
 
 
 
