@@ -1155,6 +1155,70 @@ p {
     text-decoration: underline;
 }
 
+
+
+
+
+
+
+
+/* Add to your css/auth.css */
+
+/* Google Button Loading State */
+.social-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.social-btn .fa-spinner {
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* Enhanced Google Button */
+.social-btn.google {
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.social-btn.google:not(:disabled):hover {
+    background: #4285f4;
+    color: white;
+    border-color: #4285f4;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(66, 133, 244, 0.3);
+}
+
+/* Error state for forms */
+.form-group.error input {
+    border-color: #ef4444;
+    box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.1);
+}
+
+.form-group .error-message {
+    color: #ef4444;
+    font-size: 0.75rem;
+    margin-top: 0.25rem;
+    display: none;
+}
+
+.form-group.error .error-message {
+    display: block;
+}
+
+
+
+
+
+
+
+
+
 /* Mobile Auth Styles */
 .mobile-auth {
     padding: 1rem;
