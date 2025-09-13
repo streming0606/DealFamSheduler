@@ -27,6 +27,67 @@
     border-color: #2874F0;
 }
 
+
+
+
+
+
+
+
+
+
+/* Enhanced Wishlist Button Styles */
+.wishlist-btn {
+    width: 32px;
+    height: 32px;
+    background: rgba(255, 255, 255, 0.9);
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 0.9rem;
+    color: #6b7280;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.wishlist-btn:hover {
+    background: #ef4444;
+    color: white;
+    transform: scale(1.1);
+}
+
+.wishlist-btn.active {
+    background: #ef4444;
+    color: white;
+    animation: heartBeat 0.6s ease;
+}
+
+@keyframes heartBeat {
+    0% { transform: scale(1); }
+    25% { transform: scale(1.2); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+/* Wishlist count display */
+.wishlist-count {
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+
+
+
+
+
+
+
+
+
+
 /* Image Container */
 .product-image-container {
     width: 100%;
