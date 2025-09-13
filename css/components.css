@@ -425,276 +425,307 @@
 
 
 
-/* MOBILE OPTIMIZED PRODUCT CARDS - COMPACT & PROFESSIONAL */
+/* MOBILE OPTIMIZED - FIXED BUTTON VISIBILITY */
 @media (max-width: 768px) {
     .products-grid {
         grid-template-columns: 1fr;
-        gap: 16px;
-        padding: 0 8px;
+        gap: 12px;
+        padding: 0 4px;
     }
     
+    /* FIXED: PROPER CARD HEIGHT WITH VISIBLE BUTTONS */
     .product-card {
-        min-height: 320px; /* REDUCED from 420px */
-        max-height: 340px; /* STRICT HEIGHT LIMIT */
-        margin-bottom: 12px;
-        display: flex;
-        flex-direction: column;
-        border-radius: 12px;
-        overflow: hidden;
-    }
-    
-    /* COMPACT IMAGE SECTION */
-    .product-image-container {
-        height: 140px; /* REDUCED from 180px */
-        flex-shrink: 0;
+        min-height: 280px !important; /* REDUCED SIGNIFICANTLY */
+        max-height: 300px !important; /* STRICT LIMIT */
+        height: auto !important;
+        margin-bottom: 8px;
+        display: flex !important;
+        flex-direction: column !important;
+        border-radius: 8px;
+        overflow: visible !important; /* PREVENT CUTOFF */
         position: relative;
     }
     
-    .product-image {
-        padding: 8px; /* REDUCED padding */
+    /* COMPACT IMAGE - FIXED HEIGHT */
+    .product-image-container {
+        height: 100px !important; /* MUCH SMALLER */
+        flex-shrink: 0;
+        position: relative;
+        overflow: hidden;
     }
     
-    /* OPTIMIZED INFO SECTION */
+    .product-image {
+        padding: 6px !important;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+    
+    /* OPTIMIZED INFO SECTION - TIGHT SPACING */
     .product-info {
-        padding: 12px; /* REDUCED from 16px */
-        gap: 6px; /* REDUCED gap */
+        padding: 8px !important;
+        gap: 3px !important;
         flex: 1;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between; /* DISTRIBUTE SPACE EVENLY */
+        display: flex !important;
+        flex-direction: column !important;
+        height: calc(300px - 100px) !important; /* REMAINING HEIGHT */
+        overflow: visible !important;
     }
     
     /* COMPACT CATEGORY & TITLE */
     .product-category {
-        font-size: 0.6rem; /* SMALLER */
-        padding: 3px 8px;
-        margin-bottom: 4px;
+        font-size: 0.6rem !important;
+        padding: 2px 6px !important;
+        margin-bottom: 2px !important;
         align-self: flex-start;
+        line-height: 1.2;
     }
     
     .product-title {
-        font-size: 0.85rem;
-        line-height: 1.2; /* TIGHTER LINE HEIGHT */
-        height: 2.4em;
-        margin: 0 0 6px 0; /* REDUCED MARGINS */
-        flex-shrink: 0;
+        font-size: 0.8rem !important;
+        line-height: 1.1 !important;
+        height: 2em !important; /* FIXED HEIGHT */
+        margin: 2px 0 !important;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
     }
     
-    /* COMPACT PRICING SECTION */
+    /* MINIMAL PRICING */
     .product-pricing {
-        margin-bottom: 6px; /* REDUCED */
-        flex-shrink: 0;
+        margin-bottom: 3px !important;
     }
     
     .price-section {
-        gap: 6px;
-        margin-bottom: 2px;
+        gap: 4px !important;
+        margin-bottom: 1px !important;
         align-items: center;
     }
     
     .price-current {
-        font-size: 1rem;
+        font-size: 0.9rem !important;
         font-weight: 700;
     }
     
     .price-original {
-        font-size: 0.75rem;
+        font-size: 0.7rem !important;
     }
     
     .price-discount-badge {
-        padding: 2px 6px;
-        font-size: 0.6rem;
+        padding: 1px 4px !important;
+        font-size: 0.55rem !important;
     }
     
     .savings-amount {
-        font-size: 0.7rem;
-        margin: 0;
+        font-size: 0.65rem !important;
+        margin: 0 !important;
     }
     
-    /* MINIMAL URGENCY SECTION */
+    /* MINIMAL URGENCY & COUNTDOWN */
     .product-urgency {
-        gap: 8px;
-        margin-bottom: 4px; /* MINIMAL */
-        font-size: 0.65rem;
-        flex-shrink: 0;
-        min-height: 14px; /* CONSISTENT HEIGHT */
+        gap: 4px !important;
+        margin-bottom: 2px !important;
+        font-size: 0.6rem !important;
+        min-height: 10px !important;
     }
     
-    /* COMPACT COUNTDOWN */
     .deal-countdown {
-        gap: 4px;
-        margin-bottom: 4px; /* MINIMAL */
-        font-size: 0.6rem;
-        flex-shrink: 0;
-        min-height: 14px;
+        gap: 2px !important;
+        margin-bottom: 2px !important;
+        font-size: 0.55rem !important;
+        min-height: 10px !important;
     }
     
     .countdown-number {
-        font-size: 0.65rem;
+        font-size: 0.6rem !important;
     }
     
     .countdown-text {
-        font-size: 0.55rem;
+        font-size: 0.5rem !important;
     }
     
-    /* MINIMAL SOCIAL SECTION */
+    /* COMPACT SOCIAL */
     .product-social {
-        margin-bottom: 8px; /* REDUCED */
-        padding: 6px 0; /* REDUCED PADDING */
-        flex-shrink: 0;
+        margin-bottom: 4px !important;
+        padding: 3px 0 !important;
         border-top: 1px solid #f3f4f6;
     }
     
     .social-actions {
-        gap: 12px;
+        gap: 8px !important;
     }
     
     .social-action {
-        font-size: 0.7rem;
-        gap: 3px;
+        font-size: 0.65rem !important;
+        gap: 2px !important;
     }
     
-    /* COMPACT ACTION BUTTONS - NO EXTRA SPACE */
+    /* CRITICAL: ALWAYS VISIBLE ACTION BUTTONS */
     .product-actions {
-        margin-top: 0; /* REMOVE AUTO MARGIN */
-        padding-top: 0; /* NO TOP PADDING */
-        gap: 8px;
-        flex-shrink: 0;
-        border-top: none; /* REMOVE BORDER */
+        margin-top: auto !important; /* PUSH TO BOTTOM */
+        padding-top: 4px !important;
+        gap: 6px !important;
+        flex-shrink: 0 !important;
+        position: relative !important; /* ENSURE VISIBILITY */
+        z-index: 10 !important;
+        background: white !important; /* ENSURE VISIBILITY */
     }
     
+    /* CRITICAL: GRAB DEAL BUTTON - ALWAYS VISIBLE */
     .deal-btn {
-        padding: 12px 16px; /* OPTIMIZED PADDING */
-        font-size: 0.85rem;
-        border-radius: 8px;
-        min-height: 44px; /* TOUCH FRIENDLY */
-        font-weight: 600;
+        padding: 10px 14px !important;
+        font-size: 0.8rem !important;
+        border-radius: 6px !important;
+        min-height: 40px !important;
+        height: 40px !important; /* FIXED HEIGHT */
+        font-weight: 600 !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        background: var(--primary-color) !important;
+        color: white !important;
+        text-decoration: none !important;
+        position: relative !important;
+        z-index: 20 !important; /* HIGHEST PRIORITY */
+    }
+    
+    .deal-btn:hover,
+    .deal-btn:active {
+        background: var(--primary-hover) !important;
+        color: white !important;
+        text-decoration: none !important;
     }
     
     .deal-btn-text {
-        line-height: 1.1;
-        gap: 4px;
+        line-height: 1.1 !important;
+        display: flex !important;
+        align-items: center !important;
+        gap: 3px !important;
     }
     
     .deal-btn-subtext {
-        font-size: 0.7rem;
-        margin-top: 2px;
+        font-size: 0.65rem !important;
+        margin-top: 1px !important;
     }
     
+    /* SECONDARY ACTION BUTTON */
     .quick-action-btn {
-        width: 44px; /* TOUCH FRIENDLY */
-        height: 44px;
-        font-size: 0.8rem;
-        min-height: 44px;
-        border-radius: 8px;
+        width: 40px !important;
+        height: 40px !important;
+        font-size: 0.75rem !important;
+        border-radius: 6px !important;
+        background: #f9fafb !important;
+        border: 1px solid #e5e7eb !important;
+        color: #6b7280 !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
     }
     
-    /* COMPACT BADGES */
+    /* COMPACT BADGES & WISHLIST */
     .product-badges {
-        top: 8px;
-        left: 8px;
-        gap: 4px;
+        top: 4px !important;
+        left: 4px !important;
+        gap: 2px !important;
     }
     
     .badge {
-        padding: 3px 6px;
-        font-size: 0.6rem;
-        border-radius: 4px;
+        padding: 2px 4px !important;
+        font-size: 0.55rem !important;
+        border-radius: 3px !important;
     }
     
-    /* COMPACT WISHLIST BUTTON */
     .wishlist-btn {
-        width: 32px;
-        height: 32px;
-        font-size: 0.8rem;
-        top: 8px;
-        right: 8px;
+        width: 28px !important;
+        height: 28px !important;
+        font-size: 0.7rem !important;
+        top: 4px !important;
+        right: 4px !important;
     }
 }
 
 /* EXTRA SMALL MOBILE - ULTRA COMPACT */
 @media (max-width: 480px) {
     .product-card {
-        min-height: 300px; /* EVEN MORE COMPACT */
-        max-height: 320px;
+        min-height: 260px !important;
+        max-height: 280px !important;
+        height: auto !important;
     }
     
     .product-image-container {
-        height: 120px; /* SMALLER IMAGE */
+        height: 90px !important;
     }
     
     .product-info {
-        padding: 10px; /* MINIMAL PADDING */
-        gap: 4px;
+        padding: 6px !important;
+        gap: 2px !important;
+        height: calc(280px - 90px) !important;
     }
     
     .product-title {
-        font-size: 0.8rem;
-        height: 2.2em;
-        margin-bottom: 4px;
+        font-size: 0.75rem !important;
+        height: 1.8em !important;
     }
     
     .price-current {
-        font-size: 0.95rem;
+        font-size: 0.85rem !important;
     }
     
     .product-social {
-        padding: 4px 0;
-        margin-bottom: 6px;
+        padding: 2px 0 !important;
+        margin-bottom: 3px !important;
     }
     
     .deal-btn {
-        padding: 10px 14px;
-        font-size: 0.8rem;
-        min-height: 40px;
-    }
-    
-    .deal-btn-subtext {
-        font-size: 0.65rem;
+        padding: 8px 12px !important;
+        font-size: 0.75rem !important;
+        min-height: 36px !important;
+        height: 36px !important;
     }
     
     .quick-action-btn {
-        width: 40px;
-        height: 40px;
-        min-height: 40px;
+        width: 36px !important;
+        height: 36px !important;
     }
 }
 
-/* HORIZONTAL SCROLLING MOBILE OPTIMIZATION */
+/* HORIZONTAL SCROLLING MOBILE FIX */
 @media (max-width: 768px) {
+    .horizontal-products-scroll {
+        gap: 8px !important;
+        padding: 4px 0 !important;
+        overflow-x: auto !important;
+        overflow-y: visible !important; /* PREVENT CUTOFF */
+    }
+    
     .horizontal-products-scroll .product-card {
-        flex: 0 0 280px; /* CONSISTENT WIDTH */
-        max-width: 280px;
-        height: 320px; /* COMPACT HEIGHT */
+        flex: 0 0 280px !important;
+        max-width: 280px !important;
+        min-height: 280px !important;
+        max-height: 300px !important;
+        height: auto !important;
     }
     
     .horizontal-scroll-wrapper {
-        gap: 8px;
-        margin-bottom: 20px;
+        gap: 6px !important;
+        margin-bottom: 16px !important;
     }
     
     .scroll-btn {
-        width: 44px; /* TOUCH FRIENDLY */
-        height: 44px;
-        font-size: 1rem;
-    }
-    
-    .horizontal-products-scroll {
-        gap: 12px;
-        padding: 8px 0;
+        width: 40px !important;
+        height: 40px !important;
+        font-size: 0.9rem !important;
+        flex-shrink: 0 !important;
     }
 }
 
 @media (max-width: 480px) {
     .horizontal-products-scroll .product-card {
-        flex: 0 0 260px;
-        max-width: 260px;
-        height: 300px; /* ULTRA COMPACT */
-    }
-    
-    .horizontal-scroll-wrapper {
-        margin: 0 -8px 16px;
-        padding: 0 8px;
+        flex: 0 0 260px !important;
+        max-width: 260px !important;
+        min-height: 260px !important;
+        max-height: 280px !important;
     }
 }
 
