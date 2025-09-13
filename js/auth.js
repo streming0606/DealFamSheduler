@@ -69,6 +69,95 @@ class ThriftZoneAuth {
             this.showLoginModal();
         });
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Enhanced Google Login with Better Error Handling
+async handleGoogleLogin() {
+    if (!this.supabase) {
+        this.showNotification('Google login not available in demo mode', 'warning');
+        return;
+    }
+
+    try {
+        // Show loading state
+        const googleButtons = document.querySelectorAll('.social-btn.google');
+        googleButtons.forEach(btn => {
+            btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Connecting...';
+            btn.disabled = true;
+        });
+
+        const { data, error } = await this.supabase.auth.signInWithOAuth({
+            provider: 'google',
+            options: {
+                redirectTo: `${window.location.origin}`,
+                queryParams: {
+                    access_type: 'offline',
+                    prompt: 'select_account', // This allows users to choose account
+                }
+            }
+        });
+
+        if (error) {
+            throw error;
+        }
+
+        // The page will redirect to Google, so we don't need to handle success here
+        
+    } catch (error) {
+        console.error('Google login error:', error);
+        
+        // Reset buttons
+        const googleButtons = document.querySelectorAll('.social-btn.google');
+        googleButtons.forEach(btn => {
+            btn.innerHTML = '<i class="fab fa-google"></i> Google';
+            btn.disabled = false;
+        });
+
+        // Show specific error messages
+        let errorMessage = 'Google login failed';
+        
+        if (error.message?.includes('provider is not enabled')) {
+            errorMessage = 'Google login is not configured. Please contact support.';
+        } else if (error.message?.includes('Invalid redirect URL')) {
+            errorMessage = 'Authentication setup error. Please contact support.';
+        } else if (error.message) {
+            errorMessage = error.message;
+        }
+
+        this.showNotification(errorMessage, 'error');
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
         // Form submissions
         document.getElementById('login-form')?.addEventListener('submit', (e) => this.handleLogin(e));
         document.getElementById('signup-form')?.addEventListener('submit', (e) => this.handleSignup(e));
