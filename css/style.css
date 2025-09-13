@@ -1162,6 +1162,32 @@ p {
 
 
 
+
+
+
+
+/* Disabled link states */
+.dropdown-item[style*="pointer-events: none"],
+.mobile-nav-link[style*="pointer-events: none"] {
+    cursor: not-allowed;
+    opacity: 0.5 !important;
+}
+
+.dropdown-item[style*="pointer-events: none"]:hover,
+.mobile-nav-link[style*="pointer-events: none"]:hover {
+    background: none !important;
+    color: var(--text-muted) !important;
+}
+
+
+
+
+
+
+
+
+
+
 /* Add to your css/auth.css */
 
 /* Google Button Loading State */
