@@ -2487,6 +2487,128 @@ p {
 
 
 
+/* MOBILE UX ENHANCEMENTS */
+@media (max-width: 768px) {
+    /* BETTER TOUCH TARGETS */
+    .filter-btn {
+        padding: 10px 16px; /* LARGER TOUCH AREA */
+        font-size: 0.85rem;
+        min-height: 44px;
+    }
+    
+    .sort-select {
+        padding: 12px 16px;
+        font-size: 0.9rem;
+        min-height: 44px;
+    }
+    
+    /* COMPACT SECTION SPACING */
+    .deals {
+        padding: 30px 0; /* REDUCED PADDING */
+    }
+    
+    .deals-filter {
+        margin-bottom: 20px; /* REDUCED */
+        padding: 16px;
+    }
+    
+    .filter-tabs {
+        gap: 8px;
+        flex-wrap: wrap;
+    }
+    
+    .filter-options {
+        margin-top: 12px;
+        width: 100%;
+    }
+    
+    /* PROFESSIONAL VIEW ALL BUTTON */
+    .view-all-btn {
+        padding: 14px 24px;
+        font-size: 1rem;
+        width: 100%;
+        max-width: 340px;
+        justify-content: center;
+        border-radius: 12px;
+    }
+    
+    .view-all-section {
+        margin: 24px 0;
+    }
+    
+    .view-all-subtitle {
+        margin-top: 8px;
+        font-size: 0.85rem;
+    }
+    
+    /* BETTER LOADING STATES */
+    .loading-state {
+        padding: 40px 20px;
+    }
+    
+    .loading-state p {
+        font-size: 0.9rem;
+        margin-top: 12px;
+    }
+}
+
+/* PROFESSIONAL CARD HOVER EFFECTS - MOBILE */
+@media (max-width: 768px) {
+    .product-card:active {
+        transform: scale(0.98); /* SUBTLE PRESS EFFECT */
+        transition: transform 0.1s ease;
+    }
+    
+    .deal-btn:active {
+        transform: scale(0.95);
+        background: var(--primary-hover);
+    }
+    
+    .wishlist-btn:active {
+        transform: scale(1.1);
+    }
+}
+
+/* FIX SPACING ISSUES IN MOBILE */
+.product-info > * {
+    flex-shrink: 0; /* PREVENT ELEMENTS FROM SHRINKING */
+}
+
+.product-actions {
+    flex-shrink: 0 !important;
+    margin-top: auto !important; /* PUSH TO BOTTOM ALWAYS */
+    min-height: 52px; /* ENSURE CONSISTENT BUTTON AREA */
+}
+
+/* REMOVE EXCESSIVE MARGINS ON MOBILE */
+@media (max-width: 768px) {
+    .product-info > div {
+        margin-bottom: 6px !important;
+    }
+    
+    .product-info > div:last-child {
+        margin-bottom: 0 !important;
+    }
+    
+    .product-pricing,
+    .product-urgency,
+    .deal-countdown,
+    .product-social {
+        margin-bottom: 6px !important;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
