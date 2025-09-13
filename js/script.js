@@ -265,11 +265,15 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-// Enhanced Product Card Functions
+
+
+
+
 function createProductCard(product, index = 0) {
     const card = document.createElement('div');
     card.className = 'product-card';
     card.setAttribute('data-category', product.category);
+    card.setAttribute('data-product-id', product.id); // Add this line
     card.style.opacity = '0';
     card.style.transform = 'translateY(20px)';
     card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
@@ -280,6 +284,9 @@ function createProductCard(product, index = 0) {
     
     // Enhanced product data
     const enhancedData = enhanceProductData(product);
+    
+    // Check if in wishlist
+    const isInWishlist = window.wishlistManager ? window.wishlistManager.isInWishlist(product.id) : false;
     
     card.innerHTML = `
         <div class="product-image-container">
@@ -296,8 +303,12 @@ function createProductCard(product, index = 0) {
             </div>
             
             <div class="product-top-actions">
-                <button class="action-btn wishlist-btn" onclick="toggleWishlist('${product.id}', this)" title="Add to wishlist">
-                    <i class="far fa-heart"></i>
+                <button class="wishlist-btn ${isInWishlist ? 'active' : ''}" 
+                        data-product-id="${product.id}"
+                        onclick="toggleWishlist('${product.id}', this)" 
+                        title="Add to wishlist"
+                        style="${isInWishlist ? 'color: #ef4444;' : ''}">
+                    <i class="${isInWishlist ? 'fas' : 'far'} fa-heart"></i>
                 </button>
             </div>
         </div>
@@ -309,50 +320,46 @@ function createProductCard(product, index = 0) {
             
             <div class="product-pricing">
                 <div class="price-section">
-                    <span class="price-current">
-                        <span class="currency">₹</span>${enhancedData.salePrice}
-                    </span>
+                    <span class="price-current">₹${enhancedData.salePrice}</span>
                     <span class="price-original">₹${enhancedData.originalPrice}</span>
                     <span class="price-discount-badge">${enhancedData.discountPercent}% OFF</span>
                 </div>
-                <div class="savings-amount">
-                    You Save ₹${enhancedData.savings}
-                </div>
+                <div class="savings-amount">You Save ₹${enhancedData.savings}</div>
             </div>
             
             <div class="product-urgency">
-                ${enhancedData.isLowStock ? `<div class="stock-indicator">Only ${enhancedData.stockCount} left!</div>` : ''}
-                ${enhancedData.isLimitedTime ? '<div class="limited-time-indicator">Limited Time Offer</div>' : ''}
+                ${enhancedData.isLowStock ? `<span class="stock-indicator">Only ${enhancedData.stockCount} left!</span>` : ''}
+                ${enhancedData.isLimitedTime ? '<span class="limited-time-indicator">Limited Time Offer</span>' : ''}
             </div>
             
             <div class="deal-countdown">
-                <div class="countdown-label">Deal Expires In</div>
+                <span class="countdown-label">Expires:</span>
                 <div class="countdown-timer" data-product-id="${product.id}">
                     <div class="countdown-unit">
-                        <div class="countdown-number" data-hours>02</div>
-                        <div class="countdown-text">Hours</div>
+                        <span class="countdown-number" data-hours>02</span>
+                        <span class="countdown-text">h</span>
                     </div>
                     <div class="countdown-unit">
-                        <div class="countdown-number" data-minutes>00</div>
-                        <div class="countdown-text">Mins</div>
+                        <span class="countdown-number" data-minutes>00</span>
+                        <span class="countdown-text">m</span>
                     </div>
                     <div class="countdown-unit">
-                        <div class="countdown-number" data-seconds>00</div>
-                        <div class="countdown-text">Secs</div>
+                        <span class="countdown-number" data-seconds>00</span>
+                        <span class="countdown-text">s</span>
                     </div>
                 </div>
             </div>
             
             <div class="product-social">
                 <div class="social-actions">
-                    <div class="social-action likes-action" onclick="toggleLike('${product.id}', this)">
+                    <button class="social-action likes-action" onclick="toggleLike('${product.id}', this)">
                         <i class="far fa-thumbs-up"></i>
                         <span>${enhancedData.likes}</span>
-                    </div>
-                    <div class="social-action" onclick="shareProduct('${product.id}')">
+                    </button>
+                    <button class="social-action" onclick="shareProduct('${product.id}')">
                         <i class="fas fa-share"></i>
                         <span>${enhancedData.shares}</span>
-                    </div>
+                    </button>
                 </div>
             </div>
             
@@ -362,16 +369,11 @@ function createProductCard(product, index = 0) {
                    class="deal-btn" 
                    onclick="trackClick('${product.id}')"
                    rel="noopener noreferrer">
-                    <div>
-                        <div class="deal-btn-text">
-                            <i class="fas fa-bolt"></i>
-                            Grab Deal Now
-                        </div>
-                        <div class="deal-btn-subtext">Free Delivery</div>
-                    </div>
+                    <i class="fas fa-bolt"></i>
+                    <span>Grab Deal Now</span>
                 </a>
                 <div class="secondary-actions">
-                    <button class="quick-action-btn" onclick="addToWishlist('${product.id}')" title="Save for later">
+                    <button class="quick-action-btn" onclick="addToWishlist('${product.id}')" title="Save">
                         <i class="fas fa-bookmark"></i>
                     </button>
                 </div>
@@ -381,6 +383,26 @@ function createProductCard(product, index = 0) {
     
     return card;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // Enhanced product data generator
 function enhanceProductData(product) {
@@ -550,6 +572,225 @@ window.renderProducts = function() {
 };
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Add this to your existing js/script.js file
+
+// Enhanced Wishlist Management System
+class WishlistManager {
+    constructor() {
+        this.wishlistKey = 'thriftzone_wishlist';
+        this.wishlist = this.loadWishlist();
+        this.init();
+    }
+
+    init() {
+        // Update wishlist UI on page load
+        this.updateWishlistUI();
+        
+        // Listen for auth state changes
+        if (window.thriftAuth) {
+            // Check periodically if auth is ready
+            const checkAuth = setInterval(() => {
+                if (window.thriftAuth.isLoggedIn()) {
+                    clearInterval(checkAuth);
+                    this.updateWishlistUI();
+                }
+            }, 500);
+        }
+    }
+
+    loadWishlist() {
+        try {
+            const saved = localStorage.getItem(this.wishlistKey);
+            return saved ? JSON.parse(saved) : [];
+        } catch (error) {
+            console.error('Error loading wishlist:', error);
+            return [];
+        }
+    }
+
+    saveWishlist() {
+        try {
+            localStorage.setItem(this.wishlistKey, JSON.stringify(this.wishlist));
+            this.updateWishlistUI();
+            this.showNotification('Wishlist updated!', 'success');
+        } catch (error) {
+            console.error('Error saving wishlist:', error);
+            this.showNotification('Failed to save wishlist', 'error');
+        }
+    }
+
+    addToWishlist(product) {
+        // Check if user is logged in
+        if (!window.thriftAuth || !window.thriftAuth.isLoggedIn()) {
+            this.showNotification('Please login to add items to wishlist', 'warning');
+            if (window.thriftAuth) {
+                window.thriftAuth.showLoginModal();
+            }
+            return false;
+        }
+
+        // Check if product already in wishlist
+        const existingIndex = this.wishlist.findIndex(item => item.id === product.id);
+        
+        if (existingIndex !== -1) {
+            // Remove from wishlist
+            this.wishlist.splice(existingIndex, 1);
+            this.saveWishlist();
+            this.showNotification('Removed from wishlist', 'info');
+            return false;
+        } else {
+            // Add to wishlist
+            const wishlistItem = {
+                id: product.id,
+                title: product.title,
+                image: product.image,
+                category: product.category,
+                salePrice: this.extractPrice(product.price),
+                originalPrice: this.extractOriginalPrice(product.price),
+                affiliate_link: product.affiliate_link,
+                added_at: new Date().toISOString()
+            };
+
+            this.wishlist.push(wishlistItem);
+            this.saveWishlist();
+            this.showNotification('Added to wishlist!', 'success');
+            return true;
+        }
+    }
+
+    removeFromWishlist(productId) {
+        const index = this.wishlist.findIndex(item => item.id === productId);
+        if (index !== -1) {
+            this.wishlist.splice(index, 1);
+            this.saveWishlist();
+            this.showNotification('Removed from wishlist', 'info');
+            return true;
+        }
+        return false;
+    }
+
+    isInWishlist(productId) {
+        return this.wishlist.some(item => item.id === productId);
+    }
+
+    getWishlist() {
+        return this.wishlist;
+    }
+
+    getWishlistCount() {
+        return this.wishlist.length;
+    }
+
+    clearWishlist() {
+        this.wishlist = [];
+        localStorage.removeItem(this.wishlistKey);
+        this.updateWishlistUI();
+        this.showNotification('Wishlist cleared', 'info');
+    }
+
+    extractPrice(priceText) {
+        // Extract numeric value from price text like "₹1,299" or "₹1299"
+        const match = priceText.replace(/[₹,]/g, '').match(/\d+/);
+        return match ? parseInt(match[0]) : 0;
+    }
+
+    extractOriginalPrice(priceText) {
+        // For demo purposes, assume original price is 20-40% higher
+        const salePrice = this.extractPrice(priceText);
+        return Math.round(salePrice * (1 + Math.random() * 0.4 + 0.2));
+    }
+
+    updateWishlistUI() {
+        // Update wishlist count in header/profile
+        const wishlistCount = this.getWishlistCount();
+        
+        // Update product card wishlist buttons
+        document.querySelectorAll('.wishlist-btn').forEach(btn => {
+            const productId = btn.dataset.productId || btn.closest('.product-card')?.dataset.productId;
+            if (productId) {
+                const isWishlisted = this.isInWishlist(productId);
+                const icon = btn.querySelector('i');
+                
+                if (isWishlisted) {
+                    icon.className = 'fas fa-heart';
+                    btn.classList.add('active');
+                    btn.style.color = '#ef4444';
+                } else {
+                    icon.className = 'far fa-heart';
+                    btn.classList.remove('active');
+                    btn.style.color = '';
+                }
+            }
+        });
+
+        // Update wishlist count displays
+        document.querySelectorAll('.wishlist-count').forEach(element => {
+            element.textContent = wishlistCount;
+        });
+
+        // Dispatch custom event for wishlist page to listen
+        window.dispatchEvent(new CustomEvent('wishlistUpdated', { 
+            detail: { wishlist: this.wishlist, count: wishlistCount } 
+        }));
+    }
+
+    showNotification(message, type = 'info') {
+        if (window.thriftAuth && window.thriftAuth.showNotification) {
+            window.thriftAuth.showNotification(message, type);
+        } else {
+            // Fallback notification
+            console.log(`${type.toUpperCase()}: ${message}`);
+        }
+    }
+}
+
+// Global wishlist instance
+window.wishlistManager = new WishlistManager();
+
+// Global function for product cards
+function toggleWishlist(productId, buttonElement) {
+    // Get product data from the card
+    const card = buttonElement.closest('.product-card');
+    if (!card) return;
+
+    const product = {
+        id: productId,
+        title: card.querySelector('.product-title')?.textContent || 'Unknown Product',
+        image: card.querySelector('.product-image')?.src || card.querySelector('.product-placeholder')?.innerHTML || '',
+        category: card.dataset.category || 'general',
+        price: card.querySelector('.product-current')?.textContent || '₹0',
+        affiliate_link: card.querySelector('.deal-btn')?.href || '#'
+    };
+
+    const added = window.wishlistManager.addToWishlist(product);
+    
+    // Update button appearance immediately
+    const icon = buttonElement.querySelector('i');
+    if (added) {
+        icon.className = 'fas fa-heart';
+        buttonElement.classList.add('active');
+        buttonElement.style.color = '#ef4444';
+    } else {
+        icon.className = 'far fa-heart';
+        buttonElement.classList.remove('active');
+        buttonElement.style.color = '';
+    }
+}
 
 
 
