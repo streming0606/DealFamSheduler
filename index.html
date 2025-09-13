@@ -920,11 +920,25 @@
 
 
 
-<!-- Enhanced Deals Section with Horizontal Scrolling -->
+<!-- Enhanced Deals Section with Horizontal Scrolling 
+<section id="deals" class="deals">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">🔥 Today's Hot Deals</h2> -->
+
+  <!-- Enhanced Deals Section with Horizontal Scrolling -->
 <section id="deals" class="deals">
     <div class="container">
         <div class="section-header">
             <h2 class="section-title">🔥 Today's Hot Deals</h2>
+            <p class="section-subtitle">Limited time offers updated every 5 minutes</p>
+        </div>
+
+
+
+
+
+          
             <div class="deals-filter">
                 <div class="filter-tabs">
                     <button class="filter-btn active" data-filter="all">All Deals</button>
@@ -945,7 +959,17 @@
             </div>
         </div>
 
-        <!-- Horizontal Scrolling Container -->
+        <!-- Horizontal Scrolling Container 
+        <div class="horizontal-deals-container">
+            <div class="horizontal-scroll-wrapper">
+                <button class="scroll-btn scroll-btn-left" id="scroll-left">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                
+                <div class="horizontal-products-scroll" id="horizontal-products-container">-->
+
+
+<!-- Horizontal Scrolling Container -->
         <div class="horizontal-deals-container">
             <div class="horizontal-scroll-wrapper">
                 <button class="scroll-btn scroll-btn-left" id="scroll-left">
@@ -953,7 +977,12 @@
                 </button>
                 
                 <div class="horizontal-products-scroll" id="horizontal-products-container">
-                    <!-- Products will be inserted here -->
+
+
+
+
+                  
+                    <!-- Products will be inserted here 
                     <div class="loading-state">
                         <div class="loading-spinner">
                             <div class="spinner"></div>
@@ -965,9 +994,26 @@
                 <button class="scroll-btn scroll-btn-right" id="scroll-right">
                     <i class="fas fa-chevron-right"></i>
                 </button>
+            </div>-->
+
+
+<div class="loading-state">
+                        <div class="loading-spinner">
+                            <div class="spinner"></div>
+                        </div>
+                        <p>Loading amazing deals...</p>
+                    </div>
+                </div>
+                
+                <button class="scroll-btn scroll-btn-right" id="scroll-right">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
             </div>
-            
-            <!-- View All Deals Button -->
+
+
+
+          
+            <!-- View All Deals Button 
             <div class="view-all-section">
                 <button class="view-all-btn" id="view-all-deals">
                     <span>View All Hot Deals</span>
@@ -977,7 +1023,7 @@
             </div>
         </div>
 
-        <!-- Full Products Grid (Hidden by default) -->
+        <!-- Full Products Grid (Hidden by default) 
         <div class="full-products-section" id="full-products-section" style="display: none;">
             <div class="full-section-header">
                 <h3>All Today's Hot Deals</h3>
@@ -987,13 +1033,26 @@
                 </button>
             </div>
             <div class="products-grid" id="products-container">
-                <!-- Full product grid will be shown here -->
+                <!-- Full product grid will be shown here 
             </div>
             <div class="load-more-section">
                 <button id="load-more-btn" class="load-more-btn">
                     <i class="fas fa-plus"></i>
                     Load More Deals
                 </button>
+            </div>
+        </div>
+    </div>
+</section>-->
+
+          <!-- View All Deals Button -->
+            <div class="view-all-section">
+                <button class="view-all-btn" id="view-all-deals" onclick="window.open('deals/today.html', '_blank')">
+                    <span>🔥 View All Hot Deals</span>
+                    <i class="fas fa-external-link-alt"></i>
+                    <span class="deals-count"></span>
+                </button>
+                <p class="view-all-subtitle">Explore all <span id="total-deals-preview">0</span> active deals on dedicated page</p>
             </div>
         </div>
     </div>
