@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🔥 Today's Hot Deals - Thrift Zone</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/theme.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <meta name="description" content="🔥 Today's Hot Deals - All the best deals and offers updated daily. Exclusive discounts up to 80% OFF!">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <!-- Logo Section -->
+            <div class="logo">
+                <img src="../images/logo-icon.png" alt="Thrift Zone" class="logo-icon">
+                <div class="logo-text">
+                    <h1>Thrift Zone</h1>
+                    <span class="tagline">Smart Shopping Hub</span>
+                </div>
+            </div>
+
+            <!-- Search Bar -->
+            <div class="search-container">
+                <div class="search-box">
+                    <input type="text" id="search-input" placeholder="Search for deals, products..." autocomplete="off">
+                    <button class="search-btn" id="search-btn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+                <div class="search-suggestions" id="search-suggestions"></div>
+            </div>
+
+            <!-- Navigation -->
+            <nav class="nav">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="../index.html#categories" class="nav-link">Categories</a>
+                <a href="#" class="nav-link active">Today's Deals</a>
+            </nav>
+
+            <!-- Header Actions with Auth -->
+            <div class="auth-section" id="auth-section">
+                <!-- Auth buttons will be populated by JavaScript -->
+            </div>
+            
+            <div class="live-indicator">
+                <span class="pulse"></span>
+                <span class="text">Live</span>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <div class="mobile-nav" id="mobile-nav">
+            <div class="mobile-nav-header">
+                <h3>Menu</h3>
+                <button class="mobile-nav-close">&times;</button>
+            </div>
+            <div class="mobile-nav-content">
+                <a href="../index.html" class="mobile-nav-link">🏠 Home</a>
+                <a href="../index.html#categories" class="mobile-nav-link">📂 Categories</a>
+                <a href="#" class="mobile-nav-link active">🔥 Today's Deals</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Dedicated Deals Page Hero -->
+    <section class="deals-page-hero">
+        <div class="container">
+            <div class="deals-hero-content">
+                <div class="breadcrumb">
+                    <a href="../index.html">Home</a>
+                    <i class="fas fa-chevron-right"></i>
+                    <span>Today's Hot Deals</span>
+                </div>
+                
+                <h1 class="deals-page-title">
+                    🔥 Today's Hot Deals
+                    <span class="deals-live-badge">Live Updates</span>
+                </h1>
+                
+                <div class="deals-page-stats">
+                    <div class="deals-stat">
+                        <span class="deals-stat-number" id="total-deals-count">0</span>
+                        <span class="deals-stat-label">Active Deals</span>
+                    </div>
+                    <div class="deals-stat">
+                        <span class="deals-stat-number">Up to 80%</span>
+                        <span class="deals-stat-label">Max Discount</span>
+                    </div>
+                    <div class="deals-stat">
+                        <span class="deals-stat-number">24/7</span>
+                        <span class="deals-stat-label">Updated</span>
+                    </div>
+                </div>
+                
+                <p class="deals-page-subtitle">
+                    Discover amazing discounts across all categories • Updated every 5 minutes • Exclusive offers
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Deals Filters and Products -->
+    <section class="deals-page-content">
+        <div class="container">
+            <!-- Enhanced Filter Section -->
+            <div class="deals-page-filters">
+                <div class="filter-row">
+                    <div class="filter-tabs">
+                        <button class="filter-btn active" data-filter="all">All Deals</button>
+                        <button class="filter-btn" data-filter="electronics">Electronics</button>
+                        <button class="filter-btn" data-filter="fashion">Fashion</button>
+                        <button class="filter-btn" data-filter="home">Home</button>
+                        <button class="filter-btn" data-filter="health">Health</button>
+                        <button class="filter-btn" data-filter="sports">Sports</button>
+                        <button class="filter-btn" data-filter="books">Books</button>
+                    </div>
+                    
+                    <div class="filter-controls">
+                        <select class="sort-select" id="sort-select">
+                            <option value="latest">Latest First</option>
+                            <option value="price-low">Price: Low to High</option>
+                            <option value="price-high">Price: High to Low</option>
+                            <option value="discount">Highest Discount</option>
+                        </select>
+                        
+                        <div class="view-options">
+                            <button class="view-toggle" id="view-toggle" title="Toggle View">
+                                <i class="fas fa-th-large"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Active Filters Display -->
+                <div class="active-filters" id="active-filters" style="display: none;">
+                    <span class="active-filters-label">Active Filters:</span>
+                    <div class="active-filters-list" id="active-filters-list"></div>
+                    <button class="clear-filters-btn" id="clear-filters">Clear All</button>
+                </div>
+            </div>
+
+            <!-- Products Grid -->
+            <div class="deals-products-section">
+                <div class="deals-results-info">
+                    <div class="results-count" id="results-count">
+                        Showing <span id="showing-count">0</span> of <span id="total-count">0</span> deals
+                    </div>
+                    <div class="last-updated" id="last-updated">
+                        Last updated: <span id="update-time">Loading...</span>
+                    </div>
+                </div>
+                
+                <div class="products-grid" id="products-container">
+                    <!-- Loading State -->
+                    <div class="loading-state">
+                        <div class="loading-spinner">
+                            <div class="spinner"></div>
+                        </div>
+                        <p>Loading today's hottest deals...</p>
+                    </div>
+                </div>
+                
+                <!-- Load More Section -->
+                <div class="load-more-section">
+                    <button id="load-more-btn" class="load-more-btn">
+                        <i class="fas fa-plus"></i>
+                        Load More Deals
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="../images/logo-icon.png" alt="Thrift Zone">
+                        <h3>Thrift Zone</h3>
+                    </div>
+                    <p>Your smart shopping companion for the best deals and offers online.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../index.html#categories">Categories</a></li>
+                        <li><a href="#">Today's Deals</a></li>
+                        <li><a href="../blog/">Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-disclaimer">
+                    <p>&copy; 2025 Thrift Zone. All rights reserved.</p>
+                    <p class="affiliate-disclosure">
+                        <strong>Affiliate Disclosure:</strong> We may earn commission from purchases made through our links.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../js/auth.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/deals-page.js"></script>
+    <script src="../js/theme.js"></script>
+    <script src="../js/search.js"></script>
+</body>
+</html>
