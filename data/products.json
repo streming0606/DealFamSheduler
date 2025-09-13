@@ -1,8 +1,36 @@
 {
-  "last_updated": "2025-09-13T10:16:15.140030+05:30",
-  "total_products": 26,
+  "last_updated": "2025-09-13T13:20:27.451022+05:30",
+  "total_products": 28,
   "daily_target": 6,
   "products": [
+    {
+      "id": "product_afternoon_1_20250913_075020",
+      "title": "SKMEI Men's Digital Sports Watch 50m Waterproof LED Military Multifunction Smart Watch Stopwatch Cou...",
+      "image": "https://m.media-amazon.com/images/I/61eac98fJRL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B08L98S4NJ?tag=gadgetvill09f-21",
+      "price": "\u20b9699",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "fashion",
+      "asin": "B08L98S4NJ",
+      "data_source": "serpapi",
+      "posted_date": "2025-09-13T13:20:20.643334+05:30",
+      "session_type": "afternoon",
+      "link_index": 58
+    },
+    {
+      "id": "product_afternoon_2_20250913_075027",
+      "title": "Marvel Avengers Ultimate Carry Pack",
+      "image": "https://m.media-amazon.com/images/I/61VO1hCNpCL._AC_UY218_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/1789058457?tag=gadgetvill09f-21",
+      "price": "\u20b9599",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2b50",
+      "category": "electronics",
+      "asin": "1789058457",
+      "data_source": "serpapi",
+      "posted_date": "2025-09-13T13:20:27.162879+05:30",
+      "session_type": "afternoon",
+      "link_index": 59
+    },
     {
       "id": "product_morning_1_20250913_044608",
       "title": "FLITE Men's Flip Flops Thong Slippers",
