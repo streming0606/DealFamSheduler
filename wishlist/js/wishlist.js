@@ -1,3 +1,56 @@
+
+
+
+
+
+// Add this to the beginning of your existing wishlist/js/wishlist.js
+
+// Listen for wishlist updates from main page
+window.addEventListener('wishlistUpdated', (event) => {
+    if (window.thriftWishlist) {
+        window.thriftWishlist.wishlist = event.detail.wishlist;
+        window.thriftWishlist.renderWishlist();
+    }
+});
+
+// Update the loadWishlist method in your ThriftZoneWishlist class
+loadWishlist() {
+    // Load wishlist from localStorage (same as main page)
+    const savedWishlist = localStorage.getItem('thriftzone_wishlist');
+    if (savedWishlist) {
+        this.wishlist = JSON.parse(savedWishlist);
+    } else {
+        this.wishlist = [];
+    }
+}
+
+// Update the saveWishlist method
+saveWishlist() {
+    localStorage.setItem('thriftzone_wishlist', JSON.stringify(this.wishlist));
+    
+    // Notify main page about wishlist changes
+    window.dispatchEvent(new CustomEvent('wishlistUpdated', { 
+        detail: { wishlist: this.wishlist, count: this.wishlist.length } 
+    }));
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // Thrift Zone Wishlist System
 class ThriftZoneWishlist {
     constructor() {
