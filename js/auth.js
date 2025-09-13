@@ -2,8 +2,8 @@
 class ThriftZoneAuth {
     constructor() {
         // Replace with your actual Supabase credentials
-        this.supabaseUrl = 'YOUR_SUPABASE_URL'; // e.g., 'https://xyz.supabase.co'
-        this.supabaseAnonKey = 'YOUR_SUPABASE_ANON_KEY'; // Your anon public key
+        this.supabaseUrl = 'https://osymkmdqflqhjdomxdga.supabase.co'; // e.g., 'https://xyz.supabase.co'
+        this.supabaseAnonKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im9zeW1rbWRxZmxxaGpkb214ZGdhIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTc3NDY3NzAsImV4cCI6MjA3MzMyMjc3MH0.dg3reeNJhf9iyu7SjUktvOiF--yhA5bz4JkCdETflZU'; // Your anon public key
         
         // Initialize Supabase (will be set after credentials are configured)
         this.supabase = null;
