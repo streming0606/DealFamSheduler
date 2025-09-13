@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile - Thrift Zone</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/theme.css">
+    <link rel="stylesheet" href="../css/auth.css">
+    <link rel="stylesheet" href="css/profile.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <meta name="description" content="Manage your profile, preferences, and account settings on Thrift Zone.">
+</head>
+<body>
+    <!-- Header (Same as main page) -->
+    <header class="header">
+        <div class="container">
+            <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="logo">
+                <img src="../images/logo-icon.png" alt="Thrift Zone" class="logo-icon">
+                <div class="logo-text">
+                    <h1>Thrift Zone</h1>
+                    <span class="tagline">Smart Shopping Hub</span>
+                </div>
+            </div>
+
+            <div class="search-container">
+                <div class="search-box">
+                    <input type="text" id="search-input" placeholder="Search for deals..." autocomplete="off">
+                    <button class="search-btn" id="search-btn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+
+            <nav class="nav">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="../index.html#categories" class="nav-link">Categories</a>
+                <a href="../index.html#deals" class="nav-link">Today's Deals</a>
+                <a href="../blog/" class="nav-link">Blog</a>
+                <a href="../index.html#about" class="nav-link">About</a>
+            </nav>
+
+            <div class="header-actions">
+                <button class="theme-toggle" id="theme-toggle" title="Toggle Dark Mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                
+                <div class="auth-section" id="auth-section">
+                    <div class="auth-buttons" id="auth-buttons">
+                        <button class="auth-btn login-btn" id="login-btn">
+                            <i class="fas fa-sign-in-alt"></i>
+                            <span class="btn-text">Login</span>
+                        </button>
+                        <button class="auth-btn signup-btn" id="signup-btn">
+                            <i class="fas fa-user-plus"></i>
+                            <span class="btn-text">Sign Up</span>
+                        </button>
+                    </div>
+                    
+                    <div class="user-profile" id="user-profile" style="display: none;">
+                        <div class="user-avatar" id="user-avatar">
+                            <img src="" alt="User" id="user-avatar-img">
+                            <span class="user-initial" id="user-initial">U</span>
+                        </div>
+                        <div class="user-dropdown" id="user-dropdown">
+                            <div class="user-info">
+                                <span class="user-name" id="user-name">User Name</span>
+                                <span class="user-email" id="user-email">user@example.com</span>
+                            </div>
+                            <div class="dropdown-menu">
+                                <a href="index.html" class="dropdown-item active" id="profile-link">
+                                    <i class="fas fa-user"></i> Profile
+                                </a>
+                                <a href="../orders/" class="dropdown-item" id="orders-link">
+                                    <i class="fas fa-shopping-bag"></i> My Orders
+                                </a>
+                                <a href="../wishlist/" class="dropdown-item" id="wishlist-link">
+                                    <i class="fas fa-heart"></i> Wishlist
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <button class="dropdown-item logout-btn" id="logout-btn">
+                                    <i class="fas fa-sign-out-alt"></i> Logout
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="live-indicator">
+                    <span class="pulse"></span>
+                    <span class="text">Live</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Profile Main Content -->
+    <main class="profile-main">
+        <div class="container">
+            <!-- Breadcrumbs -->
+            <nav class="breadcrumbs">
+                <a href="../index.html">Home</a>
+                <span class="separator">›</span>
+                <span>My Profile</span>
+            </nav>
+
+            <!-- Profile Header -->
+            <div class="profile-header">
+                <div class="profile-avatar-section">
+                    <div class="profile-avatar" id="profile-avatar">
+                        <img src="" alt="Profile" id="profile-avatar-img" style="display: none;">
+                        <span class="profile-initial" id="profile-initial">U</span>
+                        <button class="avatar-edit-btn" onclick="triggerAvatarUpload()">
+                            <i class="fas fa-camera"></i>
+                        </button>
+                        <input type="file" id="avatar-upload" accept="image/*" style="display: none;">
+                    </div>
+                    <div class="profile-basic-info">
+                        <h1 class="profile-name" id="profile-display-name">User Name</h1>
+                        <p class="profile-email" id="profile-display-email">user@example.com</p>
+                        <p class="profile-joined">Member since <span id="profile-join-date">September 2025</span></p>
+                    </div>
+                </div>
+                <div class="profile-stats">
+                    <div class="stat-card">
+                        <div class="stat-number" id="total-orders">0</div>
+                        <div class="stat-label">Orders</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" id="total-wishlist">0</div>
+                        <div class="stat-label">Wishlist</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" id="total-saved">₹0</div>
+                        <div class="stat-label">Saved</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Profile Navigation -->
+            <div class="profile-navigation">
+                <button class="profile-nav-btn active" data-tab="personal-info">
+                    <i class="fas fa-user"></i>
+                    Personal Info
+                </button>
+                <button class="profile-nav-btn" data-tab="preferences">
+                    <i class="fas fa-cog"></i>
+                    Preferences
+                </button>
+                <button class="profile-nav-btn" data-tab="security">
+                    <i class="fas fa-shield-alt"></i>
+                    Security
+                </button>
+                <button class="profile-nav-btn" data-tab="notifications">
+                    <i class="fas fa-bell"></i>
+                    Notifications
+                </button>
+            </div>
+
+            <!-- Profile Content Tabs -->
+            <div class="profile-content">
+                <!-- Personal Info Tab -->
+                <div class="profile-tab active" id="personal-info-tab">
+                    <div class="profile-section">
+                        <h2 class="section-title">Personal Information</h2>
+                        <form class="profile-form" id="personal-info-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="full-name">Full Name</label>
+                                    <input type="text" id="full-name" placeholder="Enter your full name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone-number">Phone Number</label>
+                                    <input type="tel" id="phone-number" placeholder="Enter your phone number">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="date-of-birth">Date of Birth</label>
+                                    <input type="date" id="date-of-birth">
+                                </div>
+                                <div class="form-group">
+                                    <label for="gender">Gender</label>
+                                    <select id="gender">
+                                        <option value="">Select Gender</option>
+                                        <option value="male">Male</option>
+                                        <option value="female">Female</option>
+                                        <option value="other">Other</option>
+                                        <option value="prefer-not-to-say">Prefer not to say</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="bio">Bio</label>
+                                <textarea id="bio" placeholder="Tell us about yourself..." rows="4"></textarea>
+                            </div>
+                            <button type="submit" class="btn-primary">
+                                <i class="fas fa-save"></i>
+                                Save Changes
+                            </button>
+                        </form>
+                    </div>
+
+                    <div class="profile-section">
+                        <h2 class="section-title">Address Information</h2>
+                        <form class="profile-form" id="address-form">
+                            <div class="form-group">
+                                <label for="address-line1">Address Line 1</label>
+                                <input type="text" id="address-line1" placeholder="Street address">
+                            </div>
+                            <div class="form-group">
+                                <label for="address-line2">Address Line 2 (Optional)</label>
+                                <input type="text" id="address-line2" placeholder="Apartment, suite, etc.">
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="city">City</label>
+                                    <input type="text" id="city" placeholder="City">
+                                </div>
+                                <div class="form-group">
+                                    <label for="state">State</label>
+                                    <input type="text" id="state" placeholder="State">
+                                </div>
+                                <div class="form-group">
+                                    <label for="pincode">PIN Code</label>
+                                    <input type="text" id="pincode" placeholder="PIN Code">
+                                </div>
+                            </div>
+                            <button type="submit" class="btn-primary">
+                                <i class="fas fa-save"></i>
+                                Save Address
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Preferences Tab -->
+                <div class="profile-tab" id="preferences-tab">
+                    <div class="profile-section">
+                        <h2 class="section-title">Shopping Preferences</h2>
+                        <form class="profile-form" id="preferences-form">
+                            <div class="preference-group">
+                                <h3>Favorite Categories</h3>
+                                <div class="checkbox-grid">
+                                    <label class="checkbox-item">
+                                        <input type="checkbox" name="categories" value="electronics">
+                                        <span class="checkmark"></span>
+                                        <span class="label-text">Electronics</span>
+                                    </label>
+                                    <label class="checkbox-item">
+                                        <input type="checkbox" name="categories" value="fashion">
+                                        <span class="checkmark"></span>
+                                        <span class="label-text">Fashion</span>
+                                    </label>
+                                    <label class="checkbox-item">
+                                        <input type="checkbox" name="categories" value="home">
+                                        <span class="checkmark"></span>
+                                        <span class="label-text">Home & Living</span>
+                                    </label>
+                                    <label class="checkbox-item">
+                                        <input type="checkbox" name="categories" value="health">
+                                        <span class="checkmark"></span>
+                                        <span class="label-text">Health & Beauty</span>
+                                    </label>
+                                    <label class="checkbox-item">
+                                        <input type="checkbox" name="categories" value="sports">
+                                        <span class="checkmark"></span>
+                                        <span class="label-text">Sports & Fitness</span>
+                                    </label>
+                                    <label class="checkbox-item">
+                                        <input type="checkbox" name="categories" value="books">
+                                        <span class="checkmark"></span>
+                                        <span class="label-text">Books</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="preference-group">
+                                <h3>Price Range</h3>
+                                <div class="price-range-slider">
+                                    <label for="min-price">Minimum Price: ₹<span id="min-price-value">0</span></label>
+                                    <input type="range" id="min-price" min="0" max="50000" value="0" step="500">
+                                    <label for="max-price">Maximum Price: ₹<span id="max-price-value">10000</span></label>
+                                    <input type="range" id="max-price" min="1000" max="100000" value="10000" step="1000">
+                                </div>
+                            </div>
+
+                            <button type="submit" class="btn-primary">
+                                <i class="fas fa-save"></i>
+                                Save Preferences
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Security Tab -->
+                <div class="profile-tab" id="security-tab">
+                    <div class="profile-section">
+                        <h2 class="section-title">Account Security</h2>
+                        <form class="profile-form" id="security-form">
+                            <div class="form-group">
+                                <label for="current-password">Current Password</label>
+                                <input type="password" id="current-password" placeholder="Enter current password">
+                            </div>
+                            <div class="form-group">
+                                <label for="new-password">New Password</label>
+                                <input type="password" id="new-password" placeholder="Enter new password">
+                            </div>
+                            <div class="form-group">
+                                <label for="confirm-password">Confirm New Password</label>
+                                <input type="password" id="confirm-password" placeholder="Confirm new password">
+                            </div>
+                            <button type="submit" class="btn-primary">
+                                <i class="fas fa-key"></i>
+                                Update Password
+                            </button>
+                        </form>
+                    </div>
+
+                    <div class="profile-section">
+                        <h2 class="section-title">Account Actions</h2>
+                        <div class="account-actions">
+                            <button class="action-btn danger" onclick="deleteAccount()">
+                                <i class="fas fa-trash"></i>
+                                Delete Account
+                            </button>
+                            <p class="action-description">This will permanently delete your account and all data.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Notifications Tab -->
+                <div class="profile-tab" id="notifications-tab">
+                    <div class="profile-section">
+                        <h2 class="section-title">Notification Preferences</h2>
+                        <form class="profile-form" id="notifications-form">
+                            <div class="notification-setting">
+                                <div class="setting-info">
+                                    <h3>Email Notifications</h3>
+                                    <p>Receive deal alerts and updates via email</p>
+                                </div>
+                                <label class="toggle-switch">
+                                    <input type="checkbox" id="email-notifications" checked>
+                                    <span class="slider"></span>
+                                </label>
+                            </div>
+
+                            <div class="notification-setting">
+                                <div class="setting-info">
+                                    <h3>Push Notifications</h3>
+                                    <p>Get instant notifications for hot deals</p>
+                                </div>
+                                <label class="toggle-switch">
+                                    <input type="checkbox" id="push-notifications">
+                                    <span class="slider"></span>
+                                </label>
+                            </div>
+
+                            <div class="notification-setting">
+                                <div class="setting-info">
+                                    <h3>SMS Notifications</h3>
+                                    <p>Receive SMS alerts for exclusive deals</p>
+                                </div>
+                                <label class="toggle-switch">
+                                    <input type="checkbox" id="sms-notifications">
+                                    <span class="slider"></span>
+                                </label>
+                            </div>
+
+                            <button type="submit" class="btn-primary">
+                                <i class="fas fa-save"></i>
+                                Save Notification Settings
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <!-- Same footer as main page -->
+    </footer>
+
+    <!-- Auth Modals (Same as main page) -->
+    <div class="auth-overlay" id="auth-overlay" style="display: none;">
+        <!-- Same auth modals content -->
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+    <script src="../js/theme.js"></script>
+    <script src="../js/auth.js"></script>
+    <script src="js/profile.js"></script>
+</body>
+</html>
