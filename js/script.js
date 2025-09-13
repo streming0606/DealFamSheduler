@@ -633,6 +633,235 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
+// Horizontal Scrolling Functionality
+class HorizontalDealsScroller {
+    constructor() {
+        this.horizontalContainer = document.getElementById('horizontal-products-container');
+        this.fullContainer = document.getElementById('products-container');
+        this.horizontalSection = document.querySelector('.horizontal-deals-container');
+        this.fullSection = document.getElementById('full-products-section');
+        this.scrollLeftBtn = document.getElementById('scroll-left');
+        this.scrollRightBtn = document.getElementById('scroll-right');
+        this.viewAllBtn = document.getElementById('view-all-deals');
+        this.backToPreviewBtn = document.getElementById('back-to-preview');
+        this.dealsCountSpan = document.querySelector('.deals-count');
+        
+        this.isHorizontalMode = true;
+        this.scrollAmount = 300;
+        this.maxHorizontalItems = 8; // Show max 8 items in horizontal scroll
+        
+        this.init();
+    }
+    
+    init() {
+        if (!this.horizontalContainer) return;
+        
+        // Setup event listeners
+        this.scrollLeftBtn?.addEventListener('click', () => this.scrollLeft());
+        this.scrollRightBtn?.addEventListener('click', () => this.scrollRight());
+        this.viewAllBtn?.addEventListener('click', () => this.showFullView());
+        this.backToPreviewBtn?.addEventListener('click', () => this.showHorizontalView());
+        
+        // Update scroll button states on scroll
+        this.horizontalContainer.addEventListener('scroll', () => this.updateScrollButtons());
+        
+        // Initialize with horizontal view
+        this.showHorizontalView();
+    }
+    
+    renderHorizontalProducts() {
+        if (!this.horizontalContainer || allProducts.length === 0) return;
+        
+        const filteredProducts = getFilteredProducts();
+        const sortedProducts = sortProducts(filteredProducts);
+        const productsToShow = sortedProducts.slice(0, this.maxHorizontalItems);
+        
+        this.horizontalContainer.innerHTML = '';
+        
+        if (productsToShow.length === 0) {
+            this.horizontalContainer.innerHTML = `
+                <div class="empty-horizontal-state">
+                    <p>No deals available in this category</p>
+                </div>
+            `;
+            return;
+        }
+        
+        productsToShow.forEach((product, index) => {
+            const productCard = createProductCard(product, index);
+            this.horizontalContainer.appendChild(productCard);
+            
+            // Add entrance animation
+            setTimeout(() => {
+                productCard.style.opacity = '1';
+                productCard.style.transform = 'translateY(0)';
+            }, index * 100);
+        });
+        
+        // Update deals count
+        this.updateDealsCount(filteredProducts.length);
+        
+        // Update scroll buttons
+        setTimeout(() => this.updateScrollButtons(), 100);
+    }
+    
+    renderFullProducts() {
+        if (!this.fullContainer) return;
+        
+        const filteredProducts = getFilteredProducts();
+        const sortedProducts = sortProducts(filteredProducts);
+        const productsToShow = sortedProducts.slice(0, displayedProducts + productsPerPage);
+        
+        this.fullContainer.innerHTML = '';
+        
+        if (productsToShow.length === 0) {
+            showEmptyState();
+            return;
+        }
+        
+        productsToShow.forEach((product, index) => {
+            const productCard = createProductCard(product, index);
+            this.fullContainer.appendChild(productCard);
+            
+            setTimeout(() => {
+                productCard.style.opacity = '1';
+                productCard.style.transform = 'translateY(0)';
+            }, index * 50);
+        });
+        
+        displayedProducts = productsToShow.length;
+        
+        // Update load more button
+        const loadMoreBtn = document.getElementById('load-more-btn');
+        if (loadMoreBtn) {
+            if (displayedProducts >= filteredProducts.length) {
+                loadMoreBtn.style.display = 'none';
+            } else {
+                loadMoreBtn.style.display = 'block';
+            }
+        }
+    }
+    
+    scrollLeft() {
+        this.horizontalContainer.scrollBy({
+            left: -this.scrollAmount,
+            behavior: 'smooth'
+        });
+    }
+    
+    scrollRight() {
+        this.horizontalContainer.scrollBy({
+            left: this.scrollAmount,
+            behavior: 'smooth'
+        });
+    }
+    
+    updateScrollButtons() {
+        const container = this.horizontalContainer;
+        const scrollLeft = container.scrollLeft;
+        const maxScroll = container.scrollWidth - container.clientWidth;
+        
+        // Update left button
+        if (this.scrollLeftBtn) {
+            this.scrollLeftBtn.disabled = scrollLeft <= 0;
+        }
+        
+        // Update right button
+        if (this.scrollRightBtn) {
+            this.scrollRightBtn.disabled = scrollLeft >= maxScroll;
+        }
+    }
+    
+    showFullView() {
+        this.isHorizontalMode = false;
+        this.horizontalSection.style.display = 'none';
+        this.fullSection.style.display = 'block';
+        
+        // Reset displayed products counter and render full view
+        displayedProducts = 0;
+        this.renderFullProducts();
+        
+        // Scroll to full section
+        this.fullSection.scrollIntoView({ behavior: 'smooth' });
+    }
+    
+    showHorizontalView() {
+        this.isHorizontalMode = true;
+        this.horizontalSection.style.display = 'block';
+        this.fullSection.style.display = 'none';
+        
+        this.renderHorizontalProducts();
+        
+        // Scroll back to deals section
+        document.getElementById('deals').scrollIntoView({ behavior: 'smooth' });
+    }
+    
+    updateDealsCount(count) {
+        if (this.dealsCountSpan) {
+            this.dealsCountSpan.textContent = `${count} deals`;
+        }
+    }
+    
+    // Public method to refresh products
+    refresh() {
+        if (this.isHorizontalMode) {
+            this.renderHorizontalProducts();
+        } else {
+            this.renderFullProducts();
+        }
+    }
+}
+
+// Initialize horizontal scroller
+let horizontalScroller = null;
+
+// Update your existing DOMContentLoaded event listener
+document.addEventListener('DOMContentLoaded', function() {
+    loadProducts();
+    setupEventListeners();
+    updateLastRefresh();
+    initializeEnhancements();
+    initializeBannerSlider();
+    
+    // Initialize horizontal scroller
+    setTimeout(() => {
+        horizontalScroller = new HorizontalDealsScroller();
+        initializeSearch();
+    }, 1000);
+});
+
+// Override the original renderProducts function to work with horizontal scroller
+const originalRenderProducts = renderProducts;
+renderProducts = function() {
+    if (horizontalScroller) {
+        horizontalScroller.refresh();
+    } else {
+        originalRenderProducts.call(this);
+    }
+    initializeEnhancedCards();
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // Your original getFilteredProducts function (UNCHANGED)
