@@ -1,8 +1,22 @@
 {
-  "last_updated": "2025-09-13T18:30:52.235419+05:30",
-  "total_products": 30,
+  "last_updated": "2025-09-13T21:20:39.689210+05:30",
+  "total_products": 31,
   "daily_target": 6,
   "products": [
+    {
+      "id": "product_night_1_20250913_155039",
+      "title": "Storite Imported RFID PU Leather 9 Slot Vertical Credit Debit Card Holder Money Wallet Zipper Coin P...",
+      "image": "https://m.media-amazon.com/images/I/81LgZfZZBwL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CG5V3TPY?tag=gadgetvill09f-21",
+      "price": "\u20b9448",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B0CG5V3TPY",
+      "data_source": "serpapi",
+      "posted_date": "2025-09-13T21:20:39.570200+05:30",
+      "session_type": "night",
+      "link_index": 67
+    },
     {
       "id": "product_morning_1_20250913_130045",
       "title": "Jockey 7036 Men's Compact Cotton Terry Ankle Length Socks With Stay Fresh Treatment (Pack of 3)",
