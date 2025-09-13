@@ -269,11 +269,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
+// Enhanced Product Card Functions
 function createProductCard(product, index = 0) {
     const card = document.createElement('div');
     card.className = 'product-card';
     card.setAttribute('data-category', product.category);
-    card.setAttribute('data-product-id', product.id); // Add this line
     card.style.opacity = '0';
     card.style.transform = 'translateY(20px)';
     card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
@@ -285,13 +285,10 @@ function createProductCard(product, index = 0) {
     // Enhanced product data
     const enhancedData = enhanceProductData(product);
     
-    // Check if in wishlist
-    const isInWishlist = window.wishlistManager ? window.wishlistManager.isInWishlist(product.id) : false;
-    
     card.innerHTML = `
         <div class="product-image-container">
             ${product.image ? 
-                `<img src="${product.image}" alt="${product.title}" class="product-image" loading="lazy" onerror="this.parentElement.innerHTML='<div class=\\"product-placeholder\\"><i class=\\"fas fa-image\\"></i></div>'">` 
+                `<img src="${product.image}" alt="${product.title}" class="product-image" loading="lazy" onerror="this.parentElement.innerHTML='<div class=\\"product-placeholder\\"><i class=\\"fas fa-image\\"></i></div>` 
                 : 
                 '<div class="product-placeholder"><i class="fas fa-image"></i></div>'
             }
@@ -303,12 +300,8 @@ function createProductCard(product, index = 0) {
             </div>
             
             <div class="product-top-actions">
-                <button class="wishlist-btn ${isInWishlist ? 'active' : ''}" 
-                        data-product-id="${product.id}"
-                        onclick="toggleWishlist('${product.id}', this)" 
-                        title="Add to wishlist"
-                        style="${isInWishlist ? 'color: #ef4444;' : ''}">
-                    <i class="${isInWishlist ? 'fas' : 'far'} fa-heart"></i>
+                <button class="action-btn wishlist-btn" onclick="toggleWishlist('${product.id}', this)" title="Add to wishlist">
+                    <i class="far fa-heart"></i>
                 </button>
             </div>
         </div>
@@ -320,46 +313,50 @@ function createProductCard(product, index = 0) {
             
             <div class="product-pricing">
                 <div class="price-section">
-                    <span class="price-current">₹${enhancedData.salePrice}</span>
+                    <span class="price-current">
+                        <span class="currency">₹</span>${enhancedData.salePrice}
+                    </span>
                     <span class="price-original">₹${enhancedData.originalPrice}</span>
                     <span class="price-discount-badge">${enhancedData.discountPercent}% OFF</span>
                 </div>
-                <div class="savings-amount">You Save ₹${enhancedData.savings}</div>
+                <div class="savings-amount">
+                    You Save ₹${enhancedData.savings}
+                </div>
             </div>
             
             <div class="product-urgency">
-                ${enhancedData.isLowStock ? `<span class="stock-indicator">Only ${enhancedData.stockCount} left!</span>` : ''}
-                ${enhancedData.isLimitedTime ? '<span class="limited-time-indicator">Limited Time Offer</span>' : ''}
+                ${enhancedData.isLowStock ? `<div class="stock-indicator">Only ${enhancedData.stockCount} left!</div>` : ''}
+                ${enhancedData.isLimitedTime ? '<div class="limited-time-indicator">Limited Time Offer</div>' : ''}
             </div>
             
             <div class="deal-countdown">
-                <span class="countdown-label">Expires:</span>
+                <div class="countdown-label">Deal Expires In</div>
                 <div class="countdown-timer" data-product-id="${product.id}">
                     <div class="countdown-unit">
-                        <span class="countdown-number" data-hours>02</span>
-                        <span class="countdown-text">h</span>
+                        <div class="countdown-number" data-hours>02</div>
+                        <div class="countdown-text">Hours</div>
                     </div>
                     <div class="countdown-unit">
-                        <span class="countdown-number" data-minutes>00</span>
-                        <span class="countdown-text">m</span>
+                        <div class="countdown-number" data-minutes>00</div>
+                        <div class="countdown-text">Mins</div>
                     </div>
                     <div class="countdown-unit">
-                        <span class="countdown-number" data-seconds>00</span>
-                        <span class="countdown-text">s</span>
+                        <div class="countdown-number" data-seconds>00</div>
+                        <div class="countdown-text">Secs</div>
                     </div>
                 </div>
             </div>
             
             <div class="product-social">
                 <div class="social-actions">
-                    <button class="social-action likes-action" onclick="toggleLike('${product.id}', this)">
+                    <div class="social-action likes-action" onclick="toggleLike('${product.id}', this)">
                         <i class="far fa-thumbs-up"></i>
                         <span>${enhancedData.likes}</span>
-                    </button>
-                    <button class="social-action" onclick="shareProduct('${product.id}')">
+                    </div>
+                    <div class="social-action" onclick="shareProduct('${product.id}')">
                         <i class="fas fa-share"></i>
                         <span>${enhancedData.shares}</span>
-                    </button>
+                    </div>
                 </div>
             </div>
             
@@ -369,11 +366,16 @@ function createProductCard(product, index = 0) {
                    class="deal-btn" 
                    onclick="trackClick('${product.id}')"
                    rel="noopener noreferrer">
-                    <i class="fas fa-bolt"></i>
-                    <span>Grab Deal Now</span>
+                    <div>
+                        <div class="deal-btn-text">
+                            <i class="fas fa-bolt"></i>
+                            Grab Deal Now
+                        </div>
+                        <div class="deal-btn-subtext">Free Delivery</div>
+                    </div>
                 </a>
                 <div class="secondary-actions">
-                    <button class="quick-action-btn" onclick="addToWishlist('${product.id}')" title="Save">
+                    <button class="quick-action-btn" onclick="addToWishlist('${product.id}')" title="Save for later">
                         <i class="fas fa-bookmark"></i>
                     </button>
                 </div>
