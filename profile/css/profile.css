@@ -37,6 +37,13 @@
     gap: 2rem;
 }
 
+
+
+
+
+
+
+
 .profile-avatar-section {
     display: flex;
     align-items: center;
@@ -89,6 +96,19 @@
     background: var(--primary-hover);
     transform: scale(1.1);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .profile-basic-info {
     flex: 1;
