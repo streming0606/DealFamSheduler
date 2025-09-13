@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Wishlist - Thrift Zone</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/theme.css">
+    <link rel="stylesheet" href="../css/auth.css">
+    <link rel="stylesheet" href="css/wishlist.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <meta name="description" content="Your saved deals and favorite products on Thrift Zone. Never miss a great offer!">
+</head>
+<body>
+    <!-- Header (Same as other pages) -->
+    <header class="header">
+        <div class="container">
+            <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="logo">
+                <img src="../images/logo-icon.png" alt="Thrift Zone" class="logo-icon">
+                <div class="logo-text">
+                    <h1>Thrift Zone</h1>
+                    <span class="tagline">Smart Shopping Hub</span>
+                </div>
+            </div>
+
+            <div class="search-container">
+                <div class="search-box">
+                    <input type="text" id="search-input" placeholder="Search wishlist..." autocomplete="off">
+                    <button class="search-btn" id="search-btn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+
+            <nav class="nav">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="../index.html#categories" class="nav-link">Categories</a>
+                <a href="../index.html#deals" class="nav-link">Today's Deals</a>
+                <a href="../blog/" class="nav-link">Blog</a>
+                <a href="../index.html#about" class="nav-link">About</a>
+            </nav>
+
+            <div class="header-actions">
+                <button class="theme-toggle" id="theme-toggle" title="Toggle Dark Mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                
+                <div class="auth-section" id="auth-section">
+                    <div class="auth-buttons" id="auth-buttons">
+                        <button class="auth-btn login-btn" id="login-btn">
+                            <i class="fas fa-sign-in-alt"></i>
+                            <span class="btn-text">Login</span>
+                        </button>
+                        <button class="auth-btn signup-btn" id="signup-btn">
+                            <i class="fas fa-user-plus"></i>
+                            <span class="btn-text">Sign Up</span>
+                        </button>
+                    </div>
+                    
+                    <div class="user-profile" id="user-profile" style="display: none;">
+                        <div class="user-avatar" id="user-avatar">
+                            <img src="" alt="User" id="user-avatar-img">
+                            <span class="user-initial" id="user-initial">U</span>
+                        </div>
+                        <div class="user-dropdown" id="user-dropdown">
+                            <div class="user-info">
+                                <span class="user-name" id="user-name">User Name</span>
+                                <span class="user-email" id="user-email">user@example.com</span>
+                            </div>
+                            <div class="dropdown-menu">
+                                <a href="../profile/" class="dropdown-item" id="profile-link">
+                                    <i class="fas fa-user"></i> Profile
+                                </a>
+                                <a href="../orders/" class="dropdown-item" id="orders-link">
+                                    <i class="fas fa-shopping-bag"></i> My Orders
+                                </a>
+                                <a href="index.html" class="dropdown-item active" id="wishlist-link">
+                                    <i class="fas fa-heart"></i> Wishlist
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <button class="dropdown-item logout-btn" id="logout-btn">
+                                    <i class="fas fa-sign-out-alt"></i> Logout
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="live-indicator">
+                    <span class="pulse"></span>
+                    <span class="text">Live</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Wishlist Main Content -->
+    <main class="wishlist-main">
+        <div class="container">
+            <!-- Breadcrumbs -->
+            <nav class="breadcrumbs">
+                <a href="../index.html">Home</a>
+                <span class="separator">›</span>
+                <span>My Wishlist</span>
+            </nav>
+
+            <!-- Wishlist Header -->
+            <div class="wishlist-header">
+                <div class="wishlist-title-section">
+                    <h1 class="wishlist-title">
+                        <i class="fas fa-heart"></i>
+                        My Wishlist
+                    </h1>
+                    <p class="wishlist-subtitle">Save your favorite deals and never miss a great offer</p>
+                    <div class="wishlist-count">
+                        <span id="wishlist-count">0</span> items saved
+                    </div>
+                </div>
+                <div class="wishlist-actions">
+                    <button class="wishlist-action-btn" id="clear-all-btn" onclick="clearAllWishlist()">
+                        <i class="fas fa-trash"></i>
+                        Clear All
+                    </button>
+                    <button class="wishlist-action-btn" id="share-wishlist-btn" onclick="shareWishlist()">
+                        <i class="fas fa-share"></i>
+                        Share Wishlist
+                    </button>
+                </div>
+            </div>
+
+            <!-- Wishlist Filters -->
+            <div class="wishlist-filters">
+                <div class="filter-section">
+                    <label for="category-filter">Filter by Category:</label>
+                    <select id="category-filter">
+                        <option value="all">All Categories</option>
+                        <option value="electronics">Electronics</option>
+                        <option value="fashion">Fashion</option>
+                        <option value="home">Home & Living</option>
+                        <option value="health">Health & Beauty</option>
+                        <option value="sports">Sports & Fitness</option>
+                        <option value="books">Books</option>
+                    </select>
+                </div>
+                <div class="filter-section">
+                    <label for="sort-filter">Sort by:</label>
+                    <select id="sort-filter">
+                        <option value="date-desc">Recently Added</option>
+                        <option value="date-asc">Oldest First</option>
+                        <option value="price-asc">Price: Low to High</option>
+                        <option value="price-desc">Price: High to Low</option>
+                        <option value="name-asc">Name: A-Z</option>
+                    </select>
+                </div>
+                <div class="view-options">
+                    <button class="view-btn active" id="grid-view-btn" data-view="grid">
+                        <i class="fas fa-th"></i>
+                    </button>
+                    <button class="view-btn" id="list-view-btn" data-view="list">
+                        <i class="fas fa-list"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Wishlist Content -->
+            <div class="wishlist-content">
+                <!-- Empty State -->
+                <div class="wishlist-empty" id="wishlist-empty">
+                    <div class="empty-illustration">
+                        <i class="fas fa-heart-broken"></i>
+                    </div>
+                    <h3>Your wishlist is empty</h3>
+                    <p>Start adding products to your wishlist to save them for later</p>
+                    <a href="../index.html#deals" class="btn-primary">
+                        <i class="fas fa-shopping-bag"></i>
+                        Browse Deals
+                    </a>
+                </div>
+
+                <!-- Wishlist Items -->
+                <div class="wishlist-items" id="wishlist-items">
+                    <!-- Items will be populated by JavaScript -->
+                </div>
+            </div>
+
+            <!-- Wishlist Summary -->
+            <div class="wishlist-summary" id="wishlist-summary" style="display: none;">
+                <div class="summary-card">
+                    <h3>Wishlist Summary</h3>
+                    <div class="summary-stats">
+                        <div class="summary-stat">
+                            <span class="stat-label">Total Items:</span>
+                            <span class="stat-value" id="summary-items">0</span>
+                        </div>
+                        <div class="summary-stat">
+                            <span class="stat-label">Total Value:</span>
+                            <span class="stat-value" id="summary-value">₹0</span>
+                        </div>
+                        <div class="summary-stat">
+                            <span class="stat-label">Potential Savings:</span>
+                            <span class="stat-value savings" id="summary-savings">₹0</span>
+                        </div>
+                    </div>
+                    <div class="summary-actions">
+                        <button class="btn-primary" onclick="addAllToCart()">
+                            <i class="fas fa-shopping-cart"></i>
+                            Add All to Cart
+                        </button>
+                        <button class="btn-secondary" onclick="createPriceAlerts()">
+                            <i class="fas fa-bell"></i>
+                            Create Price Alerts
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <!-- Same footer content -->
+    </footer>
+
+    <!-- Auth Modals -->
+    <div class="auth-overlay" id="auth-overlay" style="display: none;">
+        <!-- Same auth modals content -->
+    </div>
+
+    <!-- Confirmation Modal -->
+    <div class="confirm-modal" id="confirm-modal" style="display: none;">
+        <div class="confirm-content">
+            <h3 id="confirm-title">Confirm Action</h3>
+            <p id="confirm-message">Are you sure you want to perform this action?</p>
+            <div class="confirm-actions">
+                <button class="btn-secondary" id="confirm-cancel">Cancel</button>
+                <button class="btn-primary" id="confirm-accept">Confirm</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+    <script src="../js/theme.js"></script>
+    <script src="../js/auth.js"></script>
+    <script src="js/wishlist.js"></script>
+</body>
+</html>
