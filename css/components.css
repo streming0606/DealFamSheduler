@@ -425,72 +425,108 @@
 
 
 
-/* FIXED MOBILE LAYOUT - GRAB DEAL BUTTON ALWAYS VISIBLE */
+/* MOBILE OPTIMIZED PRODUCT CARDS - COMPACT & PROFESSIONAL */
 @media (max-width: 768px) {
     .products-grid {
         grid-template-columns: 1fr;
-        gap: 12px;
-        padding: 0 4px;
+        gap: 16px;
+        padding: 0 8px;
     }
     
     .product-card {
-        min-height: 280px; /* INCREASED HEIGHT TO FIT BUTTON */
-        max-height: none; /* REMOVE MAX HEIGHT RESTRICTION */
-        margin-bottom: 8px;
+        min-height: 320px; /* REDUCED from 420px */
+        max-height: 340px; /* STRICT HEIGHT LIMIT */
+        margin-bottom: 12px;
         display: flex;
         flex-direction: column;
+        border-radius: 12px;
+        overflow: hidden;
     }
     
+    /* COMPACT IMAGE SECTION */
     .product-image-container {
-        height: 120px;
+        height: 140px; /* REDUCED from 180px */
         flex-shrink: 0;
+        position: relative;
     }
     
+    .product-image {
+        padding: 8px; /* REDUCED padding */
+    }
+    
+    /* OPTIMIZED INFO SECTION */
     .product-info {
-        padding: 8px;
-        gap: 3px;
+        padding: 12px; /* REDUCED from 16px */
+        gap: 6px; /* REDUCED gap */
         flex: 1;
         display: flex;
         flex-direction: column;
+        justify-content: space-between; /* DISTRIBUTE SPACE EVENLY */
+    }
+    
+    /* COMPACT CATEGORY & TITLE */
+    .product-category {
+        font-size: 0.6rem; /* SMALLER */
+        padding: 3px 8px;
+        margin-bottom: 4px;
+        align-self: flex-start;
     }
     
     .product-title {
-        font-size: 0.8rem;
-        height: 2.2em;
-        margin: 1px 0 3px 0;
+        font-size: 0.85rem;
+        line-height: 1.2; /* TIGHTER LINE HEIGHT */
+        height: 2.4em;
+        margin: 0 0 6px 0; /* REDUCED MARGINS */
         flex-shrink: 0;
     }
     
+    /* COMPACT PRICING SECTION */
     .product-pricing {
-        margin-bottom: 3px;
+        margin-bottom: 6px; /* REDUCED */
         flex-shrink: 0;
-    }
-    
-    .price-current {
-        font-size: 0.95rem;
     }
     
     .price-section {
-        gap: 4px;
-        margin-bottom: 1px;
+        gap: 6px;
+        margin-bottom: 2px;
+        align-items: center;
+    }
+    
+    .price-current {
+        font-size: 1rem;
+        font-weight: 700;
+    }
+    
+    .price-original {
+        font-size: 0.75rem;
+    }
+    
+    .price-discount-badge {
+        padding: 2px 6px;
+        font-size: 0.6rem;
     }
     
     .savings-amount {
-        font-size: 0.65rem;
+        font-size: 0.7rem;
+        margin: 0;
     }
     
+    /* MINIMAL URGENCY SECTION */
     .product-urgency {
-        gap: 6px;
-        margin-bottom: 3px;
-        font-size: 0.6rem;
+        gap: 8px;
+        margin-bottom: 4px; /* MINIMAL */
+        font-size: 0.65rem;
         flex-shrink: 0;
+        min-height: 14px; /* CONSISTENT HEIGHT */
     }
     
+    /* COMPACT COUNTDOWN */
     .deal-countdown {
-        gap: 3px;
-        margin-bottom: 3px;
+        gap: 4px;
+        margin-bottom: 4px; /* MINIMAL */
         font-size: 0.6rem;
         flex-shrink: 0;
+        min-height: 14px;
     }
     
     .countdown-number {
@@ -498,49 +534,119 @@
     }
     
     .countdown-text {
-        font-size: 0.5rem;
+        font-size: 0.55rem;
     }
     
+    /* MINIMAL SOCIAL SECTION */
     .product-social {
-        margin-bottom: 6px;
-        padding: 3px 0;
+        margin-bottom: 8px; /* REDUCED */
+        padding: 6px 0; /* REDUCED PADDING */
         flex-shrink: 0;
+        border-top: 1px solid #f3f4f6;
     }
     
     .social-actions {
-        gap: 10px;
+        gap: 12px;
     }
     
     .social-action {
         font-size: 0.7rem;
-        gap: 2px;
+        gap: 3px;
     }
     
-    /* FIXED PRODUCT ACTIONS - ALWAYS AT BOTTOM */
+    /* COMPACT ACTION BUTTONS - NO EXTRA SPACE */
     .product-actions {
-        margin-top: auto; /* PUSH TO BOTTOM */
-        padding-top: 8px;
-        gap: 6px;
-        flex-shrink: 0; /* PREVENT SHRINKING */
-        border-top: 1px solid #f3f4f6;
+        margin-top: 0; /* REMOVE AUTO MARGIN */
+        padding-top: 0; /* NO TOP PADDING */
+        gap: 8px;
+        flex-shrink: 0;
+        border-top: none; /* REMOVE BORDER */
     }
     
     .deal-btn {
-        padding: 10px 12px; /* INCREASED PADDING */
-        font-size: 0.8rem; /* READABLE SIZE */
-        border-radius: 6px;
-        min-height: 40px; /* MINIMUM HEIGHT */
-        display: flex !important; /* FORCE DISPLAY */
-        align-items: center;
-        justify-content: center;
-        gap: 4px;
+        padding: 12px 16px; /* OPTIMIZED PADDING */
+        font-size: 0.85rem;
+        border-radius: 8px;
+        min-height: 44px; /* TOUCH FRIENDLY */
+        font-weight: 600;
     }
     
     .deal-btn-text {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
         line-height: 1.1;
+        gap: 4px;
+    }
+    
+    .deal-btn-subtext {
+        font-size: 0.7rem;
+        margin-top: 2px;
+    }
+    
+    .quick-action-btn {
+        width: 44px; /* TOUCH FRIENDLY */
+        height: 44px;
+        font-size: 0.8rem;
+        min-height: 44px;
+        border-radius: 8px;
+    }
+    
+    /* COMPACT BADGES */
+    .product-badges {
+        top: 8px;
+        left: 8px;
+        gap: 4px;
+    }
+    
+    .badge {
+        padding: 3px 6px;
+        font-size: 0.6rem;
+        border-radius: 4px;
+    }
+    
+    /* COMPACT WISHLIST BUTTON */
+    .wishlist-btn {
+        width: 32px;
+        height: 32px;
+        font-size: 0.8rem;
+        top: 8px;
+        right: 8px;
+    }
+}
+
+/* EXTRA SMALL MOBILE - ULTRA COMPACT */
+@media (max-width: 480px) {
+    .product-card {
+        min-height: 300px; /* EVEN MORE COMPACT */
+        max-height: 320px;
+    }
+    
+    .product-image-container {
+        height: 120px; /* SMALLER IMAGE */
+    }
+    
+    .product-info {
+        padding: 10px; /* MINIMAL PADDING */
+        gap: 4px;
+    }
+    
+    .product-title {
+        font-size: 0.8rem;
+        height: 2.2em;
+        margin-bottom: 4px;
+    }
+    
+    .price-current {
+        font-size: 0.95rem;
+    }
+    
+    .product-social {
+        padding: 4px 0;
+        margin-bottom: 6px;
+    }
+    
+    .deal-btn {
+        padding: 10px 14px;
+        font-size: 0.8rem;
+        min-height: 40px;
     }
     
     .deal-btn-subtext {
@@ -548,80 +654,50 @@
     }
     
     .quick-action-btn {
-        width: 32px;
-        height: 32px;
-        font-size: 0.75rem;
-        min-height: 32px; /* MINIMUM HEIGHT */
-        display: flex !important; /* FORCE DISPLAY */
-    }
-    
-    .wishlist-btn {
-        width: 26px;
-        height: 26px;
-        font-size: 0.7rem;
-    }
-    
-    .badge {
-        padding: 2px 5px;
-        font-size: 0.6rem;
-    }
-    
-    .product-category {
-        font-size: 0.55rem;
-        padding: 2px 5px;
+        width: 40px;
+        height: 40px;
+        min-height: 40px;
     }
 }
 
-/* EXTRA SMALL MOBILE FIX */
-@media (max-width: 480px) {
-    .product-card {
-        min-height: 260px; /* ENSURE ENOUGH HEIGHT */
-        max-height: none; /* NO MAX HEIGHT */
+/* HORIZONTAL SCROLLING MOBILE OPTIMIZATION */
+@media (max-width: 768px) {
+    .horizontal-products-scroll .product-card {
+        flex: 0 0 280px; /* CONSISTENT WIDTH */
+        max-width: 280px;
+        height: 320px; /* COMPACT HEIGHT */
     }
     
-    .product-image-container {
-        height: 100px;
+    .horizontal-scroll-wrapper {
+        gap: 8px;
+        margin-bottom: 20px;
     }
     
-    .product-info {
-        padding: 6px;
-        gap: 2px;
+    .scroll-btn {
+        width: 44px; /* TOUCH FRIENDLY */
+        height: 44px;
+        font-size: 1rem;
     }
     
-    .product-title {
-        font-size: 0.75rem;
-        height: 2em;
-    }
-    
-    .price-current {
-        font-size: 0.9rem;
-    }
-    
-    /* ENSURE BUTTON IS ALWAYS VISIBLE */
-    .product-actions {
-        margin-top: auto;
-        padding-top: 6px;
-        min-height: 44px; /* MINIMUM SPACE FOR BUTTON */
-    }
-    
-    .deal-btn {
-        padding: 8px 10px;
-        font-size: 0.75rem;
-        min-height: 36px;
-        display: flex !important;
-    }
-    
-    .deal-btn-subtext {
-        font-size: 0.6rem;
-    }
-    
-    .quick-action-btn {
-        width: 30px;
-        height: 30px;
-        min-height: 30px;
-        font-size: 0.7rem;
+    .horizontal-products-scroll {
+        gap: 12px;
+        padding: 8px 0;
     }
 }
+
+@media (max-width: 480px) {
+    .horizontal-products-scroll .product-card {
+        flex: 0 0 260px;
+        max-width: 260px;
+        height: 300px; /* ULTRA COMPACT */
+    }
+    
+    .horizontal-scroll-wrapper {
+        margin: 0 -8px 16px;
+        padding: 0 8px;
+    }
+}
+
 
 
 
