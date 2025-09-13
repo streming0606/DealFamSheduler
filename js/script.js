@@ -633,9 +633,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-// Add this to your existing script.js file
-
-// Update the horizontal scroller to work with the new page navigation
+// FIXED Horizontal Scrolling Functionality
 class HorizontalDealsScroller {
     constructor() {
         this.horizontalContainer = document.getElementById('horizontal-products-container');
@@ -646,50 +644,64 @@ class HorizontalDealsScroller {
         this.totalDealsPreview = document.getElementById('total-deals-preview');
         
         this.scrollAmount = 300;
-        this.maxHorizontalItems = 6; // Show 6 items in horizontal scroll
+        this.maxHorizontalItems = 6;
+        this.isInitialized = false;
         
-        this.init();
+        // Don't auto-init in constructor
     }
     
     init() {
-        if (!this.horizontalContainer) return;
+        if (!this.horizontalContainer || this.isInitialized) return;
         
+        console.log('Initializing horizontal scroller...');
         this.setupEventListeners();
-        this.renderHorizontalProducts();
+        this.isInitialized = true;
+        
+        // Render immediately if products are available
+        if (allProducts && allProducts.length > 0) {
+            this.renderHorizontalProducts();
+        }
     }
     
     setupEventListeners() {
         this.scrollLeftBtn?.addEventListener('click', () => this.scrollLeft());
         this.scrollRightBtn?.addEventListener('click', () => this.scrollRight());
         
-        // Update scroll buttons on scroll
-        this.horizontalContainer.addEventListener('scroll', () => this.updateScrollButtons());
+        this.horizontalContainer?.addEventListener('scroll', () => this.updateScrollButtons());
         
-        // View All button opens new page/tab
         if (this.viewAllBtn) {
             this.viewAllBtn.addEventListener('click', (e) => {
                 e.preventDefault();
-                // Track click for analytics
                 this.trackViewAllClick();
-                // Open dedicated deals page
                 window.open('deals/today.html', '_blank');
             });
         }
     }
     
     renderHorizontalProducts() {
-        if (!this.horizontalContainer || allProducts.length === 0) return;
+        if (!this.horizontalContainer || !allProducts || allProducts.length === 0) {
+            console.log('Cannot render: missing container or products');
+            return;
+        }
         
-        const filteredProducts = getFilteredProducts();
-        const sortedProducts = sortProducts(filteredProducts);
-        const productsToShow = sortedProducts.slice(0, this.maxHorizontalItems);
+        console.log('Rendering horizontal products:', allProducts.length);
         
+        // Clear loading state
         this.horizontalContainer.innerHTML = '';
+        
+        const filteredProducts = this.getFilteredProducts();
+        const sortedProducts = this.sortProducts(filteredProducts);
+        const productsToShow = sortedProducts.slice(0, this.maxHorizontalItems);
         
         if (productsToShow.length === 0) {
             this.horizontalContainer.innerHTML = `
-                <div class="empty-horizontal-state">
-                    <p>No deals available</p>
+                <div class="empty-horizontal-state" style="
+                    padding: 2rem; 
+                    text-align: center; 
+                    color: var(--text-secondary);
+                    grid-column: 1 / -1;
+                ">
+                    <p>No deals available in this category</p>
                 </div>
             `;
             return;
@@ -699,6 +711,7 @@ class HorizontalDealsScroller {
             const productCard = createProductCard(product, index);
             this.horizontalContainer.appendChild(productCard);
             
+            // Entrance animation
             setTimeout(() => {
                 productCard.style.opacity = '1';
                 productCard.style.transform = 'translateY(0)';
@@ -706,7 +719,46 @@ class HorizontalDealsScroller {
         });
         
         this.updateDealsCount(filteredProducts.length);
-        setTimeout(() => this.updateScrollButtons(), 100);
+        
+        // Update scroll buttons after rendering
+        setTimeout(() => this.updateScrollButtons(), 200);
+        
+        console.log('Horizontal products rendered successfully');
+    }
+    
+    getFilteredProducts() {
+        if (currentFilter === 'all') {
+            return allProducts;
+        }
+        return allProducts.filter(product => 
+            product.category.toLowerCase() === currentFilter
+        );
+    }
+    
+    sortProducts(products) {
+        const sorted = [...products];
+        
+        switch (currentSort) {
+            case 'price-low':
+                return sorted.sort((a, b) => this.extractPrice(a.price) - this.extractPrice(b.price));
+            case 'price-high':
+                return sorted.sort((a, b) => this.extractPrice(b.price) - this.extractPrice(a.price));
+            case 'discount':
+                return sorted.sort((a, b) => this.calculateDiscount(b.price) - this.calculateDiscount(a.price));
+            case 'latest':
+            default:
+                return sorted.sort((a, b) => new Date(b.posted_date) - new Date(a.posted_date));
+        }
+    }
+    
+    extractPrice(priceString) {
+        const match = priceString.match(/₹(\d+,?\d*)/);
+        return match ? parseInt(match[1].replace(',', '')) : 0;
+    }
+    
+    calculateDiscount(priceString) {
+        // Simple discount calculation - can be enhanced
+        return Math.floor(Math.random() * 50) + 10; // 10-60% random discount
     }
     
     scrollLeft() {
@@ -725,15 +777,19 @@ class HorizontalDealsScroller {
     
     updateScrollButtons() {
         const container = this.horizontalContainer;
+        if (!container) return;
+        
         const scrollLeft = container.scrollLeft;
         const maxScroll = container.scrollWidth - container.clientWidth;
         
         if (this.scrollLeftBtn) {
             this.scrollLeftBtn.disabled = scrollLeft <= 0;
+            this.scrollLeftBtn.style.opacity = scrollLeft <= 0 ? '0.5' : '1';
         }
         
         if (this.scrollRightBtn) {
             this.scrollRightBtn.disabled = scrollLeft >= maxScroll;
+            this.scrollRightBtn.style.opacity = scrollLeft >= maxScroll ? '0.5' : '1';
         }
     }
     
@@ -747,10 +803,7 @@ class HorizontalDealsScroller {
     }
     
     trackViewAllClick() {
-        // Add analytics tracking
         console.log('View All Deals clicked - Opening dedicated page');
-        
-        // You can add Google Analytics or other tracking here
         if (typeof gtag !== 'undefined') {
             gtag('event', 'view_all_deals_click', {
                 event_category: 'engagement',
@@ -760,23 +813,162 @@ class HorizontalDealsScroller {
     }
     
     refresh() {
-        this.renderHorizontalProducts();
+        if (this.isInitialized) {
+            this.renderHorizontalProducts();
+        }
     }
 }
 
-// Initialize horizontal scroller and update existing code
+// FIXED: Initialize horizontal scroller properly
+let horizontalScroller = null;
+
+// FIXED: Update your DOMContentLoaded event listener
 document.addEventListener('DOMContentLoaded', function() {
+    console.log('DOM Content Loaded');
+    
+    // Initialize horizontal scroller first
+    horizontalScroller = new HorizontalDealsScroller();
+    
+    // Load products and setup everything else
     loadProducts();
     setupEventListeners();
     updateLastRefresh();
     initializeEnhancements();
     initializeBannerSlider();
     
+    // Initialize search after a delay
     setTimeout(() => {
-        horizontalScroller = new HorizontalDealsScroller();
         initializeSearch();
     }, 1000);
 });
+
+// FIXED: Override renderProducts to work properly with horizontal scroller
+function renderProducts() {
+    console.log('renderProducts called');
+    
+    // Handle horizontal mode
+    if (horizontalScroller && horizontalScroller.horizontalContainer) {
+        horizontalScroller.refresh();
+        return;
+    }
+    
+    // Handle regular grid mode (fallback)
+    const filteredProducts = getFilteredProducts();
+    const sortedProducts = sortProducts(filteredProducts);
+    const productsToShow = sortedProducts.slice(0, displayedProducts + productsPerPage);
+    
+    const container = document.getElementById('products-container');
+    if (!container) return;
+    
+    if (productsToShow.length === 0) {
+        showEmptyState();
+        return;
+    }
+    
+    container.innerHTML = '';
+    
+    productsToShow.forEach((product, index) => {
+        const productCard = createProductCard(product, index);
+        container.appendChild(productCard);
+        
+        setTimeout(() => {
+            productCard.style.opacity = '1';
+            productCard.style.transform = 'translateY(0)';
+        }, index * 50);
+    });
+    
+    displayedProducts = productsToShow.length;
+    
+    if (loadMoreBtn) {
+        if (displayedProducts >= filteredProducts.length) {
+            loadMoreBtn.style.display = 'none';
+        } else {
+            loadMoreBtn.style.display = 'block';
+        }
+    }
+    
+    // Initialize enhanced features
+    initializeEnhancedCards();
+}
+
+// FIXED: Update loadProducts function to properly initialize horizontal scroller
+async function loadProducts() {
+    try {
+        console.log('Loading products...');
+        
+        // Show loading state for horizontal container
+        if (horizontalScroller && horizontalScroller.horizontalContainer) {
+            horizontalScroller.horizontalContainer.innerHTML = `
+                <div class="loading-state" style="
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 2rem;
+                    grid-column: 1 / -1;
+                ">
+                    <div class="loading-spinner">
+                        <div class="spinner"></div>
+                    </div>
+                    <p style="margin-top: 1rem; color: var(--text-secondary);">Loading amazing deals...</p>
+                </div>
+            `;
+        }
+        
+        const response = await fetch('data/products.json');
+        const data = await response.json();
+        allProducts = data.products || [];
+        
+        console.log('Products loaded:', allProducts.length);
+        
+        // Initialize horizontal scroller if not already initialized
+        if (horizontalScroller && !horizontalScroller.isInitialized) {
+            horizontalScroller.init();
+        }
+        
+        // Render products
+        renderProducts();
+        updateCategoryCounts();
+        updateTotalDeals();
+        
+        console.log('Products rendering complete');
+        
+    } catch (error) {
+        console.error('Error loading products:', error);
+        
+        // Show error state
+        if (horizontalScroller && horizontalScroller.horizontalContainer) {
+            horizontalScroller.horizontalContainer.innerHTML = `
+                <div class="error-state" style="
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 2rem;
+                    grid-column: 1 / -1;
+                    color: var(--error);
+                ">
+                    <i class="fas fa-exclamation-triangle" style="font-size: 2rem; margin-bottom: 1rem;"></i>
+                    <h3>Unable to load deals</h3>
+                    <p>Please try refreshing the page</p>
+                    <button onclick="loadProducts()" style="
+                        margin-top: 1rem;
+                        padding: 0.5rem 1rem;
+                        background: var(--primary-color);
+                        color: white;
+                        border: none;
+                        border-radius: var(--radius);
+                        cursor: pointer;
+                    ">
+                        <i class="fas fa-refresh"></i>
+                        Try Again
+                    </button>
+                </div>
+            `;
+        }
+    }
+}
+
 
 
 
