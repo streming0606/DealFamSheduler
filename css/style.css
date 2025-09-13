@@ -2265,6 +2265,7 @@ p {
     transform: none;
 }
 
+
 /* Horizontal Product Cards */
 .horizontal-products-scroll .product-card {
     flex: 0 0 280px; /* Fixed width, no shrinking */
@@ -2425,6 +2426,58 @@ p {
         transform: translateY(0);
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+/* FIXED: Horizontal scrolling container */
+.horizontal-products-scroll {
+    display: flex;
+    gap: 1.5rem;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 1rem 0;
+    flex: 1;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    min-height: 450px; /* Ensure minimum height */
+}
+
+.horizontal-products-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+/* FIXED: Product cards in horizontal scroll */
+.horizontal-products-scroll .product-card {
+    flex: 0 0 280px;
+    max-width: 280px;
+    height: 420px;
+    margin-bottom: 0;
+}
+
+/* FIXED: Loading state styling */
+.horizontal-products-scroll .loading-state,
+.horizontal-products-scroll .error-state,
+.horizontal-products-scroll .empty-horizontal-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 200px;
+    flex: 1;
+}
+
+
+
+
 
 
 
