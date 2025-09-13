@@ -24,24 +24,31 @@
     <meta name="description" content="Thrift Zone - Find the best deals and offers on Electronics, Fashion, Home & more. Updated daily with exclusive discount codes.">
 </head>
 <body>
-    <!-- Header Section -->
+    <!-- Header Section 
     <header class="header">
         <div class="container">
-            <!-- Mobile Menu Toggle -->
+            <!-- Mobile Menu Toggle 
             <button class="mobile-menu-toggle" id="mobile-menu-toggle">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
 
-            <!-- Logo Section -->
+            <!-- Logo Section 
             <div class="logo">
                 <img src="images/logo-icon.png" alt="Thrift Zone" class="logo-icon">
                 <div class="logo-text">
                     <h1>Thrift Zone</h1>
                     <span class="tagline">Smart Shopping Hub</span>
                 </div>
-            </div>
+            </div>  -->
+
+
+
+
+
+
+  
 
             <!-- Search Bar 
             <div class="search-container">
@@ -62,7 +69,7 @@
 
 
 
-<!-- Enhanced Search Container with Voice Search -->
+<!-- Enhanced Search Container with Voice Search
 <div class="search-container">
     <div class="search-box">
         <input type="text" id="search-input" placeholder="Search for deals, products..." autocomplete="off">
@@ -89,7 +96,7 @@
             </button>
         </div>
     </div>
-</div>
+</div> -->
 
 
 
@@ -99,7 +106,7 @@
 
             
 
-            <!-- Navigation & Actions -->
+            <!-- Navigation & Actions 
             <nav class="nav">
                 <a href="#home" class="nav-link active">Home</a>
                 <a href="#categories" class="nav-link">Categories</a>
@@ -107,7 +114,7 @@
                 
             </nav>
 
-            <!-- Header Actions -->
+            <!-- Header Actions 
             <div class="header-actions">
                 <button class="theme-toggle" id="theme-toggle" title="Toggle Dark Mode">
                     <i class="fas fa-moon"></i>
@@ -119,7 +126,7 @@
             </div>
         </div>
 
-        <!-- Mobile Navigation -->
+        <!-- Mobile Navigation 
         <div class="mobile-nav" id="mobile-nav">
             <div class="mobile-nav-header">
                 <h3>Menu</h3>
@@ -132,10 +139,287 @@
                 <a href="#about" class="mobile-nav-link">ℹ️ About</a>
             </div>
         </div>
-    </header>
+    </header>-->
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Enhanced Header with Auth -->
+<header class="header">
+    <div class="container">
+        <!-- Mobile Menu Toggle -->
+        <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <!-- Logo Section -->
+        <div class="logo">
+            <img src="images/logo-icon.png" alt="Thrift Zone" class="logo-icon">
+            <div class="logo-text">
+                <h1>Thrift Zone</h1>
+                <span class="tagline">Smart Shopping Hub</span>
+            </div>
+        </div>
+
+        <!-- Search Bar -->
+        <div class="search-container">
+            <div class="search-box">
+                <input type="text" id="search-input" placeholder="Search for deals, products..." autocomplete="off">
+                <button class="search-btn" id="search-btn">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+            <div class="search-suggestions" id="search-suggestions"></div>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="nav">
+            <a href="#home" class="nav-link active">Home</a>
+            <a href="#categories" class="nav-link">Categories</a>
+            <a href="#deals" class="nav-link">Today's Deals</a>
+            <a href="blog/" class="nav-link">Blog</a>
+            <a href="#about" class="nav-link">About</a>
+        </nav>
+
+        <!-- Header Actions with Auth -->
+        <div class="header-actions">
+            <button class="theme-toggle" id="theme-toggle" title="Toggle Dark Mode">
+                <i class="fas fa-moon"></i>
+            </button>
+            
+            <!-- Authentication Section -->
+            <div class="auth-section" id="auth-section">
+                <!-- Before Login -->
+                <div class="auth-buttons" id="auth-buttons">
+                    <button class="auth-btn login-btn" id="login-btn">
+                        <i class="fas fa-sign-in-alt"></i>
+                        <span class="btn-text">Login</span>
+                    </button>
+                    <button class="auth-btn signup-btn" id="signup-btn">
+                        <i class="fas fa-user-plus"></i>
+                        <span class="btn-text">Sign Up</span>
+                    </button>
+                </div>
+                
+                <!-- After Login -->
+                <div class="user-profile" id="user-profile" style="display: none;">
+                    <div class="user-avatar" id="user-avatar">
+                        <img src="" alt="User" id="user-avatar-img">
+                        <span class="user-initial" id="user-initial">U</span>
+                    </div>
+                    <div class="user-dropdown" id="user-dropdown">
+                        <div class="user-info">
+                            <span class="user-name" id="user-name">User Name</span>
+                            <span class="user-email" id="user-email">user@example.com</span>
+                        </div>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item" id="profile-link">
+                                <i class="fas fa-user"></i> Profile
+                            </a>
+                            <a href="#" class="dropdown-item" id="orders-link">
+                                <i class="fas fa-shopping-bag"></i> My Orders
+                            </a>
+                            <a href="#" class="dropdown-item" id="wishlist-link">
+                                <i class="fas fa-heart"></i> Wishlist
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <button class="dropdown-item logout-btn" id="logout-btn">
+                                <i class="fas fa-sign-out-alt"></i> Logout
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="live-indicator">
+                <span class="pulse"></span>
+                <span class="text">Live</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile Navigation (updated) -->
+    <div class="mobile-nav" id="mobile-nav">
+        <div class="mobile-nav-header">
+            <h3>Menu</h3>
+            <button class="mobile-nav-close">&times;</button>
+        </div>
+        <div class="mobile-nav-content">
+            <!-- Mobile Auth Section -->
+            <div class="mobile-auth" id="mobile-auth">
+                <div class="mobile-auth-buttons" id="mobile-auth-buttons">
+                    <button class="mobile-auth-btn login" id="mobile-login-btn">
+                        <i class="fas fa-sign-in-alt"></i> Login
+                    </button>
+                    <button class="mobile-auth-btn signup" id="mobile-signup-btn">
+                        <i class="fas fa-user-plus"></i> Sign Up
+                    </button>
+                </div>
+                <div class="mobile-user-info" id="mobile-user-info" style="display: none;">
+                    <div class="mobile-user-details">
+                        <div class="mobile-user-avatar" id="mobile-user-avatar">U</div>
+                        <div class="mobile-user-text">
+                            <span class="mobile-user-name" id="mobile-user-name">User Name</span>
+                            <span class="mobile-user-email" id="mobile-user-email">user@example.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mobile-nav-divider"></div>
+            
+            <a href="#home" class="mobile-nav-link">🏠 Home</a>
+            <a href="#categories" class="mobile-nav-link">📂 Categories</a>
+            <a href="#deals" class="mobile-nav-link">🔥 Today's Deals</a>
+            <a href="blog/" class="mobile-nav-link">📝 Blog</a>
+            <a href="#about" class="mobile-nav-link">ℹ️ About</a>
+            
+            <div class="mobile-nav-divider"></div>
+            
+            <div class="mobile-user-actions" id="mobile-user-actions" style="display: none;">
+                <a href="#" class="mobile-nav-link" id="mobile-profile-link">👤 Profile</a>
+                <a href="#" class="mobile-nav-link" id="mobile-orders-link">🛍️ My Orders</a>
+                <a href="#" class="mobile-nav-link" id="mobile-wishlist-link">❤️ Wishlist</a>
+                <button class="mobile-nav-link logout" id="mobile-logout-btn">🚪 Logout</button>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Auth Modals -->
+<div class="auth-overlay" id="auth-overlay" style="display: none;">
+    <!-- Login Modal -->
+    <div class="auth-modal" id="login-modal">
+        <div class="auth-modal-header">
+            <h2>Welcome Back</h2>
+            <button class="auth-modal-close" id="close-login-modal">&times;</button>
+        </div>
+        <div class="auth-modal-body">
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="login-email">Email Address</label>
+                    <input type="email" id="login-email" required placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="login-password">Password</label>
+                    <input type="password" id="login-password" required placeholder="Enter your password">
+                </div>
+                <div class="form-options">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="remember-me">
+                        <span class="checkmark"></span>
+                        Remember me
+                    </label>
+                    <a href="#" class="forgot-password" id="forgot-password-link">Forgot Password?</a>
+                </div>
+                <button type="submit" class="auth-submit-btn" id="login-submit">
+                    <span class="btn-text">Sign In</span>
+                    <i class="fas fa-spinner fa-spin" id="login-spinner" style="display: none;"></i>
+                </button>
+            </form>
+            <div class="auth-divider">
+                <span>or continue with</span>
+            </div>
+            <div class="social-auth">
+                <button class="social-btn google" id="google-login">
+                    <i class="fab fa-google"></i>
+                    Google
+                </button>
+            </div>
+        </div>
+        <div class="auth-modal-footer">
+            <p>Don't have an account? <a href="#" id="show-signup">Sign up</a></p>
+        </div>
+    </div>
+
+    <!-- Signup Modal -->
+    <div class="auth-modal" id="signup-modal">
+        <div class="auth-modal-header">
+            <h2>Create Account</h2>
+            <button class="auth-modal-close" id="close-signup-modal">&times;</button>
+        </div>
+        <div class="auth-modal-body">
+            <form id="signup-form">
+                <div class="form-group">
+                    <label for="signup-name">Full Name</label>
+                    <input type="text" id="signup-name" required placeholder="Enter your full name">
+                </div>
+                <div class="form-group">
+                    <label for="signup-email">Email Address</label>
+                    <input type="email" id="signup-email" required placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="signup-password">Password</label>
+                    <input type="password" id="signup-password" required placeholder="Create a password">
+                </div>
+                <div class="form-group">
+                    <label for="signup-confirm-password">Confirm Password</label>
+                    <input type="password" id="signup-confirm-password" required placeholder="Confirm your password">
+                </div>
+                <div class="form-options">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="agree-terms" required>
+                        <span class="checkmark"></span>
+                        I agree to the <a href="#">Terms & Conditions</a>
+                    </label>
+                </div>
+                <button type="submit" class="auth-submit-btn" id="signup-submit">
+                    <span class="btn-text">Create Account</span>
+                    <i class="fas fa-spinner fa-spin" id="signup-spinner" style="display: none;"></i>
+                </button>
+            </form>
+            <div class="auth-divider">
+                <span>or continue with</span>
+            </div>
+            <div class="social-auth">
+                <button class="social-btn google" id="google-signup">
+                    <i class="fab fa-google"></i>
+                    Google
+                </button>
+            </div>
+        </div>
+        <div class="auth-modal-footer">
+            <p>Already have an account? <a href="#" id="show-login">Sign in</a></p>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
     
 
     <!-- Hero Banner Section 
