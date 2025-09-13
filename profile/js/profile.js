@@ -171,6 +171,48 @@ class ThriftZoneProfile {
         }
     }
 
+
+
+
+
+
+
+
+
+
+
+
+
+// Update the updateProfileStats method in your profile.js
+updateProfileStats() {
+    // Get actual wishlist count
+    const wishlistCount = window.wishlistManager ? window.wishlistManager.getWishlistCount() : 0;
+    document.getElementById('total-wishlist').textContent = wishlistCount;
+
+    // Mock data for orders and savings
+    document.getElementById('total-orders').textContent = Math.floor(Math.random() * 20) + 5;
+    document.getElementById('total-saved').textContent = `₹${(Math.floor(Math.random() * 50000) + 10000).toLocaleString('en-IN')}`;
+}
+
+// Listen for wishlist updates
+window.addEventListener('wishlistUpdated', () => {
+    if (window.thriftProfile) {
+        window.thriftProfile.updateProfileStats();
+    }
+});
+
+
+
+
+
+
+
+
+
+
+
+    
+
     setupEventListeners() {
         // Tab navigation
         document.querySelectorAll('.profile-nav-btn').forEach(btn => {
