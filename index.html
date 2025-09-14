@@ -857,6 +857,119 @@
 
 
 
+
+
+
+
+
+
+<!-- 💸 LOOT DEALS FINDS SECTION - Budget Deals Under ₹500/₹1000 -->
+<section id="loot-deals" class="loot-deals">
+    <div class="container">
+        <div class="section-header">
+            <!-- SECTION TITLE - Change emoji/text here if needed -->
+            <h2 class="section-title">💸 Loot Deals Finds</h2>
+            <p class="section-subtitle">Maximum savings on budget-friendly products</p>
+            
+            <!-- PRICE FILTER TOGGLE - Modify price limits here -->
+            <div class="loot-price-filter">
+                <button class="price-filter-btn active" data-price-limit="500">
+                    Under ₹500
+                </button>
+                <button class="price-filter-btn" data-price-limit="1000">
+                    Under ₹1000
+                </button>
+                <!-- ADD MORE PRICE RANGES HERE IF NEEDED -->
+                <!-- <button class="price-filter-btn" data-price-limit="2000">Under ₹2000</button> -->
+            </div>
+        </div>
+
+        <!-- HORIZONTAL SCROLLING CONTAINER - Same structure as Hot Deals -->
+        <div class="horizontal-loot-container">
+            <div class="horizontal-scroll-wrapper">
+                <!-- LEFT SCROLL BUTTON -->
+                <button class="scroll-btn scroll-btn-left" id="loot-scroll-left">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                
+                <!-- PRODUCTS SCROLL CONTAINER -->
+                <div class="horizontal-loot-scroll" id="horizontal-loot-container">
+                    <!-- PRODUCTS WILL BE INSERTED HERE BY JAVASCRIPT -->
+                    <div class="loading-state">
+                        <div class="loading-spinner">
+                            <div class="spinner"></div>
+                        </div>
+                        <p>Finding best loot deals...</p>
+                    </div>
+                </div>
+                
+                <!-- RIGHT SCROLL BUTTON -->
+                <button class="scroll-btn scroll-btn-right" id="loot-scroll-right">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+            
+            <!-- VIEW ALL LOOT DEALS BUTTON -->
+            <div class="view-all-section">
+                <button class="view-all-btn loot-view-all" id="view-all-loot">
+                    <span>View All Loot Deals</span>
+                    <i class="fas fa-arrow-right"></i>
+                    <span class="loot-deals-count"></span>
+                </button>
+            </div>
+        </div>
+
+        <!-- FULL LOOT DEALS SECTION (Hidden by default) -->
+        <div class="full-loot-section" id="full-loot-section" style="display: none;">
+            <div class="full-section-header">
+                <h3>All Loot Deals Finds</h3>
+                <div class="loot-controls">
+                    <!-- PRICE FILTER IN FULL VIEW -->
+                    <div class="loot-price-filter-full">
+                        <button class="price-filter-btn active" data-price-limit="500">Under ₹500</button>
+                        <button class="price-filter-btn" data-price-limit="1000">Under ₹1000</button>
+                    </div>
+                    <button class="back-to-preview-btn" id="back-to-loot-preview">
+                        <i class="fas fa-arrow-left"></i>
+                        Back to Preview
+                    </button>
+                </div>
+            </div>
+            
+            <!-- FULL LOOT PRODUCTS GRID -->
+            <div class="products-grid" id="loot-products-container">
+                <!-- Full loot product grid will be shown here -->
+            </div>
+            
+            <!-- LOAD MORE LOOT DEALS -->
+            <div class="load-more-section">
+                <button id="load-more-loot-btn" class="load-more-btn">
+                    <i class="fas fa-plus"></i>
+                    Load More Loot Deals
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
     
 
     <!-- Deals Section  
