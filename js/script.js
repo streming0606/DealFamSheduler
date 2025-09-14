@@ -1019,7 +1019,7 @@ function trackClick(productId) {
 
 
 
-<script>
+
 // Handle View All Hot Deals button
 function showAllHotDeals(event) {
     event.preventDefault();
@@ -1100,7 +1100,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
-</script>
+
 
 
 
