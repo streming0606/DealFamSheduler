@@ -1074,13 +1074,62 @@ class LootDealsScroller {
             return price > 0 && price <= this.currentPriceLimit;
         });
     }
+
+
+
+
+
     
-    // EXTRACT PRICE FROM PRODUCT STRING - MODIFY IF PRICE FORMAT CHANGES
-    extractPrice(priceString) {
-        // HANDLE DIFFERENT PRICE FORMATS
-        const match = priceString.match(/₹(\d{1,3}(?:,\d{3})*(?:\.\d{2})?)/);
-        return match ? parseInt(match[1].replace(/,/g, '')) : 0;
+    // // EXTRACT PRICE FROM PRODUCT STRING - MODIFY IF PRICE FORMAT CHANGES
+    // extractPrice(priceString) {
+    //     // HANDLE DIFFERENT PRICE FORMATS
+    //     const match = priceString.match(/₹(\d{1,3}(?:,\d{3})*(?:\.\d{2})?)/);
+    //     return match ? parseInt(match[1].replace(/,/g, '')) : 0;
+    // }
+
+// FIXED PRICE EXTRACTION - HANDLES MULTIPLE FORMATS
+extractPrice(priceString) {
+    console.log("🔍 Extracting price from:", priceString); // DEBUG LOG
+    
+    // HANDLE DIFFERENT PRICE FORMATS - MODIFY THESE PATTERNS IF NEEDED
+    const patterns = [
+        /₹(\d{1,3}(?:,\d{3})*(?:\.\d{2})?)/g,  // Standard ₹123 or ₹1,234
+        /(\d{1,3}(?:,\d{3})*(?:\.\d{2})?)/g,   // Just numbers 123 or 1,234
+        /Rs\.?\s*(\d{1,3}(?:,\d{3})*(?:\.\d{2})?)/gi, // Rs. 123 format
+    ];
+    
+    let prices = [];
+    
+    // TRY EACH PATTERN TO EXTRACT ALL PRICES
+    for (let pattern of patterns) {
+        const matches = priceString.match(pattern);
+        if (matches) {
+            prices = matches.map(match => {
+                const numStr = match.replace(/₹|Rs\.?|,|\s/gi, '');
+                return parseInt(numStr);
+            }).filter(price => price > 0);
+            break;
+        }
     }
+    
+    console.log("💰 Extracted prices:", prices); // DEBUG LOG
+    
+    // RETURN THE FIRST (CURRENT) PRICE - MODIFY LOGIC HERE IF NEEDED
+    const currentPrice = prices.length > 0 ? prices : 0;
+    console.log("✅ Using price:", currentPrice); // DEBUG LOG
+    
+    return currentPrice;
+}
+
+
+    
+
+
+
+
+
+
+    
     
     // SORT LOOT PRODUCTS - MODIFY SORTING LOGIC HERE
     sortLootProducts(products) {
