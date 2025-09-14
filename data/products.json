@@ -1,9 +1,22 @@
 {
-  "last_updated": "2025-09-14T18:29:58.604496+05:30",
+  "last_updated": "2025-09-14T21:20:25.073153+05:30",
   "total_products": 36,
   "daily_target": 6,
   "products": [
-    
+    {
+      "id": "product_night_1_20250914_155024",
+      "title": "Kobo Weight Lifting Straps Power Gym Support",
+      "image": "https://m.media-amazon.com/images/I/511crJ30wtL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B010WVL7W6?tag=gadgetvill09f-21",
+      "price": "\u20b9359",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B010WVL7W6",
+      "data_source": "serpapi",
+      "posted_date": "2025-09-14T21:20:24.846297+05:30",
+      "session_type": "night",
+      "link_index": 83
+    },
     {
       "id": "product_afternoon_1_20250914_074946",
       "title": "Philips HR3705/10 300 Watt Lightweight Hand Mixer, Blender with 5 speed control settings, stainless ...",
