@@ -1,8 +1,36 @@
 {
-  "last_updated": "2025-09-13T21:20:39.689210+05:30",
-  "total_products": 31,
+  "last_updated": "2025-09-14T10:16:11.417194+05:30",
+  "total_products": 33,
   "daily_target": 6,
   "products": [
+    {
+      "id": "product_morning_1_20250914_044604",
+      "title": "Crompton Ameo 500W Mixer Grinder with Powertron Motor & Motor Vent-X Technology, Robust design (3 St...",
+      "image": "https://m.media-amazon.com/images/I/51WhJiv7P1L._AC_UY218_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0F8NT3CQY?tag=gadgetvill09f-21",
+      "price": "\u20b91,899",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B0F8NT3CQY",
+      "data_source": "serpapi",
+      "posted_date": "2025-09-14T10:16:04.873760+05:30",
+      "session_type": "morning",
+      "link_index": 71
+    },
+    {
+      "id": "product_morning_2_20250914_044611",
+      "title": "Havells Aqua Plus Electric Kettle 1.2 Litre, 1250 Watt | 304 Stainless Steel Inner Body | Cool Touch...",
+      "image": "https://m.media-amazon.com/images/I/51EGS1jWNeS._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07GVLMRBT?tag=gadgetvill09f-21",
+      "price": "\u20b91,449",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B07GVLMRBT",
+      "data_source": "serpapi",
+      "posted_date": "2025-09-14T10:16:11.285469+05:30",
+      "session_type": "morning",
+      "link_index": 72
+    },
     {
       "id": "product_night_1_20250913_155039",
       "title": "Storite Imported RFID PU Leather 9 Slot Vertical Credit Debit Card Holder Money Wallet Zipper Coin P...",
