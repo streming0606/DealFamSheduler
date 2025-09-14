@@ -3768,6 +3768,49 @@ p {
 
 
 
+/* Remove overflow and ensure horizontal scroll fits mobile screens */
+body, html {
+    overflow-x: hidden !important;
+}
+
+.horizontal-products-scroll,
+.horizontal-loot-scroll {
+    margin: 0 !important;
+    padding: 1rem 0 !important;
+    gap: 1rem !important; /* or your preferred gap */
+    width: 100vw !important;
+    max-width: 100vw !important;
+    box-sizing: border-box !important;
+}
+
+/* Remove side margin/padding from horizontal wrappers on all screens */
+.horizontal-scroll-wrapper {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+@media (max-width: 768px) {
+    /* Cards should not exceed viewport */
+    .horizontal-products-scroll .product-card,
+    .horizontal-loot-scroll .product-card {
+        flex: 0 0 80vw !important;
+        max-width: 90vw !important;
+        min-width: 220px !important;
+        box-sizing: border-box;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
