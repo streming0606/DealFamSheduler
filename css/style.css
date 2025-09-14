@@ -2234,6 +2234,474 @@ p {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ========================================
+   FINAL COMPLETE MOBILE CUSTOMIZATIONS
+   ======================================== */
+
+/* MOBILE: REMOVE SCROLL BUTTONS FOR CLEAN AMAZON-LIKE EXPERIENCE */
+@media (max-width: 768px) {
+    
+    /* HIDE ALL SCROLL BUTTONS ON MOBILE */
+    .scroll-btn,
+    .banner-nav,
+    #scroll-left,
+    #scroll-right,
+    #loot-scroll-left,
+    #loot-scroll-right,
+    .horizontal-scroll-wrapper .scroll-btn {
+        display: none !important;
+    }
+    
+    /* MAKE CONTAINERS FULL WIDTH WITHOUT BUTTON SPACE */
+    .horizontal-scroll-wrapper {
+        gap: 0 !important;
+        padding: 0 !important;
+    }
+    
+    /* IMPROVE HORIZONTAL SCROLLING CONTAINERS */
+    .horizontal-products-scroll,
+    .horizontal-loot-scroll {
+        padding: 1rem 0.75rem !important;
+        margin: 0 -0.75rem !important; /* Extend to screen edges */
+        gap: 1rem !important;
+        scroll-snap-type: x mandatory; /* Smooth snap scrolling */
+        -webkit-overflow-scrolling: touch; /* iOS smooth scrolling */
+        scrollbar-width: none !important;
+        -ms-overflow-style: none !important;
+    }
+    
+    /* HIDE SCROLLBARS ON ALL BROWSERS */
+    .horizontal-products-scroll::-webkit-scrollbar,
+    .horizontal-loot-scroll::-webkit-scrollbar {
+        display: none !important;
+    }
+    
+    /* IMPROVE PRODUCT CARDS IN HORIZONTAL SCROLL */
+    .horizontal-products-scroll .product-card,
+    .horizontal-loot-scroll .product-card {
+        flex: 0 0 280px !important;
+        scroll-snap-align: start; /* Snap to card start */
+        scroll-margin-left: 0.75rem; /* Proper spacing when snapping */
+    }
+    
+    /* ENSURE LAST CARD SHOWS PARTIALLY (PEEK EFFECT) */
+    .horizontal-products-scroll .product-card:last-child,
+    .horizontal-loot-scroll .product-card:last-child {
+        margin-right: 0.75rem;
+    }
+    
+    /* IMPROVE TOUCH TARGET AREAS */
+    .product-card {
+        touch-action: manipulation;
+        -webkit-tap-highlight-color: transparent;
+    }
+    
+    /* ENHANCE SWIPE FEEDBACK */
+    .horizontal-products-scroll,
+    .horizontal-loot-scroll {
+        scroll-behavior: smooth;
+    }
+}
+
+/* EXTRA SMALL MOBILE OPTIMIZATION */
+@media (max-width: 480px) {
+    .horizontal-products-scroll .product-card,
+    .horizontal-loot-scroll .product-card {
+        flex: 0 0 260px !important;
+    }
+    
+    .horizontal-products-scroll,
+    .horizontal-loot-scroll {
+        padding: 0.75rem 0.5rem !important;
+        margin: 0 -0.5rem !important;
+        gap: 0.75rem !important;
+    }
+}
+
+/* DESKTOP: KEEP SCROLL BUTTONS VISIBLE */
+@media (min-width: 769px) {
+    .scroll-btn,
+    .banner-nav,
+    #scroll-left,
+    #scroll-right,
+    #loot-scroll-left,
+    #loot-scroll-right {
+        display: flex !important;
+    }
+}
+
+/* ========================================
+   MOVE VIEW ALL BUTTONS TO SECTION HEADERS
+   ======================================== */
+
+/* SECTION HEADER IMPROVEMENTS */
+.deals-section-header,
+.loot-section-header {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    margin-bottom: 2rem !important;
+    padding: 0 var(--container-padding) !important;
+    flex-wrap: wrap !important;
+    gap: 1rem !important;
+}
+
+.deals-section-header .section-info,
+.loot-section-header .section-info {
+    flex: 1 !important;
+    min-width: 200px !important;
+}
+
+/* TODAY'S HOT DEALS SECTION HEADER */
+.deals .section-header {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: flex-start !important;
+    margin-bottom: 2rem !important;
+    flex-wrap: wrap !important;
+    gap: 1rem !important;
+}
+
+.deals .section-header .section-title-group {
+    flex: 1 !important;
+    min-width: 250px !important;
+}
+
+.deals .section-header .section-title {
+    margin-bottom: 0.5rem !important;
+    font-size: 2.2rem !important;
+    color: var(--text-primary) !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 0.75rem !important;
+    flex-wrap: wrap !important;
+}
+
+.deals .section-header .section-subtitle {
+    margin: 0 !important;
+    color: var(--text-secondary) !important;
+    font-size: 1rem !important;
+    line-height: 1.5 !important;
+}
+
+/* LOOT DEALS SECTION HEADER */
+.loot-deals .section-header {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: flex-start !important;
+    margin-bottom: 1.5rem !important;
+    flex-wrap: wrap !important;
+    gap: 1rem !important;
+}
+
+.loot-deals .section-header .section-title-group {
+    flex: 1 !important;
+    min-width: 250px !important;
+}
+
+/* REDESIGNED VIEW ALL BUTTONS - HEADER STYLE */
+.header-view-all-btn {
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-hover)) !important;
+    color: white !important;
+    border: none !important;
+    padding: 0.875rem 1.75rem !important;
+    border-radius: var(--radius-xl) !important;
+    font-size: 0.95rem !important;
+    font-weight: 600 !important;
+    cursor: pointer !important;
+    transition: var(--transition) !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 0.5rem !important;
+    box-shadow: var(--shadow-md) !important;
+    text-decoration: none !important;
+    white-space: nowrap !important;
+    position: relative !important;
+    overflow: hidden !important;
+}
+
+.header-view-all-btn:hover {
+    background: linear-gradient(135deg, var(--primary-hover), #1a4d8c) !important;
+    transform: translateY(-2px) !important;
+    box-shadow: var(--shadow-lg) !important;
+    color: white !important;
+    text-decoration: none !important;
+}
+
+.header-view-all-btn::before {
+    content: '' !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: -100% !important;
+    width: 100% !important;
+    height: 100% !important;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent) !important;
+    transition: left 0.5s ease !important;
+}
+
+.header-view-all-btn:hover::before {
+    left: 100% !important;
+}
+
+/* LOOT DEALS HEADER BUTTON - DIFFERENT COLOR */
+.header-view-all-btn.loot-btn {
+    background: linear-gradient(135deg, #e11d48, #be185d) !important;
+}
+
+.header-view-all-btn.loot-btn:hover {
+    background: linear-gradient(135deg, #be185d, #9d174d) !important;
+}
+
+/* DEALS COUNT BADGE IN BUTTON */
+.header-view-all-btn .deals-count-badge {
+    background: rgba(255, 255, 255, 0.25) !important;
+    padding: 0.2rem 0.6rem !important;
+    border-radius: var(--radius-xl) !important;
+    font-size: 0.8rem !important;
+    font-weight: 700 !important;
+    margin-left: 0.25rem !important;
+}
+
+/* HIDE ORIGINAL BOTTOM BUTTONS */
+.view-all-section,
+.view-all-btn:not(.header-view-all-btn) {
+    display: none !important;
+}
+
+/* MOBILE RESPONSIVE FOR HEADER BUTTONS */
+@media (max-width: 768px) {
+    
+    /* STACK HEADER ELEMENTS ON MOBILE */
+    .deals .section-header,
+    .loot-deals .section-header {
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center !important;
+        gap: 1.5rem !important;
+    }
+    
+    .deals .section-header .section-title-group,
+    .loot-deals .section-header .section-title-group {
+        min-width: auto !important;
+        width: 100% !important;
+    }
+    
+    .deals .section-header .section-title {
+        font-size: 1.8rem !important;
+        justify-content: center !important;
+    }
+    
+    /* FULL WIDTH BUTTONS ON MOBILE */
+    .header-view-all-btn {
+        width: 100% !important;
+        max-width: 320px !important;
+        justify-content: center !important;
+        padding: 1rem 1.5rem !important;
+        font-size: 1rem !important;
+    }
+    
+    /* ADJUST SECTION SPACING */
+    .horizontal-deals-container,
+    .horizontal-loot-container {
+        margin-top: 0 !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .deals .section-header .section-title {
+        font-size: 1.5rem !important;
+    }
+    
+    .header-view-all-btn {
+        padding: 0.875rem 1.25rem !important;
+        font-size: 0.9rem !important;
+        max-width: 280px !important;
+    }
+    
+    .header-view-all-btn .deals-count-badge {
+        font-size: 0.75rem !important;
+        padding: 0.15rem 0.5rem !important;
+    }
+}
+
+/* ADD SUBTLE VISUAL HINTS FOR SCROLLABILITY */
+@media (max-width: 768px) {
+    /* Add gradient fade on right edge to indicate more content */
+    .horizontal-deals-container,
+    .horizontal-loot-container {
+        position: relative;
+    }
+    
+    .horizontal-deals-container::after,
+    .horizontal-loot-container::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 20px;
+        height: 100%;
+        background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.8));
+        pointer-events: none;
+        z-index: 2;
+    }
+}
+
+/* ENSURE PROPER SPACING FOR NEW LAYOUT */
+.deals,
+.loot-deals {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+}
+
+.deals .section-header,
+.loot-deals .section-header {
+    margin-bottom: 2.5rem !important;
+}
+
+/* ADDITIONAL POLISH FOR SECTION HEADERS */
+.deals .section-header .section-title-group .fire-emoji,
+.loot-deals .section-header .section-title-group .money-emoji {
+    font-size: 2.2rem !important;
+}
+
+.deals .section-header .section-subtitle,
+.loot-deals .section-header .section-subtitle {
+    max-width: 400px !important;
+}
+
+/* LOADING STATE IMPROVEMENTS */
+.horizontal-products-scroll .loading-state,
+.horizontal-loot-scroll .loading-state,
+.horizontal-products-scroll .error-state,
+.horizontal-loot-scroll .error-state,
+.horizontal-products-scroll .empty-horizontal-state,
+.horizontal-loot-scroll .empty-horizontal-state {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 100% !important;
+    min-height: 200px !important;
+    flex: 1 !important;
+    padding: 2rem !important;
+    text-align: center !important;
+    color: var(--text-secondary) !important;
+}
+
+/* ANIMATION FOR SMOOTH SECTION TRANSITIONS */
+.deals,
+.loot-deals {
+    animation: fadeInUp 0.6s ease-out !important;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* FINAL POLISH - ENSURE CONSISTENT SPACING */
+.horizontal-deals-container .horizontal-scroll-wrapper,
+.horizontal-loot-container .horizontal-scroll-wrapper {
+    margin-bottom: 0 !important;
+}
+
+.deals .container,
+.loot-deals .container {
+    position: relative !important;
+}
+
+/* ACCESSIBILITY IMPROVEMENTS */
+.header-view-all-btn:focus {
+    outline: 3px solid rgba(40, 116, 240, 0.3) !important;
+    outline-offset: 2px !important;
+}
+
+.header-view-all-btn.loot-btn:focus {
+    outline: 3px solid rgba(225, 29, 72, 0.3) !important;
+}
+
+/* HIGH CONTRAST MODE SUPPORT */
+@media (prefers-contrast: high) {
+    .header-view-all-btn {
+        border: 2px solid white !important;
+    }
+}
+
+/* REDUCED MOTION SUPPORT */
+@media (prefers-reduced-motion: reduce) {
+    .header-view-all-btn,
+    .header-view-all-btn::before,
+    .deals,
+    .loot-deals {
+        animation: none !important;
+        transition: none !important;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* HORIZONTAL SCROLLING DEALS SECTION */
 .horizontal-deals-container {
     position: relative;
