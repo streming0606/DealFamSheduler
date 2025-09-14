@@ -1,8 +1,22 @@
 {
-  "last_updated": "2025-09-14T13:19:53.458473+05:30",
-  "total_products": 35,
+  "last_updated": "2025-09-14T18:29:58.604496+05:30",
+  "total_products": 36,
   "daily_target": 6,
   "products": [
+    {
+      "id": "product_evening_1_20250914_125958",
+      "title": "Philips HR3705/10 300 Watt Lightweight Hand Mixer, Blender with 5 speed control settings, stainless ...",
+      "image": "https://m.media-amazon.com/images/I/71rsVfDPlAL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07GDR7VZ3?tag=gadgetvill09f-21",
+      "price": "\u20b92,399",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B07GDR7VZ3",
+      "data_source": "serpapi",
+      "posted_date": "2025-09-14T18:29:58.451252+05:30",
+      "session_type": "evening",
+      "link_index": 80
+    },
     {
       "id": "product_afternoon_1_20250914_074946",
       "title": "Philips HR3705/10 300 Watt Lightweight Hand Mixer, Blender with 5 speed control settings, stainless ...",
