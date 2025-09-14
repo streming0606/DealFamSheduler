@@ -3303,6 +3303,225 @@ p {
 
 
 
+/* 💸 LOOT DEALS FINDS SECTION STYLES */
+
+/* MAIN LOOT DEALS SECTION */
+.loot-deals {
+    padding: 60px 0;
+    background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%); /* CHANGE BACKGROUND COLOR HERE */
+    position: relative;
+}
+
+/* LOOT DEALS SECTION HEADER */
+.loot-deals .section-title {
+    color: #0c4a6e; /* CHANGE TITLE COLOR HERE */
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.loot-deals .section-subtitle {
+    color: #0369a1; /* CHANGE SUBTITLE COLOR HERE */
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+/* PRICE FILTER TOGGLE BUTTONS */
+.loot-price-filter, .loot-price-filter-full {
+    display: flex;
+    gap: 0.75rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.price-filter-btn {
+    background: white;
+    border: 2px solid #e11d48; /* CHANGE BUTTON BORDER COLOR HERE */
+    color: #e11d48; /* CHANGE BUTTON TEXT COLOR HERE */
+    padding: 0.75rem 1.5rem;
+    border-radius: 25px; /* CHANGE BUTTON ROUNDNESS HERE */
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+    position: relative;
+    overflow: hidden;
+}
+
+/* ACTIVE PRICE FILTER BUTTON */
+.price-filter-btn.active {
+    background: #e11d48; /* CHANGE ACTIVE BACKGROUND COLOR HERE */
+    color: white;
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(225, 29, 72, 0.3);
+}
+
+/* HOVER EFFECT FOR PRICE FILTER BUTTONS */
+.price-filter-btn:hover {
+    background: #e11d48;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(225, 29, 72, 0.4);
+}
+
+/* LOOT DEALS HORIZONTAL CONTAINER */
+.horizontal-loot-container {
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+.horizontal-loot-scroll {
+    display: flex;
+    gap: 1.5rem; /* CHANGE GAP BETWEEN CARDS HERE */
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 1rem 0;
+    flex: 1;
+    scrollbar-width: none; /* Hide scrollbar Firefox */
+    -ms-overflow-style: none; /* Hide scrollbar IE */
+}
+
+.horizontal-loot-scroll::-webkit-scrollbar {
+    display: none; /* Hide scrollbar WebKit */
+}
+
+/* LOOT DEALS PRODUCT CARDS IN HORIZONTAL VIEW */
+.horizontal-loot-scroll .product-card {
+    flex: 0 0 280px; /* CHANGE CARD WIDTH HERE */
+    max-width: 280px;
+    height: 420px; /* CHANGE CARD HEIGHT HERE */
+    margin-bottom: 0;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+/* SPECIAL STYLING FOR LOOT DEALS CARDS */
+.horizontal-loot-scroll .product-card:hover {
+    border-color: #e11d48; /* CHANGE HOVER BORDER COLOR HERE */
+    transform: translateY(-8px) scale(1.02);
+}
+
+/* LOOT DEALS VIEW ALL BUTTON */
+.view-all-btn.loot-view-all {
+    background: linear-gradient(135deg, #e11d48, #be185d); /* CHANGE BUTTON GRADIENT HERE */
+    border: none;
+    position: relative;
+}
+
+.view-all-btn.loot-view-all:hover {
+    background: linear-gradient(135deg, #be185d, #9d174d);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(225, 29, 72, 0.4);
+}
+
+/* LOOT DEALS COUNT BADGE */
+.loot-deals-count {
+    background: rgba(255, 255, 255, 0.25); /* CHANGE BADGE BACKGROUND HERE */
+    padding: 0.25rem 0.75rem;
+    border-radius: 15px;
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+/* FULL LOOT SECTION STYLES */
+.full-loot-section {
+    animation: slideInUp 0.5s ease;
+}
+
+.loot-controls {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+/* MOBILE RESPONSIVE STYLES FOR LOOT DEALS */
+@media (max-width: 768px) {
+    .loot-deals {
+        padding: 40px 0;
+    }
+    
+    .loot-deals .section-title {
+        font-size: 2rem;
+    }
+    
+    .horizontal-loot-scroll .product-card {
+        flex: 0 0 260px; /* CHANGE MOBILE CARD WIDTH HERE */
+        max-width: 260px;
+        height: 380px; /* CHANGE MOBILE CARD HEIGHT HERE */
+    }
+    
+    .loot-price-filter, .loot-price-filter-full {
+        gap: 0.5rem;
+    }
+    
+    .price-filter-btn {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.85rem;
+    }
+    
+    .loot-controls {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .horizontal-loot-scroll .product-card {
+        flex: 0 0 240px; /* CHANGE EXTRA SMALL MOBILE CARD WIDTH HERE */
+        height: 360px; /* CHANGE EXTRA SMALL MOBILE CARD HEIGHT HERE */
+    }
+    
+    .loot-price-filter, .loot-price-filter-full {
+        justify-content: center;
+    }
+    
+    .price-filter-btn {
+        flex: 1;
+        min-width: 120px;
+    }
+}
+
+/* SPECIAL DISCOUNT BADGE FOR LOOT DEALS */
+.loot-deals .badge-discount {
+    background: linear-gradient(135deg, #10b981, #059669); /* CHANGE LOOT DISCOUNT BADGE COLOR HERE */
+    animation: pulse 2s infinite;
+}
+
+/* LOOT DEALS EMPTY STATE */
+.loot-empty-state {
+    text-align: center;
+    padding: 3rem 1rem;
+    color: #64748b;
+}
+
+.loot-empty-state i {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #e11d48;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
