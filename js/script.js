@@ -988,6 +988,351 @@ async function loadProducts() {
 
 
 
+// 💸 LOOT DEALS FINDS - HORIZONTAL SCROLLING WITH PRICE FILTER
+class LootDealsScroller {
+    constructor() {
+        // DOM ELEMENTS - CHANGE IDs HERE IF NEEDED
+        this.horizontalContainer = document.getElementById('horizontal-loot-container');
+        this.fullContainer = document.getElementById('loot-products-container');
+        this.horizontalSection = document.querySelector('.horizontal-loot-container');
+        this.fullSection = document.getElementById('full-loot-section');
+        this.scrollLeftBtn = document.getElementById('loot-scroll-left');
+        this.scrollRightBtn = document.getElementById('loot-scroll-right');
+        this.viewAllBtn = document.getElementById('view-all-loot');
+        this.backToPreviewBtn = document.getElementById('back-to-loot-preview');
+        this.lootCountSpan = document.querySelector('.loot-deals-count');
+        this.loadMoreBtn = document.getElementById('load-more-loot-btn');
+        
+        // CONFIGURATION - MODIFY THESE VALUES AS NEEDED
+        this.isHorizontalMode = true;
+        this.scrollAmount = 300; // CHANGE SCROLL DISTANCE HERE
+        this.maxHorizontalItems = 8; // CHANGE MAX ITEMS IN HORIZONTAL VIEW HERE
+        this.currentPriceLimit = 500; // DEFAULT PRICE LIMIT - CHANGE HERE
+        this.displayedLootProducts = 0; // TRACK DISPLAYED PRODUCTS IN FULL VIEW
+        this.lootProductsPerPage = 12; // PRODUCTS PER PAGE IN FULL VIEW - CHANGE HERE
+        
+        this.init();
+    }
+    
+    init() {
+        if (!this.horizontalContainer) return;
+        
+        // SETUP EVENT LISTENERS
+        this.scrollLeftBtn?.addEventListener('click', () => this.scrollLeft());
+        this.scrollRightBtn?.addEventListener('click', () => this.scrollRight());
+        this.viewAllBtn?.addEventListener('click', () => this.showFullView());
+        this.backToPreviewBtn?.addEventListener('click', () => this.showHorizontalView());
+        this.loadMoreBtn?.addEventListener('click', () => this.loadMoreLootProducts());
+        
+        // PRICE FILTER BUTTONS EVENT LISTENERS
+        this.setupPriceFilterButtons();
+        
+        // UPDATE SCROLL BUTTON STATES ON SCROLL
+        this.horizontalContainer.addEventListener('scroll', () => this.updateScrollButtons());
+        
+        // INITIALIZE WITH HORIZONTAL VIEW
+        this.showHorizontalView();
+    }
+    
+    // SETUP PRICE FILTER BUTTONS - ADD NEW PRICE RANGES HERE
+    setupPriceFilterButtons() {
+        // HORIZONTAL VIEW PRICE FILTERS
+        const horizontalFilters = document.querySelectorAll('.loot-price-filter .price-filter-btn');
+        horizontalFilters.forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                // REMOVE ACTIVE CLASS FROM ALL BUTTONS
+                horizontalFilters.forEach(b => b.classList.remove('active'));
+                // ADD ACTIVE CLASS TO CLICKED BUTTON
+                e.target.classList.add('active');
+                // UPDATE PRICE LIMIT
+                this.currentPriceLimit = parseInt(e.target.dataset.priceLimit);
+                // REFRESH HORIZONTAL VIEW
+                this.renderHorizontalLootProducts();
+            });
+        });
+        
+        // FULL VIEW PRICE FILTERS
+        const fullViewFilters = document.querySelectorAll('.loot-price-filter-full .price-filter-btn');
+        fullViewFilters.forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                fullViewFilters.forEach(b => b.classList.remove('active'));
+                e.target.classList.add('active');
+                this.currentPriceLimit = parseInt(e.target.dataset.priceLimit);
+                this.displayedLootProducts = 0; // RESET PAGINATION
+                this.renderFullLootProducts();
+            });
+        });
+    }
+    
+    // GET FILTERED LOOT PRODUCTS - MODIFY FILTERING LOGIC HERE
+    getFilteredLootProducts() {
+        return allProducts.filter(product => {
+            // EXTRACT PRICE FROM PRODUCT - MODIFY PRICE EXTRACTION IF NEEDED
+            const price = this.extractPrice(product.price);
+            
+            // FILTER BY PRICE LIMIT - CHANGE CONDITION HERE IF NEEDED
+            return price > 0 && price <= this.currentPriceLimit;
+        });
+    }
+    
+    // EXTRACT PRICE FROM PRODUCT STRING - MODIFY IF PRICE FORMAT CHANGES
+    extractPrice(priceString) {
+        // HANDLE DIFFERENT PRICE FORMATS
+        const match = priceString.match(/₹(\d{1,3}(?:,\d{3})*(?:\.\d{2})?)/);
+        return match ? parseInt(match[1].replace(/,/g, '')) : 0;
+    }
+    
+    // SORT LOOT PRODUCTS - MODIFY SORTING LOGIC HERE
+    sortLootProducts(products) {
+        return products.sort((a, b) => {
+            // PRIMARY SORT: HIGHEST DISCOUNT FIRST - CHANGE SORTING HERE
+            const discountA = this.calculateDiscountPercentage(a.price);
+            const discountB = this.calculateDiscountPercentage(b.price);
+            
+            if (discountB !== discountA) {
+                return discountB - discountA; // HIGHEST DISCOUNT FIRST
+            }
+            
+            // SECONDARY SORT: LOWEST PRICE FIRST
+            const priceA = this.extractPrice(a.price);
+            const priceB = this.extractPrice(b.price);
+            return priceA - priceB; // LOWEST PRICE FIRST
+        });
+    }
+    
+    // CALCULATE DISCOUNT PERCENTAGE - MODIFY DISCOUNT CALCULATION HERE
+    calculateDiscountPercentage(priceString) {
+        const prices = priceString.match(/₹(\d{1,3}(?:,\d{3})*)/g);
+        if (prices && prices.length >= 2) {
+            const current = parseInt(prices[0].replace(/₹|,/g, ''));
+            const original = parseInt(prices[1].replace(/₹|,/g, ''));
+            if (original > current) {
+                return Math.round(((original - current) / original) * 100);
+            }
+        }
+        // DEFAULT DISCOUNT FOR BUDGET ITEMS - CHANGE DEFAULT HERE
+        return Math.floor(Math.random() * 30) + 10; // 10-40% random discount
+    }
+    
+    // RENDER HORIZONTAL LOOT PRODUCTS
+    renderHorizontalLootProducts() {
+        if (!this.horizontalContainer) return;
+        
+        const filteredProducts = this.getFilteredLootProducts();
+        const sortedProducts = this.sortLootProducts(filteredProducts);
+        const productsToShow = sortedProducts.slice(0, this.maxHorizontalItems);
+        
+        console.log(`🔍 Found ${filteredProducts.length} products under ₹${this.currentPriceLimit}`); // DEBUG LOG
+        
+        this.horizontalContainer.innerHTML = '';
+        
+        if (productsToShow.length === 0) {
+            this.horizontalContainer.innerHTML = `
+                <div class="loot-empty-state">
+                    <i class="fas fa-search"></i>
+                    <h3>No deals found under ₹${this.currentPriceLimit}</h3>
+                    <p>Try increasing the price limit or check back later!</p>
+                </div>
+            `;
+            this.updateLootCount(0);
+            return;
+        }
+        
+        // CREATE PRODUCT CARDS
+        productsToShow.forEach((product, index) => {
+            const productCard = createProductCard(product, index);
+            // ADD SPECIAL LOOT DEALS STYLING - MODIFY STYLING HERE
+            productCard.classList.add('loot-deal-card');
+            this.horizontalContainer.appendChild(productCard);
+            
+            // ENTRANCE ANIMATION - CHANGE ANIMATION TIMING HERE
+            setTimeout(() => {
+                productCard.style.opacity = '1';
+                productCard.style.transform = 'translateY(0)';
+            }, index * 100);
+        });
+        
+        // UPDATE DEALS COUNT
+        this.updateLootCount(filteredProducts.length);
+        
+        // UPDATE SCROLL BUTTONS
+        setTimeout(() => this.updateScrollButtons(), 100);
+    }
+    
+    // RENDER FULL LOOT PRODUCTS VIEW
+    renderFullLootProducts() {
+        if (!this.fullContainer) return;
+        
+        const filteredProducts = this.getFilteredLootProducts();
+        const sortedProducts = this.sortLootProducts(filteredProducts);
+        const productsToShow = sortedProducts.slice(0, this.displayedLootProducts + this.lootProductsPerPage);
+        
+        this.fullContainer.innerHTML = '';
+        
+        if (productsToShow.length === 0) {
+            this.fullContainer.innerHTML = `
+                <div class="loot-empty-state">
+                    <i class="fas fa-search"></i>
+                    <h3>No deals found under ₹${this.currentPriceLimit}</h3>
+                    <p>Try a different price filter!</p>
+                </div>
+            `;
+            return;
+        }
+        
+        productsToShow.forEach((product, index) => {
+            const productCard = createProductCard(product, index);
+            productCard.classList.add('loot-deal-card');
+            this.fullContainer.appendChild(productCard);
+            
+            setTimeout(() => {
+                productCard.style.opacity = '1';
+                productCard.style.transform = 'translateY(0)';
+            }, index * 50);
+        });
+        
+        this.displayedLootProducts = productsToShow.length;
+        
+        // UPDATE LOAD MORE BUTTON
+        if (this.displayedLootProducts >= filteredProducts.length) {
+            this.loadMoreBtn.style.display = 'none';
+        } else {
+            this.loadMoreBtn.style.display = 'block';
+        }
+    }
+    
+    // LOAD MORE LOOT PRODUCTS
+    loadMoreLootProducts() {
+        this.loadMoreBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Loading...';
+        setTimeout(() => {
+            this.renderFullLootProducts();
+            this.loadMoreBtn.innerHTML = '<i class="fas fa-plus"></i> Load More Loot Deals';
+        }, 500);
+    }
+    
+    // SCROLL FUNCTIONS - MODIFY SCROLL BEHAVIOR HERE
+    scrollLeft() {
+        this.horizontalContainer.scrollBy({
+            left: -this.scrollAmount,
+            behavior: 'smooth'
+        });
+    }
+    
+    scrollRight() {
+        this.horizontalContainer.scrollBy({
+            left: this.scrollAmount,
+            behavior: 'smooth'
+        });
+    }
+    
+    // UPDATE SCROLL BUTTONS STATE
+    updateScrollButtons() {
+        const container = this.horizontalContainer;
+        const scrollLeft = container.scrollLeft;
+        const maxScroll = container.scrollWidth - container.clientWidth;
+        
+        if (this.scrollLeftBtn) {
+            this.scrollLeftBtn.disabled = scrollLeft <= 0;
+        }
+        
+        if (this.scrollRightBtn) {
+            this.scrollRightBtn.disabled = scrollLeft >= maxScroll;
+        }
+    }
+    
+    // SHOW FULL VIEW
+    showFullView() {
+        this.isHorizontalMode = false;
+        this.horizontalSection.style.display = 'none';
+        this.fullSection.style.display = 'block';
+        
+        this.displayedLootProducts = 0;
+        this.renderFullLootProducts();
+        
+        this.fullSection.scrollIntoView({ behavior: 'smooth' });
+    }
+    
+    // SHOW HORIZONTAL VIEW
+    showHorizontalView() {
+        this.isHorizontalMode = true;
+        this.horizontalSection.style.display = 'block';
+        this.fullSection.style.display = 'none';
+        
+        this.renderHorizontalLootProducts();
+        
+        document.getElementById('loot-deals').scrollIntoView({ behavior: 'smooth' });
+    }
+    
+    // UPDATE LOOT DEALS COUNT
+    updateLootCount(count) {
+        if (this.lootCountSpan) {
+            this.lootCountSpan.textContent = `${count} deals`;
+        }
+    }
+    
+    // PUBLIC METHOD TO REFRESH LOOT PRODUCTS
+    refresh() {
+        if (this.isHorizontalMode) {
+            this.renderHorizontalLootProducts();
+        } else {
+            this.renderFullLootProducts();
+        }
+    }
+}
+
+// INITIALIZE LOOT DEALS SCROLLER
+let lootDealsScroller = null;
+
+// UPDATE YOUR EXISTING DOMContentLoaded EVENT LISTENER
+document.addEventListener('DOMContentLoaded', function() {
+    loadProducts();
+    setupEventListeners();
+    updateLastRefresh();
+    initializeEnhancements();
+    initializeBannerSlider();
+    
+    // INITIALIZE BOTH SCROLLERS
+    setTimeout(() => {
+        horizontalScroller = new HorizontalDealsScroller();
+        lootDealsScroller = new LootDealsScroller(); // ADD THIS LINE
+        initializeSearch();
+    }, 1000);
+});
+
+// UPDATE RENDER PRODUCTS TO REFRESH BOTH SECTIONS
+const originalRenderProducts2 = renderProducts;
+renderProducts = function() {
+    if (horizontalScroller) {
+        horizontalScroller.refresh();
+    }
+    if (lootDealsScroller) {
+        lootDealsScroller.refresh(); // ADD THIS LINE
+    }
+    if (!horizontalScroller && !lootDealsScroller) {
+        originalRenderProducts2.call(this);
+    }
+    initializeEnhancedCards();
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
