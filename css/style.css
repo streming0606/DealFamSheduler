@@ -190,12 +190,12 @@ p {
   flex-shrink: 0;
 }
 
-.logo-icon {
+/* .logo-icon {
   width: 40px;
   height: 40px;
   border-radius: var(--radius);
   object-fit: cover;
-}
+} */
 
 .logo-text h1 {
   font-size: 1.5rem;
@@ -209,6 +209,35 @@ p {
   color: var(--text-muted);
   font-weight: 400;
 }
+
+
+
+
+
+
+
+.logo-icon {
+    max-width: 200px;
+    height: auto;
+    width: auto;
+}
+
+@media (max-width: 768px) {
+    .logo-icon {
+        max-width: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-icon {
+        max-width: 120px;
+    }
+}
+
+
+
+
+
 
 
 
