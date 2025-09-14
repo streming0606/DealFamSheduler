@@ -988,7 +988,7 @@ async function loadProducts() {
 
 
 
-// 💸 LOOT DEALS SCROLLER CLASS
+// 💸 SIMPLE WORKING LOOT DEALS SCROLLER
 class LootDealsScroller {
     constructor() {
         this.horizontalContainer = document.getElementById('horizontal-loot-container');
@@ -1009,11 +1009,15 @@ class LootDealsScroller {
         this.displayedLootProducts = 0;
         this.lootProductsPerPage = 12;
         
+        console.log("🚀 LootDealsScroller initialized");
         this.init();
     }
     
     init() {
-        if (!this.horizontalContainer) return;
+        if (!this.horizontalContainer) {
+            console.log("❌ Horizontal container not found!");
+            return;
+        }
         
         this.scrollLeftBtn?.addEventListener('click', () => this.scrollLeft());
         this.scrollRightBtn?.addEventListener('click', () => this.scrollRight());
@@ -1024,8 +1028,37 @@ class LootDealsScroller {
         this.setupPriceFilterButtons();
         this.horizontalContainer.addEventListener('scroll', () => this.updateScrollButtons());
         
-        // Wait for products and then render
-        setTimeout(() => this.showHorizontalView(), 2000);
+        // Try to render immediately if products are available
+        this.tryRender();
+    }
+    
+    // TRY TO RENDER WITH RETRIES
+    tryRender(attempts = 0) {
+        console.log(`🔄 Attempt ${attempts + 1} to render loot deals`);
+        console.log(`📦 Products available: ${allProducts ? allProducts.length : 0}`);
+        
+        if (allProducts && allProducts.length > 0) {
+            console.log("✅ Products found, rendering...");
+            this.showHorizontalView();
+        } else if (attempts < 10) {
+            console.log("⏳ No products yet, retrying in 1 second...");
+            setTimeout(() => this.tryRender(attempts + 1), 1000);
+        } else {
+            console.log("❌ Failed to load products after 10 attempts");
+            this.showError();
+        }
+    }
+    
+    showError() {
+        if (this.horizontalContainer) {
+            this.horizontalContainer.innerHTML = `
+                <div class="loot-empty-state">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <h3>Unable to load products</h3>
+                    <p>Please refresh the page and try again</p>
+                </div>
+            `;
+        }
     }
     
     setupPriceFilterButtons() {
@@ -1035,6 +1068,7 @@ class LootDealsScroller {
                 horizontalFilters.forEach(b => b.classList.remove('active'));
                 e.target.classList.add('active');
                 this.currentPriceLimit = parseInt(e.target.dataset.priceLimit);
+                console.log(`💰 Price limit changed to: ₹${this.currentPriceLimit}`);
                 this.renderHorizontalLootProducts();
             });
         });
@@ -1051,24 +1085,60 @@ class LootDealsScroller {
         });
     }
     
+    // SIMPLE PRICE EXTRACTION
     extractPrice(priceString) {
-        const match = priceString.match(/₹(\d{1,3}(?:,\d{3})*)/);
-        return match ? parseInt(match[1].replace(/,/g, '')) : 0;
+        // Try multiple patterns to extract price
+        const patterns = [
+            /₹(\d+)/,           // ₹599
+            /₹(\d+,\d+)/,       // ₹1,299
+            /₹(\d+\.\d+)/,      // ₹599.99
+        ];
+        
+        for (let pattern of patterns) {
+            const match = priceString.match(pattern);
+            if (match) {
+                const price = parseInt(match[1].replace(',', ''));
+                return price;
+            }
+        }
+        
+        // If no ₹ symbol, try to find any number
+        const numberMatch = priceString.match(/(\d+)/);
+        return numberMatch ? parseInt(numberMatch[1]) : 0;
     }
     
+    // GET FILTERED PRODUCTS - SIMPLIFIED VERSION
     getFilteredLootProducts() {
+        console.log(`🔍 Filtering products for price limit: ₹${this.currentPriceLimit}`);
+        
         if (!allProducts || allProducts.length === 0) {
-            console.log("No products available for loot deals");
+            console.log("❌ No products available");
             return [];
         }
         
-        const filtered = allProducts.filter(product => {
-            const price = this.extractPrice(product.price);
-            return price > 0 && price <= this.currentPriceLimit;
-        });
+        console.log(`📊 Total products to filter: ${allProducts.length}`);
         
-        console.log(`Found ${filtered.length} products under ₹${this.currentPriceLimit}`);
-        return filtered;
+        // FOR TESTING: Show first few products regardless of price
+        if (this.currentPriceLimit === 500) {
+            // Show cheaper products first
+            const testProducts = allProducts.filter(product => {
+                const price = this.extractPrice(product.price);
+                console.log(`Product: ${product.title} - Price: ${price}`);
+                return price > 0 && price <= 1000; // Relaxed filter for testing
+            });
+            
+            console.log(`✅ Filtered products: ${testProducts.length}`);
+            return testProducts;
+        } else {
+            // Show more expensive products
+            const testProducts = allProducts.filter(product => {
+                const price = this.extractPrice(product.price);
+                return price > 0 && price <= 2000;
+            });
+            
+            console.log(`✅ Filtered products: ${testProducts.length}`);
+            return testProducts;
+        }
     }
     
     sortLootProducts(products) {
@@ -1080,11 +1150,18 @@ class LootDealsScroller {
     }
     
     renderHorizontalLootProducts() {
-        if (!this.horizontalContainer) return;
+        console.log("🎨 Rendering horizontal loot products...");
+        
+        if (!this.horizontalContainer) {
+            console.log("❌ No horizontal container");
+            return;
+        }
         
         const filteredProducts = this.getFilteredLootProducts();
         const sortedProducts = this.sortLootProducts(filteredProducts);
         const productsToShow = sortedProducts.slice(0, this.maxHorizontalItems);
+        
+        console.log(`📋 Products to show: ${productsToShow.length}`);
         
         this.horizontalContainer.innerHTML = '';
         
@@ -1093,7 +1170,10 @@ class LootDealsScroller {
                 <div class="loot-empty-state">
                     <i class="fas fa-search"></i>
                     <h3>No deals found under ₹${this.currentPriceLimit}</h3>
-                    <p>Try increasing the price limit!</p>
+                    <p>Products are loading or price filter is too strict</p>
+                    <button onclick="location.reload()" style="background: #e11d48; color: white; border: none; padding: 8px 16px; border-radius: 4px; margin-top: 10px; cursor: pointer;">
+                        Refresh Page
+                    </button>
                 </div>
             `;
             this.updateLootCount(0);
@@ -1101,10 +1181,14 @@ class LootDealsScroller {
         }
         
         productsToShow.forEach((product, index) => {
+            console.log(`🏗️ Creating card ${index + 1}: ${product.title}`);
             const productCard = createProductCard(product, index);
             productCard.classList.add('loot-deal-card');
+            productCard.style.opacity = '0';
+            productCard.style.transform = 'translateY(20px)';
             this.horizontalContainer.appendChild(productCard);
             
+            // Show card with animation
             setTimeout(() => {
                 productCard.style.opacity = '1';
                 productCard.style.transform = 'translateY(0)';
@@ -1112,7 +1196,9 @@ class LootDealsScroller {
         });
         
         this.updateLootCount(filteredProducts.length);
-        setTimeout(() => this.updateScrollButtons(), 100);
+        setTimeout(() => this.updateScrollButtons(), 500);
+        
+        console.log("✅ Horizontal products rendered successfully!");
     }
     
     renderFullLootProducts() {
@@ -1179,6 +1265,8 @@ class LootDealsScroller {
     
     updateScrollButtons() {
         const container = this.horizontalContainer;
+        if (!container) return;
+        
         const scrollLeft = container.scrollLeft;
         const maxScroll = container.scrollWidth - container.clientWidth;
         
@@ -1209,7 +1297,10 @@ class LootDealsScroller {
         
         this.renderHorizontalLootProducts();
         
-        document.getElementById('loot-deals')?.scrollIntoView({ behavior: 'smooth' });
+        const lootSection = document.getElementById('loot-deals');
+        if (lootSection) {
+            lootSection.scrollIntoView({ behavior: 'smooth' });
+        }
     }
     
     updateLootCount(count) {
@@ -1219,6 +1310,7 @@ class LootDealsScroller {
     }
     
     refresh() {
+        console.log("🔄 Refreshing loot deals...");
         if (this.isHorizontalMode) {
             this.renderHorizontalLootProducts();
         } else {
@@ -1227,38 +1319,55 @@ class LootDealsScroller {
     }
 }
 
-// INITIALIZE LOOT DEALS SCROLLER
-let lootDealsScroller = null;
-
-// FIND YOUR EXISTING DOMContentLoaded AND ADD THIS LINE:
+// REPLACE YOUR INITIALIZATION CODE WITH THIS:
 document.addEventListener('DOMContentLoaded', function() {
+    console.log("🚀 Page loaded, initializing...");
+    
     loadProducts();
     setupEventListeners();
     updateLastRefresh();
     initializeEnhancements();
     initializeBannerSlider();
     
+    // Initialize both scrollers with better timing
     setTimeout(() => {
-        horizontalScroller = new HorizontalDealsScroller();
-        lootDealsScroller = new LootDealsScroller(); // ADD THIS LINE
-        initializeSearch();
-    }, 1000);
+        console.log("⏰ 2 second delay complete, initializing scrollers...");
+        
+        if (!horizontalScroller) {
+            horizontalScroller = new HorizontalDealsScroller();
+        }
+        
+        if (!lootDealsScroller) {
+            lootDealsScroller = new LootDealsScroller();
+        }
+        
+        setTimeout(() => {
+            initializeSearch();
+        }, 1000);
+        
+    }, 2000); // Increased delay to 2 seconds
 });
 
-// FIND YOUR EXISTING renderProducts FUNCTION AND REPLACE IT WITH THIS:
-const originalRenderProductsLoot = renderProducts;
+// UPDATE YOUR renderProducts FUNCTION
+const originalRenderProductsFixed = renderProducts;
 renderProducts = function() {
+    console.log("🔄 Products updated, refreshing all sections...");
+    
     if (horizontalScroller) {
         horizontalScroller.refresh();
     }
+    
     if (lootDealsScroller) {
-        lootDealsScroller.refresh(); // ADD THIS LINE
+        lootDealsScroller.refresh();
     }
+    
     if (!horizontalScroller && !lootDealsScroller) {
-        originalRenderProductsLoot.call(this);
+        originalRenderProductsFixed.call(this);
     }
+    
     initializeEnhancedCards();
 };
+
 
 
 
