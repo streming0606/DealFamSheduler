@@ -1,8 +1,36 @@
 {
-  "last_updated": "2025-09-15T13:20:17.192689+05:30",
-  "total_products": 40,
+  "last_updated": "2025-09-15T18:38:04.399766+05:30",
+  "total_products": 42,
   "daily_target": 6,
   "products": [
+    {
+      "id": "product_morning_1_20250915_130757",
+      "title": "WildHorn RFID Protected Leather Wallet for Men, Brown",
+      "image": "https://m.media-amazon.com/images/I/81c+kUeOzlL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B079TN3GCD?tag=gadgetvill09f-21",
+      "price": "\u20b9297",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B079TN3GCD",
+      "data_source": "serpapi",
+      "posted_date": "2025-09-15T18:37:57.496207+05:30",
+      "session_type": "morning",
+      "link_index": 97
+    },
+    {
+      "id": "product_morning_2_20250915_130804",
+      "title": "beatXP Kitchen Scale Multipurpose Portable Electronic Digital Weighing Scale | Weight Machine With B...",
+      "image": "https://m.media-amazon.com/images/I/61Is7sICRJL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0B61DSF17?tag=gadgetvill09f-21",
+      "price": "\u20b9299",
+      "rating": "\u2b50\u2b50\u2b50\u2606\u2606",
+      "category": "home",
+      "asin": "B0B61DSF17",
+      "data_source": "serpapi",
+      "posted_date": "2025-09-15T18:38:04.245830+05:30",
+      "session_type": "morning",
+      "link_index": 98
+    },
     {
       "id": "product_afternoon_1_20250915_075009",
       "title": "Pigeon Kessel Multipurpose Kettle (12173) 1.2 litres with Stainless Steel Body, used for boiling Wat...",
