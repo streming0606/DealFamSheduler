@@ -1,8 +1,36 @@
 {
-  "last_updated": "2025-09-15T10:18:50.965631+05:30",
-  "total_products": 38,
+  "last_updated": "2025-09-15T13:20:17.192689+05:30",
+  "total_products": 40,
   "daily_target": 6,
   "products": [
+    {
+      "id": "product_afternoon_1_20250915_075009",
+      "title": "Pigeon Kessel Multipurpose Kettle (12173) 1.2 litres with Stainless Steel Body, used for boiling Wat...",
+      "image": "https://m.media-amazon.com/images/I/41JJWFk14hL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B01I1LDZGA?tag=gadgetvill09f-21",
+      "price": "\u20b9899",
+      "rating": "\u2b50\u2b50\u2b50\u2606\u2606",
+      "category": "health",
+      "asin": "B01I1LDZGA",
+      "data_source": "serpapi",
+      "posted_date": "2025-09-15T13:20:09.085766+05:30",
+      "session_type": "afternoon",
+      "link_index": 92
+    },
+    {
+      "id": "product_afternoon_2_20250915_075016",
+      "title": "Amazon Basics Portable Digital Weighing Scale for Kitchen | Electronic Weighing Scale With Back ligh...",
+      "image": "https://m.media-amazon.com/images/I/71AHZUc7CFL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CQ8JVK2D?tag=gadgetvill09f-21",
+      "price": "\u20b9419",
+      "rating": "\u2b50\u2b50\u2b50\u2606\u2606",
+      "category": "home",
+      "asin": "B0CQ8JVK2D",
+      "data_source": "serpapi",
+      "posted_date": "2025-09-15T13:20:16.960288+05:30",
+      "session_type": "afternoon",
+      "link_index": 93
+    },
     {
       "id": "product_morning_1_20250915_044844",
       "title": "Supersox Formal/Office Calf Socks for Men Combo, Made With Breathable, Anti Odour & Moisture Absorbe...",
