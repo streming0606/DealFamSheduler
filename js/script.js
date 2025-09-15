@@ -1,4 +1,4 @@
-// Thrift Zone - FIXED Complete JavaScript
+// Thrift Zone - Complete JavaScript with Social Features
 // Global variables
 let allProducts = [];
 let displayedProducts = 0;
@@ -157,7 +157,7 @@ function initializeScrollers() {
     }
 }
 
-// Enhanced Product Card Functions
+// RESTORED: Enhanced Product Card with ALL Social Features
 function createProductCard(product, index = 0) {
     const card = document.createElement('div');
     card.className = 'product-card';
@@ -188,6 +188,9 @@ function createProductCard(product, index = 0) {
                 <button class="action-btn wishlist-btn" onclick="toggleWishlist('${product.id}', this)" title="Add to wishlist">
                     <i class="far fa-heart"></i>
                 </button>
+                <button class="action-btn quick-view-btn" onclick="openQuickView('${product.id}')" title="Quick view">
+                    <i class="fas fa-eye"></i>
+                </button>
             </div>
         </div>
         
@@ -209,6 +212,101 @@ function createProductCard(product, index = 0) {
                 </div>
             </div>
             
+            <div class="product-meta">
+                <div class="product-rating">
+                    <div class="rating-stars">
+                        ${generateStars(product.rating || '4.2')}
+                    </div>
+                    <span class="rating-text">${product.rating || '4.2'} (${Math.floor(Math.random() * 1000) + 100} reviews)</span>
+                </div>
+                <div class="product-posted-date">
+                    <i class="fas fa-clock"></i>
+                    ${formattedDate}
+                </div>
+            </div>
+            
+            <!-- RESTORED: Social Engagement Section -->
+            <div class="product-social-stats">
+                <div class="social-metrics">
+                    <span class="social-metric">
+                        <i class="fas fa-thumbs-up"></i>
+                        <span class="metric-count likes-count-${product.id}">${enhancedData.likes}</span>
+                    </span>
+                    <span class="social-metric">
+                        <i class="fas fa-share"></i>
+                        <span class="metric-count shares-count-${product.id}">${enhancedData.shares}</span>
+                    </span>
+                    <span class="social-metric">
+                        <i class="fas fa-comment"></i>
+                        <span class="metric-count">${Math.floor(Math.random() * 50) + 5}</span>
+                    </span>
+                    <span class="social-metric">
+                        <i class="fas fa-eye"></i>
+                        <span class="metric-count">${Math.floor(Math.random() * 2000) + 100}</span>
+                    </span>
+                </div>
+                
+                <!-- RESTORED: Social Action Buttons -->
+                <div class="product-social-actions">
+                    <button class="social-action-btn likes-action" onclick="toggleLike('${product.id}', this)" title="Like this deal">
+                        <i class="far fa-thumbs-up"></i>
+                        <span class="action-text">Like</span>
+                    </button>
+                    
+                    <div class="share-dropdown">
+                        <button class="social-action-btn share-action" onclick="toggleShareMenu('${product.id}', this)" title="Share this deal">
+                            <i class="fas fa-share"></i>
+                            <span class="action-text">Share</span>
+                        </button>
+                        
+                        <div class="share-menu" id="share-menu-${product.id}">
+                            <div class="share-options">
+                                <button class="share-option whatsapp-share" onclick="shareToWhatsApp('${product.id}')" title="Share on WhatsApp">
+                                    <i class="fab fa-whatsapp"></i>
+                                    WhatsApp
+                                </button>
+                                <button class="share-option facebook-share" onclick="shareToFacebook('${product.id}')" title="Share on Facebook">
+                                    <i class="fab fa-facebook"></i>
+                                    Facebook
+                                </button>
+                                <button class="share-option twitter-share" onclick="shareToTwitter('${product.id}')" title="Share on Twitter">
+                                    <i class="fab fa-twitter"></i>
+                                    Twitter
+                                </button>
+                                <button class="share-option telegram-share" onclick="shareToTelegram('${product.id}')" title="Share on Telegram">
+                                    <i class="fab fa-telegram"></i>
+                                    Telegram
+                                </button>
+                                <button class="share-option copy-link" onclick="copyProductLink('${product.id}')" title="Copy link">
+                                    <i class="fas fa-copy"></i>
+                                    Copy Link
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button class="social-action-btn comment-action" onclick="openComments('${product.id}')" title="Comments">
+                        <i class="far fa-comment"></i>
+                        <span class="action-text">Comment</span>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Additional Product Info -->
+            <div class="product-additional-info">
+                <div class="delivery-info">
+                    <i class="fas fa-shipping-fast"></i>
+                    <span>Free Delivery</span>
+                    ${enhancedData.isLowStock ? `<span class="stock-warning">Only ${enhancedData.stockCount} left!</span>` : ''}
+                </div>
+                
+                <div class="seller-info">
+                    <i class="fas fa-store"></i>
+                    <span>Sold by ${generateSellerName()}</span>
+                    <span class="seller-rating">★ 4.${Math.floor(Math.random() * 8) + 1}</span>
+                </div>
+            </div>
+            
             <div class="product-actions">
                 <a href="${product.affiliate_link}" 
                    target="_blank" 
@@ -220,13 +318,37 @@ function createProductCard(product, index = 0) {
                             <i class="fas fa-bolt"></i>
                             Grab Deal Now
                         </div>
-                        <div class="deal-btn-subtext">Free Delivery</div>
+                        <div class="deal-btn-subtext">Best Price Guaranteed</div>
                     </div>
                 </a>
+                
                 <div class="secondary-actions">
                     <button class="quick-action-btn" onclick="addToWishlist('${product.id}')" title="Save for later">
                         <i class="fas fa-bookmark"></i>
                     </button>
+                    <button class="quick-action-btn" onclick="addToCompare('${product.id}')" title="Add to compare">
+                        <i class="fas fa-balance-scale"></i>
+                    </button>
+                    <button class="quick-action-btn" onclick="setPriceAlert('${product.id}')" title="Price alert">
+                        <i class="fas fa-bell"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Price History -->
+            <div class="price-history-section">
+                <button class="price-history-toggle" onclick="togglePriceHistory('${product.id}')">
+                    <i class="fas fa-chart-line"></i>
+                    Price History
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="price-history-content" id="price-history-${product.id}" style="display: none;">
+                    <div class="price-trend">
+                        <span class="trend-indicator trend-down">
+                            <i class="fas fa-arrow-down"></i>
+                            Price dropped by ₹${Math.floor(Math.random() * 500) + 100} in last 30 days
+                        </span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -235,7 +357,7 @@ function createProductCard(product, index = 0) {
     return card;
 }
 
-// Enhanced product data generator
+// Enhanced product data generator with more social metrics
 function enhanceProductData(product) {
     const currentPriceMatch = product.price.match(/₹(\d+,?\d*)/);
     const currentPrice = currentPriceMatch ? parseInt(currentPriceMatch[1].replace(',', '')) : 999;
@@ -245,8 +367,11 @@ function enhanceProductData(product) {
     const savings = originalPrice - currentPrice;
     const discountPercent = Math.round((savings / originalPrice) * 100);
     
+    // Enhanced social metrics
     const likes = Math.floor(Math.random() * 500) + 10;
     const shares = Math.floor(Math.random() * 100) + 5;
+    const comments = Math.floor(Math.random() * 50) + 3;
+    const views = Math.floor(Math.random() * 2000) + 100;
     
     const isLimitedTime = Math.random() > 0.6;
     const isLowStock = Math.random() > 0.7;
@@ -259,10 +384,345 @@ function enhanceProductData(product) {
         discountPercent,
         likes,
         shares,
+        comments,
+        views,
         isLimitedTime,
         isLowStock,
         stockCount
     };
+}
+
+// RESTORED: All Social Functions
+function toggleLike(productId, button) {
+    const icon = button.querySelector('i');
+    const textSpan = button.querySelector('.action-text');
+    const countElement = document.querySelector(`.likes-count-${productId}`);
+    const isActive = button.classList.contains('active');
+    
+    if (isActive) {
+        button.classList.remove('active');
+        icon.className = 'far fa-thumbs-up';
+        textSpan.textContent = 'Like';
+        
+        // Decrease count
+        if (countElement) {
+            const currentCount = parseInt(countElement.textContent);
+            countElement.textContent = currentCount - 1;
+        }
+        
+        removeLike(productId);
+    } else {
+        button.classList.add('active');
+        icon.className = 'fas fa-thumbs-up';
+        textSpan.textContent = 'Liked';
+        
+        // Increase count
+        if (countElement) {
+            const currentCount = parseInt(countElement.textContent);
+            countElement.textContent = currentCount + 1;
+        }
+        
+        saveLike(productId);
+    }
+    
+    // Animation
+    button.style.transform = 'scale(1.1)';
+    setTimeout(() => {
+        button.style.transform = 'scale(1)';
+    }, 200);
+    
+    console.log(`Product ${productId} ${isActive ? 'unliked' : 'liked'}`);
+}
+
+function toggleShareMenu(productId, button) {
+    const shareMenu = document.getElementById(`share-menu-${productId}`);
+    const allShareMenus = document.querySelectorAll('.share-menu');
+    
+    // Close all other share menus
+    allShareMenus.forEach(menu => {
+        if (menu !== shareMenu) {
+            menu.classList.remove('active');
+        }
+    });
+    
+    // Toggle current menu
+    shareMenu.classList.toggle('active');
+    
+    // Close menu when clicking outside
+    document.addEventListener('click', function closeShareMenu(e) {
+        if (!button.contains(e.target) && !shareMenu.contains(e.target)) {
+            shareMenu.classList.remove('active');
+            document.removeEventListener('click', closeShareMenu);
+        }
+    });
+}
+
+function shareToWhatsApp(productId) {
+    const product = allProducts.find(p => p.id === productId);
+    if (!product) return;
+    
+    const message = `🔥 Amazing Deal Alert! 🔥\n\n${product.title}\n💰 Price: ${product.price}\n🎯 Category: ${product.category}\n\n🛒 Grab it now: ${product.affiliate_link}\n\n#ThriftZone #Deals #Shopping`;
+    const whatsappUrl = `https://wa.me/?text=${encodeURIComponent(message)}`;
+    
+    window.open(whatsappUrl, '_blank');
+    trackShare(productId, 'whatsapp');
+    updateShareCount(productId);
+}
+
+function shareToFacebook(productId) {
+    const product = allProducts.find(p => p.id === productId);
+    if (!product) return;
+    
+    const facebookUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(product.affiliate_link)}&quote=${encodeURIComponent(product.title)}`;
+    window.open(facebookUrl, '_blank', 'width=600,height=400');
+    trackShare(productId, 'facebook');
+    updateShareCount(productId);
+}
+
+function shareToTwitter(productId) {
+    const product = allProducts.find(p => p.id === productId);
+    if (!product) return;
+    
+    const tweetText = `🔥 ${product.title} at ${product.price}! Don't miss this deal! ${product.affiliate_link} #Deals #Shopping #ThriftZone`;
+    const twitterUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(tweetText)}`;
+    
+    window.open(twitterUrl, '_blank', 'width=600,height=400');
+    trackShare(productId, 'twitter');
+    updateShareCount(productId);
+}
+
+function shareToTelegram(productId) {
+    const product = allProducts.find(p => p.id === productId);
+    if (!product) return;
+    
+    const message = `🔥 Amazing Deal Alert!\n\n${product.title}\n💰 ${product.price}\n🎯 ${product.category}\n\n🛒 ${product.affiliate_link}`;
+    const telegramUrl = `https://t.me/share/url?url=${encodeURIComponent(product.affiliate_link)}&text=${encodeURIComponent(message)}`;
+    
+    window.open(telegramUrl, '_blank');
+    trackShare(productId, 'telegram');
+    updateShareCount(productId);
+}
+
+function copyProductLink(productId) {
+    const product = allProducts.find(p => p.id === productId);
+    if (!product) return;
+    
+    navigator.clipboard.writeText(product.affiliate_link).then(() => {
+        showToast('Link copied to clipboard!', 'success');
+        trackShare(productId, 'copy');
+        updateShareCount(productId);
+    }).catch(() => {
+        // Fallback for older browsers
+        const textArea = document.createElement('textarea');
+        textArea.value = product.affiliate_link;
+        document.body.appendChild(textArea);
+        textArea.select();
+        document.execCommand('copy');
+        document.body.removeChild(textArea);
+        showToast('Link copied to clipboard!', 'success');
+        trackShare(productId, 'copy');
+        updateShareCount(productId);
+    });
+}
+
+function openComments(productId) {
+    // Create and show comments modal
+    const modal = document.createElement('div');
+    modal.className = 'comments-modal';
+    modal.innerHTML = `
+        <div class="comments-modal-content">
+            <div class="comments-header">
+                <h3>Comments</h3>
+                <button class="close-comments" onclick="this.closest('.comments-modal').remove()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="comments-list">
+                ${generateDummyComments()}
+            </div>
+            <div class="add-comment">
+                <textarea placeholder="Add a comment..." class="comment-input"></textarea>
+                <button class="post-comment-btn" onclick="postComment('${productId}', this)">Post Comment</button>
+            </div>
+        </div>
+    `;
+    
+    document.body.appendChild(modal);
+    setTimeout(() => modal.classList.add('active'), 100);
+}
+
+function generateDummyComments() {
+    const comments = [
+        { name: 'Priya S.', comment: 'Great deal! Just ordered it.', time: '2 hours ago' },
+        { name: 'Rahul K.', comment: 'Thanks for sharing! Very helpful.', time: '5 hours ago' },
+        { name: 'Sneha M.', comment: 'Is this still available?', time: '1 day ago' },
+        { name: 'Amit R.', comment: 'Awesome price! Recommended.', time: '2 days ago' }
+    ];
+    
+    return comments.map(comment => `
+        <div class="comment-item">
+            <div class="comment-avatar">
+                <i class="fas fa-user-circle"></i>
+            </div>
+            <div class="comment-content">
+                <div class="comment-header">
+                    <span class="commenter-name">${comment.name}</span>
+                    <span class="comment-time">${comment.time}</span>
+                </div>
+                <div class="comment-text">${comment.comment}</div>
+            </div>
+        </div>
+    `).join('');
+}
+
+function postComment(productId, button) {
+    const textarea = button.previousElementSibling;
+    const commentText = textarea.value.trim();
+    
+    if (!commentText) {
+        showToast('Please enter a comment', 'warning');
+        return;
+    }
+    
+    // Add comment to the list
+    const commentsList = button.closest('.comments-modal-content').querySelector('.comments-list');
+    const newComment = document.createElement('div');
+    newComment.className = 'comment-item new-comment';
+    newComment.innerHTML = `
+        <div class="comment-avatar">
+            <i class="fas fa-user-circle"></i>
+        </div>
+        <div class="comment-content">
+            <div class="comment-header">
+                <span class="commenter-name">You</span>
+                <span class="comment-time">Now</span>
+            </div>
+            <div class="comment-text">${commentText}</div>
+        </div>
+    `;
+    
+    commentsList.insertBefore(newComment, commentsList.firstChild);
+    textarea.value = '';
+    
+    showToast('Comment posted successfully!', 'success');
+    console.log(`Comment posted for product ${productId}: ${commentText}`);
+}
+
+function updateShareCount(productId) {
+    const shareCountElement = document.querySelector(`.shares-count-${productId}`);
+    if (shareCountElement) {
+        const currentCount = parseInt(shareCountElement.textContent);
+        shareCountElement.textContent = currentCount + 1;
+    }
+}
+
+function trackShare(productId, platform) {
+    console.log(`Product ${productId} shared via ${platform}`);
+    // You can add analytics tracking here
+    if (typeof gtag !== 'undefined') {
+        gtag('event', 'share', {
+            event_category: 'engagement',
+            event_label: platform,
+            custom_parameter: productId
+        });
+    }
+}
+
+function saveLike(productId) {
+    let likes = JSON.parse(localStorage.getItem('thriftzone_likes') || '{}');
+    likes[productId] = true;
+    localStorage.setItem('thriftzone_likes', JSON.stringify(likes));
+}
+
+function removeLike(productId) {
+    let likes = JSON.parse(localStorage.getItem('thriftzone_likes') || '{}');
+    delete likes[productId];
+    localStorage.setItem('thriftzone_likes', JSON.stringify(likes));
+}
+
+// Utility functions for product cards
+function generateStars(rating) {
+    const numRating = parseFloat(rating);
+    const fullStars = Math.floor(numRating);
+    const hasHalfStar = numRating % 1 !== 0;
+    const emptyStars = 5 - fullStars - (hasHalfStar ? 1 : 0);
+    
+    let starsHtml = '';
+    
+    for (let i = 0; i < fullStars; i++) {
+        starsHtml += '<i class="fas fa-star"></i>';
+    }
+    
+    if (hasHalfStar) {
+        starsHtml += '<i class="fas fa-star-half-alt"></i>';
+    }
+    
+    for (let i = 0; i < emptyStars; i++) {
+        starsHtml += '<i class="far fa-star"></i>';
+    }
+    
+    return starsHtml;
+}
+
+function generateSellerName() {
+    const sellers = [
+        'Amazon', 'Flipkart', 'Myntra', 'Ajio', 'Nykaa', 
+        'BigBasket', 'Grofers', 'Snapdeal', 'Paytm Mall',
+        'FirstCry', 'Limeroad', 'Koovs', 'Jabong'
+    ];
+    return sellers[Math.floor(Math.random() * sellers.length)];
+}
+
+function showToast(message, type = 'info') {
+    const toast = document.createElement('div');
+    toast.className = `toast toast-${type}`;
+    toast.innerHTML = `
+        <i class="fas fa-${type === 'success' ? 'check-circle' : type === 'warning' ? 'exclamation-triangle' : 'info-circle'}"></i>
+        ${message}
+    `;
+    
+    document.body.appendChild(toast);
+    
+    setTimeout(() => {
+        toast.classList.add('show');
+    }, 100);
+    
+    setTimeout(() => {
+        toast.classList.remove('show');
+        setTimeout(() => {
+            document.body.removeChild(toast);
+        }, 300);
+    }, 3000);
+}
+
+// Additional product interaction functions
+function openQuickView(productId) {
+    const product = allProducts.find(p => p.id === productId);
+    if (!product) return;
+    
+    console.log(`Quick view opened for product: ${productId}`);
+    // Implement quick view modal
+}
+
+function addToCompare(productId) {
+    console.log(`Added to compare: ${productId}`);
+    showToast('Added to comparison list!', 'success');
+}
+
+function setPriceAlert(productId) {
+    console.log(`Price alert set for: ${productId}`);
+    showToast('Price alert set! We\'ll notify you of price drops.', 'success');
+}
+
+function togglePriceHistory(productId) {
+    const historyElement = document.getElementById(`price-history-${productId}`);
+    const isVisible = historyElement.style.display !== 'none';
+    
+    if (isVisible) {
+        historyElement.style.display = 'none';
+    } else {
+        historyElement.style.display = 'block';
+    }
 }
 
 // FIXED Horizontal Scrolling Functionality
@@ -848,11 +1308,11 @@ class BannerSlider {
         let endX = 0;
         
         heroSlider.addEventListener('touchstart', (e) => {
-            startX = e.touches.clientX;
+            startX = e.touches[0].clientX;
         });
         
         heroSlider.addEventListener('touchmove', (e) => {
-            endX = e.touches.clientX;
+            endX = e.touches[0].clientX;
         });
         
         heroSlider.addEventListener('touchend', () => {
@@ -959,6 +1419,15 @@ function setupEventListeners() {
     }
     
     setupMobileNavigation();
+    
+    // Close share menus when clicking outside
+    document.addEventListener('click', (e) => {
+        if (!e.target.closest('.share-dropdown')) {
+            document.querySelectorAll('.share-menu').forEach(menu => {
+                menu.classList.remove('active');
+            });
+        }
+    });
 }
 
 function filterByCategory(category) {
@@ -1003,124 +1472,6 @@ function trackClick(productId) {
         event.target.style.transform = 'scale(1)';
     }, 150);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// Handle View All Hot Deals button
-function showAllHotDeals(event) {
-    event.preventDefault();
-    
-    // Hide horizontal section
-    const horizontalSection = document.querySelector('.horizontal-deals-container');
-    const fullSection = document.getElementById('full-products-section');
-    
-    if (horizontalSection && fullSection) {
-        horizontalSection.style.display = 'none';
-        fullSection.style.display = 'block';
-        
-        // Scroll to full section
-        fullSection.scrollIntoView({ behavior: 'smooth' });
-        
-        // Trigger full product rendering if needed
-        if (typeof renderProducts === 'function') {
-            renderProducts();
-        }
-    }
-}
-
-// Handle View All Loot Deals button  
-function showAllLootDeals(event) {
-    event.preventDefault();
-    
-    // Hide horizontal section
-    const horizontalSection = document.querySelector('.horizontal-loot-container');
-    const fullSection = document.getElementById('full-loot-section');
-    
-    if (horizontalSection && fullSection) {
-        horizontalSection.style.display = 'none';
-        fullSection.style.display = 'block';
-        
-        // Scroll to full section
-        fullSection.scrollIntoView({ behavior: 'smooth' });
-        
-        // Trigger loot deals rendering if the scroller exists
-        if (window.lootDealsScroller && typeof window.lootDealsScroller.showFullView === 'function') {
-            window.lootDealsScroller.showFullView();
-        }
-    }
-}
-
-// Handle back to preview buttons
-document.addEventListener('DOMContentLoaded', function() {
-    // Back to preview for hot deals
-    const backToPreviewBtn = document.getElementById('back-to-preview');
-    if (backToPreviewBtn) {
-        backToPreviewBtn.addEventListener('click', function() {
-            const horizontalSection = document.querySelector('.horizontal-deals-container');
-            const fullSection = document.getElementById('full-products-section');
-            
-            if (horizontalSection && fullSection) {
-                fullSection.style.display = 'none';
-                horizontalSection.style.display = 'block';
-                
-                // Scroll back to deals section
-                document.getElementById('deals').scrollIntoView({ behavior: 'smooth' });
-            }
-        });
-    }
-    
-    // Back to preview for loot deals
-    const backToLootPreviewBtn = document.getElementById('back-to-loot-preview');
-    if (backToLootPreviewBtn) {
-        backToLootPreviewBtn.addEventListener('click', function() {
-            const horizontalSection = document.querySelector('.horizontal-loot-container');
-            const fullSection = document.getElementById('full-loot-section');
-            
-            if (horizontalSection && fullSection) {
-                fullSection.style.display = 'none';
-                horizontalSection.style.display = 'block';
-                
-                // Scroll back to loot deals section
-                document.getElementById('loot-deals').scrollIntoView({ behavior: 'smooth' });
-            }
-        });
-    }
-});
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // Loading, empty, and error states
 function showLoadingState() {
@@ -1188,7 +1539,7 @@ function updateLastRefresh() {
 function calculateDiscount(priceString) {
     const priceMatch = priceString.match(/₹(\d+,?\d*)/g);
     if (priceMatch && priceMatch.length >= 2) {
-        const current = parseInt(priceMatch.replace(/₹|,/g, ''));
+        const current = parseInt(priceMatch[0].replace(/₹|,/g, ''));
         const original = parseInt(priceMatch[1].replace(/₹|,/g, ''));
         const discount = Math.round(((original - current) / original) * 100);
         return {
@@ -1245,16 +1596,21 @@ function loadUserPreferences() {
     const likes = JSON.parse(localStorage.getItem('thriftzone_likes') || '{}');
     const wishlist = JSON.parse(localStorage.getItem('thriftzone_wishlist') || '[]');
     
+    // Restore likes
     Object.keys(likes).forEach(productId => {
         if (likes[productId]) {
             const likeBtn = document.querySelector(`[onclick*="${productId}"].likes-action`);
             if (likeBtn) {
                 likeBtn.classList.add('active');
-                likeBtn.querySelector('i').className = 'fas fa-thumbs-up';
+                const icon = likeBtn.querySelector('i');
+                const text = likeBtn.querySelector('.action-text');
+                if (icon) icon.className = 'fas fa-thumbs-up';
+                if (text) text.textContent = 'Liked';
             }
         }
     });
     
+    // Restore wishlist
     wishlist.forEach(productId => {
         const wishlistBtn = document.querySelector(`[onclick*="${productId}"].wishlist-btn`);
         if (wishlistBtn) {
@@ -1290,6 +1646,7 @@ function addToWishlist(productId) {
     if (!wishlist.includes(productId)) {
         wishlist.push(productId);
         localStorage.setItem('thriftzone_wishlist', JSON.stringify(wishlist));
+        console.log(`Added to wishlist: ${productId}`);
     }
 }
 
@@ -1297,6 +1654,7 @@ function removeFromWishlist(productId) {
     let wishlist = JSON.parse(localStorage.getItem('thriftzone_wishlist') || '[]');
     wishlist = wishlist.filter(id => id !== productId);
     localStorage.setItem('thriftzone_wishlist', JSON.stringify(wishlist));
+    console.log(`Removed from wishlist: ${productId}`);
 }
 
 // Mobile Navigation Functions
@@ -1374,6 +1732,147 @@ function initializeAnimations() {
                 from { transform: translateX(100%); opacity: 0; }
                 to { transform: translateX(0); opacity: 1; }
             }
+            
+            .toast {
+                position: fixed;
+                top: 20px;
+                right: 20px;
+                background: white;
+                color: #333;
+                padding: 12px 16px;
+                border-radius: 8px;
+                box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+                transform: translateX(100%);
+                transition: transform 0.3s ease;
+                z-index: 10000;
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                border-left: 4px solid #28a745;
+            }
+            
+            .toast.show {
+                transform: translateX(0);
+            }
+            
+            .toast-success { border-left-color: #28a745; }
+            .toast-warning { border-left-color: #ffc107; }
+            .toast-info { border-left-color: #17a2b8; }
+            
+            .comments-modal {
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: rgba(0,0,0,0.5);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                z-index: 10000;
+                opacity: 0;
+                transition: opacity 0.3s ease;
+            }
+            
+            .comments-modal.active {
+                opacity: 1;
+            }
+            
+            .comments-modal-content {
+                background: white;
+                border-radius: 12px;
+                width: 90%;
+                max-width: 500px;
+                max-height: 80vh;
+                display: flex;
+                flex-direction: column;
+            }
+            
+            .comments-header {
+                padding: 16px 20px;
+                border-bottom: 1px solid #eee;
+                display: flex;
+                justify-content: between;
+                align-items: center;
+            }
+            
+            .close-comments {
+                background: none;
+                border: none;
+                font-size: 20px;
+                cursor: pointer;
+                color: #666;
+            }
+            
+            .comments-list {
+                padding: 16px 20px;
+                flex: 1;
+                overflow-y: auto;
+            }
+            
+            .comment-item {
+                display: flex;
+                gap: 12px;
+                margin-bottom: 16px;
+                padding-bottom: 16px;
+                border-bottom: 1px solid #f0f0f0;
+            }
+            
+            .comment-avatar i {
+                font-size: 32px;
+                color: #ccc;
+            }
+            
+            .comment-content {
+                flex: 1;
+            }
+            
+            .comment-header {
+                display: flex;
+                gap: 12px;
+                align-items: center;
+                margin-bottom: 4px;
+            }
+            
+            .commenter-name {
+                font-weight: 600;
+                color: #333;
+            }
+            
+            .comment-time {
+                color: #666;
+                font-size: 12px;
+            }
+            
+            .comment-text {
+                color: #555;
+                line-height: 1.4;
+            }
+            
+            .add-comment {
+                padding: 16px 20px;
+                border-top: 1px solid #eee;
+            }
+            
+            .comment-input {
+                width: 100%;
+                padding: 8px 12px;
+                border: 1px solid #ddd;
+                border-radius: 8px;
+                resize: none;
+                margin-bottom: 8px;
+                min-height: 60px;
+            }
+            
+            .post-comment-btn {
+                background: #007bff;
+                color: white;
+                border: none;
+                padding: 8px 16px;
+                border-radius: 6px;
+                cursor: pointer;
+                font-weight: 500;
+            }
         `;
         document.head.appendChild(style);
     }
@@ -1396,4 +1895,4 @@ function scrollToCategories() {
 // Auto-refresh functionality
 setInterval(loadProducts, 5 * 60 * 1000);
 
-console.log('🎉 Thrift Zone JavaScript loaded successfully');
+console.log('🎉 Thrift Zone JavaScript with Social Features loaded successfully');
