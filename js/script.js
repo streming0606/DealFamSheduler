@@ -1,4 +1,4 @@
-// Thrift Zone - Complete JavaScript with Social Features
+// Thrift Zone - FIXED Complete JavaScript
 // Global variables
 let allProducts = [];
 let displayedProducts = 0;
@@ -9,11 +9,6 @@ let currentSort = 'latest';
 // Global instances
 let horizontalScroller = null;
 let lootDealsScroller = null;
-
-// Social features storage
-let userLikes = JSON.parse(localStorage.getItem('thriftzone_likes') || '{}');
-let productViews = JSON.parse(localStorage.getItem('thriftzone_views') || '{}');
-let userWishlist = JSON.parse(localStorage.getItem('thriftzone_wishlist') || '[]');
 
 // DOM Elements
 const productsContainer = document.getElementById('products-container');
@@ -162,7 +157,7 @@ function initializeScrollers() {
     }
 }
 
-// Enhanced Product Card Functions with Social Features
+// Enhanced Product Card Functions
 function createProductCard(product, index = 0) {
     const card = document.createElement('div');
     card.className = 'product-card';
@@ -174,9 +169,6 @@ function createProductCard(product, index = 0) {
     const date = new Date(product.posted_date);
     const formattedDate = date.toLocaleDateString('en-IN');
     const enhancedData = enhanceProductData(product);
-    
-    // Get social stats
-    const socialStats = getSocialStats(product.id);
     
     card.innerHTML = `
         <div class="product-image-container">
@@ -194,7 +186,7 @@ function createProductCard(product, index = 0) {
             
             <div class="product-top-actions">
                 <button class="action-btn wishlist-btn" onclick="toggleWishlist('${product.id}', this)" title="Add to wishlist">
-                    <i class="${userWishlist.includes(product.id) ? 'fas' : 'far'} fa-heart"></i>
+                    <i class="far fa-heart"></i>
                 </button>
             </div>
         </div>
@@ -214,30 +206,6 @@ function createProductCard(product, index = 0) {
                 </div>
                 <div class="savings-amount">
                     You Save ₹${enhancedData.savings}
-                </div>
-            </div>
-            
-            <!-- SOCIAL ENGAGEMENT SECTION -->
-            <div class="product-social-stats">
-                <div class="social-actions">
-                    <button class="social-btn like-btn ${userLikes[product.id] ? 'liked' : ''}" 
-                            onclick="toggleLike('${product.id}', this)" 
-                            title="Like this deal">
-                        <i class="fas fa-thumbs-up"></i>
-                        <span class="like-count">${socialStats.likes}</span>
-                    </button>
-                    
-                    <button class="social-btn share-btn" 
-                            onclick="shareProduct('${product.id}')" 
-                            title="Share this deal">
-                        <i class="fas fa-share-alt"></i>
-                        <span class="share-count">${socialStats.shares}</span>
-                    </button>
-                    
-                    <div class="social-btn views-display" title="Views">
-                        <i class="fas fa-eye"></i>
-                        <span class="views-count">${socialStats.views}</span>
-                    </div>
                 </div>
             </div>
             
@@ -264,379 +232,36 @@ function createProductCard(product, index = 0) {
         </div>
     `;
     
-    // Increment view count when card is created
-    incrementViewCount(product.id);
-    
     return card;
-}
-
-// SOCIAL FEATURES IMPLEMENTATION
-
-// Get social stats for a product
-function getSocialStats(productId) {
-    const likes = userLikes[productId] ? 1 : 0;
-    const totalLikes = parseInt(localStorage.getItem(`likes_${productId}`) || '0');
-    const views = productViews[productId] || Math.floor(Math.random() * 50) + 10;
-    const shares = parseInt(localStorage.getItem(`shares_${productId}`) || '0');
-    
-    return {
-        likes: totalLikes + Math.floor(Math.random() * 100) + 5,
-        shares: shares + Math.floor(Math.random() * 25) + 2,
-        views: views + Math.floor(Math.random() * 200) + 50
-    };
-}
-
-// Toggle Like Function
-function toggleLike(productId, button) {
-    const isLiked = userLikes[productId];
-    const likeCountSpan = button.querySelector('.like-count');
-    let currentCount = parseInt(likeCountSpan.textContent);
-    
-    if (isLiked) {
-        // Unlike
-        delete userLikes[productId];
-        button.classList.remove('liked');
-        currentCount = Math.max(0, currentCount - 1);
-        
-        // Animation for unlike
-        button.style.transform = 'scale(0.8)';
-        button.style.color = '#666';
-    } else {
-        // Like
-        userLikes[productId] = true;
-        button.classList.add('liked');
-        currentCount += 1;
-        
-        // Animation for like
-        button.style.transform = 'scale(1.2)';
-        button.style.color = '#e11d48';
-        
-        // Create floating heart effect
-        createFloatingHeart(button);
-    }
-    
-    likeCountSpan.textContent = currentCount;
-    localStorage.setItem('thriftzone_likes', JSON.stringify(userLikes));
-    localStorage.setItem(`likes_${productId}`, currentCount.toString());
-    
-    // Reset transform
-    setTimeout(() => {
-        button.style.transform = 'scale(1)';
-    }, 200);
-    
-    console.log(`Product ${productId} ${isLiked ? 'unliked' : 'liked'}`);
-}
-
-// Create floating heart animation
-function createFloatingHeart(button) {
-    const heart = document.createElement('div');
-    heart.innerHTML = '<i class="fas fa-heart"></i>';
-    heart.style.cssText = `
-        position: absolute;
-        color: #e11d48;
-        font-size: 20px;
-        pointer-events: none;
-        animation: floatHeart 1.5s ease-out forwards;
-        z-index: 1000;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-    `;
-    
-    button.style.position = 'relative';
-    button.appendChild(heart);
-    
-    // Add CSS animation if not exists
-    if (!document.querySelector('#floating-heart-animation')) {
-        const style = document.createElement('style');
-        style.id = 'floating-heart-animation';
-        style.textContent = `
-            @keyframes floatHeart {
-                0% {
-                    opacity: 1;
-                    transform: translate(-50%, -50%) scale(0.5);
-                }
-                50% {
-                    opacity: 1;
-                    transform: translate(-50%, -100%) scale(1.2);
-                }
-                100% {
-                    opacity: 0;
-                    transform: translate(-50%, -150%) scale(0.3);
-                }
-            }
-        `;
-        document.head.appendChild(style);
-    }
-    
-    // Remove after animation
-    setTimeout(() => {
-        heart.remove();
-    }, 1500);
-}
-
-// Share Product Function with Web Share API
-async function shareProduct(productId) {
-    const product = allProducts.find(p => p.id === productId);
-    if (!product) return;
-    
-    const shareData = {
-        title: `Amazing Deal: ${product.title}`,
-        text: `Check out this amazing deal on ${product.title}! Only ₹${extractPrice(product.price)} - ${calculateDiscountPercent(product.price)}% OFF!`,
-        url: `${window.location.origin}${window.location.pathname}?deal=${productId}`
-    };
-    
-    try {
-        // Check if Web Share API is supported
-        if (navigator.share) {
-            await navigator.share(shareData);
-            incrementShareCount(productId);
-            console.log('✅ Product shared successfully via Web Share API');
-        } else {
-            // Fallback to custom share modal
-            showShareModal(shareData, productId);
-        }
-    } catch (error) {
-        if (error.name !== 'AbortError') {
-            console.error('❌ Error sharing:', error);
-            showShareModal(shareData, productId);
-        }
-    }
-}
-
-// Show custom share modal for browsers without Web Share API
-function showShareModal(shareData, productId) {
-    const modal = document.createElement('div');
-    modal.className = 'share-modal-overlay';
-    modal.innerHTML = `
-        <div class="share-modal">
-            <div class="share-modal-header">
-                <h3><i class="fas fa-share-alt"></i> Share this deal</h3>
-                <button class="close-modal" onclick="this.closest('.share-modal-overlay').remove()">
-                    <i class="fas fa-times"></i>
-                </button>
-            </div>
-            <div class="share-modal-content">
-                <div class="share-options">
-                    <button class="share-option whatsapp" onclick="shareToWhatsApp('${encodeURIComponent(shareData.text + ' ' + shareData.url)}', '${productId}')">
-                        <i class="fab fa-whatsapp"></i>
-                        WhatsApp
-                    </button>
-                    <button class="share-option twitter" onclick="shareToTwitter('${encodeURIComponent(shareData.text)}', '${encodeURIComponent(shareData.url)}', '${productId}')">
-                        <i class="fab fa-twitter"></i>
-                        Twitter
-                    </button>
-                    <button class="share-option facebook" onclick="shareToFacebook('${encodeURIComponent(shareData.url)}', '${productId}')">
-                        <i class="fab fa-facebook"></i>
-                        Facebook
-                    </button>
-                    <button class="share-option telegram" onclick="shareToTelegram('${encodeURIComponent(shareData.text + ' ' + shareData.url)}', '${productId}')">
-                        <i class="fab fa-telegram"></i>
-                        Telegram
-                    </button>
-                    <button class="share-option copy" onclick="copyToClipboard('${shareData.url}', '${productId}')">
-                        <i class="fas fa-copy"></i>
-                        Copy Link
-                    </button>
-                </div>
-            </div>
-        </div>
-    `;
-    
-    document.body.appendChild(modal);
-    
-    // Add CSS for modal if not exists
-    if (!document.querySelector('#share-modal-styles')) {
-        const style = document.createElement('style');
-        style.id = 'share-modal-styles';
-        style.textContent = `
-            .share-modal-overlay {
-                position: fixed;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                background: rgba(0, 0, 0, 0.5);
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                z-index: 10000;
-                backdrop-filter: blur(4px);
-            }
-            .share-modal {
-                background: white;
-                border-radius: 12px;
-                padding: 24px;
-                max-width: 400px;
-                width: 90%;
-                box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-            }
-            .share-modal-header {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                margin-bottom: 20px;
-                padding-bottom: 15px;
-                border-bottom: 1px solid #eee;
-            }
-            .share-modal-header h3 {
-                margin: 0;
-                color: #333;
-                font-size: 18px;
-            }
-            .close-modal {
-                background: none;
-                border: none;
-                font-size: 20px;
-                cursor: pointer;
-                color: #666;
-                padding: 5px;
-                border-radius: 50%;
-                transition: all 0.2s;
-            }
-            .close-modal:hover {
-                background: #f5f5f5;
-                color: #333;
-            }
-            .share-options {
-                display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-                gap: 12px;
-            }
-            .share-option {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                padding: 16px 12px;
-                border: 2px solid #eee;
-                background: white;
-                border-radius: 8px;
-                cursor: pointer;
-                transition: all 0.2s;
-                text-decoration: none;
-                color: #333;
-                font-size: 14px;
-                font-weight: 500;
-            }
-            .share-option:hover {
-                border-color: #e11d48;
-                transform: translateY(-2px);
-                box-shadow: 0 5px 15px rgba(225, 29, 72, 0.1);
-            }
-            .share-option i {
-                font-size: 24px;
-                margin-bottom: 8px;
-            }
-            .whatsapp:hover { border-color: #25d366; }
-            .twitter:hover { border-color: #1da1f2; }
-            .facebook:hover { border-color: #1877f2; }
-            .telegram:hover { border-color: #0088cc; }
-            .copy:hover { border-color: #666; }
-        `;
-        document.head.appendChild(style);
-    }
-}
-
-// Individual share functions
-function shareToWhatsApp(text, productId) {
-    window.open(`https://wa.me/?text=${text}`, '_blank');
-    incrementShareCount(productId);
-    closeShareModal();
-}
-
-function shareToTwitter(text, url, productId) {
-    window.open(`https://twitter.com/intent/tweet?text=${text}&url=${url}`, '_blank');
-    incrementShareCount(productId);
-    closeShareModal();
-}
-
-function shareToFacebook(url, productId) {
-    window.open(`https://www.facebook.com/sharer/sharer.php?u=${url}`, '_blank');
-    incrementShareCount(productId);
-    closeShareModal();
-}
-
-function shareToTelegram(text, productId) {
-    window.open(`https://t.me/share/url?url=${encodeURIComponent(window.location.href)}&text=${text}`, '_blank');
-    incrementShareCount(productId);
-    closeShareModal();
-}
-
-function copyToClipboard(url, productId) {
-    navigator.clipboard.writeText(url).then(() => {
-        const button = event.target.closest('.share-option');
-        const originalText = button.textContent;
-        button.innerHTML = '<i class="fas fa-check"></i> Copied!';
-        button.style.borderColor = '#10b981';
-        button.style.color = '#10b981';
-        
-        setTimeout(() => {
-            button.innerHTML = '<i class="fas fa-copy"></i> Copy Link';
-            button.style.borderColor = '#eee';
-            button.style.color = '#333';
-        }, 2000);
-        
-        incrementShareCount(productId);
-    }).catch(() => {
-        alert('Failed to copy to clipboard. Please try again.');
-    });
-}
-
-function closeShareModal() {
-    const modal = document.querySelector('.share-modal-overlay');
-    if (modal) modal.remove();
-}
-
-// Increment share count
-function incrementShareCount(productId) {
-    const currentShares = parseInt(localStorage.getItem(`shares_${productId}`) || '0');
-    localStorage.setItem(`shares_${productId}`, (currentShares + 1).toString());
-    
-    // Update UI
-    const shareButtons = document.querySelectorAll(`[onclick*="shareProduct('${productId}')"]`);
-    shareButtons.forEach(btn => {
-        const shareCountSpan = btn.querySelector('.share-count');
-        if (shareCountSpan) {
-            shareCountSpan.textContent = parseInt(shareCountSpan.textContent) + 1;
-        }
-    });
-}
-
-// View count functionality
-function incrementViewCount(productId) {
-    if (!productViews[productId]) {
-        productViews[productId] = 0;
-    }
-    
-    // Don't increment on every render, use session storage for this session
-    const sessionKey = `viewed_${productId}_${Date.now().toString().slice(0, -5)}`;
-    if (!sessionStorage.getItem(sessionKey)) {
-        productViews[productId]++;
-        localStorage.setItem('thriftzone_views', JSON.stringify(productViews));
-        sessionStorage.setItem(sessionKey, 'true');
-    }
 }
 
 // Enhanced product data generator
 function enhanceProductData(product) {
     const currentPriceMatch = product.price.match(/₹(\d+,?\d*)/);
-    const currentPrice = currentPriceMatch ? parseInt(currentPriceMatch[32].replace(',', '')) : 999;
+    const currentPrice = currentPriceMatch ? parseInt(currentPriceMatch[1].replace(',', '')) : 999;
     
     const markup = 1.3 + (Math.random() * 0.7);
     const originalPrice = Math.round(currentPrice * markup);
     const savings = originalPrice - currentPrice;
     const discountPercent = Math.round((savings / originalPrice) * 100);
     
+    const likes = Math.floor(Math.random() * 500) + 10;
+    const shares = Math.floor(Math.random() * 100) + 5;
+    
     const isLimitedTime = Math.random() > 0.6;
     const isLowStock = Math.random() > 0.7;
+    const stockCount = isLowStock ? Math.floor(Math.random() * 5) + 1 : Math.floor(Math.random() * 20) + 10;
     
     return {
         salePrice: currentPrice.toLocaleString('en-IN'),
         originalPrice: originalPrice.toLocaleString('en-IN'),
         savings: savings.toLocaleString('en-IN'),
         discountPercent,
+        likes,
+        shares,
         isLimitedTime,
-        isLowStock
+        isLowStock,
+        stockCount
     };
 }
 
@@ -752,7 +377,7 @@ class HorizontalDealsScroller {
     
     extractPrice(priceString) {
         const match = priceString.match(/₹(\d+,?\d*)/);
-        return match ? parseInt(match[32].replace(',', '')) : 0;
+        return match ? parseInt(match[1].replace(',', '')) : 0;
     }
     
     calculateDiscount(priceString) {
@@ -916,7 +541,7 @@ class LootDealsScroller {
         for (let pattern of patterns) {
             const match = cleanPrice.match(pattern);
             if (match) {
-                const price = parseInt(match[32].replace(/[,.-]/g, ''));
+                const price = parseInt(match[1].replace(/[,.-]/g, ''));
                 return isNaN(price) ? 0 : price;
             }
         }
@@ -1271,7 +896,7 @@ function sortProducts(products) {
         case 'price-high':
             return sorted.sort((a, b) => extractPrice(b.price) - extractPrice(a.price));
         case 'discount':
-            return sorted.sort((a, b) => calculateDiscountPercent(b.price) - calculateDiscountPercent(a.price));
+            return sorted.sort((a, b) => calculateDiscount(b.price).discount - calculateDiscount(a.price).discount);
         case 'latest':
         default:
             return sorted.sort((a, b) => new Date(b.posted_date) - new Date(a.posted_date));
@@ -1377,10 +1002,125 @@ function trackClick(productId) {
     setTimeout(() => {
         event.target.style.transform = 'scale(1)';
     }, 150);
-    
-    // Increment view count when user clicks on product
-    incrementViewCount(productId);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Handle View All Hot Deals button
+function showAllHotDeals(event) {
+    event.preventDefault();
+    
+    // Hide horizontal section
+    const horizontalSection = document.querySelector('.horizontal-deals-container');
+    const fullSection = document.getElementById('full-products-section');
+    
+    if (horizontalSection && fullSection) {
+        horizontalSection.style.display = 'none';
+        fullSection.style.display = 'block';
+        
+        // Scroll to full section
+        fullSection.scrollIntoView({ behavior: 'smooth' });
+        
+        // Trigger full product rendering if needed
+        if (typeof renderProducts === 'function') {
+            renderProducts();
+        }
+    }
+}
+
+// Handle View All Loot Deals button  
+function showAllLootDeals(event) {
+    event.preventDefault();
+    
+    // Hide horizontal section
+    const horizontalSection = document.querySelector('.horizontal-loot-container');
+    const fullSection = document.getElementById('full-loot-section');
+    
+    if (horizontalSection && fullSection) {
+        horizontalSection.style.display = 'none';
+        fullSection.style.display = 'block';
+        
+        // Scroll to full section
+        fullSection.scrollIntoView({ behavior: 'smooth' });
+        
+        // Trigger loot deals rendering if the scroller exists
+        if (window.lootDealsScroller && typeof window.lootDealsScroller.showFullView === 'function') {
+            window.lootDealsScroller.showFullView();
+        }
+    }
+}
+
+// Handle back to preview buttons
+document.addEventListener('DOMContentLoaded', function() {
+    // Back to preview for hot deals
+    const backToPreviewBtn = document.getElementById('back-to-preview');
+    if (backToPreviewBtn) {
+        backToPreviewBtn.addEventListener('click', function() {
+            const horizontalSection = document.querySelector('.horizontal-deals-container');
+            const fullSection = document.getElementById('full-products-section');
+            
+            if (horizontalSection && fullSection) {
+                fullSection.style.display = 'none';
+                horizontalSection.style.display = 'block';
+                
+                // Scroll back to deals section
+                document.getElementById('deals').scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+    }
+    
+    // Back to preview for loot deals
+    const backToLootPreviewBtn = document.getElementById('back-to-loot-preview');
+    if (backToLootPreviewBtn) {
+        backToLootPreviewBtn.addEventListener('click', function() {
+            const horizontalSection = document.querySelector('.horizontal-loot-container');
+            const fullSection = document.getElementById('full-loot-section');
+            
+            if (horizontalSection && fullSection) {
+                fullSection.style.display = 'none';
+                horizontalSection.style.display = 'block';
+                
+                // Scroll back to loot deals section
+                document.getElementById('loot-deals').scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+    }
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // Loading, empty, and error states
 function showLoadingState() {
@@ -1445,13 +1185,28 @@ function updateLastRefresh() {
 }
 
 // Helper functions
-function calculateDiscountPercent(priceString) {
-    return Math.floor(Math.random() * 50) + 10;
+function calculateDiscount(priceString) {
+    const priceMatch = priceString.match(/₹(\d+,?\d*)/g);
+    if (priceMatch && priceMatch.length >= 2) {
+        const current = parseInt(priceMatch.replace(/₹|,/g, ''));
+        const original = parseInt(priceMatch[1].replace(/₹|,/g, ''));
+        const discount = Math.round(((original - current) / original) * 100);
+        return {
+            currentPrice: priceMatch[0],
+            originalPrice: priceMatch[1],
+            discount: discount > 0 ? discount : 0
+        };
+    }
+    return {
+        currentPrice: priceString,
+        originalPrice: null,
+        discount: 0
+    };
 }
 
 function extractPrice(priceString) {
     const match = priceString.match(/₹(\d+,?\d*)/);
-    return match ? parseInt(match[32].replace(',', '')) : 0;
+    return match ? parseInt(match[1].replace(',', '')) : 0;
 }
 
 function resetFilters() {
@@ -1478,106 +1233,6 @@ function initializeEnhancements() {
     initializeTheme();
     initializeScrollEffects();
     initializeAnimations();
-    initializeSocialStyles();
-}
-
-function initializeSocialStyles() {
-    if (!document.querySelector('#social-styles')) {
-        const style = document.createElement('style');
-        style.id = 'social-styles';
-        style.textContent = `
-            .product-social-stats {
-                margin: 12px 0;
-                padding: 12px;
-                background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
-                border-radius: 8px;
-                border: 1px solid #e2e8f0;
-            }
-            
-            .social-actions {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                gap: 12px;
-            }
-            
-            .social-btn {
-                display: flex;
-                align-items: center;
-                gap: 6px;
-                padding: 8px 12px;
-                border: 1px solid #e2e8f0;
-                background: white;
-                border-radius: 6px;
-                cursor: pointer;
-                transition: all 0.2s ease;
-                font-size: 13px;
-                font-weight: 500;
-                color: #64748b;
-                min-width: 60px;
-                justify-content: center;
-            }
-            
-            .social-btn:hover {
-                border-color: #e11d48;
-                background: #fef2f2;
-                color: #e11d48;
-                transform: translateY(-1px);
-                box-shadow: 0 2px 8px rgba(225, 29, 72, 0.15);
-            }
-            
-            .like-btn.liked {
-                background: linear-gradient(135deg, #e11d48, #be185d);
-                color: white;
-                border-color: #e11d48;
-                transform: scale(1.05);
-            }
-            
-            .like-btn.liked:hover {
-                background: linear-gradient(135deg, #be185d, #9d174d);
-                transform: scale(1.05) translateY(-1px);
-                color: white;
-            }
-            
-            .views-display {
-                cursor: default;
-                background: #f8fafc;
-                border-color: #cbd5e1;
-            }
-            
-            .views-display:hover {
-                border-color: #64748b;
-                background: #f1f5f9;
-                transform: none;
-                box-shadow: none;
-                color: #64748b;
-            }
-            
-            .social-btn i {
-                font-size: 14px;
-            }
-            
-            .social-btn span {
-                font-weight: 600;
-                font-size: 12px;
-            }
-            
-            @media (max-width: 768px) {
-                .social-actions {
-                    gap: 8px;
-                }
-                .social-btn {
-                    padding: 6px 10px;
-                    font-size: 12px;
-                    min-width: 50px;
-                }
-                .social-btn span {
-                    font-size: 11px;
-                }
-            }
-        `;
-        document.head.appendChild(style);
-    }
 }
 
 function initializeEnhancedCards() {
@@ -1587,23 +1242,24 @@ function initializeEnhancedCards() {
 }
 
 function loadUserPreferences() {
-    // Update like buttons state
-    Object.keys(userLikes).forEach(productId => {
-        if (userLikes[productId]) {
-            const likeBtn = document.querySelector(`[onclick*="toggleLike('${productId}'"]`);
+    const likes = JSON.parse(localStorage.getItem('thriftzone_likes') || '{}');
+    const wishlist = JSON.parse(localStorage.getItem('thriftzone_wishlist') || '[]');
+    
+    Object.keys(likes).forEach(productId => {
+        if (likes[productId]) {
+            const likeBtn = document.querySelector(`[onclick*="${productId}"].likes-action`);
             if (likeBtn) {
-                likeBtn.classList.add('liked');
+                likeBtn.classList.add('active');
+                likeBtn.querySelector('i').className = 'fas fa-thumbs-up';
             }
         }
     });
     
-    // Update wishlist buttons state
-    userWishlist.forEach(productId => {
-        const wishlistBtn = document.querySelector(`[onclick*="toggleWishlist('${productId}'"]`);
+    wishlist.forEach(productId => {
+        const wishlistBtn = document.querySelector(`[onclick*="${productId}"].wishlist-btn`);
         if (wishlistBtn) {
             wishlistBtn.classList.add('active');
-            const icon = wishlistBtn.querySelector('i');
-            if (icon) icon.className = 'fas fa-heart';
+            wishlistBtn.querySelector('i').className = 'fas fa-heart';
         }
     });
 }
@@ -1630,15 +1286,17 @@ function toggleWishlist(productId, button) {
 }
 
 function addToWishlist(productId) {
-    if (!userWishlist.includes(productId)) {
-        userWishlist.push(productId);
-        localStorage.setItem('thriftzone_wishlist', JSON.stringify(userWishlist));
+    let wishlist = JSON.parse(localStorage.getItem('thriftzone_wishlist') || '[]');
+    if (!wishlist.includes(productId)) {
+        wishlist.push(productId);
+        localStorage.setItem('thriftzone_wishlist', JSON.stringify(wishlist));
     }
 }
 
 function removeFromWishlist(productId) {
-    userWishlist = userWishlist.filter(id => id !== productId);
-    localStorage.setItem('thriftzone_wishlist', JSON.stringify(userWishlist));
+    let wishlist = JSON.parse(localStorage.getItem('thriftzone_wishlist') || '[]');
+    wishlist = wishlist.filter(id => id !== productId);
+    localStorage.setItem('thriftzone_wishlist', JSON.stringify(wishlist));
 }
 
 // Mobile Navigation Functions
@@ -1738,4 +1396,4 @@ function scrollToCategories() {
 // Auto-refresh functionality
 setInterval(loadProducts, 5 * 60 * 1000);
 
-console.log('🎉 Thrift Zone JavaScript with Social Features loaded successfully');
+console.log('🎉 Thrift Zone JavaScript loaded successfully');
