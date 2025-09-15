@@ -1,8 +1,36 @@
 {
-  "last_updated": "2025-09-14T21:20:25.073153+05:30",
-  "total_products": 36,
+  "last_updated": "2025-09-15T10:18:50.965631+05:30",
+  "total_products": 38,
   "daily_target": 6,
   "products": [
+    {
+      "id": "product_morning_1_20250915_044844",
+      "title": "Supersox Formal/Office Calf Socks for Men Combo, Made With Breathable, Anti Odour & Moisture Absorbe...",
+      "image": "https://m.media-amazon.com/images/I/81NFMvMUhnL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B08JQD1QYZ?tag=gadgetvill09f-21",
+      "price": "\u20b9284",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B08JQD1QYZ",
+      "data_source": "serpapi",
+      "posted_date": "2025-09-15T10:18:44.346045+05:30",
+      "session_type": "morning",
+      "link_index": 87
+    },
+    {
+      "id": "product_morning_2_20250915_044850",
+      "title": "Contacts Genuine Leather Slim Wallet | RFID Blocking Skinny Minimal Thin Front Pocket Wallet Sleeve ...",
+      "image": "https://m.media-amazon.com/images/I/61DHh-7I2-L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B09HHBQCLK?tag=gadgetvill09f-21",
+      "price": "\u20b9349",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B09HHBQCLK",
+      "data_source": "serpapi",
+      "posted_date": "2025-09-15T10:18:50.779457+05:30",
+      "session_type": "morning",
+      "link_index": 88
+    },
     {
       "id": "product_night_1_20250914_155024",
       "title": "Kobo Weight Lifting Straps Power Gym Support",
