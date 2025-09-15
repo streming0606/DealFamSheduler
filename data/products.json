@@ -1,8 +1,22 @@
 {
-  "last_updated": "2025-09-15T18:38:04.399766+05:30",
-  "total_products": 42,
+  "last_updated": "2025-09-15T21:20:17.768750+05:30",
+  "total_products": 43,
   "daily_target": 6,
   "products": [
+    {
+      "id": "product_night_1_20250915_155017",
+      "title": "Acnos\u00ae Premium Brand Digital 4 Colours Square Dial Unisex Wrist Watch for Men Women Pack of 1 (WR)",
+      "image": "https://m.media-amazon.com/images/I/61GWaL9HTiL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0BZJ1B578?tag=gadgetvill09f-21",
+      "price": "\u20b9280",
+      "rating": "\u2b50\u2b50\u2b50\u2606\u2606",
+      "category": "fashion",
+      "asin": "B0BZJ1B578",
+      "data_source": "serpapi",
+      "posted_date": "2025-09-15T21:20:17.221483+05:30",
+      "session_type": "night",
+      "link_index": 101
+    },
     {
       "id": "product_morning_1_20250915_130757",
       "title": "WildHorn RFID Protected Leather Wallet for Men, Brown",
