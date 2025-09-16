@@ -1,8 +1,22 @@
 {
-  "last_updated": "2025-09-16T18:38:11.854104+05:30",
-  "total_products": 49,
+  "last_updated": "2025-09-16T21:20:12.937156+05:30",
+  "total_products": 50,
   "daily_target": 6,
   "products": [
+    {
+      "id": "product_night_1_20250916_155012",
+      "title": "Nivia Radar Sippers Bottle for Sports Cycling, Gym & Running Bottle for Training, Exercise, & Fitnes...",
+      "image": "https://m.media-amazon.com/images/I/61OOsPggsBL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B00MM1TPRY?tag=gadgetvill09f-21",
+      "price": "\u20b9159",
+      "rating": "\u2b50\u2b50\u2b50\u2606\u2606",
+      "category": "home",
+      "asin": "B00MM1TPRY",
+      "data_source": "serpapi",
+      "posted_date": "2025-09-16T21:20:12.639984+05:30",
+      "session_type": "night",
+      "link_index": 119
+    },
     {
       "id": "product_morning_1_20250916_130805",
       "title": "Prestige 1.5 litre PKOSS Stainless Steel Electric Kettle | 1350 Watts| Elegant Design | Cool-touch H...",
