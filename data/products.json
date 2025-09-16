@@ -1,8 +1,36 @@
 {
-  "last_updated": "2025-09-15T21:20:17.768750+05:30",
-  "total_products": 43,
+  "last_updated": "2025-09-16T10:16:44.724771+05:30",
+  "total_products": 45,
   "daily_target": 6,
   "products": [
+    {
+      "id": "product_morning_1_20250916_044637",
+      "title": "TecoKart\u00ae Gym Gloves Half Hand Gloves for Women Weight Lifting Gloves for Gym Workout Bike Gloves Gy...",
+      "image": "https://m.media-amazon.com/images/I/61uud-y9SLL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DDBZJ6CC?tag=gadgetvill09f-21",
+      "price": "\u20b9473",
+      "rating": "\u2b50\u2b50\u2b50\u2606\u2606",
+      "category": "electronics",
+      "asin": "B0DDBZJ6CC",
+      "data_source": "serpapi",
+      "posted_date": "2025-09-16T10:16:37.037109+05:30",
+      "session_type": "morning",
+      "link_index": 105
+    },
+    {
+      "id": "product_morning_2_20250916_044644",
+      "title": "AGARO Grand Egg Boiler And Poacher, 2-in1 Boils 8 Eggs, Poach 4 Eggs, Steamed Vegetables, 3 Boiling ...",
+      "image": "https://m.media-amazon.com/images/I/81670ZfgQ-L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0B257ZYVB?tag=gadgetvill09f-21",
+      "price": "\u20b9918",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "home",
+      "asin": "B0B257ZYVB",
+      "data_source": "serpapi",
+      "posted_date": "2025-09-16T10:16:44.446168+05:30",
+      "session_type": "morning",
+      "link_index": 106
+    },
     {
       "id": "product_night_1_20250915_155017",
       "title": "Acnos\u00ae Premium Brand Digital 4 Colours Square Dial Unisex Wrist Watch for Men Women Pack of 1 (WR)",
