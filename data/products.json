@@ -1,8 +1,36 @@
 {
-  "last_updated": "2025-09-16T13:20:15.544088+05:30",
-  "total_products": 47,
+  "last_updated": "2025-09-16T18:38:11.854104+05:30",
+  "total_products": 49,
   "daily_target": 6,
   "products": [
+    {
+      "id": "product_morning_1_20250916_130805",
+      "title": "Prestige 1.5 litre PKOSS Stainless Steel Electric Kettle | 1350 Watts| Elegant Design | Cool-touch H...",
+      "image": "https://m.media-amazon.com/images/I/51Q11RNy8dL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B01MQZ7J8K?tag=gadgetvill09f-21",
+      "price": "\u20b9699",
+      "rating": "\u2b50\u2b50\u2b50\u2606\u2606",
+      "category": "electronics",
+      "asin": "B01MQZ7J8K",
+      "data_source": "serpapi",
+      "posted_date": "2025-09-16T18:38:05.335511+05:30",
+      "session_type": "morning",
+      "link_index": 115
+    },
+    {
+      "id": "product_morning_2_20250916_130811",
+      "title": "Nivia Knee Support for men and women, Knee Brace, Knee Cap, Knee Wrap, Running, cycling, Gym For Com...",
+      "image": "https://m.media-amazon.com/images/I/61zKi69wboL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B00IAPKZ0W?tag=gadgetvill09f-21",
+      "price": "\u20b9279",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "fashion",
+      "asin": "B00IAPKZ0W",
+      "data_source": "serpapi",
+      "posted_date": "2025-09-16T18:38:11.630372+05:30",
+      "session_type": "morning",
+      "link_index": 116
+    },
     {
       "id": "product_afternoon_1_20250916_075007",
       "title": "PEEDA BATI PACK OF 6 BOTTLES BY GAYATRI PHARMACY.",
