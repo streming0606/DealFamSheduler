@@ -1,9 +1,36 @@
 {
-  "last_updated": "2025-09-17T10:17:00.972468+05:30",
+  "last_updated": "2025-09-17T13:19:50.735736+05:30",
   "total_products": 50,
   "daily_target": 6,
   "products": [
-   
+    {
+      "id": "product_afternoon_1_20250917_074942",
+      "title": "BRONTIX Bluetooth Printer Mobile Support Thermal Printer | Upto 2 inch Print | Price tag Machine | S...",
+      "image": "https://m.media-amazon.com/images/I/71fgBVUQF6L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0F9YRSVCG?tag=gadgetvill09f-21",
+      "price": "\u20b92,499",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B0F9YRSVCG",
+      "data_source": "serpapi",
+      "posted_date": "2025-09-17T13:19:42.767976+05:30",
+      "session_type": "afternoon",
+      "link_index": 128
+    },
+    {
+      "id": "product_afternoon_2_20250917_074950",
+      "title": "Nutripro Spare Wet Blade For Nutri Blender - By Nutripro",
+      "image": "https://m.media-amazon.com/images/I/71+7gj0p5HL._AC_UY218_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DVZFPYYY?tag=gadgetvill09f-21",
+      "price": "\u20b9299",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B0DVZFPYYY",
+      "data_source": "serpapi",
+      "posted_date": "2025-09-17T13:19:50.522981+05:30",
+      "session_type": "afternoon",
+      "link_index": 129
+    },
     {
       "id": "product_morning_2_20250917_044700",
       "title": "PHILIPS Digital Airfryer with Touch Panel, 4.1L, with RapidAir Technology,with additional 1 Yr Warra...",
@@ -675,20 +702,6 @@
       "posted_date": "2025-09-10T13:19:46.704622+05:30",
       "session_type": "afternoon",
       "link_index": 25
-    },
-    {
-      "id": "product_evening_1_20250910_065229",
-      "title": "draval pack of 2 pair Hi-Tech Performance Athletic grip Socks for Men & Women | Crew Length, Anti-Sl...",
-      "image": "https://m.media-amazon.com/images/I/51Y7x2Ea5nL._AC_UL320_.jpg",
-      "affiliate_link": "https://www.amazon.in/dp/B0FMKFLQQB?tag=gadgetvill09f-21",
-      "price": "\u20b9249",
-      "rating": "\u2b50\u2b50\u2b50\u2b50\u2b50",
-      "category": "electronics",
-      "asin": "B0FMKFLQQB",
-      "data_source": "serpapi",
-      "posted_date": "2025-09-10T12:22:29.247365+05:30",
-      "session_type": "evening",
-      "link_index": 20
     }
   ]
 }
