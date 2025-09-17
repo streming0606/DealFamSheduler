@@ -3,20 +3,7 @@
   "total_products": 50,
   "daily_target": 6,
   "products": [
-    {
-      "id": "product_morning_1_20250917_044655",
-      "title": "PHILIPS Digital Airfryer with Touch Panel, 4.1L, with RapidAir Technology,with additional 1 Yr Warra...",
-      "image": "https://m.media-amazon.com/images/I/41q4KIebFZL._AC_UL320_.jpg",
-      "affiliate_link": "https://www.amazon.in/dp/B097RJ867P?tag=gadgetvill09f-21",
-      "price": "\u20b97,499",
-      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
-      "category": "electronics",
-      "asin": "B097RJ867P",
-      "data_source": "serpapi",
-      "posted_date": "2025-09-17T10:16:55.722676+05:30",
-      "session_type": "morning",
-      "link_index": 123
-    },
+   
     {
       "id": "product_morning_2_20250917_044700",
       "title": "PHILIPS Digital Airfryer with Touch Panel, 4.1L, with RapidAir Technology,with additional 1 Yr Warra...",
