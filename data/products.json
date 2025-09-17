@@ -1,8 +1,22 @@
 {
-  "last_updated": "2025-09-17T18:37:57.124200+05:30",
+  "last_updated": "2025-09-17T21:20:46.842063+05:30",
   "total_products": 50,
   "daily_target": 6,
   "products": [
+    {
+      "id": "product_night_1_20250917_155046",
+      "title": "Philips HD4934/00 1300W Induction Cooktop with Triple MOV for 4kW surge protection with soft touch c...",
+      "image": "https://m.media-amazon.com/images/I/51CdR8C6hHL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DGKWNGKZ?tag=gadgetvill09f-21",
+      "price": "\u20b91,899",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "health",
+      "asin": "B0DGKWNGKZ",
+      "data_source": "serpapi",
+      "posted_date": "2025-09-17T21:20:46.541945+05:30",
+      "session_type": "night",
+      "link_index": 137
+    },
     {
       "id": "product_morning_1_20250917_130750",
       "title": "Butterfly Smart 750 Watts Mixer Grinder with 4 Jars | 3 Stainless Steel Jars & 1 Juicer | ABS Body |...",
@@ -688,20 +702,6 @@
       "posted_date": "2025-09-10T13:42:06.402344+05:30",
       "session_type": "morning",
       "link_index": 4
-    },
-    {
-      "id": "product_morning_2_20250910_081212",
-      "title": "Tosaa T2STSR Sandwich Gas Non-Stick Aluminium | Compatibility with Gas Stoves | Flame-Proof Design |...",
-      "image": "https://m.media-amazon.com/images/I/61BCPV2Lu4L._AC_UL320_.jpg",
-      "affiliate_link": "https://www.amazon.in/dp/B07RX42D3D?tag=gadgetvill09f-21",
-      "price": "\u20b9255",
-      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
-      "category": "electronics",
-      "asin": "B07RX42D3D",
-      "data_source": "serpapi",
-      "posted_date": "2025-09-10T13:42:12.960806+05:30",
-      "session_type": "morning",
-      "link_index": 5
     }
   ]
 }
