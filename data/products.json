@@ -1,8 +1,36 @@
 {
-  "last_updated": "2025-09-16T21:20:12.937156+05:30",
+  "last_updated": "2025-09-17T10:17:00.972468+05:30",
   "total_products": 50,
   "daily_target": 6,
   "products": [
+    {
+      "id": "product_morning_1_20250917_044655",
+      "title": "PHILIPS Digital Airfryer with Touch Panel, 4.1L, with RapidAir Technology,with additional 1 Yr Warra...",
+      "image": "https://m.media-amazon.com/images/I/41q4KIebFZL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B097RJ867P?tag=gadgetvill09f-21",
+      "price": "\u20b97,499",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B097RJ867P",
+      "data_source": "serpapi",
+      "posted_date": "2025-09-17T10:16:55.722676+05:30",
+      "session_type": "morning",
+      "link_index": 123
+    },
+    {
+      "id": "product_morning_2_20250917_044700",
+      "title": "PHILIPS Digital Airfryer with Touch Panel, 4.1L, with RapidAir Technology,with additional 1 Yr Warra...",
+      "image": "https://m.media-amazon.com/images/I/41q4KIebFZL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B097RJ867P?tag=gadgetvill09f-21",
+      "price": "\u20b97,499",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B097RJ867P",
+      "data_source": "serpapi",
+      "posted_date": "2025-09-17T10:17:00.775497+05:30",
+      "session_type": "morning",
+      "link_index": 124
+    },
     {
       "id": "product_night_1_20250916_155012",
       "title": "Nivia Radar Sippers Bottle for Sports Cycling, Gym & Running Bottle for Training, Exercise, & Fitnes...",
@@ -674,30 +702,6 @@
       "posted_date": "2025-09-10T12:22:29.247365+05:30",
       "session_type": "evening",
       "link_index": 20
-    },
-    {
-      "id": "product_evening_1_20250910_064411",
-      "title": "Nivia Wrist Support with Thumb Loop & Adjustable Velcro Strap for Men & Women, Compression Band for ...",
-      "image": "https://m.media-amazon.com/images/I/71+vGI6-GXL._AC_UL320_.jpg",
-      "affiliate_link": "https://www.amazon.in/dp/B0C3X9L17W?tag=gadgetvill09f-21",
-      "price": "\u20b9159",
-      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
-      "category": "home",
-      "asin": "B0C3X9L17W",
-      "data_source": "serpapi",
-      "posted_date": "2025-09-10T12:14:11.030390+05:30",
-      "session_type": "evening",
-      "link_index": 17
-    },
-    {
-      "id": "product_001",
-      "title": "Sample Product - iPhone 15 Pro Max",
-      "image": "https://images-na.ssl-images-amazon.com/images/I/sample.jpg",
-      "affiliate_link": "https://amzn.to/sample123",
-      "price": "\u20b999,999",
-      "rating": "\u2b50\u2b50\u2b50\u2b50\u2b50",
-      "category": "electronics",
-      "posted_date": "2025-09-06T15:23:00+05:30"
     }
   ]
 }
