@@ -1,8 +1,22 @@
 {
-  "last_updated": "2025-09-18T18:37:44.698543+05:30",
+  "last_updated": "2025-09-18T21:20:02.283602+05:30",
   "total_products": 50,
   "daily_target": 6,
   "products": [
+    {
+      "id": "product_night_1_20250918_155002",
+      "title": "HORNBULL Denial Navy Leather Wallet for Men | Genuine Leather Wallet with RFID Blocking | Purse for ...",
+      "image": "https://m.media-amazon.com/images/I/81S4AK8JtmL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B085LFPKQB?tag=gadgetvill09f-21",
+      "price": "\u20b9449",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B085LFPKQB",
+      "data_source": "serpapi",
+      "posted_date": "2025-09-18T21:20:02.126498+05:30",
+      "session_type": "night",
+      "link_index": 155
+    },
     {
       "id": "product_morning_1_20250918_130738",
       "title": "Sujata Chutney Steel Jar, 500 ml, (White), Stainless Steel (White_1)",
@@ -688,20 +702,6 @@
       "posted_date": "2025-09-11T13:20:21.987047+05:30",
       "session_type": "afternoon",
       "link_index": 22
-    },
-    {
-      "id": "product_afternoon_2_20250911_075028",
-      "title": "XTRIM Knee Support for Men - Knee Wraps - Knee Stabilizer - Unisex Knee Bands for Sports, Squats, an...",
-      "image": "https://m.media-amazon.com/images/I/81L21BWFHFL._AC_UL320_.jpg",
-      "affiliate_link": "https://www.amazon.in/dp/B074DJDCLZ?tag=gadgetvill09f-21",
-      "price": "\u20b9Special Price",
-      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
-      "category": "electronics",
-      "asin": "B074DJDCLZ",
-      "data_source": "serpapi",
-      "posted_date": "2025-09-11T13:20:28.662863+05:30",
-      "session_type": "afternoon",
-      "link_index": 23
     }
   ]
 }
