@@ -539,7 +539,7 @@ p {
 
 
 
-/* Search Container */
+/* Search Container 
 .search-container {
   flex: 1;
   max-width: 500px;
@@ -587,7 +587,7 @@ p {
   background-color: var(--primary-hover);
 }
 
-/* Search Suggestions */
+/* Search Suggestions 
 .search-suggestions {
   position: absolute;
   top: 100%;
@@ -617,7 +617,7 @@ p {
   border-bottom: none;
 }
 
-/* Navigation */
+/* Navigation 
 .nav {
   display: flex;
   gap: var(--spacing-lg);
@@ -655,7 +655,7 @@ p {
   width: 100%;
 }
 
-/* Header Actions */
+/* Header Actions 
 .header-actions {
   display: flex;
   align-items: center;
@@ -703,7 +703,7 @@ p {
   100% { opacity: 1; }
 }
 
-/* Mobile Navigation */
+/* Mobile Navigation 
 .mobile-menu-toggle {
   display: none;
   flex-direction: column;
@@ -772,7 +772,7 @@ p {
 
 .mobile-nav-link:hover {
   color: var(--primary-color);
-}
+}*/
 
 
 
