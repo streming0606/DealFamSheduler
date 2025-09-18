@@ -2198,7 +2198,7 @@ p {
 
 .category-card {
     background-color: var(--background);
-    border-radius: 50%;
+    border-radius: 70%;
     overflow: hidden;
     box-shadow: var(--shadow-sm);
     border: 3px solid transparent;
