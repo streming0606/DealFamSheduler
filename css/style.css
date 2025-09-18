@@ -2114,7 +2114,7 @@ p {
 
 
 
-/* Enhanced Horizontal Scrolling Categories Section with Circular Design */
+/* Enhanced Horizontal Scrolling Categories Section with Perfect Image Fitting */
 .categories {
     padding: var(--spacing-3xl) 0;
     background: var(--surface);
@@ -2196,9 +2196,19 @@ p {
     display: none;
 }
 
+/* Category wrapper for proper alignment */
+.category-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-sm);
+    flex-shrink: 0;
+    width: 120px; /* Fixed width for consistency */
+}
+
 .category-card {
     background-color: var(--background);
-    border-radius: 70%;
+    border-radius: 50%; /* Perfect circle */
     overflow: hidden;
     box-shadow: var(--shadow-sm);
     border: 3px solid transparent;
@@ -2209,7 +2219,6 @@ p {
     height: 120px;
     flex-shrink: 0;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
@@ -2220,6 +2229,7 @@ p {
     border-color: var(--primary-color);
 }
 
+/* Enhanced image container with perfect circular cropping */
 .category-image {
     position: absolute;
     top: 0;
@@ -2229,26 +2239,49 @@ p {
     z-index: 1;
     border-radius: 50%;
     overflow: hidden;
+    /* Add padding to prevent edge artifacts */
+    padding: 2px;
+    box-sizing: border-box;
+}
+
+.category-image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 50%;
+    background: var(--background);
+    z-index: -1;
 }
 
 .category-image img {
-    width: 100%;
-    height: 100%;
+    width: calc(100% - 4px); /* Account for padding */
+    height: calc(100% - 4px);
     object-fit: cover;
     object-position: center;
     transition: var(--transition);
+    border-radius: 50%;
+    margin: 2px; /* Center the image */
+    /* Enhanced image rendering */
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
 }
 
 .category-card:hover .category-image img {
     transform: scale(1.1);
 }
 
+/* Enhanced overlay with better gradient */
 .category-overlay {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    top: 2px;
+    left: 2px;
+    width: calc(100% - 4px);
+    height: calc(100% - 4px);
     background: linear-gradient(135deg, rgba(0, 0, 0, 0.3) 0%, rgba(40, 116, 240, 0.2) 100%);
     transition: var(--transition);
     z-index: 2;
@@ -2285,6 +2318,8 @@ p {
     margin-bottom: var(--spacing-xs);
     transition: var(--transition);
     border: 2px solid rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
 }
 
 .category-icon i {
@@ -2307,14 +2342,6 @@ p {
 }
 
 /* Category labels below circles */
-.category-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: var(--spacing-sm);
-    flex-shrink: 0;
-}
-
 .category-label {
     font-size: 0.875rem;
     font-weight: 600;
@@ -2323,6 +2350,9 @@ p {
     line-height: 1.3;
     max-width: 120px;
     word-wrap: break-word;
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
 }
 
 /* Navigation arrows */
@@ -2373,7 +2403,23 @@ p {
     border-color: var(--border-color);
 }
 
-/* Mobile Responsive */
+/* Tablet Responsive (768px - 1024px) */
+@media (max-width: 1024px) {
+    .category-wrapper {
+        width: 110px;
+    }
+    
+    .category-card {
+        width: 110px;
+        height: 110px;
+    }
+    
+    .category-label {
+        max-width: 110px;
+    }
+}
+
+/* Mobile Responsive (481px - 768px) */
 @media (max-width: 768px) {
     .categories-container {
         padding: 0 var(--spacing-xl);
@@ -2393,13 +2439,13 @@ p {
         right: 5px;
     }
     
+    .category-wrapper {
+        width: 100px;
+    }
+    
     .category-card {
         width: 100px;
         height: 100px;
-    }
-    
-    .category-wrapper {
-        max-width: 100px;
     }
     
     .category-label {
@@ -2423,8 +2469,23 @@ p {
     .scroll-controls {
         display: none;
     }
+    
+    /* Adjust image container for mobile */
+    .category-image img {
+        width: calc(100% - 3px);
+        height: calc(100% - 3px);
+        margin: 1.5px;
+    }
+    
+    .category-overlay {
+        top: 1.5px;
+        left: 1.5px;
+        width: calc(100% - 3px);
+        height: calc(100% - 3px);
+    }
 }
 
+/* Small Mobile Responsive (320px - 480px) */
 @media (max-width: 480px) {
     .categories-container {
         padding: 0 var(--spacing-lg);
@@ -2438,13 +2499,13 @@ p {
         gap: var(--spacing-md);
     }
     
+    .category-wrapper {
+        width: 90px;
+    }
+    
     .category-card {
         width: 90px;
         height: 90px;
-    }
-    
-    .category-wrapper {
-        max-width: 90px;
     }
     
     .category-label {
@@ -2466,6 +2527,55 @@ p {
         height: 35px;
         font-size: 1rem;
     }
+    
+    /* Further adjust image container for small mobile */
+    .category-image {
+        padding: 1.5px;
+    }
+    
+    .category-image img {
+        width: calc(100% - 3px);
+        height: calc(100% - 3px);
+        margin: 1.5px;
+    }
+    
+    .category-overlay {
+        top: 1.5px;
+        left: 1.5px;
+        width: calc(100% - 3px);
+        height: calc(100% - 3px);
+    }
+}
+
+/* Very Small Devices (max-width: 320px) */
+@media (max-width: 320px) {
+    .category-wrapper {
+        width: 80px;
+    }
+    
+    .category-card {
+        width: 80px;
+        height: 80px;
+        border-width: 2px;
+    }
+    
+    .category-label {
+        font-size: 0.7rem;
+        max-width: 80px;
+    }
+    
+    .category-icon {
+        width: 25px;
+        height: 25px;
+    }
+    
+    .category-icon i {
+        font-size: 0.8rem;
+    }
+    
+    .category-name {
+        font-size: 0.7rem;
+    }
 }
 
 /* Touch device optimizations */
@@ -2483,8 +2593,62 @@ p {
     .nav-arrow {
         display: none;
     }
+    
+    /* Ensure smooth scrolling on touch devices */
+    .category-grid {
+        -webkit-overflow-scrolling: touch;
+        scroll-snap-type: x mandatory;
+    }
+    
+    .category-wrapper {
+        scroll-snap-align: center;
+    }
 }
 
+/* High DPI display optimizations */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .category-image img {
+        /* Enhanced rendering for high DPI displays */
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: optimize-contrast;
+        -ms-interpolation-mode: nearest-neighbor;
+    }
+}
+
+/* Loading state for images */
+.category-image img {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out, transform var(--transition);
+}
+
+.category-image img.loaded {
+    opacity: 1;
+}
+
+/* Fallback for images that fail to load */
+.category-image::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 50%;
+    background: var(--primary-color);
+    border-radius: 50%;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.category-image img[src=""], 
+.category-image img:not([src]) {
+    opacity: 0;
+}
+
+.category-image img[src=""]:after, 
+.category-image img:not([src]):after {
+    opacity: 0.3;
+}
 
 
 
