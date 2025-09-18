@@ -730,7 +730,7 @@
 
 
 
-<!-- Categories Section with Images -->
+<!-- Categories Section with Images 
 <section id="categories" class="categories">
     <div class="container">
         <div class="section-header">
@@ -845,10 +845,287 @@
             </div>
         </div>
     </div>
+</section>-->
+
+
+
+
+
+
+
+
+
+
+<!-- Enhanced Categories Section with Perfect Image Fitting -->
+<section id="categories" class="categories">
+    <div class="categories-container">
+        <!-- Section Header with Navigation Controls -->
+        <div class="categories-header">
+            <div class="header-content">
+                <h2 class="categories-title">Shop by Category</h2>
+                <p class="section-subtitle">Find the best deals across all categories</p>
+            </div>
+            
+            <!-- Desktop Scroll Controls -->
+            <div class="scroll-controls">
+                <button class="scroll-btn prev-btn" type="button" aria-label="Previous categories">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="scroll-btn next-btn" type="button" aria-label="Next categories">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Categories Grid with Navigation Arrows -->
+        <div class="category-grid-container">
+            <!-- Navigation Arrows (Mobile/Tablet) -->
+            <button class="nav-arrow prev" type="button" aria-label="Previous categories">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            
+            <div class="category-grid" id="categoryGrid">
+                <!-- Electronics Category -->
+                <div class="category-wrapper">
+                    <div class="category-card" data-category="electronics" tabindex="0" role="button" aria-label="Electronics category">
+                        <div class="category-image">
+                            <img src="images/categories/electronics.jpg" 
+                                 alt="Electronics category featuring gadgets and tech products" 
+                                 loading="lazy"
+                                 onload="this.classList.add('loaded')"
+                                 onerror="this.style.display='none'">
+                        </div>
+                        <div class="category-overlay"></div>
+                        <div class="category-info">
+                            <div class="category-icon">
+                                <i class="fas fa-laptop" aria-hidden="true"></i>
+                            </div>
+                            <h3 class="category-name">Electronics</h3>
+                        </div>
+                    </div>
+                    <span class="category-label">
+                        Gadgets & Tech
+                        <small class="deal-count">(0 deals)</small>
+                    </span>
+                </div>
+
+                <!-- Fashion Category -->
+                <div class="category-wrapper">
+                    <div class="category-card" data-category="fashion" tabindex="0" role="button" aria-label="Fashion category">
+                        <div class="category-image">
+                            <img src="images/categories/fashion.jpg" 
+                                 alt="Fashion category featuring clothing and style items" 
+                                 loading="lazy"
+                                 onload="this.classList.add('loaded')"
+                                 onerror="this.style.display='none'">
+                        </div>
+                        <div class="category-overlay"></div>
+                        <div class="category-info">
+                            <div class="category-icon">
+                                <i class="fas fa-tshirt" aria-hidden="true"></i>
+                            </div>
+                            <h3 class="category-name">Fashion</h3>
+                        </div>
+                    </div>
+                    <span class="category-label">
+                        Clothing & Style
+                        <small class="deal-count">(0 deals)</small>
+                    </span>
+                </div>
+
+                <!-- Home & Living Category -->
+                <div class="category-wrapper">
+                    <div class="category-card" data-category="home" tabindex="0" role="button" aria-label="Home and Living category">
+                        <div class="category-image">
+                            <img src="images/categories/home.jpg" 
+                                 alt="Home and Living category featuring furniture and decor" 
+                                 loading="lazy"
+                                 onload="this.classList.add('loaded')"
+                                 onerror="this.style.display='none'">
+                        </div>
+                        <div class="category-overlay"></div>
+                        <div class="category-info">
+                            <div class="category-icon">
+                                <i class="fas fa-home" aria-hidden="true"></i>
+                            </div>
+                            <h3 class="category-name">Home</h3>
+                        </div>
+                    </div>
+                    <span class="category-label">
+                        Furniture & Decor
+                        <small class="deal-count">(0 deals)</small>
+                    </span>
+                </div>
+
+                <!-- Health & Beauty Category -->
+                <div class="category-wrapper">
+                    <div class="category-card" data-category="health" tabindex="0" role="button" aria-label="Health and Beauty category">
+                        <div class="category-image">
+                            <img src="images/categories/health.jpg" 
+                                 alt="Health and Beauty category featuring beauty and care products" 
+                                 loading="lazy"
+                                 onload="this.classList.add('loaded')"
+                                 onerror="this.style.display='none'">
+                        </div>
+                        <div class="category-overlay"></div>
+                        <div class="category-info">
+                            <div class="category-icon">
+                                <i class="fas fa-heartbeat" aria-hidden="true"></i>
+                            </div>
+                            <h3 class="category-name">Health</h3>
+                        </div>
+                    </div>
+                    <span class="category-label">
+                        Beauty & Care
+                        <small class="deal-count">(0 deals)</small>
+                    </span>
+                </div>
+
+                <!-- Sports & Fitness Category -->
+                <div class="category-wrapper">
+                    <div class="category-card" data-category="sports" tabindex="0" role="button" aria-label="Sports and Fitness category">
+                        <div class="category-image">
+                            <img src="images/categories/sports.jpg" 
+                                 alt="Sports and Fitness category featuring fitness gear and equipment" 
+                                 loading="lazy"
+                                 onload="this.classList.add('loaded')"
+                                 onerror="this.style.display='none'">
+                        </div>
+                        <div class="category-overlay"></div>
+                        <div class="category-info">
+                            <div class="category-icon">
+                                <i class="fas fa-dumbbell" aria-hidden="true"></i>
+                            </div>
+                            <h3 class="category-name">Sports</h3>
+                        </div>
+                    </div>
+                    <span class="category-label">
+                        Fitness & Gear
+                        <small class="deal-count">(0 deals)</small>
+                    </span>
+                </div>
+
+                <!-- Auto & Vehicle Category -->
+                <div class="category-wrapper">
+                    <div class="category-card" data-category="vehicle" tabindex="0" role="button" aria-label="Auto and Vehicle category">
+                        <div class="category-image">
+                            <img src="images/categories/vehicle.jpg" 
+                                 alt="Auto and Vehicle category featuring car parts and accessories" 
+                                 loading="lazy"
+                                 onload="this.classList.add('loaded')"
+                                 onerror="this.style.display='none'">
+                        </div>
+                        <div class="category-overlay"></div>
+                        <div class="category-info">
+                            <div class="category-icon">
+                                <i class="fas fa-car" aria-hidden="true"></i>
+                            </div>
+                            <h3 class="category-name">Vehicle</h3>
+                        </div>
+                    </div>
+                    <span class="category-label">
+                        Auto Parts
+                        <small class="deal-count">(0 deals)</small>
+                    </span>
+                </div>
+
+                <!-- Books & Education Category -->
+                <div class="category-wrapper">
+                    <div class="category-card" data-category="books" tabindex="0" role="button" aria-label="Books and Education category">
+                        <div class="category-image">
+                            <img src="images/categories/books.jpg" 
+                                 alt="Books and Education category featuring learning and reading materials" 
+                                 loading="lazy"
+                                 onload="this.classList.add('loaded')"
+                                 onerror="this.style.display='none'">
+                        </div>
+                        <div class="category-overlay"></div>
+                        <div class="category-info">
+                            <div class="category-icon">
+                                <i class="fas fa-book" aria-hidden="true"></i>
+                            </div>
+                            <h3 class="category-name">Books</h3>
+                        </div>
+                    </div>
+                    <span class="category-label">
+                        Learning & Reading
+                        <small class="deal-count">(0 deals)</small>
+                    </span>
+                </div>
+
+                <!-- Gaming Category (Additional) -->
+                <div class="category-wrapper">
+                    <div class="category-card" data-category="gaming" tabindex="0" role="button" aria-label="Gaming category">
+                        <div class="category-image">
+                            <img src="images/categories/gaming.jpg" 
+                                 alt="Gaming category featuring games and gaming accessories" 
+                                 loading="lazy"
+                                 onload="this.classList.add('loaded')"
+                                 onerror="this.style.display='none'">
+                        </div>
+                        <div class="category-overlay"></div>
+                        <div class="category-info">
+                            <div class="category-icon">
+                                <i class="fas fa-gamepad" aria-hidden="true"></i>
+                            </div>
+                            <h3 class="category-name">Gaming</h3>
+                        </div>
+                    </div>
+                    <span class="category-label">
+                        Games & Console
+                        <small class="deal-count">(0 deals)</small>
+                    </span>
+                </div>
+
+                <!-- Food & Drinks Category (Additional) -->
+                <div class="category-wrapper">
+                    <div class="category-card" data-category="food" tabindex="0" role="button" aria-label="Food and Drinks category">
+                        <div class="category-image">
+                            <img src="images/categories/food.jpg" 
+                                 alt="Food and Drinks category featuring gourmet and beverage items" 
+                                 loading="lazy"
+                                 onload="this.classList.add('loaded')"
+                                 onerror="this.style.display='none'">
+                        </div>
+                        <div class="category-overlay"></div>
+                        <div class="category-info">
+                            <div class="category-icon">
+                                <i class="fas fa-utensils" aria-hidden="true"></i>
+                            </div>
+                            <h3 class="category-name">Food</h3>
+                        </div>
+                    </div>
+                    <span class="category-label">
+                        Gourmet & Drinks
+                        <small class="deal-count">(0 deals)</small>
+                    </span>
+                </div>
+            </div>
+            
+            <!-- Navigation Arrow Next -->
+            <button class="nav-arrow next" type="button" aria-label="Next categories">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+    </div>
 </section>
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
 
 
 
