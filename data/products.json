@@ -1,8 +1,36 @@
 {
-  "last_updated": "2025-09-18T10:16:45.010823+05:30",
+  "last_updated": "2025-09-18T13:20:10.234009+05:30",
   "total_products": 50,
   "daily_target": 6,
   "products": [
+    {
+      "id": "product_afternoon_1_20250918_075003",
+      "title": "PHILIPS Air Fryer NA120/00, uses up to 90% less fat, 1500W, 4.2 Liter, with Rapid Air Technology (Bl...",
+      "image": "https://m.media-amazon.com/images/I/41Z5ldkAeYL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0D14BB5XY?tag=gadgetvill09f-21",
+      "price": "\u20b94,357",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B0D14BB5XY",
+      "data_source": "serpapi",
+      "posted_date": "2025-09-18T13:20:03.568832+05:30",
+      "session_type": "afternoon",
+      "link_index": 146
+    },
+    {
+      "id": "product_afternoon_2_20250918_075010",
+      "title": "ZORO Men's Vegan Leather Belt for Men, Formal/Casual,Autolock,Black | Fit on up to 38 Inches Waist s...",
+      "image": "https://m.media-amazon.com/images/I/71hEGHI6AnL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0854J6N67?tag=gadgetvill09f-21",
+      "price": "\u20b9199",
+      "rating": "\u2b50\u2b50\u2b50\u2606\u2606",
+      "category": "electronics",
+      "asin": "B0854J6N67",
+      "data_source": "serpapi",
+      "posted_date": "2025-09-18T13:20:10.061698+05:30",
+      "session_type": "afternoon",
+      "link_index": 147
+    },
     {
       "id": "product_morning_1_20250918_044638",
       "title": "PRANIJ Durable Small Soft Yoga Exercise Balls with Inflatable Straw, Mini Pilates Ball 23 CM/9 Inchs...",
@@ -674,34 +702,6 @@
       "posted_date": "2025-09-11T10:18:01.780076+05:30",
       "session_type": "morning",
       "link_index": 18
-    },
-    {
-      "id": "product_night_1_20250910_155051",
-      "title": "Cookwell Bullet Mixer Grinder (5 Jars, 3 Blades, Silver) - Copper, 600 Watts - 2 Year Warranty",
-      "image": "https://m.media-amazon.com/images/I/81yobRRV8nL._AC_UL320_.jpg",
-      "affiliate_link": "https://www.amazon.in/dp/B097XJQZ8H?tag=gadgetvill09f-21",
-      "price": "\u20b92,199",
-      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
-      "category": "electronics",
-      "asin": "B097XJQZ8H",
-      "data_source": "serpapi",
-      "posted_date": "2025-09-10T21:20:51.513329+05:30",
-      "session_type": "night",
-      "link_index": 13
-    },
-    {
-      "id": "product_morning_1_20250910_130630",
-      "title": "RONOSH Weight Lifting Hand Grips,Gym Gloves for Boys and Girls with Strong Wrist Support,Anti-Slip R...",
-      "image": "https://m.media-amazon.com/images/I/51mdV6-KfsL._AC_UL320_.jpg",
-      "affiliate_link": "https://www.amazon.in/dp/B0F5RPZ268?tag=gadgetvill09f-21",
-      "price": "\u20b9220",
-      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
-      "category": "electronics",
-      "asin": "B0F5RPZ268",
-      "data_source": "serpapi",
-      "posted_date": "2025-09-10T18:36:30.309802+05:30",
-      "session_type": "morning",
-      "link_index": 9
     }
   ]
 }
