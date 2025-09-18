@@ -1,8 +1,36 @@
 {
-  "last_updated": "2025-09-17T21:20:46.842063+05:30",
+  "last_updated": "2025-09-18T10:16:45.010823+05:30",
   "total_products": 50,
   "daily_target": 6,
   "products": [
+    {
+      "id": "product_morning_1_20250918_044638",
+      "title": "PRANIJ Durable Small Soft Yoga Exercise Balls with Inflatable Straw, Mini Pilates Ball 23 CM/9 Inchs...",
+      "image": "https://m.media-amazon.com/images/I/71SK73MsyIS._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CP7G6SF4?tag=gadgetvill09f-21",
+      "price": "\u20b9259",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "home",
+      "asin": "B0CP7G6SF4",
+      "data_source": "serpapi",
+      "posted_date": "2025-09-18T10:16:38.368630+05:30",
+      "session_type": "morning",
+      "link_index": 141
+    },
+    {
+      "id": "product_morning_2_20250918_044644",
+      "title": "Fashion Frill Silver Chain For Men Stylish Stainless Steel Bar Pendant Necklace Silver Chain Pendant...",
+      "image": "https://m.media-amazon.com/images/I/313sr5mjCEL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CV3T1WBB?tag=gadgetvill09f-21",
+      "price": "\u20b9239",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B0CV3T1WBB",
+      "data_source": "serpapi",
+      "posted_date": "2025-09-18T10:16:44.856566+05:30",
+      "session_type": "morning",
+      "link_index": 142
+    },
     {
       "id": "product_night_1_20250917_155046",
       "title": "Philips HD4934/00 1300W Induction Cooktop with Triple MOV for 4kW surge protection with soft touch c...",
@@ -674,34 +702,6 @@
       "posted_date": "2025-09-10T18:36:30.309802+05:30",
       "session_type": "morning",
       "link_index": 9
-    },
-    {
-      "id": "product_morning_2_20250910_130636",
-      "title": "BOLTIX Sealing Clip - Portable Mini Sealing Machine Handheld Packet Sealer for Food, Snacks, Chips, ...",
-      "image": "https://m.media-amazon.com/images/I/51CqqLC8GAL._AC_UL320_.jpg",
-      "affiliate_link": "https://www.amazon.in/dp/B0DBQB4Z1Z?tag=gadgetvill09f-21",
-      "price": "\u20b9299",
-      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
-      "category": "fashion",
-      "asin": "B0DBQB4Z1Z",
-      "data_source": "serpapi",
-      "posted_date": "2025-09-10T18:36:36.936819+05:30",
-      "session_type": "morning",
-      "link_index": 10
-    },
-    {
-      "id": "product_morning_1_20250910_081206",
-      "title": "Libra Roti Maker Machine - Electric Roti Maker with Non-Stick 8.5inch Plates and Durable Handle, Aut...",
-      "image": "https://m.media-amazon.com/images/I/71dhE+3McIL._AC_UL320_.jpg",
-      "affiliate_link": "https://www.amazon.in/dp/B01N0YEZK8?tag=gadgetvill09f-21",
-      "price": "\u20b92,399",
-      "rating": "\u2b50\u2b50\u2b50\u2606\u2606",
-      "category": "electronics",
-      "asin": "B01N0YEZK8",
-      "data_source": "serpapi",
-      "posted_date": "2025-09-10T13:42:06.402344+05:30",
-      "session_type": "morning",
-      "link_index": 4
     }
   ]
 }
