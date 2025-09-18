@@ -1,8 +1,36 @@
 {
-  "last_updated": "2025-09-18T13:20:10.234009+05:30",
+  "last_updated": "2025-09-18T18:37:44.698543+05:30",
   "total_products": 50,
   "daily_target": 6,
   "products": [
+    {
+      "id": "product_morning_1_20250918_130738",
+      "title": "Sujata Chutney Steel Jar, 500 ml, (White), Stainless Steel (White_1)",
+      "image": "https://m.media-amazon.com/images/I/61aGjmM7ErL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B01MUAUOCX?tag=gadgetvill09f-21",
+      "price": "\u20b9580",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B01MUAUOCX",
+      "data_source": "serpapi",
+      "posted_date": "2025-09-18T18:37:38.052024+05:30",
+      "session_type": "morning",
+      "link_index": 151
+    },
+    {
+      "id": "product_morning_2_20250918_130744",
+      "title": "Lifelong LLYM92 Yoga mat for Women & Men EVA Material 4mm Grey Anti Slip for Gym Workout",
+      "image": "https://m.media-amazon.com/images/I/612K2lgbyIL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B09YJ475JC?tag=gadgetvill09f-21",
+      "price": "\u20b9299",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B09YJ475JC",
+      "data_source": "serpapi",
+      "posted_date": "2025-09-18T18:37:44.477626+05:30",
+      "session_type": "morning",
+      "link_index": 152
+    },
     {
       "id": "product_afternoon_1_20250918_075003",
       "title": "PHILIPS Air Fryer NA120/00, uses up to 90% less fat, 1500W, 4.2 Liter, with Rapid Air Technology (Bl...",
@@ -674,34 +702,6 @@
       "posted_date": "2025-09-11T13:20:28.662863+05:30",
       "session_type": "afternoon",
       "link_index": 23
-    },
-    {
-      "id": "product_morning_1_20250911_044754",
-      "title": "TIMEWEAR Analog Day Date Functioning Stainless Steel Chain Watch for Men",
-      "image": "https://m.media-amazon.com/images/I/81nj6IlZpVL._AC_UL320_.jpg",
-      "affiliate_link": "https://www.amazon.in/dp/B07MDGSP8F?tag=gadgetvill09f-21",
-      "price": "\u20b9379",
-      "rating": "\u2b50\u2b50\u2b50\u2606\u2606",
-      "category": "fashion",
-      "asin": "B07MDGSP8F",
-      "data_source": "serpapi",
-      "posted_date": "2025-09-11T10:17:54.995126+05:30",
-      "session_type": "morning",
-      "link_index": 17
-    },
-    {
-      "id": "product_morning_2_20250911_044801",
-      "title": "RC. ROYAL CLASS Men's Thick & Warm Woolen Calf Length Towel Multicolored Socks, Pack of 4, Winter We...",
-      "image": "https://m.media-amazon.com/images/I/91yH6VA5HzL._AC_UL320_.jpg",
-      "affiliate_link": "https://www.amazon.in/dp/B0BJ9PFBK7?tag=gadgetvill09f-21",
-      "price": "\u20b9210",
-      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
-      "category": "electronics",
-      "asin": "B0BJ9PFBK7",
-      "data_source": "serpapi",
-      "posted_date": "2025-09-11T10:18:01.780076+05:30",
-      "session_type": "morning",
-      "link_index": 18
     }
   ]
 }
