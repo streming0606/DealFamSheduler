@@ -173,7 +173,7 @@ function createProductCard(product, index = 0) {
     card.innerHTML = `
         <div class="product-image-container">
             ${product.image ? 
-                `<img src="${product.image}" alt="${product.title}" class="product-image" loading="lazy" onerror="this.parentElement.innerHTML='<div class=\\"product-placeholder\\"><i class=\\"fas fa-image\\"></i></div>'">` 
+                `<img src="${product.image}" alt="${product.title}" class="product-image" loading="lazy" onerror="this.parentElement.innerHTML='<div class=\\"product-placeholder\\"><i class=\\"fas fa-image\\"></i></div>` 
                 : 
                 '<div class="product-placeholder"><i class="fas fa-image"></i></div>'
             }
