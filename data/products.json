@@ -1,8 +1,22 @@
 {
-  "last_updated": "2025-09-19T18:36:48.913459+05:30",
+  "last_updated": "2025-09-19T21:20:42.285892+05:30",
   "total_products": 50,
   "daily_target": 6,
   "products": [
+    {
+      "id": "product_night_1_20250919_155042",
+      "title": "Protoner Gym Gloves, Camo Print, Fingerless with Wrist Support, Unisex",
+      "image": "https://m.media-amazon.com/images/I/71RBmB-catL._AC_UY218_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0F1Y8B7YT?tag=gadgetvill09f-21",
+      "price": "\u20b9139",
+      "rating": "\u2b50\u2b50\u2b50\u2606\u2606",
+      "category": "electronics",
+      "asin": "B0F1Y8B7YT",
+      "data_source": "serpapi",
+      "posted_date": "2025-09-19T21:20:42.084411+05:30",
+      "session_type": "night",
+      "link_index": 173
+    },
     {
       "id": "product_morning_1_20250919_130642",
       "title": "WiseLife Classic TPE 10 MM Yoga Mat with Yoga Strap for Men & Women | Extra Thick, Long & Wide Non-S...",
@@ -688,20 +702,6 @@
       "posted_date": "2025-09-12T13:20:19.794694+05:30",
       "session_type": "afternoon",
       "link_index": 40
-    },
-    {
-      "id": "product_afternoon_2_20250912_075026",
-      "title": "Atom 10Kg Kitchen Weight Machine 6 Months Manufacturer Warranty, Digital Scale with LCD Display, Sca...",
-      "image": "https://m.media-amazon.com/images/I/71775fRr+gL._AC_UL320_.jpg",
-      "affiliate_link": "https://www.amazon.in/dp/B083C6XMKQ?tag=gadgetvill09f-21",
-      "price": "\u20b9189",
-      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
-      "category": "fashion",
-      "asin": "B083C6XMKQ",
-      "data_source": "serpapi",
-      "posted_date": "2025-09-12T13:20:26.797720+05:30",
-      "session_type": "afternoon",
-      "link_index": 41
     }
   ]
 }
