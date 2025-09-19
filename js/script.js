@@ -218,9 +218,9 @@ function createProductCard(product, index = 0) {
                     <div>
                         <div class="deal-btn-text">
                             <i class="fas fa-bolt"></i>
-                            Grab Deal Now
+                            Claim On Amazon
                         </div>
-                        <div class="deal-btn-subtext">Free Delivery</div>
+                        <div class="deal-btn-subtext">Save Big Today</div>
                     </div>
                 </a>
                 <div class="secondary-actions">
