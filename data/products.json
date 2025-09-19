@@ -1,8 +1,36 @@
 {
-  "last_updated": "2025-09-18T21:20:02.283602+05:30",
+  "last_updated": "2025-09-19T10:17:59.069386+05:30",
   "total_products": 50,
   "daily_target": 6,
   "products": [
+    {
+      "id": "product_morning_1_20250919_044752",
+      "title": "amazon basics Electric Egg Boiler | 3 Boiling Modes | Automatic Operation | Overheat Protection | 75...",
+      "image": "https://m.media-amazon.com/images/I/71tIWqrBr6L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0BT1M24FN?tag=gadgetvill09f-21",
+      "price": "\u20b9429",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "health",
+      "asin": "B0BT1M24FN",
+      "data_source": "serpapi",
+      "posted_date": "2025-09-19T10:17:52.444647+05:30",
+      "session_type": "morning",
+      "link_index": 159
+    },
+    {
+      "id": "product_morning_2_20250919_044758",
+      "title": "Lifelong Polypropylene Exercise Fitness Stepper for Exercise Aerobics Stepper | Max Weight 200kg (Bl...",
+      "image": "https://m.media-amazon.com/images/I/61p1sbbqI4L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DRVY4YBN?tag=gadgetvill09f-21",
+      "price": "\u20b9999",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B0DRVY4YBN",
+      "data_source": "serpapi",
+      "posted_date": "2025-09-19T10:17:58.950471+05:30",
+      "session_type": "morning",
+      "link_index": 160
+    },
     {
       "id": "product_night_1_20250918_155002",
       "title": "HORNBULL Denial Navy Leather Wallet for Men | Genuine Leather Wallet with RFID Blocking | Purse for ...",
@@ -674,34 +702,6 @@
       "posted_date": "2025-09-11T18:35:59.276615+05:30",
       "session_type": "morning",
       "link_index": 27
-    },
-    {
-      "id": "product_morning_2_20250911_130606",
-      "title": "Hack Athletics Professional 24\" Flexible Wrist Wraps with Thumb Loops - Wrist Support for Men and Wo...",
-      "image": "https://m.media-amazon.com/images/I/81Cidqy7Z0L._AC_UL320_.jpg",
-      "affiliate_link": "https://www.amazon.in/dp/B0BSDCFCWJ?tag=gadgetvill09f-21",
-      "price": "\u20b9550",
-      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
-      "category": "electronics",
-      "asin": "B0BSDCFCWJ",
-      "data_source": "serpapi",
-      "posted_date": "2025-09-11T18:36:06.029598+05:30",
-      "session_type": "morning",
-      "link_index": 28
-    },
-    {
-      "id": "product_afternoon_1_20250911_075021",
-      "title": "Cookwell Bullet Mixer Grinder (5 Jars, 3 Blades, Silver) - Copper, 600 Watts - 2 Year Warranty",
-      "image": "https://m.media-amazon.com/images/I/81yobRRV8nL._AC_UL320_.jpg",
-      "affiliate_link": "https://www.amazon.in/dp/B097XJQZ8H?tag=gadgetvill09f-21",
-      "price": "\u20b92,199",
-      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
-      "category": "electronics",
-      "asin": "B097XJQZ8H",
-      "data_source": "serpapi",
-      "posted_date": "2025-09-11T13:20:21.987047+05:30",
-      "session_type": "afternoon",
-      "link_index": 22
     }
   ]
 }
