@@ -1,8 +1,36 @@
 {
-  "last_updated": "2025-09-19T13:20:14.563967+05:30",
+  "last_updated": "2025-09-19T18:36:48.913459+05:30",
   "total_products": 50,
   "daily_target": 6,
   "products": [
+    {
+      "id": "product_morning_1_20250919_130642",
+      "title": "WiseLife Classic TPE 10 MM Yoga Mat with Yoga Strap for Men & Women | Extra Thick, Long & Wide Non-S...",
+      "image": "https://m.media-amazon.com/images/I/61CaSziL9SL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0D5M53FT3?tag=gadgetvill09f-21",
+      "price": "\u20b91,245",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "home",
+      "asin": "B0D5M53FT3",
+      "data_source": "serpapi",
+      "posted_date": "2025-09-19T18:36:42.169244+05:30",
+      "session_type": "morning",
+      "link_index": 169
+    },
+    {
+      "id": "product_morning_2_20250919_130648",
+      "title": "Boldfit Arm Sleeves for Men & Women UV & Sun Protection Hand Cover Sleeves for Boys & Girls for Runn...",
+      "image": "https://m.media-amazon.com/images/I/51smnBFDh1L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CL4Y9NQH?tag=gadgetvill09f-21",
+      "price": "\u20b9149",
+      "rating": "\u2b50\u2b50\u2b50\u2606\u2606",
+      "category": "electronics",
+      "asin": "B0CL4Y9NQH",
+      "data_source": "serpapi",
+      "posted_date": "2025-09-19T18:36:48.783966+05:30",
+      "session_type": "morning",
+      "link_index": 170
+    },
     {
       "id": "product_afternoon_1_20250919_075008",
       "title": "BRONTIX Bluetooth Thermal Printer 4x6 inch Label for Business | Bluetooth inkless Printer | | 203 DP...",
@@ -674,34 +702,6 @@
       "posted_date": "2025-09-12T13:20:26.797720+05:30",
       "session_type": "afternoon",
       "link_index": 41
-    },
-    {
-      "id": "product_morning_1_20250912_044620",
-      "title": "Boldfit Men's Black Slim Fit Track Pants - M (32 inches) - Yoga, Running, Workout & Training - Summe...",
-      "image": "https://m.media-amazon.com/images/I/519X02vsiPL._AC_UL320_.jpg",
-      "affiliate_link": "https://www.amazon.in/dp/B0CGNH3B74?tag=gadgetvill09f-21",
-      "price": "\u20b9899",
-      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
-      "category": "electronics",
-      "asin": "B0CGNH3B74",
-      "data_source": "serpapi",
-      "posted_date": "2025-09-12T10:16:20.683483+05:30",
-      "session_type": "morning",
-      "link_index": 35
-    },
-    {
-      "id": "product_morning_2_20250912_044627",
-      "title": "Puma Mens Dazzler Sneaker",
-      "image": "https://m.media-amazon.com/images/I/51GOpp8rAJL._AC_UL320_.jpg",
-      "affiliate_link": "https://www.amazon.in/dp/B09RGBXYSN?tag=gadgetvill09f-21",
-      "price": "\u20b91,599",
-      "rating": "\u2b50\u2b50\u2b50\u2606\u2606",
-      "category": "electronics",
-      "asin": "B09RGBXYSN",
-      "data_source": "serpapi",
-      "posted_date": "2025-09-12T10:16:27.011800+05:30",
-      "session_type": "morning",
-      "link_index": 36
     }
   ]
 }
