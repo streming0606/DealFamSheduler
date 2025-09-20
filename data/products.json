@@ -1,8 +1,36 @@
 {
-  "last_updated": "2025-09-19T21:20:42.285892+05:30",
+  "last_updated": "2025-09-20T10:16:47.436002+05:30",
   "total_products": 50,
   "daily_target": 6,
   "products": [
+    {
+      "id": "product_morning_1_20250920_044640",
+      "title": "Yogarise 8mm Premium TPE Material Extra Thick Exercise Yoga Mat for Women & Men Anti-Slip Exercise M...",
+      "image": "https://m.media-amazon.com/images/I/6169hT0qaEL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CJC4TP3Q?tag=gadgetvill09f-21",
+      "price": "\u20b9838",
+      "rating": "\u2b50\u2b50\u2b50\u2606\u2606",
+      "category": "home",
+      "asin": "B0CJC4TP3Q",
+      "data_source": "serpapi",
+      "posted_date": "2025-09-20T10:16:40.783909+05:30",
+      "session_type": "morning",
+      "link_index": 177
+    },
+    {
+      "id": "product_morning_2_20250920_044647",
+      "title": "FitBox Sports Premium Lifting Straps, Powerlifting, Wrist Supporter For Deadlifting With Padded Supp...",
+      "image": "https://m.media-amazon.com/images/I/71VhTW2H3RL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DRLGH5WT?tag=gadgetvill09f-21",
+      "price": "\u20b9159",
+      "rating": "\u2b50\u2b50\u2b50\u2606\u2606",
+      "category": "electronics",
+      "asin": "B0DRLGH5WT",
+      "data_source": "serpapi",
+      "posted_date": "2025-09-20T10:16:47.287327+05:30",
+      "session_type": "morning",
+      "link_index": 178
+    },
     {
       "id": "product_night_1_20250919_155042",
       "title": "Protoner Gym Gloves, Camo Print, Fingerless with Wrist Support, Unisex",
@@ -674,34 +702,6 @@
       "posted_date": "2025-09-12T18:34:42.804889+05:30",
       "session_type": "morning",
       "link_index": 45
-    },
-    {
-      "id": "product_morning_2_20250912_130449",
-      "title": "Trillion Light Fit Straight Fit Track Pant for Men | Lower for Men | Gym Trackpants",
-      "image": "https://m.media-amazon.com/images/I/61kebELhjiL._AC_UL320_.jpg",
-      "affiliate_link": "https://www.amazon.in/dp/B0FLVV5GQ4?tag=gadgetvill09f-21",
-      "price": "\u20b9499",
-      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
-      "category": "electronics",
-      "asin": "B0FLVV5GQ4",
-      "data_source": "serpapi",
-      "posted_date": "2025-09-12T18:34:49.501303+05:30",
-      "session_type": "morning",
-      "link_index": 46
-    },
-    {
-      "id": "product_afternoon_1_20250912_075019",
-      "title": "Seznik Sealing Machine for Food Packets - Portable Handheld Sealing, Snacks, Chips, Fresh Storage - ...",
-      "image": "https://m.media-amazon.com/images/I/618nGDemysL._AC_UL320_.jpg",
-      "affiliate_link": "https://www.amazon.in/dp/B0CZNL15LF?tag=gadgetvill09f-21",
-      "price": "\u20b9346",
-      "rating": "\u2b50\u2b50\u2b50\u2606\u2606",
-      "category": "home",
-      "asin": "B0CZNL15LF",
-      "data_source": "serpapi",
-      "posted_date": "2025-09-12T13:20:19.794694+05:30",
-      "session_type": "afternoon",
-      "link_index": 40
     }
   ]
 }
