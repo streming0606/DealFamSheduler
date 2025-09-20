@@ -1,8 +1,22 @@
 {
-  "last_updated": "2025-09-20T18:32:29.124121+05:30",
+  "last_updated": "2025-09-20T21:19:59.114983+05:30",
   "total_products": 50,
   "daily_target": 6,
   "products": [
+    {
+      "id": "product_night_1_20250920_154958",
+      "title": "Nivia Orthopedic Wrist Support For Gym, Wrist Supporter For Men And Women, Weightlifting, Long Lasti...",
+      "image": "https://m.media-amazon.com/images/I/712q-L4JYaL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B00ICCYQ2Q?tag=gadgetvill09f-21",
+      "price": "\u20b9180",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B00ICCYQ2Q",
+      "data_source": "serpapi",
+      "posted_date": "2025-09-20T21:19:58.865085+05:30",
+      "session_type": "night",
+      "link_index": 191
+    },
     {
       "id": "product_morning_1_20250920_130222",
       "title": "AMIFIT Wooden Jumping Skipping Rope | Unisex | Brown Handle | White Rope | Exercise & Fitness & Work...",
@@ -688,20 +702,6 @@
       "posted_date": "2025-09-13T13:20:20.643334+05:30",
       "session_type": "afternoon",
       "link_index": 58
-    },
-    {
-      "id": "product_afternoon_2_20250913_075027",
-      "title": "Marvel Avengers Ultimate Carry Pack",
-      "image": "https://m.media-amazon.com/images/I/61VO1hCNpCL._AC_UY218_.jpg",
-      "affiliate_link": "https://www.amazon.in/dp/1789058457?tag=gadgetvill09f-21",
-      "price": "\u20b9599",
-      "rating": "\u2b50\u2b50\u2b50\u2b50\u2b50",
-      "category": "electronics",
-      "asin": "1789058457",
-      "data_source": "serpapi",
-      "posted_date": "2025-09-13T13:20:27.162879+05:30",
-      "session_type": "afternoon",
-      "link_index": 59
     }
   ]
 }
