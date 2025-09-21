@@ -1,8 +1,36 @@
 {
-  "last_updated": "2025-09-20T21:19:59.114983+05:30",
+  "last_updated": "2025-09-21T10:17:03.338259+05:30",
   "total_products": 50,
   "daily_target": 6,
   "products": [
+    {
+      "id": "product_morning_1_20250921_044655",
+      "title": "Boldfit Stepper For Exercise Professional Aerobic Step Platform Gym Equipment For Home Workout Adjus...",
+      "image": "https://m.media-amazon.com/images/I/61VK7jisP2L._AC_UY218_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0F5BL4RNP?tag=gadgetvill09f-21",
+      "price": "\u20b91,299",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "home",
+      "asin": "B0F5BL4RNP",
+      "data_source": "serpapi",
+      "posted_date": "2025-09-21T10:16:55.416124+05:30",
+      "session_type": "morning",
+      "link_index": 195
+    },
+    {
+      "id": "product_morning_2_20250921_044703",
+      "title": "Prestige 1.5 litre PKOSS Stainless Steel Electric Kettle | 1350 Watts| Elegant Design | Cool-touch H...",
+      "image": "https://m.media-amazon.com/images/I/51Q11RNy8dL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B01MQZ7J8K?tag=gadgetvill09f-21",
+      "price": "\u20b9699",
+      "rating": "\u2b50\u2b50\u2b50\u2606\u2606",
+      "category": "electronics",
+      "asin": "B01MQZ7J8K",
+      "data_source": "serpapi",
+      "posted_date": "2025-09-21T10:17:03.025721+05:30",
+      "session_type": "morning",
+      "link_index": 196
+    },
     {
       "id": "product_night_1_20250920_154958",
       "title": "Nivia Orthopedic Wrist Support For Gym, Wrist Supporter For Men And Women, Weightlifting, Long Lasti...",
@@ -674,34 +702,6 @@
       "posted_date": "2025-09-13T18:30:45.852294+05:30",
       "session_type": "morning",
       "link_index": 63
-    },
-    {
-      "id": "product_morning_2_20250913_130052",
-      "title": "URBAN FOREST Leather Belt for Men",
-      "image": "https://m.media-amazon.com/images/I/81jv56HsVOL._AC_UL320_.jpg",
-      "affiliate_link": "https://www.amazon.in/dp/B0824PLNV5?tag=gadgetvill09f-21",
-      "price": "\u20b9599",
-      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
-      "category": "electronics",
-      "asin": "B0824PLNV5",
-      "data_source": "serpapi",
-      "posted_date": "2025-09-13T18:30:52.064410+05:30",
-      "session_type": "morning",
-      "link_index": 64
-    },
-    {
-      "id": "product_afternoon_1_20250913_075020",
-      "title": "SKMEI Men's Digital Sports Watch 50m Waterproof LED Military Multifunction Smart Watch Stopwatch Cou...",
-      "image": "https://m.media-amazon.com/images/I/61eac98fJRL._AC_UL320_.jpg",
-      "affiliate_link": "https://www.amazon.in/dp/B08L98S4NJ?tag=gadgetvill09f-21",
-      "price": "\u20b9699",
-      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
-      "category": "fashion",
-      "asin": "B08L98S4NJ",
-      "data_source": "serpapi",
-      "posted_date": "2025-09-13T13:20:20.643334+05:30",
-      "session_type": "afternoon",
-      "link_index": 58
     }
   ]
 }
