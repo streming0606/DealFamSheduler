@@ -1,8 +1,22 @@
 {
-  "last_updated": "2025-09-21T18:32:07.520940+05:30",
+  "last_updated": "2025-09-21T21:20:13.615217+05:30",
   "total_products": 50,
   "daily_target": 6,
   "products": [
+    {
+      "id": "product_night_1_20250921_155013",
+      "title": "Milton Rapid Electric Kettle 1.8L | 1500 Watts | Stainless Steel Hot Water portable Electric Kettle ...",
+      "image": "https://m.media-amazon.com/images/I/61G2USexrDL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0F54GKQ38?tag=gadgetvill09f-21",
+      "price": "\u20b9999",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "home",
+      "asin": "B0F54GKQ38",
+      "data_source": "serpapi",
+      "posted_date": "2025-09-21T21:20:13.384331+05:30",
+      "session_type": "night",
+      "link_index": 209
+    },
     {
       "id": "product_morning_1_20250921_130159",
       "title": "Prestige IRIS ECO 1200 W Induction Cooktop with Automatic Voltage Regulator |Indian Menu Option |Hig...",
@@ -688,20 +702,6 @@
       "posted_date": "2025-09-14T13:19:46.831499+05:30",
       "session_type": "afternoon",
       "link_index": 76
-    },
-    {
-      "id": "product_afternoon_2_20250914_074953",
-      "title": "Innovative Gifts Best Personalized Gift for Men, Customized Wallet with Name & Charm, Unique Wallet ...",
-      "image": "https://m.media-amazon.com/images/I/71MYGLSCr0L._AC_UL320_.jpg",
-      "affiliate_link": "https://www.amazon.in/dp/B0D4F6FSYG?tag=gadgetvill09f-21",
-      "price": "\u20b9281",
-      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
-      "category": "electronics",
-      "asin": "B0D4F6FSYG",
-      "data_source": "serpapi",
-      "posted_date": "2025-09-14T13:19:53.179299+05:30",
-      "session_type": "afternoon",
-      "link_index": 77
     }
   ]
 }
