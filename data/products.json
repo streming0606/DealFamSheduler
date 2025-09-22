@@ -1,8 +1,36 @@
 {
-  "last_updated": "2025-09-21T21:20:13.615217+05:30",
+  "last_updated": "2025-09-22T10:17:36.640011+05:30",
   "total_products": 50,
   "daily_target": 6,
   "products": [
+    {
+      "id": "product_morning_1_20250922_044729",
+      "title": "JANCOM Electric Fitness Slimming Massager Waist Trimmer Belt Abdominal Belly Vibro Shape Vibrating W...",
+      "image": "https://m.media-amazon.com/images/I/61jziMK-3GL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B09DGC9ZVD?tag=gadgetvill09f-21",
+      "price": "\u20b91,360",
+      "rating": "\u2b50\u2b50\u2b50\u2606\u2606",
+      "category": "electronics",
+      "asin": "B09DGC9ZVD",
+      "data_source": "serpapi",
+      "posted_date": "2025-09-22T10:17:29.584411+05:30",
+      "session_type": "morning",
+      "link_index": 213
+    },
+    {
+      "id": "product_morning_2_20250922_044736",
+      "title": "Matrix Minimalist Dual Colour Dial with Softest Silicone Strap Analog Wrist Watch for Men & Boys",
+      "image": "https://m.media-amazon.com/images/I/61V9NlP5unL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0F2FD5VCD?tag=gadgetvill09f-21",
+      "price": "\u20b9199",
+      "rating": "\u2b50\u2b50\u2b50\u2606\u2606",
+      "category": "fashion",
+      "asin": "B0F2FD5VCD",
+      "data_source": "serpapi",
+      "posted_date": "2025-09-22T10:17:36.374108+05:30",
+      "session_type": "morning",
+      "link_index": 214
+    },
     {
       "id": "product_night_1_20250921_155013",
       "title": "Milton Rapid Electric Kettle 1.8L | 1500 Watts | Stainless Steel Hot Water portable Electric Kettle ...",
@@ -674,34 +702,6 @@
       "posted_date": "2025-09-15T10:18:50.779457+05:30",
       "session_type": "morning",
       "link_index": 88
-    },
-    {
-      "id": "product_night_1_20250914_155024",
-      "title": "Kobo Weight Lifting Straps Power Gym Support",
-      "image": "https://m.media-amazon.com/images/I/511crJ30wtL._AC_UL320_.jpg",
-      "affiliate_link": "https://www.amazon.in/dp/B010WVL7W6?tag=gadgetvill09f-21",
-      "price": "\u20b9359",
-      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
-      "category": "electronics",
-      "asin": "B010WVL7W6",
-      "data_source": "serpapi",
-      "posted_date": "2025-09-14T21:20:24.846297+05:30",
-      "session_type": "night",
-      "link_index": 83
-    },
-    {
-      "id": "product_afternoon_1_20250914_074946",
-      "title": "Philips HR3705/10 300 Watt Lightweight Hand Mixer, Blender with 5 speed control settings, stainless ...",
-      "image": "https://m.media-amazon.com/images/I/71rsVfDPlAL._AC_UL320_.jpg",
-      "affiliate_link": "https://www.amazon.in/dp/B07GDR7VZ3?tag=gadgetvill09f-21",
-      "price": "\u20b92,399",
-      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
-      "category": "electronics",
-      "asin": "B07GDR7VZ3",
-      "data_source": "serpapi",
-      "posted_date": "2025-09-14T13:19:46.831499+05:30",
-      "session_type": "afternoon",
-      "link_index": 76
     }
   ]
 }
