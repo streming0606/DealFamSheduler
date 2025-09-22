@@ -1,8 +1,22 @@
 {
-  "last_updated": "2025-09-22T18:45:56.401672+05:30",
+  "last_updated": "2025-09-22T21:20:10.382689+05:30",
   "total_products": 50,
   "daily_target": 6,
   "products": [
+    {
+      "id": "product_night_1_20250922_155010",
+      "title": "Butterfly Smart 2 Litres Table-Top Wet Grinder|150 Watts|Shockproof ABS Body| Coconut Scrapper Attac...",
+      "image": "https://m.media-amazon.com/images/I/61YTGRehHSL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B078HG2ZPS?tag=gadgetvill09f-21",
+      "price": "\u20b93,849",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "home",
+      "asin": "B078HG2ZPS",
+      "data_source": "serpapi",
+      "posted_date": "2025-09-22T21:20:10.009258+05:30",
+      "session_type": "night",
+      "link_index": 227
+    },
     {
       "id": "product_morning_1_20250922_131549",
       "title": "IONIX Jewellery Scale | Weight Scale | Digital Weight Machine | weight machine for gold | Electronic...",
@@ -688,20 +702,6 @@
       "posted_date": "2025-09-15T18:37:57.496207+05:30",
       "session_type": "morning",
       "link_index": 97
-    },
-    {
-      "id": "product_morning_2_20250915_130804",
-      "title": "beatXP Kitchen Scale Multipurpose Portable Electronic Digital Weighing Scale | Weight Machine With B...",
-      "image": "https://m.media-amazon.com/images/I/61Is7sICRJL._AC_UL320_.jpg",
-      "affiliate_link": "https://www.amazon.in/dp/B0B61DSF17?tag=gadgetvill09f-21",
-      "price": "\u20b9299",
-      "rating": "\u2b50\u2b50\u2b50\u2606\u2606",
-      "category": "home",
-      "asin": "B0B61DSF17",
-      "data_source": "serpapi",
-      "posted_date": "2025-09-15T18:38:04.245830+05:30",
-      "session_type": "morning",
-      "link_index": 98
     }
   ]
 }
