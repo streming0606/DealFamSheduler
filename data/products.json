@@ -1,8 +1,36 @@
 {
-  "last_updated": "2025-09-23T13:20:10.627934+05:30",
+  "last_updated": "2025-09-23T18:38:05.253804+05:30",
   "total_products": 50,
   "daily_target": 6,
   "products": [
+    {
+      "id": "product_morning_1_20250923_130758",
+      "title": "Nivia Trainer Jump Rope With Spring, Skipping Rope For Men, Women & Children, Jumping Rope With Adju...",
+      "image": "https://m.media-amazon.com/images/I/614AKi6audL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DW3WXP2H?tag=gadgetvill09f-21",
+      "price": "\u20b999",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "home",
+      "asin": "B0DW3WXP2H",
+      "data_source": "serpapi",
+      "posted_date": "2025-09-23T18:37:58.451522+05:30",
+      "session_type": "morning",
+      "link_index": 241
+    },
+    {
+      "id": "product_morning_2_20250923_130805",
+      "title": "AGARO Royal Stand Mixer 1000W with 5L SS Bowl and 8 Speed Setting I Includes Whisking Cone, Mixing B...",
+      "image": "https://m.media-amazon.com/images/I/61A-nKQFtDL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0977CGNJJ?tag=gadgetvill09f-21",
+      "price": "\u20b95,920",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B0977CGNJJ",
+      "data_source": "serpapi",
+      "posted_date": "2025-09-23T18:38:05.020342+05:30",
+      "session_type": "morning",
+      "link_index": 242
+    },
     {
       "id": "product_afternoon_1_20250923_075004",
       "title": "Tosaa T2STSR Sandwich Gas Non-Stick Aluminium | Compatibility with Gas Stoves | Flame-Proof Design |...",
@@ -674,34 +702,6 @@
       "posted_date": "2025-09-16T18:38:11.630372+05:30",
       "session_type": "morning",
       "link_index": 116
-    },
-    {
-      "id": "product_afternoon_1_20250916_075007",
-      "title": "PEEDA BATI PACK OF 6 BOTTLES BY GAYATRI PHARMACY.",
-      "image": "https://m.media-amazon.com/images/I/51FNMfbtspL._AC_UL320_.jpg",
-      "affiliate_link": "https://www.amazon.in/dp/B0DBQB4Z1Z?tag=gadgetvill09f-21",
-      "price": "\u20b9415",
-      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
-      "category": "electronics",
-      "asin": "B0DBQB4Z1Z",
-      "data_source": "serpapi",
-      "posted_date": "2025-09-16T13:20:07.553886+05:30",
-      "session_type": "afternoon",
-      "link_index": 110
-    },
-    {
-      "id": "product_afternoon_2_20250916_075015",
-      "title": "Philips Citrus Press Juicer HR2777/00, 0.5 Litre, 2 Sized Cones for different size fruit",
-      "image": "https://m.media-amazon.com/images/I/71rt4sk-0HL._AC_UL320_.jpg",
-      "affiliate_link": "https://www.amazon.in/dp/B09441T1KM?tag=gadgetvill09f-21",
-      "price": "\u20b91,195",
-      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
-      "category": "electronics",
-      "asin": "B09441T1KM",
-      "data_source": "serpapi",
-      "posted_date": "2025-09-16T13:20:15.288512+05:30",
-      "session_type": "afternoon",
-      "link_index": 111
     }
   ]
 }
