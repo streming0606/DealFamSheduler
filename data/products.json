@@ -1,8 +1,22 @@
 {
-  "last_updated": "2025-09-23T18:38:05.253804+05:30",
+  "last_updated": "2025-09-23T21:20:25.450881+05:30",
   "total_products": 50,
   "daily_target": 6,
   "products": [
+    {
+      "id": "product_night_1_20250923_155025",
+      "title": "Bata Men Slippers",
+      "image": "https://m.media-amazon.com/images/I/51LEfkCeVAL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B09W5YKZ7Z?tag=gadgetvill09f-21",
+      "price": "\u20b9339",
+      "rating": "\u2b50\u2b50\u2b50\u2606\u2606",
+      "category": "electronics",
+      "asin": "B09W5YKZ7Z",
+      "data_source": "serpapi",
+      "posted_date": "2025-09-23T21:20:25.130220+05:30",
+      "session_type": "night",
+      "link_index": 245
+    },
     {
       "id": "product_morning_1_20250923_130758",
       "title": "Nivia Trainer Jump Rope With Spring, Skipping Rope For Men, Women & Children, Jumping Rope With Adju...",
@@ -688,20 +702,6 @@
       "posted_date": "2025-09-16T18:38:05.335511+05:30",
       "session_type": "morning",
       "link_index": 115
-    },
-    {
-      "id": "product_morning_2_20250916_130811",
-      "title": "Nivia Knee Support for men and women, Knee Brace, Knee Cap, Knee Wrap, Running, cycling, Gym For Com...",
-      "image": "https://m.media-amazon.com/images/I/61zKi69wboL._AC_UL320_.jpg",
-      "affiliate_link": "https://www.amazon.in/dp/B00IAPKZ0W?tag=gadgetvill09f-21",
-      "price": "\u20b9279",
-      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
-      "category": "fashion",
-      "asin": "B00IAPKZ0W",
-      "data_source": "serpapi",
-      "posted_date": "2025-09-16T18:38:11.630372+05:30",
-      "session_type": "morning",
-      "link_index": 116
     }
   ]
 }
