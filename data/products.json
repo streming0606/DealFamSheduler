@@ -1,8 +1,36 @@
 {
-  "last_updated": "2025-09-22T21:20:10.382689+05:30",
+  "last_updated": "2025-09-23T10:17:43.497676+05:30",
   "total_products": 50,
   "daily_target": 6,
   "products": [
+    {
+      "id": "product_morning_1_20250923_044736",
+      "title": "ALN Sweat Slim Belt - Slim Belt for Men and Women, Tummy Trimmer, Body Shaper, Sauna Waist Trainer -...",
+      "image": "https://m.media-amazon.com/images/I/41pn9ejM5uL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B09HMVJM81?tag=gadgetvill09f-21",
+      "price": "\u20b9175",
+      "rating": "\u2b50\u2b50\u2b50\u2606\u2606",
+      "category": "electronics",
+      "asin": "B09HMVJM81",
+      "data_source": "serpapi",
+      "posted_date": "2025-09-23T10:17:36.169994+05:30",
+      "session_type": "morning",
+      "link_index": 231
+    },
+    {
+      "id": "product_morning_2_20250923_044743",
+      "title": "Bajaj ATX 4 750 watts 2-Slice Pop-up Toaster | Dust Cover & Slide Out Crumb Tray | 6-Level Browning ...",
+      "image": "https://m.media-amazon.com/images/I/61fgJs4zIqL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0073QGKAS?tag=gadgetvill09f-21",
+      "price": "\u20b91,199",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B0073QGKAS",
+      "data_source": "serpapi",
+      "posted_date": "2025-09-23T10:17:43.177510+05:30",
+      "session_type": "morning",
+      "link_index": 232
+    },
     {
       "id": "product_night_1_20250922_155010",
       "title": "Butterfly Smart 2 Litres Table-Top Wet Grinder|150 Watts|Shockproof ABS Body| Coconut Scrapper Attac...",
@@ -674,34 +702,6 @@
       "posted_date": "2025-09-16T10:16:44.446168+05:30",
       "session_type": "morning",
       "link_index": 106
-    },
-    {
-      "id": "product_night_1_20250915_155017",
-      "title": "Acnos\u00ae Premium Brand Digital 4 Colours Square Dial Unisex Wrist Watch for Men Women Pack of 1 (WR)",
-      "image": "https://m.media-amazon.com/images/I/61GWaL9HTiL._AC_UL320_.jpg",
-      "affiliate_link": "https://www.amazon.in/dp/B0BZJ1B578?tag=gadgetvill09f-21",
-      "price": "\u20b9280",
-      "rating": "\u2b50\u2b50\u2b50\u2606\u2606",
-      "category": "fashion",
-      "asin": "B0BZJ1B578",
-      "data_source": "serpapi",
-      "posted_date": "2025-09-15T21:20:17.221483+05:30",
-      "session_type": "night",
-      "link_index": 101
-    },
-    {
-      "id": "product_morning_1_20250915_130757",
-      "title": "WildHorn RFID Protected Leather Wallet for Men, Brown",
-      "image": "https://m.media-amazon.com/images/I/81c+kUeOzlL._AC_UL320_.jpg",
-      "affiliate_link": "https://www.amazon.in/dp/B079TN3GCD?tag=gadgetvill09f-21",
-      "price": "\u20b9297",
-      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
-      "category": "electronics",
-      "asin": "B079TN3GCD",
-      "data_source": "serpapi",
-      "posted_date": "2025-09-15T18:37:57.496207+05:30",
-      "session_type": "morning",
-      "link_index": 97
     }
   ]
 }
