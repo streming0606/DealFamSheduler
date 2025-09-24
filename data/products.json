@@ -1,8 +1,36 @@
 {
-  "last_updated": "2025-09-23T21:20:25.450881+05:30",
+  "last_updated": "2025-09-24T10:18:00.087100+05:30",
   "total_products": 50,
   "daily_target": 6,
   "products": [
+    {
+      "id": "product_morning_1_20250924_044752",
+      "title": "Holstein Housewares Mini Waffle Maker Machine 3 In 1 Waffle Iron Home Appliances Kitchen Easy To Cle...",
+      "image": "https://m.media-amazon.com/images/I/71+THxD33IL._AC_UY218_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0F8VDKTNP?tag=gadgetvill09f-21",
+      "price": "\u20b9649",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "home",
+      "asin": "B0F8VDKTNP",
+      "data_source": "serpapi",
+      "posted_date": "2025-09-24T10:17:52.559484+05:30",
+      "session_type": "morning",
+      "link_index": 249
+    },
+    {
+      "id": "product_morning_2_20250924_044759",
+      "title": "SWAGR Sports Crew Socks for Men Premimum Cotton Athletic Socks, Pack of 3, Free Size",
+      "image": "https://m.media-amazon.com/images/I/913coqRee6L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DHSHNZ98?tag=gadgetvill09f-21",
+      "price": "\u20b999",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B0DHSHNZ98",
+      "data_source": "serpapi",
+      "posted_date": "2025-09-24T10:17:59.778919+05:30",
+      "session_type": "morning",
+      "link_index": 250
+    },
     {
       "id": "product_night_1_20250923_155025",
       "title": "Bata Men Slippers",
@@ -674,34 +702,6 @@
       "posted_date": "2025-09-17T10:17:00.775497+05:30",
       "session_type": "morning",
       "link_index": 124
-    },
-    {
-      "id": "product_night_1_20250916_155012",
-      "title": "Nivia Radar Sippers Bottle for Sports Cycling, Gym & Running Bottle for Training, Exercise, & Fitnes...",
-      "image": "https://m.media-amazon.com/images/I/61OOsPggsBL._AC_UL320_.jpg",
-      "affiliate_link": "https://www.amazon.in/dp/B00MM1TPRY?tag=gadgetvill09f-21",
-      "price": "\u20b9159",
-      "rating": "\u2b50\u2b50\u2b50\u2606\u2606",
-      "category": "home",
-      "asin": "B00MM1TPRY",
-      "data_source": "serpapi",
-      "posted_date": "2025-09-16T21:20:12.639984+05:30",
-      "session_type": "night",
-      "link_index": 119
-    },
-    {
-      "id": "product_morning_1_20250916_130805",
-      "title": "Prestige 1.5 litre PKOSS Stainless Steel Electric Kettle | 1350 Watts| Elegant Design | Cool-touch H...",
-      "image": "https://m.media-amazon.com/images/I/51Q11RNy8dL._AC_UL320_.jpg",
-      "affiliate_link": "https://www.amazon.in/dp/B01MQZ7J8K?tag=gadgetvill09f-21",
-      "price": "\u20b9699",
-      "rating": "\u2b50\u2b50\u2b50\u2606\u2606",
-      "category": "electronics",
-      "asin": "B01MQZ7J8K",
-      "data_source": "serpapi",
-      "posted_date": "2025-09-16T18:38:05.335511+05:30",
-      "session_type": "morning",
-      "link_index": 115
     }
   ]
 }
