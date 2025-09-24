@@ -1,8 +1,36 @@
 {
-  "last_updated": "2025-09-24T13:20:05.665450+05:30",
+  "last_updated": "2025-09-24T18:38:08.726912+05:30",
   "total_products": 50,
   "daily_target": 6,
   "products": [
+    {
+      "id": "product_morning_1_20250924_130801",
+      "title": "IBELL SLIM50 Induction Cooktop, 2000W, BIS Certified, LED Display, 2 Yr Warranty, Auto Shut-Off, Ove...",
+      "image": "https://m.media-amazon.com/images/I/61Y8U5yE36L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CPJFJNMP?tag=gadgetvill09f-21",
+      "price": "\u20b91,295",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B0CPJFJNMP",
+      "data_source": "serpapi",
+      "posted_date": "2025-09-24T18:38:01.744354+05:30",
+      "session_type": "morning",
+      "link_index": 259
+    },
+    {
+      "id": "product_morning_2_20250924_130808",
+      "title": "HealthSense Weight Machine for Kitchen, Kitchen Food Weighing Scale for Health, Fitness, Home Baking...",
+      "image": "https://m.media-amazon.com/images/I/71VQ93ago8L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B093ZZVMVW?tag=gadgetvill09f-21",
+      "price": "\u20b9599",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "home",
+      "asin": "B093ZZVMVW",
+      "data_source": "serpapi",
+      "posted_date": "2025-09-24T18:38:08.545512+05:30",
+      "session_type": "morning",
+      "link_index": 260
+    },
     {
       "id": "product_afternoon_1_20250924_074958",
       "title": "Longway LWKWS01 Multipurpose Portable Digital Kitchen Weighing Scale |Weight Machine With Back Light...",
@@ -674,34 +702,6 @@
       "posted_date": "2025-09-17T18:37:50.399447+05:30",
       "session_type": "morning",
       "link_index": 133
-    },
-    {
-      "id": "product_morning_2_20250917_130756",
-      "title": "Prestige PIC 20 1600 Watts Induction Cooktop |Indian Menu Option |High Voltage Surge Protection| Aut...",
-      "image": "https://m.media-amazon.com/images/I/71+18JpxhOL._AC_UL320_.jpg",
-      "affiliate_link": "https://www.amazon.in/dp/B00YMJ0OI8?tag=gadgetvill09f-21",
-      "price": "\u20b91,899",
-      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
-      "category": "electronics",
-      "asin": "B00YMJ0OI8",
-      "data_source": "serpapi",
-      "posted_date": "2025-09-17T18:37:56.981573+05:30",
-      "session_type": "morning",
-      "link_index": 134
-    },
-    {
-      "id": "product_afternoon_1_20250917_074942",
-      "title": "BRONTIX Bluetooth Printer Mobile Support Thermal Printer | Upto 2 inch Print | Price tag Machine | S...",
-      "image": "https://m.media-amazon.com/images/I/71fgBVUQF6L._AC_UL320_.jpg",
-      "affiliate_link": "https://www.amazon.in/dp/B0F9YRSVCG?tag=gadgetvill09f-21",
-      "price": "\u20b92,499",
-      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
-      "category": "electronics",
-      "asin": "B0F9YRSVCG",
-      "data_source": "serpapi",
-      "posted_date": "2025-09-17T13:19:42.767976+05:30",
-      "session_type": "afternoon",
-      "link_index": 128
     }
   ]
 }
