@@ -1,8 +1,22 @@
 {
-  "last_updated": "2025-09-24T18:38:08.726912+05:30",
+  "last_updated": "2025-09-24T21:19:53.495827+05:30",
   "total_products": 50,
   "daily_target": 6,
   "products": [
+    {
+      "id": "product_night_1_20250924_154953",
+      "title": "BODY MAXX Plastic Gym Pencil Skipping Rope 1 Pcs, Red",
+      "image": "https://m.media-amazon.com/images/I/71T7V5QQdXL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B075KQPFQW?tag=gadgetvill09f-21",
+      "price": "\u20b982",
+      "rating": "\u2b50\u2b50\u2b50\u2606\u2606",
+      "category": "electronics",
+      "asin": "B075KQPFQW",
+      "data_source": "serpapi",
+      "posted_date": "2025-09-24T21:19:53.342563+05:30",
+      "session_type": "night",
+      "link_index": 263
+    },
     {
       "id": "product_morning_1_20250924_130801",
       "title": "IBELL SLIM50 Induction Cooktop, 2000W, BIS Certified, LED Display, 2 Yr Warranty, Auto Shut-Off, Ove...",
@@ -688,20 +702,6 @@
       "posted_date": "2025-09-17T21:20:46.541945+05:30",
       "session_type": "night",
       "link_index": 137
-    },
-    {
-      "id": "product_morning_1_20250917_130750",
-      "title": "Butterfly Smart 750 Watts Mixer Grinder with 4 Jars | 3 Stainless Steel Jars & 1 Juicer | ABS Body |...",
-      "image": "https://m.media-amazon.com/images/I/61QcAehpnzL._AC_UL320_.jpg",
-      "affiliate_link": "https://www.amazon.in/dp/B075JJ5NQC?tag=gadgetvill09f-21",
-      "price": "\u20b92,999",
-      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
-      "category": "electronics",
-      "asin": "B075JJ5NQC",
-      "data_source": "serpapi",
-      "posted_date": "2025-09-17T18:37:50.399447+05:30",
-      "session_type": "morning",
-      "link_index": 133
     }
   ]
 }
