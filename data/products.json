@@ -1,8 +1,36 @@
 {
-  "last_updated": "2025-09-24T10:18:00.087100+05:30",
+  "last_updated": "2025-09-24T13:20:05.665450+05:30",
   "total_products": 50,
   "daily_target": 6,
   "products": [
+    {
+      "id": "product_afternoon_1_20250924_074958",
+      "title": "Longway LWKWS01 Multipurpose Portable Digital Kitchen Weighing Scale |Weight Machine With Back Light...",
+      "image": "https://m.media-amazon.com/images/I/71u8JS441BL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0D14RVJ85?tag=gadgetvill09f-21",
+      "price": "\u20b9289",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "home",
+      "asin": "B0D14RVJ85",
+      "data_source": "serpapi",
+      "posted_date": "2025-09-24T13:19:58.758753+05:30",
+      "session_type": "afternoon",
+      "link_index": 254
+    },
+    {
+      "id": "product_afternoon_2_20250924_075005",
+      "title": "Sujata Grinder Steel Jar, 1000 ml (White, Stainless Steel)",
+      "image": "https://m.media-amazon.com/images/I/51pxdm8foML._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B01N4T2TPN?tag=gadgetvill09f-21",
+      "price": "\u20b9700",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B01N4T2TPN",
+      "data_source": "serpapi",
+      "posted_date": "2025-09-24T13:20:05.292556+05:30",
+      "session_type": "afternoon",
+      "link_index": 255
+    },
     {
       "id": "product_morning_1_20250924_044752",
       "title": "Holstein Housewares Mini Waffle Maker Machine 3 In 1 Waffle Iron Home Appliances Kitchen Easy To Cle...",
@@ -674,34 +702,6 @@
       "posted_date": "2025-09-17T13:19:42.767976+05:30",
       "session_type": "afternoon",
       "link_index": 128
-    },
-    {
-      "id": "product_afternoon_2_20250917_074950",
-      "title": "Nutripro Spare Wet Blade For Nutri Blender - By Nutripro",
-      "image": "https://m.media-amazon.com/images/I/71+7gj0p5HL._AC_UY218_.jpg",
-      "affiliate_link": "https://www.amazon.in/dp/B0DVZFPYYY?tag=gadgetvill09f-21",
-      "price": "\u20b9299",
-      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
-      "category": "electronics",
-      "asin": "B0DVZFPYYY",
-      "data_source": "serpapi",
-      "posted_date": "2025-09-17T13:19:50.522981+05:30",
-      "session_type": "afternoon",
-      "link_index": 129
-    },
-    {
-      "id": "product_morning_2_20250917_044700",
-      "title": "PHILIPS Digital Airfryer with Touch Panel, 4.1L, with RapidAir Technology,with additional 1 Yr Warra...",
-      "image": "https://m.media-amazon.com/images/I/41q4KIebFZL._AC_UL320_.jpg",
-      "affiliate_link": "https://www.amazon.in/dp/B097RJ867P?tag=gadgetvill09f-21",
-      "price": "\u20b97,499",
-      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
-      "category": "electronics",
-      "asin": "B097RJ867P",
-      "data_source": "serpapi",
-      "posted_date": "2025-09-17T10:17:00.775497+05:30",
-      "session_type": "morning",
-      "link_index": 124
     }
   ]
 }
