@@ -1,8 +1,36 @@
 {
-  "last_updated": "2025-09-25T13:20:16.263132+05:30",
+  "last_updated": "2025-09-25T18:46:05.281787+05:30",
   "total_products": 50,
   "daily_target": 6,
   "products": [
+    {
+      "id": "product_morning_1_20250925_131557",
+      "title": "Acnos\u00ae Premium Brand - A Digital Watch Shockproof Multi-Functional Automatic 5 Color Army Strap Wate...",
+      "image": "https://m.media-amazon.com/images/I/61wP1+eh4+S._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B095YWP668?tag=gadgetvill09f-21",
+      "price": "\u20b9260",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "fashion",
+      "asin": "B095YWP668",
+      "data_source": "serpapi",
+      "posted_date": "2025-09-25T18:45:57.971203+05:30",
+      "session_type": "morning",
+      "link_index": 277
+    },
+    {
+      "id": "product_morning_2_20250925_131604",
+      "title": "HACER Gym Gloves Weight Lifting Hand Grips with Wrist Wrap Support Half Finger Crossfit Glove for Wo...",
+      "image": "https://m.media-amazon.com/images/I/71RSnUhzPNL._AC_UY218_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0F1MV1KW7?tag=gadgetvill09f-21",
+      "price": "\u20b9296",
+      "rating": "\u2b50\u2b50\u2b50\u2606\u2606",
+      "category": "electronics",
+      "asin": "B0F1MV1KW7",
+      "data_source": "serpapi",
+      "posted_date": "2025-09-25T18:46:04.970827+05:30",
+      "session_type": "morning",
+      "link_index": 278
+    },
     {
       "id": "product_afternoon_1_20250925_075009",
       "title": "Prestige 500 Watts Apex Mixer Grinder with 3 Stainless Steel Jars|3 Super Efficient Blades|Sturdy Ha...",
@@ -674,34 +702,6 @@
       "posted_date": "2025-09-18T18:37:38.052024+05:30",
       "session_type": "morning",
       "link_index": 151
-    },
-    {
-      "id": "product_morning_2_20250918_130744",
-      "title": "Lifelong LLYM92 Yoga mat for Women & Men EVA Material 4mm Grey Anti Slip for Gym Workout",
-      "image": "https://m.media-amazon.com/images/I/612K2lgbyIL._AC_UL320_.jpg",
-      "affiliate_link": "https://www.amazon.in/dp/B09YJ475JC?tag=gadgetvill09f-21",
-      "price": "\u20b9299",
-      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
-      "category": "electronics",
-      "asin": "B09YJ475JC",
-      "data_source": "serpapi",
-      "posted_date": "2025-09-18T18:37:44.477626+05:30",
-      "session_type": "morning",
-      "link_index": 152
-    },
-    {
-      "id": "product_afternoon_1_20250918_075003",
-      "title": "PHILIPS Air Fryer NA120/00, uses up to 90% less fat, 1500W, 4.2 Liter, with Rapid Air Technology (Bl...",
-      "image": "https://m.media-amazon.com/images/I/41Z5ldkAeYL._AC_UL320_.jpg",
-      "affiliate_link": "https://www.amazon.in/dp/B0D14BB5XY?tag=gadgetvill09f-21",
-      "price": "\u20b94,357",
-      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
-      "category": "electronics",
-      "asin": "B0D14BB5XY",
-      "data_source": "serpapi",
-      "posted_date": "2025-09-18T13:20:03.568832+05:30",
-      "session_type": "afternoon",
-      "link_index": 146
     }
   ]
 }
