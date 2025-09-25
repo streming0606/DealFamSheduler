@@ -1,8 +1,36 @@
 {
-  "last_updated": "2025-09-24T21:19:53.495827+05:30",
+  "last_updated": "2025-09-25T10:18:03.534786+05:30",
   "total_products": 50,
   "daily_target": 6,
   "products": [
+    {
+      "id": "product_morning_1_20250925_044750",
+      "title": "Reading Glasses Combo (Pack of 2) for Men & Women | Full-Rim Spring Temple Glasses for All Face Shap...",
+      "image": "https://m.media-amazon.com/images/I/61p3VTiRSAL._AC_UY218_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0F4NDC2TY?tag=gadgetvill09f-21",
+      "price": "\u20b9269",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "home",
+      "asin": "B0F4NDC2TY",
+      "data_source": "serpapi",
+      "posted_date": "2025-09-25T10:17:50.134177+05:30",
+      "session_type": "morning",
+      "link_index": 267
+    },
+    {
+      "id": "product_morning_2_20250925_044803",
+      "title": "AGARO Sonnet Electric Kettle, 1.5L, 1500W, Stainless Steel Body, Quick Boil, Water Boiler, Hot Water...",
+      "image": "https://m.media-amazon.com/images/I/71PD3HugE9L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CV512GXW?tag=gadgetvill09f-21",
+      "price": "\u20b9664",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "health",
+      "asin": "B0CV512GXW",
+      "data_source": "serpapi",
+      "posted_date": "2025-09-25T10:18:03.238715+05:30",
+      "session_type": "morning",
+      "link_index": 268
+    },
     {
       "id": "product_night_1_20250924_154953",
       "title": "BODY MAXX Plastic Gym Pencil Skipping Rope 1 Pcs, Red",
@@ -674,34 +702,6 @@
       "posted_date": "2025-09-18T10:16:38.368630+05:30",
       "session_type": "morning",
       "link_index": 141
-    },
-    {
-      "id": "product_morning_2_20250918_044644",
-      "title": "Fashion Frill Silver Chain For Men Stylish Stainless Steel Bar Pendant Necklace Silver Chain Pendant...",
-      "image": "https://m.media-amazon.com/images/I/313sr5mjCEL._AC_UL320_.jpg",
-      "affiliate_link": "https://www.amazon.in/dp/B0CV3T1WBB?tag=gadgetvill09f-21",
-      "price": "\u20b9239",
-      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
-      "category": "electronics",
-      "asin": "B0CV3T1WBB",
-      "data_source": "serpapi",
-      "posted_date": "2025-09-18T10:16:44.856566+05:30",
-      "session_type": "morning",
-      "link_index": 142
-    },
-    {
-      "id": "product_night_1_20250917_155046",
-      "title": "Philips HD4934/00 1300W Induction Cooktop with Triple MOV for 4kW surge protection with soft touch c...",
-      "image": "https://m.media-amazon.com/images/I/51CdR8C6hHL._AC_UL320_.jpg",
-      "affiliate_link": "https://www.amazon.in/dp/B0DGKWNGKZ?tag=gadgetvill09f-21",
-      "price": "\u20b91,899",
-      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
-      "category": "health",
-      "asin": "B0DGKWNGKZ",
-      "data_source": "serpapi",
-      "posted_date": "2025-09-17T21:20:46.541945+05:30",
-      "session_type": "night",
-      "link_index": 137
     }
   ]
 }
