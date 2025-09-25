@@ -1,8 +1,36 @@
 {
-  "last_updated": "2025-09-25T10:18:03.534786+05:30",
+  "last_updated": "2025-09-25T13:20:16.263132+05:30",
   "total_products": 50,
   "daily_target": 6,
   "products": [
+    {
+      "id": "product_afternoon_1_20250925_075009",
+      "title": "Prestige 500 Watts Apex Mixer Grinder with 3 Stainless Steel Jars|3 Super Efficient Blades|Sturdy Ha...",
+      "image": "https://m.media-amazon.com/images/I/71m6-QZvrrL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DFCK2BJ2?tag=gadgetvill09f-21",
+      "price": "\u20b91,897",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B0DFCK2BJ2",
+      "data_source": "serpapi",
+      "posted_date": "2025-09-25T13:20:09.437577+05:30",
+      "session_type": "afternoon",
+      "link_index": 272
+    },
+    {
+      "id": "product_afternoon_2_20250925_075016",
+      "title": "MALAN Weight Loss Hot Slimming Belt for Men, Women Belly Sweat Slim Belt Neoprene Fat Burning Sauna ...",
+      "image": "https://m.media-amazon.com/images/I/51bZbuwZGHL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0C3ZWSTGQ?tag=gadgetvill09f-21",
+      "price": "\u20b9248",
+      "rating": "\u2b50\u2b50\u2b50\u2606\u2606",
+      "category": "health",
+      "asin": "B0C3ZWSTGQ",
+      "data_source": "serpapi",
+      "posted_date": "2025-09-25T13:20:16.103633+05:30",
+      "session_type": "afternoon",
+      "link_index": 273
+    },
     {
       "id": "product_morning_1_20250925_044750",
       "title": "Reading Glasses Combo (Pack of 2) for Men & Women | Full-Rim Spring Temple Glasses for All Face Shap...",
@@ -674,34 +702,6 @@
       "posted_date": "2025-09-18T13:20:03.568832+05:30",
       "session_type": "afternoon",
       "link_index": 146
-    },
-    {
-      "id": "product_afternoon_2_20250918_075010",
-      "title": "ZORO Men's Vegan Leather Belt for Men, Formal/Casual,Autolock,Black | Fit on up to 38 Inches Waist s...",
-      "image": "https://m.media-amazon.com/images/I/71hEGHI6AnL._AC_UL320_.jpg",
-      "affiliate_link": "https://www.amazon.in/dp/B0854J6N67?tag=gadgetvill09f-21",
-      "price": "\u20b9199",
-      "rating": "\u2b50\u2b50\u2b50\u2606\u2606",
-      "category": "electronics",
-      "asin": "B0854J6N67",
-      "data_source": "serpapi",
-      "posted_date": "2025-09-18T13:20:10.061698+05:30",
-      "session_type": "afternoon",
-      "link_index": 147
-    },
-    {
-      "id": "product_morning_1_20250918_044638",
-      "title": "PRANIJ Durable Small Soft Yoga Exercise Balls with Inflatable Straw, Mini Pilates Ball 23 CM/9 Inchs...",
-      "image": "https://m.media-amazon.com/images/I/71SK73MsyIS._AC_UL320_.jpg",
-      "affiliate_link": "https://www.amazon.in/dp/B0CP7G6SF4?tag=gadgetvill09f-21",
-      "price": "\u20b9259",
-      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
-      "category": "home",
-      "asin": "B0CP7G6SF4",
-      "data_source": "serpapi",
-      "posted_date": "2025-09-18T10:16:38.368630+05:30",
-      "session_type": "morning",
-      "link_index": 141
     }
   ]
 }
