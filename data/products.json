@@ -1,8 +1,22 @@
 {
-  "last_updated": "2025-09-25T18:46:05.281787+05:30",
+  "last_updated": "2025-09-25T21:20:51.263027+05:30",
   "total_products": 50,
   "daily_target": 6,
   "products": [
+    {
+      "id": "product_night_1_20250925_155050",
+      "title": "anciently Men 100% Natural Unpolished Karungali Malai Original Karungali Malai 8Mm-Natural Black Ebo...",
+      "image": "https://m.media-amazon.com/images/I/71Fc6qPGKjL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B09B5D8SJ7?tag=gadgetvill09f-21",
+      "price": "\u20b9668",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B09B5D8SJ7",
+      "data_source": "serpapi",
+      "posted_date": "2025-09-25T21:20:50.957658+05:30",
+      "session_type": "night",
+      "link_index": 281
+    },
     {
       "id": "product_morning_1_20250925_131557",
       "title": "Acnos\u00ae Premium Brand - A Digital Watch Shockproof Multi-Functional Automatic 5 Color Army Strap Wate...",
@@ -688,20 +702,6 @@
       "posted_date": "2025-09-18T21:20:02.126498+05:30",
       "session_type": "night",
       "link_index": 155
-    },
-    {
-      "id": "product_morning_1_20250918_130738",
-      "title": "Sujata Chutney Steel Jar, 500 ml, (White), Stainless Steel (White_1)",
-      "image": "https://m.media-amazon.com/images/I/61aGjmM7ErL._AC_UL320_.jpg",
-      "affiliate_link": "https://www.amazon.in/dp/B01MUAUOCX?tag=gadgetvill09f-21",
-      "price": "\u20b9580",
-      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
-      "category": "electronics",
-      "asin": "B01MUAUOCX",
-      "data_source": "serpapi",
-      "posted_date": "2025-09-18T18:37:38.052024+05:30",
-      "session_type": "morning",
-      "link_index": 151
     }
   ]
 }
