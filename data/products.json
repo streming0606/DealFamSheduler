@@ -1,8 +1,36 @@
 {
-  "last_updated": "2025-09-25T21:20:51.263027+05:30",
+  "last_updated": "2025-09-26T10:17:42.951293+05:30",
   "total_products": 50,
   "daily_target": 6,
   "products": [
+    {
+      "id": "product_morning_1_20250926_044734",
+      "title": "amazon basics Polyvinyl Chloride, Polypropylene Standard Jump Rope, Grey",
+      "image": "https://m.media-amazon.com/images/I/81wdb6hG6iL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07TCNBG5Y?tag=gadgetvill09f-21",
+      "price": "\u20b9312.90",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B07TCNBG5Y",
+      "data_source": "serpapi",
+      "posted_date": "2025-09-26T10:17:34.814401+05:30",
+      "session_type": "morning",
+      "link_index": 285
+    },
+    {
+      "id": "product_morning_2_20250926_044742",
+      "title": "Dumoyi Smart Weighted Hoop for Adults Weight Loss,Infinity Fitness Hoop Plus Size for Women Smart Ex...",
+      "image": "https://m.media-amazon.com/images/I/71zp4zBzHdL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0924TRVH5?tag=gadgetvill09f-21",
+      "price": "\u20b9706",
+      "rating": "\u2b50\u2b50\u2b50\u2606\u2606",
+      "category": "electronics",
+      "asin": "B0924TRVH5",
+      "data_source": "serpapi",
+      "posted_date": "2025-09-26T10:17:42.567318+05:30",
+      "session_type": "morning",
+      "link_index": 286
+    },
     {
       "id": "product_night_1_20250925_155050",
       "title": "anciently Men 100% Natural Unpolished Karungali Malai Original Karungali Malai 8Mm-Natural Black Ebo...",
@@ -674,34 +702,6 @@
       "posted_date": "2025-09-19T10:17:52.444647+05:30",
       "session_type": "morning",
       "link_index": 159
-    },
-    {
-      "id": "product_morning_2_20250919_044758",
-      "title": "Lifelong Polypropylene Exercise Fitness Stepper for Exercise Aerobics Stepper | Max Weight 200kg (Bl...",
-      "image": "https://m.media-amazon.com/images/I/61p1sbbqI4L._AC_UL320_.jpg",
-      "affiliate_link": "https://www.amazon.in/dp/B0DRVY4YBN?tag=gadgetvill09f-21",
-      "price": "\u20b9999",
-      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
-      "category": "electronics",
-      "asin": "B0DRVY4YBN",
-      "data_source": "serpapi",
-      "posted_date": "2025-09-19T10:17:58.950471+05:30",
-      "session_type": "morning",
-      "link_index": 160
-    },
-    {
-      "id": "product_night_1_20250918_155002",
-      "title": "HORNBULL Denial Navy Leather Wallet for Men | Genuine Leather Wallet with RFID Blocking | Purse for ...",
-      "image": "https://m.media-amazon.com/images/I/81S4AK8JtmL._AC_UL320_.jpg",
-      "affiliate_link": "https://www.amazon.in/dp/B085LFPKQB?tag=gadgetvill09f-21",
-      "price": "\u20b9449",
-      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
-      "category": "electronics",
-      "asin": "B085LFPKQB",
-      "data_source": "serpapi",
-      "posted_date": "2025-09-18T21:20:02.126498+05:30",
-      "session_type": "night",
-      "link_index": 155
     }
   ]
 }
