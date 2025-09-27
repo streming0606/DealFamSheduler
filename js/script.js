@@ -157,8 +157,14 @@ function initializeScrollers() {
     }
 }
 
+
+
+
+
+
+
 // Enhanced Product Card Functions
-function createProductCard(product, index = 0) {
+function    /*createProductCard*/ createEnhancedProductCard            (product, index = 0) {
     const card = document.createElement('div');
     card.className = 'product-card';
     card.setAttribute('data-category', product.category);
@@ -264,6 +270,97 @@ function enhanceProductData(product) {
         stockCount
     };
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Enhanced Thrift Zone - Product Card Features
+// Global variables for new features
+let productTimers = {};
+let productLikes = JSON.parse(localStorage.getItem('productLikes') || '{}');
+let productComments = JSON.parse(localStorage.getItem('productComments') || '{}');
+
+// Initialize enhanced features
+function initializeEnhancedFeatures() {
+    console.log('🚀 Initializing enhanced product features');
+
+    // Initialize timers for all products
+    if (allProducts && allProducts.length > 0) {
+        allProducts.forEach(product => {
+            initializeProductTimer(product.id);
+            initializeProductLikes(product.id);
+            initializeProductComments(product.id);
+        });
+    }
+
+    // Update timers every second
+    setInterval(updateAllTimers, 1000);
+}
+
+// FEATURE 1: RANDOM COUNTDOWN TIMER
+function initializeProductTimer(productId) {
+    const savedTimer = localStorage.getItem(`timer_${productId}`);
+    const now = Date.now();
+
+    if (savedTimer) {
+        const timerData = JSON.parse(savedTimer);
+        const timeLeft = timerData.endTime - now;
+
+        if (timeLeft > 0) {
+            // Timer still running
+            productTimers[productId] = {
+                endTime: timerData.endTime,
+                expired: false,
+                showingExpired: false
+            };
+        } else if (timeLeft > -3600000) { // Less than 1 hour expired
+            // Show as expired
+            productTimers[productId] = {
+                endTime: timerData.endTime,
+                expired: true,
+                showingExpired: true,
+                restoreTime: timerData.endTime + 3600000 // Restore after 1 hour
+            };
+        } else {
+            // Create new timer (expired more than 1 hour ago)
+            createNewTimer(productId);
+        }
+    } else {
+        // Create new timer
+        createNewTimer(productId);
+    }
+}
+
+function createNewTimer(productId) {
+    const now = Date.now();
+    // Random time between 30 minutes to 8 hours
+    con
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // FIXED Horizontal Scrolling Functionality
 class HorizontalDealsScroller {
