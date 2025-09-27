@@ -1123,6 +1123,161 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
+// Flash Deals rotation implementation
+const FLASH_DEALS_DURATION_MS = 10 * 60 * 1000; // 10 minutes in milliseconds
+const FLASH_DEALS_COUNT = 25; // number of products shown
+
+let flashDealsProducts = [];
+let flashDealsIndex = 0; // tracks current rotation start index
+
+// Create and insert flash deals container below banner and above categories
+function createFlashDealsSection() {
+    const banner = document.querySelector('.banner');
+    if (!banner) {
+        console.warn('Banner section not found. Flash Deals not injected.');
+        return;
+    }
+    // Create flash deals container div
+    const container = document.createElement('section');
+    container.id = 'flash-deals-section';
+    container.style.opacity = 0; // start hidden for fade-in
+
+    container.innerHTML = `
+        <h2 class="flash-deals-title">🔥 Flash Deals - 10 Minutes Only</h2>
+        <div id="flash-deals-container" class="products-grid"></div>
+        <div class="flash-deals-timer-container">
+            <div id="flash-deals-timer" class="flash-deals-timer">Loading...</div>
+        </div>
+    `;
+
+    banner.insertAdjacentElement('afterend', container);
+    fadeInElement(container, 500);
+}
+
+// Filter allProducts to get flash deals candidates (high discount & limited)
+function getFlashDealCandidates() {
+    return allProducts.filter(p => {
+        const discountNum = p.discount ? parseFloat(p.discount) : 0;
+        return discountNum >= 25 && p.limited === true;
+    });
+}
+
+// Render flash deals to container
+function renderFlashDeals() {
+    const container = document.getElementById('flash-deals-container');
+    if (!container) return;
+
+    // Get current 25 products slice for rotation
+    if (flashDealsProducts.length === 0) return;
+    let currentSlice = flashDealsProducts.slice(flashDealsIndex, flashDealsIndex + FLASH_DEALS_COUNT);
+
+    // Wrap around if end exceeded
+    if (currentSlice.length < FLASH_DEALS_COUNT) {
+        currentSlice = currentSlice.concat(flashDealsProducts.slice(0, FLASH_DEALS_COUNT - currentSlice.length));
+    }
+
+    // Clear and render cards for current slice
+    container.innerHTML = '';
+    currentSlice.forEach(product => {
+        const cardHTML = createEnhancedProductCard(product); // reuse product card creation function
+        container.insertAdjacentHTML('beforeend', cardHTML);
+    });
+
+    initializeEnhancedFeatures(); // to setup timers, likes, comments for new cards
+}
+
+// Countdown timer display for flash deals section
+let flashDealsTimerInterval = null;
+function startFlashDealsCountdown() {
+    const timerElement = document.getElementById('flash-deals-timer');
+    if (!timerElement) return;
+    let endTime = Date.now() + FLASH_DEALS_DURATION_MS;
+
+    // Clear previous interval
+    if (flashDealsTimerInterval) clearInterval(flashDealsTimerInterval);
+
+    flashDealsTimerInterval = setInterval(() => {
+        let remaining = endTime - Date.now();
+        if (remaining <= 0) {
+            remaining = 0;
+            clearInterval(flashDealsTimerInterval);
+            rotateFlashDeals();
+        }
+        let minutes = Math.floor(remaining / (1000 * 60));
+        let seconds = Math.floor((remaining % (1000 * 60)) / 1000);
+        timerElement.textContent = `Time Remaining: ${minutes}m ${seconds}s`;
+    }, 1000);
+}
+
+// Fade out, rotate index, and fade in new flash deals
+function rotateFlashDeals() {
+    const container = document.getElementById('flash-deals-section');
+    if (!container) return;
+    fadeOutElement(container, 500, () => {
+        // Update rotation index with wraparound
+        flashDealsIndex = (flashDealsIndex + FLASH_DEALS_COUNT) % flashDealsProducts.length;
+        renderFlashDeals();
+        fadeInElement(container, 500);
+        startFlashDealsCountdown();
+    });
+}
+
+// Utility fade-in
+function fadeInElement(element, duration = 500) {
+    element.style.transition = `opacity ${duration}ms ease-in`;
+    element.style.opacity = 0;
+    setTimeout(() => {
+        element.style.opacity = 1;
+    }, 20);
+}
+
+// Utility fade-out
+function fadeOutElement(element, duration = 500, callback) {
+    element.style.transition = `opacity ${duration}ms ease-out`;
+    element.style.opacity = 1;
+    setTimeout(() => {
+        element.style.opacity = 0;
+    }, 20);
+    setTimeout(() => {
+        if (callback) callback();
+    }, duration + 20);
+}
+
+// Initialize flash deals section
+function initializeFlashDeals() {
+    flashDealsProducts = getFlashDealCandidates();
+    if (flashDealsProducts.length === 0) {
+        console.warn('No flash deals available');
+        return;
+    }
+    createFlashDealsSection();
+    renderFlashDeals();
+    startFlashDealsCountdown();
+}
+
+// Call this after product data is loaded and page setup
+document.addEventListener('DOMContentLoaded', () => {
+    // Assuming allProducts defined and loaded globally
+    initializeFlashDeals();
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
