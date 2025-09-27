@@ -164,7 +164,7 @@ function initializeScrollers() {
 
 
 // Enhanced Product Card Functions
-function    /*createProductCard*/ createEnhancedProductCard            (product, index = 0) {
+function    createProductCard          (product, index = 0) {
     const card = document.createElement('div');
     card.className = 'product-card';
     card.setAttribute('data-category', product.category);
