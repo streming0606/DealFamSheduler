@@ -1,8 +1,22 @@
 {
-  "last_updated": "2025-09-27T18:31:16.824459+05:30",
+  "last_updated": "2025-09-27T21:20:34.016641+05:30",
   "total_products": 50,
   "daily_target": 6,
   "products": [
+    {
+      "id": "product_night_1_20250927_155033",
+      "title": "Boldfit Plastic Gym Typhoon Shaker Bottle, Leakproof Guarantee Sipper Bottle Ideal for Protein, Prew...",
+      "image": "https://m.media-amazon.com/images/I/51NKPZx0a6L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B08JTMZRJW?tag=gadgetvill09f-21",
+      "price": "\u20b9149",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B08JTMZRJW",
+      "data_source": "serpapi",
+      "posted_date": "2025-09-27T21:20:33.724284+05:30",
+      "session_type": "night",
+      "link_index": 317
+    },
     {
       "id": "product_morning_1_20250927_130109",
       "title": "Philips HL7756/01 750 Watt Mixer Grinder, 3 Stainless Steel Multipurpose Jars with 3 Speed Control a...",
@@ -688,20 +702,6 @@
       "posted_date": "2025-09-20T21:19:58.865085+05:30",
       "session_type": "night",
       "link_index": 191
-    },
-    {
-      "id": "product_morning_1_20250920_130222",
-      "title": "AMIFIT Wooden Jumping Skipping Rope | Unisex | Brown Handle | White Rope | Exercise & Fitness & Work...",
-      "image": "https://m.media-amazon.com/images/I/819ERtluCQL._AC_UL320_.jpg",
-      "affiliate_link": "https://www.amazon.in/dp/B09B455JRZ?tag=gadgetvill09f-21",
-      "price": "\u20b9149",
-      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
-      "category": "electronics",
-      "asin": "B09B455JRZ",
-      "data_source": "serpapi",
-      "posted_date": "2025-09-20T18:32:22.159289+05:30",
-      "session_type": "morning",
-      "link_index": 187
     }
   ]
 }
