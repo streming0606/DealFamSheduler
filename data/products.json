@@ -1,8 +1,36 @@
 {
-  "last_updated": "2025-09-27T13:20:08.479567+05:30",
+  "last_updated": "2025-09-27T18:31:16.824459+05:30",
   "total_products": 50,
   "daily_target": 6,
   "products": [
+    {
+      "id": "product_morning_1_20250927_130109",
+      "title": "Philips HL7756/01 750 Watt Mixer Grinder, 3 Stainless Steel Multipurpose Jars with 3 Speed Control a...",
+      "image": "https://m.media-amazon.com/images/I/71mL2bdyRdL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B01GZSQJPA?tag=gadgetvill09f-21",
+      "price": "\u20b92,699",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B01GZSQJPA",
+      "data_source": "serpapi",
+      "posted_date": "2025-09-27T18:31:09.736497+05:30",
+      "session_type": "morning",
+      "link_index": 313
+    },
+    {
+      "id": "product_morning_2_20250927_130116",
+      "title": "Philips HD4934/00 1300W Induction Cooktop with Triple MOV for 4kW surge protection with soft touch c...",
+      "image": "https://m.media-amazon.com/images/I/51CdR8C6hHL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DGKWNGKZ?tag=gadgetvill09f-21",
+      "price": "\u20b91,799",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "health",
+      "asin": "B0DGKWNGKZ",
+      "data_source": "serpapi",
+      "posted_date": "2025-09-27T18:31:16.421986+05:30",
+      "session_type": "morning",
+      "link_index": 314
+    },
     {
       "id": "product_afternoon_1_20250927_075001",
       "title": "HealthSense Chef-Mate KS 33 Digital Kitchen Weighing Scale & Food Weight Machine for Health, Fitness...",
@@ -674,34 +702,6 @@
       "posted_date": "2025-09-20T18:32:22.159289+05:30",
       "session_type": "morning",
       "link_index": 187
-    },
-    {
-      "id": "product_morning_2_20250920_130228",
-      "title": "Lifelong Dual Color TPE Material Yoga Mat for Women & Men|6mm Anti-Slip Yoga Mat for Gym Workout Exe...",
-      "image": "https://m.media-amazon.com/images/I/61+J--H8kHL._AC_UL320_.jpg",
-      "affiliate_link": "https://www.amazon.in/dp/B0D9VVQD2S?tag=gadgetvill09f-21",
-      "price": "\u20b9639",
-      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
-      "category": "home",
-      "asin": "B0D9VVQD2S",
-      "data_source": "serpapi",
-      "posted_date": "2025-09-20T18:32:28.918376+05:30",
-      "session_type": "morning",
-      "link_index": 188
-    },
-    {
-      "id": "product_afternoon_1_20250920_075004",
-      "title": "AGARO Galaxy Portable Blender, Portable Hand Blender For Kitchen, 450ml, For Smoothies, Shakes, 126W...",
-      "image": "https://m.media-amazon.com/images/I/71mEE3V7PSL._AC_UL320_.jpg",
-      "affiliate_link": "https://www.amazon.in/dp/B0CL7KY93F?tag=gadgetvill09f-21",
-      "price": "\u20b92,199",
-      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
-      "category": "home",
-      "asin": "B0CL7KY93F",
-      "data_source": "serpapi",
-      "posted_date": "2025-09-20T13:20:04.151705+05:30",
-      "session_type": "afternoon",
-      "link_index": 182
     }
   ]
 }
