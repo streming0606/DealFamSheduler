@@ -5142,6 +5142,80 @@ body, html {
 
 
 
+#flash-deals-section {
+    padding: 20px 40px;
+    background: #e8f3ff; /* light blue background */
+    margin-bottom: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(50, 100, 150, 0.1);
+    position: fixed;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90vw;
+    max-width: 1300px;
+    z-index: 999;
+    transition: opacity 0.5s ease;
+}
+
+.flash-deals-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #0b3c6b;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+#flash-deals-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 16px;
+    max-height: 440px;
+    overflow-y: auto;
+    padding-right: 8px;
+}
+
+.flash-deals-timer-container {
+    margin-top: 12px;
+    text-align: center;
+}
+
+.flash-deals-timer {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #ef4444;
+}
+
+/* Add scroll bar style for container */
+#flash-deals-container::-webkit-scrollbar {
+  width: 6px;
+}
+#flash-deals-container::-webkit-scrollbar-thumb {
+  background: #2874F0;
+  border-radius: 3px;
+}
+#flash-deals-container::-webkit-scrollbar-track {
+  background: #dbeafe;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* Footer */
