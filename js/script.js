@@ -241,6 +241,461 @@ function createProductCard(product, index = 0) {
     return card;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ========== ENHANCED FEATURES FUNCTIONALITY ==========
+
+class ProductEnhancedFeatures {
+    constructor() {
+        this.initializeFeatures();
+        this.loadStoredData();
+    }
+
+    initializeFeatures() {
+        // Initialize features for all existing products
+        setTimeout(() => {
+            this.addFeaturesToExistingProducts();
+        }, 1000);
+    }
+
+    addFeaturesToExistingProducts() {
+        const productCards = document.querySelectorAll('.product-card');
+        productCards.forEach((card, index) => {
+            if (!card.querySelector('.product-enhanced-features')) {
+                this.addFeaturesToCard(card, index);
+            }
+        });
+    }
+
+    addFeaturesToCard(productCard, productIndex) {
+        const productInfo = productCard.querySelector('.product-info');
+        const productActions = productCard.querySelector('.product-actions');
+        
+        if (!productInfo || !productActions) return;
+
+        // Create enhanced features section
+        const featuresSection = document.createElement('div');
+        featuresSection.className = 'product-enhanced-features';
+        featuresSection.innerHTML = this.createFeaturesHTML(productIndex);
+
+        // Insert before product actions
+        productInfo.insertBefore(featuresSection, productActions);
+
+        // Add event listeners
+        this.addFeatureEventListeners(productCard, productIndex);
+        
+        // Initialize timer
+        this.initializeTimer(productCard, productIndex);
+    }
+
+    createFeaturesHTML(productIndex) {
+        const likes = this.getLikes(productIndex);
+        const comments = this.getComments(productIndex);
+        
+        return `
+            <div class="features-grid">
+                <button class="feature-btn like-feature-btn" data-product="${productIndex}">
+                    <span class="feature-icon">❤️</span>
+                    <span class="feature-count like-count">${likes}</span>
+                </button>
+                
+                <button class="feature-btn share-feature-btn" data-product="${productIndex}">
+                    <span class="feature-icon">🔗</span>
+                    <span class="feature-text">Share</span>
+                </button>
+                
+                <button class="feature-btn comment-feature-btn ${comments.length > 0 ? 'has-comments' : ''}" data-product="${productIndex}">
+                    <span class="feature-icon">💬</span>
+                    <span class="feature-count comment-count">${comments.length}</span>
+                </button>
+                
+                <div class="feature-btn timer-feature-btn" data-product="${productIndex}">
+                    <span class="feature-icon">⏰</span>
+                    <span class="feature-count timer-display">--:--</span>
+                </div>
+            </div>
+        `;
+    }
+
+    addFeatureEventListeners(productCard, productIndex) {
+        // Like button
+        const likeBtn = productCard.querySelector('.like-feature-btn');
+        likeBtn?.addEventListener('click', (e) => {
+            e.preventDefault();
+            this.handleLike(productIndex, likeBtn);
+        });
+
+        // Share button
+        const shareBtn = productCard.querySelector('.share-feature-btn');
+        shareBtn?.addEventListener('click', (e) => {
+            e.preventDefault();
+            this.handleShare(productIndex);
+        });
+
+        // Comment button
+        const commentBtn = productCard.querySelector('.comment-feature-btn');
+        commentBtn?.addEventListener('click', (e) => {
+            e.preventDefault();
+            this.handleComment(productIndex, productCard);
+        });
+    }
+
+    handleLike(productIndex, button) {
+        let likes = this.getLikes(productIndex);
+        const isLiked = this.isLiked(productIndex);
+        
+        if (isLiked) {
+            likes = Math.max(0, likes - 1);
+            this.setLiked(productIndex, false);
+            button.classList.remove('active');
+        } else {
+            likes += 1;
+            this.setLiked(productIndex, true);
+            button.classList.add('active');
+        }
+        
+        this.setLikes(productIndex, likes);
+        button.querySelector('.like-count').textContent = likes;
+    }
+
+    handleShare(productIndex) {
+        if (navigator.share) {
+            const productCard = document.querySelector(`[data-product="${productIndex}"]`)?.closest('.product-card');
+            const productTitle = productCard?.querySelector('.product-title')?.textContent || 'Great Deal';
+            const currentUrl = window.location.href;
+            
+            navigator.share({
+                title: `${productTitle} - Thrift Zone`,
+                text: `Check out this amazing deal on Thrift Zone!`,
+                url: currentUrl
+            }).catch(err => {
+                console.log('Share failed:', err);
+                this.fallbackShare(currentUrl);
+            });
+        } else {
+            this.fallbackShare(window.location.href);
+        }
+    }
+
+    fallbackShare(url) {
+        if (navigator.clipboard) {
+            navigator.clipboard.writeText(url).then(() => {
+                this.showToast('Link copied to clipboard!');
+            });
+        } else {
+            // Fallback for older browsers
+            const textArea = document.createElement('textarea');
+            textArea.value = url;
+            document.body.appendChild(textArea);
+            textArea.select();
+            document.execCommand('copy');
+            document.body.removeChild(textArea);
+            this.showToast('Link copied to clipboard!');
+        }
+    }
+
+    handleComment(productIndex, productCard) {
+        this.showCommentModal(productIndex, productCard);
+    }
+
+    showCommentModal(productIndex, productCard) {
+        const productTitle = productCard.querySelector('.product-title')?.textContent || 'Product';
+        const comments = this.getComments(productIndex);
+        
+        const modal = document.createElement('div');
+        modal.className = 'comment-modal';
+        modal.innerHTML = `
+            <div class="comment-modal-content">
+                <div class="comment-modal-header">
+                    <h3 class="comment-modal-title">Comments - ${productTitle.substring(0, 30)}...</h3>
+                    <button class="comment-modal-close">&times;</button>
+                </div>
+                
+                <div class="comments-list">
+                    ${comments.map(comment => `
+                        <div class="comment-item">
+                            <div class="comment-author">${comment.author}</div>
+                            <div class="comment-text">${comment.text}</div>
+                            <div class="comment-date">${comment.date}</div>
+                        </div>
+                    `).join('')}
+                    ${comments.length === 0 ? '<p style="text-align: center; color: #6b7280; padding: 20px;">No comments yet. Be the first to comment!</p>' : ''}
+                </div>
+                
+                <div class="comment-input-section">
+                    <textarea class="comment-input" placeholder="Share your thoughts about this product..."></textarea>
+                    <button class="comment-submit-btn">Post Comment</button>
+                </div>
+            </div>
+        `;
+        
+        document.body.appendChild(modal);
+        
+        // Add event listeners
+        modal.querySelector('.comment-modal-close').addEventListener('click', () => {
+            document.body.removeChild(modal);
+        });
+        
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                document.body.removeChild(modal);
+            }
+        });
+        
+        modal.querySelector('.comment-submit-btn').addEventListener('click', () => {
+            const input = modal.querySelector('.comment-input');
+            const text = input.value.trim();
+            
+            if (text) {
+                this.addComment(productIndex, text);
+                input.value = '';
+                document.body.removeChild(modal);
+                
+                // Update comment count
+                const commentBtn = productCard.querySelector('.comment-feature-btn');
+                const newCount = this.getComments(productIndex).length;
+                commentBtn.querySelector('.comment-count').textContent = newCount;
+                commentBtn.classList.add('has-comments');
+                
+                this.showToast('Comment added successfully!');
+            }
+        });
+    }
+
+    initializeTimer(productCard, productIndex) {
+        // Random timer duration (5 minutes to 6 hours)
+        const minMinutes = 5;
+        const maxMinutes = 360; // 6 hours
+        const randomMinutes = Math.floor(Math.random() * (maxMinutes - minMinutes + 1)) + minMinutes;
+        
+        let endTime = this.getTimerEndTime(productIndex);
+        
+        // If no end time or expired, set new random timer
+        if (!endTime || endTime <= Date.now()) {
+            endTime = Date.now() + (randomMinutes * 60 * 1000);
+            this.setTimerEndTime(productIndex, endTime);
+        }
+        
+        this.updateTimer(productCard, productIndex, endTime);
+        
+        // Update every second
+        setInterval(() => {
+            this.updateTimer(productCard, productIndex, endTime);
+        }, 1000);
+    }
+
+    updateTimer(productCard, productIndex, endTime) {
+        const now = Date.now();
+        const timeLeft = endTime - now;
+        const timerDisplay = productCard.querySelector('.timer-display');
+        const timerBtn = productCard.querySelector('.timer-feature-btn');
+        
+        if (!timerDisplay) return;
+        
+        if (timeLeft <= 0) {
+            // Timer expired, restart with new random duration
+            const minMinutes = 5;
+            const maxMinutes = 360;
+            const randomMinutes = Math.floor(Math.random() * (maxMinutes - minMinutes + 1)) + minMinutes;
+            const newEndTime = Date.now() + (randomMinutes * 60 * 1000);
+            this.setTimerEndTime(productIndex, newEndTime);
+            endTime = newEndTime;
+            timerBtn?.classList.remove('urgent');
+        }
+        
+        const hours = Math.floor(timeLeft / (1000 * 60 * 60));
+        const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+        
+        if (hours > 0) {
+            timerDisplay.textContent = `${hours}h ${minutes}m`;
+        } else {
+            timerDisplay.textContent = `${minutes}:${seconds.toString().padStart(2, '0')}`;
+        }
+        
+        // Add urgent class when less than 30 minutes
+        if (timeLeft < 30 * 60 * 1000) {
+            timerBtn?.classList.add('urgent');
+        }
+    }
+
+    // Local Storage Methods
+    getLikes(productIndex) {
+        const likes = JSON.parse(localStorage.getItem('productLikes') || '{}');
+        return likes[productIndex] || Math.floor(Math.random() * 50) + 10; // Random initial likes
+    }
+
+    setLikes(productIndex, count) {
+        const likes = JSON.parse(localStorage.getItem('productLikes') || '{}');
+        likes[productIndex] = count;
+        localStorage.setItem('productLikes', JSON.stringify(likes));
+    }
+
+    isLiked(productIndex) {
+        const liked = JSON.parse(localStorage.getItem('likedProducts') || '{}');
+        return liked[productIndex] || false;
+    }
+
+    setLiked(productIndex, isLiked) {
+        const liked = JSON.parse(localStorage.getItem('likedProducts') || '{}');
+        liked[productIndex] = isLiked;
+        localStorage.setItem('likedProducts', JSON.stringify(liked));
+    }
+
+    getComments(productIndex) {
+        const comments = JSON.parse(localStorage.getItem('productComments') || '{}');
+        if (!comments[productIndex]) {
+            // Add some default positive comments
+            comments[productIndex] = this.getDefaultComments();
+            localStorage.setItem('productComments', JSON.stringify(comments));
+        }
+        return comments[productIndex] || [];
+    }
+
+    getDefaultComments() {
+        const defaultComments = [
+            { author: 'Sarah K.', text: 'Great deal! Just ordered mine 👍', date: '2 days ago' },
+            { author: 'Mike R.', text: 'Amazing quality for this price. Highly recommended!', date: '1 day ago' },
+            { author: 'Priya S.', text: 'Fast delivery and exactly as described. Love it! ❤️', date: '5 hours ago' }
+        ];
+        
+        // Return 0-2 random comments
+        const numComments = Math.floor(Math.random() * 3);
+        return defaultComments.slice(0, numComments);
+    }
+
+    addComment(productIndex, text) {
+        const comments = this.getComments(productIndex);
+        const newComment = {
+            author: 'You',
+            text: text,
+            date: 'Just now'
+        };
+        comments.unshift(newComment);
+        
+        const allComments = JSON.parse(localStorage.getItem('productComments') || '{}');
+        allComments[productIndex] = comments;
+        localStorage.setItem('productComments', JSON.stringify(allComments));
+    }
+
+    getTimerEndTime(productIndex) {
+        const timers = JSON.parse(localStorage.getItem('productTimers') || '{}');
+        return timers[productIndex];
+    }
+
+    setTimerEndTime(productIndex, endTime) {
+        const timers = JSON.parse(localStorage.getItem('productTimers') || '{}');
+        timers[productIndex] = endTime;
+        localStorage.setItem('productTimers', JSON.stringify(timers));
+    }
+
+    loadStoredData() {
+        // Initialize liked states
+        setTimeout(() => {
+            const liked = JSON.parse(localStorage.getItem('likedProducts') || '{}');
+            Object.keys(liked).forEach(productIndex => {
+                if (liked[productIndex]) {
+                    const likeBtn = document.querySelector(`[data-product="${productIndex}"].like-feature-btn`);
+                    likeBtn?.classList.add('active');
+                }
+            });
+        }, 1500);
+    }
+
+    showToast(message) {
+        const toast = document.createElement('div');
+        toast.style.cssText = `
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #2874F0;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            z-index: 10000;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            animation: slideInUp 0.3s ease;
+        `;
+        toast.textContent = message;
+        
+        document.body.appendChild(toast);
+        
+        setTimeout(() => {
+            toast.style.animation = 'slideOutDown 0.3s ease';
+            setTimeout(() => {
+                document.body.removeChild(toast);
+            }, 300);
+        }, 3000);
+    }
+}
+
+// Initialize enhanced features
+document.addEventListener('DOMContentLoaded', function() {
+    // Wait for products to load
+    setTimeout(() => {
+        window.productEnhancedFeatures = new ProductEnhancedFeatures();
+    }, 2000);
+});
+
+// Add CSS animation keyframes
+const style = document.createElement('style');
+style.textContent = `
+    @keyframes slideInUp {
+        from {
+            transform: translateY(100%);
+            opacity: 0;
+        }
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+    
+    @keyframes slideOutDown {
+        from {
+            transform: translateY(0);
+            opacity: 1;
+        }
+        to {
+            transform: translateY(100%);
+            opacity: 0;
+        }
+    }
+`;
+document.head.appendChild(style);
+
+
+
+
+
+
+
+
+
+
+
+
+
 // Enhanced product data generator
 function enhanceProductData(product) {
     const currentPriceMatch = product.price.match(/₹(\d+,?\d*)/);
