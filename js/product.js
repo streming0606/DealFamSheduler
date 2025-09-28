@@ -81,7 +81,7 @@ function displayProduct(product) {
     
     // Product info
     document.getElementById('product-name').textContent = product.title;
-    document.getElementById('product-category').textContent = 
+    document.getElementById('product-category').querySelector('.category-name').textContent = 
         product.category.charAt(0).toUpperCase() + product.category.slice(1);
     
     // Pricing
@@ -90,9 +90,9 @@ function displayProduct(product) {
     document.getElementById('discount-percent').textContent = `${enhancedData.discountPercent}% OFF`;
     document.getElementById('savings-amount').textContent = `You Save ₹${enhancedData.savings}`;
     
-    // Buy button
+    // Buy button - FIXED: Use correct property name
     const buyButton = document.getElementById('buy-now-btn');
-    buyButton.onclick = () => redirectToAmazon(product.affiliateLink);
+    buyButton.onclick = () => redirectToAmazon(product.affiliate_link || product.affiliateLink);
     
     // Initialize timer
     initializeProductTimer();
@@ -157,12 +157,14 @@ function updateTimer(endTime) {
     const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
     const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
     
-    const timerDisplay = document.getElementById('timer-display');
-    if (hours > 0) {
-        timerDisplay.textContent = `${hours}h ${minutes}m ${seconds}s`;
-    } else {
-        timerDisplay.textContent = `${minutes}m ${seconds}s`;
-    }
+    // Update individual timer elements
+    const hoursElement = document.getElementById('hours');
+    const minutesElement = document.getElementById('minutes');
+    const secondsElement = document.getElementById('seconds');
+    
+    if (hoursElement) hoursElement.textContent = hours.toString().padStart(2, '0');
+    if (minutesElement) minutesElement.textContent = minutes.toString().padStart(2, '0');
+    if (secondsElement) secondsElement.textContent = seconds.toString().padStart(2, '0');
 }
 
 // Load product features (likes, comments)
@@ -172,16 +174,20 @@ function loadProductFeatures(product) {
     // Load likes
     const likes = getLikes(productIndex);
     document.getElementById('like-count').textContent = likes;
+    document.getElementById('like-display').textContent = likes;
     
     // Load comments
     const comments = getComments(productIndex);
     document.getElementById('comment-count').textContent = comments.length;
+    document.getElementById('comment-display').textContent = comments.length;
     
     // Check if liked
     if (isLiked(productIndex)) {
         const likeBtn = document.querySelector('.like-btn');
-        likeBtn.classList.add('active');
-        likeBtn.querySelector('i').className = 'fas fa-thumbs-up';
+        if (likeBtn) {
+            likeBtn.classList.add('active');
+            likeBtn.querySelector('i').className = 'fas fa-thumbs-up';
+        }
     }
 }
 
@@ -246,10 +252,12 @@ function createProductURL(product) {
     return `product.html?id=${product.id}&title=${titleSlug}`;
 }
 
-// Redirect to Amazon with modal
+// Redirect to Amazon with modal - FIXED AND ENHANCED
 function redirectToAmazon(affiliateLink) {
-    if (!affiliateLink) {
-        alert('Product link not available');
+    console.log('Redirecting to:', affiliateLink); // Debug log
+    
+    if (!affiliateLink || affiliateLink === 'undefined' || affiliateLink === '') {
+        alert('Product link not available. Please try another product.');
         return;
     }
     
@@ -257,27 +265,50 @@ function redirectToAmazon(affiliateLink) {
     const modal = document.getElementById('redirect-modal');
     modal.style.display = 'flex';
     
-    // Countdown timer
+    // Countdown timer (2 seconds)
     let countdown = 2;
     const countdownElement = document.getElementById('countdown-timer');
+    const countdownText = document.getElementById('countdown-text');
+    
+    // Update initial countdown display
+    if (countdownElement) countdownElement.textContent = countdown;
+    if (countdownText) countdownText.textContent = countdown;
     
     const countdownInterval = setInterval(() => {
-        countdownElement.textContent = countdown;
         countdown--;
+        
+        if (countdownElement) countdownElement.textContent = countdown;
+        if (countdownText) countdownText.textContent = countdown;
         
         if (countdown < 0) {
             clearInterval(countdownInterval);
-            window.open(affiliateLink, '_blank');
+            
+            // Ensure we have a valid URL
+            let finalUrl = affiliateLink;
+            if (!finalUrl.startsWith('http')) {
+                finalUrl = 'https://' + finalUrl;
+            }
+            
+            console.log('Opening URL:', finalUrl); // Debug log
+            window.open(finalUrl, '_blank');
             modal.style.display = 'none';
         }
     }, 1000);
+    
+    // Close modal if clicked outside
+    modal.onclick = (e) => {
+        if (e.target === modal) {
+            clearInterval(countdownInterval);
+            modal.style.display = 'none';
+        }
+    };
 }
 
 // Product interaction functions
 function toggleLike() {
     const productIndex = currentProduct.id || Math.random().toString(36).substr(2, 9);
     const likeBtn = document.querySelector('.like-btn');
-    const likeCount = document.getElementById('like-count');
+    const likeCount = document.getElementById('like-display');
     
     let likes = getLikes(productIndex);
     const isCurrentlyLiked = isLiked(productIndex);
@@ -296,6 +327,7 @@ function toggleLike() {
     
     setLikes(productIndex, likes);
     likeCount.textContent = likes;
+    document.getElementById('like-count').textContent = likes;
 }
 
 function toggleWishlist() {
@@ -306,7 +338,7 @@ function toggleWishlist() {
     if (wishlistBtn.classList.contains('active')) {
         wishlistBtn.classList.remove('active');
         icon.className = 'far fa-heart';
-        text.textContent = 'Add to Wishlist';
+        text.textContent = 'Save for Later';
         showToast('Removed from wishlist');
     } else {
         wishlistBtn.classList.add('active');
@@ -384,6 +416,7 @@ function submitComment() {
     // Update comment count
     const comments = getComments(productIndex);
     document.getElementById('comment-count').textContent = comments.length;
+    document.getElementById('comment-display').textContent = comments.length;
     
     showToast('Comment added!');
 }
@@ -478,7 +511,11 @@ function showToast(message) {
     toast.textContent = message;
     document.body.appendChild(toast);
     
-    setTimeout(() => document.body.removeChild(toast), 3000);
+    setTimeout(() => {
+        if (document.body.contains(toast)) {
+            document.body.removeChild(toast);
+        }
+    }, 3000);
 }
 
 // Navigation functions
