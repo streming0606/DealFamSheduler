@@ -1,8 +1,36 @@
 {
-  "last_updated": "2025-09-28T10:16:32.878290+05:30",
+  "last_updated": "2025-09-28T13:20:03.695268+05:30",
   "total_products": 50,
   "daily_target": 6,
   "products": [
+    {
+      "id": "product_afternoon_1_20250928_074956",
+      "title": "\"Leosportz Weight Lifting Hook Straps - Leather Lifting Straps Reduce Cellulose | Weightlifting for ...",
+      "image": "https://m.media-amazon.com/images/I/71IOGZ6IsYL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DJ9D3Z7J?tag=gadgetvill09f-21",
+      "price": "\u20b9465",
+      "rating": "\u2b50\u2b50\u2b50\u2606\u2606",
+      "category": "electronics",
+      "asin": "B0DJ9D3Z7J",
+      "data_source": "serpapi",
+      "posted_date": "2025-09-28T13:19:56.998748+05:30",
+      "session_type": "afternoon",
+      "link_index": 326
+    },
+    {
+      "id": "product_afternoon_2_20250928_075003",
+      "title": "Blenxer Portable Blender 340 ml \u2013 USB-C Rechargeable, 40 W Personal Smoothie & Protein Shake Blender...",
+      "image": "https://m.media-amazon.com/images/I/71aWOaeg8nL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FKBQ3D1V?tag=gadgetvill09f-21",
+      "price": "\u20b91,699",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2b50",
+      "category": "home",
+      "asin": "B0FKBQ3D1V",
+      "data_source": "serpapi",
+      "posted_date": "2025-09-28T13:20:03.514413+05:30",
+      "session_type": "afternoon",
+      "link_index": 327
+    },
     {
       "id": "product_morning_1_20250928_044624",
       "title": "Themisto TH-WS15 Electronic digital Kitchen Weighing Scale |10 Kg|Back Light LCD| Made In India with...",
@@ -674,34 +702,6 @@
       "posted_date": "2025-09-21T13:19:57.642445+05:30",
       "session_type": "afternoon",
       "link_index": 200
-    },
-    {
-      "id": "product_afternoon_2_20250921_075004",
-      "title": "DeoDap Rakhi + Chocolates (K1_703_BS) | Raksha Bandhan Gift for Brother (96gm) | Sweets & Card",
-      "image": "https://m.media-amazon.com/images/I/71k-9Lq5z-L._AC_UL320_.jpg",
-      "affiliate_link": "https://www.amazon.in/dp/B08CBCRYDX?tag=gadgetvill09f-21",
-      "price": "\u20b9229",
-      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
-      "category": "electronics",
-      "asin": "B08CBCRYDX",
-      "data_source": "serpapi",
-      "posted_date": "2025-09-21T13:20:04.148383+05:30",
-      "session_type": "afternoon",
-      "link_index": 201
-    },
-    {
-      "id": "product_morning_1_20250921_044655",
-      "title": "Boldfit Stepper For Exercise Professional Aerobic Step Platform Gym Equipment For Home Workout Adjus...",
-      "image": "https://m.media-amazon.com/images/I/61VK7jisP2L._AC_UY218_.jpg",
-      "affiliate_link": "https://www.amazon.in/dp/B0F5BL4RNP?tag=gadgetvill09f-21",
-      "price": "\u20b91,299",
-      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
-      "category": "home",
-      "asin": "B0F5BL4RNP",
-      "data_source": "serpapi",
-      "posted_date": "2025-09-21T10:16:55.416124+05:30",
-      "session_type": "morning",
-      "link_index": 195
     }
   ]
 }
