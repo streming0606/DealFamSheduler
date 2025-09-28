@@ -1449,86 +1449,86 @@ function trackClick(productId) {
 
 
 
-// Handle View All Hot Deals button
-function showAllHotDeals(event) {
-    event.preventDefault();
+// // Handle View All Hot Deals button
+// function showAllHotDeals(event) {
+//     event.preventDefault();
     
-    // Hide horizontal section
-    const horizontalSection = document.querySelector('.horizontal-deals-container');
-    const fullSection = document.getElementById('full-products-section');
+//     // Hide horizontal section
+//     const horizontalSection = document.querySelector('.horizontal-deals-container');
+//     const fullSection = document.getElementById('full-products-section');
     
-    if (horizontalSection && fullSection) {
-        horizontalSection.style.display = 'none';
-        fullSection.style.display = 'block';
+//     if (horizontalSection && fullSection) {
+//         horizontalSection.style.display = 'none';
+//         fullSection.style.display = 'block';
         
-        // Scroll to full section
-        fullSection.scrollIntoView({ behavior: 'smooth' });
+//         // Scroll to full section
+//         fullSection.scrollIntoView({ behavior: 'smooth' });
         
-        // Trigger full product rendering if needed
-        if (typeof renderProducts === 'function') {
-            renderProducts();
-        }
-    }
-}
+//         // Trigger full product rendering if needed
+//         if (typeof renderProducts === 'function') {
+//             renderProducts();
+//         }
+//     }
+// }
 
-// Handle View All Loot Deals button  
-function showAllLootDeals(event) {
-    event.preventDefault();
+// // Handle View All Loot Deals button  
+// function showAllLootDeals(event) {
+//     event.preventDefault();
     
-    // Hide horizontal section
-    const horizontalSection = document.querySelector('.horizontal-loot-container');
-    const fullSection = document.getElementById('full-loot-section');
+//     // Hide horizontal section
+//     const horizontalSection = document.querySelector('.horizontal-loot-container');
+//     const fullSection = document.getElementById('full-loot-section');
     
-    if (horizontalSection && fullSection) {
-        horizontalSection.style.display = 'none';
-        fullSection.style.display = 'block';
+//     if (horizontalSection && fullSection) {
+//         horizontalSection.style.display = 'none';
+//         fullSection.style.display = 'block';
         
-        // Scroll to full section
-        fullSection.scrollIntoView({ behavior: 'smooth' });
+//         // Scroll to full section
+//         fullSection.scrollIntoView({ behavior: 'smooth' });
         
-        // Trigger loot deals rendering if the scroller exists
-        if (window.lootDealsScroller && typeof window.lootDealsScroller.showFullView === 'function') {
-            window.lootDealsScroller.showFullView();
-        }
-    }
-}
+//         // Trigger loot deals rendering if the scroller exists
+//         if (window.lootDealsScroller && typeof window.lootDealsScroller.showFullView === 'function') {
+//             window.lootDealsScroller.showFullView();
+//         }
+//     }
+// }
 
-// Handle back to preview buttons
-document.addEventListener('DOMContentLoaded', function() {
-    // Back to preview for hot deals
-    const backToPreviewBtn = document.getElementById('back-to-preview');
-    if (backToPreviewBtn) {
-        backToPreviewBtn.addEventListener('click', function() {
-            const horizontalSection = document.querySelector('.horizontal-deals-container');
-            const fullSection = document.getElementById('full-products-section');
+// // Handle back to preview buttons
+// document.addEventListener('DOMContentLoaded', function() {
+//     // Back to preview for hot deals
+//     const backToPreviewBtn = document.getElementById('back-to-preview');
+//     if (backToPreviewBtn) {
+//         backToPreviewBtn.addEventListener('click', function() {
+//             const horizontalSection = document.querySelector('.horizontal-deals-container');
+//             const fullSection = document.getElementById('full-products-section');
             
-            if (horizontalSection && fullSection) {
-                fullSection.style.display = 'none';
-                horizontalSection.style.display = 'block';
+//             if (horizontalSection && fullSection) {
+//                 fullSection.style.display = 'none';
+//                 horizontalSection.style.display = 'block';
                 
-                // Scroll back to deals section
-                document.getElementById('deals').scrollIntoView({ behavior: 'smooth' });
-            }
-        });
-    }
+//                 // Scroll back to deals section
+//                 document.getElementById('deals').scrollIntoView({ behavior: 'smooth' });
+//             }
+//         });
+//     }
     
-    // Back to preview for loot deals
-    const backToLootPreviewBtn = document.getElementById('back-to-loot-preview');
-    if (backToLootPreviewBtn) {
-        backToLootPreviewBtn.addEventListener('click', function() {
-            const horizontalSection = document.querySelector('.horizontal-loot-container');
-            const fullSection = document.getElementById('full-loot-section');
+//     // Back to preview for loot deals
+//     const backToLootPreviewBtn = document.getElementById('back-to-loot-preview');
+//     if (backToLootPreviewBtn) {
+//         backToLootPreviewBtn.addEventListener('click', function() {
+//             const horizontalSection = document.querySelector('.horizontal-loot-container');
+//             const fullSection = document.getElementById('full-loot-section');
             
-            if (horizontalSection && fullSection) {
-                fullSection.style.display = 'none';
-                horizontalSection.style.display = 'block';
+//             if (horizontalSection && fullSection) {
+//                 fullSection.style.display = 'none';
+//                 horizontalSection.style.display = 'block';
                 
-                // Scroll back to loot deals section
-                document.getElementById('loot-deals').scrollIntoView({ behavior: 'smooth' });
-            }
-        });
-    }
-});
+//                 // Scroll back to loot deals section
+//                 document.getElementById('loot-deals').scrollIntoView({ behavior: 'smooth' });
+//             }
+//         });
+//     }
+// });
 
 
 
