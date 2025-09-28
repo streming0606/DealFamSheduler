@@ -1123,185 +1123,104 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-// Flash Deals rotation implementation - FIXED VERSION
-const FLASH_DEALS_DURATION_MS = 10 * 60 * 1000; // 10 minutes in milliseconds
-const FLASH_DEALS_COUNT = 25; // number of products shown
+// Flash Deals rotation implementation (recent products only)
+const FLASH_DEALS_DURATION_MS = 10 * 60 * 1000; // 10 minutes
+const FLASH_DEALS_COUNT = 25; // number of product cards per batch
 
 let flashDealsProducts = [];
-let flashDealsIndex = 0; // tracks current rotation start index
+let flashDealsIndex = 0;
 
-// FIXED: Get flash deals candidates (recent products instead of high discount filtering)
+// Get the most recent 25 products, sorted by posted_date
 function getFlashDealCandidates() {
-    console.log('Total products available:', allProducts.length);
-    
-    // If no products, return empty array
-    if (!allProducts || allProducts.length === 0) {
-        console.warn('No products available for flash deals');
-        return [];
-    }
-    
-    // Sort by date (most recent first) - adapt field name as needed
-    const sortedProducts = [...allProducts].sort((a, b) => {
-        // Try different possible date fields
-        const dateA = new Date(a.postedDate || a.date || a.createdAt || 0);
-        const dateB = new Date(b.postedDate || b.date || b.createdAt || 0);
-        return dateB - dateA;
-    });
-    
-    console.log('Flash deals candidates found:', sortedProducts.length);
-    return sortedProducts;
+    if (!Array.isArray(allProducts) || allProducts.length === 0) return [];
+    // Sort by posted_date descending
+    const sorted = [...allProducts].sort((a, b) =>
+        new Date(b.posted_date) - new Date(a.posted_date)
+    );
+    // Get the top 25 or fill from remaining if fewer
+    return sorted.slice(0, Math.min(FLASH_DEALS_COUNT, sorted.length));
 }
 
-// FIXED: Render flash deals to the correct container
+// Render flash deals to the correct container
 function renderFlashDeals() {
-    const container = document.getElementById('flash-deals-products'); // FIXED: correct ID
+    const container = document.getElementById('flash-deals-products');
     if (!container) {
         console.error('Flash deals container not found!');
         return;
     }
-
-    // Get current slice for rotation
     if (flashDealsProducts.length === 0) {
-        console.warn('No flash deals products to display');
-        container.innerHTML = '<div class="no-deals">No deals available right now</div>';
+        container.innerHTML = '<div class="no-deals">No recent deals found.</div>';
         return;
     }
-
-    let currentSlice = flashDealsProducts.slice(flashDealsIndex, flashDealsIndex + FLASH_DEALS_COUNT);
-
-    // Wrap around if end exceeded
-    if (currentSlice.length < FLASH_DEALS_COUNT) {
-        const remaining = FLASH_DEALS_COUNT - currentSlice.length;
-        const wrapped = flashDealsProducts.slice(0, remaining);
-        currentSlice = currentSlice.concat(wrapped);
-    }
-
-    console.log('Rendering flash deals:', currentSlice.length, 'products');
-
-    // Clear loading state and render cards
     container.innerHTML = '';
-    currentSlice.forEach(product => {
-        const cardHTML = createEnhancedProductCard(product);
+    flashDealsProducts.forEach(product => {
+        // Use your own card builder, pass product object here
+        const cardHTML = createEnhancedProductCard(product); 
         container.insertAdjacentHTML('beforeend', cardHTML);
     });
-
-    // Initialize enhanced features for new cards
-    setTimeout(() => {
-        initializeEnhancedFeatures();
-    }, 100);
+    setTimeout(() => initializeEnhancedFeatures(), 100);
 }
 
 // Countdown timer display for flash deals section
 let flashDealsTimerInterval = null;
 function startFlashDealsCountdown() {
     const timerElement = document.getElementById('flash-deals-timer');
-    if (!timerElement) {
-        console.error('Flash deals timer element not found!');
-        return;
-    }
-    
+    if (!timerElement) return;
     let endTime = Date.now() + FLASH_DEALS_DURATION_MS;
-
-    // Clear previous interval
     if (flashDealsTimerInterval) clearInterval(flashDealsTimerInterval);
-
     flashDealsTimerInterval = setInterval(() => {
         let remaining = endTime - Date.now();
         if (remaining <= 0) {
-            remaining = 0;
             clearInterval(flashDealsTimerInterval);
             rotateFlashDeals();
             return;
         }
-        let minutes = Math.floor(remaining / (1000 * 60));
-        let seconds = Math.floor((remaining % (1000 * 60)) / 1000);
+        const minutes = Math.floor(remaining / (1000 * 60));
+        const seconds = Math.floor((remaining % (1000 * 60)) / 1000);
         timerElement.textContent = `⏰ ${minutes}m ${seconds}s left`;
     }, 1000);
 }
 
-// Fade out, rotate index, and fade in new flash deals
+// Fade utilities
+function fadeInElement(element, duration = 500) {
+    element.style.transition = `opacity ${duration}ms ease-in`;
+    element.style.opacity = 0;
+    setTimeout(() => { element.style.opacity = 1; }, 20);
+}
+function fadeOutElement(element, duration = 500, callback) {
+    element.style.transition = `opacity ${duration}ms ease-out`;
+    element.style.opacity = 1;
+    setTimeout(() => { element.style.opacity = 0; }, 20);
+    setTimeout(() => { if (callback) callback(); }, duration + 20);
+}
+
+// Fade out, reload, fade in
 function rotateFlashDeals() {
-    const container = document.getElementById('flash-deals-section');
-    if (!container) return;
-    
-    console.log('Rotating flash deals...');
-    
-    fadeOutElement(container, 500, () => {
-        // Update rotation index with wraparound
-        flashDealsIndex = (flashDealsIndex + FLASH_DEALS_COUNT) % flashDealsProducts.length;
-        console.log('New flash deals index:', flashDealsIndex);
-        
+    const section = document.querySelector('.flash-deals-section');
+    if (!section) return;
+    fadeOutElement(section, 500, () => {
+        // Update product candidates with most recent 25 from allProducts
+        flashDealsProducts = getFlashDealCandidates();
         renderFlashDeals();
-        fadeInElement(container, 500);
+        fadeInElement(section, 500);
         startFlashDealsCountdown();
     });
 }
 
-// Utility fade-in
-function fadeInElement(element, duration = 500) {
-    element.style.transition = `opacity ${duration}ms ease-in`;
-    element.style.opacity = 0;
-    setTimeout(() => {
-        element.style.opacity = 1;
-    }, 20);
-}
-
-// Utility fade-out
-function fadeOutElement(element, duration = 500, callback) {
-    element.style.transition = `opacity ${duration}ms ease-out`;
-    element.style.opacity = 1;
-    setTimeout(() => {
-        element.style.opacity = 0;
-    }, 20);
-    setTimeout(() => {
-        if (callback) callback();
-    }, duration + 20);
-}
-
-// FIXED: Initialize flash deals section
-function initializeFlashDeals() {
-    console.log('Initializing flash deals...');
-    
-    // Wait for allProducts to be available
-    if (!allProducts || allProducts.length === 0) {
-        console.log('Products not loaded yet, retrying...');
-        setTimeout(initializeFlashDeals, 1000);
+// INIT - Wait until allProducts is available
+function initializeFlashDealsWithWait() {
+    if (typeof allProducts === 'undefined' || allProducts.length === 0) {
+        setTimeout(initializeFlashDealsWithWait, 300);
         return;
     }
-
     flashDealsProducts = getFlashDealCandidates();
-    
-    if (flashDealsProducts.length === 0) {
-        console.warn('No flash deals available');
-        const container = document.getElementById('flash-deals-products');
-        if (container) {
-            container.innerHTML = '<div class="no-deals">No deals available right now</div>';
-        }
-        return;
-    }
-
-    console.log('Flash deals initialized with', flashDealsProducts.length, 'products');
     renderFlashDeals();
     startFlashDealsCountdown();
 }
 
-// FIXED: Call this after products are definitely loaded
-function initializeFlashDealsAfterProducts() {
-    // Wait a bit to ensure allProducts is populated
-    setTimeout(() => {
-        if (typeof allProducts !== 'undefined' && allProducts.length > 0) {
-            initializeFlashDeals();
-        } else {
-            console.log('Waiting for products to load...');
-            setTimeout(initializeFlashDealsAfterProducts, 500);
-        }
-    }, 500);
-}
+// Document ready setup (run this after your products load or DOM ready)
+document.addEventListener('DOMContentLoaded', initializeFlashDealsWithWait);
 
-// Initialize when DOM is ready AND after products are loaded
-document.addEventListener('DOMContentLoaded', () => {
-    initializeFlashDealsAfterProducts();
-});
 
 
 
