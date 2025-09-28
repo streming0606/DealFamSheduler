@@ -1,8 +1,22 @@
 {
-  "last_updated": "2025-09-28T18:31:57.906483+05:30",
+  "last_updated": "2025-09-28T21:20:36.393414+05:30",
   "total_products": 50,
   "daily_target": 6,
   "products": [
+    {
+      "id": "product_night_1_20250928_155036",
+      "title": "KENT Super Egg Boiler | 3 Boiling Modes | Stainless Steel Body and Heating Plate | 6 Eggs at a Time ...",
+      "image": "https://m.media-amazon.com/images/I/61yOHMcWNhL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B08JQZP7G1?tag=gadgetvill09f-21",
+      "price": "\u20b91,044",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "health",
+      "asin": "B08JQZP7G1",
+      "data_source": "serpapi",
+      "posted_date": "2025-09-28T21:20:36.226672+05:30",
+      "session_type": "night",
+      "link_index": 335
+    },
     {
       "id": "product_morning_1_20250928_130149",
       "title": "Orpat HHB-100E WOB 250-Watt Hand Blender (White)",
@@ -688,20 +702,6 @@
       "posted_date": "2025-09-21T21:20:13.384331+05:30",
       "session_type": "night",
       "link_index": 209
-    },
-    {
-      "id": "product_morning_1_20250921_130159",
-      "title": "Prestige IRIS ECO 1200 W Induction Cooktop with Automatic Voltage Regulator |Indian Menu Option |Hig...",
-      "image": "https://m.media-amazon.com/images/I/61Vu80YcolL._AC_UL320_.jpg",
-      "affiliate_link": "https://www.amazon.in/dp/B0C4DMRHYG?tag=gadgetvill09f-21",
-      "price": "\u20b91,599",
-      "rating": "\u2b50\u2b50\u2b50\u2606\u2606",
-      "category": "electronics",
-      "asin": "B0C4DMRHYG",
-      "data_source": "serpapi",
-      "posted_date": "2025-09-21T18:31:59.661542+05:30",
-      "session_type": "morning",
-      "link_index": 205
     }
   ]
 }
