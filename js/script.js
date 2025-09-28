@@ -216,15 +216,33 @@ function createProductCard(product, index = 0) {
             </div>
             
             <div class="product-actions">
-                <a href="${product.affiliate_link}" 
-                   target="_blank" 
-                   class="deal-btn" 
-                   onclick="trackClick('${product.id}')"
-                   rel="noopener noreferrer">
-                    <div>
+
+            
+
+
+
+
+
+
+
+
+
+
+            
+
+
+<a href="#" 
+   class="deal-btn" 
+   onclick="openProductPage('${product.id}', '${product.title}'); return false;"
+   rel="noopener noreferrer">
+    <div>
+
+
+
+                    
                         <div class="deal-btn-text">
                             <i class="fas fa-bolt"></i>
-                            Claim On Amazon
+                            View Deal Details
                         </div>
                         <div class="deal-btn-subtext">Save Big Today</div>
                     </div>
@@ -248,6 +266,16 @@ function createProductCard(product, index = 0) {
 
 
 
+// Product page navigation function
+function openProductPage(productId, productTitle) {
+    const titleSlug = productTitle.toLowerCase()
+        .replace(/[^a-z0-9\s]/g, '')
+        .replace(/\s+/g, '-')
+        .substring(0, 50);
+    
+    const productUrl = `product.html?id=${productId}&title=${titleSlug}`;
+    window.location.href = productUrl;
+}
 
 
 
@@ -932,7 +960,7 @@ class LootDealsScroller {
         
         checkProducts();
     }
-    
+
     setupPriceFilterButtons() {
         const horizontalFilters = document.querySelectorAll('.loot-price-filter .price-filter-btn');
         horizontalFilters.forEach(btn => {
