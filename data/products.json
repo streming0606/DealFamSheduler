@@ -1,8 +1,36 @@
 {
-  "last_updated": "2025-09-28T13:20:03.695268+05:30",
+  "last_updated": "2025-09-28T18:31:57.906483+05:30",
   "total_products": 50,
   "daily_target": 6,
   "products": [
+    {
+      "id": "product_morning_1_20250928_130149",
+      "title": "Orpat HHB-100E WOB 250-Watt Hand Blender (White)",
+      "image": "https://m.media-amazon.com/images/I/31k3k6GUQXL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B00A7PLVU6?tag=gadgetvill09f-21",
+      "price": "\u20b9786",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B00A7PLVU6",
+      "data_source": "serpapi",
+      "posted_date": "2025-09-28T18:31:49.850921+05:30",
+      "session_type": "morning",
+      "link_index": 331
+    },
+    {
+      "id": "product_morning_2_20250928_130157",
+      "title": "Daniel Hechter Paris Bercy Collection Modern Multi Functional Watch for Men with Square Dial and Sil...",
+      "image": "https://m.media-amazon.com/images/I/71Z3NkBq5PL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DZTNVL2M?tag=gadgetvill09f-21",
+      "price": "\u20b92,499",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "fashion",
+      "asin": "B0DZTNVL2M",
+      "data_source": "serpapi",
+      "posted_date": "2025-09-28T18:31:57.774798+05:30",
+      "session_type": "morning",
+      "link_index": 332
+    },
     {
       "id": "product_afternoon_1_20250928_074956",
       "title": "\"Leosportz Weight Lifting Hook Straps - Leather Lifting Straps Reduce Cellulose | Weightlifting for ...",
@@ -674,34 +702,6 @@
       "posted_date": "2025-09-21T18:31:59.661542+05:30",
       "session_type": "morning",
       "link_index": 205
-    },
-    {
-      "id": "product_morning_2_20250921_130207",
-      "title": "Bajaj GX-1 Mixer Grinder 500W | Superior Mixie For Kitchen | 2-In-1 For Dry Grinding | Blade Functio...",
-      "image": "https://m.media-amazon.com/images/I/51NNA+k9S0L._AC_UL320_.jpg",
-      "affiliate_link": "https://www.amazon.in/dp/B0BB3SDD7J?tag=gadgetvill09f-21",
-      "price": "\u20b91,899",
-      "rating": "\u2b50\u2b50\u2b50\u2606\u2606",
-      "category": "home",
-      "asin": "B0BB3SDD7J",
-      "data_source": "serpapi",
-      "posted_date": "2025-09-21T18:32:07.112130+05:30",
-      "session_type": "morning",
-      "link_index": 206
-    },
-    {
-      "id": "product_afternoon_1_20250921_074957",
-      "title": "STRAUSS Anti-Burst Rubber Gym Ball with Free Foot Pump | Round Shape Stability Ball for Core Strengt...",
-      "image": "https://m.media-amazon.com/images/I/61Wr4ED0OLL._AC_UL320_.jpg",
-      "affiliate_link": "https://www.amazon.in/dp/B07PKQG284?tag=gadgetvill09f-21",
-      "price": "\u20b9799",
-      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
-      "category": "home",
-      "asin": "B07PKQG284",
-      "data_source": "serpapi",
-      "posted_date": "2025-09-21T13:19:57.642445+05:30",
-      "session_type": "afternoon",
-      "link_index": 200
     }
   ]
 }
