@@ -1123,74 +1123,83 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-// Flash Deals rotation implementation
+// Flash Deals rotation implementation - FIXED VERSION
 const FLASH_DEALS_DURATION_MS = 10 * 60 * 1000; // 10 minutes in milliseconds
 const FLASH_DEALS_COUNT = 25; // number of products shown
 
 let flashDealsProducts = [];
 let flashDealsIndex = 0; // tracks current rotation start index
 
-// Create and insert flash deals container below banner and above categories
-function createFlashDealsSection() {
-    const banner = document.querySelector('.banner');
-    if (!banner) {
-        console.warn('Banner section not found. Flash Deals not injected.');
+// FIXED: Get flash deals candidates (recent products instead of high discount filtering)
+function getFlashDealCandidates() {
+    console.log('Total products available:', allProducts.length);
+    
+    // If no products, return empty array
+    if (!allProducts || allProducts.length === 0) {
+        console.warn('No products available for flash deals');
+        return [];
+    }
+    
+    // Sort by date (most recent first) - adapt field name as needed
+    const sortedProducts = [...allProducts].sort((a, b) => {
+        // Try different possible date fields
+        const dateA = new Date(a.postedDate || a.date || a.createdAt || 0);
+        const dateB = new Date(b.postedDate || b.date || b.createdAt || 0);
+        return dateB - dateA;
+    });
+    
+    console.log('Flash deals candidates found:', sortedProducts.length);
+    return sortedProducts;
+}
+
+// FIXED: Render flash deals to the correct container
+function renderFlashDeals() {
+    const container = document.getElementById('flash-deals-products'); // FIXED: correct ID
+    if (!container) {
+        console.error('Flash deals container not found!');
         return;
     }
-    // Create flash deals container div
-    const container = document.createElement('section');
-    container.id = 'flash-deals-section';
-    container.style.opacity = 0; // start hidden for fade-in
 
-    container.innerHTML = `
-        <h2 class="flash-deals-title">🔥 Flash Deals - 10 Minutes Only</h2>
-        <div id="flash-deals-container" class="products-grid"></div>
-        <div class="flash-deals-timer-container">
-            <div id="flash-deals-timer" class="flash-deals-timer">Loading...</div>
-        </div>
-    `;
+    // Get current slice for rotation
+    if (flashDealsProducts.length === 0) {
+        console.warn('No flash deals products to display');
+        container.innerHTML = '<div class="no-deals">No deals available right now</div>';
+        return;
+    }
 
-    banner.insertAdjacentElement('afterend', container);
-    fadeInElement(container, 500);
-}
-
-// Filter allProducts to get flash deals candidates (high discount & limited)
-function getFlashDealCandidates() {
-    return allProducts.filter(p => {
-        const discountNum = p.discount ? parseFloat(p.discount) : 0;
-        return discountNum >= 25 && p.limited === true;
-    });
-}
-
-// Render flash deals to container
-function renderFlashDeals() {
-    const container = document.getElementById('flash-deals-container');
-    if (!container) return;
-
-    // Get current 25 products slice for rotation
-    if (flashDealsProducts.length === 0) return;
     let currentSlice = flashDealsProducts.slice(flashDealsIndex, flashDealsIndex + FLASH_DEALS_COUNT);
 
     // Wrap around if end exceeded
     if (currentSlice.length < FLASH_DEALS_COUNT) {
-        currentSlice = currentSlice.concat(flashDealsProducts.slice(0, FLASH_DEALS_COUNT - currentSlice.length));
+        const remaining = FLASH_DEALS_COUNT - currentSlice.length;
+        const wrapped = flashDealsProducts.slice(0, remaining);
+        currentSlice = currentSlice.concat(wrapped);
     }
 
-    // Clear and render cards for current slice
+    console.log('Rendering flash deals:', currentSlice.length, 'products');
+
+    // Clear loading state and render cards
     container.innerHTML = '';
     currentSlice.forEach(product => {
-        const cardHTML = createEnhancedProductCard(product); // reuse product card creation function
+        const cardHTML = createEnhancedProductCard(product);
         container.insertAdjacentHTML('beforeend', cardHTML);
     });
 
-    initializeEnhancedFeatures(); // to setup timers, likes, comments for new cards
+    // Initialize enhanced features for new cards
+    setTimeout(() => {
+        initializeEnhancedFeatures();
+    }, 100);
 }
 
 // Countdown timer display for flash deals section
 let flashDealsTimerInterval = null;
 function startFlashDealsCountdown() {
     const timerElement = document.getElementById('flash-deals-timer');
-    if (!timerElement) return;
+    if (!timerElement) {
+        console.error('Flash deals timer element not found!');
+        return;
+    }
+    
     let endTime = Date.now() + FLASH_DEALS_DURATION_MS;
 
     // Clear previous interval
@@ -1202,10 +1211,11 @@ function startFlashDealsCountdown() {
             remaining = 0;
             clearInterval(flashDealsTimerInterval);
             rotateFlashDeals();
+            return;
         }
         let minutes = Math.floor(remaining / (1000 * 60));
         let seconds = Math.floor((remaining % (1000 * 60)) / 1000);
-        timerElement.textContent = `Time Remaining: ${minutes}m ${seconds}s`;
+        timerElement.textContent = `⏰ ${minutes}m ${seconds}s left`;
     }, 1000);
 }
 
@@ -1213,9 +1223,14 @@ function startFlashDealsCountdown() {
 function rotateFlashDeals() {
     const container = document.getElementById('flash-deals-section');
     if (!container) return;
+    
+    console.log('Rotating flash deals...');
+    
     fadeOutElement(container, 500, () => {
         // Update rotation index with wraparound
         flashDealsIndex = (flashDealsIndex + FLASH_DEALS_COUNT) % flashDealsProducts.length;
+        console.log('New flash deals index:', flashDealsIndex);
+        
         renderFlashDeals();
         fadeInElement(container, 500);
         startFlashDealsCountdown();
@@ -1243,23 +1258,51 @@ function fadeOutElement(element, duration = 500, callback) {
     }, duration + 20);
 }
 
-// Initialize flash deals section
+// FIXED: Initialize flash deals section
 function initializeFlashDeals() {
-    flashDealsProducts = getFlashDealCandidates();
-    if (flashDealsProducts.length === 0) {
-        console.warn('No flash deals available');
+    console.log('Initializing flash deals...');
+    
+    // Wait for allProducts to be available
+    if (!allProducts || allProducts.length === 0) {
+        console.log('Products not loaded yet, retrying...');
+        setTimeout(initializeFlashDeals, 1000);
         return;
     }
-    createFlashDealsSection();
+
+    flashDealsProducts = getFlashDealCandidates();
+    
+    if (flashDealsProducts.length === 0) {
+        console.warn('No flash deals available');
+        const container = document.getElementById('flash-deals-products');
+        if (container) {
+            container.innerHTML = '<div class="no-deals">No deals available right now</div>';
+        }
+        return;
+    }
+
+    console.log('Flash deals initialized with', flashDealsProducts.length, 'products');
     renderFlashDeals();
     startFlashDealsCountdown();
 }
 
-// Call this after product data is loaded and page setup
+// FIXED: Call this after products are definitely loaded
+function initializeFlashDealsAfterProducts() {
+    // Wait a bit to ensure allProducts is populated
+    setTimeout(() => {
+        if (typeof allProducts !== 'undefined' && allProducts.length > 0) {
+            initializeFlashDeals();
+        } else {
+            console.log('Waiting for products to load...');
+            setTimeout(initializeFlashDealsAfterProducts, 500);
+        }
+    }, 500);
+}
+
+// Initialize when DOM is ready AND after products are loaded
 document.addEventListener('DOMContentLoaded', () => {
-    // Assuming allProducts defined and loaded globally
-    initializeFlashDeals();
+    initializeFlashDealsAfterProducts();
 });
+
 
 
 
