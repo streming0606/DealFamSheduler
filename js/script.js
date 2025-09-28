@@ -261,16 +261,15 @@ function createProductCard(product, index = 0) {
 
 
 
-// ========== ENHANCED FEATURES FUNCTIONALITY ==========
+// ========== ULTRA COMPACT ENHANCED FEATURES ==========
 
-class ProductEnhancedFeatures {
+class CompactProductFeatures {
     constructor() {
         this.initializeFeatures();
         this.loadStoredData();
     }
 
     initializeFeatures() {
-        // Initialize features for all existing products
         setTimeout(() => {
             this.addFeaturesToExistingProducts();
         }, 1000);
@@ -280,78 +279,77 @@ class ProductEnhancedFeatures {
         const productCards = document.querySelectorAll('.product-card');
         productCards.forEach((card, index) => {
             if (!card.querySelector('.product-enhanced-features')) {
-                this.addFeaturesToCard(card, index);
+                this.addCompactFeaturesToCard(card, index);
             }
         });
     }
 
-    addFeaturesToCard(productCard, productIndex) {
+    addCompactFeaturesToCard(productCard, productIndex) {
         const productInfo = productCard.querySelector('.product-info');
         const productActions = productCard.querySelector('.product-actions');
         
         if (!productInfo || !productActions) return;
 
-        // Create enhanced features section
+        // Create ultra-compact features section
         const featuresSection = document.createElement('div');
         featuresSection.className = 'product-enhanced-features';
-        featuresSection.innerHTML = this.createFeaturesHTML(productIndex);
+        featuresSection.innerHTML = this.createCompactFeaturesHTML(productIndex);
 
-        // Insert before product actions
+        // Insert before product actions with minimal spacing
         productInfo.insertBefore(featuresSection, productActions);
 
         // Add event listeners
-        this.addFeatureEventListeners(productCard, productIndex);
+        this.addCompactFeatureEventListeners(productCard, productIndex);
         
         // Initialize timer
-        this.initializeTimer(productCard, productIndex);
+        this.initializeCompactTimer(productCard, productIndex);
     }
 
-    createFeaturesHTML(productIndex) {
+    createCompactFeaturesHTML(productIndex) {
         const likes = this.getLikes(productIndex);
         const comments = this.getComments(productIndex);
         
         return `
-            <div class="features-grid">
-                <button class="feature-btn like-feature-btn" data-product="${productIndex}">
-                    <span class="feature-icon">❤️</span>
-                    <span class="feature-count like-count">${likes}</span>
+            <div class="features-compact-row">
+                <button class="feature-compact-btn like-compact-btn" data-product="${productIndex}">
+                    <span class="feature-compact-icon">❤️</span>
+                    <span class="feature-compact-count">${likes}</span>
                 </button>
                 
-                <button class="feature-btn share-feature-btn" data-product="${productIndex}">
-                    <span class="feature-icon">🔗</span>
-                    <span class="feature-text">Share</span>
+                <button class="feature-compact-btn share-compact-btn" data-product="${productIndex}">
+                    <span class="feature-compact-icon">🔗</span>
                 </button>
                 
-                <button class="feature-btn comment-feature-btn ${comments.length > 0 ? 'has-comments' : ''}" data-product="${productIndex}">
-                    <span class="feature-icon">💬</span>
-                    <span class="feature-count comment-count">${comments.length}</span>
+                <button class="feature-compact-btn comment-compact-btn ${comments.length > 0 ? 'has-comments' : ''}" data-product="${productIndex}">
+                    <span class="feature-compact-icon">💬</span>
+                    <span class="feature-compact-count">${comments.length}</span>
                 </button>
                 
-                <div class="feature-btn timer-feature-btn" data-product="${productIndex}">
-                    <span class="feature-icon">⏰</span>
-                    <span class="feature-count timer-display">--:--</span>
+                <div class="feature-compact-btn timer-compact-btn" data-product="${productIndex}">
+                    <span class="feature-compact-icon">⏰</span>
+                    <span class="feature-compact-count timer-compact-display">--:--</span>
                 </div>
             </div>
         `;
     }
 
-    addFeatureEventListeners(productCard, productIndex) {
+    addCompactFeatureEventListeners(productCard, productIndex) {
         // Like button
-        const likeBtn = productCard.querySelector('.like-feature-btn');
+        const likeBtn = productCard.querySelector('.like-compact-btn');
         likeBtn?.addEventListener('click', (e) => {
             e.preventDefault();
             this.handleLike(productIndex, likeBtn);
         });
 
         // Share button
-        const shareBtn = productCard.querySelector('.share-feature-btn');
+        const shareBtn = productCard.querySelector('.share-compact-btn');
         shareBtn?.addEventListener('click', (e) => {
             e.preventDefault();
             this.handleShare(productIndex);
         });
 
         // Comment button
-        const commentBtn = productCard.querySelector('.comment-feature-btn');
+        const commentBtn = productCard.querySelector('.comment-compact-btn');
         commentBtn?.addEventListener('click', (e) => {
             e.preventDefault();
             this.handleComment(productIndex, productCard);
@@ -373,7 +371,10 @@ class ProductEnhancedFeatures {
         }
         
         this.setLikes(productIndex, likes);
-        button.querySelector('.like-count').textContent = likes;
+        const countElement = button.querySelector('.feature-compact-count');
+        if (countElement) {
+            countElement.textContent = likes;
+        }
     }
 
     handleShare(productIndex) {
@@ -384,10 +385,9 @@ class ProductEnhancedFeatures {
             
             navigator.share({
                 title: `${productTitle} - Thrift Zone`,
-                text: `Check out this amazing deal on Thrift Zone!`,
+                text: `Check out this amazing deal!`,
                 url: currentUrl
             }).catch(err => {
-                console.log('Share failed:', err);
                 this.fallbackShare(currentUrl);
             });
         } else {
@@ -398,25 +398,24 @@ class ProductEnhancedFeatures {
     fallbackShare(url) {
         if (navigator.clipboard) {
             navigator.clipboard.writeText(url).then(() => {
-                this.showToast('Link copied to clipboard!');
+                this.showCompactToast('Link copied!');
             });
         } else {
-            // Fallback for older browsers
             const textArea = document.createElement('textarea');
             textArea.value = url;
             document.body.appendChild(textArea);
             textArea.select();
             document.execCommand('copy');
             document.body.removeChild(textArea);
-            this.showToast('Link copied to clipboard!');
+            this.showCompactToast('Link copied!');
         }
     }
 
     handleComment(productIndex, productCard) {
-        this.showCommentModal(productIndex, productCard);
+        this.showCompactCommentModal(productIndex, productCard);
     }
 
-    showCommentModal(productIndex, productCard) {
+    showCompactCommentModal(productIndex, productCard) {
         const productTitle = productCard.querySelector('.product-title')?.textContent || 'Product';
         const comments = this.getComments(productIndex);
         
@@ -425,7 +424,7 @@ class ProductEnhancedFeatures {
         modal.innerHTML = `
             <div class="comment-modal-content">
                 <div class="comment-modal-header">
-                    <h3 class="comment-modal-title">Comments - ${productTitle.substring(0, 30)}...</h3>
+                    <h3 class="comment-modal-title">${productTitle.substring(0, 25)}...</h3>
                     <button class="comment-modal-close">&times;</button>
                 </div>
                 
@@ -437,19 +436,19 @@ class ProductEnhancedFeatures {
                             <div class="comment-date">${comment.date}</div>
                         </div>
                     `).join('')}
-                    ${comments.length === 0 ? '<p style="text-align: center; color: #6b7280; padding: 20px;">No comments yet. Be the first to comment!</p>' : ''}
+                    ${comments.length === 0 ? '<p style="text-align: center; color: #6b7280; padding: 15px; font-size: 0.8rem;">No comments yet!</p>' : ''}
                 </div>
                 
                 <div class="comment-input-section">
-                    <textarea class="comment-input" placeholder="Share your thoughts about this product..."></textarea>
-                    <button class="comment-submit-btn">Post Comment</button>
+                    <textarea class="comment-input" placeholder="Share your thoughts..."></textarea>
+                    <button class="comment-submit-btn">Post</button>
                 </div>
             </div>
         `;
         
         document.body.appendChild(modal);
         
-        // Add event listeners
+        // Event listeners
         modal.querySelector('.comment-modal-close').addEventListener('click', () => {
             document.body.removeChild(modal);
         });
@@ -470,48 +469,47 @@ class ProductEnhancedFeatures {
                 document.body.removeChild(modal);
                 
                 // Update comment count
-                const commentBtn = productCard.querySelector('.comment-feature-btn');
+                const commentBtn = productCard.querySelector('.comment-compact-btn');
                 const newCount = this.getComments(productIndex).length;
-                commentBtn.querySelector('.comment-count').textContent = newCount;
+                const countElement = commentBtn.querySelector('.feature-compact-count');
+                if (countElement) {
+                    countElement.textContent = newCount;
+                }
                 commentBtn.classList.add('has-comments');
                 
-                this.showToast('Comment added successfully!');
+                this.showCompactToast('Comment added!');
             }
         });
     }
 
-    initializeTimer(productCard, productIndex) {
-        // Random timer duration (5 minutes to 6 hours)
+    initializeCompactTimer(productCard, productIndex) {
         const minMinutes = 5;
-        const maxMinutes = 360; // 6 hours
+        const maxMinutes = 360;
         const randomMinutes = Math.floor(Math.random() * (maxMinutes - minMinutes + 1)) + minMinutes;
         
         let endTime = this.getTimerEndTime(productIndex);
         
-        // If no end time or expired, set new random timer
         if (!endTime || endTime <= Date.now()) {
             endTime = Date.now() + (randomMinutes * 60 * 1000);
             this.setTimerEndTime(productIndex, endTime);
         }
         
-        this.updateTimer(productCard, productIndex, endTime);
+        this.updateCompactTimer(productCard, productIndex, endTime);
         
-        // Update every second
         setInterval(() => {
-            this.updateTimer(productCard, productIndex, endTime);
+            this.updateCompactTimer(productCard, productIndex, endTime);
         }, 1000);
     }
 
-    updateTimer(productCard, productIndex, endTime) {
+    updateCompactTimer(productCard, productIndex, endTime) {
         const now = Date.now();
         const timeLeft = endTime - now;
-        const timerDisplay = productCard.querySelector('.timer-display');
-        const timerBtn = productCard.querySelector('.timer-feature-btn');
+        const timerDisplay = productCard.querySelector('.timer-compact-display');
+        const timerBtn = productCard.querySelector('.timer-compact-btn');
         
         if (!timerDisplay) return;
         
         if (timeLeft <= 0) {
-            // Timer expired, restart with new random duration
             const minMinutes = 5;
             const maxMinutes = 360;
             const randomMinutes = Math.floor(Math.random() * (maxMinutes - minMinutes + 1)) + minMinutes;
@@ -526,21 +524,22 @@ class ProductEnhancedFeatures {
         const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
         
         if (hours > 0) {
-            timerDisplay.textContent = `${hours}h ${minutes}m`;
+            timerDisplay.textContent = `${hours}h`;
+        } else if (minutes >= 10) {
+            timerDisplay.textContent = `${minutes}m`;
         } else {
             timerDisplay.textContent = `${minutes}:${seconds.toString().padStart(2, '0')}`;
         }
         
-        // Add urgent class when less than 30 minutes
         if (timeLeft < 30 * 60 * 1000) {
             timerBtn?.classList.add('urgent');
         }
     }
 
-    // Local Storage Methods
+    // Storage methods (same as before but more compact)
     getLikes(productIndex) {
         const likes = JSON.parse(localStorage.getItem('productLikes') || '{}');
-        return likes[productIndex] || Math.floor(Math.random() * 50) + 10; // Random initial likes
+        return likes[productIndex] || Math.floor(Math.random() * 50) + 10;
     }
 
     setLikes(productIndex, count) {
@@ -563,7 +562,6 @@ class ProductEnhancedFeatures {
     getComments(productIndex) {
         const comments = JSON.parse(localStorage.getItem('productComments') || '{}');
         if (!comments[productIndex]) {
-            // Add some default positive comments
             comments[productIndex] = this.getDefaultComments();
             localStorage.setItem('productComments', JSON.stringify(comments));
         }
@@ -572,12 +570,11 @@ class ProductEnhancedFeatures {
 
     getDefaultComments() {
         const defaultComments = [
-            { author: 'Sarah K.', text: 'Great deal! Just ordered mine 👍', date: '2 days ago' },
-            { author: 'Mike R.', text: 'Amazing quality for this price. Highly recommended!', date: '1 day ago' },
-            { author: 'Priya S.', text: 'Fast delivery and exactly as described. Love it! ❤️', date: '5 hours ago' }
+            { author: 'Sarah', text: 'Great deal! 👍', date: '2d ago' },
+            { author: 'Mike', text: 'Amazing quality!', date: '1d ago' },
+            { author: 'Priya', text: 'Love it! ❤️', date: '5h ago' }
         ];
         
-        // Return 0-2 random comments
         const numComments = Math.floor(Math.random() * 3);
         return defaultComments.slice(0, numComments);
     }
@@ -587,7 +584,7 @@ class ProductEnhancedFeatures {
         const newComment = {
             author: 'You',
             text: text,
-            date: 'Just now'
+            date: 'now'
         };
         comments.unshift(newComment);
         
@@ -608,19 +605,18 @@ class ProductEnhancedFeatures {
     }
 
     loadStoredData() {
-        // Initialize liked states
         setTimeout(() => {
             const liked = JSON.parse(localStorage.getItem('likedProducts') || '{}');
             Object.keys(liked).forEach(productIndex => {
                 if (liked[productIndex]) {
-                    const likeBtn = document.querySelector(`[data-product="${productIndex}"].like-feature-btn`);
+                    const likeBtn = document.querySelector(`[data-product="${productIndex}"].like-compact-btn`);
                     likeBtn?.classList.add('active');
                 }
             });
         }, 1500);
     }
 
-    showToast(message) {
+    showCompactToast(message) {
         const toast = document.createElement('div');
         toast.style.cssText = `
             position: fixed;
@@ -628,61 +624,30 @@ class ProductEnhancedFeatures {
             right: 20px;
             background: #2874F0;
             color: white;
-            padding: 12px 20px;
-            border-radius: 8px;
-            font-size: 0.9rem;
+            padding: 8px 12px;
+            border-radius: 6px;
+            font-size: 0.8rem;
             font-weight: 500;
             z-index: 10000;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-            animation: slideInUp 0.3s ease;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
         `;
         toast.textContent = message;
         
         document.body.appendChild(toast);
         
         setTimeout(() => {
-            toast.style.animation = 'slideOutDown 0.3s ease';
-            setTimeout(() => {
-                document.body.removeChild(toast);
-            }, 300);
-        }, 3000);
+            document.body.removeChild(toast);
+        }, 2000);
     }
 }
 
-// Initialize enhanced features
+// Initialize compact features
 document.addEventListener('DOMContentLoaded', function() {
-    // Wait for products to load
     setTimeout(() => {
-        window.productEnhancedFeatures = new ProductEnhancedFeatures();
+        window.compactProductFeatures = new CompactProductFeatures();
     }, 2000);
 });
 
-// Add CSS animation keyframes
-const style = document.createElement('style');
-style.textContent = `
-    @keyframes slideInUp {
-        from {
-            transform: translateY(100%);
-            opacity: 0;
-        }
-        to {
-            transform: translateY(0);
-            opacity: 1;
-        }
-    }
-    
-    @keyframes slideOutDown {
-        from {
-            transform: translateY(0);
-            opacity: 1;
-        }
-        to {
-            transform: translateY(100%);
-            opacity: 0;
-        }
-    }
-`;
-document.head.appendChild(style);
 
 
 
