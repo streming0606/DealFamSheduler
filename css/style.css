@@ -3265,6 +3265,75 @@ p {
 
 
 
+
+
+
+/* About Section */
+
+.about {
+  padding: var(--spacing-3xl) 0;
+  background-color: var(--surface);
+}
+
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 2rem;
+  margin-bottom: var(--spacing-lg);
+  color: var(--text-primary);
+}
+
+.about p {
+  font-size: 1.125rem;
+  margin-bottom: var(--spacing-2xl);
+  color: var(--text-secondary);
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--spacing-xl);
+  margin-top: var(--spacing-2xl);
+}
+
+.feature-item {
+  text-align: center;
+  padding: var(--spacing-lg);
+}
+
+.feature-item i {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  margin-bottom: var(--spacing-md);
+}
+
+.feature-item h4 {
+  font-size: 1.125rem;
+  margin-bottom: var(--spacing-sm);
+  color: var(--text-primary);
+}
+
+.feature-item p {
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 /* ================== FOOTER - MOBILE OPTIMIZED ================== */
 .footer {
   background-color: var(--text-primary);
