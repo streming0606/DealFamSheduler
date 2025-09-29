@@ -276,6 +276,418 @@ class ThriftZoneBlog {
             });
         });
 
+
+
+
+
+
+
+
+
+
+
+
+
+// Image Optimization Functions
+class ImageOptimizer {
+    constructor() {
+        this.supportedFormats = this.checkImageSupport();
+        this.lazyImageObserver = null;
+        this.initLazyLoading();
+    }
+
+    checkImageSupport() {
+        const canvas = document.createElement('canvas');
+        const ctx = canvas.getContext('2d');
+        
+        return {
+            webp: canvas.toDataURL('image/webp').indexOf('data:image/webp') === 0,
+            avif: canvas.toDataURL('image/avif').indexOf('data:image/avif') === 0
+        };
+    }
+
+    getOptimizedImageUrl(imagePath, format = 'webp') {
+        if (!imagePath) return '';
+        
+        const pathParts = imagePath.split('.');
+        const extension = pathParts.pop();
+        const basePath = pathParts.join('.');
+        
+        // Return WebP version if supported, otherwise original
+        if (this.supportedFormats.webp && format === 'webp') {
+            return `${basePath}.webp`;
+        }
+        
+        return imagePath;
+    }
+
+    generateImageSrcSet(imagePath) {
+        if (!imagePath) return '';
+        
+        const pathParts = imagePath.split('.');
+        const extension = pathParts.pop();
+        const basePath = pathParts.join('.');
+        
+        const sizes = [320, 640, 960, 1280];
+        const srcSet = sizes.map(size => 
+            `${basePath}-${size}w.${extension} ${size}w`
+        ).join(', ');
+        
+        return srcSet;
+    }
+
+    optimizeImage(imgElement, imagePath, alt = '', caption = '') {
+        // Set loading attributes
+        imgElement.loading = 'lazy';
+        imgElement.decoding = 'async';
+        
+        // Set alt text for SEO
+        imgElement.alt = alt || this.generateAltText(imagePath);
+        
+        // Add structured data attributes
+        imgElement.setAttribute('itemProp', 'image');
+        
+        // Set optimized source
+        const optimizedSrc = this.getOptimizedImageUrl(imagePath);
+        imgElement.src = optimizedSrc;
+        
+        // Add srcset for responsive images
+        const srcSet = this.generateImageSrcSet(imagePath);
+        if (srcSet) {
+            imgElement.srcset = srcSet;
+            imgElement.sizes = '(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw';
+        }
+        
+        // Add error handling
+        imgElement.onerror = () => {
+            imgElement.classList.add('image-error');
+            console.error(`Failed to load image: ${imagePath}`);
+        };
+        
+        // Add load success handler
+        imgElement.onload = () => {
+            imgElement.classList.add('loaded');
+            imgElement.classList.remove('loading');
+        };
+        
+        return imgElement;
+    }
+
+    generateAltText(imagePath) {
+        const filename = imagePath.split('/').pop().split('.')[0];
+        return filename.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
+    }
+
+    initLazyLoading() {
+        if ('IntersectionObserver' in window) {
+            this.lazyImageObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const img = entry.target;
+                        const src = img.dataset.src;
+                        
+                        if (src) {
+                            img.src = src;
+                            img.classList.remove('lazy-image');
+                            img.classList.add('loaded');
+                            this.lazyImageObserver.unobserve(img);
+                        }
+                    }
+                });
+            });
+        }
+    }
+
+    makeLazy(imgElement, src) {
+        imgElement.dataset.src = src;
+        imgElement.classList.add('lazy-image');
+        imgElement.src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZGRkIi8+PC9zdmc+';
+        
+        if (this.lazyImageObserver) {
+            this.lazyImageObserver.observe(imgElement);
+        }
+    }
+
+    addImageSchema(article) {
+        const existingSchema = document.querySelector('script[type="application/ld+json"]');
+        if (existingSchema) {
+            const schema = JSON.parse(existingSchema.textContent);
+            
+            // Add image information to existing schema
+            if (article.images) {
+                schema.image = {
+                    "@type": "ImageObject",
+                    "url": window.location.origin + "/" + article.images.featured,
+                    "width": 1200,
+                    "height": 630,
+                    "caption": article.imageAlt || article.title
+                };
+                
+                // Add thumbnail
+                if (article.images.thumbnail) {
+                    schema.thumbnailUrl = window.location.origin + "/" + article.images.thumbnail;
+                }
+            }
+            
+            existingSchema.textContent = JSON.stringify(schema);
+        }
+    }
+}
+
+// Initialize Image Optimizer
+const imageOptimizer = new ImageOptimizer();
+
+// Enhanced Article Card Creation with Image Optimization
+ThriftZoneBlog.prototype.createArticleCard = function(article) {
+    const card = document.createElement('div');
+    card.className = 'article-card';
+    card.style.opacity = '0';
+    card.style.transform = 'translateY(20px)';
+    card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+    card.style.cursor = 'pointer';
+
+    // Use thumbnail if available, otherwise use main image
+    const imageUrl = article.images?.thumbnail || article.image;
+    const imageAlt = article.imageAlt || `${article.title} - ${this.getCategoryName(article.category)}`;
+
+    card.innerHTML = `
+        <div class="article-card-image">
+            <img class="lazy-image" 
+                 data-src="${imageUrl}" 
+                 alt="${imageAlt}"
+                 loading="lazy"
+                 decoding="async">
+            <div class="article-card-category">${this.getCategoryName(article.category)}</div>
+        </div>
+        <div class="article-card-content">
+            <h3 class="article-card-title">${article.title}</h3>
+            <p class="article-card-excerpt">${article.excerpt}</p>
+            <div class="article-card-meta">
+                <div class="article-card-date">
+                    <i class="fas fa-calendar"></i>
+                    <span>${this.formatDate(article.date)}</span>
+                </div>
+                <div class="article-card-reading-time">
+                    <i class="fas fa-clock"></i>
+                    <span>${article.readTime} min read</span>
+                </div>
+            </div>
+        </div>
+    `;
+
+    // Optimize the image
+    const img = card.querySelector('img');
+    imageOptimizer.makeLazy(img, imageUrl);
+
+    card.addEventListener('click', () => {
+        this.navigateToArticle(article.slug);
+    });
+
+    return card;
+};
+
+// Enhanced Article Rendering with SEO Images
+ThriftZoneBlog.prototype.renderArticle = function(article) {
+    // Update page title and meta with SEO data
+    const seoTitle = article.seo?.metaTitle || `${article.title} - Thrift Zone Blog`;
+    const seoDescription = article.seo?.metaDescription || article.excerpt;
+    
+    document.title = seoTitle;
+    
+    // Update meta description
+    this.updateMetaTag('name', 'description', seoDescription);
+    
+    // Update Open Graph meta tags with optimized images
+    const socialImage = article.images?.social || article.images?.featured || article.image;
+    this.updateMetaTag('property', 'og:title', article.title);
+    this.updateMetaTag('property', 'og:description', seoDescription);
+    this.updateMetaTag('property', 'og:image', window.location.origin + '/' + socialImage);
+    this.updateMetaTag('property', 'og:url', window.location.href);
+    this.updateMetaTag('property', 'og:type', 'article');
+    
+    // Add Twitter Card meta tags
+    this.updateMetaTag('name', 'twitter:card', 'summary_large_image');
+    this.updateMetaTag('name', 'twitter:image', window.location.origin + '/' + socialImage);
+    
+    // Update canonical URL
+    const canonicalUrl = article.seo?.canonicalUrl || window.location.pathname;
+    this.updateLinkTag('canonical', window.location.origin + canonicalUrl);
+
+    // Update breadcrumb
+    document.getElementById('current-article').textContent = article.title;
+
+    // Update article header
+    document.getElementById('article-category-badge').textContent = this.getCategoryName(article.category);
+    document.getElementById('main-article-title').textContent = article.title;
+    document.getElementById('article-author').textContent = article.author || 'Thrift Zone Team';
+    document.getElementById('article-date').textContent = this.formatDate(article.date);
+    document.getElementById('reading-time').textContent = `${article.readTime} min read`;
+
+    // Update featured image with optimization
+    const featuredImage = document.getElementById('article-featured-image');
+    const mainImageUrl = article.images?.featured || article.image;
+    const imageAlt = article.imageAlt || article.title;
+    
+    imageOptimizer.optimizeImage(featuredImage, mainImageUrl, imageAlt);
+
+    // Update article body
+    const articleBody = document.getElementById('article-body');
+    if (article.content) {
+        articleBody.innerHTML = article.content;
+        
+        // Optimize all images in article content
+        const contentImages = articleBody.querySelectorAll('img');
+        contentImages.forEach(img => {
+            if (img.src) {
+                imageOptimizer.optimizeImage(img, img.src, img.alt);
+            }
+        });
+    } else {
+        articleBody.innerHTML = this.generateArticleContent(article);
+    }
+
+    // Add image gallery if available
+    if (article.images?.gallery && article.images.gallery.length > 0) {
+        const galleryHtml = `
+            <div class="image-gallery">
+                ${article.images.gallery.map(imgUrl => `
+                    <div class="gallery-image">
+                        <img class="lazy-image" 
+                             data-src="${imgUrl}" 
+                             alt="${article.title} gallery image"
+                             loading="lazy">
+                    </div>
+                `).join('')}
+            </div>
+        `;
+        articleBody.insertAdjacentHTML('beforeend', galleryHtml);
+        
+        // Initialize lazy loading for gallery images
+        const galleryImages = articleBody.querySelectorAll('.gallery-image img');
+        galleryImages.forEach(img => {
+            imageOptimizer.makeLazy(img, img.dataset.src);
+        });
+    }
+
+    // Update tags
+    const tagsContainer = document.getElementById('article-tags');
+    tagsContainer.innerHTML = article.tags.map(tag => 
+        `<a href="javascript:void(0)" class="tag" onclick="window.thriftBlog.searchByTag('${tag}')">#${tag}</a>`
+    ).join('');
+
+    // Update like count
+    document.getElementById('like-count').textContent = article.likes || 0;
+
+    // Add enhanced structured data with image information
+    this.addEnhancedStructuredData(article);
+    
+    // Add image schema
+    imageOptimizer.addImageSchema(article);
+};
+
+// Helper function to update link tags
+ThriftZoneBlog.prototype.updateLinkTag = function(rel, href) {
+    let link = document.querySelector(`link[rel="${rel}"]`);
+    if (!link) {
+        link = document.createElement('link');
+        link.rel = rel;
+        document.head.appendChild(link);
+    }
+    link.href = href;
+};
+
+// Enhanced structured data with image information
+ThriftZoneBlog.prototype.addEnhancedStructuredData = function(article) {
+    // Remove existing structured data
+    const existingScript = document.querySelector('script[type="application/ld+json"]');
+    if (existingScript) {
+        existingScript.remove();
+    }
+
+    const mainImage = article.images?.featured || article.image;
+    const thumbnailImage = article.images?.thumbnail;
+
+    // Enhanced structured data
+    const structuredData = {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": article.title,
+        "description": article.seo?.metaDescription || article.excerpt,
+        "author": {
+            "@type": "Person",
+            "name": article.author || "Thrift Zone Team"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Thrift Zone",
+            "logo": {
+                "@type": "ImageObject",
+                "url": window.location.origin + "/images/logo-icon.png",
+                "width": 60,
+                "height": 60
+            }
+        },
+        "datePublished": article.date,
+        "dateModified": article.date,
+        "image": {
+            "@type": "ImageObject",
+            "url": window.location.origin + "/" + mainImage,
+            "width": 1200,
+            "height": 630,
+            "caption": article.imageAlt || article.title
+        },
+        "url": window.location.href,
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": window.location.href
+        },
+        "wordCount": this.calculateWordCount(article.content),
+        "keywords": article.tags.join(", ")
+    };
+
+    // Add thumbnail if available
+    if (thumbnailImage) {
+        structuredData.thumbnailUrl = window.location.origin + "/" + thumbnailImage;
+    }
+
+    // Add image gallery if available
+    if (article.images?.gallery && article.images.gallery.length > 0) {
+        structuredData.image = [
+            structuredData.image,
+            ...article.images.gallery.map(imgUrl => ({
+                "@type": "ImageObject",
+                "url": window.location.origin + "/" + imgUrl,
+                "caption": `${article.title} - Additional Image`
+            }))
+        ];
+    }
+
+    const script = document.createElement('script');
+    script.type = 'application/ld+json';
+    script.textContent = JSON.stringify(structuredData);
+    document.head.appendChild(script);
+};
+
+// Helper function to calculate word count
+ThriftZoneBlog.prototype.calculateWordCount = function(content) {
+    if (!content) return 0;
+    const text = content.replace(/<[^>]*>/g, '');
+    return text.trim().split(/\s+/).length;
+};
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
         // Sort dropdown
         const sortSelect = document.getElementById('sort-articles');
         if (sortSelect) {
