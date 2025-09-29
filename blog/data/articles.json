@@ -19,46 +19,6 @@
 
 
 
-
-
-
-
-
-      ... sample article to rank ...
-    {
-      "id": "9",
-      "title": "Best Smartphone Deals Under ₹15000 in October 2025 - Top 10 Picks",
-      "slug": "best-smartphone-deals-under-15000-october-2025",
-      "excerpt": "Discover the top 10 smartphone deals under ₹15000 this October. Compare features, specs, and exclusive discount offers from leading brands like Xiaomi, Realme, and Samsung.",
-      "content": "<h2>Top 10 Budget Smartphones That Deliver Premium Features</h2><p>Finding a great smartphone under ₹15000 doesn't mean compromising on quality. This October brings exceptional deals on feature-rich phones that compete with premium models.</p><h3>Our Top Picks for October 2025</h3><ol><li><strong>Xiaomi Redmi Note 13 5G</strong> - ₹14,999 (Was ₹18,999)<ul><li>6.67\" AMOLED Display</li><li>108MP Triple Camera</li><li>5000mAh Battery with 33W Fast Charging</li><li>Snapdragon 685 Processor</li></ul></li><li><strong>Realme 11 5G</strong> - ₹13,999 (Was ₹16,999)<ul><li>6.4\" Super AMOLED Display</li><li>64MP AI Triple Camera</li><li>5000mAh Battery</li><li>MediaTek Dimensity 6100+ 5G</li></ul></li></ol><blockquote>\"These phones offer flagship-level cameras and performance at budget prices. The current discounts make them exceptional value propositions.\"</blockquote><h3>Key Features to Consider</h3><ul><li><strong>Display Quality:</strong> AMOLED screens for vibrant colors</li><li><strong>Camera Performance:</strong> Multiple lenses for versatility</li><li><strong>Battery Life:</strong> 5000mAh+ for all-day usage</li><li><strong>5G Connectivity:</strong> Future-proof network support</li></ul><h3>Where to Buy</h3><p>These deals are available on:</p><ul><li>Amazon - Extra 10% cashback with ICICI cards</li><li>Flipkart - No-cost EMI options available</li><li>Official brand stores - Extended warranty offers</li></ul><h3>Limited Time Offers</h3><p>Current promotions include:</p><ul><li>Exchange bonus up to ₹3000</li><li>Free wireless earbuds with select models</li><li>Extended warranty at no extra cost</li></ul><p>Don't miss these October deals - prices are expected to increase after Diwali festivities.</p>",
-      "category": "deals",
-      "date": "2025-10-01",
-      "readTime": 8,
-      "image": "../images/blog/smartphone-deals-october-2025.jpg",
-      "tags": ["smartphone", "deals", "budget phones", "october 2025", "5g phones", "xiaomi", "realme"],
-      "author": "Tech Deal Expert",
-      "featured": false,
-      "views": 0,
-      "likes": 0,
-      "metaTitle": "Best Smartphone Deals Under ₹15000 October 2025 | Top 10 Budget 5G Phones",
-      "metaDescription": "Find the best smartphone deals under ₹15000 in October 2025. Compare top budget 5G phones from Xiaomi, Realme & Samsung with exclusive discounts up to 40% off.",
-      "focusKeyword": "smartphone deals under 15000",
-      "schema": {
-       "type": "Article",
-        "category": "Technology Deals",
-        "wordCount": 850
-      }
-    
-  
-
-
-
-
-
-
-
-
-
     
     {
       "id": "2",
@@ -157,6 +117,46 @@
       "author": "Deal Analyst",
       "views": 1823,
       "likes": 145
-    }
+    },
+
+
+
+
+
+
+
+{
+      "id": "9",
+      "title": "Best Budget Smartphones Under ₹15000 in 2025",
+      "slug": "best-budget-smartphones-under-15000-in-2025",
+      "excerpt": "Discover the top budget smartphones offering flagship features at affordable prices. Complete comparison with specifications, camera quality, and performance analysis.",
+      "content": "<h2>Top Budget Smartphones That Don't Compromise on Quality</h2><p>Finding a great smartphone under ₹15,000 has become easier with manufacturers focusing on budget segments. Here are our top picks that offer exceptional value for money.</p><h3>1. Realme Narzo 60 5G</h3><p>The Realme Narzo 60 5G stands out with its MediaTek Dimensity 6020 processor and impressive 64MP camera setup. The phone offers smooth performance for daily tasks and decent gaming capabilities.</p><h4>Key Specifications:</h4><ul><li>6.43-inch AMOLED display with 90Hz refresh rate</li><li>MediaTek Dimensity 6020 chipset</li><li>64MP + 2MP dual camera setup</li><li>5000mAh battery with 33W fast charging</li><li>8GB RAM + 128GB storage</li></ul><h3>2. Xiaomi Redmi Note 12 Pro</h3><p>Xiaomi continues to dominate the budget segment with the Redmi Note 12 Pro, offering premium features at an affordable price point.</p><blockquote>\"The best budget phone is one that doesn't feel like a compromise. These smartphones prove that you don't need to spend a fortune for a great mobile experience.\"</blockquote><h3>Performance Comparison</h3><p>All phones in this list have been tested for:</p><ol><li>Daily performance and multitasking</li><li>Camera quality in various lighting conditions</li><li>Battery life with heavy usage</li><li>Gaming performance with popular mobile games</li><li>Build quality and durability</li></ol><h3>Final Recommendations</h3><p>Based on our extensive testing, here are our recommendations for different user types:</p><ul><li><strong>Best Overall:</strong> Realme Narzo 60 5G</li><li><strong>Best Camera:</strong> Redmi Note 12 Pro</li><li><strong>Best Battery:</strong> Samsung Galaxy M34 5G</li><li><strong>Best Performance:</strong> POCO X5 5G</li></ul>",
+      "category": "reviews",
+      "date": "2025-09-29",
+      "readTime": 8,
+      "image": "../images/blog/budget-smartphones-2025.jpg",
+      "thumbnail": "../images/blog/thumbnails/budget-smartphones-2025-thumb.jpg",
+      "imageAlt": "Best budget smartphones under 15000 rupees comparison featuring Realme Narzo 60 5G, Redmi Note 12 Pro, and Samsung Galaxy M34 5G",
+      "tags": ["smartphones", "budget phones", "mobile reviews", "technology", "under 15000"],
+      "author": "Tech Expert",
+      "featured": false,
+      "views": 0,
+      "likes": 0,
+      "seo": {
+        "metaTitle": "Best Budget Smartphones Under ₹15000 in 2025 - Complete Review",
+        "metaDescription": "Find the perfect budget smartphone under ₹15000. Detailed comparison of Realme Narzo 60 5G, Redmi Note 12 Pro & more with specs, camera quality & performance.",
+        "focusKeyword": "budget smartphones under 15000",
+        "canonicalUrl": "/blog/best-budget-smartphones-under-15000-in-2025/",
+        "socialImage": "../images/blog/social/budget-smartphones-2025-social.jpg"
+      }
+
+
+
+
+
+
+
+
+    
   ]
 }
