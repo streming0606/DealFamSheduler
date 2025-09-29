@@ -16,6 +16,50 @@
       "views": 1250,
       "likes": 89
     },
+
+
+
+
+
+
+
+
+      ... sample article to rank ...
+    {
+      "id": "9",
+      "title": "Best Smartphone Deals Under ₹15000 in October 2025 - Top 10 Picks",
+      "slug": "best-smartphone-deals-under-15000-october-2025",
+      "excerpt": "Discover the top 10 smartphone deals under ₹15000 this October. Compare features, specs, and exclusive discount offers from leading brands like Xiaomi, Realme, and Samsung.",
+      "content": "<h2>Top 10 Budget Smartphones That Deliver Premium Features</h2><p>Finding a great smartphone under ₹15000 doesn't mean compromising on quality. This October brings exceptional deals on feature-rich phones that compete with premium models.</p><h3>Our Top Picks for October 2025</h3><ol><li><strong>Xiaomi Redmi Note 13 5G</strong> - ₹14,999 (Was ₹18,999)<ul><li>6.67\" AMOLED Display</li><li>108MP Triple Camera</li><li>5000mAh Battery with 33W Fast Charging</li><li>Snapdragon 685 Processor</li></ul></li><li><strong>Realme 11 5G</strong> - ₹13,999 (Was ₹16,999)<ul><li>6.4\" Super AMOLED Display</li><li>64MP AI Triple Camera</li><li>5000mAh Battery</li><li>MediaTek Dimensity 6100+ 5G</li></ul></li></ol><blockquote>\"These phones offer flagship-level cameras and performance at budget prices. The current discounts make them exceptional value propositions.\"</blockquote><h3>Key Features to Consider</h3><ul><li><strong>Display Quality:</strong> AMOLED screens for vibrant colors</li><li><strong>Camera Performance:</strong> Multiple lenses for versatility</li><li><strong>Battery Life:</strong> 5000mAh+ for all-day usage</li><li><strong>5G Connectivity:</strong> Future-proof network support</li></ul><h3>Where to Buy</h3><p>These deals are available on:</p><ul><li>Amazon - Extra 10% cashback with ICICI cards</li><li>Flipkart - No-cost EMI options available</li><li>Official brand stores - Extended warranty offers</li></ul><h3>Limited Time Offers</h3><p>Current promotions include:</p><ul><li>Exchange bonus up to ₹3000</li><li>Free wireless earbuds with select models</li><li>Extended warranty at no extra cost</li></ul><p>Don't miss these October deals - prices are expected to increase after Diwali festivities.</p>",
+      "category": "deals",
+      "date": "2025-10-01",
+      "readTime": 8,
+      "image": "../images/blog/smartphone-deals-october-2025.jpg",
+      "tags": ["smartphone", "deals", "budget phones", "october 2025", "5g phones", "xiaomi", "realme"],
+      "author": "Tech Deal Expert",
+      "featured": false,
+      "views": 0,
+      "likes": 0,
+      "metaTitle": "Best Smartphone Deals Under ₹15000 October 2025 | Top 10 Budget 5G Phones",
+      "metaDescription": "Find the best smartphone deals under ₹15000 in October 2025. Compare top budget 5G phones from Xiaomi, Realme & Samsung with exclusive discounts up to 40% off.",
+      "focusKeyword": "smartphone deals under 15000",
+      "schema": {
+       "type": "Article",
+        "category": "Technology Deals",
+        "wordCount": 850
+      }
+    
+  
+
+
+
+
+
+
+
+
+
+    
     {
       "id": "2",
       "title": "How to Find the Best Electronics Deals Online",
