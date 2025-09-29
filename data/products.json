@@ -1,8 +1,36 @@
 {
-  "last_updated": "2025-09-28T21:20:36.393414+05:30",
+  "last_updated": "2025-09-29T10:18:26.174032+05:30",
   "total_products": 50,
   "daily_target": 6,
   "products": [
+    {
+      "id": "product_morning_1_20250929_044818",
+      "title": "BAYBEE Adjustable Detachable Hula Hoop for Kids & Adults | 8-Piece Interlocking Fitness Ring for Exe...",
+      "image": "https://m.media-amazon.com/images/I/61NXgZ-keKL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0BR44Z99T?tag=gadgetvill09f-21",
+      "price": "\u20b9249",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "home",
+      "asin": "B0BR44Z99T",
+      "data_source": "serpapi",
+      "posted_date": "2025-09-29T10:18:18.571529+05:30",
+      "session_type": "morning",
+      "link_index": 339
+    },
+    {
+      "id": "product_morning_2_20250929_044826",
+      "title": "XTRIM Microfibre Towel (Small), Towel for Bath, Towel for Gym, Spa, Swimming, Fabric, Quick-Dry, Ext...",
+      "image": "https://m.media-amazon.com/images/I/71TEkU49iFL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CJTRKS3W?tag=gadgetvill09f-21",
+      "price": "\u20b9195",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B0CJTRKS3W",
+      "data_source": "serpapi",
+      "posted_date": "2025-09-29T10:18:26.011275+05:30",
+      "session_type": "morning",
+      "link_index": 340
+    },
     {
       "id": "product_night_1_20250928_155036",
       "title": "KENT Super Egg Boiler | 3 Boiling Modes | Stainless Steel Body and Heating Plate | 6 Eggs at a Time ...",
@@ -674,34 +702,6 @@
       "posted_date": "2025-09-22T10:17:29.584411+05:30",
       "session_type": "morning",
       "link_index": 213
-    },
-    {
-      "id": "product_morning_2_20250922_044736",
-      "title": "Matrix Minimalist Dual Colour Dial with Softest Silicone Strap Analog Wrist Watch for Men & Boys",
-      "image": "https://m.media-amazon.com/images/I/61V9NlP5unL._AC_UL320_.jpg",
-      "affiliate_link": "https://www.amazon.in/dp/B0F2FD5VCD?tag=gadgetvill09f-21",
-      "price": "\u20b9199",
-      "rating": "\u2b50\u2b50\u2b50\u2606\u2606",
-      "category": "fashion",
-      "asin": "B0F2FD5VCD",
-      "data_source": "serpapi",
-      "posted_date": "2025-09-22T10:17:36.374108+05:30",
-      "session_type": "morning",
-      "link_index": 214
-    },
-    {
-      "id": "product_night_1_20250921_155013",
-      "title": "Milton Rapid Electric Kettle 1.8L | 1500 Watts | Stainless Steel Hot Water portable Electric Kettle ...",
-      "image": "https://m.media-amazon.com/images/I/61G2USexrDL._AC_UL320_.jpg",
-      "affiliate_link": "https://www.amazon.in/dp/B0F54GKQ38?tag=gadgetvill09f-21",
-      "price": "\u20b9999",
-      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
-      "category": "home",
-      "asin": "B0F54GKQ38",
-      "data_source": "serpapi",
-      "posted_date": "2025-09-21T21:20:13.384331+05:30",
-      "session_type": "night",
-      "link_index": 209
     }
   ]
 }
