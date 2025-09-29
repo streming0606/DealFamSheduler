@@ -445,7 +445,7 @@ function openProductPage(productId, productTitle) {
         .replace(/[^a-z0-9]/g, '-')
         .replace(/-+/g, '-')
         .substring(0, 50);
-    const productUrl = `product.html?id=${productId}&title=${titleSlug}`;
+    const productUrl = `/product.html?id=${productId}&title=${titleSlug}`;
     window.location.href = productUrl;
 }
 
