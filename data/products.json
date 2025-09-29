@@ -1,8 +1,22 @@
 {
-  "last_updated": "2025-09-29T18:47:17.982734+05:30",
+  "last_updated": "2025-09-29T21:20:42.268493+05:30",
   "total_products": 50,
   "daily_target": 6,
   "products": [
+    {
+      "id": "product_night_1_20250929_155042",
+      "title": "Goodscity Multipurpose Electric Kettle with Ceramic Coating 1.2L|Boil, Steam, Fry, Saute|Multi Cooke...",
+      "image": "https://m.media-amazon.com/images/I/61waHDxO54L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FF1W6QYW?tag=gadgetvill09f-21",
+      "price": "\u20b91,849",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "health",
+      "asin": "B0FF1W6QYW",
+      "data_source": "serpapi",
+      "posted_date": "2025-09-29T21:20:42.061771+05:30",
+      "session_type": "night",
+      "link_index": 353
+    },
     {
       "id": "product_morning_1_20250929_131710",
       "title": "KENT Classic Hot Air Fryer 4L 1300 W | 80% Less Oil | Instant Electric Air Fryer | Auto Cut Off | Fr...",
@@ -688,20 +702,6 @@
       "posted_date": "2025-09-22T21:20:10.009258+05:30",
       "session_type": "night",
       "link_index": 227
-    },
-    {
-      "id": "product_morning_1_20250922_131549",
-      "title": "IONIX Jewellery Scale | Weight Scale | Digital Weight Machine | weight machine for gold | Electronic...",
-      "image": "https://m.media-amazon.com/images/I/617SbvdpCoL._AC_UL320_.jpg",
-      "affiliate_link": "https://www.amazon.in/dp/B07Q4NJQC5?tag=gadgetvill09f-21",
-      "price": "\u20b9277",
-      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
-      "category": "electronics",
-      "asin": "B07Q4NJQC5",
-      "data_source": "serpapi",
-      "posted_date": "2025-09-22T18:45:49.213897+05:30",
-      "session_type": "morning",
-      "link_index": 223
     }
   ]
 }
