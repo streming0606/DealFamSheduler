@@ -1828,10 +1828,117 @@ function initializeAnimations() {
     }
 }
 
+
+
+
+
+
+// function initializeSearch() {
+//     // Search functionality - implement as needed
+//     console.log('🔍 Search initialized');
+// }
+
+// Updated initializeSearch function in script.js
 function initializeSearch() {
-    // Search functionality - implement as needed
-    console.log('🔍 Search initialized');
+    console.log('🔍 Initializing search integration...');
+    
+    const searchForm = document.getElementById('search-form');
+    const searchInput = document.getElementById('search-input');
+    
+    if (searchForm && searchInput) {
+        searchForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const query = searchInput.value.trim();
+            
+            if (query) {
+                // Redirect to search results page
+                window.location.href = `search.html?q=${encodeURIComponent(query)}`;
+            }
+        });
+        
+        // Initialize voice search for main page
+        initMainPageVoiceSearch();
+        
+        console.log('✅ Search integration ready');
+    } else {
+        console.warn('Search elements not found on this page');
+    }
 }
+
+// Voice search for main page
+function initMainPageVoiceSearch() {
+    const voiceBtn = document.getElementById('voice-search-btn');
+    const searchInput = document.getElementById('search-input');
+    
+    if (!voiceBtn || !searchInput) return;
+    
+    // Check for speech recognition support
+    if (!('webkitSpeechRecognition' in window) && !('SpeechRecognition' in window)) {
+        voiceBtn.style.display = 'none';
+        return;
+    }
+    
+    const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+    const recognition = new SpeechRecognition();
+    
+    recognition.continuous = false;
+    recognition.interimResults = false;
+    recognition.lang = 'en-US';
+    
+    let isListening = false;
+    
+    voiceBtn.addEventListener('click', () => {
+        if (isListening) {
+            recognition.stop();
+            return;
+        }
+        
+        try {
+            recognition.start();
+        } catch (error) {
+            console.error('Voice search error:', error);
+        }
+    });
+    
+    recognition.onstart = () => {
+        isListening = true;
+        voiceBtn.classList.add('listening');
+    };
+    
+    recognition.onresult = (event) => {
+        const transcript = event.results[0][0].transcript;
+        searchInput.value = transcript;
+        
+        // Auto-submit after voice input
+        setTimeout(() => {
+            const query = transcript.trim();
+            if (query) {
+                window.location.href = `search.html?q=${encodeURIComponent(query)}`;
+            }
+        }, 1000);
+    };
+    
+    recognition.onend = () => {
+        isListening = false;
+        voiceBtn.classList.remove('listening');
+    };
+    
+    recognition.onerror = (event) => {
+        console.error('Speech recognition error:', event.error);
+        isListening = false;
+        voiceBtn.classList.remove('listening');
+    };
+}
+
+
+
+
+
+
+
+
+
+
 
 // Utility functions for hero section
 function scrollToDeals() {
