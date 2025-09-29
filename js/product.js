@@ -235,7 +235,7 @@ function displayRelatedProducts(products) {
                  loading="lazy">
             <div class="related-product-info">
                 <h3 class="related-product-title">${product.title}</h3>
-                <div class="related-product-price">₹${product.price}</div>
+                <div class="related-product-price">${product.price}</div>
             </div>
         `;
         
