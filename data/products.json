@@ -1,8 +1,36 @@
 {
-  "last_updated": "2025-09-29T10:18:26.174032+05:30",
+  "last_updated": "2025-09-29T13:19:49.619326+05:30",
   "total_products": 50,
   "daily_target": 6,
   "products": [
+    {
+      "id": "product_afternoon_1_20250929_074942",
+      "title": "Prestige PIC 20 1600 Watts Induction Cooktop |Indian Menu Option |High Voltage Surge Protection| Aut...",
+      "image": "https://m.media-amazon.com/images/I/71+18JpxhOL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B00YMJ0OI8?tag=gadgetvill09f-21",
+      "price": "\u20b91,804",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B00YMJ0OI8",
+      "data_source": "serpapi",
+      "posted_date": "2025-09-29T13:19:42.405283+05:30",
+      "session_type": "afternoon",
+      "link_index": 344
+    },
+    {
+      "id": "product_afternoon_2_20250929_074949",
+      "title": "SPIN CART Cotton Premium Collection Casual Style Handkerchiefs Hanky For Men - Pack Of 12. - White S...",
+      "image": "https://m.media-amazon.com/images/I/71Tk6cEXO4L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B078NG88VT?tag=gadgetvill09f-21",
+      "price": "\u20b9309",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B078NG88VT",
+      "data_source": "serpapi",
+      "posted_date": "2025-09-29T13:19:49.334925+05:30",
+      "session_type": "afternoon",
+      "link_index": 345
+    },
     {
       "id": "product_morning_1_20250929_044818",
       "title": "BAYBEE Adjustable Detachable Hula Hoop for Kids & Adults | 8-Piece Interlocking Fitness Ring for Exe...",
@@ -674,34 +702,6 @@
       "posted_date": "2025-09-22T13:20:00.909217+05:30",
       "session_type": "afternoon",
       "link_index": 218
-    },
-    {
-      "id": "product_afternoon_2_20250922_075007",
-      "title": "Digital Pocket Scale with 5 Weight Modes, LCD Display, Gram/Ounce/Carat/Grain Measurement, 200 g Cap...",
-      "image": "https://m.media-amazon.com/images/I/413YlsCjylL._AC_UL320_.jpg",
-      "affiliate_link": "https://www.amazon.in/dp/B0FB3ZHB4C?tag=gadgetvill09f-21",
-      "price": "\u20b9249",
-      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
-      "category": "fashion",
-      "asin": "B0FB3ZHB4C",
-      "data_source": "serpapi",
-      "posted_date": "2025-09-22T13:20:07.892270+05:30",
-      "session_type": "afternoon",
-      "link_index": 219
-    },
-    {
-      "id": "product_morning_1_20250922_044729",
-      "title": "JANCOM Electric Fitness Slimming Massager Waist Trimmer Belt Abdominal Belly Vibro Shape Vibrating W...",
-      "image": "https://m.media-amazon.com/images/I/61jziMK-3GL._AC_UL320_.jpg",
-      "affiliate_link": "https://www.amazon.in/dp/B09DGC9ZVD?tag=gadgetvill09f-21",
-      "price": "\u20b91,360",
-      "rating": "\u2b50\u2b50\u2b50\u2606\u2606",
-      "category": "electronics",
-      "asin": "B09DGC9ZVD",
-      "data_source": "serpapi",
-      "posted_date": "2025-09-22T10:17:29.584411+05:30",
-      "session_type": "morning",
-      "link_index": 213
     }
   ]
 }
