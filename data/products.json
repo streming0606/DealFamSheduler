@@ -1,8 +1,36 @@
 {
-  "last_updated": "2025-09-29T13:19:49.619326+05:30",
+  "last_updated": "2025-09-29T18:47:17.982734+05:30",
   "total_products": 50,
   "daily_target": 6,
   "products": [
+    {
+      "id": "product_morning_1_20250929_131710",
+      "title": "KENT Classic Hot Air Fryer 4L 1300 W | 80% Less Oil | Instant Electric Air Fryer | Auto Cut Off | Fr...",
+      "image": "https://m.media-amazon.com/images/I/51oYlo9Y5sL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B09G75BMW4?tag=gadgetvill09f-21",
+      "price": "\u20b92,699",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "health",
+      "asin": "B09G75BMW4",
+      "data_source": "serpapi",
+      "posted_date": "2025-09-29T18:47:10.909447+05:30",
+      "session_type": "morning",
+      "link_index": 349
+    },
+    {
+      "id": "product_morning_2_20250929_131717",
+      "title": "Yogarise 6mm Anti-Skid Yoga Mat with Carry Bag, Eco-Friendly, Water-Resistant, Non-Toxic, Super Soft...",
+      "image": "https://m.media-amazon.com/images/I/51N8D2raOFL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B08RB5TTX1?tag=gadgetvill09f-21",
+      "price": "\u20b9489",
+      "rating": "\u2b50\u2b50\u2b50\u2606\u2606",
+      "category": "fashion",
+      "asin": "B08RB5TTX1",
+      "data_source": "serpapi",
+      "posted_date": "2025-09-29T18:47:17.823320+05:30",
+      "session_type": "morning",
+      "link_index": 350
+    },
     {
       "id": "product_afternoon_1_20250929_074942",
       "title": "Prestige PIC 20 1600 Watts Induction Cooktop |Indian Menu Option |High Voltage Surge Protection| Aut...",
@@ -674,34 +702,6 @@
       "posted_date": "2025-09-22T18:45:49.213897+05:30",
       "session_type": "morning",
       "link_index": 223
-    },
-    {
-      "id": "product_morning_2_20250922_131556",
-      "title": "AGARO Elite Rechargeable Mini Electric Chopper, Food Grade Bowl, Stainless Steel Blades, One Touch O...",
-      "image": "https://m.media-amazon.com/images/I/71JxqRoEC9L._AC_UL320_.jpg",
-      "affiliate_link": "https://www.amazon.in/dp/B0C897PVVM?tag=gadgetvill09f-21",
-      "price": "\u20b9549",
-      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
-      "category": "home",
-      "asin": "B0C897PVVM",
-      "data_source": "serpapi",
-      "posted_date": "2025-09-22T18:45:56.122255+05:30",
-      "session_type": "morning",
-      "link_index": 224
-    },
-    {
-      "id": "product_afternoon_1_20250922_075000",
-      "title": "Prestige PGFSP - Spatter Coated Non-stick Sandwich Toasters With fixed Grill Plate, Black",
-      "image": "https://m.media-amazon.com/images/I/61fVh+uWpiL._AC_UL320_.jpg",
-      "affiliate_link": "https://www.amazon.in/dp/B00935MGKK?tag=gadgetvill09f-21",
-      "price": "\u20b91,420",
-      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
-      "category": "electronics",
-      "asin": "B00935MGKK",
-      "data_source": "serpapi",
-      "posted_date": "2025-09-22T13:20:00.909217+05:30",
-      "session_type": "afternoon",
-      "link_index": 218
     }
   ]
 }
