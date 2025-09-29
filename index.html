@@ -50,7 +50,7 @@
             </div>
         </div>
 
-        <!-- Search Bar-->
+        <!-- Search Bar
         <div class="search-container">
             <div class="search-box">
                 <input type="text" id="search-input" placeholder="Search for deals, products..." autocomplete="off">
@@ -59,7 +59,33 @@
                 </button>
             </div>
             <div class="search-suggestions" id="search-suggestions"></div>
+        </div>-->
+<div class="search-container">
+    <form class="search-form" id="search-form">
+        <div class="search-input-wrapper">
+            <input type="text" 
+                   id="search-input" 
+                   class="search-input" 
+                   placeholder="Search for deals, products, categories..."
+                   autocomplete="off"
+                   spellcheck="false">
+            <button type="button" id="voice-search-btn" class="voice-search-btn" title="Voice Search">
+                <i class="fas fa-microphone"></i>
+            </button>
         </div>
+        <button type="submit" id="search-btn" class="search-btn">
+            <i class="fas fa-search"></i>
+            <span>Search</span>
+        </button>
+    </form>
+    <div id="search-suggestions" class="search-suggestions"></div>
+</div>
+
+
+
+
+
+      
         <!-- Navigation -->
         <nav class="nav">
             <a href="#categories" class="nav-link">Categories</a>
