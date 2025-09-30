@@ -3388,3 +3388,450 @@ p {
     padding-bottom: 5px !important;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Amazon-Style Deal Banners Section */
+.deal-banners-section {
+    padding: 2rem 0;
+    background: var(--background);
+    margin: 2rem 0;
+}
+
+.deal-banners-section .section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.deal-banners-section .section-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.deal-banners-section .section-title i {
+    color: var(--secondary-color);
+}
+
+.deal-banners-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.deal-banners-wrapper {
+    display: flex;
+    transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    gap: 1rem;
+}
+
+.deal-banner {
+    flex: 0 0 100%;
+    height: 200px;
+    border-radius: 12px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    background: linear-gradient(135deg, #FF6B35, #F59E0B);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.deal-banner:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.deal-banner.custom-image {
+    background: none;
+    padding: 0;
+}
+
+.deal-banner.custom-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.banner-content {
+    flex: 1;
+    z-index: 2;
+}
+
+.banner-category {
+    font-size: 0.9rem;
+    opacity: 0.9;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.banner-title {
+    font-size: 1.8rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+}
+
+.banner-subtitle {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    opacity: 0.95;
+}
+
+.banner-reward {
+    display: inline-flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    backdrop-filter: blur(10px);
+}
+
+.banner-reward .reward-icon {
+    width: 20px;
+    height: 20px;
+    background: white;
+    color: var(--primary-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0.5rem;
+    font-size: 0.7rem;
+    font-weight: 700;
+}
+
+.grab-deal-btn {
+    background: white;
+    color: var(--primary-color);
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.grab-deal-btn:hover {
+    background: var(--primary-color);
+    color: white;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(40, 116, 240, 0.3);
+}
+
+.banner-image {
+    flex: 0 0 auto;
+    max-width: 200px;
+    max-height: 150px;
+    z-index: 1;
+}
+
+.banner-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
+}
+
+/* Navigation Controls */
+.banner-nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.9);
+    color: var(--text-primary);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.banner-nav-btn:hover {
+    background: white;
+    transform: translateY(-50%) scale(1.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.banner-nav-prev {
+    left: 1rem;
+}
+
+.banner-nav-next {
+    right: 1rem;
+}
+
+/* Dots Indicator */
+.banner-dots {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.banner-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--border);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.banner-dot.active {
+    background: var(--primary-color);
+    transform: scale(1.2);
+}
+
+/* Upload Feature */
+.banner-upload-section {
+    text-align: center;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border-light);
+}
+
+.upload-banner-btn {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.upload-banner-btn:hover {
+    background: var(--primary-hover);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(40, 116, 240, 0.3);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .deal-banners-wrapper {
+        gap: 0.5rem;
+    }
+    
+    .deal-banner {
+        flex: 0 0 85%;
+        height: 160px;
+        padding: 1.5rem;
+        margin-right: 0.5rem;
+    }
+    
+    .banner-title {
+        font-size: 1.4rem;
+    }
+    
+    .banner-subtitle {
+        font-size: 0.95rem;
+    }
+    
+    .banner-image {
+        max-width: 120px;
+        max-height: 100px;
+    }
+    
+    .banner-nav-btn {
+        width: 35px;
+        height: 35px;
+        font-size: 0.9rem;
+    }
+    
+    .banner-nav-prev {
+        left: 0.5rem;
+    }
+    
+    .banner-nav-next {
+        right: 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .deal-banner {
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem;
+        height: 180px;
+    }
+    
+    .banner-content {
+        margin-bottom: 1rem;
+    }
+    
+    .banner-title {
+        font-size: 1.2rem;
+    }
+    
+    .banner-image {
+        max-width: 80px;
+        max-height: 60px;
+    }
+}
+
+/* Color Variations for Different Banners */
+.deal-banner.gradient-orange {
+    background: linear-gradient(135deg, #FF6B35, #F59E0B);
+}
+
+.deal-banner.gradient-blue {
+    background: linear-gradient(135deg, #3B82F6, #1E40AF);
+}
+
+.deal-banner.gradient-green {
+    background: linear-gradient(135deg, #10B981, #059669);
+}
+
+.deal-banner.gradient-purple {
+    background: linear-gradient(135deg, #8B5CF6, #7C3AED);
+}
+
+.deal-banner.gradient-red {
+    background: linear-gradient(135deg, #EF4444, #DC2626);
+}
+
+
+
+
+
+
+
+/* Link Assignment Modal */
+.link-assignment-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10000;
+}
+
+.modal-content {
+    background: white;
+    border-radius: 12px;
+    padding: 0;
+    width: 90%;
+    max-width: 500px;
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.modal-header h3 {
+    margin: 0;
+    color: var(--text-primary);
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--text-secondary);
+}
+
+.modal-body {
+    padding: 1.5rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    font-size: 0.9rem;
+}
+
+.modal-footer {
+    padding: 1.5rem;
+    border-top: 1px solid var(--border);
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+}
+
+.cancel-btn, .save-btn {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.cancel-btn {
+    background: var(--border);
+    color: var(--text-secondary);
+}
+
+.save-btn {
+    background: var(--primary-color);
+    color: white;
+}
+
+.save-btn:hover {
+    background: var(--primary-hover);
+}
+
+
