@@ -1,8 +1,36 @@
 {
-  "last_updated": "2025-09-29T21:20:42.268493+05:30",
+  "last_updated": "2025-09-30T10:17:54.931005+05:30",
   "total_products": 50,
   "daily_target": 6,
   "products": [
+    {
+      "id": "product_morning_1_20250930_044748",
+      "title": "Pigeon Ultra Fast Electric 300 Watts Electric Chopper For Kitchen, Twin Blade Technology, 600 Ml 'Ch...",
+      "image": "https://m.media-amazon.com/images/I/51HbbDH3yiL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0C7BV8X5W?tag=gadgetvill09f-21",
+      "price": "\u20b91,290",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "home",
+      "asin": "B0C7BV8X5W",
+      "data_source": "serpapi",
+      "posted_date": "2025-09-30T10:17:48.159811+05:30",
+      "session_type": "morning",
+      "link_index": 357
+    },
+    {
+      "id": "product_morning_2_20250930_044754",
+      "title": "Butterfly EKN 1.5 Litre Stainless Steel Electric Kettle | 1500 W | 360\ufffd Swivel Power Base | Auto Shu...",
+      "image": "https://m.media-amazon.com/images/I/71cFxsy+BCL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B078V8R9BS?tag=gadgetvill09f-21",
+      "price": "\u20b9549",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "health",
+      "asin": "B078V8R9BS",
+      "data_source": "serpapi",
+      "posted_date": "2025-09-30T10:17:54.783279+05:30",
+      "session_type": "morning",
+      "link_index": 358
+    },
     {
       "id": "product_night_1_20250929_155042",
       "title": "Goodscity Multipurpose Electric Kettle with Ceramic Coating 1.2L|Boil, Steam, Fry, Saute|Multi Cooke...",
@@ -674,34 +702,6 @@
       "posted_date": "2025-09-23T10:17:36.169994+05:30",
       "session_type": "morning",
       "link_index": 231
-    },
-    {
-      "id": "product_morning_2_20250923_044743",
-      "title": "Bajaj ATX 4 750 watts 2-Slice Pop-up Toaster | Dust Cover & Slide Out Crumb Tray | 6-Level Browning ...",
-      "image": "https://m.media-amazon.com/images/I/61fgJs4zIqL._AC_UL320_.jpg",
-      "affiliate_link": "https://www.amazon.in/dp/B0073QGKAS?tag=gadgetvill09f-21",
-      "price": "\u20b91,199",
-      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
-      "category": "electronics",
-      "asin": "B0073QGKAS",
-      "data_source": "serpapi",
-      "posted_date": "2025-09-23T10:17:43.177510+05:30",
-      "session_type": "morning",
-      "link_index": 232
-    },
-    {
-      "id": "product_night_1_20250922_155010",
-      "title": "Butterfly Smart 2 Litres Table-Top Wet Grinder|150 Watts|Shockproof ABS Body| Coconut Scrapper Attac...",
-      "image": "https://m.media-amazon.com/images/I/61YTGRehHSL._AC_UL320_.jpg",
-      "affiliate_link": "https://www.amazon.in/dp/B078HG2ZPS?tag=gadgetvill09f-21",
-      "price": "\u20b93,849",
-      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
-      "category": "home",
-      "asin": "B078HG2ZPS",
-      "data_source": "serpapi",
-      "posted_date": "2025-09-22T21:20:10.009258+05:30",
-      "session_type": "night",
-      "link_index": 227
     }
   ]
 }
