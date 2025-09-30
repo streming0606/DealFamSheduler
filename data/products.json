@@ -1,8 +1,36 @@
 {
-  "last_updated": "2025-09-30T13:20:11.449127+05:30",
+  "last_updated": "2025-09-30T18:46:43.875864+05:30",
   "total_products": 50,
   "daily_target": 6,
   "products": [
+    {
+      "id": "product_morning_1_20250930_131637",
+      "title": "Seznik Sealing Machine for Food Packets - Portable Handheld Sealing, Snacks, Chips, Fresh Storage - ...",
+      "image": "https://m.media-amazon.com/images/I/618nGDemysL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CZNL15LF?tag=gadgetvill09f-21",
+      "price": "\u20b9329",
+      "rating": "\u2b50\u2b50\u2b50\u2606\u2606",
+      "category": "home",
+      "asin": "B0CZNL15LF",
+      "data_source": "serpapi",
+      "posted_date": "2025-09-30T18:46:37.288248+05:30",
+      "session_type": "morning",
+      "link_index": 367
+    },
+    {
+      "id": "product_morning_2_20250930_131643",
+      "title": "Top Rated Amazon Product - B0DPDH4H4Y",
+      "image": "https://m.media-amazon.com/images/I/B0DPDH4H4Y._AC_SL1500_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DPDH4H4Y?tag=gadgetvill09f-21",
+      "price": "\u20b9Special Price",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B0DPDH4H4Y",
+      "data_source": "fallback",
+      "posted_date": "2025-09-30T18:46:43.588379+05:30",
+      "session_type": "morning",
+      "link_index": 368
+    },
     {
       "id": "product_afternoon_1_20250930_075003",
       "title": "MILTON Express 800 Watt Grill Sandwich Maker | Electric Toaster Griller Sandwich Maker | Non Stick C...",
@@ -674,34 +702,6 @@
       "posted_date": "2025-09-23T18:37:58.451522+05:30",
       "session_type": "morning",
       "link_index": 241
-    },
-    {
-      "id": "product_morning_2_20250923_130805",
-      "title": "AGARO Royal Stand Mixer 1000W with 5L SS Bowl and 8 Speed Setting I Includes Whisking Cone, Mixing B...",
-      "image": "https://m.media-amazon.com/images/I/61A-nKQFtDL._AC_UL320_.jpg",
-      "affiliate_link": "https://www.amazon.in/dp/B0977CGNJJ?tag=gadgetvill09f-21",
-      "price": "\u20b95,920",
-      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
-      "category": "electronics",
-      "asin": "B0977CGNJJ",
-      "data_source": "serpapi",
-      "posted_date": "2025-09-23T18:38:05.020342+05:30",
-      "session_type": "morning",
-      "link_index": 242
-    },
-    {
-      "id": "product_afternoon_1_20250923_075004",
-      "title": "Tosaa T2STSR Sandwich Gas Non-Stick Aluminium | Compatibility with Gas Stoves | Flame-Proof Design |...",
-      "image": "https://m.media-amazon.com/images/I/61BCPV2Lu4L._AC_UL320_.jpg",
-      "affiliate_link": "https://www.amazon.in/dp/B07RX42D3D?tag=gadgetvill09f-21",
-      "price": "\u20b9229",
-      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
-      "category": "electronics",
-      "asin": "B07RX42D3D",
-      "data_source": "serpapi",
-      "posted_date": "2025-09-23T13:20:04.589230+05:30",
-      "session_type": "afternoon",
-      "link_index": 236
     }
   ]
 }
