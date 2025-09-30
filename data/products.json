@@ -1,8 +1,36 @@
 {
-  "last_updated": "2025-09-30T10:17:54.931005+05:30",
+  "last_updated": "2025-09-30T13:20:11.449127+05:30",
   "total_products": 50,
   "daily_target": 6,
   "products": [
+    {
+      "id": "product_afternoon_1_20250930_075003",
+      "title": "MILTON Express 800 Watt Grill Sandwich Maker | Electric Toaster Griller Sandwich Maker | Non Stick C...",
+      "image": "https://m.media-amazon.com/images/I/81uisCTEWSL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CGVBWMK1?tag=gadgetvill09f-21",
+      "price": "\u20b9949",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B0CGVBWMK1",
+      "data_source": "serpapi",
+      "posted_date": "2025-09-30T13:20:03.828722+05:30",
+      "session_type": "afternoon",
+      "link_index": 362
+    },
+    {
+      "id": "product_afternoon_2_20250930_075011",
+      "title": "Boldfit Double Spring Tummy Trimmer Men and Women for Abs Workout Stomach Exercise Machine for Women...",
+      "image": "https://m.media-amazon.com/images/I/71CaTu2mMQL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CYH2GH66?tag=gadgetvill09f-21",
+      "price": "\u20b9199",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "home",
+      "asin": "B0CYH2GH66",
+      "data_source": "serpapi",
+      "posted_date": "2025-09-30T13:20:11.258405+05:30",
+      "session_type": "afternoon",
+      "link_index": 363
+    },
     {
       "id": "product_morning_1_20250930_044748",
       "title": "Pigeon Ultra Fast Electric 300 Watts Electric Chopper For Kitchen, Twin Blade Technology, 600 Ml 'Ch...",
@@ -674,34 +702,6 @@
       "posted_date": "2025-09-23T13:20:04.589230+05:30",
       "session_type": "afternoon",
       "link_index": 236
-    },
-    {
-      "id": "product_afternoon_2_20250923_075010",
-      "title": "WildHorn Rfid Protected Leather Wallet For Men, Blue",
-      "image": "https://m.media-amazon.com/images/I/61fqFgLf8fL._AC_UL320_.jpg",
-      "affiliate_link": "https://www.amazon.in/dp/B076ZMLBJJ?tag=gadgetvill09f-21",
-      "price": "\u20b9249",
-      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
-      "category": "electronics",
-      "asin": "B076ZMLBJJ",
-      "data_source": "serpapi",
-      "posted_date": "2025-09-23T13:20:10.435394+05:30",
-      "session_type": "afternoon",
-      "link_index": 237
-    },
-    {
-      "id": "product_morning_1_20250923_044736",
-      "title": "ALN Sweat Slim Belt - Slim Belt for Men and Women, Tummy Trimmer, Body Shaper, Sauna Waist Trainer -...",
-      "image": "https://m.media-amazon.com/images/I/41pn9ejM5uL._AC_UL320_.jpg",
-      "affiliate_link": "https://www.amazon.in/dp/B09HMVJM81?tag=gadgetvill09f-21",
-      "price": "\u20b9175",
-      "rating": "\u2b50\u2b50\u2b50\u2606\u2606",
-      "category": "electronics",
-      "asin": "B09HMVJM81",
-      "data_source": "serpapi",
-      "posted_date": "2025-09-23T10:17:36.169994+05:30",
-      "session_type": "morning",
-      "link_index": 231
     }
   ]
 }
