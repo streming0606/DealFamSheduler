@@ -1953,3 +1953,324 @@ function scrollToCategories() {
 setInterval(loadProducts, 5 * 60 * 1000);
 
 console.log('🎉 Thrift Zone JavaScript loaded successfully');
+
+
+
+
+
+
+
+
+
+// Amazon-Style Deal Banners Implementation
+class DealBannersSlider {
+    constructor() {
+        this.currentSlide = 0;
+        this.banners = [];
+        this.autoSlideInterval = null;
+        this.touchStartX = 0;
+        this.touchEndX = 0;
+        
+        this.init();
+    }
+    
+    init() {
+        this.loadDefaultBanners();
+        this.setupEventListeners();
+        this.startAutoSlide();
+        this.setupUploadFeature();
+    }
+    
+    loadDefaultBanners() {
+        // Default banner data with Amazon affiliate links
+        this.banners = [
+            {
+                id: 1,
+                category: 'Electronics',
+                title: 'Up to 70% Off',
+                subtitle: 'On Electronics',
+                reward: 'Flat 2.5% Rewards',
+                color: 'gradient-orange',
+                link: 'https://amzn.to/electronics-deals', // Replace with your affiliate links
+                image: null
+            },
+            {
+                id: 2,
+                category: 'Fashion',
+                title: 'Min. 40% Off',
+                subtitle: 'On Fashion & Beauty',
+                reward: 'Flat 3.5% Rewards',
+                color: 'gradient-blue',
+                link: 'https://amzn.to/fashion-deals',
+                image: null
+            },
+            {
+                id: 3,
+                category: 'Home & Kitchen',
+                title: 'Up to 60% Off',
+                subtitle: 'On Home Improvement',
+                reward: 'Flat 4.5% Rewards',
+                color: 'gradient-green',
+                link: 'https://amzn.to/home-deals',
+                image: null
+            },
+            {
+                id: 4,
+                category: 'Books & Media',
+                title: 'Up to 50% Off',
+                subtitle: 'On Books & Stationery',
+                reward: 'Flat 2% Rewards',
+                color: 'gradient-purple',
+                link: 'https://amzn.to/books-deals',
+                image: null
+            },
+            {
+                id: 5,
+                category: 'Sports & Fitness',
+                title: 'Up to 65% Off',
+                subtitle: 'On Sports Equipment',
+                reward: 'Flat 3% Rewards',
+                color: 'gradient-red',
+                link: 'https://amzn.to/sports-deals',
+                image: null
+            }
+        ];
+        
+        this.renderBanners();
+        this.renderDots();
+    }
+    
+    renderBanners() {
+        const wrapper = document.getElementById('deal-banners-wrapper');
+        if (!wrapper) return;
+        
+        wrapper.innerHTML = this.banners.map(banner => `
+            <div class="deal-banner ${banner.image ? 'custom-image' : banner.color}" onclick="this.openDeal('${banner.link}')">
+                ${banner.image ? 
+                    `<img src="${banner.image}" alt="${banner.title}" loading="lazy">` :
+                    `
+                    <div class="banner-content">
+                        <div class="banner-category">${banner.category}</div>
+                        <div class="banner-title">${banner.title}</div>
+                        <div class="banner-subtitle">${banner.subtitle}</div>
+                        <div class="banner-reward">
+                            <span class="reward-icon">CK</span>
+                            ${banner.reward}
+                        </div>
+                        <button class="grab-deal-btn" onclick="event.stopPropagation(); window.open('${banner.link}', '_blank')">
+                            Grab Deal
+                            <i class="fas fa-external-link-alt"></i>
+                        </button>
+                    </div>
+                    `
+                }
+            </div>
+        `).join('');
+    }
+    
+    renderDots() {
+        const dotsContainer = document.getElementById('banner-dots');
+        if (!dotsContainer) return;
+        
+        dotsContainer.innerHTML = this.banners.map((_, index) => 
+            `<div class="banner-dot ${index === this.currentSlide ? 'active' : ''}" onclick="dealBannersSlider.goToSlide(${index})"></div>`
+        ).join('');
+    }
+    
+    setupEventListeners() {
+        const prevBtn = document.getElementById('banner-prev-btn');
+        const nextBtn = document.getElementById('banner-next-btn');
+        const wrapper = document.getElementById('deal-banners-wrapper');
+        
+        if (prevBtn) prevBtn.addEventListener('click', () => this.prevSlide());
+        if (nextBtn) nextBtn.addEventListener('click', () => this.nextSlide());
+        
+        // Touch/swipe support
+        if (wrapper) {
+            wrapper.addEventListener('touchstart', (e) => {
+                this.touchStartX = e.changedTouches[0].screenX;
+            });
+            
+            wrapper.addEventListener('touchend', (e) => {
+                this.touchEndX = e.changedTouches[0].screenX;
+                this.handleSwipe();
+            });
+            
+            // Mouse events for desktop
+            wrapper.addEventListener('mouseenter', () => this.pauseAutoSlide());
+            wrapper.addEventListener('mouseleave', () => this.startAutoSlide());
+        }
+    }
+    
+    handleSwipe() {
+        const swipeThreshold = 50;
+        const diff = this.touchStartX - this.touchEndX;
+        
+        if (Math.abs(diff) > swipeThreshold) {
+            if (diff > 0) {
+                this.nextSlide();
+            } else {
+                this.prevSlide();
+            }
+        }
+    }
+    
+    nextSlide() {
+        this.currentSlide = (this.currentSlide + 1) % this.banners.length;
+        this.updateSlider();
+    }
+    
+    prevSlide() {
+        this.currentSlide = this.currentSlide === 0 ? this.banners.length - 1 : this.currentSlide - 1;
+        this.updateSlider();
+    }
+    
+    goToSlide(index) {
+        this.currentSlide = index;
+        this.updateSlider();
+    }
+    
+    updateSlider() {
+        const wrapper = document.getElementById('deal-banners-wrapper');
+        if (!wrapper) return;
+        
+        const translateX = window.innerWidth <= 768 ? 
+            -(this.currentSlide * 87) : // Mobile: 85% + 2% gap
+            -(this.currentSlide * 100);
+            
+        wrapper.style.transform = `translateX(${translateX}%)`;
+        
+        // Update dots
+        document.querySelectorAll('.banner-dot').forEach((dot, index) => {
+            dot.classList.toggle('active', index === this.currentSlide);
+        });
+    }
+    
+    startAutoSlide() {
+        this.pauseAutoSlide();
+        this.autoSlideInterval = setInterval(() => {
+            this.nextSlide();
+        }, 5000); // Same as your hero slider
+    }
+    
+    pauseAutoSlide() {
+        if (this.autoSlideInterval) {
+            clearInterval(this.autoSlideInterval);
+            this.autoSlideInterval = null;
+        }
+    }
+    
+    setupUploadFeature() {
+        const uploadBtn = document.getElementById('upload-banner-btn');
+        const fileInput = document.getElementById('banner-file-input');
+        
+        if (uploadBtn && fileInput) {
+            uploadBtn.addEventListener('click', () => fileInput.click());
+            
+            fileInput.addEventListener('change', (e) => {
+                const files = Array.from(e.target.files);
+                this.handleImageUpload(files);
+            });
+        }
+    }
+    
+    handleImageUpload(files) {
+        files.forEach((file, index) => {
+            if (file.type.startsWith('image/')) {
+                const reader = new FileReader();
+                reader.onload = (e) => {
+                    // Add custom banner
+                    const newBanner = {
+                        id: Date.now() + index,
+                        category: 'Custom Deal',
+                        title: 'Custom Banner',
+                        subtitle: file.name,
+                        reward: 'Custom Reward',
+                        color: 'custom-image',
+                        link: 'https://amzn.to/custom-deal', // You can customize this
+                        image: e.target.result
+                    };
+                    
+                    this.banners.push(newBanner);
+                    this.renderBanners();
+                    this.renderDots();
+                    
+                    // Show success message
+                    this.showUploadSuccess(file.name);
+                };
+                reader.readAsDataURL(file);
+            }
+        });
+    }
+    
+    showUploadSuccess(filename) {
+        // Create temporary success message
+        const message = document.createElement('div');
+        message.className = 'upload-success-message';
+        message.textContent = `✅ ${filename} uploaded successfully!`;
+        message.style.cssText = `
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: var(--success);
+            color: white;
+            padding: 1rem 1.5rem;
+            border-radius: 8px;
+            z-index: 1000;
+            font-weight: 600;
+            box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+            animation: slideInRight 0.3s ease;
+        `;
+        
+        document.body.appendChild(message);
+        
+        setTimeout(() => {
+            message.remove();
+        }, 3000);
+    }
+    
+    openDeal(link) {
+        window.open(link, '_blank');
+    }
+}
+
+// Initialize the deal banners slider
+let dealBannersSlider;
+
+// Add to your existing DOMContentLoaded event listener
+document.addEventListener('DOMContentLoaded', function() {
+    // Your existing initialization code...
+    
+    // Initialize deal banners slider
+    setTimeout(() => {
+        dealBannersSlider = new DealBannersSlider();
+    }, 1000);
+});
+
+// Add CSS animation for success message
+const style = document.createElement('style');
+style.textContent = `
+    @keyframes slideInRight {
+        from {
+            transform: translateX(100%);
+            opacity: 0;
+        }
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+`;
+document.head.appendChild(style);
+
+
+
+
+
+
+
+
+
+
+
+
