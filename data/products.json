@@ -1,8 +1,22 @@
 {
-  "last_updated": "2025-09-30T18:46:43.875864+05:30",
+  "last_updated": "2025-09-30T21:20:41.525633+05:30",
   "total_products": 50,
   "daily_target": 6,
   "products": [
+    {
+      "id": "product_night_1_20250930_155041",
+      "title": "Nutripro Spare Wet Blade For Nutri Blender - By Nutripro",
+      "image": "https://m.media-amazon.com/images/I/71+7gj0p5HL._AC_UY218_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DVZFPYYY?tag=gadgetvill09f-21",
+      "price": "\u20b9283",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B0DVZFPYYY",
+      "data_source": "serpapi",
+      "posted_date": "2025-09-30T21:20:41.242046+05:30",
+      "session_type": "night",
+      "link_index": 371
+    },
     {
       "id": "product_morning_1_20250930_131637",
       "title": "Seznik Sealing Machine for Food Packets - Portable Handheld Sealing, Snacks, Chips, Fresh Storage - ...",
@@ -688,20 +702,6 @@
       "posted_date": "2025-09-23T21:20:25.130220+05:30",
       "session_type": "night",
       "link_index": 245
-    },
-    {
-      "id": "product_morning_1_20250923_130758",
-      "title": "Nivia Trainer Jump Rope With Spring, Skipping Rope For Men, Women & Children, Jumping Rope With Adju...",
-      "image": "https://m.media-amazon.com/images/I/614AKi6audL._AC_UL320_.jpg",
-      "affiliate_link": "https://www.amazon.in/dp/B0DW3WXP2H?tag=gadgetvill09f-21",
-      "price": "\u20b999",
-      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
-      "category": "home",
-      "asin": "B0DW3WXP2H",
-      "data_source": "serpapi",
-      "posted_date": "2025-09-23T18:37:58.451522+05:30",
-      "session_type": "morning",
-      "link_index": 241
     }
   ]
 }
