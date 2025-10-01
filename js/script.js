@@ -2273,3 +2273,225 @@ document.head.appendChild(style);
 
 
 
+
+
+
+
+
+
+
+
+// Live Promotion Banner Controller
+class LivePromoBanner {
+    constructor() {
+        this.banner = document.getElementById('live-promo-banner');
+        this.closeBtn = document.getElementById('promo-close');
+        this.shopNowBtn = document.querySelector('.shop-now-btn');
+        this.isVisible = true;
+        this.storageKey = 'thriftzone_promo_dismissed';
+        
+        this.init();
+    }
+    
+    init() {
+        // Check if banner was previously dismissed
+        if (this.wasDismissed()) {
+            this.hideBanner(false);
+            return;
+        }
+        
+        this.showBanner();
+        this.attachEventListeners();
+        this.startAutoRotation();
+    }
+    
+    attachEventListeners() {
+        // Close button
+        this.closeBtn?.addEventListener('click', () => {
+            this.dismissBanner();
+        });
+        
+        // Shop now button
+        this.shopNowBtn?.addEventListener('click', () => {
+            this.handleShopNow();
+        });
+        
+        // Auto-hide after 30 seconds
+        setTimeout(() => {
+            if (this.isVisible && !this.wasDismissed()) {
+                this.hideBanner(true);
+            }
+        }, 30000);
+    }
+    
+    showBanner() {
+        document.body.classList.add('promo-banner-visible');
+        this.isVisible = true;
+    }
+    
+    hideBanner(animate = true) {
+        if (animate) {
+            this.banner?.classList.add('hidden');
+            setTimeout(() => {
+                document.body.classList.remove('promo-banner-visible');
+            }, 300);
+        } else {
+            this.banner.style.display = 'none';
+            document.body.classList.remove('promo-banner-visible');
+        }
+        this.isVisible = false;
+    }
+    
+    dismissBanner() {
+        this.hideBanner(true);
+        localStorage.setItem(this.storageKey, Date.now().toString());
+    }
+    
+    wasDismissed() {
+        const dismissed = localStorage.getItem(this.storageKey);
+        if (!dismissed) return false;
+        
+        // Reset dismissal after 24 hours
+        const dismissTime = parseInt(dismissed);
+        const now = Date.now();
+        const hoursPassed = (now - dismissTime) / (1000 * 60 * 60);
+        
+        if (hoursPassed > 24) {
+            localStorage.removeItem(this.storageKey);
+            return false;
+        }
+        
+        return true;
+    }
+    
+    handleShopNow() {
+        // Track click
+        if (typeof gtag !== 'undefined') {
+            gtag('event', 'promo_banner_click', {
+                event_category: 'engagement',
+                event_label: 'shop_now'
+            });
+        }
+        
+        // Scroll to deals section
+        const dealsSection = document.getElementById('deals');
+        if (dealsSection) {
+            dealsSection.scrollIntoView({ 
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+        
+        // Hide banner after click
+        setTimeout(() => {
+            this.hideBanner(true);
+        }, 500);
+    }
+    
+    startAutoRotation() {
+        const promoData = [
+            {
+                title: "Diwali Mega Sale is Live!",
+                subtitle: "Up to 80% OFF on Electronics & Fashion",
+                icon: "fas fa-fire"
+            },
+            {
+                title: "Flash Sale Alert! ⚡",
+                subtitle: "Limited Time: Extra 20% OFF Everything",
+                icon: "fas fa-bolt"
+            },
+            {
+                title: "Free Shipping Weekend! 🚚",
+                subtitle: "No minimum order • All categories",
+                icon: "fas fa-shipping-fast"
+            }
+        ];
+        
+        let currentIndex = 0;
+        
+        setInterval(() => {
+            if (!this.isVisible) return;
+            
+            currentIndex = (currentIndex + 1) % promoData.length;
+            const data = promoData[currentIndex];
+            
+            this.updateBannerContent(data);
+        }, 8000); // Rotate every 8 seconds
+    }
+    
+    updateBannerContent(data) {
+        const titleEl = this.banner?.querySelector('.promo-title');
+        const subtitleEl = this.banner?.querySelector('.promo-subtitle');
+        const iconEl = this.banner?.querySelector('.promo-icon i');
+        
+        if (titleEl) titleEl.textContent = data.title;
+        if (subtitleEl) subtitleEl.textContent = data.subtitle;
+        if (iconEl) iconEl.className = data.icon;
+    }
+}
+
+// Initialize banner when DOM is loaded
+document.addEventListener('DOMContentLoaded', function() {
+    new LivePromoBanner();
+});
+
+// Global function for shop now button
+function scrollToDeals() {
+    const dealsSection = document.getElementById('deals');
+    if (dealsSection) {
+        dealsSection.scrollIntoView({ 
+            behavior: 'smooth',
+            block: 'start'
+        });
+    }
+}
+
+
+// Add to your existing JavaScript
+const promoConfig = {
+    campaigns: [
+        {
+            id: 'diwali-2025',
+            title: "Diwali Mega Sale is Live!",
+            subtitle: "Up to 80% OFF on Electronics & Fashion",
+            icon: "fas fa-fire",
+            background: "linear-gradient(135deg, #FF6B35 0%, #F59E0B 50%, #EF4444 100%)",
+            startDate: "2025-10-20",
+            endDate: "2025-11-05",
+            priority: 1
+        },
+        {
+            id: 'weekend-flash',
+            title: "Weekend Flash Sale! ⚡",
+            subtitle: "Extra 30% OFF • Limited Time Only",
+            icon: "fas fa-bolt",
+            background: "linear-gradient(135deg, #8B5CF6 0%, #7C3AED 50%, #6D28D9 100%)",
+            days: [5, 6, 0], // Friday, Saturday, Sunday
+            priority: 2
+        }
+    ],
+    
+    getCurrentCampaign() {
+        const now = new Date();
+        const today = now.getDay();
+        
+        return this.campaigns
+            .filter(campaign => {
+                if (campaign.startDate && campaign.endDate) {
+                    const start = new Date(campaign.startDate);
+                    const end = new Date(campaign.endDate);
+                    return now >= start && now <= end;
+                }
+                if (campaign.days) {
+                    return campaign.days.includes(today);
+                }
+                return true;
+            })
+            .sort((a, b) => a.priority - b.priority)[0];
+    }
+};
+
+
+
+
+
