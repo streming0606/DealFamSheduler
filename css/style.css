@@ -3838,3 +3838,292 @@ p {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Live Promotion Banner Styles */
+.live-promo-banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(135deg, #FF6B35 0%, #F59E0B 50%, #EF4444 100%);
+    color: white;
+    z-index: 9999;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+    animation: slideDown 0.5s ease-out;
+    transform: translateY(0);
+    transition: transform 0.3s ease-out;
+}
+
+.live-promo-banner.hidden {
+    transform: translateY(-100%);
+}
+
+.promo-container {
+    max-width: var(--container-max-width);
+    margin: 0 auto;
+    padding: 12px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.promo-content {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex: 1;
+}
+
+.promo-icon {
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+    animation: pulse 2s infinite;
+}
+
+.promo-icon i {
+    font-size: 1.2rem;
+    color: white;
+}
+
+.promo-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.promo-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    font-family: var(--font-secondary);
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.promo-subtitle {
+    font-size: 0.85rem;
+    opacity: 0.95;
+    font-weight: 500;
+}
+
+.promo-action {
+    margin-left: auto;
+    margin-right: 40px;
+}
+
+.shop-now-btn {
+    background: white;
+    color: var(--primary-color);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: 700;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.shop-now-btn:hover {
+    background: #f8f9fa;
+    transform: translateY(-1px) scale(1.02);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.promo-close {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.promo-close:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-50%) scale(1.1);
+}
+
+.promo-close i {
+    font-size: 0.9rem;
+}
+
+/* Animations */
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4);
+    }
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+    }
+}
+
+/* Body offset when banner is visible */
+body.promo-banner-visible {
+    padding-top: 64px;
+    transition: padding-top 0.3s ease;
+}
+
+/* Header adjustment */
+body.promo-banner-visible .header {
+    top: 64px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .promo-container {
+        padding: 10px 15px;
+    }
+    
+    .promo-content {
+        gap: 10px;
+    }
+    
+    .promo-icon {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .promo-icon i {
+        font-size: 1rem;
+    }
+    
+    .promo-title {
+        font-size: 0.95rem;
+    }
+    
+    .promo-subtitle {
+        font-size: 0.75rem;
+    }
+    
+    .shop-now-btn {
+        padding: 8px 16px;
+        font-size: 0.75rem;
+    }
+    
+    .promo-action {
+        margin-right: 35px;
+    }
+    
+    body.promo-banner-visible {
+        padding-top: 56px;
+    }
+    
+    body.promo-banner-visible .header {
+        top: 56px;
+    }
+}
+
+@media (max-width: 480px) {
+    .promo-container {
+        padding: 8px 12px;
+    }
+    
+    .promo-text {
+        flex: 1;
+        min-width: 0;
+    }
+    
+    .promo-title {
+        font-size: 0.85rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    
+    .promo-subtitle {
+        font-size: 0.7rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    
+    .shop-now-btn {
+        padding: 6px 12px;
+        font-size: 0.7rem;
+    }
+    
+    body.promo-banner-visible {
+        padding-top: 50px;
+    }
+    
+    body.promo-banner-visible .header {
+        top: 50px;
+    }
+}
+
+
+
+/* Alternative color schemes */
+.live-promo-banner.festival-theme {
+    background: linear-gradient(135deg, #FF6B35 0%, #F59E0B 50%, #EF4444 100%);
+}
+
+.live-promo-banner.flash-sale-theme {
+    background: linear-gradient(135deg, #8B5CF6 0%, #7C3AED 50%, #6D28D9 100%);
+}
+
+.live-promo-banner.weekend-theme {
+    background: linear-gradient(135deg, #10B981 0%, #059669 50%, #047857 100%);
+}
+
+.live-promo-banner.cyber-theme {
+    background: linear-gradient(135deg, #3B82F6 0%, #2563EB 50%, #1D4ED8 100%);
+}
+
+/* Blinking effect for urgent sales */
+.promo-title.urgent {
+    animation: blink 1.5s ease-in-out infinite;
+}
+
+@keyframes blink {
+    0%, 50%, 100% { opacity: 1; }
+    25%, 75% { opacity: 0.7; }
+}
