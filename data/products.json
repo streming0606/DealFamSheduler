@@ -1,8 +1,36 @@
 {
-  "last_updated": "2025-10-01T13:20:21.729996+05:30",
+  "last_updated": "2025-10-01T18:46:55.041521+05:30",
   "total_products": 50,
   "daily_target": 6,
   "products": [
+    {
+      "id": "product_morning_1_20251001_131648",
+      "title": "Kobo WTG-05 Leather",
+      "image": "https://m.media-amazon.com/images/I/81QSxGY+u0L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B010SGKT60?tag=gadgetvill09f-21",
+      "price": "\u20b9335",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B010SGKT60",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-01T18:46:48.132867+05:30",
+      "session_type": "morning",
+      "link_index": 385
+    },
+    {
+      "id": "product_morning_2_20251001_131654",
+      "title": "Sparnod Fitness SAS-1000 Aerobic Gym Stepper for Exercise at Home, Adjustable Height, Anti-Skid Surf...",
+      "image": "https://m.media-amazon.com/images/I/71kUPMFkxiL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DB2DJJSR?tag=gadgetvill09f-21",
+      "price": "\u20b9799",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "home",
+      "asin": "B0DB2DJJSR",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-01T18:46:54.865962+05:30",
+      "session_type": "morning",
+      "link_index": 386
+    },
     {
       "id": "product_afternoon_1_20251001_075014",
       "title": "FitBox Sports Premium Wrist Supporter l Wrist Band with Extra Grip & Cotton Thumb Support (Black/Gre...",
@@ -674,34 +702,6 @@
       "posted_date": "2025-09-24T18:38:01.744354+05:30",
       "session_type": "morning",
       "link_index": 259
-    },
-    {
-      "id": "product_morning_2_20250924_130808",
-      "title": "HealthSense Weight Machine for Kitchen, Kitchen Food Weighing Scale for Health, Fitness, Home Baking...",
-      "image": "https://m.media-amazon.com/images/I/71VQ93ago8L._AC_UL320_.jpg",
-      "affiliate_link": "https://www.amazon.in/dp/B093ZZVMVW?tag=gadgetvill09f-21",
-      "price": "\u20b9599",
-      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
-      "category": "home",
-      "asin": "B093ZZVMVW",
-      "data_source": "serpapi",
-      "posted_date": "2025-09-24T18:38:08.545512+05:30",
-      "session_type": "morning",
-      "link_index": 260
-    },
-    {
-      "id": "product_afternoon_1_20250924_074958",
-      "title": "Longway LWKWS01 Multipurpose Portable Digital Kitchen Weighing Scale |Weight Machine With Back Light...",
-      "image": "https://m.media-amazon.com/images/I/71u8JS441BL._AC_UL320_.jpg",
-      "affiliate_link": "https://www.amazon.in/dp/B0D14RVJ85?tag=gadgetvill09f-21",
-      "price": "\u20b9289",
-      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
-      "category": "home",
-      "asin": "B0D14RVJ85",
-      "data_source": "serpapi",
-      "posted_date": "2025-09-24T13:19:58.758753+05:30",
-      "session_type": "afternoon",
-      "link_index": 254
     }
   ]
 }
