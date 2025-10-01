@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-D3MVJ2EHSQ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-D3MVJ2EHSQ');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deal Finder - Find Perfect Deals | Thrift Zone</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/deal-finder.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <meta name="description" content="Find the perfect deals with our Deal Finder. Filter by category, price range, discount percentage and shop from top Indian e-commerce platforms.">
+    <link rel="icon" type="image/png" href="images/logo-favicon.png">
+</head>
+<body>
+    <!-- Enhanced Header with Auth -->
+    <header class="header">
+        <div class="container">
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <!-- Logo Section -->
+            <div class="logo">
+                <div class="logo-text">
+                    <h1>Thrift Zone</h1>
+                    <span class="tagline">Smart Shopping Hub</span>
+                </div>
+            </div>
+            
+            <!-- Search Bar -->
+            <div class="search-container">
+                <div class="search-box">
+                    <input type="text" id="search-input" placeholder="Search for deals, products..." autocomplete="off">
+                    <button class="search-btn" id="search-btn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+                <div class="search-suggestions" id="search-suggestions"></div>
+            </div>
+            
+            <!-- Navigation -->
+            <nav class="nav">
+                <a href="index.html" class="nav-link">
+                    <i class="fas fa-home"></i>
+                    Home
+                </a>
+                <a href="deal-finder.html" class="nav-link deal-finder-link active">
+                    <i class="fas fa-search-dollar"></i>
+                    Deal Finder
+                    <span class="nav-badge">New</span>
+                </a>
+                <a href="coupons.html" class="nav-link coupon-cta">
+                    <i class="fas fa-tags"></i>
+                    Coupons
+                </a>
+                <a href="community.html" class="mobile-nav-link highlight">
+                    <i class="fas fa-users"></i>
+                    Community
+                </a>
+                <a href="loot-deals" class="mobile-nav-link">
+                    <i class="fas fa-fire"></i>
+                    End Soon
+                </a>
+                <a href="blog" class="mobile-nav-link highlight">
+                    <i class="fas fa-blog"></i>
+                    Blog
+                </a>
+            </nav>
+            
+            
+                
+                
+    </header>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav" id="mobile-nav">
+        <div class="mobile-nav-header">
+            <h3>MENU</h3>
+            <button class="mobile-nav-close">&times;</button>
+        </div>
+        <div class="mobile-nav-content">
+          
+            
+            <!-- Navigation Links -->
+            <a href="index.html" class="mobile-nav-link">
+                <i class="fas fa-home"></i> Home
+            </a>
+            <a href="deal-finder.html" class="mobile-nav-link highlight active">
+                <i class="fas fa-search-dollar"></i> Deal Finder
+            </a>
+            <a href="coupons.html" class="mobile-nav-link highlight">
+                <i class="fas fa-tags"></i> Coupons
+            </a>
+            <a href="community.html" class="mobile-nav-link highlight">
+                <i class="fas fa-users"></i> Discussion
+            </a>
+            <a href="loot-deals" class="mobile-nav-link">
+                <i class="fas fa-fire"></i> End Soon
+            </a>
+            <a href="blog.html" class="mobile-nav-link highlight">
+                <i class="fas fa-blog"></i> Blog
+            </a>
+            
+            <div class="mobile-nav-divider"></div>
+            
+            <div class="mobile-user-actions" id="mobile-user-actions" style="display: none;">
+                <a href="profile" class="mobile-nav-link" id="mobile-profile-link">Profile</a>
+                <a href="wishlist" class="mobile-nav-link" id="mobile-wishlist-link">Wishlist</a>
+                <button class="mobile-nav-link logout" id="mobile-logout-btn">Logout</button>
+            </div>
+        </div>
+    </div>
+
+    
+
+        
+
+    
+
+
+    <!-- Include your existing header here -->
+    
+    <!-- Deal Finder Main Content -->
+    <main class="deal-finder-main">
+        <div class="container">
+            <!-- Hero Section -->
+            <section class="deal-finder-hero">
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        <i class="fas fa-search-dollar"></i>
+                        Smart Deal Finder
+                    </h1>
+                    <p class="hero-subtitle">
+                        Find the perfect deals tailored to your needs. Filter by category, price range, and discount percentage to discover amazing offers from top Indian e-commerce platforms.
+                    </p>
+                    <div class="trending-searches">
+                        <span class="trending-label">Trending:</span>
+                        <div class="trending-tags">
+                            <span class="trending-tag" onclick="setQuickFilter('electronics', '25000', '50')">Electronics 50% OFF</span>
+                            <span class="trending-tag" onclick="setQuickFilter('fashion', '2000', '60')">Fashion Under ₹2000</span>
+                            <span class="trending-tag" onclick="setQuickFilter('home', '10000', '40')">Home Decor 40% OFF</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Deal Finder Form -->
+            <section class="deal-finder-form">
+                <div class="form-container">
+                    <form id="dealFinderForm">
+                        <!-- Categories Section -->
+                        <div class="filter-section">
+                            <h3 class="filter-title">
+                                <i class="fas fa-th-large"></i>
+                                Choose Category
+                            </h3>
+                            <div class="categories-grid">
+                                <div class="category-option" data-category="all">
+                                    <div class="category-icon">
+                                        <i class="fas fa-th"></i>
+                                    </div>
+                                    <span class="category-name">All Categories</span>
+                                </div>
+                                <div class="category-option" data-category="electronics">
+                                    <div class="category-icon">
+                                        <i class="fas fa-laptop"></i>
+                                    </div>
+                                    <span class="category-name">Electronics</span>
+                                </div>
+                                <div class="category-option" data-category="fashion">
+                                    <div class="category-icon">
+                                        <i class="fas fa-tshirt"></i>
+                                    </div>
+                                    <span class="category-name">Fashion</span>
+                                </div>
+                                <div class="category-option" data-category="home">
+                                    <div class="category-icon">
+                                        <i class="fas fa-home"></i>
+                                    </div>
+                                    <span class="category-name">Home & Living</span>
+                                </div>
+                                <div class="category-option" data-category="health">
+                                    <div class="category-icon">
+                                        <i class="fas fa-heartbeat"></i>
+                                    </div>
+                                    <span class="category-name">Health & Beauty</span>
+                                </div>
+                                <div class="category-option" data-category="sports">
+                                    <div class="category-icon">
+                                        <i class="fas fa-dumbbell"></i>
+                                    </div>
+                                    <span class="category-name">Sports & Fitness</span>
+                                </div>
+                                <div class="category-option" data-category="automotive">
+                                    <div class="category-icon">
+                                        <i class="fas fa-car"></i>
+                                    </div>
+                                    <span class="category-name">Automotive</span>
+                                </div>
+                                <div class="category-option" data-category="books">
+                                    <div class="category-icon">
+                                        <i class="fas fa-book"></i>
+                                    </div>
+                                    <span class="category-name">Books & Education</span>
+                                </div>
+                                <div class="category-option" data-category="food">
+                                    <div class="category-icon">
+                                        <i class="fas fa-utensils"></i>
+                                    </div>
+                                    <span class="category-name">Food & Beverages</span>
+                                </div>
+                                <div class="category-option" data-category="toys">
+                                    <div class="category-icon">
+                                        <i class="fas fa-gamepad"></i>
+                                    </div>
+                                    <span class="category-name">Toys & Games</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Price Range Section -->
+                        <div class="filter-section">
+                            <h3 class="filter-title">
+                                <i class="fas fa-rupee-sign"></i>
+                                Price Range
+                            </h3>
+                            <div class="price-range-container">
+                                <div class="price-inputs">
+                                    <div class="price-input-group">
+                                        <label for="minPrice">Min Price</label>
+                                        <input type="number" id="minPrice" min="500" max="100000" value="500" step="100">
+                                    </div>
+                                    <div class="price-divider">to</div>
+                                    <div class="price-input-group">
+                                        <label for="maxPrice">Max Price</label>
+                                        <input type="number" id="maxPrice" min="500" max="100000" value="25000" step="100">
+                                    </div>
+                                </div>
+                                <div class="price-quick-select">
+                                    <button type="button" class="price-quick-btn" data-range="500-1000">₹500 - ₹1K</button>
+                                    <button type="button" class="price-quick-btn" data-range="1000-5000">₹1K - ₹5K</button>
+                                    <button type="button" class="price-quick-btn" data-range="5000-15000">₹5K - ₹15K</button>
+                                    <button type="button" class="price-quick-btn" data-range="15000-50000">₹15K - ₹50K</button>
+                                    <button type="button" class="price-quick-btn" data-range="50000-100000">₹50K+</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Discount Range Section -->
+                        <div class="filter-section">
+                            <h3 class="filter-title">
+                                <i class="fas fa-percentage"></i>
+                                Minimum Discount
+                            </h3>
+                            <div class="discount-options">
+                                <div class="discount-option" data-discount="10">
+                                    <span class="discount-percentage">10%</span>
+                                    <span class="discount-label">& Above</span>
+                                </div>
+                                <div class="discount-option" data-discount="25">
+                                    <span class="discount-percentage">25%</span>
+                                    <span class="discount-label">& Above</span>
+                                </div>
+                                <div class="discount-option" data-discount="50">
+                                    <span class="discount-percentage">50%</span>
+                                    <span class="discount-label">& Above</span>
+                                </div>
+                                <div class="discount-option" data-discount="70">
+                                    <span class="discount-percentage">70%</span>
+                                    <span class="discount-label">& Above</span>
+                                </div>
+                                <div class="discount-option" data-discount="80">
+                                    <span class="discount-percentage">80%</span>
+                                    <span class="discount-label">& Above</span>
+                                </div>
+                                <div class="discount-option" data-discount="90">
+                                    <span class="discount-percentage">90%</span>
+                                    <span class="discount-label">& Above</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- E-commerce Platform Section -->
+                        <div class="filter-section">
+                            <h3 class="filter-title">
+                                <i class="fas fa-store"></i>
+                                Choose Platform
+                            </h3>
+                            <div class="platforms-grid">
+                                <div class="platform-option priority-platform" data-platform="amazon">
+                                    <div class="platform-logo">
+                                        <i class="fab fa-amazon"></i>
+                                    </div>
+                                    <div class="platform-info">
+                                        <span class="platform-name">Amazon India</span>
+                                        <span class="platform-badge">Recommended</span>
+                                    </div>
+                                </div>
+                                <div class="platform-option" data-platform="flipkart">
+                                    <div class="platform-logo">
+                                        <i class="fas fa-shopping-bag"></i>
+                                    </div>
+                                    <div class="platform-info">
+                                        <span class="platform-name">Flipkart</span>
+                                        <span class="platform-tag">Popular</span>
+                                    </div>
+                                </div>
+                                <div class="platform-option" data-platform="myntra">
+                                    <div class="platform-logo">
+                                        <i class="fas fa-tshirt"></i>
+                                    </div>
+                                    <div class="platform-info">
+                                        <span class="platform-name">Myntra</span>
+                                        <span class="platform-tag">Fashion</span>
+                                    </div>
+                                </div>
+                                <div class="platform-option" data-platform="ajio">
+                                    <div class="platform-logo">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </div>
+                                    <div class="platform-info">
+                                        <span class="platform-name">Ajio</span>
+                                        <span class="platform-tag">Style</span>
+                                    </div>
+                                </div>
+                                <div class="platform-option" data-platform="nykaa">
+                                    <div class="platform-logo">
+                                        <i class="fas fa-heart"></i>
+                                    </div>
+                                    <div class="platform-info">
+                                        <span class="platform-name">Nykaa</span>
+                                        <span class="platform-tag">Beauty</span>
+                                    </div>
+                                </div>
+                                <div class="platform-option" data-platform="snapdeal">
+                                    <div class="platform-logo">
+                                        <i class="fas fa-gift"></i>
+                                    </div>
+                                    <div class="platform-info">
+                                        <span class="platform-name">Snapdeal</span>
+                                        <span class="platform-tag">Value</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+<!-- Find Deals Button -->
+                        <div class="form-actions">
+                            <button type="submit" class="find-deals-btn" id="findDealsBtn">
+                                <i class="fas fa-search"></i>
+                                <span class="btn-text">Find Perfect Deals</span>
+                                <span class="btn-loader" style="display: none;">
+                                    <i class="fas fa-spinner fa-spin"></i>
+                                </span>
+                            </button>
+                            <button type="button" class="reset-filters-btn" id="resetFiltersBtn">
+                                <i class="fas fa-undo"></i>
+                                Reset Filters
+                            </button>
+                        </div>
+
+
+
+
+
+                        <!-- Price Alert Section -->
+                        <div class="filter-section">
+                            <h3 class="filter-title">
+                                <i class="fas fa-bell"></i>
+                                Price Alert (Optional)
+                            </h3>
+                            <div class="alert-options">
+                                <label class="alert-checkbox">
+                                    <input type="checkbox" id="priceAlert">
+                                    <span class="checkmark"></span>
+                                    <span class="alert-text">Notify me when deals match my criteria</span>
+                                </label>
+                                <div class="alert-email-group" id="alertEmailGroup" style="display: none;">
+                                    <input type="email" id="alertEmail" placeholder="Enter your email address">
+                                    <small class="alert-note">We'll send you updates about matching deals (max 1 email per day)</small>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+                    </form>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Deal Not Found Modal -->
+    <div class="modal-overlay" id="dealNotFoundModal" style="display: none;">
+        <div class="deal-modal">
+            <div class="modal-header">
+                <h3><i class="fas fa-exclamation-circle"></i> Deal May Be Expired</h3>
+                <button class="modal-close" onclick="closeDealModal()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>The deal you're looking for may have been used by other users or expired. Would you like to:</p>
+                <div class="modal-actions">
+                    <button class="modal-btn primary" onclick="tryAnotherPlatform()">
+                        <i class="fas fa-sync-alt"></i>
+                        Try Another Platform
+                    </button>
+                    <button class="modal-btn secondary" onclick="browseAllDeals()">
+                        <i class="fas fa-tags"></i>
+                        Browse All Deals
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/deal-finder.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
