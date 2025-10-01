@@ -1,8 +1,22 @@
 {
-  "last_updated": "2025-10-01T18:46:55.041521+05:30",
+  "last_updated": "2025-10-01T21:19:57.512974+05:30",
   "total_products": 50,
   "daily_target": 6,
   "products": [
+    {
+      "id": "product_night_1_20251001_154957",
+      "title": "Boldfit Gym Ball for Exercise Anti Burst Exercise Ball with Foot Pump for Workout Yoga Ball for Wome...",
+      "image": "https://m.media-amazon.com/images/I/61sWh0Z6eDL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0B5LNT9VK?tag=gadgetvill09f-21",
+      "price": "\u20b9449",
+      "rating": "\u2b50\u2b50\u2b50\u2606\u2606",
+      "category": "electronics",
+      "asin": "B0B5LNT9VK",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-01T21:19:57.196539+05:30",
+      "session_type": "night",
+      "link_index": 389
+    },
     {
       "id": "product_morning_1_20251001_131648",
       "title": "Kobo WTG-05 Leather",
@@ -688,20 +702,6 @@
       "posted_date": "2025-09-24T21:19:53.342563+05:30",
       "session_type": "night",
       "link_index": 263
-    },
-    {
-      "id": "product_morning_1_20250924_130801",
-      "title": "IBELL SLIM50 Induction Cooktop, 2000W, BIS Certified, LED Display, 2 Yr Warranty, Auto Shut-Off, Ove...",
-      "image": "https://m.media-amazon.com/images/I/61Y8U5yE36L._AC_UL320_.jpg",
-      "affiliate_link": "https://www.amazon.in/dp/B0CPJFJNMP?tag=gadgetvill09f-21",
-      "price": "\u20b91,295",
-      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
-      "category": "electronics",
-      "asin": "B0CPJFJNMP",
-      "data_source": "serpapi",
-      "posted_date": "2025-09-24T18:38:01.744354+05:30",
-      "session_type": "morning",
-      "link_index": 259
     }
   ]
 }
