@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-D3MVJ2EHSQ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-D3MVJ2EHSQ');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎫 Exclusive Coupons & Deals - Thrift Zone</title>
+    <meta name="description" content="Get exclusive coupon codes and deals from Amazon, Flipkart, Myntra and more. Save big with verified discount codes on Thrift Zone.">
+    <link rel="icon" type="image/png" href="images/logo-favicon.png">
+    
+    <!-- Your existing CSS files -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/theme.css">
+    
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- Coupon CSS -->
+    <link rel="stylesheet" href="css/coupon.css">
+</head>
+
+<body class="coupon-page">
+    <!-- Enhanced Header -->
+    <header class="header">
+        <div class="container">
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+                <span></span><span></span><span></span>
+            </button>
+
+            <!-- Logo -->
+            <div class="logo">
+                <a href="/">
+                    <img src="images/thrift-zone-logo.png" alt="Thrift Zone" class="logo-img">
+                </a>
+            </div>
+
+            <!-- Navigation -->
+            <nav class="nav">
+                <a href="/" class="nav-link">🏠 Home</a>
+               <!-- <a href="/deals" class="nav-link">⚡ Deals</a>-->
+                <a href="/coupons.html" class="nav-link active" style="background: linear-gradient(135deg, #FFD700, #FF8C00); color: #000; padding: 10px 15px; border-radius: 20px; font-weight: 700; box-shadow: 0 4px 15px rgba(255, 140, 0, 0.4);">🎫 Coupons</a>
+
+                <!--<a href="/categories" class="nav-link">🗂️ Categories</a>-->
+            </nav>
+
+            <!-- Search Bar 
+            <div class="search-container">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search coupons, stores..." id="coupon-search">
+                    <button class="search-btn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>-->
+
+            <!-- User Actions 
+            <div class="user-actions">
+                <button class="auth-btn" id="login-btn">
+                    <i class="fas fa-user"></i> Login
+                </button>
+            </div>
+        </div>-->
+
+        <!-- Mobile Navigation -->
+        <div class="mobile-nav" id="mobile-nav">
+            <a href="/" class="mobile-nav-link">🏠 Home</a>
+            <!--<a href="/deals" class="mobile-nav-link">⚡ Deals</a>-->
+            <a href="/coupons.html" class="mobile-nav-link active">🎫 Coupons</a>
+           <!-- <a href="/categories" class="mobile-nav-link">🗂️ Categories</a>-->
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="coupon-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    🎫 <span class="gradient-text">Exclusive Coupons</span> & Deals
+                </h1>
+                <p class="hero-subtitle">
+                    Save big with verified codes from top stores
+                </p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number" id="stat-active">50</span>
+                        <span class="stat-label">Active Coupons</span>
+                    </div>
+                   <!-- <div class="stat-item">
+                        <span class="stat-number" id="stat-mega">15 MEGA</span>
+                        <span class="stat-label">Savings</span>
+                    </div>-->
+                    <div class="stat-item">
+                        <span class="stat-number" id="stat-flash">15 FLASH</span>
+                        <span class="stat-label">Trending Now</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filters Section -->
+    <section class="coupon-filters">
+        <div class="container">
+            <div class="filters-wrapper">
+                <!-- Store Filters -->
+                <div class="filter-group">
+                    <h3> Stores</h3>
+                    <div class="filter-buttons">
+                        <button class="filter-btn active" data-store="all">All Stores</button>
+                        <button class="filter-btn" data-store="amazon">
+                            <div class="store-icon store-amazon" style="background: #FF9900; color: white; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 10px;">A</div>
+                            Amazon
+                        </button>
+                        <button class="filter-btn" data-store="flipkart">
+                            <div class="store-icon store-flipkart" style="background: #2874F0; color: white; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 10px;">F</div>
+                            Flipkart
+                        </button>
+                        <button class="filter-btn" data-store="myntra">
+                            <div class="store-icon store-myntra" style="background: #FF3F6C; color: white; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 10px;">M</div>
+                            Myntra
+                        </button>
+                        <button class="filter-btn" data-store="nykaa">
+                            <div class="store-icon store-nykaa" style="background: #FC2779; color: white; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 10px;">N</div>
+                            Nykaa
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Category Filters 
+                <div class="filter-group">
+                    <h3>🗂️ Categories</h3>
+                    <div class="filter-buttons">
+                        <button class="category-filter active" data-category="all">All</button>
+                        <button class="category-filter" data-category="electronics">📱 Electronics</button>
+                        <button class="category-filter" data-category="fashion">👕 Fashion</button>
+                        <button class="category-filter" data-category="beauty">💄 Beauty</button>
+                        <button class="category-filter" data-category="food">🍔 Food</button>
+                    </div>
+                </div>-->
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Coupons -->
+    <section class="coupon-section">
+        <div class="container">
+            <div class="section-header">
+                <div>
+                    <h2 class="section-title">🔥 Trending Coupons</h2>
+                    <p class="section-subtitle">Most used codes this week</p>
+                </div>
+            </div>
+            <div class="coupon-grid" id="featured-coupons-grid">
+                <!-- Featured coupons will be loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- All Coupons -->
+    <section class="coupon-section">
+        <div class="container">
+            <div class="section-header">
+                <div>
+                    <h2 class="section-title">🎯 All Coupons</h2>
+                </div>
+                <div class="coupon-count">
+                    <span id="coupon-count">50</span> active coupons
+                </div>
+            </div>
+            <div class="coupon-grid" id="coupon-grid">
+                <!-- All coupons will be loaded here -->
+            </div>
+            <div class="load-more-section">
+                <button class="load-more-btn" id="load-more-coupons">
+                    <i class="fas fa-plus"></i> Load More Coupons
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enhanced Modal -->
+    <div class="coupon-modal-overlay" id="coupon-modal" aria-hidden="true">
+        <div class="coupon-modal" role="dialog" aria-modal="true">
+            <div class="modal-header">
+                <h3 class="modal-title" id="coupon-modal-title">🎉 Coupon Ready!</h3>
+                <button class="modal-close" id="modal-close" aria-label="Close">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            
+            <div class="modal-body">
+                <div class="store-badge" id="modal-store">
+                    <div class="store-logo store-amazon" style="background: #FF9900; color: white; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 12px;">A</div>
+                    <span class="store-name">Amazon India</span>
+                </div>
+
+                <div class="coupon-code-display">
+                    <div class="code-label">Your Coupon Code</div>
+                    <div class="code-container">
+                        <span class="coupon-code" id="modal-coupon-code">SAVE20</span>
+                        <button class="copy-btn-modal" id="copy-btn">
+                            <i class="fas fa-copy"></i> Copy
+                        </button>
+                    </div>
+                    <p class="copy-success" id="copy-success">✅ Coupon code copied to clipboard!</p>
+                </div>
+
+                <div class="coupon-details">
+                    <div class="detail-item">
+                        <i class="fas fa-clock"></i>
+                        <span>Expires: <span id="modal-expiry">15 Nov 2025</span></span>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-users"></i>
+                        <span>Used by <span id="modal-users">1,247</span> people</span>
+                    </div>
+                </div>
+
+                <div class="urgency-timer">
+                    <i class="fas fa-fire"></i>
+                    <span>⏰ Offer expires in <span id="countdown-timer">23:45:30</span></span>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <button class="apply-coupon-btn" id="apply-coupon-btn">
+                    🚀 Apply Now & Shop
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Thrift Zone</h4>
+                    <p>Your trusted partner for the best deals and coupons online.</p>
+                </div>
+                 <!--<div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <a href="/">Home</a>
+                    <a href="/deals">Deals</a>
+                    <a href="/coupons.html">Coupons</a>
+                    <a href="/about">About</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Top Stores</h4>
+                    <a href="#amazon">Amazon Coupons</a>
+                    <a href="#flipkart">Flipkart Coupons</a>
+                    <a href="#myntra">Myntra Coupons</a>
+                </div>-->
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Thrift Zone. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Coupon JavaScript -->
+    <script src="js/coupon.js"></script>
+</body>
+</html>
