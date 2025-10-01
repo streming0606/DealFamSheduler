@@ -1935,11 +1935,6 @@ function initMainPageVoiceSearch() {
 
 
 
-
-
-
-
-
 // Utility functions for hero section
 function scrollToDeals() {
     document.getElementById('deals')?.scrollIntoView({ behavior: 'smooth' });
@@ -1953,6 +1948,11 @@ function scrollToCategories() {
 setInterval(loadProducts, 5 * 60 * 1000);
 
 console.log('🎉 Thrift Zone JavaScript loaded successfully');
+
+
+
+
+
 
 
 
@@ -2262,7 +2262,6 @@ style.textContent = `
     }
 `;
 document.head.appendChild(style);
-
 
 
 
