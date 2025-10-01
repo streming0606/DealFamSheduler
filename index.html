@@ -26,6 +26,28 @@
 <body>
     
 
+<!-- Live Sale Promotion Banner -->
+<div class="live-promo-banner" id="live-promo-banner">
+    <div class="promo-container">
+        <div class="promo-content">
+            <div class="promo-icon">
+                <i class="fas fa-fire"></i>
+            </div>
+            <div class="promo-text">
+                <span class="promo-title">Diwali Mega Sale is Live!</span>
+                <span class="promo-subtitle">Up to 80% OFF on Electronics & Fashion</span>
+            </div>
+            <div class="promo-action">
+                <button class="shop-now-btn" onclick="scrollToDeals()">
+                    SHOP NOW
+                </button>
+            </div>
+        </div>
+        <button class="promo-close" id="promo-close">
+            <i class="fas fa-times"></i>
+        </button>
+    </div>
+</div>
 
 
 
@@ -34,6 +56,7 @@
   <link rel="icon" type="image/png" href="images/logo/favicon.png">-->
 <header class="header">
     <div class="container">
+
         <!-- Mobile Menu Toggle -->
         <button class="mobile-menu-toggle" id="mobile-menu-toggle">
             <span></span>
@@ -50,7 +73,7 @@
             </div>
         </div>
 
-        <!-- Search Bar
+        <!-- Search Bar-->
         <div class="search-container">
             <div class="search-box">
                 <input type="text" id="search-input" placeholder="Search for deals, products..." autocomplete="off">
@@ -59,10 +82,10 @@
                 </button>
             </div>
             <div class="search-suggestions" id="search-suggestions"></div>
-        </div>-->
- <!-- -->
+        </div>
+ 
 
-        
+        <!-- 
  <div class="search-container">
     <form class="search-form" id="search-form">
         <div class="search-input-wrapper">
@@ -82,19 +105,7 @@
         </button>
     </form>
     <div id="search-suggestions" class="search-suggestions"></div>
-</div>
-
-
-
-
-
-
-<!-- Add inside your desktop nav -->
-<a href="/coupons.html" class="nav-link coupon-cta">🎫 Coupons</a>
-
-
-
-
+</div>-->
 
 
 
@@ -105,11 +116,20 @@
       
         <!-- Navigation -->
         <nav class="nav">
-            <a href="#categories" class="nav-link">Categories</a>
-            <a href="#deals" class="nav-link"> Deals Alert</a>
+            <a href="/coupons.html" class="nav-link coupon-cta">🎫 Coupons</a>
+            <!--<a href="#categories" class="nav-link">Categories</a>-->
+            <a href="/community.html" class="mobile-nav-link highlight">community</a>
+           <!-- <a href="#deals" class="nav-link"> Deals Alert</a>-->
             <a href="#loot-deals" class="mobile-nav-link">End Soon</a>
-          
+
+          <a href="deal-finder.html" class="nav-link deal-finder-link">
+        <i class="fas fa-search-dollar"></i>
+        Deal Finder
+        <span class="nav-badge">New</span>
+    </a>
         </nav>
+        
+
 
         <!-- Header Actions with Auth 
         <div class="header-actions">
@@ -163,17 +183,17 @@
                 </div>
             </div>
             
-             <div class="live-indicator">
+             <!--<div class="live-indicator">
                 <span class="pulse"></span>
                 <span class="text">Live</span>
-            </div>
+            </div>-->
         </div>
     </div>
 
     <!-- Mobile Navigation (updated) -->
     <div class="mobile-nav" id="mobile-nav">
         <div class="mobile-nav-header">
-            <h3>Menu</h3>
+            <h3>MENU</h3>
             <button class="mobile-nav-close">&times;</button>
         </div>
         <div class="mobile-nav-content">
@@ -184,7 +204,7 @@
                         <i class="fas fa-sign-in-alt"></i> Login
                     </button>
                     <button class="mobile-auth-btn signup" id="mobile-signup-btn">
-                        <i class="fas fa-user-plus"></i> Sign Up
+                        <i class="fas fa-user-plus"></i> Join Now
                     </button>
                 </div>
                 <div class="mobile-user-info" id="mobile-user-info" style="display: none;">
@@ -200,13 +220,24 @@
             
             <div class="mobile-nav-divider"></div>
             
-            <a href="#home" class="mobile-nav-link"> Home</a>
-            <a href="#categories" class="mobile-nav-link"> Categories</a>
+           <!-- <a href="#home" class="mobile-nav-link"> Home</a>-->
+            <a href="/coupons.html" class="mobile-nav-link highlight"> Coupons</a>
+           <!-- <a href="#categories" class="mobile-nav-link"> Categories</a>-->
+
+<a href="deal-finder.html" class="nav-link deal-finder-link">
+        <i class="fas fa-search-dollar"></i>
+        Deal Finder
+        <span class="nav-badge">New</span>
+    </a>
+
+            <a href="/community.html" class="mobile-nav-link highlight">Discussion</a>
+
             <a href="#loot-deals" class="mobile-nav-link">End Soon</a>
-            <!-- Add inside your mobile nav list -->
-<a href="/coupons.html" class="mobile-nav-link highlight">🎫 Coupons</a>
+            <a href="/blog.html" class="mobile-nav-link highlight">📒Blog</a>
+            
+
           
-           <!-- Header Actions with Auth 
+           <!--Header Actions with Auth 
         <div class="header-actions">
             <button class="theme-toggle" id="theme-toggle" title="Toggle Dark Mode">
                 <i class="fas fa-moon"></i>
@@ -949,7 +980,7 @@ File Format: JPG or PNG (JPG preferred for smaller file size)
             <div class="banner-dots" id="banner-dots"></div>
         </div>
         
-        <!-- Upload Feature for Custom Banners -->
+        <!-- Upload Feature for Custom Banners 
         <div class="banner-upload-section">
             <button class="upload-banner-btn" id="upload-banner-btn">
                 <i class="fas fa-upload"></i>
@@ -957,7 +988,7 @@ File Format: JPG or PNG (JPG preferred for smaller file size)
             </button>
             <input type="file" id="banner-file-input" accept="image/*" multiple style="display: none;">
         </div>
-    </div>
+    </div>-->
 </section>
 
 
@@ -1336,10 +1367,6 @@ File Format: JPG or PNG (JPG preferred for smaller file size)
 
 
 
-
-
-
-
 <!-- Add before your existing scripts -->
 <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
 <script src="css/auth.css"></script>
@@ -1351,11 +1378,6 @@ File Format: JPG or PNG (JPG preferred for smaller file size)
 <script src="js/theme.js"></script>
 <script src="js/search.js"></script>
 
-
-
-
-
-  
 
 </body>
 </html>
