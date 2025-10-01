@@ -1,8 +1,36 @@
 {
-  "last_updated": "2025-10-01T10:17:57.917939+05:30",
+  "last_updated": "2025-10-01T13:20:21.729996+05:30",
   "total_products": 50,
   "daily_target": 6,
   "products": [
+    {
+      "id": "product_afternoon_1_20251001_075014",
+      "title": "FitBox Sports Premium Wrist Supporter l Wrist Band with Extra Grip & Cotton Thumb Support (Black/Gre...",
+      "image": "https://m.media-amazon.com/images/I/81pVqFEgNiL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DRLGQRDW?tag=gadgetvill09f-21",
+      "price": "\u20b995",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B0DRLGQRDW",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-01T13:20:14.507328+05:30",
+      "session_type": "afternoon",
+      "link_index": 380
+    },
+    {
+      "id": "product_afternoon_2_20251001_075021",
+      "title": "Prestige PGMFB 800 Watt Grill Sandwich Toaster with Fixed Grill Plates, Black",
+      "image": "https://m.media-amazon.com/images/I/61wURjcgIEL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B00935MGKK?tag=gadgetvill09f-21",
+      "price": "\u20b91,051",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B00935MGKK",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-01T13:20:21.468848+05:30",
+      "session_type": "afternoon",
+      "link_index": 381
+    },
     {
       "id": "product_morning_1_20251001_044750",
       "title": "Sparx Men's Rubber Flip-Flop",
@@ -674,34 +702,6 @@
       "posted_date": "2025-09-24T13:19:58.758753+05:30",
       "session_type": "afternoon",
       "link_index": 254
-    },
-    {
-      "id": "product_afternoon_2_20250924_075005",
-      "title": "Sujata Grinder Steel Jar, 1000 ml (White, Stainless Steel)",
-      "image": "https://m.media-amazon.com/images/I/51pxdm8foML._AC_UL320_.jpg",
-      "affiliate_link": "https://www.amazon.in/dp/B01N4T2TPN?tag=gadgetvill09f-21",
-      "price": "\u20b9700",
-      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
-      "category": "electronics",
-      "asin": "B01N4T2TPN",
-      "data_source": "serpapi",
-      "posted_date": "2025-09-24T13:20:05.292556+05:30",
-      "session_type": "afternoon",
-      "link_index": 255
-    },
-    {
-      "id": "product_morning_1_20250924_044752",
-      "title": "Holstein Housewares Mini Waffle Maker Machine 3 In 1 Waffle Iron Home Appliances Kitchen Easy To Cle...",
-      "image": "https://m.media-amazon.com/images/I/71+THxD33IL._AC_UY218_.jpg",
-      "affiliate_link": "https://www.amazon.in/dp/B0F8VDKTNP?tag=gadgetvill09f-21",
-      "price": "\u20b9649",
-      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
-      "category": "home",
-      "asin": "B0F8VDKTNP",
-      "data_source": "serpapi",
-      "posted_date": "2025-09-24T10:17:52.559484+05:30",
-      "session_type": "morning",
-      "link_index": 249
     }
   ]
 }
