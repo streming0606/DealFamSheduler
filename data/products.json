@@ -1,8 +1,36 @@
 {
-  "last_updated": "2025-09-30T21:20:41.525633+05:30",
+  "last_updated": "2025-10-01T10:17:57.917939+05:30",
   "total_products": 50,
   "daily_target": 6,
   "products": [
+    {
+      "id": "product_morning_1_20251001_044750",
+      "title": "Sparx Men's Rubber Flip-Flop",
+      "image": "https://m.media-amazon.com/images/I/61lHAt9B6JL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B00LGMNRCO?tag=gadgetvill09f-21",
+      "price": "\u20b9268",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B00LGMNRCO",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-01T10:17:50.652753+05:30",
+      "session_type": "morning",
+      "link_index": 375
+    },
+    {
+      "id": "product_morning_2_20251001_044757",
+      "title": "Sujata Powermatic Plus Juicer Mixer Grinder|900 Watts Double Ball Bearing Motor|22000 RPM|Non-Stop 9...",
+      "image": "https://m.media-amazon.com/images/I/61rtmRFkLpL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B071113J7M?tag=gadgetvill09f-21",
+      "price": "\u20b95,568",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B071113J7M",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-01T10:17:57.772041+05:30",
+      "session_type": "morning",
+      "link_index": 376
+    },
     {
       "id": "product_night_1_20250930_155041",
       "title": "Nutripro Spare Wet Blade For Nutri Blender - By Nutripro",
@@ -674,34 +702,6 @@
       "posted_date": "2025-09-24T10:17:52.559484+05:30",
       "session_type": "morning",
       "link_index": 249
-    },
-    {
-      "id": "product_morning_2_20250924_044759",
-      "title": "SWAGR Sports Crew Socks for Men Premimum Cotton Athletic Socks, Pack of 3, Free Size",
-      "image": "https://m.media-amazon.com/images/I/913coqRee6L._AC_UL320_.jpg",
-      "affiliate_link": "https://www.amazon.in/dp/B0DHSHNZ98?tag=gadgetvill09f-21",
-      "price": "\u20b999",
-      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
-      "category": "electronics",
-      "asin": "B0DHSHNZ98",
-      "data_source": "serpapi",
-      "posted_date": "2025-09-24T10:17:59.778919+05:30",
-      "session_type": "morning",
-      "link_index": 250
-    },
-    {
-      "id": "product_night_1_20250923_155025",
-      "title": "Bata Men Slippers",
-      "image": "https://m.media-amazon.com/images/I/51LEfkCeVAL._AC_UL320_.jpg",
-      "affiliate_link": "https://www.amazon.in/dp/B09W5YKZ7Z?tag=gadgetvill09f-21",
-      "price": "\u20b9339",
-      "rating": "\u2b50\u2b50\u2b50\u2606\u2606",
-      "category": "electronics",
-      "asin": "B09W5YKZ7Z",
-      "data_source": "serpapi",
-      "posted_date": "2025-09-23T21:20:25.130220+05:30",
-      "session_type": "night",
-      "link_index": 245
     }
   ]
 }
