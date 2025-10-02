@@ -1,8 +1,22 @@
 {
-  "last_updated": "2025-10-02T18:36:22.310142+05:30",
+  "last_updated": "2025-10-02T21:20:36.804364+05:30",
   "total_products": 50,
   "daily_target": 6,
   "products": [
+    {
+      "id": "product_night_1_20251002_155036",
+      "title": "JUST RIDER Compression Men's Skin Tight Shorts for Gym, Running, Cycling, Swimming, Basketball, Cric...",
+      "image": "https://m.media-amazon.com/images/I/51YjWGLAxxL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DKBK5HV1?tag=gadgetvill09f-21",
+      "price": "\u20b9209",
+      "rating": "\u2b50\u2b50\u2b50\u2606\u2606",
+      "category": "electronics",
+      "asin": "B0DKBK5HV1",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-02T21:20:36.460385+05:30",
+      "session_type": "night",
+      "link_index": 7
+    },
     {
       "id": "product_morning_1_20251002_130615",
       "title": "Bajaj GX-1 Mixer Grinder 500W | Superior Mixie For Kitchen | 2-In-1 For Dry Grinding | Blade Functio...",
@@ -688,20 +702,6 @@
       "posted_date": "2025-09-25T21:20:50.957658+05:30",
       "session_type": "night",
       "link_index": 281
-    },
-    {
-      "id": "product_morning_1_20250925_131557",
-      "title": "Acnos\u00ae Premium Brand - A Digital Watch Shockproof Multi-Functional Automatic 5 Color Army Strap Wate...",
-      "image": "https://m.media-amazon.com/images/I/61wP1+eh4+S._AC_UL320_.jpg",
-      "affiliate_link": "https://www.amazon.in/dp/B095YWP668?tag=gadgetvill09f-21",
-      "price": "\u20b9260",
-      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
-      "category": "fashion",
-      "asin": "B095YWP668",
-      "data_source": "serpapi",
-      "posted_date": "2025-09-25T18:45:57.971203+05:30",
-      "session_type": "morning",
-      "link_index": 277
     }
   ]
 }
