@@ -1,8 +1,36 @@
 {
-  "last_updated": "2025-10-02T13:20:07.097187+05:30",
+  "last_updated": "2025-10-02T18:36:22.310142+05:30",
   "total_products": 50,
   "daily_target": 6,
   "products": [
+    {
+      "id": "product_morning_1_20251002_130615",
+      "title": "Bajaj GX-1 Mixer Grinder 500W | Superior Mixie For Kitchen | 2-In-1 For Dry Grinding | Blade Functio...",
+      "image": "https://m.media-amazon.com/images/I/51NNA+k9S0L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0BB3SDD7J?tag=gadgetvill09f-21",
+      "price": "\u20b91,899",
+      "rating": "\u2b50\u2b50\u2b50\u2606\u2606",
+      "category": "home",
+      "asin": "B0BB3SDD7J",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-02T18:36:15.216571+05:30",
+      "session_type": "morning",
+      "link_index": 3
+    },
+    {
+      "id": "product_morning_2_20251002_130622",
+      "title": "Libra Roti Maker Machine - Electric Roti Maker with Non-Stick 8.5inch Plates and Durable Handle, Aut...",
+      "image": "https://m.media-amazon.com/images/I/71dhE+3McIL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B01N0YEZK8?tag=gadgetvill09f-21",
+      "price": "\u20b92,279",
+      "rating": "\u2b50\u2b50\u2b50\u2606\u2606",
+      "category": "electronics",
+      "asin": "B01N0YEZK8",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-02T18:36:22.157598+05:30",
+      "session_type": "morning",
+      "link_index": 4
+    },
     {
       "id": "product_afternoon_1_20251002_074955",
       "title": "Boldfit Wrist Band for Gym Workout Wrist Support for Gym Straps for Men Hand Band Strap for Man Acce...",
@@ -674,34 +702,6 @@
       "posted_date": "2025-09-25T18:45:57.971203+05:30",
       "session_type": "morning",
       "link_index": 277
-    },
-    {
-      "id": "product_morning_2_20250925_131604",
-      "title": "HACER Gym Gloves Weight Lifting Hand Grips with Wrist Wrap Support Half Finger Crossfit Glove for Wo...",
-      "image": "https://m.media-amazon.com/images/I/71RSnUhzPNL._AC_UY218_.jpg",
-      "affiliate_link": "https://www.amazon.in/dp/B0F1MV1KW7?tag=gadgetvill09f-21",
-      "price": "\u20b9296",
-      "rating": "\u2b50\u2b50\u2b50\u2606\u2606",
-      "category": "electronics",
-      "asin": "B0F1MV1KW7",
-      "data_source": "serpapi",
-      "posted_date": "2025-09-25T18:46:04.970827+05:30",
-      "session_type": "morning",
-      "link_index": 278
-    },
-    {
-      "id": "product_afternoon_1_20250925_075009",
-      "title": "Prestige 500 Watts Apex Mixer Grinder with 3 Stainless Steel Jars|3 Super Efficient Blades|Sturdy Ha...",
-      "image": "https://m.media-amazon.com/images/I/71m6-QZvrrL._AC_UL320_.jpg",
-      "affiliate_link": "https://www.amazon.in/dp/B0DFCK2BJ2?tag=gadgetvill09f-21",
-      "price": "\u20b91,897",
-      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
-      "category": "electronics",
-      "asin": "B0DFCK2BJ2",
-      "data_source": "serpapi",
-      "posted_date": "2025-09-25T13:20:09.437577+05:30",
-      "session_type": "afternoon",
-      "link_index": 272
     }
   ]
 }
