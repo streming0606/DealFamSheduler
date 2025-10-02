@@ -1,8 +1,36 @@
 {
-  "last_updated": "2025-10-02T10:16:11.030106+05:30",
+  "last_updated": "2025-10-02T13:20:07.097187+05:30",
   "total_products": 50,
   "daily_target": 6,
   "products": [
+    {
+      "id": "product_afternoon_1_20251002_074955",
+      "title": "Boldfit Wrist Band for Gym Workout Wrist Support for Gym Straps for Men Hand Band Strap for Man Acce...",
+      "image": "https://m.media-amazon.com/images/I/71W7aY3xO8L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B08WLWGKY2?tag=gadgetvill09f-21",
+      "price": "\u20b9151",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B08WLWGKY2",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-02T13:19:55.263042+05:30",
+      "session_type": "afternoon",
+      "link_index": 398
+    },
+    {
+      "id": "product_afternoon_2_20251002_075006",
+      "title": "PHILIPS HL1681 Hand Blender |Powerful 300W Motor with Rust free steel arm |Easy single trigger opera...",
+      "image": "https://m.media-amazon.com/images/I/41azanveISL._AC_UY218_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DZ6PP8ZB?tag=gadgetvill09f-21",
+      "price": "\u20b91,259",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B0DZ6PP8ZB",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-02T13:20:06.736830+05:30",
+      "session_type": "afternoon",
+      "link_index": 399
+    },
     {
       "id": "product_morning_1_20251002_044604",
       "title": "The Modern Soul Men Cotton Blend Athletic Gym Tank Tops Sleeveless Sports Vest",
@@ -674,34 +702,6 @@
       "posted_date": "2025-09-25T13:20:09.437577+05:30",
       "session_type": "afternoon",
       "link_index": 272
-    },
-    {
-      "id": "product_afternoon_2_20250925_075016",
-      "title": "MALAN Weight Loss Hot Slimming Belt for Men, Women Belly Sweat Slim Belt Neoprene Fat Burning Sauna ...",
-      "image": "https://m.media-amazon.com/images/I/51bZbuwZGHL._AC_UL320_.jpg",
-      "affiliate_link": "https://www.amazon.in/dp/B0C3ZWSTGQ?tag=gadgetvill09f-21",
-      "price": "\u20b9248",
-      "rating": "\u2b50\u2b50\u2b50\u2606\u2606",
-      "category": "health",
-      "asin": "B0C3ZWSTGQ",
-      "data_source": "serpapi",
-      "posted_date": "2025-09-25T13:20:16.103633+05:30",
-      "session_type": "afternoon",
-      "link_index": 273
-    },
-    {
-      "id": "product_morning_1_20250925_044750",
-      "title": "Reading Glasses Combo (Pack of 2) for Men & Women | Full-Rim Spring Temple Glasses for All Face Shap...",
-      "image": "https://m.media-amazon.com/images/I/61p3VTiRSAL._AC_UY218_.jpg",
-      "affiliate_link": "https://www.amazon.in/dp/B0F4NDC2TY?tag=gadgetvill09f-21",
-      "price": "\u20b9269",
-      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
-      "category": "home",
-      "asin": "B0F4NDC2TY",
-      "data_source": "serpapi",
-      "posted_date": "2025-09-25T10:17:50.134177+05:30",
-      "session_type": "morning",
-      "link_index": 267
     }
   ]
 }
