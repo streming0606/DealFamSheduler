@@ -1,8 +1,36 @@
 {
-  "last_updated": "2025-10-01T21:19:57.512974+05:30",
+  "last_updated": "2025-10-02T10:16:11.030106+05:30",
   "total_products": 50,
   "daily_target": 6,
   "products": [
+    {
+      "id": "product_morning_1_20251002_044604",
+      "title": "The Modern Soul Men Cotton Blend Athletic Gym Tank Tops Sleeveless Sports Vest",
+      "image": "https://m.media-amazon.com/images/I/61bN6KmRy1L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FBMH8FXG?tag=gadgetvill09f-21",
+      "price": "\u20b9284",
+      "rating": "\u2b50\u2b50\u2b50\u2606\u2606",
+      "category": "electronics",
+      "asin": "B0FBMH8FXG",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-02T10:16:04.276865+05:30",
+      "session_type": "morning",
+      "link_index": 393
+    },
+    {
+      "id": "product_morning_2_20251002_044610",
+      "title": "Hack Athletics figure 8 Lifting Straps for Deadlift, Powerlifting, Strongman, & Cross Training Stron...",
+      "image": "https://m.media-amazon.com/images/I/81SgSMzHHqL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CN35NGHH?tag=gadgetvill09f-21",
+      "price": "\u20b9485",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B0CN35NGHH",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-02T10:16:10.833713+05:30",
+      "session_type": "morning",
+      "link_index": 394
+    },
     {
       "id": "product_night_1_20251001_154957",
       "title": "Boldfit Gym Ball for Exercise Anti Burst Exercise Ball with Foot Pump for Workout Yoga Ball for Wome...",
@@ -674,34 +702,6 @@
       "posted_date": "2025-09-25T10:17:50.134177+05:30",
       "session_type": "morning",
       "link_index": 267
-    },
-    {
-      "id": "product_morning_2_20250925_044803",
-      "title": "AGARO Sonnet Electric Kettle, 1.5L, 1500W, Stainless Steel Body, Quick Boil, Water Boiler, Hot Water...",
-      "image": "https://m.media-amazon.com/images/I/71PD3HugE9L._AC_UL320_.jpg",
-      "affiliate_link": "https://www.amazon.in/dp/B0CV512GXW?tag=gadgetvill09f-21",
-      "price": "\u20b9664",
-      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
-      "category": "health",
-      "asin": "B0CV512GXW",
-      "data_source": "serpapi",
-      "posted_date": "2025-09-25T10:18:03.238715+05:30",
-      "session_type": "morning",
-      "link_index": 268
-    },
-    {
-      "id": "product_night_1_20250924_154953",
-      "title": "BODY MAXX Plastic Gym Pencil Skipping Rope 1 Pcs, Red",
-      "image": "https://m.media-amazon.com/images/I/71T7V5QQdXL._AC_UL320_.jpg",
-      "affiliate_link": "https://www.amazon.in/dp/B075KQPFQW?tag=gadgetvill09f-21",
-      "price": "\u20b982",
-      "rating": "\u2b50\u2b50\u2b50\u2606\u2606",
-      "category": "electronics",
-      "asin": "B075KQPFQW",
-      "data_source": "serpapi",
-      "posted_date": "2025-09-24T21:19:53.342563+05:30",
-      "session_type": "night",
-      "link_index": 263
     }
   ]
 }
