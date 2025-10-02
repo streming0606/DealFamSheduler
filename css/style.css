@@ -226,20 +226,20 @@ p {
 
 
 .logo-icon {
-    max-width: 200px;
+    max-width: 100px;
     height: auto;
     width: auto;
 }
 
 @media (max-width: 768px) {
     .logo-icon {
-        max-width: 150px;
+        max-width: 90px;
     }
 }
 
 @media (max-width: 480px) {
     .logo-icon {
-        max-width: 120px;
+        max-width: 70px;
     }
 }
 
