@@ -553,8 +553,8 @@ p {
 }
 
 .signup-btn {
-    background: var(--primary-color);
-    color: white;
+    background: white
+    color: black;
 }
 
 .signup-btn:hover {
