@@ -3404,459 +3404,6 @@ p {
 
 
 
-
-/* Amazon-Style Deal Banners Section */
-.deal-banners-section {
-    padding: 2rem 0;
-    background: var(--background);
-    margin: 2rem 0;
-}
-
-.deal-banners-section .section-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 1.5rem;
-}
-
-.deal-banners-section .section-title {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: var(--text-primary);
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-.deal-banners-section .section-title i {
-    color: var(--secondary-color);
-}
-
-.deal-banners-container {
-    position: relative;
-    overflow: hidden;
-    border-radius: 12px;
-}
-
-.deal-banners-wrapper {
-    display: flex;
-    transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    gap: 1rem;
-}
-
-.deal-banner {
-    flex: 0 0 100%;
-    height: 200px;
-    border-radius: 12px;
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
-    background: linear-gradient(135deg, #FF6B35, #F59E0B);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 2rem;
-    color: white;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.deal-banner:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-}
-
-.deal-banner.custom-image {
-    background: none;
-    padding: 0;
-}
-
-.deal-banner.custom-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 12px;
-}
-
-.banner-content {
-    flex: 1;
-    z-index: 2;
-}
-
-.banner-category {
-    font-size: 0.9rem;
-    opacity: 0.9;
-    margin-bottom: 0.5rem;
-    font-weight: 500;
-}
-
-.banner-title {
-    font-size: 1.8rem;
-    font-weight: 800;
-    margin-bottom: 0.5rem;
-    line-height: 1.2;
-}
-
-.banner-subtitle {
-    font-size: 1.1rem;
-    margin-bottom: 1rem;
-    opacity: 0.95;
-}
-
-.banner-reward {
-    display: inline-flex;
-    align-items: center;
-    background: rgba(255, 255, 255, 0.2);
-    padding: 0.3rem 0.8rem;
-    border-radius: 20px;
-    font-size: 0.85rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
-    backdrop-filter: blur(10px);
-}
-
-.banner-reward .reward-icon {
-    width: 20px;
-    height: 20px;
-    background: white;
-    color: var(--primary-color);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 0.5rem;
-    font-size: 0.7rem;
-    font-weight: 700;
-}
-
-.grab-deal-btn {
-    background: white;
-    color: var(--primary-color);
-    border: none;
-    padding: 0.8rem 1.5rem;
-    border-radius: 8px;
-    font-weight: 700;
-    font-size: 0.9rem;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-.grab-deal-btn:hover {
-    background: var(--primary-color);
-    color: white;
-    transform: translateY(-1px);
-    box-shadow: 0 4px 12px rgba(40, 116, 240, 0.3);
-}
-
-.banner-image {
-    flex: 0 0 auto;
-    max-width: 200px;
-    max-height: 150px;
-    z-index: 1;
-}
-
-.banner-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
-}
-
-/* Navigation Controls */
-.banner-nav-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 40px;
-    height: 40px;
-    border: none;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.9);
-    color: var(--text-primary);
-    font-size: 1rem;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    z-index: 10;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-.banner-nav-btn:hover {
-    background: white;
-    transform: translateY(-50%) scale(1.1);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-}
-
-.banner-nav-prev {
-    left: 1rem;
-}
-
-.banner-nav-next {
-    right: 1rem;
-}
-
-/* Dots Indicator */
-.banner-dots {
-    display: flex;
-    justify-content: center;
-    gap: 0.5rem;
-    margin-top: 1rem;
-}
-
-.banner-dot {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background: var(--border);
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.banner-dot.active {
-    background: var(--primary-color);
-    transform: scale(1.2);
-}
-
-/* Upload Feature */
-.banner-upload-section {
-    text-align: center;
-    margin-top: 1.5rem;
-    padding-top: 1.5rem;
-    border-top: 1px solid var(--border-light);
-}
-
-.upload-banner-btn {
-    background: var(--primary-color);
-    color: white;
-    border: none;
-    padding: 0.8rem 1.5rem;
-    border-radius: 8px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-.upload-banner-btn:hover {
-    background: var(--primary-hover);
-    transform: translateY(-1px);
-    box-shadow: 0 4px 12px rgba(40, 116, 240, 0.3);
-}
-
-/* Mobile Responsive */
-@media (max-width: 768px) {
-    .deal-banners-wrapper {
-        gap: 0.5rem;
-    }
-    
-    .deal-banner {
-        flex: 0 0 85%;
-        height: 160px;
-        padding: 1.5rem;
-        margin-right: 0.5rem;
-    }
-    
-    .banner-title {
-        font-size: 1.4rem;
-    }
-    
-    .banner-subtitle {
-        font-size: 0.95rem;
-    }
-    
-    .banner-image {
-        max-width: 120px;
-        max-height: 100px;
-    }
-    
-    .banner-nav-btn {
-        width: 35px;
-        height: 35px;
-        font-size: 0.9rem;
-    }
-    
-    .banner-nav-prev {
-        left: 0.5rem;
-    }
-    
-    .banner-nav-next {
-        right: 0.5rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .deal-banner {
-        flex-direction: column;
-        text-align: center;
-        padding: 1rem;
-        height: 180px;
-    }
-    
-    .banner-content {
-        margin-bottom: 1rem;
-    }
-    
-    .banner-title {
-        font-size: 1.2rem;
-    }
-    
-    .banner-image {
-        max-width: 80px;
-        max-height: 60px;
-    }
-}
-
-/* Color Variations for Different Banners */
-.deal-banner.gradient-orange {
-    background: linear-gradient(135deg, #FF6B35, #F59E0B);
-}
-
-.deal-banner.gradient-blue {
-    background: linear-gradient(135deg, #3B82F6, #1E40AF);
-}
-
-.deal-banner.gradient-green {
-    background: linear-gradient(135deg, #10B981, #059669);
-}
-
-.deal-banner.gradient-purple {
-    background: linear-gradient(135deg, #8B5CF6, #7C3AED);
-}
-
-.deal-banner.gradient-red {
-    background: linear-gradient(135deg, #EF4444, #DC2626);
-}
-
-
-
-
-
-
-
-/* Link Assignment Modal */
-.link-assignment-modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.7);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 10000;
-}
-
-.modal-content {
-    background: white;
-    border-radius: 12px;
-    padding: 0;
-    width: 90%;
-    max-width: 500px;
-    max-height: 80vh;
-    overflow-y: auto;
-}
-
-.modal-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.5rem;
-    border-bottom: 1px solid var(--border);
-}
-
-.modal-header h3 {
-    margin: 0;
-    color: var(--text-primary);
-}
-
-.close-btn {
-    background: none;
-    border: none;
-    font-size: 1.5rem;
-    cursor: pointer;
-    color: var(--text-secondary);
-}
-
-.modal-body {
-    padding: 1.5rem;
-}
-
-.form-group {
-    margin-bottom: 1rem;
-}
-
-.form-group label {
-    display: block;
-    margin-bottom: 0.5rem;
-    font-weight: 600;
-    color: var(--text-primary);
-}
-
-.form-group input {
-    width: 100%;
-    padding: 0.8rem;
-    border: 1px solid var(--border);
-    border-radius: 6px;
-    font-size: 0.9rem;
-}
-
-.modal-footer {
-    padding: 1.5rem;
-    border-top: 1px solid var(--border);
-    display: flex;
-    gap: 1rem;
-    justify-content: flex-end;
-}
-
-.cancel-btn, .save-btn {
-    padding: 0.8rem 1.5rem;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    font-weight: 600;
-}
-
-.cancel-btn {
-    background: var(--border);
-    color: var(--text-secondary);
-}
-
-.save-btn {
-    background: var(--primary-color);
-    color: white;
-}
-
-.save-btn:hover {
-    background: var(--primary-hover);
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Live Promotion Banner Styles */
 .live-promo-banner {
     position: fixed;
@@ -4126,4 +3673,820 @@ body.promo-banner-visible .header {
 @keyframes blink {
     0%, 50%, 100% { opacity: 1; }
     25%, 75% { opacity: 0.7; }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Top Brand Offers Section - Completely Isolated from Hero Banner */
+.thrift-brand-offers-section {
+    padding: 60px 0;
+    background: var(--surface);
+    position: relative;
+    overflow: hidden;
+    z-index: 1; /* Lower than hero banner */
+    isolation: isolate; /* Create new stacking context */
+}
+
+.thrift-brand-offers-section .thrift-brand-section-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.thrift-brand-offers-section .thrift-brand-section-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.thrift-brand-offers-section .thrift-brand-section-title i {
+    color: var(--accent-color);
+    font-size: 1.8rem;
+}
+
+.thrift-brand-offers-section .thrift-brand-section-subtitle {
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+.thrift-brand-offers-container {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 60px;
+    z-index: 2;
+}
+
+/* Navigation Arrows - Unique styling to avoid conflicts */
+.thrift-brand-nav-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    background: var(--background);
+    color: var(--text-primary);
+    font-size: 1.2rem;
+    cursor: pointer;
+    z-index: 10;
+    transition: all 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);
+    box-shadow: var(--shadow-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+}
+
+.thrift-brand-nav-arrow:hover {
+    background: var(--primary-color);
+    color: white;
+    transform: translateY(-50%) scale(1.1);
+    box-shadow: 0 8px 25px rgba(40, 116, 240, 0.3);
+}
+
+.thrift-brand-nav-arrow:focus {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+}
+
+.thrift-brand-nav-arrow-left {
+    left: 0;
+}
+
+.thrift-brand-nav-arrow-right {
+    right: 0;
+}
+
+.thrift-brand-nav-arrow:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: translateY(-50%) scale(0.9);
+    pointer-events: none;
+}
+
+/* Slider Wrapper - Isolated from hero slider */
+.thrift-brand-slider-wrapper {
+    overflow: hidden;
+    border-radius: 12px;
+    position: relative;
+    background: transparent;
+}
+
+.thrift-brand-slider {
+    display: flex;
+    transition: transform 0.4s cubic-bezier(0.4, 0.0, 0.2, 1);
+    gap: 20px;
+    will-change: transform; /* Optimize for animations */
+}
+
+/* Banner Slides - Unique class names */
+.thrift-brand-banner-slide {
+    flex: 0 0 auto;
+    width: 300px;
+    height: 180px;
+    cursor: pointer;
+}
+
+.thrift-brand-banner-card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);
+    box-shadow: var(--shadow);
+    background: var(--background);
+    transform: translateZ(0); /* Force hardware acceleration */
+}
+
+.thrift-brand-banner-card:hover {
+    transform: translateY(-5px) scale(1.02) translateZ(0);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.thrift-brand-banner-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    display: block;
+}
+
+.thrift-brand-banner-card:hover img {
+    transform: scale(1.05);
+}
+
+.thrift-brand-banner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.2) 100%);
+    display: flex;
+    align-items: flex-end;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.thrift-brand-banner-card:hover .thrift-brand-banner-overlay {
+    opacity: 1;
+}
+
+.thrift-brand-banner-content {
+    width: 100%;
+}
+
+.thrift-brand-banner-label {
+    display: inline-block;
+    background: var(--primary-color);
+    color: white;
+    padding: 6px 12px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 5px;
+    box-shadow: 0 4px 12px rgba(40, 116, 240, 0.3);
+}
+
+.thrift-brand-banner-title {
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Pagination Dots - Unique styling */
+.thrift-brand-slider-pagination {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 30px;
+}
+
+.thrift-brand-pagination-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--border);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+    outline: none;
+}
+
+.thrift-brand-pagination-dot:hover {
+    background: var(--text-secondary);
+    transform: scale(1.1);
+}
+
+.thrift-brand-pagination-dot:focus {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+}
+
+.thrift-brand-pagination-dot.active {
+    background: var(--primary-color);
+    transform: scale(1.2);
+}
+
+/* Responsive Design - Tablet */
+@media (max-width: 768px) {
+    .thrift-brand-offers-section {
+        padding: 40px 0;
+    }
+    
+    .thrift-brand-offers-container {
+        padding: 0 50px;
+    }
+    
+    .thrift-brand-banner-slide {
+        width: 280px;
+        height: 160px;
+    }
+    
+    .thrift-brand-nav-arrow {
+        width: 45px;
+        height: 45px;
+        font-size: 1.1rem;
+    }
+    
+    .thrift-brand-section-title {
+        font-size: 1.8rem;
+    }
+    
+    .thrift-brand-banner-overlay {
+        padding: 15px;
+    }
+    
+    .thrift-brand-banner-label {
+        font-size: 0.75rem;
+        padding: 5px 10px;
+    }
+    
+    .thrift-brand-banner-title {
+        font-size: 0.9rem;
+    }
+}
+
+/* Responsive Design - Mobile */
+@media (max-width: 480px) {
+    .thrift-brand-offers-section {
+        padding: 30px 0;
+    }
+    
+    .thrift-brand-offers-container {
+        padding: 0 40px;
+    }
+    
+    .thrift-brand-banner-slide {
+        width: 250px;
+        height: 140px;
+    }
+    
+    .thrift-brand-nav-arrow {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+    
+    .thrift-brand-nav-arrow-left {
+        left: 5px;
+    }
+    
+    .thrift-brand-nav-arrow-right {
+        right: 5px;
+    }
+    
+    .thrift-brand-section-title {
+        font-size: 1.6rem;
+        flex-direction: column;
+        gap: 8px;
+    }
+    
+    .thrift-brand-section-subtitle {
+        font-size: 1rem;
+    }
+    
+    .thrift-brand-banner-overlay {
+        padding: 12px;
+    }
+    
+    .thrift-brand-banner-label {
+        font-size: 0.7rem;
+        padding: 4px 8px;
+    }
+    
+    .thrift-brand-banner-title {
+        font-size: 0.8rem;
+    }
+    
+    .thrift-brand-slider-pagination {
+        margin-top: 20px;
+    }
+    
+    .thrift-brand-pagination-dot {
+        width: 10px;
+        height: 10px;
+    }
+}
+
+/* Extra Small Mobile */
+@media (max-width: 360px) {
+    .thrift-brand-banner-slide {
+        width: 220px;
+        height: 120px;
+    }
+    
+    .thrift-brand-offers-container {
+        padding: 0 35px;
+    }
+}
+
+/* Dark Mode Support */
+[data-theme="dark"] .thrift-brand-offers-section {
+    background: var(--background-dark);
+}
+
+[data-theme="dark"] .thrift-brand-nav-arrow {
+    background: var(--surface-dark);
+    color: var(--text-primary-dark);
+}
+
+[data-theme="dark"] .thrift-brand-banner-card {
+    background: var(--surface-dark);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Auto-play Progress Indicator - Isolated */
+.thrift-brand-offers-container::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: 60px;
+    right: 60px;
+    height: 2px;
+    background: var(--border);
+    border-radius: 1px;
+    z-index: 1;
+}
+
+.thrift-brand-offers-container::after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: 60px;
+    height: 2px;
+    background: var(--primary-color);
+    border-radius: 1px;
+    z-index: 2;
+    animation: thrift-brand-autoplay-progress 8s linear infinite;
+    width: 0;
+}
+
+@keyframes thrift-brand-autoplay-progress {
+    0% { width: 0; }
+    100% { width: calc(100% - 120px); }
+}
+
+/* Loading Animation */
+.thrift-brand-banner-card.loading {
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    animation: thrift-brand-loading 1.5s infinite;
+}
+
+@keyframes thrift-brand-loading {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+}
+
+/* Touch Scrolling Support */
+.thrift-brand-slider {
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Ensure no conflicts with existing slider classes */
+.thrift-brand-offers-section * {
+    box-sizing: border-box;
+}
+
+/* Prevent any z-index conflicts with hero banner */
+.thrift-brand-offers-section {
+    position: relative !important;
+    z-index: 1 !important;
+}
+
+.hero-section {
+    z-index: 10 !important; /* Ensure hero stays on top */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Why Choose Us Section - Isolated from other banners */
+.thrift-why-choose-section {
+    padding: 50px 0;
+    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+    position: relative;
+    z-index: 2;
+    isolation: isolate;
+    overflow: hidden;
+}
+
+.thrift-why-choose-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="%23e2e8f0" stroke-width="0.5" opacity="0.3"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+    opacity: 0.3;
+    z-index: -1;
+}
+
+.thrift-why-section-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.thrift-why-section-title {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.thrift-why-section-title i {
+    color: var(--accent-color);
+    font-size: 2rem;
+}
+
+.thrift-why-features-container {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Features Wrapper */
+.thrift-why-features-wrapper {
+    overflow-x: auto;
+    overflow-y: hidden;
+    border-radius: 16px;
+    padding: 10px 0;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.thrift-why-features-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.thrift-why-features-slider {
+    display: flex;
+    gap: 20px;
+    transition: transform 0.5s cubic-bezier(0.4, 0.0, 0.2, 1);
+    min-width: 100%;
+}
+
+/* Feature Banners */
+.thrift-why-feature-banner {
+    flex: 0 0 auto;
+    width: calc((100% - 40px) / 3);
+    min-width: 300px;
+    height: 200px;
+    cursor: pointer;
+}
+
+.thrift-why-feature-card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.4, 0.0, 0.2, 1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    background: var(--background);
+    transform: translateZ(0);
+}
+
+.thrift-why-feature-card:hover {
+    transform: translateY(-8px) scale(1.02) translateZ(0);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.thrift-why-feature-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.thrift-why-feature-card:hover img {
+    transform: scale(1.1);
+}
+
+.thrift-why-feature-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.4) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.thrift-why-feature-card:hover .thrift-why-feature-overlay {
+    opacity: 1;
+}
+
+.thrift-why-feature-content {
+    text-align: center;
+    color: white;
+    transform: translateY(20px);
+    transition: transform 0.4s ease;
+}
+
+.thrift-why-feature-card:hover .thrift-why-feature-content {
+    transform: translateY(0);
+}
+
+.thrift-why-feature-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: white;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.thrift-why-feature-desc {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    color: rgba(255, 255, 255, 0.9);
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.thrift-why-cta-btn {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 15px rgba(40, 116, 240, 0.3);
+}
+
+.thrift-why-cta-btn:hover {
+    background: var(--primary-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(40, 116, 240, 0.4);
+}
+
+/* Rotation Indicators */
+.thrift-why-rotation-indicators {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+.thrift-why-indicator {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.thrift-why-indicator.active {
+    background: var(--primary-color);
+    transform: scale(1.2);
+}
+
+.thrift-why-indicator::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: white;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.thrift-why-indicator.active::after {
+    opacity: 1;
+}
+
+/* Auto-rotation Progress */
+.thrift-why-features-container::before {
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: 20px;
+    right: 20px;
+    height: 3px;
+    background: rgba(40, 116, 240, 0.2);
+    border-radius: 2px;
+    z-index: 1;
+}
+
+.thrift-why-features-container::after {
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: 20px;
+    height: 3px;
+    background: var(--primary-color);
+    border-radius: 2px;
+    z-index: 2;
+    animation: thrift-why-autoplay-progress 6s linear infinite;
+    width: 0;
+}
+
+@keyframes thrift-why-autoplay-progress {
+    0% { width: 0; }
+    100% { width: calc(100% - 40px); }
+}
+
+/* Responsive Design */
+
+/* Tablet Styles */
+@media (max-width: 768px) {
+    .thrift-why-choose-section {
+        padding: 40px 0;
+    }
+    
+    .thrift-why-section-title {
+        font-size: 2rem;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .thrift-why-feature-banner {
+        min-width: 280px;
+        height: 180px;
+    }
+    
+    .thrift-why-feature-overlay {
+        padding: 20px;
+    }
+    
+    .thrift-why-feature-title {
+        font-size: 1.2rem;
+    }
+    
+    .thrift-why-feature-desc {
+        font-size: 0.9rem;
+    }
+    
+    .thrift-why-cta-btn {
+        padding: 8px 16px;
+        font-size: 0.8rem;
+    }
+}
+
+/* Mobile Styles */
+@media (max-width: 480px) {
+    .thrift-why-choose-section {
+        padding: 30px 0;
+    }
+    
+    .thrift-why-features-container {
+        padding: 0 15px;
+    }
+    
+    .thrift-why-section-title {
+        font-size: 1.8rem;
+    }
+    
+    .thrift-why-feature-banner {
+        min-width: 260px;
+        height: 160px;
+    }
+    
+    .thrift-why-feature-overlay {
+        padding: 15px;
+    }
+    
+    .thrift-why-feature-title {
+        font-size: 1.1rem;
+    }
+    
+    .thrift-why-feature-desc {
+        font-size: 0.85rem;
+        margin-bottom: 12px;
+    }
+    
+    .thrift-why-cta-btn {
+        padding: 7px 14px;
+        font-size: 0.75rem;
+    }
+    
+    .thrift-why-rotation-indicators {
+        margin-top: 20px;
+    }
+    
+    .thrift-why-indicator {
+        width: 12px;
+        height: 12px;
+    }
+}
+
+/* Extra Small Mobile */
+@media (max-width: 360px) {
+    .thrift-why-feature-banner {
+        min-width: 240px;
+        height: 140px;
+    }
+    
+    .thrift-why-features-container {
+        padding: 0 10px;
+    }
+}
+
+/* Dark Mode Support */
+[data-theme="dark"] .thrift-why-choose-section {
+    background: linear-gradient(135deg, var(--background-dark) 0%, var(--surface-dark) 100%);
+}
+
+[data-theme="dark"] .thrift-why-feature-card {
+    background: var(--surface-dark);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Loading Animation */
+.thrift-why-feature-card.loading {
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    animation: thrift-why-loading 1.5s infinite;
+}
+
+@keyframes thrift-why-loading {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+}
+
+/* Smooth scrolling for mobile */
+.thrift-why-features-wrapper {
+    scroll-behavior: smooth;
 }
