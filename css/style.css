@@ -245,6 +245,22 @@ p {
 
 
 
+.logo {
+  width: 250px;
+  height: auto;
+  max-width: 100%;
+}
+
+/* Responsive scaling */
+@media (max-width: 1199px) { .logo { width: 200px; } }
+@media (max-width: 991px)  { .logo { width: 160px; } }
+@media (max-width: 767px)  { .logo { width: 140px; } }
+@media (max-width: 480px)  { .logo { width: 120px; } }
+@media (max-width: 320px)  { .logo { width: 100px; } }
+
+
+
+
 
 
 /* Search Container */
