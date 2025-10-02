@@ -1962,320 +1962,6 @@ console.log('🎉 Thrift Zone JavaScript loaded successfully');
 
 
 
-// Amazon-Style Deal Banners Implementation
-class DealBannersSlider {
-    constructor() {
-        this.currentSlide = 0;
-        this.banners = [];
-        this.autoSlideInterval = null;
-        this.touchStartX = 0;
-        this.touchEndX = 0;
-        
-        this.init();
-    }
-    
-    init() {
-        this.loadDefaultBanners();
-        this.setupEventListeners();
-        this.startAutoSlide();
-        this.setupUploadFeature();
-    }
-    
-    loadDefaultBanners() {
-        // Default banner data with Amazon affiliate links
-        this.banners = [
-            {
-                id: 1,
-                category: 'Electronics',
-                title: 'Up to 70% Off',
-                subtitle: 'On Electronics',
-                reward: 'Flat 2.5% Rewards',
-                color: 'gradient-orange',
-                link: 'https://amzn.to/electronics-deals', // Replace with your affiliate links
-                image: null
-            },
-            {
-                id: 2,
-                category: 'Fashion',
-                title: 'Min. 40% Off',
-                subtitle: 'On Fashion & Beauty',
-                reward: 'Flat 3.5% Rewards',
-                color: 'gradient-blue',
-                link: 'https://amzn.to/fashion-deals',
-                image: null
-            },
-            {
-                id: 3,
-                category: 'Home & Kitchen',
-                title: 'Up to 60% Off',
-                subtitle: 'On Home Improvement',
-                reward: 'Flat 4.5% Rewards',
-                color: 'gradient-green',
-                link: 'https://amzn.to/home-deals',
-                image: null
-            },
-            {
-                id: 4,
-                category: 'Books & Media',
-                title: 'Up to 50% Off',
-                subtitle: 'On Books & Stationery',
-                reward: 'Flat 2% Rewards',
-                color: 'gradient-purple',
-                link: 'https://amzn.to/books-deals',
-                image: null
-            },
-            {
-                id: 5,
-                category: 'Sports & Fitness',
-                title: 'Up to 65% Off',
-                subtitle: 'On Sports Equipment',
-                reward: 'Flat 3% Rewards',
-                color: 'gradient-red',
-                link: 'https://amzn.to/sports-deals',
-                image: null
-            }
-        ];
-        
-        this.renderBanners();
-        this.renderDots();
-    }
-    
-    renderBanners() {
-        const wrapper = document.getElementById('deal-banners-wrapper');
-        if (!wrapper) return;
-        
-        wrapper.innerHTML = this.banners.map(banner => `
-            <div class="deal-banner ${banner.image ? 'custom-image' : banner.color}" onclick="this.openDeal('${banner.link}')">
-                ${banner.image ? 
-                    `<img src="${banner.image}" alt="${banner.title}" loading="lazy">` :
-                    `
-                    <div class="banner-content">
-                        <div class="banner-category">${banner.category}</div>
-                        <div class="banner-title">${banner.title}</div>
-                        <div class="banner-subtitle">${banner.subtitle}</div>
-                        <div class="banner-reward">
-                            <span class="reward-icon">CK</span>
-                            ${banner.reward}
-                        </div>
-                        <button class="grab-deal-btn" onclick="event.stopPropagation(); window.open('${banner.link}', '_blank')">
-                            Grab Deal
-                            <i class="fas fa-external-link-alt"></i>
-                        </button>
-                    </div>
-                    `
-                }
-            </div>
-        `).join('');
-    }
-    
-    renderDots() {
-        const dotsContainer = document.getElementById('banner-dots');
-        if (!dotsContainer) return;
-        
-        dotsContainer.innerHTML = this.banners.map((_, index) => 
-            `<div class="banner-dot ${index === this.currentSlide ? 'active' : ''}" onclick="dealBannersSlider.goToSlide(${index})"></div>`
-        ).join('');
-    }
-    
-    setupEventListeners() {
-        const prevBtn = document.getElementById('banner-prev-btn');
-        const nextBtn = document.getElementById('banner-next-btn');
-        const wrapper = document.getElementById('deal-banners-wrapper');
-        
-        if (prevBtn) prevBtn.addEventListener('click', () => this.prevSlide());
-        if (nextBtn) nextBtn.addEventListener('click', () => this.nextSlide());
-        
-        // Touch/swipe support
-        if (wrapper) {
-            wrapper.addEventListener('touchstart', (e) => {
-                this.touchStartX = e.changedTouches[0].screenX;
-            });
-            
-            wrapper.addEventListener('touchend', (e) => {
-                this.touchEndX = e.changedTouches[0].screenX;
-                this.handleSwipe();
-            });
-            
-            // Mouse events for desktop
-            wrapper.addEventListener('mouseenter', () => this.pauseAutoSlide());
-            wrapper.addEventListener('mouseleave', () => this.startAutoSlide());
-        }
-    }
-    
-    handleSwipe() {
-        const swipeThreshold = 50;
-        const diff = this.touchStartX - this.touchEndX;
-        
-        if (Math.abs(diff) > swipeThreshold) {
-            if (diff > 0) {
-                this.nextSlide();
-            } else {
-                this.prevSlide();
-            }
-        }
-    }
-    
-    nextSlide() {
-        this.currentSlide = (this.currentSlide + 1) % this.banners.length;
-        this.updateSlider();
-    }
-    
-    prevSlide() {
-        this.currentSlide = this.currentSlide === 0 ? this.banners.length - 1 : this.currentSlide - 1;
-        this.updateSlider();
-    }
-    
-    goToSlide(index) {
-        this.currentSlide = index;
-        this.updateSlider();
-    }
-    
-    updateSlider() {
-        const wrapper = document.getElementById('deal-banners-wrapper');
-        if (!wrapper) return;
-        
-        const translateX = window.innerWidth <= 768 ? 
-            -(this.currentSlide * 87) : // Mobile: 85% + 2% gap
-            -(this.currentSlide * 100);
-            
-        wrapper.style.transform = `translateX(${translateX}%)`;
-        
-        // Update dots
-        document.querySelectorAll('.banner-dot').forEach((dot, index) => {
-            dot.classList.toggle('active', index === this.currentSlide);
-        });
-    }
-    
-    startAutoSlide() {
-        this.pauseAutoSlide();
-        this.autoSlideInterval = setInterval(() => {
-            this.nextSlide();
-        }, 5000); // Same as your hero slider
-    }
-    
-    pauseAutoSlide() {
-        if (this.autoSlideInterval) {
-            clearInterval(this.autoSlideInterval);
-            this.autoSlideInterval = null;
-        }
-    }
-    
-    setupUploadFeature() {
-        const uploadBtn = document.getElementById('upload-banner-btn');
-        const fileInput = document.getElementById('banner-file-input');
-        
-        if (uploadBtn && fileInput) {
-            uploadBtn.addEventListener('click', () => fileInput.click());
-            
-            fileInput.addEventListener('change', (e) => {
-                const files = Array.from(e.target.files);
-                this.handleImageUpload(files);
-            });
-        }
-    }
-    
-    handleImageUpload(files) {
-        files.forEach((file, index) => {
-            if (file.type.startsWith('image/')) {
-                const reader = new FileReader();
-                reader.onload = (e) => {
-                    // Add custom banner
-                    const newBanner = {
-                        id: Date.now() + index,
-                        category: 'Custom Deal',
-                        title: 'Custom Banner',
-                        subtitle: file.name,
-                        reward: 'Custom Reward',
-                        color: 'custom-image',
-                        link: 'https://amzn.to/custom-deal', // You can customize this
-                        image: e.target.result
-                    };
-                    
-                    this.banners.push(newBanner);
-                    this.renderBanners();
-                    this.renderDots();
-                    
-                    // Show success message
-                    this.showUploadSuccess(file.name);
-                };
-                reader.readAsDataURL(file);
-            }
-        });
-    }
-    
-    showUploadSuccess(filename) {
-        // Create temporary success message
-        const message = document.createElement('div');
-        message.className = 'upload-success-message';
-        message.textContent = `✅ ${filename} uploaded successfully!`;
-        message.style.cssText = `
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            background: var(--success);
-            color: white;
-            padding: 1rem 1.5rem;
-            border-radius: 8px;
-            z-index: 1000;
-            font-weight: 600;
-            box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
-            animation: slideInRight 0.3s ease;
-        `;
-        
-        document.body.appendChild(message);
-        
-        setTimeout(() => {
-            message.remove();
-        }, 3000);
-    }
-    
-    openDeal(link) {
-        window.open(link, '_blank');
-    }
-}
-
-// Initialize the deal banners slider
-let dealBannersSlider;
-
-// Add to your existing DOMContentLoaded event listener
-document.addEventListener('DOMContentLoaded', function() {
-    // Your existing initialization code...
-    
-    // Initialize deal banners slider
-    setTimeout(() => {
-        dealBannersSlider = new DealBannersSlider();
-    }, 1000);
-});
-
-// Add CSS animation for success message
-const style = document.createElement('style');
-style.textContent = `
-    @keyframes slideInRight {
-        from {
-            transform: translateX(100%);
-            opacity: 0;
-        }
-        to {
-            transform: translateX(0);
-            opacity: 1;
-        }
-    }
-`;
-document.head.appendChild(style);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -2495,3 +2181,682 @@ const promoConfig = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+// Brand Offers Horizontal Slider - Completely Isolated
+class ThriftBrandOffersSlider {
+    constructor() {
+        this.currentSlide = 0;
+        this.slidesPerView = this.getSlidesPerView();
+        this.totalSlides = 6;
+        this.autoplayInterval = null;
+        this.autoplayDelay = 4000;
+        this.isAutoplay = true;
+        this.isDragging = false;
+        this.startX = 0;
+        this.currentX = 0;
+        this.translateX = 0;
+        this.instanceId = 'thrift-brand-' + Date.now(); // Unique instance ID
+        
+        this.init();
+    }
+    
+    init() {
+        this.slider = document.getElementById('thrift-brand-slider');
+        this.prevBtn = document.getElementById('thrift-brand-prev-btn');
+        this.nextBtn = document.getElementById('thrift-brand-next-btn');
+        this.pagination = document.getElementById('thrift-brand-pagination');
+        this.slides = document.querySelectorAll('.thrift-brand-banner-slide');
+        this.container = document.querySelector('.thrift-brand-offers-section');
+        
+        if (!this.slider || !this.slides.length) {
+            console.warn('ThriftBrandOffersSlider: Required elements not found');
+            return;
+        }
+        
+        this.setupPagination();
+        this.setupEventListeners();
+        this.startAutoplay();
+        this.updateSlider();
+        
+        console.log('ThriftBrandOffersSlider initialized successfully');
+    }
+    
+    getSlidesPerView() {
+        if (window.innerWidth > 768) return 3;
+        if (window.innerWidth > 480) return 2;
+        return 1;
+    }
+    
+    setupPagination() {
+        if (!this.pagination) return;
+        
+        this.pagination.innerHTML = '';
+        const totalPages = Math.ceil(this.totalSlides / this.slidesPerView);
+        
+        for (let i = 0; i < totalPages; i++) {
+            const dot = document.createElement('button');
+            dot.className = `thrift-brand-pagination-dot ${i === 0 ? 'active' : ''}`;
+            dot.setAttribute('aria-label', `Go to slide ${i + 1}`);
+            dot.addEventListener('click', () => this.goToSlide(i * this.slidesPerView));
+            this.pagination.appendChild(dot);
+        }
+    }
+    
+    setupEventListeners() {
+        // Navigation buttons
+        this.prevBtn?.addEventListener('click', () => {
+            this.previousSlide();
+            this.resetAutoplay();
+        });
+        
+        this.nextBtn?.addEventListener('click', () => {
+            this.nextSlide();
+            this.resetAutoplay();
+        });
+        
+        // Banner clicks
+        this.slides.forEach((slide, index) => {
+            slide.addEventListener('click', (e) => {
+                const link = slide.dataset.link;
+                if (link && !this.isDragging) {
+                    // Track banner click
+                    if (typeof gtag !== 'undefined') {
+                        gtag('event', 'thrift_brand_banner_click', {
+                            'banner_url': link,
+                            'banner_position': index + 1,
+                            'banner_title': slide.querySelector('.thrift-brand-banner-title')?.textContent || '',
+                            'event_category': 'Brand Offers',
+                            'event_label': 'Horizontal Slider'
+                        });
+                    }
+                    
+                    // Add visual feedback
+                    slide.style.transform = 'scale(0.98)';
+                    setTimeout(() => {
+                        slide.style.transform = '';
+                        window.open(link, '_blank', 'noopener,noreferrer');
+                    }, 150);
+                }
+            });
+        });
+        
+        // Touch/Mouse events for swiping - with proper event isolation
+        this.slider.addEventListener('mousedown', (e) => {
+            e.preventDefault();
+            this.handleStart(e);
+        });
+        
+        this.slider.addEventListener('touchstart', (e) => {
+            this.handleStart(e);
+        }, { passive: false });
+        
+        document.addEventListener('mousemove', (e) => {
+            if (this.isDragging) this.handleMove(e);
+        });
+        
+        document.addEventListener('touchmove', (e) => {
+            if (this.isDragging) this.handleMove(e);
+        }, { passive: false });
+        
+        document.addEventListener('mouseup', (e) => {
+            if (this.isDragging) this.handleEnd(e);
+        });
+        
+        document.addEventListener('touchend', (e) => {
+            if (this.isDragging) this.handleEnd(e);
+        });
+        
+        // Pause autoplay on hover - only for this slider
+        this.container?.addEventListener('mouseenter', () => {
+            this.pauseAutoplay();
+        });
+        
+        this.container?.addEventListener('mouseleave', () => {
+            this.resumeAutoplay();
+        });
+        
+        // Handle visibility change
+        document.addEventListener('visibilitychange', () => {
+            if (document.hidden) {
+                this.pauseAutoplay();
+            } else if (!this.container?.matches(':hover')) {
+                this.resumeAutoplay();
+            }
+        });
+        
+        // Handle window resize with debouncing
+        const resizeHandler = this.debounce(() => {
+            const newSlidesPerView = this.getSlidesPerView();
+            if (newSlidesPerView !== this.slidesPerView) {
+                this.slidesPerView = newSlidesPerView;
+                this.setupPagination();
+                this.currentSlide = Math.min(this.currentSlide, this.totalSlides - this.slidesPerView);
+                this.updateSlider();
+            }
+        }, 250);
+        
+        window.addEventListener('resize', resizeHandler);
+        
+        // Store cleanup function
+        this.cleanup = () => {
+            window.removeEventListener('resize', resizeHandler);
+            if (this.autoplayInterval) {
+                clearInterval(this.autoplayInterval);
+            }
+        };
+    }
+    
+    debounce(func, wait) {
+        let timeout;
+        return function executedFunction(...args) {
+            const later = () => {
+                clearTimeout(timeout);
+                func(...args);
+            };
+            clearTimeout(timeout);
+            timeout = setTimeout(later, wait);
+        };
+    }
+    
+    handleStart(e) {
+        this.isDragging = true;
+        this.startX = e.type === 'mousedown' ? e.clientX : e.touches[0].clientX;
+        this.slider.style.cursor = 'grabbing';
+        this.slider.style.userSelect = 'none';
+        this.pauseAutoplay();
+    }
+    
+    handleMove(e) {
+        if (!this.isDragging) return;
+        
+        e.preventDefault();
+        this.currentX = e.type === 'mousemove' ? e.clientX : e.touches[0].clientX;
+        const deltaX = this.currentX - this.startX;
+        
+        // Apply resistance at boundaries
+        const resistance = 0.3;
+        let newTranslateX = this.translateX + deltaX;
+        
+        if (newTranslateX > 0) {
+            newTranslateX = newTranslateX * resistance;
+        } else if (newTranslateX < -(this.getMaxTranslate())) {
+            const over = Math.abs(newTranslateX + this.getMaxTranslate());
+            newTranslateX = -(this.getMaxTranslate() + over * resistance);
+        }
+        
+        this.slider.style.transform = `translateX(${newTranslateX}px)`;
+    }
+    
+    handleEnd(e) {
+        if (!this.isDragging) return;
+        
+        this.isDragging = false;
+        this.slider.style.cursor = 'grab';
+        this.slider.style.userSelect = '';
+        
+        const deltaX = this.currentX - this.startX;
+        const threshold = 50;
+        
+        if (Math.abs(deltaX) > threshold) {
+            if (deltaX > 0) {
+                this.previousSlide();
+            } else {
+                this.nextSlide();
+            }
+        } else {
+            this.updateSlider();
+        }
+        
+        // Resume autoplay after interaction
+        setTimeout(() => {
+            if (!this.container?.matches(':hover')) {
+                this.resumeAutoplay();
+            }
+        }, 1000);
+    }
+    
+    getMaxTranslate() {
+        const slideWidth = this.slides[0]?.offsetWidth + 20 || 320; // Including gap + fallback
+        return Math.max(0, (this.totalSlides - this.slidesPerView) * slideWidth);
+    }
+    
+    updateSlider() {
+        const slideWidth = this.slides[0]?.offsetWidth + 20 || 320; // Including gap + fallback
+        this.translateX = -this.currentSlide * slideWidth;
+        
+        this.slider.style.transform = `translateX(${this.translateX}px)`;
+        this.updatePagination();
+        this.updateNavigationButtons();
+    }
+    
+    updatePagination() {
+        const dots = this.pagination?.querySelectorAll('.thrift-brand-pagination-dot');
+        if (!dots) return;
+        
+        dots.forEach((dot, index) => {
+            const pageStart = index * this.slidesPerView;
+            const isActive = this.currentSlide >= pageStart && 
+                           this.currentSlide < pageStart + this.slidesPerView;
+            dot.classList.toggle('active', isActive);
+        });
+    }
+    
+    updateNavigationButtons() {
+        if (this.prevBtn) {
+            this.prevBtn.disabled = this.currentSlide === 0;
+        }
+        
+        if (this.nextBtn) {
+            this.nextBtn.disabled = this.currentSlide >= this.totalSlides - this.slidesPerView;
+        }
+    }
+    
+    nextSlide() {
+        if (this.currentSlide < this.totalSlides - this.slidesPerView) {
+            this.currentSlide++;
+        } else {
+            this.currentSlide = 0; // Loop back to start
+        }
+        this.updateSlider();
+    }
+    
+    previousSlide() {
+        if (this.currentSlide > 0) {
+            this.currentSlide--;
+        } else {
+            this.currentSlide = this.totalSlides - this.slidesPerView; // Loop to end
+        }
+        this.updateSlider();
+    }
+    
+    goToSlide(slideIndex) {
+        this.currentSlide = Math.max(0, Math.min(slideIndex, this.totalSlides - this.slidesPerView));
+        this.updateSlider();
+        this.resetAutoplay();
+    }
+    
+    startAutoplay() {
+        this.stopAutoplay(); // Prevent multiple intervals
+        
+        this.autoplayInterval = setInterval(() => {
+            if (this.isAutoplay && !this.isDragging && document.visibilityState === 'visible') {
+                this.nextSlide();
+            }
+        }, this.autoplayDelay);
+    }
+    
+    stopAutoplay() {
+        if (this.autoplayInterval) {
+            clearInterval(this.autoplayInterval);
+            this.autoplayInterval = null;
+        }
+    }
+    
+    pauseAutoplay() {
+        this.isAutoplay = false;
+    }
+    
+    resumeAutoplay() {
+        this.isAutoplay = true;
+        if (!this.autoplayInterval) {
+            this.startAutoplay();
+        }
+    }
+    
+    resetAutoplay() {
+        this.stopAutoplay();
+        this.pauseAutoplay();
+        
+        setTimeout(() => {
+            this.resumeAutoplay();
+            this.startAutoplay();
+        }, 2000);
+    }
+    
+    destroy() {
+        this.stopAutoplay();
+        if (this.cleanup) {
+            this.cleanup();
+        }
+        console.log('ThriftBrandOffersSlider destroyed');
+    }
+}
+
+// Initialize Brand Offers Slider - Isolated from other sliders
+let thriftBrandOffersSlider = null;
+
+// Safe initialization that won't conflict with existing code
+function initThriftBrandOffers() {
+    // Wait for DOM to be ready
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initThriftBrandOffers);
+        return;
+    }
+    
+    // Check if already initialized
+    if (thriftBrandOffersSlider) {
+        console.warn('ThriftBrandOffersSlider already initialized');
+        return;
+    }
+    
+    // Initialize only if elements exist
+    const brandSliderElement = document.getElementById('thrift-brand-slider');
+    if (brandSliderElement) {
+        thriftBrandOffersSlider = new ThriftBrandOffersSlider();
+    }
+}
+
+// Initialize when ready
+initThriftBrandOffers();
+
+// Cleanup on page unload
+window.addEventListener('beforeunload', () => {
+    if (thriftBrandOffersSlider) {
+        thriftBrandOffersSlider.destroy();
+        thriftBrandOffersSlider = null;
+    }
+});
+
+// Export for manual control if needed
+window.ThriftBrandOffersSlider = {
+    instance: () => thriftBrandOffersSlider,
+    reinitialize: () => {
+        if (thriftBrandOffersSlider) {
+            thriftBrandOffersSlider.destroy();
+        }
+        thriftBrandOffersSlider = null;
+        initThriftBrandOffers();
+    }
+};
+
+
+
+
+
+
+
+
+
+
+
+
+// Why Choose Us Auto-Rotating Features
+class ThriftWhyChooseSlider {
+    constructor() {
+        this.currentFeature = 0;
+        this.totalFeatures = 3;
+        this.autoplayInterval = null;
+        this.autoplayDelay = 6000; // 6 seconds
+        this.isAutoplay = true;
+        this.instanceId = 'thrift-why-' + Date.now();
+        
+        this.init();
+    }
+    
+    init() {
+        this.slider = document.getElementById('thrift-why-features-slider');
+        this.indicators = document.querySelectorAll('.thrift-why-indicator');
+        this.banners = document.querySelectorAll('.thrift-why-feature-banner');
+        this.container = document.querySelector('.thrift-why-choose-section');
+        
+        if (!this.slider || !this.banners.length) {
+            console.warn('ThriftWhyChooseSlider: Required elements not found');
+            return;
+        }
+        
+        this.setupEventListeners();
+        this.startAutoplay();
+        this.highlightCurrentFeature();
+        
+        console.log('ThriftWhyChooseSlider initialized successfully');
+    }
+    
+    setupEventListeners() {
+        // Banner clicks with CTA button handling
+        this.banners.forEach((banner, index) => {
+            banner.addEventListener('click', (e) => {
+                // Don't trigger banner click if CTA button was clicked
+                if (e.target.classList.contains('thrift-why-cta-btn')) {
+                    return;
+                }
+                
+                const link = banner.dataset.link;
+                if (link) {
+                    // Smooth scroll to section or handle navigation
+                    this.handleBannerClick(link, index);
+                }
+            });
+            
+            // CTA Button specific handling
+            const ctaBtn = banner.querySelector('.thrift-why-cta-btn');
+            if (ctaBtn) {
+                ctaBtn.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    const link = banner.dataset.link;
+                    this.handleCTAClick(link, index);
+                });
+            }
+        });
+        
+        // Indicator clicks
+        this.indicators.forEach((indicator, index) => {
+            indicator.addEventListener('click', () => {
+                this.goToFeature(index);
+                this.resetAutoplay();
+            });
+        });
+        
+        // Pause autoplay on hover
+        this.container?.addEventListener('mouseenter', () => {
+            this.pauseAutoplay();
+        });
+        
+        this.container?.addEventListener('mouseleave', () => {
+            this.resumeAutoplay();
+        });
+        
+        // Handle visibility change
+        document.addEventListener('visibilitychange', () => {
+            if (document.hidden) {
+                this.pauseAutoplay();
+            } else if (!this.container?.matches(':hover')) {
+                this.resumeAutoplay();
+            }
+        });
+        
+        // Touch/swipe support for mobile
+        let startX = 0;
+        let currentX = 0;
+        
+        this.slider.addEventListener('touchstart', (e) => {
+            startX = e.touches[0].clientX;
+        }, { passive: true });
+        
+        this.slider.addEventListener('touchmove', (e) => {
+            currentX = e.touches[0].clientX;
+        }, { passive: true });
+        
+        this.slider.addEventListener('touchend', (e) => {
+            const deltaX = currentX - startX;
+            const threshold = 50;
+            
+            if (Math.abs(deltaX) > threshold) {
+                if (deltaX > 0) {
+                    this.previousFeature();
+                } else {
+                    this.nextFeature();
+                }
+                this.resetAutoplay();
+            }
+        }, { passive: true });
+        
+        // Store cleanup function
+        this.cleanup = () => {
+            if (this.autoplayInterval) {
+                clearInterval(this.autoplayInterval);
+            }
+        };
+    }
+    
+    handleBannerClick(link, index) {
+        // Add click animation
+        const banner = this.banners[index];
+        banner.style.transform = 'scale(0.95)';
+        
+        setTimeout(() => {
+            banner.style.transform = '';
+            
+            // Handle different link types
+            if (link.startsWith('#')) {
+                // Internal link - smooth scroll
+                const target = document.querySelector(link);
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            } else if (link.startsWith('http')) {
+                // External link
+                window.open(link, '_blank', 'noopener,noreferrer');
+            } else {
+                // Relative link
+                window.location.href = link;
+            }
+        }, 150);
+    }
+    
+    handleCTAClick(link, index) {
+        // Add button click animation
+        const ctaBtn = this.banners[index].querySelector('.thrift-why-cta-btn');
+        
+        if (ctaBtn) {
+            ctaBtn.style.transform = 'scale(0.9)';
+            setTimeout(() => {
+                ctaBtn.style.transform = '';
+            }, 150);
+        }
+        
+        // Handle CTA action
+        this.handleBannerClick(link, index);
+    }
+    
+    highlightCurrentFeature() {
+        // Update indicators
+        this.indicators.forEach((indicator, index) => {
+            indicator.classList.toggle('active', index === this.currentFeature);
+        });
+        
+        // Add subtle highlight to current banner
+        this.banners.forEach((banner, index) => {
+            if (index === this.currentFeature) {
+                banner.style.transform = 'scale(1.02)';
+                banner.style.zIndex = '5';
+                setTimeout(() => {
+                    banner.style.transform = '';
+                    banner.style.zIndex = '';
+                }, 500);
+            }
+        });
+    }
+    
+    nextFeature() {
+        this.currentFeature = (this.currentFeature + 1) % this.totalFeatures;
+        this.highlightCurrentFeature();
+    }
+    
+    previousFeature() {
+        this.currentFeature = this.currentFeature === 0 ? 
+            this.totalFeatures - 1 : this.currentFeature - 1;
+        this.highlightCurrentFeature();
+    }
+    
+    goToFeature(featureIndex) {
+        this.currentFeature = featureIndex;
+        this.highlightCurrentFeature();
+    }
+    
+    startAutoplay() {
+        this.stopAutoplay(); // Prevent multiple intervals
+        
+        this.autoplayInterval = setInterval(() => {
+            if (this.isAutoplay && document.visibilityState === 'visible') {
+                this.nextFeature();
+            }
+        }, this.autoplayDelay);
+    }
+    
+    stopAutoplay() {
+        if (this.autoplayInterval) {
+            clearInterval(this.autoplayInterval);
+            this.autoplayInterval = null;
+        }
+    }
+    
+    pauseAutoplay() {
+        this.isAutoplay = false;
+    }
+    
+    resumeAutoplay() {
+        this.isAutoplay = true;
+        if (!this.autoplayInterval) {
+            this.startAutoplay();
+        }
+    }
+    
+    resetAutoplay() {
+        this.stopAutoplay();
+        this.pauseAutoplay();
+        
+        setTimeout(() => {
+            this.resumeAutoplay();
+            this.startAutoplay();
+        }, 3000);
+    }
+    
+    destroy() {
+        this.stopAutoplay();
+        if (this.cleanup) {
+            this.cleanup();
+        }
+        console.log('ThriftWhyChooseSlider destroyed');
+    }
+}
+
+// Initialize Why Choose Us Slider - Isolated
+let thriftWhyChooseSlider = null;
+
+function initThriftWhyChoose() {
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initThriftWhyChoose);
+        return;
+    }
+    
+    if (thriftWhyChooseSlider) {
+        console.warn('ThriftWhyChooseSlider already initialized');
+        return;
+    }
+    
+    const whySliderElement = document.getElementById('thrift-why-features-slider');
+    if (whySliderElement) {
+        thriftWhyChooseSlider = new ThriftWhyChooseSlider();
+    }
+}
+
+// Initialize when ready
+initThriftWhyChoose();
+
+// Cleanup on page unload
+window.addEventListener('beforeunload', () => {
+    if (thriftWhyChooseSlider) {
+        thriftWhyChooseSlider.destroy();
+        thriftWhyChooseSlider = null;
+    }
+});
