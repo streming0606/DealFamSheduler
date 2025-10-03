@@ -1,8 +1,36 @@
 {
-  "last_updated": "2025-10-02T21:20:36.804364+05:30",
+  "last_updated": "2025-10-03T10:16:30.429298+05:30",
   "total_products": 50,
   "daily_target": 6,
   "products": [
+    {
+      "id": "product_morning_1_20251003_044623",
+      "title": "RynoGear Regular Fit Super Stretchable Track Pant for Men",
+      "image": "https://m.media-amazon.com/images/I/6111Df0PqGL._AC_UY218_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0F6NZLN8S?tag=gadgetvill09f-21",
+      "price": "\u20b9549",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B0F6NZLN8S",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-03T10:16:23.042825+05:30",
+      "session_type": "morning",
+      "link_index": 11
+    },
+    {
+      "id": "product_morning_2_20251003_044630",
+      "title": "Nivia Wrist Support with Velcro Strap For Men & Women, Adjustable Compression Band for Gym, Fitness,...",
+      "image": "https://m.media-amazon.com/images/I/51Ml+0Kx5YL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B016B7MU8K?tag=gadgetvill09f-21",
+      "price": "\u20b9149",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "home",
+      "asin": "B016B7MU8K",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-03T10:16:30.271348+05:30",
+      "session_type": "morning",
+      "link_index": 12
+    },
     {
       "id": "product_night_1_20251002_155036",
       "title": "JUST RIDER Compression Men's Skin Tight Shorts for Gym, Running, Cycling, Swimming, Basketball, Cric...",
@@ -674,34 +702,6 @@
       "posted_date": "2025-09-26T10:17:34.814401+05:30",
       "session_type": "morning",
       "link_index": 285
-    },
-    {
-      "id": "product_morning_2_20250926_044742",
-      "title": "Dumoyi Smart Weighted Hoop for Adults Weight Loss,Infinity Fitness Hoop Plus Size for Women Smart Ex...",
-      "image": "https://m.media-amazon.com/images/I/71zp4zBzHdL._AC_UL320_.jpg",
-      "affiliate_link": "https://www.amazon.in/dp/B0924TRVH5?tag=gadgetvill09f-21",
-      "price": "\u20b9706",
-      "rating": "\u2b50\u2b50\u2b50\u2606\u2606",
-      "category": "electronics",
-      "asin": "B0924TRVH5",
-      "data_source": "serpapi",
-      "posted_date": "2025-09-26T10:17:42.567318+05:30",
-      "session_type": "morning",
-      "link_index": 286
-    },
-    {
-      "id": "product_night_1_20250925_155050",
-      "title": "anciently Men 100% Natural Unpolished Karungali Malai Original Karungali Malai 8Mm-Natural Black Ebo...",
-      "image": "https://m.media-amazon.com/images/I/71Fc6qPGKjL._AC_UL320_.jpg",
-      "affiliate_link": "https://www.amazon.in/dp/B09B5D8SJ7?tag=gadgetvill09f-21",
-      "price": "\u20b9668",
-      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
-      "category": "electronics",
-      "asin": "B09B5D8SJ7",
-      "data_source": "serpapi",
-      "posted_date": "2025-09-25T21:20:50.957658+05:30",
-      "session_type": "night",
-      "link_index": 281
     }
   ]
 }
