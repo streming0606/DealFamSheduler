@@ -3725,8 +3725,8 @@ body.promo-banner-visible .header {
 }
 
 .thrift-brand-offers-section .thrift-brand-section-title {
-    font-size: 2.2rem;
-    font-weight: 700;
+    font-size: 1,6rem;
+    font-weight: 600;
     color: var(--text-primary);
     margin-bottom: 8px;
     display: flex;
@@ -3737,7 +3737,7 @@ body.promo-banner-visible .header {
 
 .thrift-brand-offers-section .thrift-brand-section-title i {
     color: var(--accent-color);
-    font-size: 1.8rem;
+    font-size: 1.7rem;
 }
 
 .thrift-brand-offers-section .thrift-brand-section-subtitle {
@@ -3956,7 +3956,7 @@ body.promo-banner-visible .header {
     }
     
     .thrift-brand-section-title {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
     }
     
     .thrift-brand-banner-overlay {
@@ -3969,7 +3969,7 @@ body.promo-banner-visible .header {
     }
     
     .thrift-brand-banner-title {
-        font-size: 0.9rem;
+        font-size: 0.7rem;
     }
 }
 
@@ -4003,7 +4003,7 @@ body.promo-banner-visible .header {
     }
     
     .thrift-brand-section-title {
-        font-size: 1.6rem;
+        font-size: 1.5rem;
         flex-direction: column;
         gap: 8px;
     }
@@ -4165,8 +4165,8 @@ body.promo-banner-visible .header {
 }
 
 .thrift-why-section-title {
-    font-size: 2.4rem;
-    font-weight: 700;
+    font-size: 1.7rem;
+    font-weight: 600;
     color: var(--text-primary);
     margin-bottom: 0;
     display: flex;
@@ -4278,7 +4278,7 @@ body.promo-banner-visible .header {
 
 .thrift-why-feature-title {
     font-size: 1.4rem;
-    font-weight: 700;
+    font-weight: 600;
     margin-bottom: 8px;
     color: white;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
@@ -4393,7 +4393,7 @@ body.promo-banner-visible .header {
     }
     
     .thrift-why-section-title {
-        font-size: 2rem;
+        font-size: 1.6rem;
         flex-direction: column;
         gap: 10px;
     }
@@ -4432,7 +4432,7 @@ body.promo-banner-visible .header {
     }
     
     .thrift-why-section-title {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
     }
     
     .thrift-why-feature-banner {
