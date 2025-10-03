@@ -2641,7 +2641,7 @@ p {
     transform: scale(1.05);
 }
 
-.testimonial-avatar::after {
+/* Enhanced Text Content .testimonial-avatar::after {
     content: '✓';
     position: absolute;
     top: -2px;
@@ -2659,7 +2659,7 @@ p {
     color: white;
     box-shadow: var(--shadow-sm);
 }
-
+*/
 .testimonial-info {
     flex-grow: 1;
 }
