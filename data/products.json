@@ -1,8 +1,36 @@
 {
-  "last_updated": "2025-10-03T13:20:02.935128+05:30",
+  "last_updated": "2025-10-03T18:35:38.905411+05:30",
   "total_products": 50,
   "daily_target": 6,
   "products": [
+    {
+      "id": "product_morning_1_20251003_130531",
+      "title": "Butterfly Smart 2 Litres Table-Top Wet Grinder|150 Watts|Shockproof ABS Body| Coconut Scrapper Attac...",
+      "image": "https://m.media-amazon.com/images/I/61YTGRehHSL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B078HG2ZPS?tag=gadgetvill09f-21",
+      "price": "\u20b93,849",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "home",
+      "asin": "B078HG2ZPS",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-03T18:35:31.039888+05:30",
+      "session_type": "morning",
+      "link_index": 21
+    },
+    {
+      "id": "product_morning_2_20251003_130538",
+      "title": "Cookwell Bullet Mixer Grinder (5 Jars, 3 Blades, Silver) - Copper, 600 Watts - 2 Year Warranty",
+      "image": "https://m.media-amazon.com/images/I/81yobRRV8nL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B097XJQZ8H?tag=gadgetvill09f-21",
+      "price": "\u20b91,949",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B097XJQZ8H",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-03T18:35:38.577606+05:30",
+      "session_type": "morning",
+      "link_index": 22
+    },
     {
       "id": "product_afternoon_1_20251003_074955",
       "title": "eCraftIndia Set of 2 Purple Floral & Pearl Designer Rakhis with Roli Chawal Pack and Best Bro Ever F...",
@@ -674,34 +702,6 @@
       "posted_date": "2025-09-26T18:37:27.359926+05:30",
       "session_type": "morning",
       "link_index": 295
-    },
-    {
-      "id": "product_morning_2_20250926_130733",
-      "title": "HORNBULL Men's Personalized Wallet I Customized Slim Stylish Leather Purse with Name I Unique Birthd...",
-      "image": "https://m.media-amazon.com/images/I/71s9C8kkE7L._AC_UL320_.jpg",
-      "affiliate_link": "https://www.amazon.in/dp/B0F79X1SR4?tag=gadgetvill09f-21",
-      "price": "\u20b9499",
-      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
-      "category": "electronics",
-      "asin": "B0F79X1SR4",
-      "data_source": "serpapi",
-      "posted_date": "2025-09-26T18:37:33.930385+05:30",
-      "session_type": "morning",
-      "link_index": 296
-    },
-    {
-      "id": "product_afternoon_1_20250926_075010",
-      "title": "Preethi Blue Leaf Diamond MG-214 mixer grinder 750 watt (Blue/White), 3 jars & Flexi Lid, FBT motor ...",
-      "image": "https://m.media-amazon.com/images/I/61QwcbNMxnL._AC_UL320_.jpg",
-      "affiliate_link": "https://www.amazon.in/dp/B0188KPKB2?tag=gadgetvill09f-21",
-      "price": "\u20b92,599",
-      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
-      "category": "electronics",
-      "asin": "B0188KPKB2",
-      "data_source": "serpapi",
-      "posted_date": "2025-09-26T13:20:10.660536+05:30",
-      "session_type": "afternoon",
-      "link_index": 290
     }
   ]
 }
