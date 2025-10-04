@@ -10,6 +10,82 @@
         gtag('config', 'G-D3MVJ2EHSQ');
     </script>
 
+
+
+
+
+
+
+
+
+<style>
+        /* CSS Variables for Search Page */
+        :root {
+            --primary: #2874F0;
+            --primary-dark: #1C5DC7;
+            --primary-light: #E3F0FF;
+            --bg-primary: #F1F3F6;
+            --card-bg: #FFFFFF;
+            --text-primary: #212121;
+            --text-secondary: #686868;
+            --text-muted: #878787;
+            --border-color: #E0E0E0;
+            --shadow-sm: 0 1px 3px rgba(0,0,0,0.1);
+            --shadow: 0 2px 8px rgba(0,0,0,0.1);
+            --shadow-lg: 0 4px 16px rgba(0,0,0,0.15);
+            --radius: 8px;
+            --input-bg: #FFFFFF;
+            --warning: #ffa500;
+            --danger: #e74c3c;
+            --success: #27ae60;
+        }
+
+        [data-theme="dark"] {
+            --primary: #4A90E2;
+            --primary-dark: #2874F0;
+            --primary-light: #1a2332;
+            --bg-primary: #0F1419;
+            --card-bg: #1C2938;
+            --text-primary: #E8F4F8;
+            --text-secondary: #B8C5D0;
+            --text-muted: #8899A6;
+            --border-color: #2C3E50;
+            --input-bg: #253341;
+            --shadow-sm: 0 1px 3px rgba(0,0,0,0.3);
+            --shadow: 0 2px 8px rgba(0,0,0,0.4);
+            --shadow-lg: 0 4px 16px rgba(0,0,0,0.5);
+        }
+
+        /* Additional Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+    </style>
+
+
+
+
+
+
+
+
+
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Search Results - Thrift Zone</title>
@@ -22,24 +98,45 @@
     <meta name="description" content="Search results for deals and offers on Thrift Zone - Smart Shopping Hub">
 </head>
 <body>
-    <!-- Header -->
+    <!-- Header 
     <header class="header">
         <div class="container">
             <nav class="navbar">
-                <!-- Logo -->
                 <div class="logo">
                     <a href="index.html">
                         <div class="logo-content">
                             <i class="fas fa-shopping-bag"></i>
                             <div>
-                                <span class="logo-text">Thrift Zone</span>
-                                <span class="logo-subtitle">Smart Shopping Hub</span>
+                                <span class="logo-text">Thrift Maal</span>
+                                
                             </div>
                         </div>
                     </a>
-                </div>
+                </div>-->
 
-                <!-- Search Container -->
+<!-- Enhanced Header with Auth -->
+    <header class="header">
+        <div class="container">
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <!-- Logo Section -->
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo/logo.png" alt="Thrift Zone" class="logo-icon">
+                    <div class="logo-text">
+                        <h2>Thrift Maal</h2>
+                        
+                    </div>
+                </a>
+            </div>
+
+<!-- Search Bar-->
+
                 <div class="search-container">
                     <form class="search-form" id="search-form">
                         <div class="search-input-wrapper">
@@ -47,11 +144,7 @@
                                    id="search-input" 
                                    class="search-input" 
                                    placeholder="Search for deals, products, categories..."
-                                   autocomplete="off"
-                                   spellcheck="false">
-                            <button type="button" id="voice-search-btn" class="voice-search-btn" title="Voice Search">
-                                <i class="fas fa-microphone"></i>
-                            </button>
+                                   autocomplete="off">
                         </div>
                         <button type="submit" id="search-btn" class="search-btn">
                             <i class="fas fa-search"></i>
@@ -61,44 +154,127 @@
                     <div id="search-suggestions" class="search-suggestions"></div>
                 </div>
 
-                <!-- User Actions -->
+
+
+
+
+<!-- Navigation -->
+            <nav class="nav">
+                <a href="index.html" class="mobile-nav-link">
+                <i class="fas fa-home"></i> Home
+            </a>
+                            <a href="coupons.html" class="mobile-nav-link highlight">
+                <i class="fas fa-tags"></i> Coupons
+            </a>
+                <a href="community.html" class="mobile-nav-link highlight">
+                <i class="fas fa-users"></i> Discussion
+            </a>
+                </a>
+            <a href="loot-deals" class="mobile-nav-link">
+                <i class="fas fa-fire"></i> End Soon
+            </a>
+                <a href="deal-finder.html" class="nav-link deal-finder-link">
+                    <i class="fas fa-search-dollar"></i> Deal Finder
+                </a>
+            </nav>
+
+
+
+
                 <div class="user-actions">
-                    <button class="theme-toggle" id="theme-toggle" title="Toggle theme">
-                        <i class="fas fa-moon"></i>
-                    </button>
-                    <button class="wishlist-icon" title="Wishlist">
-                        <i class="far fa-heart"></i>
-                        <span class="wishlist-count">0</span>
-                    </button>
+                    
+                        
+                    
                     <div class="user-profile">
-                        <button class="login-btn" id="login-btn">
-                            <i class="fas fa-user"></i>
-                            <span>Login</span>
-                        </button>
+                        
                     </div>
                 </div>
-
-                <!-- Mobile Menu Toggle -->
-                <button class="mobile-menu-toggle" id="mobile-menu-toggle">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
             </nav>
         </div>
     </header>
 
-    <!-- Search Results Content -->
+
+
+
+
+
+<!-- Mobile Navigation -->
+    <div class="mobile-nav" id="mobile-nav">
+        <div class="mobile-nav-header">
+            <h3>MENU</h3>
+            <button class="mobile-nav-close">&times;</button>
+        </div>
+
+        <div class="mobile-nav-content">
+            <!-- Mobile Auth Section -->
+            <div class="mobile-auth" id="mobile-auth">
+                <div class="mobile-auth-buttons" id="mobile-auth-buttons">
+                   <!-- <button class="mobile-auth-btn login" id="mobile-login-btn">
+                        <i class="fas fa-sign-in-alt"></i> Login
+                    </button>
+                    <button class="mobile-auth-btn signup" id="mobile-signup-btn">
+                        <i class="fas fa-user-plus"></i> Join Now
+                    </button>-->
+                </div>
+
+                <div class="mobile-user-info" id="mobile-user-info" style="display: none;">
+                    <div class="mobile-user-details">
+                        <div class="mobile-user-avatar" id="mobile-user-avatar">U</div>
+                        <div class="mobile-user-text">
+                            <span class="mobile-user-name" id="mobile-user-name">User Name</span>
+                            <span class="mobile-user-email" id="mobile-user-email">user@example.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navigation Links -->
+            <a href="index.html" class="mobile-nav-link">
+                <i class="fas fa-home"></i> Home
+            </a>
+            <a href="deal-finder.html" class="mobile-nav-link highlight active">
+                <i class="fas fa-search-dollar"></i> Deal Finder
+            </a>
+            <a href="coupons.html" class="mobile-nav-link highlight">
+                <i class="fas fa-tags"></i> Coupons
+            </a>
+            <a href="community.html" class="mobile-nav-link highlight">
+                <i class="fas fa-users"></i> Discussion
+            </a>
+            <a href="loot-deals" class="mobile-nav-link">
+                <i class="fas fa-fire"></i> End Soon
+            </a>
+            <a href="blog" class="mobile-nav-link highlight">
+                <i class="fas fa-blog"></i> Blog
+            </a>
+
+            <div class="mobile-nav-divider"></div>
+
+            <div class="mobile-user-actions" id="mobile-user-actions" style="display: none;">
+                <a href="profile" class="mobile-nav-link" id="mobile-profile-link">Profile</a>
+                <a href="wishlist" class="mobile-nav-link" id="mobile-wishlist-link">Wishlist</a>
+                <button class="mobile-nav-link logout" id="mobile-logout-btn">Logout</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <!-- Search Results Page -->
     <main class="search-results-page">
         <div class="container">
-            <!-- Breadcrumb -->
             <nav class="breadcrumb">
                 <a href="index.html">Home</a>
                 <i class="fas fa-chevron-right"></i>
                 <span id="breadcrumb-search">Search Results</span>
             </nav>
 
-            <!-- Search Results Header -->
             <div class="search-results-header">
                 <h1 id="search-results-title">Search Results</h1>
                 <div class="search-meta">
@@ -108,159 +284,7 @@
             </div>
 
             <div class="search-layout">
-                <!-- Filters Sidebar -->
-                <aside class="search-filters">
-                    <div class="filters-header">
-                        <h3>Filters</h3>
-                        <button id="clear-all-filters" class="clear-filters-btn">Clear All</button>
-                    </div>
-
-                    <!-- Category Filter -->
-                    <div class="filter-group">
-                        <h4 class="filter-title">
-                            <i class="fas fa-list"></i>
-                            Categories
-                        </h4>
-                        <div class="filter-options" id="category-filters">
-                            <label class="filter-option">
-                                <input type="checkbox" name="category" value="all" checked>
-                                <span>All Categories</span>
-                                <span class="count">(0)</span>
-                            </label>
-                            <label class="filter-option">
-                                <input type="checkbox" name="category" value="electronics">
-                                <span>Electronics</span>
-                                <span class="count">(0)</span>
-                            </label>
-                            <label class="filter-option">
-                                <input type="checkbox" name="category" value="fashion">
-                                <span>Fashion</span>
-                                <span class="count">(0)</span>
-                            </label>
-                            <label class="filter-option">
-                                <input type="checkbox" name="category" value="home">
-                                <span>Home & Living</span>
-                                <span class="count">(0)</span>
-                            </label>
-                            <label class="filter-option">
-                                <input type="checkbox" name="category" value="beauty">
-                                <span>Health & Beauty</span>
-                                <span class="count">(0)</span>
-                            </label>
-                            <label class="filter-option">
-                                <input type="checkbox" name="category" value="sports">
-                                <span>Sports & Fitness</span>
-                                <span class="count">(0)</span>
-                            </label>
-                            <label class="filter-option">
-                                <input type="checkbox" name="category" value="auto">
-                                <span>Auto & Vehicle</span>
-                                <span class="count">(0)</span>
-                            </label>
-                            <label class="filter-option">
-                                <input type="checkbox" name="category" value="gaming">
-                                <span>Gaming</span>
-                                <span class="count">(0)</span>
-                            </label>
-                        </div>
-                    </div>
-
-                    <!-- Price Range Filter -->
-                    <div class="filter-group">
-                        <h4 class="filter-title">
-                            <i class="fas fa-rupee-sign"></i>
-                            Price Range
-                        </h4>
-                        <div class="price-range-filter">
-                            <div class="price-inputs">
-                                <input type="number" id="min-price" placeholder="Min" min="0">
-                                <span>to</span>
-                                <input type="number" id="max-price" placeholder="Max" min="0">
-                            </div>
-                            <button id="apply-price-filter" class="apply-filter-btn">Apply</button>
-                        </div>
-                        <div class="price-quick-filters">
-                            <button class="price-quick-btn" data-range="0-500">Under ₹500</button>
-                            <button class="price-quick-btn" data-range="500-1000">₹500 - ₹1000</button>
-                            <button class="price-quick-btn" data-range="1000-2000">₹1000 - ₹2000</button>
-                            <button class="price-quick-btn" data-range="2000-5000">₹2000 - ₹5000</button>
-                            <button class="price-quick-btn" data-range="5000-10000">₹5000 - ₹10000</button>
-                            <button class="price-quick-btn" data-range="10000-999999">Above ₹10000</button>
-                        </div>
-                    </div>
-
-                    <!-- Discount Filter -->
-                    <div class="filter-group">
-                        <h4 class="filter-title">
-                            <i class="fas fa-tags"></i>
-                            Discount
-                        </h4>
-                        <div class="filter-options" id="discount-filters">
-                            <label class="filter-option">
-                                <input type="checkbox" name="discount" value="10">
-                                <span>10% or more</span>
-                                <span class="count">(0)</span>
-                            </label>
-                            <label class="filter-option">
-                                <input type="checkbox" name="discount" value="25">
-                                <span>25% or more</span>
-                                <span class="count">(0)</span>
-                            </label>
-                            <label class="filter-option">
-                                <input type="checkbox" name="discount" value="50">
-                                <span>50% or more</span>
-                                <span class="count">(0)</span>
-                            </label>
-                            <label class="filter-option">
-                                <input type="checkbox" name="discount" value="70">
-                                <span>70% or more</span>
-                                <span class="count">(0)</span>
-                            </label>
-                        </div>
-                    </div>
-
-                    <!-- Rating Filter -->
-                    <div class="filter-group">
-                        <h4 class="filter-title">
-                            <i class="fas fa-star"></i>
-                            Customer Rating
-                        </h4>
-                        <div class="filter-options" id="rating-filters">
-                            <label class="filter-option">
-                                <input type="radio" name="rating" value="4">
-                                <span class="rating-display">
-                                    <span class="stars">★★★★☆</span>
-                                    <span>4 stars & Above</span>
-                                </span>
-                            </label>
-                            <label class="filter-option">
-                                <input type="radio" name="rating" value="3">
-                                <span class="rating-display">
-                                    <span class="stars">★★★☆☆</span>
-                                    <span>3 stars & Above</span>
-                                </span>
-                            </label>
-                            <label class="filter-option">
-                                <input type="radio" name="rating" value="2">
-                                <span class="rating-display">
-                                    <span class="stars">★★☆☆☆</span>
-                                    <span>2 stars & Above</span>
-                                </span>
-                            </label>
-                            <label class="filter-option">
-                                <input type="radio" name="rating" value="1">
-                                <span class="rating-display">
-                                    <span class="stars">★☆☆☆☆</span>
-                                    <span>1 star & Above</span>
-                                </span>
-                            </label>
-                        </div>
-                    </div>
-                </aside>
-
-                <!-- Search Results Content -->
                 <div class="search-results-content">
-                    <!-- Results Controls -->
                     <div class="results-controls">
                         <div class="results-info">
                             <span id="results-showing">Showing 0 results</span>
@@ -273,60 +297,100 @@
                                     <option value="newest">Newest First</option>
                                     <option value="price-low">Price: Low to High</option>
                                     <option value="price-high">Price: High to Low</option>
-                                    <option value="discount">Highest Discount</option>
-                                    <option value="rating">Customer Rating</option>
                                 </select>
                             </div>
                             <div class="view-toggle">
-                                <button class="view-btn active" data-view="grid" title="Grid View">
+                                <button class="view-btn active" data-view="grid">
                                     <i class="fas fa-th"></i>
                                 </button>
-                                <button class="view-btn" data-view="list" title="List View">
+                                <button class="view-btn" data-view="list">
                                     <i class="fas fa-list"></i>
                                 </button>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Search Results Grid -->
-                    <div id="search-results-grid" class="search-results-grid">
-                        <!-- Products will be dynamically loaded here -->
+                    <!-- Loading State -->
+                    <div id="search-loading" class="search-loading" style="display: none;">
+                        <div class="loading-spinner">
+                            <i class="fas fa-circle-notch fa-spin"></i>
+                        </div>
+                        <p>Searching for products...</p>
                     </div>
 
-                    <!-- No Results -->
+                    <!-- Results Grid -->
+                    <div id="search-results-grid" class="search-results-grid">
+                        <!-- Products will be loaded here dynamically -->
+                    </div>
+
+
+
+
+
+
+
+
+
+<!-- Add this after line with </div> closing search-results-grid -->
+
+<!-- Related Products Section -->
+<div id="related-products-section" class="related-products-section" style="display: none;">
+    <div class="related-products-header">
+        <h2>
+            <i class="fas fa-tags"></i>
+            Related Products You May Like
+        </h2>
+        <p>Based on your search, here are similar products</p>
+    </div>
+    
+    <div id="related-products-grid" class="related-products-grid">
+        <!-- Related products will be loaded here -->
+    </div>
+</div>
+
+<!-- Then your existing Load More container -->
+<div id="load-more-container" class="load-more-container" style="display: none;">
+
+
+
+
+
+
+
+
+
+
+
+                    <!-- No Results State -->
                     <div id="no-results" class="no-results" style="display: none;">
                         <div class="no-results-icon">
                             <i class="fas fa-search"></i>
                         </div>
                         <h3>No results found</h3>
-                        <p id="no-results-message">We couldn't find any products matching your search.</p>
+                        <p>We couldn't find any products matching your search.</p>
                         <div class="no-results-suggestions">
-                            <h4>Try:</h4>
+                            <h4>Try the following:</h4>
                             <ul>
-                                <li>Checking your spelling</li>
-                                <li>Using more general keywords</li>
-                                <li>Removing some filters</li>
-                                <li>Browsing categories instead</li>
+                                <li>Check your spelling</li>
+                                <li>Try different keywords</li>
+                                <li>Use more general terms</li>
+                                <li>Browse our categories</li>
                             </ul>
                         </div>
                         <div class="no-results-actions">
-                            <button onclick="clearAllFilters()" class="btn-secondary">Clear All Filters</button>
-                            <a href="index.html" class="btn-primary">Browse All Deals</a>
+                            <button onclick="clearSearch()" class="btn-secondary">
+                                <i class="fas fa-times"></i> Clear Search
+                            </button>
+                            <a href="index.html" class="btn-primary">
+                                <i class="fas fa-home"></i> Back to Home
+                            </a>
                         </div>
-                    </div>
-
-                    <!-- Loading State -->
-                    <div id="search-loading" class="search-loading" style="display: none;">
-                        <div class="loading-spinner">
-                            <i class="fas fa-spinner fa-spin"></i>
-                        </div>
-                        <p>Searching for the best deals...</p>
                     </div>
 
                     <!-- Load More Button -->
-                    <div class="load-more-container">
-                        <button id="load-more-results" class="load-more-btn" style="display: none;">
-                            <i class="fas fa-plus"></i>
+                    <div id="load-more-container" class="load-more-container" style="display: none;">
+                        <button id="load-more-btn" class="load-more-btn">
+                            <i class="fas fa-plus-circle"></i>
                             Load More Results
                         </button>
                     </div>
@@ -335,150 +399,15 @@
         </div>
     </main>
 
-    <!-- Voice Search Modal -->
-    <div id="voice-search-modal" class="voice-search-modal">
-        <div class="voice-modal-content">
-            <div class="voice-modal-header">
-                <h3>Voice Search</h3>
-                <button id="voice-close-btn" class="voice-close-btn">
-                    <i class="fas fa-times"></i>
-                </button>
-            </div>
-            <div class="voice-modal-body">
-                <div class="voice-animation">
-                    <div class="voice-circle">
-                        <i class="fas fa-microphone"></i>
-                    </div>
-                    <div class="voice-waves">
-                        <div class="wave"></div>
-                        <div class="wave"></div>
-                        <div class="wave"></div>
-                    </div>
-                </div>
-                <p id="voice-status" class="voice-status">Click "Start Speaking" and say your search term</p>
-                <button id="voice-start-btn" class="voice-start-btn">
-                    <i class="fas fa-microphone"></i>
-                    Start Speaking
-                </button>
-            </div>
-        </div>
-    </div>
-
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <div class="footer-logo">
-                        <i class="fas fa-shopping-bag"></i>
-                        <span>Thrift Zone</span>
-                    </div>
-                    <p>Your smart shopping companion for the best deals and offers online.</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="index.html#categories">Categories</a></li>
-                        <li><a href="index.html#deals">Hot Deals</a></li>
-                        <li><a href="index.html#about">About Us</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Support</h4>
-                    <ul>
-                        <li><a href="#help">Help Center</a></li>
-                        <li><a href="#contact">Contact Us</a></li>
-                        <li><a href="#privacy">Privacy Policy</a></li>
-                        <li><a href="#terms">Terms of Service</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 Thrift Zone. All rights reserved.</p>
-            </div>
+            <p>&copy; 2025 Thrift Maal. All rights reserved.</p>
         </div>
     </footer>
 
-    <!-- Authentication Modals -->
-    <div id="auth-modal" class="auth-modal">
-        <div class="auth-modal-content">
-            <div class="auth-tabs">
-                <button class="auth-tab active" data-tab="login">Login</button>
-                <button class="auth-tab" data-tab="signup">Sign Up</button>
-                <button class="auth-close">&times;</button>
-            </div>
-            
-            <div id="login-form" class="auth-form active">
-                <h2>Welcome Back!</h2>
-                <form>
-                    <div class="form-group">
-                        <input type="email" placeholder="Email Address" required>
-                        <i class="fas fa-envelope"></i>
-                    </div>
-                    <div class="form-group">
-                        <input type="password" placeholder="Password" required>
-                        <i class="fas fa-lock"></i>
-                    </div>
-                    <div class="form-options">
-                        <label class="remember-me">
-                            <input type="checkbox">
-                            <span>Remember me</span>
-                        </label>
-                        <a href="#" class="forgot-password">Forgot Password?</a>
-                    </div>
-                    <button type="submit" class="auth-btn">Login</button>
-                    <div class="auth-divider">
-                        <span>or</span>
-                    </div>
-                    <button type="button" class="google-auth-btn">
-                        <i class="fab fa-google"></i>
-                        Continue with Google
-                    </button>
-                </form>
-            </div>
-            
-            <div id="signup-form" class="auth-form">
-                <h2>Create Account</h2>
-                <form>
-                    <div class="form-group">
-                        <input type="text" placeholder="Full Name" required>
-                        <i class="fas fa-user"></i>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" placeholder="Email Address" required>
-                        <i class="fas fa-envelope"></i>
-                    </div>
-                    <div class="form-group">
-                        <input type="password" placeholder="Password" required>
-                        <i class="fas fa-lock"></i>
-                    </div>
-                    <div class="form-group">
-                        <input type="password" placeholder="Confirm Password" required>
-                        <i class="fas fa-lock"></i>
-                    </div>
-                    <div class="form-options">
-                        <label class="remember-me">
-                            <input type="checkbox" required>
-                            <span>I agree to the <a href="#">Terms & Conditions</a></span>
-                        </label>
-                    </div>
-                    <button type="submit" class="auth-btn">Create Account</button>
-                    <div class="auth-divider">
-                        <span>or</span>
-                    </div>
-                    <button type="button" class="google-auth-btn">
-                        <i class="fab fa-google"></i>
-                        Continue with Google
-                    </button>
-                </form>
-            </div>
-        </div>
-    </div>
-
     <!-- Scripts -->
     <script src="js/theme.js"></script>
-    <script src="js/script.js"></script>
-    <script src="js/search-enhanced.js"></script>
+    <script src="js/search.js"></script>
 </body>
 </html>
