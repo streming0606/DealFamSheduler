@@ -1,8 +1,36 @@
 {
-  "last_updated": "2025-10-04T13:20:10.518651+05:30",
+  "last_updated": "2025-10-04T18:31:15.838305+05:30",
   "total_products": 50,
   "daily_target": 6,
   "products": [
+    {
+      "id": "product_morning_1_20251004_130107",
+      "title": "Nivia Crysteal Gym / Exercise_and_Fitness Synthetic Gloves - Navy Blue",
+      "image": "https://m.media-amazon.com/images/I/817kmXoDhjL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B06XQYCTLZ?tag=gadgetvill09f-21",
+      "price": "\u20b9190",
+      "rating": "\u2b50\u2b50\u2b50\u2606\u2606",
+      "category": "electronics",
+      "asin": "B06XQYCTLZ",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-04T18:31:07.709342+05:30",
+      "session_type": "morning",
+      "link_index": 39
+    },
+    {
+      "id": "product_morning_2_20251004_130115",
+      "title": "Seznik Sealing Machine for Food Packets - Portable Handheld Sealing, Snacks, Chips, Fresh Storage - ...",
+      "image": "https://m.media-amazon.com/images/I/618nGDemysL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CZNL15LF?tag=gadgetvill09f-21",
+      "price": "\u20b9329",
+      "rating": "\u2b50\u2b50\u2b50\u2606\u2606",
+      "category": "home",
+      "asin": "B0CZNL15LF",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-04T18:31:15.601249+05:30",
+      "session_type": "morning",
+      "link_index": 40
+    },
     {
       "id": "product_afternoon_1_20251004_075003",
       "title": "GOLDENIZE FASHION Branded Men's Sport Quartz Watch Car Wheel Multicolour Dial Wheel Dial 360 Rotatin...",
@@ -674,34 +702,6 @@
       "posted_date": "2025-09-27T18:31:09.736497+05:30",
       "session_type": "morning",
       "link_index": 313
-    },
-    {
-      "id": "product_morning_2_20250927_130116",
-      "title": "Philips HD4934/00 1300W Induction Cooktop with Triple MOV for 4kW surge protection with soft touch c...",
-      "image": "https://m.media-amazon.com/images/I/51CdR8C6hHL._AC_UL320_.jpg",
-      "affiliate_link": "https://www.amazon.in/dp/B0DGKWNGKZ?tag=gadgetvill09f-21",
-      "price": "\u20b91,799",
-      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
-      "category": "health",
-      "asin": "B0DGKWNGKZ",
-      "data_source": "serpapi",
-      "posted_date": "2025-09-27T18:31:16.421986+05:30",
-      "session_type": "morning",
-      "link_index": 314
-    },
-    {
-      "id": "product_afternoon_1_20250927_075001",
-      "title": "HealthSense Chef-Mate KS 33 Digital Kitchen Weighing Scale & Food Weight Machine for Health, Fitness...",
-      "image": "https://m.media-amazon.com/images/I/51OYFH+NrFS._AC_UL320_.jpg",
-      "affiliate_link": "https://www.amazon.in/dp/B013B2WGT6?tag=gadgetvill09f-21",
-      "price": "\u20b9998",
-      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
-      "category": "home",
-      "asin": "B013B2WGT6",
-      "data_source": "serpapi",
-      "posted_date": "2025-09-27T13:20:01.800303+05:30",
-      "session_type": "afternoon",
-      "link_index": 308
     }
   ]
 }
