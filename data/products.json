@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-10-05T01:40:57.831153+05:30",
-  "total_products": 52,
+  "last_updated": "2025-10-05T01:45:04.780008+05:30",
+  "total_products": 54,
   "products": [
+    {
+      "id": "product_morning_20251004_201504",
+      "title": "eCraftIndia Set of 2 Om & Rudraksha Rakhis with Roli Chawal Pack and Best Bro Ever Fridge Magnet - R...",
+      "image": "https://m.media-amazon.com/images/I/812TszbBXBL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CFFPF9M8",
+      "price": "\u20b9135.57",
+      "rating": 4.0,
+      "category": "electronics",
+      "asin": "B0CFFPF9M8",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-05T01:45:04.779973+05:30",
+      "session_type": "morning",
+      "link_index": 47
+    },
+    {
+      "id": "product_morning_20251004_201503",
+      "title": "Trillion Light Fit Straight Fit Track Pant for Men | Lower for Men | Gym Trackpants",
+      "image": "https://m.media-amazon.com/images/I/61kebELhjiL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FLVV5GQ4",
+      "price": "\u20b9474",
+      "rating": 3.7,
+      "category": "electronics",
+      "asin": "B0FLVV5GQ4",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-05T01:45:03.225687+05:30",
+      "session_type": "morning",
+      "link_index": 47
+    },
     {
       "id": "product_morning_20251004_201057",
       "title": "XTRIM X-Macho Leather Gym Gloves for Men & Women with Wrist Support Accessories for Weightlifting, H...",
