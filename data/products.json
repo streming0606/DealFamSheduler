@@ -1,8 +1,36 @@
 {
-  "last_updated": "2025-10-04T10:16:12.963989+05:30",
+  "last_updated": "2025-10-04T13:20:10.518651+05:30",
   "total_products": 50,
   "daily_target": 6,
   "products": [
+    {
+      "id": "product_afternoon_1_20251004_075003",
+      "title": "GOLDENIZE FASHION Branded Men's Sport Quartz Watch Car Wheel Multicolour Dial Wheel Dial 360 Rotatin...",
+      "image": "https://m.media-amazon.com/images/I/71rRRI-PsZL._AC_UY218_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FBX1M594?tag=gadgetvill09f-21",
+      "price": "\u20b9854",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "fashion",
+      "asin": "B0FBX1M594",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-04T13:20:03.876640+05:30",
+      "session_type": "afternoon",
+      "link_index": 34
+    },
+    {
+      "id": "product_afternoon_2_20251004_075010",
+      "title": "Boldfit Men's Black Slim Fit Track Pants - M (32 inches) - Yoga, Running, Workout & Training - Summe...",
+      "image": "https://m.media-amazon.com/images/I/519X02vsiPL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CGNH3B74?tag=gadgetvill09f-21",
+      "price": "\u20b9814",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B0CGNH3B74",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-04T13:20:10.361626+05:30",
+      "session_type": "afternoon",
+      "link_index": 35
+    },
     {
       "id": "product_morning_1_20251004_044606",
       "title": "INALSA Air Fryer 3.5 ltr|1400 W with Air Crisp Technology|Temperature & Timer Control|8 Preset Menu ...",
@@ -674,34 +702,6 @@
       "posted_date": "2025-09-27T13:20:01.800303+05:30",
       "session_type": "afternoon",
       "link_index": 308
-    },
-    {
-      "id": "product_afternoon_2_20250927_075008",
-      "title": "SWAGR 12 Pairs Sports Cotton Ankle Length Socks for Men, Pack of 12., Assorted",
-      "image": "https://m.media-amazon.com/images/I/81biKixsaDL._AC_UL320_.jpg",
-      "affiliate_link": "https://www.amazon.in/dp/B0DGX12XXV?tag=gadgetvill09f-21",
-      "price": "\u20b9169",
-      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
-      "category": "electronics",
-      "asin": "B0DGX12XXV",
-      "data_source": "serpapi",
-      "posted_date": "2025-09-27T13:20:08.296837+05:30",
-      "session_type": "afternoon",
-      "link_index": 309
-    },
-    {
-      "id": "product_morning_1_20250927_044611",
-      "title": "Glen 2000W Infrared Cooktop Stove with Grill Rack for Barbecue, Crystal Glass Plate, Digital Display...",
-      "image": "https://m.media-amazon.com/images/I/61K4iS3ylqL._AC_UL320_.jpg",
-      "affiliate_link": "https://www.amazon.in/dp/B0CNRSRHNQ?tag=gadgetvill09f-21",
-      "price": "\u20b92,527",
-      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
-      "category": "electronics",
-      "asin": "B0CNRSRHNQ",
-      "data_source": "serpapi",
-      "posted_date": "2025-09-27T10:16:11.499556+05:30",
-      "session_type": "morning",
-      "link_index": 303
     }
   ]
 }
