@@ -1,8 +1,35 @@
 {
-  "last_updated": "2025-10-04T21:20:13.057568+05:30",
-  "total_products": 50,
-  "daily_target": 6,
+  "last_updated": "2025-10-05T01:40:57.831153+05:30",
+  "total_products": 52,
   "products": [
+    {
+      "id": "product_morning_20251004_201057",
+      "title": "XTRIM X-Macho Leather Gym Gloves for Men & Women with Wrist Support Accessories for Weightlifting, H...",
+      "image": "https://m.media-amazon.com/images/I/71WllQEscmL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B06Y46SMTD",
+      "price": "\u20b9429",
+      "rating": 4.1,
+      "category": "electronics",
+      "asin": "B06Y46SMTD",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-05T01:40:57.831126+05:30",
+      "session_type": "morning",
+      "link_index": 45
+    },
+    {
+      "id": "product_morning_20251004_201054",
+      "title": "Amazon Product B0FGCZNGP2",
+      "image": "https://m.media-amazon.com/images/I/B0FGCZNGP2._AC_SL1500_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FGCZNGP2",
+      "price": "\u20b9Special Price",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B0FGCZNGP2",
+      "data_source": "fallback",
+      "posted_date": "2025-10-05T01:40:54.707213+05:30",
+      "session_type": "morning",
+      "link_index": 45
+    },
     {
       "id": "product_night_1_20251004_155012",
       "title": "Boldfit Cotton Wrist Band for Men & Women 3 Inch - Wrist Sweat Band for Badminton Football, Basketba...",
