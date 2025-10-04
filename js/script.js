@@ -247,11 +247,12 @@ function createProductCard(product, index = 0) {
                         <div class="deal-btn-subtext">Save Big Today</div>
                     </div>
                 </a>
-                <div class="secondary-actions">
-                    <button class="quick-action-btn" onclick="addToWishlist('${product.id}')" title="Save for later">
-                        <i class="fas fa-bookmark"></i>
-                    </button>
-                </div>
+
+                
+                
+
+
+                
             </div>
         </div>
     `;
