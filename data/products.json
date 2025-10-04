@@ -2,62 +2,7 @@
   "last_updated": "2025-10-05T02:32:08.495483+05:30",
   "total_products": 62,
   "products": [
-    {
-      "id": "product_night_20251004_210208",
-      "title": "Amazon Product B0BG8LZNYL",
-      "image": "https://m.media-amazon.com/images/I/B0BG8LZNYL._AC_SL1500_.jpg",
-      "affiliate_link": "https://www.amazon.in/dp/B0BG8LZNYL",
-      "price": "\u20b9Special Price",
-      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
-      "category": "electronics",
-      "asin": "B0BG8LZNYL",
-      "data_source": "fallback",
-      "posted_date": "2025-10-05T02:32:08.495453+05:30",
-      "session_type": "night",
-      "link_index": 9
-    },
-    {
-      "id": "product_night_20251004_210208",
-      "title": "Amazon Product B09KH58JZR",
-      "image": "https://m.media-amazon.com/images/I/B09KH58JZR._AC_SL1500_.jpg",
-      "affiliate_link": "https://www.amazon.in/dp/B09KH58JZR",
-      "price": "\u20b9Special Price",
-      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
-      "category": "electronics",
-      "asin": "B09KH58JZR",
-      "data_source": "fallback",
-      "posted_date": "2025-10-05T02:32:08.417399+05:30",
-      "session_type": "night",
-      "link_index": 9
-    },
-    {
-      "id": "product_night_20251004_205947",
-      "title": "Amazon Product B0C4PVS224",
-      "image": "https://m.media-amazon.com/images/I/B0C4PVS224._AC_SL1500_.jpg",
-      "affiliate_link": "https://www.amazon.in/dp/B0C4PVS224",
-      "price": "\u20b9Special Price",
-      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
-      "category": "electronics",
-      "asin": "B0C4PVS224",
-      "data_source": "fallback",
-      "posted_date": "2025-10-05T02:29:47.370380+05:30",
-      "session_type": "night",
-      "link_index": 7
-    },
-    {
-      "id": "product_night_20251004_205947",
-      "title": "Amazon Product B01HJI0FS2",
-      "image": "https://m.media-amazon.com/images/I/B01HJI0FS2._AC_SL1500_.jpg",
-      "affiliate_link": "https://www.amazon.in/dp/B01HJI0FS2",
-      "price": "\u20b9Special Price",
-      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
-      "category": "electronics",
-      "asin": "B01HJI0FS2",
-      "data_source": "fallback",
-      "posted_date": "2025-10-05T02:29:47.301223+05:30",
-      "session_type": "night",
-      "link_index": 7
-    },
+    
     {
       "id": "product_evening_20251004_205023",
       "title": "ZEBRONICS ZEB-KM2100 Multimedia USB Keyboard Comes with 114 Keys Including 12 Dedicated Multimedia Keys & with Rupee Key",
