@@ -585,97 +585,107 @@
             <button class="dot" data-slide="3"></button>
         </div>
     </div>
-
-
-
-
-    
 </section>
 
 
+<!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-<!-- Why Choose Us Section -->
-<section class="thrift-why-choose-section">
+<!-- 💸 LOOT DEALS FINDS SECTION - COMPLETE WITH PRODUCTS -->
+<section class="loot-deals" id="loot-deals">
     <div class="container">
-        <div class="thrift-why-section-header">
-            <h2 class="thrift-why-section-title">
-                
-                Save More With These Tools
-            </h2>
-        </div>
+        <div class="section-header">
+            <div class="section-title-group">
+                <h2 class="section-title">
+                🚨Ends Soon-Get Now
+                </h2>
+                <!--<p class="section-subtitle">
+                  Limited time offers updated every 5 minutes
+                </p>-->
+            </div>
+            <!--<a href="deals/loot.html" class="header-view-all-btn loot-btn" onclick="showAllLootDeals(event)">
+                <i class="fas fa-tags"></i>
+                View All Loot Deals
+                <span class="deals-count-badge">18 deals</span>
+            </a>
+        </div>-->
+
+
+ <div class="horizontal-scroll-wrapper">
+              
+                <button class="scroll-btn scroll-btn-left" id="loot-scroll-left">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+              
+              <button class="scroll-btn scroll-btn-right" id="loot-scroll-right">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+
+</div>
+          
         
-        <div class="thrift-why-features-container">
-            <!-- Features Banner Wrapper -->
-            <div class="thrift-why-features-wrapper">
-                <div class="thrift-why-features-slider" id="thrift-why-features-slider">
+        <!-- Price Filter Buttons 
+        <div class="loot-price-filter">
+            <button class="price-filter-btn active" data-price-limit="500">
+                Under ₹500
+            </button>
+            <button class="price-filter-btn" data-price-limit="1000">
+                Under ₹1000
+            </button>
+        </div> -->
 
-
-                    <!-- Feature 1 -->
-                    <div class="thrift-why-feature-banner" data-link="/deal-finder.html">
-                        <div class="thrift-why-feature-card">
-                            <img src="images/features/feature-deals.jpg" alt="Best Deals" loading="lazy">
-                            <div class="thrift-why-feature-overlay">
-                                <div class="thrift-why-feature-content">
-
-                                    <!--<h3 class="thrift-why-feature-title">Best Deals</h3>
-                                    <p class="thrift-why-feature-desc">Handpicked deals from top brands</p>
-                                    <button class="thrift-why-cta-btn">Explore Deals</button>-->
-
-                                </div>
-                            </div>
+        <!-- Horizontal Scrolling Container -->
+        <div class="horizontal-loot-container">
+           <!-- <div class="horizontal-scroll-wrapper">
+              
+                <button class="scroll-btn scroll-btn-left" id="loot-scroll-left">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+              
+              <button class="scroll-btn scroll-btn-right" id="loot-scroll-right">
+                    <i class="fas fa-chevron-right"></i>
+                </button>-->
+                
+                <div class="horizontal-loot-scroll" id="horizontal-loot-container">
+                    <!-- Products will be loaded here by JavaScript -->
+                    <div class="loading-state">
+                        <div class="loading-spinner">
+                            <div class="spinner"></div>
                         </div>
+                        <p>Finding best loot deals...</p>
                     </div>
-                    
+                </div>
+                
+                
+            </div>
+        </div>
 
-                    <!-- Feature 2 -->
-                    <div class="thrift-why-feature-banner" data-link="/community.html">
-                        <div class="thrift-why-feature-card">
-                            <img src="images/features/feature-cashback.jpg" alt="Instant Cashback" loading="lazy">
-                            <div class="thrift-why-feature-overlay">
-                                <div class="thrift-why-feature-content">
-                                   <!-- <h3 class="thrift-why-feature-title">Instant Cashback</h3>
-                                    <p class="thrift-why-feature-desc">Earn cashback on every purchase</p>
-                                    <button class="thrift-why-cta-btn">Learn More</button>-->
-                                </div>
-                            </div>
-                        </div>
+        <!-- Full Loot Section (Hidden by default) -->
+        <div class="full-loot-section" id="full-loot-section" style="display: none;">
+            <div class="full-section-header">
+                <h3>All Loot Deals Finds</h3>
+                <div class="loot-controls">
+                    <div class="loot-price-filter-full">
+                        <button class="price-filter-btn active" data-price-limit="500">Under ₹500</button>
+                        <button class="price-filter-btn" data-price-limit="1000">Under ₹1000</button>
                     </div>
-                    
-                    <!-- Feature 3 -->
-                    <div class="thrift-why-feature-banner" data-link="/coupons.html">
-                        <div class="thrift-why-feature-card">
-                            <img src="images/features/feature-support.jpg" alt="24/7 Support" loading="lazy">
-                            <div class="thrift-why-feature-overlay">
-                                <div class="thrift-why-feature-content">
-                                   <!-- <h3 class="thrift-why-feature-title">24/7 Support</h3>
-                                    <p class="thrift-why-feature-desc">Always here to help you save</p>
-                                    <button class="thrift-why-cta-btn">Contact Us</button>-->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <button class="back-to-preview-btn" id="back-to-loot-preview">
+                        <i class="fas fa-arrow-left"></i>
+                        Back to Preview
+                    </button>
                 </div>
             </div>
             
-            <!-- Auto-rotation Indicators -->
-            <div class="thrift-why-rotation-indicators" id="thrift-why-indicators">
-                <div class="thrift-why-indicator active" data-feature="0"></div>
-                <div class="thrift-why-indicator" data-feature="1"></div>
-                <div class="thrift-why-indicator" data-feature="2"></div>
+            <div class="products-grid" id="loot-products-container"></div>
+            
+            <div class="load-more-section">
+                <button id="load-more-loot-btn" class="load-more-btn">
+                    <i class="fas fa-plus"></i>
+                    Load More Loot Deals
+                </button>
             </div>
         </div>
     </div>
@@ -686,15 +696,8 @@
 
 
 
-
-
-
-
-
-
-
-
-
+  
+<!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
 
 
 
@@ -981,89 +984,7 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-<!-- Why Choose Us Section -->
-<section class="thrift-why-choose-section">
-    <div class="container">
-        <div class="thrift-why-section-header">
-            <h2 class="thrift-why-section-title">
-                
-                Sale Live On ThriftMaal
-            </h2>
-        </div>
-        
-        <div class="thrift-why-features-container">
-            <!-- Features Banner Wrapper -->
-            <div class="thrift-why-features-wrapper">
-                <div class="thrift-why-features-slider" id="thrift-why-features-slider">
-
-
-                    <!-- Feature 1 -->
-                    <div class="thrift-why-feature-banner" data-link="https://amzn.to/3KAhX8i">
-                        <div class="thrift-why-feature-card">
-                            <img src="images/features/feature-amazon.jpg" alt="Best Deals" loading="lazy">
-                            <div class="thrift-why-feature-overlay">
-                                <div class="thrift-why-feature-content">
-
-                                    <!--<h3 class="thrift-why-feature-title">Best Deals</h3>
-                                    <p class="thrift-why-feature-desc">Handpicked deals from top brands</p>
-                                    <button class="thrift-why-cta-btn">Explore Deals</button>-->
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-
-                    <!-- Feature 2 -->
-                    <div class="thrift-why-feature-banner" data-link="https://www.flipkart.com/big-billion-days-store">
-                        <div class="thrift-why-feature-card">
-                            <img src="images/features/feature-flipkart.jpg" alt="Instant Cashback" loading="lazy">
-                            <div class="thrift-why-feature-overlay">
-                                <div class="thrift-why-feature-content">
-                                   <!-- <h3 class="thrift-why-feature-title">Instant Cashback</h3>
-                                    <p class="thrift-why-feature-desc">Earn cashback on every purchase</p>
-                                    <button class="thrift-why-cta-btn">Learn More</button>-->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Feature 3 -->
-                    <div class="thrift-why-feature-banner" data-link="https://www.myntra.com/shopping-festival">
-                        <div class="thrift-why-feature-card">
-                            <img src="images/features/feature-Myntra.jpg" alt="Myntra" loading="lazy">
-                            <div class="thrift-why-feature-overlay">
-                                <div class="thrift-why-feature-content">
-                                   <!-- <h3 class="thrift-why-feature-title">24/7 Support</h3>
-                                    <p class="thrift-why-feature-desc">Always here to help you save</p>
-                                    <button class="thrift-why-cta-btn">Contact Us</button>-->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Auto-rotation Indicators -->
-            <div class="thrift-why-rotation-indicators" id="thrift-why-indicators">
-                <div class="thrift-why-indicator active" data-feature="0"></div>
-                <div class="thrift-why-indicator" data-feature="1"></div>
-                <div class="thrift-why-indicator" data-feature="2"></div>
-            </div>
-        </div>
-    </div>
-</section>
+<!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
 
 
 
@@ -1071,108 +992,126 @@
   
 
 
-
-<!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
-
-
-
-
-
-
-
-<!-- 💸 LOOT DEALS FINDS SECTION - COMPLETE WITH PRODUCTS -->
-<section class="loot-deals" id="loot-deals">
+<!-- ENHANCED TESTIMONIALS SECTION -->
+<section class="testimonials">
     <div class="container">
-        <div class="section-header">
-            <div class="section-title-group">
-                <h2 class="section-title">
-                🚨Ends Soon-Get Now
-                </h2>
-                <!--<p class="section-subtitle">
-                  Limited time offers updated every 5 minutes
-                </p>-->
-            </div>
-            <!--<a href="deals/loot.html" class="header-view-all-btn loot-btn" onclick="showAllLootDeals(event)">
-                <i class="fas fa-tags"></i>
-                View All Loot Deals
-                <span class="deals-count-badge">18 deals</span>
-            </a>
-        </div>-->
-
-
- <div class="horizontal-scroll-wrapper">
-              
-                <button class="scroll-btn scroll-btn-left" id="loot-scroll-left">
-                    <i class="fas fa-chevron-left"></i>
-                </button>
-              
-              <button class="scroll-btn scroll-btn-right" id="loot-scroll-right">
-                    <i class="fas fa-chevron-right"></i>
-                </button>
-
-</div>
-          
-        
-        <!-- Price Filter Buttons 
-        <div class="loot-price-filter">
-            <button class="price-filter-btn active" data-price-limit="500">
-                Under ₹500
-            </button>
-            <button class="price-filter-btn" data-price-limit="1000">
-                Under ₹1000
-            </button>
-        </div> -->
-
-        <!-- Horizontal Scrolling Container -->
-        <div class="horizontal-loot-container">
-           <!-- <div class="horizontal-scroll-wrapper">
-              
-                <button class="scroll-btn scroll-btn-left" id="loot-scroll-left">
-                    <i class="fas fa-chevron-left"></i>
-                </button>
-              
-              <button class="scroll-btn scroll-btn-right" id="loot-scroll-right">
-                    <i class="fas fa-chevron-right"></i>
-                </button>-->
-                
-                <div class="horizontal-loot-scroll" id="horizontal-loot-container">
-                    <!-- Products will be loaded here by JavaScript -->
-                    <div class="loading-state">
-                        <div class="loading-spinner">
-                            <div class="spinner"></div>
-                        </div>
-                        <p>Finding best loot deals...</p>
-                    </div>
-                </div>
-                
-                
-            </div>
+        <div class="testimonials-header">
+            
+            <h2 class="section-title">Top Happy Savers</h2>
+            
         </div>
 
-        <!-- Full Loot Section (Hidden by default) -->
-        <div class="full-loot-section" id="full-loot-section" style="display: none;">
-            <div class="full-section-header">
-                <h3>All Loot Deals Finds</h3>
-                <div class="loot-controls">
-                    <div class="loot-price-filter-full">
-                        <button class="price-filter-btn active" data-price-limit="500">Under ₹500</button>
-                        <button class="price-filter-btn" data-price-limit="1000">Under ₹1000</button>
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <div class="testimonial-header">
+                    <div class="testimonial-avatar">
+                        <img src="images/profile/profile1.png" alt="Priya Sharma">
                     </div>
-                    <button class="back-to-preview-btn" id="back-to-loot-preview">
-                        <i class="fas fa-arrow-left"></i>
-                        Back to Preview
-                    </button>
+                    <div class="testimonial-info">
+                        <div class="testimonial-name">Priya Sharma</div>
+                        <div class="testimonial-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Mumbai, Maharashtra
+                        </div>
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star testimonial-star"></i>
+                            <i class="fas fa-star testimonial-star"></i>
+                            <i class="fas fa-star testimonial-star"></i>
+                            <i class="fas fa-star testimonial-star"></i>
+                            <i class="fas fa-star testimonial-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-text">
+                    Thrift Maal has completely transformed my shopping experience! I found my dream laptop at an unbelievable 60% discount. The deals are absolutely genuine, and the website is incredibly user-friendly.
+                </div>
+                <div class="testimonial-footer">
+                    <div class="testimonial-savings">
+                        <i class="fas fa-piggy-bank"></i>
+                        ₹15,000 saved
+                    </div>
+                    <div class="testimonial-date">
+                        <i class="far fa-clock"></i>
+                        2 weeks ago
+                    </div>
                 </div>
             </div>
-            
-            <div class="products-grid" id="loot-products-container"></div>
-            
-            <div class="load-more-section">
-                <button id="load-more-loot-btn" class="load-more-btn">
-                    <i class="fas fa-plus"></i>
-                    Load More Loot Deals
-                </button>
+
+            <div class="testimonial-card">
+                <div class="testimonial-header">
+                    <div class="testimonial-avatar">
+                        <img src="images/profile/profile2.png" alt="Rahul Gupta">
+                    </div>
+                    <div class="testimonial-info">
+                        <div class="testimonial-name">Rahul Gupta</div>
+                        <div class="testimonial-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Delhi, NCR
+                        </div>
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star testimonial-star"></i>
+                            <i class="fas fa-star testimonial-star"></i>
+                            <i class="fas fa-star testimonial-star"></i>
+                            <i class="fas fa-star testimonial-star"></i>
+                            <i class="fas fa-star testimonial-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-text">
+                    This platform is a game-changer for authentic deals! I managed to furnish my entire home setup through Thrift Zone. The customer service team goes above and beyond, and delivery is consistently punctual.
+                </div>
+                <div class="testimonial-footer">
+                    <div class="testimonial-savings">
+                        <i class="fas fa-piggy-bank"></i>
+                        ₹25,000 saved
+                    </div>
+                    <div class="testimonial-date">
+                        <i class="far fa-clock"></i>
+                        1 month ago
+                    </div>
+                </div>
             </div>
+
+            <div class="testimonial-card">
+                <div class="testimonial-header">
+                    <div class="testimonial-avatar">
+                        <img src="images/profile/profile3.png" alt="Sneha Patel">
+                    </div>
+                    <div class="testimonial-info">
+                        <div class="testimonial-name">Sneha Patel</div>
+                        <div class="testimonial-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Ahmedabad, Gujarat
+                        </div>
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star testimonial-star"></i>
+                            <i class="fas fa-star testimonial-star"></i>
+                            <i class="fas fa-star testimonial-star"></i>
+                            <i class="fas fa-star testimonial-star"></i>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-text">
+                    I'm completely addicted to Thrift Maal! Every single day brings exciting new deals and discoveries. I've saved an incredible amount on both fashion and electronics. Absolutely worth recommending!
+                </div>
+                <div class="testimonial-footer">
+                    <div class="testimonial-savings">
+                         <i class="fas fa-piggy-bank"></i>
+                        ₹12,500 saved 
+                    </div>
+                    <div class="testimonial-date">
+                        <i class="far fa-clock"></i>
+                        3 days ago
+                    </div>
+                </div>
+            </div>
+
+            
+                </div>
+            </div>
+        </div>
+      
         </div>
     </div>
 </section>
@@ -1180,7 +1119,11 @@
 
 
 
-  
+
+
+
+
+<!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
 
 
 
@@ -1188,16 +1131,6 @@
 
 
 
-  <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
-
-
-
-
-
-
-
-
-            
 
 <!-- Top Brand Offers Section -->
 <section class="thrift-brand-offers-section">
@@ -1359,18 +1292,13 @@ Compression: 85-90% quality for JPG, or WebP with similar visual quality -->
 
 
 
-
-
-<!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
-
-
-  
+<!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
 
 
 
 
 
-  <!-- TODAY'S HOT DEALS SECTION - COMPLETE WITH PRODUCTS -->
+<!-- TODAY'S HOT DEALS SECTION - COMPLETE WITH PRODUCTS -->
 <section class="deals" id="deals">
     <div class="container">
         <div class="section-header">
@@ -1435,147 +1363,170 @@ Compression: 85-90% quality for JPG, or WebP with similar visual quality -->
 
 
 
-  
 
 
-<!--xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
-
-
+<!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
 
 
 
 
 
-
-
-
-
-
-
-<!-- ENHANCED TESTIMONIALS SECTION -->
-<section class="testimonials">
+<!-- Why Choose Us Section -->
+<section class="thrift-why-choose-section">
     <div class="container">
-        <div class="testimonials-header">
-            
-            <h2 class="section-title">Top Happy Savers</h2>
-            
+        <div class="thrift-why-section-header">
+            <h2 class="thrift-why-section-title">
+                
+                Sale Live On ThriftMaal
+            </h2>
         </div>
+        
+        <div class="thrift-why-features-container">
+            <!-- Features Banner Wrapper -->
+            <div class="thrift-why-features-wrapper">
+                <div class="thrift-why-features-slider" id="thrift-why-features-slider">
 
-        <div class="testimonials-grid">
-            <div class="testimonial-card">
-                <div class="testimonial-header">
-                    <div class="testimonial-avatar">
-                        <img src="images/profile/profile1.png" alt="Priya Sharma">
-                    </div>
-                    <div class="testimonial-info">
-                        <div class="testimonial-name">Priya Sharma</div>
-                        <div class="testimonial-location">
-                            <i class="fas fa-map-marker-alt"></i>
-                            Mumbai, Maharashtra
-                        </div>
-                        <div class="testimonial-rating">
-                            <i class="fas fa-star testimonial-star"></i>
-                            <i class="fas fa-star testimonial-star"></i>
-                            <i class="fas fa-star testimonial-star"></i>
-                            <i class="fas fa-star testimonial-star"></i>
-                            <i class="fas fa-star testimonial-star"></i>
+
+                    <!-- Feature 1 -->
+                    <div class="thrift-why-feature-banner" data-link="https://amzn.to/3KAhX8i">
+                        <div class="thrift-why-feature-card">
+                            <img src="images/features/feature-amazon.jpg" alt="Best Deals" loading="lazy">
+                            <div class="thrift-why-feature-overlay">
+                                <div class="thrift-why-feature-content">
+
+                                    <!--<h3 class="thrift-why-feature-title">Best Deals</h3>
+                                    <p class="thrift-why-feature-desc">Handpicked deals from top brands</p>
+                                    <button class="thrift-why-cta-btn">Explore Deals</button>-->
+
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="testimonial-text">
-                    Thrift Maal has completely transformed my shopping experience! I found my dream laptop at an unbelievable 60% discount. The deals are absolutely genuine, and the website is incredibly user-friendly.
-                </div>
-                <div class="testimonial-footer">
-                    <div class="testimonial-savings">
-                        <i class="fas fa-piggy-bank"></i>
-                        ₹15,000 saved
+                    
+
+                    <!-- Feature 2 -->
+                    <div class="thrift-why-feature-banner" data-link="https://www.flipkart.com/big-billion-days-store">
+                        <div class="thrift-why-feature-card">
+                            <img src="images/features/feature-flipkart.jpg" alt="Instant Cashback" loading="lazy">
+                            <div class="thrift-why-feature-overlay">
+                                <div class="thrift-why-feature-content">
+                                   <!-- <h3 class="thrift-why-feature-title">Instant Cashback</h3>
+                                    <p class="thrift-why-feature-desc">Earn cashback on every purchase</p>
+                                    <button class="thrift-why-cta-btn">Learn More</button>-->
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="testimonial-date">
-                        <i class="far fa-clock"></i>
-                        2 weeks ago
+                    
+                    <!-- Feature 3 -->
+                    <div class="thrift-why-feature-banner" data-link="https://www.myntra.com/shopping-festival">
+                        <div class="thrift-why-feature-card">
+                            <img src="images/features/feature-Myntra.jpg" alt="Myntra" loading="lazy">
+                            <div class="thrift-why-feature-overlay">
+                                <div class="thrift-why-feature-content">
+                                   <!-- <h3 class="thrift-why-feature-title">24/7 Support</h3>
+                                    <p class="thrift-why-feature-desc">Always here to help you save</p>
+                                    <button class="thrift-why-cta-btn">Contact Us</button>-->
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-
-            <div class="testimonial-card">
-                <div class="testimonial-header">
-                    <div class="testimonial-avatar">
-                        <img src="images/profile/profile2.png" alt="Rahul Gupta">
-                    </div>
-                    <div class="testimonial-info">
-                        <div class="testimonial-name">Rahul Gupta</div>
-                        <div class="testimonial-location">
-                            <i class="fas fa-map-marker-alt"></i>
-                            Delhi, NCR
-                        </div>
-                        <div class="testimonial-rating">
-                            <i class="fas fa-star testimonial-star"></i>
-                            <i class="fas fa-star testimonial-star"></i>
-                            <i class="fas fa-star testimonial-star"></i>
-                            <i class="fas fa-star testimonial-star"></i>
-                            <i class="fas fa-star testimonial-star"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-text">
-                    This platform is a game-changer for authentic deals! I managed to furnish my entire home setup through Thrift Zone. The customer service team goes above and beyond, and delivery is consistently punctual.
-                </div>
-                <div class="testimonial-footer">
-                    <div class="testimonial-savings">
-                        <i class="fas fa-piggy-bank"></i>
-                        ₹25,000 saved
-                    </div>
-                    <div class="testimonial-date">
-                        <i class="far fa-clock"></i>
-                        1 month ago
-                    </div>
-                </div>
-            </div>
-
-            <div class="testimonial-card">
-                <div class="testimonial-header">
-                    <div class="testimonial-avatar">
-                        <img src="images/profile/profile3.png" alt="Sneha Patel">
-                    </div>
-                    <div class="testimonial-info">
-                        <div class="testimonial-name">Sneha Patel</div>
-                        <div class="testimonial-location">
-                            <i class="fas fa-map-marker-alt"></i>
-                            Ahmedabad, Gujarat
-                        </div>
-                        <div class="testimonial-rating">
-                            <i class="fas fa-star testimonial-star"></i>
-                            <i class="fas fa-star testimonial-star"></i>
-                            <i class="fas fa-star testimonial-star"></i>
-                            <i class="fas fa-star testimonial-star"></i>
-                            
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-text">
-                    I'm completely addicted to Thrift Maal! Every single day brings exciting new deals and discoveries. I've saved an incredible amount on both fashion and electronics. Absolutely worth recommending!
-                </div>
-                <div class="testimonial-footer">
-                    <div class="testimonial-savings">
-                         <i class="fas fa-piggy-bank"></i>
-                        ₹12,500 saved 
-                    </div>
-                    <div class="testimonial-date">
-                        <i class="far fa-clock"></i>
-                        3 days ago
-                    </div>
-                </div>
-            </div>
-
             
-                </div>
+            <!-- Auto-rotation Indicators -->
+            <div class="thrift-why-rotation-indicators" id="thrift-why-indicators">
+                <div class="thrift-why-indicator active" data-feature="0"></div>
+                <div class="thrift-why-indicator" data-feature="1"></div>
+                <div class="thrift-why-indicator" data-feature="2"></div>
             </div>
-        </div>
-      
         </div>
     </div>
 </section>
 
+
+
+
+
+
+
+
+<!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+
+  
+  
+<!-- Why Choose Us Section -->
+<section class="thrift-why-choose-section">
+    <div class="container">
+        <div class="thrift-why-section-header">
+            <h2 class="thrift-why-section-title">
+                
+                Save More With These Tools
+            </h2>
+        </div>
+        
+        <div class="thrift-why-features-container">
+            <!-- Features Banner Wrapper -->
+            <div class="thrift-why-features-wrapper">
+                <div class="thrift-why-features-slider" id="thrift-why-features-slider">
+
+
+                    <!-- Feature 1 -->
+                    <div class="thrift-why-feature-banner" data-link="/deal-finder.html">
+                        <div class="thrift-why-feature-card">
+                            <img src="images/features/feature-deals.jpg" alt="Best Deals" loading="lazy">
+                            <div class="thrift-why-feature-overlay">
+                                <div class="thrift-why-feature-content">
+
+                                    <!--<h3 class="thrift-why-feature-title">Best Deals</h3>
+                                    <p class="thrift-why-feature-desc">Handpicked deals from top brands</p>
+                                    <button class="thrift-why-cta-btn">Explore Deals</button>-->
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    <!-- Feature 2 -->
+                    <div class="thrift-why-feature-banner" data-link="/community.html">
+                        <div class="thrift-why-feature-card">
+                            <img src="images/features/feature-cashback.jpg" alt="Instant Cashback" loading="lazy">
+                            <div class="thrift-why-feature-overlay">
+                                <div class="thrift-why-feature-content">
+                                   <!-- <h3 class="thrift-why-feature-title">Instant Cashback</h3>
+                                    <p class="thrift-why-feature-desc">Earn cashback on every purchase</p>
+                                    <button class="thrift-why-cta-btn">Learn More</button>-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Feature 3 -->
+                    <div class="thrift-why-feature-banner" data-link="/coupons.html">
+                        <div class="thrift-why-feature-card">
+                            <img src="images/features/feature-support.jpg" alt="24/7 Support" loading="lazy">
+                            <div class="thrift-why-feature-overlay">
+                                <div class="thrift-why-feature-content">
+                                   <!-- <h3 class="thrift-why-feature-title">24/7 Support</h3>
+                                    <p class="thrift-why-feature-desc">Always here to help you save</p>
+                                    <button class="thrift-why-cta-btn">Contact Us</button>-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Auto-rotation Indicators -->
+            <div class="thrift-why-rotation-indicators" id="thrift-why-indicators">
+                <div class="thrift-why-indicator active" data-feature="0"></div>
+                <div class="thrift-why-indicator" data-feature="1"></div>
+                <div class="thrift-why-indicator" data-feature="2"></div>
+            </div>
+        </div>
+    </div>
+</section>
 
 
 
