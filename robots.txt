@@ -1,0 +1,10 @@
+# Allow all search engines to crawl everything
+User-agent: *
+Allow: /
+
+# Block specific folders from search engines (optional)
+Disallow: /profile/
+Disallow: /wishlist/
+
+# Sitemap location
+Sitemap: https://thriftmaal.com/sitemap.xml
