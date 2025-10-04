@@ -2860,3 +2860,53 @@ window.addEventListener('beforeunload', () => {
         thriftWhyChooseSlider = null;
     }
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Search functionality for homepage
+document.addEventListener('DOMContentLoaded', function() {
+    const searchForm = document.querySelector('.search-box');
+    const searchInput = document.getElementById('search-input');
+    const searchBtn = document.getElementById('search-btn');
+
+    // Handle search submission
+    if (searchForm && searchBtn) {
+        searchBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            handleSearch();
+        });
+    }
+
+    if (searchInput) {
+        searchInput.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                e.preventDefault();
+                handleSearch();
+            }
+        });
+    }
+
+    function handleSearch() {
+        const query = searchInput.value.trim();
+        
+        if (query) {
+            // Redirect to search page with query
+            window.location.href = `search.html?q=${encodeURIComponent(query)}`;
+        }
+    }
+});
+
+
+
+
+
