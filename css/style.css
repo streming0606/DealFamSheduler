@@ -2250,7 +2250,7 @@ p {
     flex-direction: column !important;
     align-items: center !important;
     text-align: center !important;
-    gap: 10px !important;
+    gap: 30px !important;
     margin-bottom: 12px !important;
   }
 
@@ -3380,7 +3380,7 @@ p {
   /* Make all text slightly smaller on mobile */
   h1 { font-size: 1.8rem !important; }
   h2 { font-size: 1.5rem !important; }
-  h3 { font-size: 1.3rem !important; }
+  h3 { font-size: 1.4rem !important; }
   
   p {
     font-size: 0.9rem;
