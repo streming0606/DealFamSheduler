@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-10-05T18:31:52.156714+05:30",
-  "total_products": 64,
+  "last_updated": "2025-10-05T21:20:00.394053+05:30",
+  "total_products": 66,
   "products": [
+    {
+      "id": "product_night_20251005_155000",
+      "title": "FUR JADEN Anti Theft Number Lock Backpack Bag with 15.6 Inch Laptop Compartment, USB Charging Port & Organizer Pocket fo",
+      "image": "https://m.media-amazon.com/images/I/61egMfcDWlL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B09VTDMRY7",
+      "price": "\u20b9539",
+      "rating": 4.0,
+      "category": "electronics",
+      "asin": "B09VTDMRY7",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-05T21:20:00.394026+05:30",
+      "session_type": "night",
+      "link_index": 13
+    },
+    {
+      "id": "product_night_20251005_154958",
+      "title": "Ambrane Unbreakable 60W / 3A Fast Charging 1.5m Braided Micro USB Cable for Smartphones, Tablets, Laptops & Other Micro ",
+      "image": "https://m.media-amazon.com/images/I/61rS2NX1vyL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B082LZGK39",
+      "price": "\u20b9129",
+      "rating": 4.0,
+      "category": "electronics",
+      "asin": "B082LZGK39",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-05T21:19:58.921197+05:30",
+      "session_type": "night",
+      "link_index": 13
+    },
     {
       "id": "product_morning_20251005_130152",
       "title": "APFEN\u00ae Type C to Lightning [MFi Certified] Fast Charging Cable Compatible with iPhone 14/14 Pro/ 14 Pro Max/ 13/13 Pro/ ",
