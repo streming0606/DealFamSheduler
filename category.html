@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-D3MVJ2EHSQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-D3MVJ2EHSQ');
+</script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="page-title">Category - Thrift Maal</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/mobile-optimized.css">
+    <link rel="stylesheet" href="css/category.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <meta name="description" id="page-description" content="Browse all products in this category - Thrift Maal">
+</head>
+<body>
+
+<!-- Header -->
+<header>
+    <div class="container">
+        <div class="header-content">
+            <!-- Logo -->
+            <div class="logo">
+                <a href="index.html">
+                    <h1>Thrift <span>Maal</span></h1>
+                </a>
+            </div>
+
+            <!-- Desktop Navigation -->
+            <nav class="desktop-nav">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="#deals" class="nav-link">Deals</a>
+                <a href="#categories" class="nav-link">Categories</a>
+                <a href="#offers" class="nav-link">Today's Offers</a>
+            </nav>
+
+            <!-- Search Bar -->
+            <div class="search-container">
+                <input type="text" id="category-search" placeholder="Search in this category..." class="search-input">
+                <button class="search-btn"><i class="fas fa-search"></i></button>
+            </div>
+
+            <!-- User Actions -->
+            <div class="header-actions">
+                <button class="icon-btn" id="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="icon-btn wishlist-btn">
+                    <i class="fas fa-heart"></i>
+                    <span class="badge">0</span>
+                </button>
+                <div class="user-menu" id="user-menu">
+                    <button class="icon-btn user-btn" id="user-btn">
+                        <i class="fas fa-user"></i>
+                    </button>
+                    <div class="user-dropdown" id="user-dropdown">
+                        <a href="#"><i class="fas fa-user"></i> Profile</a>
+                        <a href="#"><i class="fas fa-shopping-bag"></i> Orders</a>
+                        <a href="#"><i class="fas fa-heart"></i> Wishlist</a>
+                        <a href="#"><i class="fas fa-cog"></i> Settings</a>
+                        <a href="#" class="logout"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </div>
+</header>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobile-menu">
+    <div class="mobile-menu-header">
+        <h3>Menu</h3>
+        <button class="close-mobile-menu" id="close-mobile-menu">
+            <i class="fas fa-times"></i>
+        </button>
+    </div>
+    <nav class="mobile-nav">
+        <a href="index.html" class="mobile-nav-link"><i class="fas fa-home"></i> Home</a>
+        <a href="#deals" class="mobile-nav-link"><i class="fas fa-tags"></i> Deals</a>
+        <a href="#categories" class="mobile-nav-link"><i class="fas fa-th"></i> Categories</a>
+        <a href="#offers" class="mobile-nav-link"><i class="fas fa-fire"></i> Today's Offers</a>
+        <a href="#profile" class="mobile-nav-link"><i class="fas fa-user"></i> Profile</a>
+        <a href="#wishlist" class="mobile-nav-link"><i class="fas fa-heart"></i> Wishlist</a>
+        <a href="#settings" class="mobile-nav-link"><i class="fas fa-cog"></i> Settings</a>
+    </nav>
+</div>
+
+<!-- Breadcrumb Navigation -->
+<section class="breadcrumb-section">
+    <div class="container">
+        <nav class="breadcrumb">
+            <a href="index.html"><i class="fas fa-home"></i> Home</a>
+            <span class="separator">/</span>
+            <span id="category-breadcrumb">Category</span>
+        </nav>
+    </div>
+</section>
+
+<!-- Category Header -->
+<section class="category-header">
+    <div class="container">
+        <div class="category-header-content">
+            <div class="category-info">
+                <h1 id="category-title">Category Products</h1>
+                <p id="category-description">Explore our amazing deals and offers</p>
+                <span class="product-count"><span id="total-products">0</span> Products Found</span>
+            </div>
+            <div class="category-icon" id="category-icon">
+                <i class="fas fa-box"></i>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Filters and Sort Section -->
+<section class="filters-section">
+    <div class="container">
+        <div class="filters-container">
+            <!-- Filter Toggle Button (Mobile) -->
+            <button class="filter-toggle-btn" id="filter-toggle-btn">
+                <i class="fas fa-filter"></i> Filters
+            </button>
+
+            <!-- Sidebar Filters -->
+            <aside class="filters-sidebar" id="filters-sidebar">
+                <div class="filter-header">
+                    <h3><i class="fas fa-sliders-h"></i> Filters</h3>
+                    <button class="close-filters" id="close-filters">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+
+                <!-- Price Range Filter -->
+                <div class="filter-group">
+                    <h4>Price Range</h4>
+                    <div class="price-range-inputs">
+                        <input type="number" id="min-price" placeholder="Min" class="price-input">
+                        <span>-</span>
+                        <input type="number" id="max-price" placeholder="Max" class="price-input">
+                    </div>
+                    <button class="apply-price-btn" id="apply-price-btn">Apply</button>
+                </div>
+
+                <!-- Discount Filter -->
+                <div class="filter-group">
+                    <h4>Discount</h4>
+                    <div class="filter-options">
+                        <label class="filter-option">
+                            <input type="checkbox" class="discount-filter" value="50">
+                            <span>50% or more</span>
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox" class="discount-filter" value="40">
+                            <span>40% or more</span>
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox" class="discount-filter" value="30">
+                            <span>30% or more</span>
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox" class="discount-filter" value="20">
+                            <span>20% or more</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Rating Filter -->
+                <div class="filter-group">
+                    <h4>Customer Rating</h4>
+                    <div class="filter-options">
+                        <label class="filter-option">
+                            <input type="checkbox" class="rating-filter" value="4">
+                            <span><i class="fas fa-star"></i> 4★ & above</span>
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox" class="rating-filter" value="3">
+                            <span><i class="fas fa-star"></i> 3★ & above</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Clear Filters Button -->
+                <button class="clear-filters-btn" id="clear-filters-btn">
+                    <i class="fas fa-redo"></i> Clear All Filters
+                </button>
+            </aside>
+
+            <!-- Products Area -->
+            <div class="products-area">
+                <!-- Sort and View Options -->
+                <div class="products-toolbar">
+                    <div class="toolbar-left">
+                        <span class="showing-results">Showing <span id="showing-count">0</span> products</span>
+                    </div>
+                    <div class="toolbar-right">
+                        <select id="sort-select" class="sort-select">
+                            <option value="latest">Latest First</option>
+                            <option value="price-low">Price: Low to High</option>
+                            <option value="price-high">Price: High to Low</option>
+                            <option value="discount">Highest Discount</option>
+                            <option value="rating">Top Rated</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Products Grid -->
+                <div class="products-grid" id="products-grid">
+                    <!-- Products will be loaded here -->
+                    <div class="loading-spinner">
+                        <i class="fas fa-spinner fa-spin"></i>
+                        <p>Loading products...</p>
+                    </div>
+                </div>
+
+                <!-- Load More Button -->
+                <div class="load-more-container">
+                    <button class="load-more-btn" id="load-more-btn" style="display: none;">
+                        <i class="fas fa-plus-circle"></i> Load More Products
+                    </button>
+                </div>
+
+                <!-- No Products Message -->
+                <div class="no-products" id="no-products" style="display: none;">
+                    <i class="fas fa-box-open"></i>
+                    <h3>No Products Found</h3>
+                    <p>Try adjusting your filters or search criteria</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Thrift <span>Maal</span></h3>
+                <p>Your daily dose of amazing deals and offers. Save more, shop smarter!</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <a href="index.html">Home</a>
+                <a href="#">About Us</a>
+                <a href="#">Contact</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+            <div class="footer-section">
+                <h4>Categories</h4>
+                <a href="category.html?cat=electronics">Electronics</a>
+                <a href="category.html?cat=fashion">Fashion</a>
+                <a href="category.html?cat=home">Home & Kitchen</a>
+                <a href="category.html?cat=health">Health & Beauty</a>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Thrift Maal. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<script src="js/category.js"></script>
+</body>
+</html>
