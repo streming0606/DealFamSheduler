@@ -2570,8 +2570,8 @@ p {
 }
 
 .testimonials-header .section-title {
-    font-size: 3rem;
-    font-weight: 800;
+    font-size: 2rem;
+    font-weight: 600;
     background: linear-gradient(135deg, var(--text-primary) 0%, var(--primary-color) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -3761,7 +3761,7 @@ body.promo-banner-visible .header {
     margin-bottom: 8px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
     gap: 12px;
 }
 
