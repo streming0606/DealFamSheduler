@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-10-05T13:19:24.426101+05:30",
-  "total_products": 62,
+  "last_updated": "2025-10-05T18:31:52.156714+05:30",
+  "total_products": 64,
   "products": [
+    {
+      "id": "product_morning_20251005_130152",
+      "title": "APFEN\u00ae Type C to Lightning [MFi Certified] Fast Charging Cable Compatible with iPhone 14/14 Pro/ 14 Pro Max/ 13/13 Pro/ ",
+      "image": "https://m.media-amazon.com/images/I/41uSdnQa7nL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DFCGB2D6",
+      "price": "\u20b9301",
+      "rating": 4.2,
+      "category": "electronics",
+      "asin": "B0DFCGB2D6",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-05T18:31:52.156679+05:30",
+      "session_type": "morning",
+      "link_index": 11
+    },
+    {
+      "id": "product_morning_20251005_130150",
+      "title": "Logitech M186 Wireless Mouse, 2.4GHz with USB Mini Receiver, 12-Month Battery Life, 1000 DPI Optical Tracking, Ambidextr",
+      "image": "https://m.media-amazon.com/images/I/41xAn0iwc6L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0D18192T2",
+      "price": "\u20b9399",
+      "rating": 4.1,
+      "category": "electronics",
+      "asin": "B0D18192T2",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-05T18:31:50.098532+05:30",
+      "session_type": "morning",
+      "link_index": 11
+    },
     {
       "id": "product_afternoon_20251005_074924",
       "title": "Portronics Toad One Bluetooth Mouse with 2.4 GHz & BT 5.3 Dual Wireless, 6 Buttons, Rechargeable, RGB Lights, Connect 3 ",
