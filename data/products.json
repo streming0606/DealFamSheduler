@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-10-05T10:15:57.372543+05:30",
-  "total_products": 60,
+  "last_updated": "2025-10-05T13:19:24.426101+05:30",
+  "total_products": 62,
   "products": [
+    {
+      "id": "product_afternoon_20251005_074924",
+      "title": "Portronics Toad One Bluetooth Mouse with 2.4 GHz & BT 5.3 Dual Wireless, 6 Buttons, Rechargeable, RGB Lights, Connect 3 ",
+      "image": "https://m.media-amazon.com/images/I/51hZtBRUFBL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0BG8LZNYL",
+      "price": "\u20b9499",
+      "rating": 4.3,
+      "category": "electronics",
+      "asin": "B0BG8LZNYL",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-05T13:19:24.426076+05:30",
+      "session_type": "afternoon",
+      "link_index": 9
+    },
+    {
+      "id": "product_afternoon_20251005_074922",
+      "title": "Portronics Konnect L POR-1403 Fast Charging 3A Type-C Cable 1.2 Meter with Charge & Sync Function for All Type-C Devices",
+      "image": "https://m.media-amazon.com/images/I/61TAAu1LrqL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B09KH58JZR",
+      "price": "\u20b9109",
+      "rating": 4.1,
+      "category": "electronics",
+      "asin": "B09KH58JZR",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-05T13:19:22.478336+05:30",
+      "session_type": "afternoon",
+      "link_index": 9
+    },
     {
       "id": "product_morning_20251005_044557",
       "title": "Mi Xiaomi 33W Fast Charging Cable USB C Quick Charge 4.0 Soniccharge Cord Compatible withMi, Redmi, iPhone 15 Pro Samsun",
