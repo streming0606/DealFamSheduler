@@ -2,15 +2,14 @@
 <html lang="en">
 <head>
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-D3MVJ2EHSQ"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-D3MVJ2EHSQ');
-    </script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-887DNYMLDD"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-
+  gtag('config', 'G-887DNYMLDD');
+</script>
 
 
 
@@ -98,100 +97,127 @@
     <meta name="description" content="Search results for deals and offers on Thrift Zone - Smart Shopping Hub">
 </head>
 <body>
-    <!-- Header 
-    <header class="header">
-        <div class="container">
-            <nav class="navbar">
-                <div class="logo">
-                    <a href="index.html">
-                        <div class="logo-content">
-                            <i class="fas fa-shopping-bag"></i>
-                            <div>
-                                <span class="logo-text">Thrift Maal</span>
-                                
-                            </div>
-                        </div>
-                    </a>
-                </div>-->
-
-<!-- Enhanced Header with Auth -->
-    <header class="header">
-        <div class="container">
-            <!-- Mobile Menu Toggle -->
-            <button class="mobile-menu-toggle" id="mobile-menu-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-
-            <!-- Logo Section -->
-            <div class="logo">
-                <a href="index.html">
-                    <img src="images/logo/logo.png" alt="Thrift Zone" class="logo-icon">
-                    <div class="logo-text">
-                        <h2>Thrift Maal</h2>
-                        
-                    </div>
-                </a>
-            </div>
-
-<!-- Search Bar-->
-
-                <div class="search-container">
-                    <form class="search-form" id="search-form">
-                        <div class="search-input-wrapper">
-                            <input type="text" 
-                                   id="search-input" 
-                                   class="search-input" 
-                                   placeholder="Search for deals, products, categories..."
-                                   autocomplete="off">
-                        </div>
-                        <button type="submit" id="search-btn" class="search-btn">
-                            <i class="fas fa-search"></i>
-                            <span>Search</span>
-                        </button>
-                    </form>
-                    <div id="search-suggestions" class="search-suggestions"></div>
-                </div>
 
 
 
 
 
-<!-- Navigation -->
-            <nav class="nav">
-                <a href="index.html" class="mobile-nav-link">
+
+
+<!-- Enhanced Header with Auth 
+  <link rel="icon" type="image/png" href="images/logo/favicon.png">-->
+<header class="header">
+    <div class="container">
+
+        <!-- Mobile Menu Toggle -->
+        <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <!-- Logo Section -->
+        <div class="logo">
+          <img src="images/logo/logo.png" alt="Thrift Zone" class="logo-icon">
+           <!-- <div class="logo-text">
+                <h1>Thrift Maal</h1>
+                <span class="tagline">Save Every Time</span>
+            </div>-->
+        </div>
+
+
+
+      <!-- enhance Search Bar-->
+<div class="search-container">
+    <div class="search-box">
+        <input type="text" 
+               id="search-input" 
+               placeholder="Search for deals, products..." 
+               autocomplete="off">
+       <!-- <button type="button" id="voice-search-btn" class="voice-btn" title="Voice Search">
+            <i class="fas fa-microphone"></i>
+        </button>-->
+        <button type="submit" class="search-btn" id="search-btn">
+            <i class="fas fa-search"></i>
+        </button>
+    </div>
+    <div class="search-suggestions" id="search-suggestions"></div>
+</div>
+
+
+
+      
+        <!-- Navigation -->
+        <nav class="nav">
+            <a href="/coupons" class="nav-link coupon-cta">Coupons</a>
+            <!--<a href="#categories" class="nav-link">Categories</a>-->
+            <a href="/community" class="mobile-nav-link highlight">community</a>
+           <!-- <a href="#deals" class="nav-link"> Deals Alert</a>-->
+            <a href="../#deals" class="mobile-nav-link">End Soon</a>
+
+          <a href="/deal-finder" class="nav-link deal-finder-link">
+        <i class="fas fa-search-dollar"></i>
+        Deal Finder
+        
+    </a>
+        </nav>
+        
+
+        
+            
+
+             
+        
+
+    <!-- Mobile Navigation (updated) -->
+    <div class="mobile-nav" id="mobile-nav">
+        <div class="mobile-nav-header">
+            <h3>MENU</h3>
+            <button class="mobile-nav-close">&times;</button>
+        </div>
+        <div class="mobile-nav-content">
+
+
+            <!-- Mobile Auth Section -->
+            <div class="mobile-auth" id="mobile-auth"></div>
+                <div class="mobile-auth-buttons" id="mobile-auth-buttons"></div>
+
+
+  
+
+
+<!-- Navigation Links -->
+
+            <a href="index.html" class="mobile-nav-link">
                 <i class="fas fa-home"></i> Home
             </a>
-                            <a href="coupons.html" class="mobile-nav-link highlight">
+            <a href="deal-finder.html" class="mobile-nav-link highlight active">
+                <i class="fas fa-search-dollar"></i> Deal Finder
+            </a>
+            <a href="coupons.html" class="mobile-nav-link highlight">
                 <i class="fas fa-tags"></i> Coupons
             </a>
-                <a href="community.html" class="mobile-nav-link highlight">
+            <a href="community.html" class="mobile-nav-link highlight">
                 <i class="fas fa-users"></i> Discussion
             </a>
-                </a>
-            <a href="loot-deals" class="mobile-nav-link">
+            <a href="../#deals" class="mobile-nav-link">
                 <i class="fas fa-fire"></i> End Soon
             </a>
-                <a href="deal-finder.html" class="nav-link deal-finder-link">
-                    <i class="fas fa-search-dollar"></i> Deal Finder
-                </a>
-            </nav>
+            <a href="blog/" class="mobile-nav-link highlight">
+                <i class="fas fa-blog"></i> Blog
+            </a>
+
+
+            <div class="mobile-nav-divider"></div>
+
+
+</header>
 
 
 
 
-                <div class="user-actions">
-                    
-                        
-                    
-                    <div class="user-profile">
-                        
-                    </div>
-                </div>
-            </nav>
-        </div>
-    </header>
+
+
 
 
 
@@ -399,12 +425,64 @@
         </div>
     </main>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 Thrift Maal. All rights reserved.</p>
+<!-- Updated Footer with All Pages -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-logo">
+                    <img src="images/logo/logo.png" alt="Thrift Zone">
+                    <h3>   </h3>
+                </div>
+                <p>Your smart shopping companion.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-telegram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="#categories">Categories</a></li>
+                    <li><a href="#deals">Today's Deals</a></li>
+                    <li><a href="blog/">Blog</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="pages/about">About Us</a></li>
+                    <li><a href="pages/contact">Contact Us</a></li>
+                    <li><a href="pages/privacy-policy">Privacy Policy</a></li>
+                    <li><a href="pages/terms-of-service">Terms of Service</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="pages/faq">FAQ</a></li>
+                    <li><a href="pages/contact">Help Center</a></li>
+                    <li><a href="pages/contact">Report Issue</a></li>
+                </ul>
+            </div>
         </div>
-    </footer>
+
+        <div class="footer-bottom">
+            <div class="footer-disclaimer">
+                <p>&copy; 2025 Thrift Maal. All rights reserved.</p>
+                <p class="affiliate-disclosure">
+                    <strong>Affiliate Disclosure:</strong> We may earn commission from purchases made through our links. This doesn't affect the price you pay.
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
 
     <!-- Scripts -->
     <script src="js/theme.js"></script>
