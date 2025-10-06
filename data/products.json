@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-10-06T18:39:44.013853+05:30",
-  "total_products": 72,
+  "last_updated": "2025-10-06T21:20:00.754151+05:30",
+  "total_products": 74,
   "products": [
+    {
+      "id": "product_night_20251006_155000",
+      "title": "HP v236w USB 2.0 64GB Pen Drive, Metal",
+      "image": "https://m.media-amazon.com/images/I/61xNG4wjOuL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B01L8ZNWN2",
+      "price": "\u20b9402",
+      "rating": 4.2,
+      "category": "electronics",
+      "asin": "B01L8ZNWN2",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-06T21:20:00.754123+05:30",
+      "session_type": "night",
+      "link_index": 21
+    },
+    {
+      "id": "product_night_20251006_154958",
+      "title": "TP-Link AC750 Wifi Range Extender | Up to 750Mbps | Dual Band WiFi Extender, Repeater, Wifi Signal Booster, Access Point",
+      "image": "https://m.media-amazon.com/images/I/61+8YQqHC0L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B00KXULGJQ",
+      "price": "\u20b91,599",
+      "rating": 4.1,
+      "category": "electronics",
+      "asin": "B00KXULGJQ",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-06T21:19:58.291101+05:30",
+      "session_type": "night",
+      "link_index": 21
+    },
     {
       "id": "product_morning_20251006_130944",
       "title": "TP-Link TL-WA850RE N300 Wireless Range Extender, Broadband/Wi-Fi Extender, Wi-Fi Booster/Hotspot with 1 Ethernet Port, P",
