@@ -172,6 +172,9 @@ function createProductCard(product, index = 0) {
     card.style.transform = 'translateY(20px)';
     card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
     
+    // ADD THIS: Make card cursor pointer
+    card.style.cursor = 'pointer';
+    
     const date = new Date(product.posted_date);
     const formattedDate = date.toLocaleDateString('en-IN');
     const enhancedData = enhanceProductData(product);
@@ -216,30 +219,11 @@ function createProductCard(product, index = 0) {
             </div>
             
             <div class="product-actions">
-
-            
-
-
-
-
-
-
-
-
-
-
-            
-
-
-<a href="#" 
-   class="deal-btn" 
-   onclick="openProductPage('${product.id}', '${product.title}'); return false;"
-   rel="noopener noreferrer">
-    <div>
-
-
-
-                    
+                <a href="#" 
+                   class="deal-btn" 
+                   onclick="openProductPage('${product.id}', '${product.title}'); return false;"
+                   rel="noopener noreferrer">
+                    <div>
                         <div class="deal-btn-text">
                             <i class="fas fa-bolt"></i>
                             View Deal Details
@@ -247,15 +231,27 @@ function createProductCard(product, index = 0) {
                         <div class="deal-btn-subtext">Save Big Today</div>
                     </div>
                 </a>
-
-                
-                
-
-
-                
             </div>
         </div>
     `;
+    
+    // ADD THIS: Card click handler that respects interactive elements
+    card.addEventListener('click', function(e) {
+        // Check if click is on interactive elements
+        const isInteractiveElement = 
+            e.target.closest('.wishlist-btn') ||
+            e.target.closest('.like-compact-btn') ||
+            e.target.closest('.share-compact-btn') ||
+            e.target.closest('.comment-compact-btn') ||
+            e.target.closest('.timer-compact-btn') ||
+            e.target.closest('.deal-btn') ||
+            e.target.closest('.feature-compact-btn');
+        
+        // Only navigate if NOT clicking interactive elements
+        if (!isInteractiveElement) {
+            openProductPage(product.id, product.title);
+        }
+    });
     
     return card;
 }
