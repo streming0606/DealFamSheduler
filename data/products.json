@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-10-05T21:20:00.394053+05:30",
-  "total_products": 66,
+  "last_updated": "2025-10-06T10:16:59.859925+05:30",
+  "total_products": 68,
   "products": [
+    {
+      "id": "product_morning_20251006_044659",
+      "title": "DIGIROOT iPad Pencil?NO.1 Sales in US&EU,13 Mins Fast Charge Stylus Pen for iPad with Palm Rejection for 2018-2025 iPad ",
+      "image": "https://m.media-amazon.com/images/I/51UBr3cmxOL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CP914DZD",
+      "price": "\u20b91,139",
+      "rating": 4.4,
+      "category": "electronics",
+      "asin": "B0CP914DZD",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-06T10:16:59.859902+05:30",
+      "session_type": "morning",
+      "link_index": 15
+    },
+    {
+      "id": "product_morning_20251006_044657",
+      "title": "Oakter Mini UPS for 12V WiFi Router Broadband Modem | Backup Upto 4 Hours | WiFi Router UPS Power Backup During Power Cu",
+      "image": "https://m.media-amazon.com/images/I/614maKDzzUL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B08HLZ28QC",
+      "price": "\u20b91,099",
+      "rating": 4.1,
+      "category": "electronics",
+      "asin": "B08HLZ28QC",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-06T10:16:57.577149+05:30",
+      "session_type": "morning",
+      "link_index": 15
+    },
     {
       "id": "product_night_20251005_155000",
       "title": "FUR JADEN Anti Theft Number Lock Backpack Bag with 15.6 Inch Laptop Compartment, USB Charging Port & Organizer Pocket fo",
