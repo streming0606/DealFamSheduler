@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-10-06T10:16:59.859925+05:30",
-  "total_products": 68,
+  "last_updated": "2025-10-06T13:19:22.936591+05:30",
+  "total_products": 70,
   "products": [
+    {
+      "id": "product_afternoon_20251006_074922",
+      "title": "Cubiker Engineered Wood Multipurpose Foldable Laptop Table with Cup Holder | Table Home Study Writing Table, Foldable an",
+      "image": "https://m.media-amazon.com/images/I/61RBn+M0j3L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0D53YGZNK",
+      "price": "\u20b9448",
+      "rating": 4.0,
+      "category": "electronics",
+      "asin": "B0D53YGZNK",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-06T13:19:22.936565+05:30",
+      "session_type": "afternoon",
+      "link_index": 17
+    },
+    {
+      "id": "product_afternoon_20251006_074921",
+      "title": "Apple USB-C to Lightning Cable (1m) \u200b\u200b\u200b\u200b\u200b\u200b\u200b",
+      "image": "https://m.media-amazon.com/images/I/61PduSmu8GL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CX23929Q",
+      "price": "\u20b91,499",
+      "rating": 3.9,
+      "category": "electronics",
+      "asin": "B0CX23929Q",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-06T13:19:21.718950+05:30",
+      "session_type": "afternoon",
+      "link_index": 17
+    },
     {
       "id": "product_morning_20251006_044659",
       "title": "DIGIROOT iPad Pencil?NO.1 Sales in US&EU,13 Mins Fast Charge Stylus Pen for iPad with Palm Rejection for 2018-2025 iPad ",
