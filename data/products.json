@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-10-07T18:45:50.649059+05:30",
-  "total_products": 79,
+  "last_updated": "2025-10-07T21:21:15.479931+05:30",
+  "total_products": 81,
   "products": [
+    {
+      "id": "product_night_20251007_155115",
+      "title": "Dyazo 6 Angles Adjustable Aluminum Ergonomic Foldable Portable Tabletop Laptop/Desktop Riser Stand Holder Compatible for",
+      "image": "https://m.media-amazon.com/images/I/61kBmC8NfGL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B08LHTJTBB",
+      "price": "\u20b9320",
+      "rating": 4.3,
+      "category": "electronics",
+      "asin": "B08LHTJTBB",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-07T21:21:15.479904+05:30",
+      "session_type": "night",
+      "link_index": 29
+    },
+    {
+      "id": "product_night_20251007_155112",
+      "title": "Zebronics Zeb-Companion 107 USB Wireless Keyboard and Mouse Set with Nano Receiver (Black)",
+      "image": "https://m.media-amazon.com/images/I/61ZvJw9wlXL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B087FXHB6J",
+      "price": "\u20b9529",
+      "rating": 3.4,
+      "category": "electronics",
+      "asin": "B087FXHB6J",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-07T21:21:12.510863+05:30",
+      "session_type": "night",
+      "link_index": 29
+    },
     {
       "id": "product_morning_20251007_131550",
       "title": "DTECH DB9 RS232 Serial Cable Male to Female Null Modem Cord Full Handshaking 7 Wire Crossover for Data Communication Com",
