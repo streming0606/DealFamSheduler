@@ -164,61 +164,6 @@ function initializeScrollers() {
 
 
 // Enhanced Product Card Functions
-// Platform Detection Function - ADD THIS AT THE TOP
-function detectPlatform(url) {
-    if (!url) return { name: 'Shop', logo: '🛒', color: '#2874F0', textColor: '#FFFFFF' };
-    
-    const urlLower = url.toLowerCase();
-    
-    const platforms = {
-        amazon: {
-            name: 'amazon',
-            logo: 'https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg',
-            color: '#FF9900',
-            textColor: '#000000'
-        },
-        flipkart: {
-            name: 'Flipkart',
-            logo: 'https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/flipkart-plus_8d85f4.png',
-            color: '#2874F0',
-            textColor: '#FFFFFF'
-        },
-        myntra: {
-            name: 'Myntra',
-            logo: 'https://constant.myntassets.com/web/assets/img/icon.png',
-            color: '#FF3F6C',
-            textColor: '#FFFFFF'
-        },
-        ajio: {
-            name: 'AJIO',
-            logo: '🛍️',
-            color: '#C3A676',
-            textColor: '#FFFFFF'
-        },
-        meesho: {
-            name: 'Meesho',
-            logo: '🛍️',
-            color: '#9F2089',
-            textColor: '#FFFFFF'
-        },
-        snapdeal: {
-            name: 'Snapdeal',
-            logo: '🛍️',
-            color: '#E40046',
-            textColor: '#FFFFFF'
-        }
-    };
-    
-    for (const [key, platform] of Object.entries(platforms)) {
-        if (urlLower.includes(key)) {
-            return platform;
-        }
-    }
-    
-    return { name: 'Shop', logo: '🛒', color: '#2874F0', textColor: '#FFFFFF' };
-}
-
-// REPLACE YOUR EXISTING createProductCard() WITH THIS VERSION
 function createProductCard(product, index = 0) {
     const card = document.createElement('div');
     card.className = 'product-card';
@@ -226,19 +171,18 @@ function createProductCard(product, index = 0) {
     card.style.opacity = '0';
     card.style.transform = 'translateY(20px)';
     card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+    
+    // ADD THIS: Make card cursor pointer
     card.style.cursor = 'pointer';
     
     const date = new Date(product.posted_date);
     const formattedDate = date.toLocaleDateString('en-IN');
     const enhancedData = enhanceProductData(product);
     
-    // Detect platform from product URL
-    const platform = detectPlatform(product.url);
-    
     card.innerHTML = `
         <div class="product-image-container">
             ${product.image ? 
-                `<img src="${product.image}" alt="${product.title}" class="product-image" loading="lazy" onerror="this.parentElement.innerHTML='<div class=\"product-placeholder\"><i class=\"fas fa-image\"></i></div>` 
+                `<img src="${product.image}" alt="${product.title}" class="product-image" loading="lazy" onerror="this.parentElement.innerHTML='<div class=\\"product-placeholder\\"><i class=\\"fas fa-image\\"></i></div>` 
                 : 
                 '<div class="product-placeholder"><i class="fas fa-image"></i></div>'
             }
@@ -275,29 +219,25 @@ function createProductCard(product, index = 0) {
             </div>
             
             <div class="product-actions">
-                <a href="${product.url}" 
-                   class="deal-btn platform-deal-btn" 
-                   target="_blank"
-                   rel="noopener noreferrer nofollow"
-                   onclick="event.stopPropagation();">
-                    <div class="platform-logo-container">
-                        <img src="${platform.logo}" 
-                             alt="${platform.name}" 
-                             class="platform-logo"
-                             onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';">
-                        <span class="platform-logo-fallback" style="display: none;">${platform.logo}</span>
-                    </div>
-                    <div class="deal-btn-content">
-                        <span class="deal-btn-main">Shop Now</span>
-                        <span class="deal-btn-subtext">on ${platform.name}</span>
+                <a href="#" 
+                   class="deal-btn" 
+                   onclick="openProductPage('${product.id}', '${product.title}'); return false;"
+                   rel="noopener noreferrer">
+                    <div>
+                        <div class="deal-btn-text">
+                            <i class="fas fa-bolt"></i>
+                            View Deal Details
+                        </div>
+                        <div class="deal-btn-subtext">Save Big Today</div>
                     </div>
                 </a>
             </div>
         </div>
     `;
     
-    // Card click handler that respects interactive elements
+    // ADD THIS: Card click handler that respects interactive elements
     card.addEventListener('click', function(e) {
+        // Check if click is on interactive elements
         const isInteractiveElement = 
             e.target.closest('.wishlist-btn') ||
             e.target.closest('.like-compact-btn') ||
@@ -305,9 +245,9 @@ function createProductCard(product, index = 0) {
             e.target.closest('.comment-compact-btn') ||
             e.target.closest('.timer-compact-btn') ||
             e.target.closest('.deal-btn') ||
-            e.target.closest('.platform-deal-btn') ||
             e.target.closest('.feature-compact-btn');
         
+        // Only navigate if NOT clicking interactive elements
         if (!isInteractiveElement) {
             openProductPage(product.id, product.title);
         }
@@ -315,8 +255,6 @@ function createProductCard(product, index = 0) {
     
     return card;
 }
-
-
 
 
 
