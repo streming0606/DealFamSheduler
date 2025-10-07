@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-10-07T13:19:40.696110+05:30",
-  "total_products": 77,
+  "last_updated": "2025-10-07T18:45:50.649059+05:30",
+  "total_products": 79,
   "products": [
+    {
+      "id": "product_morning_20251007_131550",
+      "title": "DTECH DB9 RS232 Serial Cable Male to Female Null Modem Cord Full Handshaking 7 Wire Crossover for Data Communication Com",
+      "image": "https://m.media-amazon.com/images/I/61ZODgQ00PL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DWSJ8T41",
+      "price": "\u20b9591.84",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B0DWSJ8T41",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-07T18:45:50.649032+05:30",
+      "session_type": "morning",
+      "link_index": 27
+    },
+    {
+      "id": "product_morning_20251007_131548",
+      "title": "ZEBRONICS MSP-X1 Mouse Pad, for Speed and Precision Operation, Smooth Cloth Surface, Roll and Go, Optimised for All Mous",
+      "image": "https://m.media-amazon.com/images/I/81VYnI9TEGL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0D8KQK2CY",
+      "price": "\u20b989",
+      "rating": 4.4,
+      "category": "electronics",
+      "asin": "B0D8KQK2CY",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-07T18:45:48.841369+05:30",
+      "session_type": "morning",
+      "link_index": 27
+    },
     {
       "id": "product_afternoon_20251007_074940",
       "title": "Dyazo Water Resistant Laptop Sleeve/Laptop case/laptop cover with Handle Compatible for 15 Inch to 15.6\" Inches laptops ",
