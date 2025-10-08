@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-10-08T13:20:03.192168+05:30",
-  "total_products": 85,
+  "last_updated": "2025-10-08T18:45:57.477652+05:30",
+  "total_products": 87,
   "products": [
+    {
+      "id": "product_morning_20251008_131557",
+      "title": "Portronics Konnect X 60W Type C to Type C Unbreakable Nylon Braided Cable, 2M Fast Charging Cable for iPhone 15 series, ",
+      "image": "https://m.media-amazon.com/images/I/71hWHCvPCLL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CV45N68C",
+      "price": "\u20b9137",
+      "rating": 4.3,
+      "category": "electronics",
+      "asin": "B0CV45N68C",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-08T18:45:57.477623+05:30",
+      "session_type": "morning",
+      "link_index": 35
+    },
+    {
+      "id": "product_morning_20251008_131555",
+      "title": "Dell WM118 Wireless Mouse, 1000DPI, 2.4 Ghz with USB Nano Receiver, Optical Tracking, 12-Months Battery Life, Plug and P",
+      "image": "https://m.media-amazon.com/images/I/41rIY4opa3L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07JPX9CR7",
+      "price": "\u20b9569",
+      "rating": 4.1,
+      "category": "electronics",
+      "asin": "B07JPX9CR7",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-08T18:45:55.938278+05:30",
+      "session_type": "morning",
+      "link_index": 35
+    },
     {
       "id": "product_afternoon_20251008_075003",
       "title": "Logitech H111 Wired On Ear Headphones With Mic Black",
