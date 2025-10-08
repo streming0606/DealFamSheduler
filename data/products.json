@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-10-07T21:21:15.479931+05:30",
-  "total_products": 81,
+  "last_updated": "2025-10-08T10:17:12.817817+05:30",
+  "total_products": 83,
   "products": [
+    {
+      "id": "product_morning_20251008_044712",
+      "title": "HAMMER 100W 5A USB to Type-C for OnePlus with WARP/VOOC/FLASH support, Super Fast Charging Cable,1.2M Nylon Braided,Tang",
+      "image": "https://m.media-amazon.com/images/I/71L4r2qAVTL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DXV31MLB",
+      "price": "\u20b9179",
+      "rating": 4.2,
+      "category": "electronics",
+      "asin": "B0DXV31MLB",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-08T10:17:12.817790+05:30",
+      "session_type": "morning",
+      "link_index": 31
+    },
+    {
+      "id": "product_morning_20251008_044710",
+      "title": "Oakter Mini UPS Basic for WiFi Router Broadband Modem | Supports 12V-2A Routers. Backup Upto 3 Hours | WiFi Router UPS P",
+      "image": "https://m.media-amazon.com/images/I/51q07Jpq4fL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DXQFRQZP",
+      "price": "\u20b9849",
+      "rating": 4.2,
+      "category": "electronics",
+      "asin": "B0DXQFRQZP",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-08T10:17:10.650946+05:30",
+      "session_type": "morning",
+      "link_index": 31
+    },
     {
       "id": "product_night_20251007_155115",
       "title": "Dyazo 6 Angles Adjustable Aluminum Ergonomic Foldable Portable Tabletop Laptop/Desktop Riser Stand Holder Compatible for",
