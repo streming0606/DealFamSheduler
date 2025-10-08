@@ -1462,7 +1462,7 @@ p {
   .banner-image,
   .banner-image img,
   .banner-overlay {
-    border-radius: 12px;
+    border-radius: 20px;
   }
 
   .banner-content {
