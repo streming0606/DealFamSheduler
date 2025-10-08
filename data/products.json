@@ -3,20 +3,7 @@
   "total_products": 90,
   "daily_target": 6,
   "products": [
-    {
-      "id": "product_night_1_20251008_192847",
-      "title": "Robustrion Tempered Glass for iPad 11th Generation (A16) / iPad 10th Generation Screen Protector Gua...",
-      "image": "https://m.media-amazon.com/images/I/610b+mFg33L._AC_UL320_.jpg",
-      "affiliate_link": "https://www.amazon.in/dp/B0BKPMD1BN?tag=gadgetvill09f-21",
-      "price": "\u20b9379",
-      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
-      "category": "electronics",
-      "asin": "B0BKPMD1BN",
-      "data_source": "serpapi",
-      "posted_date": "2025-10-09T00:58:47.515368+05:30",
-      "session_type": "night",
-      "link_index": 40
-    },
+    
     {
       "id": "product_night_20251008_155050",
       "title": "Portronics Toad 101 Wired Optical Mouse with 1200 DPI, Plug & Play, Hi-Optical Tracking, 1.25M Cable Length, 30Lakhs Cli",
