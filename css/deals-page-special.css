@@ -1,6 +1,7 @@
 /* =============================================
    THRIFT ZONE DEALS PAGE - SPECIAL STYLING
    White & Blue Theme for Maximum Engagement
+   Two-Column Mobile Layout
    ============================================= */
 
 /* Root Variables for Consistent White & Blue Theme */
@@ -186,6 +187,11 @@ body {
     box-shadow: var(--shadow-medium);
 }
 
+.filter-btn:focus {
+    outline: 2px solid var(--primary-blue);
+    outline-offset: 2px;
+}
+
 .filter-btn.active {
     background: var(--gradient-primary);
     color: var(--pure-white);
@@ -310,6 +316,11 @@ body {
     transform: scale(1.1);
 }
 
+.wishlist-btn:focus {
+    outline: 2px solid var(--deal-red);
+    outline-offset: 2px;
+}
+
 .product-info {
     padding: 1.5rem;
 }
@@ -365,7 +376,9 @@ body {
     gap: 0.8rem;
 }
 
-.claim-btn {
+.claim-btn,
+.buy-btn,
+.view-deal-btn {
     flex: 1;
     background: var(--gradient-primary);
     color: var(--pure-white);
@@ -379,16 +392,28 @@ body {
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
+    text-decoration: none;
 }
 
-.claim-btn:hover {
+.claim-btn:hover,
+.buy-btn:hover,
+.view-deal-btn:hover {
     transform: translateY(-2px);
     box-shadow: var(--shadow-medium);
     background: var(--electric-blue);
 }
 
-.claim-btn:active {
+.claim-btn:active,
+.buy-btn:active,
+.view-deal-btn:active {
     transform: translateY(0);
+}
+
+.claim-btn:focus,
+.buy-btn:focus,
+.view-deal-btn:focus {
+    outline: 2px solid var(--primary-blue);
+    outline-offset: 2px;
 }
 
 /* Loading States */
@@ -439,6 +464,11 @@ body {
     box-shadow: var(--shadow-medium);
 }
 
+.load-more-btn:focus {
+    outline: 2px solid var(--primary-blue);
+    outline-offset: 2px;
+}
+
 /* Back to Top Button */
 .back-to-top {
     position: fixed;
@@ -462,6 +492,11 @@ body {
 .back-to-top:hover {
     transform: translateY(-3px);
     box-shadow: var(--shadow-heavy);
+}
+
+.back-to-top:focus {
+    outline: 2px solid var(--pure-white);
+    outline-offset: 2px;
 }
 
 /* Animations */
@@ -494,57 +529,6 @@ body {
     }
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .deals-page-title {
-        font-size: 2rem;
-    }
-    
-    .deals-page-stats {
-        gap: 1.5rem;
-    }
-    
-    .deals-stat {
-        padding: 1rem;
-    }
-    
-    .filter-tabs {
-        justify-content: flex-start;
-        overflow-x: auto;
-        padding-bottom: 0.5rem;
-    }
-    
-    .filter-btn {
-        white-space: nowrap;
-        min-width: max-content;
-    }
-    
-    .products-grid {
-        grid-template-columns: 1fr;
-        padding: 0;
-    }
-    
-    .deals-results-info {
-        flex-direction: column;
-        text-align: center;
-    }
-}
-
-@media (max-width: 480px) {
-    .deals-page-hero {
-        padding: 2rem 0;
-    }
-    
-    .deals-page-filters {
-        margin: -1rem 0.5rem 1rem 0.5rem;
-        padding: 1rem;
-    }
-    
-    .product-card {
-        margin: 0 0.5rem;
-    }
-}
-
 /* Special Effects for Engagement */
 .deal-countdown {
     background: linear-gradient(45deg, var(--deal-red), var(--warning-orange));
@@ -571,6 +555,334 @@ body {
     z-index: 2;
 }
 
+/* Product Rating Styles */
+.product-rating {
+    display: flex;
+    align-items: center;
+    gap: 0.375rem;
+    margin-bottom: 0.625rem;
+}
+
+.product-rating i {
+    color: #fbbf24;
+    font-size: 0.75rem;
+}
+
+.rating-count {
+    color: #94a3b8;
+    font-size: 0.75rem;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .products-grid {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 1.25rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .deals-page-title {
+        font-size: 2rem;
+    }
+    
+    .deals-page-stats {
+        gap: 1.5rem;
+    }
+    
+    .deals-stat {
+        padding: 1rem;
+    }
+    
+    .filter-tabs {
+        justify-content: flex-start;
+        overflow-x: auto;
+        padding-bottom: 0.5rem;
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    .filter-btn {
+        white-space: nowrap;
+        min-width: max-content;
+        padding: 0.7rem 1.2rem;
+        font-size: 0.85rem;
+    }
+    
+    /* TWO PRODUCTS PER ROW ON MOBILE */
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.75rem;
+        padding: 0 0.5rem;
+    }
+    
+    .deals-results-info {
+        flex-direction: column;
+        text-align: center;
+        margin: 0 0.5rem 1rem 0.5rem;
+        padding: 0.75rem 1rem;
+    }
+    
+    .results-count {
+        font-size: 1rem;
+    }
+    
+    .last-updated {
+        font-size: 0.8rem;
+    }
+    
+    /* Compact Product Card for Mobile */
+    .product-card {
+        margin: 0;
+    }
+    
+    .product-image {
+        height: 180px;
+    }
+    
+    .product-info {
+        padding: 0.75rem;
+    }
+    
+    .product-title {
+        font-size: 0.8125rem;
+        margin-bottom: 0.5rem;
+        -webkit-line-clamp: 2;
+        min-height: 2.4rem;
+    }
+    
+    .product-category {
+        font-size: 0.7rem;
+        margin-bottom: 0.375rem;
+    }
+    
+    .discount-badge {
+        font-size: 0.7rem;
+        padding: 0.2rem 0.5rem;
+    }
+    
+    .limited-time-badge {
+        font-size: 0.65rem;
+        padding: 0.25rem 0.6rem;
+    }
+    
+    .trending-badge {
+        top: 45px;
+        font-size: 0.65rem;
+        padding: 0.2rem 0.5rem;
+    }
+    
+    .wishlist-btn {
+        width: 32px;
+        height: 32px;
+        bottom: 8px;
+        right: 8px;
+    }
+    
+    .product-pricing {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.25rem;
+        margin-bottom: 0.75rem;
+    }
+    
+    .current-price {
+        font-size: 1.125rem;
+    }
+    
+    .original-price {
+        font-size: 0.875rem;
+    }
+    
+    .savings {
+        font-size: 0.8rem;
+    }
+    
+    .product-rating {
+        margin-bottom: 0.5rem;
+    }
+    
+    .product-rating i {
+        font-size: 0.7rem;
+    }
+    
+    .rating-count {
+        font-size: 0.7rem;
+    }
+    
+    .claim-btn,
+    .buy-btn,
+    .view-deal-btn {
+        padding: 0.625rem 1rem;
+        font-size: 0.8125rem;
+    }
+    
+    .product-actions {
+        gap: 0.5rem;
+    }
+    
+    .deal-countdown {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.8rem;
+        margin-top: 0.75rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .deals-page-hero {
+        padding: 2rem 0;
+    }
+    
+    .deals-page-title {
+        font-size: 1.5rem;
+    }
+    
+    .deals-live-badge {
+        display: block;
+        margin: 0.5rem auto 0 auto;
+        width: fit-content;
+    }
+    
+    .deals-page-stats {
+        gap: 1rem;
+    }
+    
+    .deals-stat {
+        padding: 0.75rem 1rem;
+    }
+    
+    .deals-stat-number {
+        font-size: 1.5rem;
+    }
+    
+    .deals-stat-label {
+        font-size: 0.8rem;
+    }
+    
+    .deals-page-filters {
+        margin: -1rem 0.5rem 1rem 0.5rem;
+        padding: 1rem;
+    }
+    
+    .filter-tabs {
+        gap: 0.375rem;
+    }
+    
+    .filter-btn {
+        padding: 0.6rem 1rem;
+        font-size: 0.8rem;
+    }
+    
+    /* MAINTAIN TWO PRODUCTS PER ROW */
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.5rem;
+        padding: 0 0.5rem;
+    }
+    
+    .product-card {
+        margin: 0;
+    }
+    
+    .product-image {
+        height: 160px;
+    }
+    
+    .product-info {
+        padding: 0.625rem;
+    }
+    
+    .product-title {
+        font-size: 0.75rem;
+        min-height: 2.2rem;
+        margin-bottom: 0.4rem;
+    }
+    
+    .product-category {
+        font-size: 0.65rem;
+        margin-bottom: 0.3rem;
+    }
+    
+    .current-price {
+        font-size: 1rem;
+    }
+    
+    .original-price {
+        font-size: 0.8rem;
+    }
+    
+    .savings {
+        font-size: 0.75rem;
+    }
+    
+    .product-rating {
+        margin-bottom: 0.4rem;
+    }
+    
+    .product-rating i {
+        font-size: 0.65rem;
+    }
+    
+    .rating-count {
+        font-size: 0.65rem;
+    }
+    
+    .claim-btn,
+    .buy-btn,
+    .view-deal-btn {
+        padding: 0.5rem 0.75rem;
+        font-size: 0.75rem;
+    }
+    
+    .product-actions {
+        gap: 0.4rem;
+    }
+    
+    .discount-badge {
+        top: 6px;
+        left: 6px;
+        font-size: 0.65rem;
+        padding: 0.2rem 0.4rem;
+    }
+    
+    .limited-time-badge {
+        top: 6px;
+        right: 6px;
+        font-size: 0.6rem;
+        padding: 0.2rem 0.5rem;
+    }
+    
+    .trending-badge {
+        top: 40px;
+        left: 6px;
+        font-size: 0.6rem;
+        padding: 0.15rem 0.4rem;
+    }
+    
+    .wishlist-btn {
+        width: 28px;
+        height: 28px;
+        font-size: 0.75rem;
+    }
+    
+    .deal-countdown {
+        padding: 0.375rem 0.75rem;
+        font-size: 0.75rem;
+        margin-top: 0.625rem;
+    }
+    
+    .load-more-btn {
+        padding: 0.875rem 1.5rem;
+        font-size: 0.875rem;
+    }
+    
+    .back-to-top {
+        width: 45px;
+        height: 45px;
+        bottom: 1.5rem;
+        right: 1.5rem;
+    }
+}
+
 /* Micro-interactions */
 .product-card:active {
     transform: translateY(-5px) scale(0.98);
@@ -578,4 +890,45 @@ body {
 
 .filter-btn:active {
     transform: translateY(0) scale(0.95);
+}
+
+/* No Products Message */
+.no-products {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 4rem 2rem;
+    color: var(--text-light);
+}
+
+.no-products i {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    opacity: 0.3;
+}
+
+.no-products h3 {
+    font-size: 1.5rem;
+    color: var(--text-dark);
+    margin-bottom: 0.5rem;
+}
+
+.no-products p {
+    font-size: 1rem;
+    color: var(--text-light);
+}
+
+/* Filter Overlay for Mobile */
+.filter-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.filter-overlay.active {
+    display: block;
 }
