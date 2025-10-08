@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-10-08T18:45:57.477652+05:30",
-  "total_products": 87,
+  "last_updated": "2025-10-08T21:20:50.612780+05:30",
+  "total_products": 89,
   "products": [
+    {
+      "id": "product_night_20251008_155050",
+      "title": "Portronics Toad 101 Wired Optical Mouse with 1200 DPI, Plug & Play, Hi-Optical Tracking, 1.25M Cable Length, 30Lakhs Cli",
+      "image": "https://m.media-amazon.com/images/I/51czxrySrVL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0BRKSQ7Z2",
+      "price": "\u20b9119",
+      "rating": 4.1,
+      "category": "electronics",
+      "asin": "B0BRKSQ7Z2",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-08T21:20:50.612752+05:30",
+      "session_type": "night",
+      "link_index": 37
+    },
+    {
+      "id": "product_night_20251008_155048",
+      "title": "SanDisk Ultra Flair 64GB, USB 3.0, Flash Drive, Upto 150MB/s R, Pendrive, Metal, 5Y Warranty (SDCZ73-064G-I35)",
+      "image": "https://m.media-amazon.com/images/I/51uBDIyAZlL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07SLMR1K6",
+      "price": "\u20b9529",
+      "rating": 4.3,
+      "category": "electronics",
+      "asin": "B07SLMR1K6",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-08T21:20:48.981939+05:30",
+      "session_type": "night",
+      "link_index": 37
+    },
     {
       "id": "product_morning_20251008_131557",
       "title": "Portronics Konnect X 60W Type C to Type C Unbreakable Nylon Braided Cable, 2M Fast Charging Cable for iPhone 15 series, ",
