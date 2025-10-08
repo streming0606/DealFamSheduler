@@ -1,9 +1,35 @@
 {
-  "last_updated": "2025-10-09T00:58:47.738398+05:30",
-  "total_products": 90,
-  "daily_target": 6,
+  "last_updated": "2025-10-09T01:22:06.617082+05:30",
+  "total_products": 91,
   "products": [
-    
+    {
+      "id": "product_night_20251008_195206",
+      "title": "SanDisk Cruzer Blade 64GB, USB 2.0, Flash drive, Pendrive, Red, 5Y Warranty (SDCZ50-064G-I35)",
+      "image": "https://m.media-amazon.com/images/I/61ERDR3tATL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B00BX5FOCK?tag=gadgetvill09f-21",
+      "price": "\u20b9429",
+      "rating": 4.2,
+      "category": "electronics",
+      "asin": "B00BX5FOCK",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-09T01:22:06.617057+05:30",
+      "session_type": "night",
+      "link_index": 42
+    },
+    {
+      "id": "product_night_20251008_195203",
+      "title": "Portronics Konnect X USB to Type C Cable with 3A Output, Fast Charging & Data Transfer, Nylon Braided, Aluminium Alloy S",
+      "image": "https://m.media-amazon.com/images/I/61qsIhub23L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CR7N9MD9?tag=gadgetvill09f-21",
+      "price": "\u20b9125",
+      "rating": 4.2,
+      "category": "electronics",
+      "asin": "B0CR7N9MD9",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-09T01:22:03.300248+05:30",
+      "session_type": "night",
+      "link_index": 42
+    },
     {
       "id": "product_night_20251008_155050",
       "title": "Portronics Toad 101 Wired Optical Mouse with 1200 DPI, Plug & Play, Hi-Optical Tracking, 1.25M Cable Length, 30Lakhs Cli",
