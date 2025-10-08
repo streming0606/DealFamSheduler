@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-10-08T10:17:12.817817+05:30",
-  "total_products": 83,
+  "last_updated": "2025-10-08T13:20:03.192168+05:30",
+  "total_products": 85,
   "products": [
+    {
+      "id": "product_afternoon_20251008_075003",
+      "title": "Logitech H111 Wired On Ear Headphones With Mic Black",
+      "image": "https://m.media-amazon.com/images/I/61HBpQuLjVL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B00Y4ORQ46",
+      "price": "\u20b9695",
+      "rating": 3.9,
+      "category": "electronics",
+      "asin": "B00Y4ORQ46",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-08T13:20:03.192138+05:30",
+      "session_type": "afternoon",
+      "link_index": 33
+    },
+    {
+      "id": "product_afternoon_20251008_075000",
+      "title": "Duracell Usb-A To Type C, 65W Braided Sync&Fast Charging USB Cable, 3.9 Feet(1.2M), Qc 2.0/3.0 Ultra Fast Charging, For ",
+      "image": "https://m.media-amazon.com/images/I/81uOlhjsOQL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0BCQJDX5G",
+      "price": "\u20b9249",
+      "rating": 4.0,
+      "category": "electronics",
+      "asin": "B0BCQJDX5G",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-08T13:20:00.409264+05:30",
+      "session_type": "afternoon",
+      "link_index": 33
+    },
     {
       "id": "product_morning_20251008_044712",
       "title": "HAMMER 100W 5A USB to Type-C for OnePlus with WARP/VOOC/FLASH support, Super Fast Charging Cable,1.2M Nylon Braided,Tang",
