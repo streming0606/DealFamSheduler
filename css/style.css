@@ -431,7 +431,7 @@ p {
 .mobile-menu-toggle {
   display: none;
   flex-direction: column;
-  gap: 4px;
+  gap: 5px;
   background: none;
   border: none;
   cursor: pointer;
@@ -3378,7 +3378,7 @@ p {
   }
 
   /* Make all text slightly smaller on mobile */
-  h1 { font-size: 1.8rem !important; }
+  h1 { font-size: 1.3rem !important; }
   h2 { font-size: 1.5rem !important; }
   h3 { font-size: 1.4rem !important; }
   
@@ -3389,7 +3389,7 @@ p {
 
   /* Optimize touch targets */
   button, .btn, a[role="button"] {
-    min-height: 44px;
+    min-height: 4px;
     min-width: 44px;
     touch-action: manipulation;
     -webkit-tap-highlight-color: transparent;
