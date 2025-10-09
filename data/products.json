@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-10-09T18:47:04.103826+05:30",
-  "total_products": 97,
+  "last_updated": "2025-10-09T21:27:03.630476+05:30",
+  "total_products": 99,
   "products": [
+    {
+      "id": "product_night_20251009_155703",
+      "title": "Gizga Essentials Universal 2.5 Inch External Hard Drive Case| Shockproof, Water-Resistant PU Travel Pouch for HDD/SSD| C",
+      "image": "https://m.media-amazon.com/images/I/51ATLjz7WXL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0765B3TH7?tag=gadgetvill09f-21",
+      "price": "\u20b9129",
+      "rating": 4.5,
+      "category": "electronics",
+      "asin": "B0765B3TH7",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-09T21:27:03.630446+05:30",
+      "session_type": "night",
+      "link_index": 50
+    },
+    {
+      "id": "product_night_20251009_155659",
+      "title": "HAMMER 27W Type-C to Lightning 8 Pin Nylon Braided Cable, 27W Fast Charging, 480Mbps High Speed Data Transfer & Durable ",
+      "image": "https://m.media-amazon.com/images/I/71-uchTwnhL._AC_UY218_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0F2FYKDS4?tag=gadgetvill09f-21",
+      "price": "\u20b9249",
+      "rating": 4.1,
+      "category": "electronics",
+      "asin": "B0F2FYKDS4",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-09T21:26:59.859031+05:30",
+      "session_type": "night",
+      "link_index": 50
+    },
     {
       "id": "product_morning_20251009_131704",
       "title": "Dyazo Water Resistant Laptop Sleeve | Laptop Case Cover for 15 Inches(38cm),15.6 Inch(39.6cm) Laptops & Notebook (Black)",
