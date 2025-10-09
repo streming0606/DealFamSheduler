@@ -1,319 +1,42 @@
-/* Deal Finder Styles */
+/* ============================================
+   DEAL FINDER - OPTIMIZED COMPACT DESIGN
+   Mobile-First Approach for Indian Market
+   ============================================ */
+
+/* CSS Variables */
+:root {
+    --primary-color: #2874f0;
+    --primary-hover: #1e5fc7;
+    --secondary-color: #ff6b35;
+    --success: #10b981;
+    --text-primary: #1a1a1a;
+    --text-secondary: #666666;
+    --surface: #f8fafc;
+    --border: #e2e8f0;
+    --border-light: #f1f5f9;
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
+    --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+/* Main Container */
 .deal-finder-main {
     min-height: 100vh;
     background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
-    padding: 2rem 0;
+    padding: 1rem 0;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Enhanced Hero Section with Image */
+/* ==================== HERO SECTION ==================== */
 .deal-finder-hero {
     position: relative;
-    min-height: 500px;
+    min-height: 350px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 3rem;
-    border-radius: 20px;
+    margin-bottom: 1.5rem;
+    border-radius: 16px;
     overflow: hidden;
     background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-hover) 100%);
-}
-
-/* Hero Background Image */
-.hero-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-}
-
-.hero-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-    display: block;
-}
-
-/* Overlay for Text Readability */
-.hero-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(
-        135deg, 
-        rgba(40, 116, 240, 0.85) 0%, 
-        rgba(30, 95, 199, 0.75) 100%
-    );
-    z-index: 2;
-}
-
-/* Alternative: Dark overlay for better text contrast */
-.hero-overlay.dark {
-    background: linear-gradient(
-        to right,
-        rgba(0, 0, 0, 0.7) 0%,
-        rgba(0, 0, 0, 0.4) 100%
-    );
-}
-
-/* Pattern Overlay (Optional) */
-.hero-overlay::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-    opacity: 0.3;
-}
-
-/* Hero Content */
-.hero-content {
-    position: relative;
-    z-index: 3;
-    text-align: center;
-    color: white;
-    padding: 3rem 1.5rem;
-    max-width: 900px;
-    margin: 0 auto;
-}
-
-.hero-title {
-    font-size: 2.5rem;
-    font-weight: 800;
-    margin-bottom: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    flex-wrap: wrap;
-    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-}
-
-.hero-title i {
-    color: #FFD700;
-    animation: pulse 2s ease-in-out infinite;
-    filter: drop-shadow(0 0 10px rgba(255, 215, 0, 0.5));
-}
-
-.hero-subtitle {
-    font-size: 1.1rem;
-    margin-bottom: 2rem;
-    opacity: 0.95;
-    line-height: 1.6;
-    text-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
-}
-
-/* Trending Searches */
-.trending-searches {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    flex-wrap: wrap;
-    margin-top: 2rem;
-}
-
-.trending-label {
-    font-weight: 600;
-    font-size: 0.9rem;
-    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
-}
-
-.trending-tags {
-    display: flex;
-    gap: 0.5rem;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.trending-tag {
-    background: rgba(255, 255, 255, 0.25);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    padding: 0.6rem 1.2rem;
-    border-radius: 25px;
-    font-size: 0.85rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    border: 2px solid rgba(255, 255, 255, 0.3);
-    color: white;
-    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-}
-
-.trending-tag:hover {
-    background: rgba(255, 255, 255, 0.4);
-    border-color: rgba(255, 255, 255, 0.6);
-    transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-}
-
-/* Tablet Responsive (768px - 1024px) */
-@media (max-width: 1024px) {
-    .deal-finder-hero {
-        min-height: 450px;
-    }
-    
-    .hero-title {
-        font-size: 2.2rem;
-    }
-    
-    .hero-subtitle {
-        font-size: 1rem;
-    }
-}
-
-/* Mobile Responsive (max 768px) */
-@media (max-width: 768px) {
-    .deal-finder-hero {
-        min-height: 400px;
-        padding: 2rem 0;
-        border-radius: 16px;
-    }
-    
-    .hero-content {
-        padding: 2rem 1rem;
-    }
-    
-    .hero-title {
-        font-size: 1.8rem;
-        flex-direction: column;
-        gap: 0.5rem;
-    }
-    
-    .hero-title i {
-        font-size: 2rem;
-    }
-    
-    .hero-subtitle {
-        font-size: 0.95rem;
-        margin-bottom: 1.5rem;
-    }
-    
-    .trending-searches {
-        flex-direction: column;
-        gap: 0.75rem;
-    }
-    
-    .trending-tag {
-        padding: 0.5rem 1rem;
-        font-size: 0.8rem;
-    }
-    
-    /* Optimize image for mobile */
-    .hero-image img {
-        object-position: center 30%; /* Adjust focal point */
-    }
-}
-
-/* Small Mobile (max 480px) */
-@media (max-width: 480px) {
-    .deal-finder-hero {
-        min-height: 350px;
-        border-radius: 12px;
-    }
-    
-    .hero-title {
-        font-size: 1.5rem;
-    }
-    
-    .hero-title i {
-        font-size: 1.5rem;
-    }
-    
-    .hero-subtitle {
-        font-size: 0.9rem;
-        line-height: 1.5;
-    }
-    
-    .trending-tags {
-        width: 100%;
-    }
-    
-    .trending-tag {
-        flex: 1 1 calc(50% - 0.5rem);
-        text-align: center;
-    }
-}
-
-/* High Resolution Displays */
-@media (min-width: 1920px) {
-    .deal-finder-hero {
-        min-height: 600px;
-    }
-    
-    .hero-title {
-        font-size: 3rem;
-    }
-    
-    .hero-subtitle {
-        font-size: 1.3rem;
-    }
-}
-
-/* Animation for Icon */
-@keyframes pulse {
-    0%, 100% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.05);
-    }
-}
-
-/* Print Styles */
-@media print {
-    .deal-finder-hero {
-        min-height: 200px;
-        page-break-inside: avoid;
-    }
-    
-    .hero-image img {
-        display: none;
-    }
-    
-    .trending-searches {
-        display: none;
-    }
-}
-
-
-
-
-
-
-
-
-.deal-finder-hero {
-    position: relative;
-    min-height: 500px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    border-radius: 20px;
-    margin-bottom: 3rem;
 }
 
 .hero-bg-image {
@@ -340,143 +63,143 @@
 .hero-content {
     position: relative;
     z-index: 3;
-    color: white;
     text-align: center;
-    padding: 3rem 1.5rem;
-}
-
-/* Mobile Optimization */
-@media (max-width: 768px) {
-    .deal-finder-hero {
-        min-height: 400px;
-    }
-    
-    .hero-bg-image {
-        object-position: center 40%; /* Adjust focal point for mobile */
-    }
-}
-
-@media (max-width: 480px) {
-    .deal-finder-hero {
-        min-height: 350px;
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Hero Section */
-.deal-finder-hero {
-    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-hover) 100%);
     color: white;
-    padding: 3rem 0;
-    margin-bottom: 3rem;
-    border-radius: 20px;
-    position: relative;
-    overflow: hidden;
-}
-
-.deal-finder-hero::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-    opacity: 0.5;
-}
-
-.hero-content {
-    text-align: center;
-    position: relative;
-    z-index: 2;
+    padding: 2rem 1rem;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 .hero-title {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     font-weight: 800;
-    margin-bottom: 1rem;
+    margin-bottom: 0.75rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1rem;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
 .hero-title i {
     color: #FFD700;
-    animation: pulse 2s infinite;
+    font-size: 1.8rem;
+    animation: pulse 2s ease-in-out infinite;
 }
 
 .hero-subtitle {
-    font-size: 1.1rem;
-    margin-bottom: 2rem;
-    opacity: 0.95;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    line-height: 1.6;
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+    text-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
 }
 
-/* Trending Searches */
-.trending-searches {
+/* Festival Banner (Editable) */
+.festival-banner {
+    background: rgba(255, 215, 0, 0.2);
+    border: 2px solid rgba(255, 215, 0, 0.5);
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    backdrop-filter: blur(10px);
+    animation: festivalGlow 2s ease-in-out infinite;
+}
+
+.festival-banner i {
+    color: #FFD700;
+}
+
+@keyframes festivalGlow {
+    0%, 100% { box-shadow: 0 0 10px rgba(255, 215, 0, 0.3); }
+    50% { box-shadow: 0 0 20px rgba(255, 215, 0, 0.6); }
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+}
+
+/* ==================== QUICK FILTERS ==================== */
+.quick-filters {
+    background: white;
+    border-radius: 12px;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    box-shadow: var(--shadow-sm);
+}
+
+.quick-filters-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+    color: var(--text-primary);
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.quick-filters-header i {
+    color: var(--secondary-color);
+}
+
+.quick-filters-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+}
+
+.quick-filter-btn {
+    background: var(--surface);
+    border: 2px solid var(--border);
+    padding: 0.75rem 0.5rem;
+    border-radius: 8px;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1rem;
-    flex-wrap: wrap;
-}
-
-.trending-label {
-    font-weight: 600;
-    opacity: 0.9;
-    font-size: 0.9rem;
-}
-
-.trending-tags {
-    display: flex;
     gap: 0.5rem;
-    flex-wrap: wrap;
-}
-
-.trending-tag {
-    background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(10px);
-    padding: 0.5rem 1rem;
-    border-radius: 20px;
-    font-size: 0.85rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--text-primary);
     cursor: pointer;
     transition: all 0.3s ease;
-    border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-.trending-tag:hover {
-    background: rgba(255, 255, 255, 0.3);
+.quick-filter-btn i {
+    color: var(--primary-color);
+    font-size: 1rem;
+}
+
+.quick-filter-btn:hover,
+.quick-filter-btn:active {
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+    color: white;
     transform: translateY(-2px);
 }
 
-/* Form Container */
+.quick-filter-btn:hover i {
+    color: white;
+}
+
+/* ==================== FORM CONTAINER ==================== */
 .form-container {
     background: white;
-    border-radius: 20px;
-    padding: 2.5rem;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    padding: 1.25rem;
+    box-shadow: var(--shadow-md);
     border: 1px solid var(--border);
 }
 
 /* Filter Sections */
 .filter-section {
-    margin-bottom: 2.5rem;
-    padding-bottom: 2rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.25rem;
     border-bottom: 1px solid var(--border-light);
 }
 
@@ -487,152 +210,131 @@
 }
 
 .filter-title {
-    font-size: 1.25rem;
+    font-size: 1rem;
     font-weight: 700;
     color: var(--text-primary);
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.75rem;
     display: flex;
     align-items: center;
-    gap: 0.75rem;
+    gap: 0.5rem;
 }
 
 .filter-title i {
     color: var(--primary-color);
-    width: 24px;
+    width: 20px;
     text-align: center;
+    font-size: 1rem;
 }
 
-/* Categories Grid */
+/* ==================== CATEGORIES - COMPACT ==================== */
 .categories-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-    gap: 1rem;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0.5rem;
 }
 
 .category-option {
     background: var(--surface);
     border: 2px solid var(--border);
-    border-radius: 12px;
-    padding: 1.5rem 1rem;
+    border-radius: 8px;
+    padding: 0.75rem 0.25rem;
     text-align: center;
     cursor: pointer;
     transition: all 0.3s ease;
-    position: relative;
-    overflow: hidden;
-}
-
-.category-option::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(40, 116, 240, 0.1), transparent);
-    transition: left 0.5s ease;
-}
-
-.category-option:hover::before {
-    left: 100%;
 }
 
 .category-option:hover {
     border-color: var(--primary-color);
-    transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(40, 116, 240, 0.15);
+    transform: translateY(-2px);
 }
 
 .category-option.selected {
     background: var(--primary-color);
     border-color: var(--primary-color);
     color: white;
-    transform: translateY(-3px);
-    box-shadow: 0 8px 25px rgba(40, 116, 240, 0.3);
 }
 
 .category-icon {
-    width: 50px;
-    height: 50px;
+    width: 32px;
+    height: 32px;
     background: var(--primary-color);
     color: white;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 auto 1rem;
-    font-size: 1.2rem;
+    margin: 0 auto 0.4rem;
+    font-size: 0.9rem;
     transition: all 0.3s ease;
 }
 
 .category-option.selected .category-icon {
     background: white;
     color: var(--primary-color);
-    transform: scale(1.1);
 }
 
 .category-name {
     font-weight: 600;
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     color: var(--text-primary);
+    display: block;
 }
 
 .category-option.selected .category-name {
     color: white;
 }
 
-/* Price Range */
+/* ==================== PRICE RANGE - COMPACT ==================== */
 .price-range-container {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 0.75rem;
 }
 
 .price-inputs {
     display: flex;
     align-items: end;
-    gap: 1rem;
-    flex-wrap: wrap;
+    gap: 0.5rem;
 }
 
 .price-input-group {
     flex: 1;
-    min-width: 120px;
 }
 
 .price-input-group label {
     display: block;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.35rem;
     font-weight: 600;
     color: var(--text-secondary);
-    font-size: 0.9rem;
+    font-size: 0.8rem;
 }
 
 .price-input-group input {
     width: 100%;
-    padding: 0.75rem 1rem;
+    padding: 0.6rem 0.75rem;
     border: 2px solid var(--border);
-    border-radius: 8px;
-    font-size: 1rem;
-    transition: all 0.3s ease;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    transition: border-color 0.3s ease;
     background: var(--surface);
 }
 
 .price-input-group input:focus {
     outline: none;
     border-color: var(--primary-color);
-    box-shadow: 0 0 0 3px rgba(40, 116, 240, 0.1);
 }
 
 .price-divider {
-    padding: 0 0.5rem;
+    padding: 0 0.25rem;
     color: var(--text-secondary);
     font-weight: 600;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.35rem;
+    font-size: 0.85rem;
 }
 
 .price-quick-select {
     display: flex;
-    gap: 0.5rem;
+    gap: 0.4rem;
     flex-wrap: wrap;
 }
 
@@ -640,9 +342,9 @@
     background: var(--surface);
     border: 2px solid var(--border);
     color: var(--text-secondary);
-    padding: 0.5rem 1rem;
+    padding: 0.45rem 0.75rem;
     border-radius: 20px;
-    font-size: 0.85rem;
+    font-size: 0.75rem;
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -653,72 +355,68 @@
     background: var(--primary-color);
     border-color: var(--primary-color);
     color: white;
-    transform: translateY(-2px);
 }
 
-/* Discount Options */
+/* ==================== DISCOUNT - HORIZONTAL PILLS ==================== */
 .discount-options {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-    gap: 1rem;
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
 }
 
 .discount-option {
     background: var(--surface);
     border: 2px solid var(--border);
-    border-radius: 12px;
-    padding: 1.5rem 1rem;
+    border-radius: 8px;
+    padding: 0.6rem 0.9rem;
     text-align: center;
     cursor: pointer;
     transition: all 0.3s ease;
-    position: relative;
+    flex: 1;
+    min-width: 70px;
 }
 
 .discount-option:hover {
     border-color: var(--secondary-color);
-    transform: translateY(-3px);
-    box-shadow: 0 6px 20px rgba(255, 107, 53, 0.15);
+    transform: translateY(-2px);
 }
 
 .discount-option.selected {
     background: var(--secondary-color);
     border-color: var(--secondary-color);
     color: white;
-    transform: translateY(-3px);
-    box-shadow: 0 8px 25px rgba(255, 107, 53, 0.3);
 }
 
 .discount-percentage {
     display: block;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 800;
-    margin-bottom: 0.25rem;
+    margin-bottom: 0.15rem;
 }
 
 .discount-label {
     display: block;
-    font-size: 0.8rem;
+    font-size: 0.65rem;
     opacity: 0.8;
 }
 
-/* Platform Grid */
+/* ==================== PLATFORMS - COMPACT CARDS ==================== */
 .platforms-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
 }
 
 .platform-option {
     background: var(--surface);
     border: 2px solid var(--border);
-    border-radius: 12px;
-    padding: 1.5rem;
+    border-radius: 10px;
+    padding: 0.75rem;
     cursor: pointer;
     transition: all 0.3s ease;
     display: flex;
     align-items: center;
-    gap: 1rem;
-    position: relative;
+    gap: 0.75rem;
 }
 
 .platform-option.priority-platform {
@@ -728,28 +426,25 @@
 
 .platform-option:hover {
     border-color: var(--primary-color);
-    transform: translateY(-3px);
-    box-shadow: 0 8px 25px rgba(40, 116, 240, 0.15);
+    transform: translateY(-2px);
 }
 
 .platform-option.selected {
     background: var(--primary-color);
     border-color: var(--primary-color);
     color: white;
-    transform: translateY(-3px);
-    box-shadow: 0 8px 25px rgba(40, 116, 240, 0.3);
 }
 
 .platform-logo {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     background: var(--primary-color);
     color: white;
     border-radius: 8px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     flex-shrink: 0;
 }
 
@@ -765,23 +460,23 @@
 .platform-name {
     display: block;
     font-weight: 700;
-    font-size: 1rem;
-    margin-bottom: 0.25rem;
+    font-size: 0.9rem;
+    margin-bottom: 0.15rem;
 }
 
 .platform-badge {
     background: var(--success);
     color: white;
-    padding: 0.2rem 0.6rem;
-    border-radius: 12px;
-    font-size: 0.7rem;
+    padding: 0.15rem 0.5rem;
+    border-radius: 10px;
+    font-size: 0.65rem;
     font-weight: 600;
     text-transform: uppercase;
 }
 
 .platform-tag {
     color: var(--text-secondary);
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     font-weight: 500;
 }
 
@@ -789,23 +484,23 @@
     color: rgba(255, 255, 255, 0.8);
 }
 
-/* Alert Options */
+/* ==================== ALERT OPTIONS ==================== */
 .alert-options {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 0.75rem;
 }
 
 .alert-checkbox {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 0.75rem;
     cursor: pointer;
-    padding: 1rem;
+    padding: 0.75rem;
     background: var(--surface);
     border-radius: 8px;
     border: 2px solid var(--border);
-    transition: all 0.3s ease;
+    transition: border-color 0.3s ease;
 }
 
 .alert-checkbox:hover {
@@ -817,12 +512,13 @@
 }
 
 .checkmark {
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 18px;
     border: 2px solid var(--border);
     border-radius: 4px;
     position: relative;
     transition: all 0.3s ease;
+    flex-shrink: 0;
 }
 
 .alert-checkbox input:checked + .checkmark {
@@ -838,16 +534,17 @@
     transform: translate(-50%, -50%);
     color: white;
     font-weight: bold;
-    font-size: 0.8rem;
+    font-size: 0.75rem;
 }
 
 .alert-text {
     font-weight: 600;
     color: var(--text-primary);
+    font-size: 0.85rem;
 }
 
 .alert-email-group {
-    padding: 1rem;
+    padding: 0.75rem;
     background: var(--surface);
     border-radius: 8px;
     border: 1px solid var(--border);
@@ -855,24 +552,25 @@
 
 .alert-email-group input {
     width: 100%;
-    padding: 0.75rem 1rem;
+    padding: 0.6rem 0.75rem;
     border: 2px solid var(--border);
     border-radius: 6px;
-    margin-bottom: 0.5rem;
-    font-size: 1rem;
+    margin-bottom: 0.4rem;
+    font-size: 0.85rem;
 }
 
 .alert-note {
     color: var(--text-secondary);
-    font-size: 0.8rem;
+    font-size: 0.7rem;
+    line-height: 1.4;
 }
 
-/* Form Actions */
+/* ==================== FORM ACTIONS ==================== */
 .form-actions {
     display: flex;
-    gap: 1rem;
+    gap: 0.75rem;
     justify-content: center;
-    margin-top: 2rem;
+    margin-top: 1.5rem;
     flex-wrap: wrap;
 }
 
@@ -880,38 +578,38 @@
     background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-hover) 100%);
     color: white;
     border: none;
-    padding: 1rem 2.5rem;
+    padding: 0.9rem 2rem;
     border-radius: 50px;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 700;
     cursor: pointer;
     transition: all 0.3s ease;
     display: flex;
     align-items: center;
-    gap: 0.75rem;
-    box-shadow: 0 6px 20px rgba(40, 116, 240, 0.3);
-    min-width: 200px;
+    gap: 0.6rem;
+    box-shadow: 0 4px 15px rgba(40, 116, 240, 0.3);
+    flex: 1;
+    min-width: 180px;
     justify-content: center;
 }
 
-.find-deals-btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 30px rgba(40, 116, 240, 0.4);
+.find-deals-btn:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(40, 116, 240, 0.4);
 }
 
 .find-deals-btn:disabled {
     opacity: 0.7;
     cursor: not-allowed;
-    transform: none;
 }
 
 .reset-filters-btn {
     background: transparent;
     color: var(--text-secondary);
     border: 2px solid var(--border);
-    padding: 1rem 2rem;
+    padding: 0.9rem 1.5rem;
     border-radius: 50px;
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -923,10 +621,9 @@
 .reset-filters-btn:hover {
     border-color: var(--primary-color);
     color: var(--primary-color);
-    transform: translateY(-2px);
 }
 
-/* Modal Styles */
+/* ==================== MODAL ==================== */
 .modal-overlay {
     position: fixed;
     top: 0;
@@ -945,15 +642,14 @@
 .deal-modal {
     background: white;
     border-radius: 16px;
-    padding: 0;
-    max-width: 500px;
+    max-width: 450px;
     width: 100%;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    box-shadow: var(--shadow-lg);
     animation: modalSlideIn 0.3s ease-out;
 }
 
 .modal-header {
-    padding: 1.5rem 2rem;
+    padding: 1.25rem 1.5rem;
     border-bottom: 1px solid var(--border);
     display: flex;
     justify-content: space-between;
@@ -965,7 +661,7 @@
 .modal-header h3 {
     margin: 0;
     color: var(--text-primary);
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     display: flex;
     align-items: center;
     gap: 0.5rem;
@@ -977,36 +673,36 @@
     font-size: 1.2rem;
     cursor: pointer;
     color: var(--text-secondary);
-    padding: 0.5rem;
+    padding: 0.4rem;
     border-radius: 50%;
     transition: all 0.3s ease;
 }
 
 .modal-close:hover {
     background: var(--border-light);
-    color: var(--text-primary);
 }
 
 .modal-body {
-    padding: 2rem;
+    padding: 1.5rem;
 }
 
 .modal-body p {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.25rem;
     color: var(--text-secondary);
     line-height: 1.6;
+    font-size: 0.9rem;
 }
 
 .modal-actions {
     display: flex;
-    gap: 1rem;
+    gap: 0.75rem;
     flex-wrap: wrap;
 }
 
 .modal-btn {
     flex: 1;
-    min-width: 150px;
-    padding: 0.75rem 1.5rem;
+    min-width: 140px;
+    padding: 0.7rem 1.25rem;
     border: none;
     border-radius: 8px;
     font-weight: 600;
@@ -1016,6 +712,7 @@
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
+    font-size: 0.85rem;
 }
 
 .modal-btn.primary {
@@ -1037,39 +734,182 @@
 .modal-btn.secondary:hover {
     border-color: var(--primary-color);
     color: var(--primary-color);
-    transform: translateY(-2px);
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
+@keyframes modalSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-30px) scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* ==================== RESPONSIVE DESIGN ==================== */
+
+/* Small Mobile (320px - 480px) */
+@media (max-width: 480px) {
     .deal-finder-hero {
-        padding: 2rem 0;
-        margin-bottom: 2rem;
-        border-radius: 16px;
+        min-height: 320px;
+        border-radius: 12px;
+    }
+    
+    .hero-title {
+        font-size: 1.5rem;
+    }
+    
+    .hero-title i {
+        font-size: 1.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 0.85rem;
+    }
+    
+    .festival-banner {
+        font-size: 0.75rem;
+        padding: 0.4rem 0.75rem;
+    }
+    
+    .quick-filters-grid {
+        grid-template-columns: 1fr;
+        gap: 0.4rem;
+    }
+    
+    .quick-filter-btn {
+        padding: 0.65rem;
+    }
+    
+    .form-container {
+        padding: 1rem;
+    }
+    
+    .categories-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.4rem;
+    }
+    
+    .category-icon {
+        width: 28px;
+        height: 28px;
+        font-size: 0.8rem;
+    }
+    
+    .category-name {
+        font-size: 0.65rem;
+    }
+    
+    .discount-options {
+        gap: 0.4rem;
+    }
+    
+    .discount-option {
+        min-width: 60px;
+        padding: 0.5rem 0.6rem;
+    }
+    
+    .discount-percentage {
+        font-size: 1rem;
+    }
+    
+    .discount-label {
+        font-size: 0.6rem;
+    }
+    
+    .platforms-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .form-actions {
+        flex-direction: column;
+    }
+    
+    .find-deals-btn,
+    .reset-filters-btn {
+        width: 100%;
+    }
+}
+
+/* Medium Mobile to Small Tablet (481px - 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+    .deal-finder-hero {
+        min-height: 380px;
     }
     
     .hero-title {
         font-size: 2rem;
-        flex-direction: column;
-        gap: 0.5rem;
-    }
-    
-    .hero-subtitle {
-        font-size: 1rem;
-    }
-    
-    .trending-searches {
-        flex-direction: column;
-        gap: 1rem;
-    }
-    
-    .form-container {
-        padding: 1.5rem;
-        border-radius: 16px;
     }
     
     .categories-grid {
-        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .quick-filters-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Tablet to Desktop (769px - 1024px) */
+@media (min-width: 769px) {
+    .deal-finder-main {
+        padding: 2rem 0;
+    }
+    
+    .deal-finder-hero {
+        min-height: 450px;
+        margin-bottom: 2rem;
+        border-radius: 20px;
+    }
+    
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .hero-title i {
+        font-size: 2.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .festival-banner {
+        font-size: 0.95rem;
+    }
+    
+    .quick-filters {
+        padding: 1.5rem;
+        margin-bottom: 2rem;
+    }
+    
+    .quick-filters-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+    }
+    
+    .quick-filter-btn {
+        padding: 1rem;
+        font-size: 0.9rem;
+    }
+    
+    .form-container {
+        padding: 2rem;
+    }
+    
+    .filter-section {
+        margin-bottom: 2rem;
+        padding-bottom: 1.75rem;
+    }
+    
+    .filter-title {
+        font-size: 1.15rem;
+        margin-bottom: 1rem;
+    }
+    
+    .categories-grid {
+        grid-template-columns: repeat(5, 1fr);
         gap: 0.75rem;
     }
     
@@ -1081,91 +921,87 @@
         width: 40px;
         height: 40px;
         font-size: 1rem;
+        margin-bottom: 0.6rem;
+    }
+    
+    .category-name {
+        font-size: 0.8rem;
+    }
+    
+    .discount-options {
+        gap: 0.75rem;
+    }
+    
+    .discount-option {
+        padding: 0.9rem 1.2rem;
+    }
+    
+    .discount-percentage {
+        font-size: 1.4rem;
+    }
+    
+    .discount-label {
+        font-size: 0.75rem;
     }
     
     .platforms-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
     }
     
     .platform-option {
         padding: 1rem;
     }
     
-    .discount-options {
-        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    .platform-logo {
+        width: 45px;
+        height: 45px;
+        font-size: 1.2rem;
     }
     
-    .price-inputs {
-        flex-direction: column;
-        gap: 1rem;
+    .platform-name {
+        font-size: 1rem;
     }
     
-    .price-divider {
-        text-align: center;
-        margin: 0;
-        padding: 0.5rem 0;
+    .find-deals-btn {
+        padding: 1rem 2.5rem;
+        font-size: 1.1rem;
+        min-width: 220px;
+        flex: 0 1 auto;
     }
     
-    .form-actions {
-        flex-direction: column;
-    }
-    
-    .find-deals-btn,
     .reset-filters-btn {
-        width: 100%;
-        justify-content: center;
+        padding: 1rem 2rem;
+        font-size: 1rem;
     }
 }
 
-@media (max-width: 480px) {
-    .hero-title {
-        font-size: 1.5rem;
-    }
-    
-    .form-container {
-        padding: 1rem;
+/* Large Desktop (1025px+) */
+@media (min-width: 1025px) {
+    .deal-finder-hero {
+        min-height: 500px;
     }
     
     .categories-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(5, 1fr);
+        gap: 1rem;
     }
     
-    .discount-options {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    
-    .trending-tags {
-        justify-content: center;
-    }
-    
-    .modal-actions {
-        flex-direction: column;
-    }
-    
-    .modal-btn {
-        min-width: auto;
+    .platforms-grid {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
-/* Animations */
-@keyframes modalSlideIn {
-    from {
-        opacity: 0;
-        transform: translateY(-50px) scale(0.9);
+/* Print Styles */
+@media print {
+    .deal-finder-hero {
+        min-height: 200px;
     }
-    to {
-        opacity: 1;
-        transform: translateY(0) scale(1);
-    }
-}
-
-@keyframes pulse {
-    0%, 100% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.05);
+    
+    .hero-bg-image,
+    .quick-filters,
+    .festival-banner,
+    .form-actions {
+        display: none;
     }
 }
-
-
