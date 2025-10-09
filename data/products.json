@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-10-09T01:22:06.617082+05:30",
-  "total_products": 91,
+  "last_updated": "2025-10-09T10:18:26.669958+05:30",
+  "total_products": 93,
   "products": [
+    {
+      "id": "product_morning_20251009_044826",
+      "title": "UNBREAKcable USB Type C to Lightning Cable 27W [MFi Certified + 2 Years Warranty*] Fast Charger Cable for iPhone 14/13/1",
+      "image": "https://m.media-amazon.com/images/I/61+Q2A2n+lL._AC_UY218_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/554403284X?tag=gadgetvill09f-21",
+      "price": "\u20b9669",
+      "rating": 4.3,
+      "category": "electronics",
+      "asin": "554403284X",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-09T10:18:26.669931+05:30",
+      "session_type": "morning",
+      "link_index": 44
+    },
+    {
+      "id": "product_morning_20251009_044824",
+      "title": "TP-LINK WiFi Dongle 300 Mbps Mini Wireless Network USB Wi-Fi Adapter for PC Desktop Laptop(Supports Windows 11/10/8.1/8/",
+      "image": "https://m.media-amazon.com/images/I/71KCj-XLgJL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0088TKTY2?tag=gadgetvill09f-21",
+      "price": "\u20b9499",
+      "rating": 4.1,
+      "category": "electronics",
+      "asin": "B0088TKTY2",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-09T10:18:24.872471+05:30",
+      "session_type": "morning",
+      "link_index": 44
+    },
     {
       "id": "product_night_20251008_195206",
       "title": "SanDisk Cruzer Blade 64GB, USB 2.0, Flash drive, Pendrive, Red, 5Y Warranty (SDCZ50-064G-I35)",
