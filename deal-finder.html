@@ -154,7 +154,10 @@
     <!-- Deal Finder Main Content -->
     <main class="deal-finder-main">
         <div class="container">
-            <!-- Hero Section -->
+
+
+            
+            <!-- Hero Section 
             <section class="deal-finder-hero">
                 <div class="hero-content">
                     <h1 class="hero-title">
@@ -173,7 +176,56 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </section>-->
+
+
+<!-- Enhanced Hero Section with Background Image -->
+<section class="deal-finder-hero">
+    <picture class="hero-image">
+        <source srcset="images/hero/deal-finder-hero.webp" type="image/webp">
+        <img src="images/hero/deal-finder-hero.jpg" 
+             alt="Deal Finder - Find Amazing Deals" 
+             loading="eager"
+             fetchpriority="high">
+    </picture>
+    
+    <div class="hero-overlay"></div>
+    
+    <div class="hero-content">
+        <h1 class="hero-title">
+            <i class="fas fa-search-dollar"></i>
+            <span>Smart Deal Finder</span>
+        </h1>
+        <p class="hero-subtitle">
+            Find the perfect deals tailored to your needs. Filter by category, price range, and discount percentage to discover amazing offers from top Indian e-commerce platforms.
+        </p>
+        <div class="trending-searches">
+            <span class="trending-label">Trending:</span>
+            <div class="trending-tags">
+                <button type="button" class="trending-tag" onclick="setQuickFilter('electronics', '25000', '50')">
+                    Electronics 50% OFF
+                </button>
+                <button type="button" class="trending-tag" onclick="setQuickFilter('fashion', '2000', '60')">
+                    Fashion Under ₹2000
+                </button>
+                <button type="button" class="trending-tag" onclick="setQuickFilter('home', '10000', '40')">
+                    Home Decor 40% OFF
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+            
 
             <!-- Deal Finder Form -->
             <section class="deal-finder-form">
