@@ -1,272 +1,321 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-IN">
 <head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-887DNYMLDD"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-887DNYMLDD');
-</script>
-
+    <!-- Meta Tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🎫 Exclusive Coupons & Deals - Thrift Zone</title>
-    <meta name="description" content="Get exclusive coupon codes and deals from Amazon, Flipkart, Myntra and more. Save big with verified discount codes on Thrift Zone.">
+    <meta name="description" content="Get verified coupon codes and exclusive deals from Amazon, Flipkart, Myntra & more. Save money with 100% working discount coupons updated today.">
+    <meta name="keywords" content="coupon codes, discount coupons, promo codes, deals, offers, Amazon coupons, Flipkart offers">
+    <meta name="robots" content="index, follow">
+    <meta name="geo.region" content="IN">
+    <meta name="geo.placename" content="India">
+    <meta name="theme-color" content="#2874F0">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Verified Coupon Codes & Deals - Thrift Zone">
+    <meta property="og:description" content="Save big with 100% working coupon codes from top stores">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/og-banner.jpg">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://yoursite.com/coupons">
+    
+    <title>Verified Coupon Codes & Deals 2025 - Save Money | Thrift Zone</title>
     <link rel="icon" type="image/png" href="images/logo-favicon.png">
     
-    <!-- Your existing CSS files -->
+    <!-- Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    
+    <!-- CSS Files -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/components.css">
     <link rel="stylesheet" href="css/responsive.css">
-    <link rel="stylesheet" href="css/theme.css">
-    
-    <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    
-    <!-- Coupon CSS -->
     <link rel="stylesheet" href="css/coupon.css">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Verified Coupon Codes & Deals",
+        "description": "Get exclusive coupon codes and deals from top online stores",
+        "url": "https://yoursite.com/coupons"
+    }
+    </script>
+    
+    <!-- FAQ Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "How do I use a coupon code?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Click on 'Get Code' button. The coupon code will be automatically copied and a popup will appear. Click 'Shop Now' to visit the store and paste the code at checkout."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Are these coupon codes verified?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, all coupon codes are verified and updated regularly. You can see how many users have successfully used each code."
+                }
+            }
+        ]
+    }
+    </script>
 </head>
 <body>
-    
+    <!-- Skip Link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
 
-
-<!-- Enhanced Header with Auth 
-  <link rel="icon" type="image/png" href="images/logo/favicon.png">-->
-<header class="header">
-    <div class="container">
-
-        <!-- Mobile Menu Toggle -->
-        <button class="mobile-menu-toggle" id="mobile-menu-toggle">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-
-        <!-- Logo Section -->
-        <div class="logo">
-          <img src="images/logo/logo.png" alt="Thrift Zone" class="logo-icon">
-           <!-- <div class="logo-text">
-                <h1>Thrift Maal</h1>
-                <span class="tagline">Save Every Time</span>
-            </div>-->
-        </div>
-
-
-
-      <!-- enhance Search Bar-->
-<div class="search-container">
-    <div class="search-box">
-        <input type="text" 
-               id="search-input" 
-               placeholder="Search for deals, products..." 
-               autocomplete="off">
-       <!-- <button type="button" id="voice-search-btn" class="voice-btn" title="Voice Search">
-            <i class="fas fa-microphone"></i>
-        </button>-->
-        <button type="submit" class="search-btn" id="search-btn">
-            <i class="fas fa-search"></i>
-        </button>
-    </div>
-    <div class="search-suggestions" id="search-suggestions"></div>
-</div>
-
-
-
-      
-        <!-- Navigation -->
-        <nav class="nav">
-            <a href="/coupons" class="nav-link coupon-cta">Coupons</a>
-            <!--<a href="#categories" class="nav-link">Categories</a>-->
-            <a href="/community" class="mobile-nav-link highlight">community</a>
-           <!-- <a href="#deals" class="nav-link"> Deals Alert</a>-->
-            <a href="../#deals" class="mobile-nav-link">End Soon</a>
-
-          <a href="/deal-finder" class="nav-link deal-finder-link">
-        <i class="fas fa-search-dollar"></i>
-        Deal Finder
-        
-    </a>
-        </nav>
-        
-
-        
-            
-
-             
-        
-
-    <!-- Mobile Navigation (updated) -->
-    <div class="mobile-nav" id="mobile-nav">
-        <div class="mobile-nav-header">
-            <h3>MENU</h3>
-            <button class="mobile-nav-close">&times;</button>
-        </div>
-        <div class="mobile-nav-content">
-
-
-            <!-- Mobile Auth Section -->
-            <div class="mobile-auth" id="mobile-auth"></div>
-                <div class="mobile-auth-buttons" id="mobile-auth-buttons"></div>
-
-
-  
-
-
-<!-- Navigation Links -->
-
-            <a href="index.html" class="mobile-nav-link">
-                <i class="fas fa-home"></i> Home
-            </a>
-            <a href="deal-finder.html" class="mobile-nav-link highlight active">
-                <i class="fas fa-search-dollar"></i> Deal Finder
-            </a>
-            <a href="coupons.html" class="mobile-nav-link highlight">
-                <i class="fas fa-tags"></i> Coupons
-            </a>
-            <a href="community.html" class="mobile-nav-link highlight">
-                <i class="fas fa-users"></i> Discussion
-            </a>
-            <a href="../#deals" class="mobile-nav-link">
-                <i class="fas fa-fire"></i> End Soon
-            </a>
-            <a href="blog/" class="mobile-nav-link highlight">
-                <i class="fas fa-blog"></i> Blog
-            </a>
-
-
-            <div class="mobile-nav-divider"></div>
-
-
-</header>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- Hero Section -->
-    <section class="coupon-hero">
+    <!-- Header -->
+    <header class="header">
         <div class="container">
-            <div class="hero-content">
-                <h1 class="hero-title">
-                    🎫 <span class="gradient-text">Exclusive Coupons</span> & Deals
-                </h1>
-                <p class="hero-subtitle">
-                    Save big with verified codes from top stores
-                </p>
-                <div class="hero-stats">
-                    <div class="stat-item">
-                        <span class="stat-number" id="stat-active">50</span>
-                        <span class="stat-label">Active Coupons</span>
-                    </div>
-                   <!-- <div class="stat-item">
-                        <span class="stat-number" id="stat-mega">15 MEGA</span>
-                        <span class="stat-label">Savings</span>
-                    </div>-->
-                    <div class="stat-item">
-                        <span class="stat-number" id="stat-flash">15 FLASH</span>
-                        <span class="stat-label">Trending Now</span>
+            <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="logo">
+                <img src="images/logo/logo.png" alt="Thrift Zone Logo" class="logo-icon">
+            </div>
+
+            <div class="search-container">
+                <div class="search-box">
+                    <input type="text" id="search-input" placeholder="Search coupons, stores..." autocomplete="off" aria-label="Search coupons">
+                    <button type="submit" class="search-btn" id="search-btn" aria-label="Search">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+                <div class="search-suggestions" id="search-suggestions"></div>
+            </div>
+
+            <nav class="nav" role="navigation">
+                <a href="/" class="nav-link">Home</a>
+                <a href="/coupons" class="nav-link active">Coupons</a>
+                <a href="/community" class="nav-link">Community</a>
+                <a href="/deal-finder" class="nav-link">Deal Finder</a>
+            </nav>
+        </div>
+
+        <!-- Mobile Nav -->
+        <div class="mobile-nav" id="mobile-nav">
+            <div class="mobile-nav-header">
+                <h3>Menu</h3>
+                <button class="mobile-nav-close" aria-label="Close">&times;</button>
+            </div>
+            <div class="mobile-nav-content">
+                <a href="/" class="mobile-nav-link"><i class="fas fa-home"></i> Home</a>
+                <a href="/coupons" class="mobile-nav-link active"><i class="fas fa-tags"></i> Coupons</a>
+                <a href="/community" class="mobile-nav-link"><i class="fas fa-users"></i> Community</a>
+                <a href="/deal-finder" class="mobile-nav-link"><i class="fas fa-search-dollar"></i> Deal Finder</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        
+        <!-- Hero Section -->
+        <section class="coupon-hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        🎫 <span class="gradient-text">Verified Coupons</span> & Best Deals
+                    </h1>
+                    <p class="hero-subtitle">
+                        100% Working Codes · Updated Today · Save Big on Every Purchase
+                    </p>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number" id="stat-active">50</span>
+                            <span class="stat-label">Active Coupons</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" id="stat-mega">15 MEGA</span>
+                            <span class="stat-label">Mega Loot Deals</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" id="stat-flash">12 FLASH</span>
+                            <span class="stat-label">Flash Sales</span>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Filters Section -->
-    <section class="coupon-filters">
-        <div class="container">
-            <div class="filters-wrapper">
-                <!-- Store Filters -->
-                <div class="filter-group">
-                    <h3> Stores</h3>
-                    <div class="filter-buttons">
-                        <button class="filter-btn active" data-store="all">All Stores</button>
-                        <button class="filter-btn" data-store="amazon">
-                            <div class="store-icon store-amazon" style="background: #FF9900; color: white; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 10px;">A</div>
-                            Amazon
-                        </button>
-                        <button class="filter-btn" data-store="flipkart">
-                            <div class="store-icon store-flipkart" style="background: #2874F0; color: white; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 10px;">F</div>
-                            Flipkart
-                        </button>
-                        <button class="filter-btn" data-store="myntra">
-                            <div class="store-icon store-myntra" style="background: #FF3F6C; color: white; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 10px;">M</div>
-                            Myntra
-                        </button>
-                        <button class="filter-btn" data-store="nykaa">
-                            <div class="store-icon store-nykaa" style="background: #FC2779; color: white; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 10px;">N</div>
-                            Nykaa
-                        </button>
+        <!-- Store Partners -->
+        <section class="store-partners">
+            <div class="container">
+                <p class="partners-label">Trusted Coupons From</p>
+                <div class="partner-logos">
+                    <div class="partner-badge amazon-brand">Amazon</div>
+                    <div class="partner-badge flipkart-brand">Flipkart</div>
+                    <div class="partner-badge myntra-brand">Myntra</div>
+                    <div class="partner-badge nykaa-brand">Nykaa</div>
+                    <div class="partner-badge swiggy-brand">Swiggy</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works -->
+        <section class="how-it-works">
+            <div class="container">
+                <h2 class="section-heading">How to Use Coupons</h2>
+                <div class="steps-grid">
+                    <div class="step-card">
+                        <div class="step-icon">
+                            <i class="fas fa-mouse-pointer"></i>
+                        </div>
+                        <div class="step-number">1</div>
+                        <h3>Click "Get Code"</h3>
+                        <p>Choose your coupon and click to activate</p>
+                    </div>
+                    <div class="step-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-icon">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <div class="step-number">2</div>
+                        <h3>Code Copied</h3>
+                        <p>Code automatically copied to clipboard</p>
+                    </div>
+                    <div class="step-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-icon">
+                            <i class="fas fa-shopping-bag"></i>
+                        </div>
+                        <div class="step-number">3</div>
+                        <h3>Shop & Save</h3>
+                        <p>Paste code at checkout and enjoy discount</p>
                     </div>
                 </div>
+            </div>
+        </section>
 
-                <!-- Category Filters 
-                <div class="filter-group">
-                    <h3>🗂️ Categories</h3>
-                    <div class="filter-buttons">
-                        <button class="category-filter active" data-category="all">All</button>
-                        <button class="category-filter" data-category="electronics">📱 Electronics</button>
-                        <button class="category-filter" data-category="fashion">👕 Fashion</button>
-                        <button class="category-filter" data-category="beauty">💄 Beauty</button>
-                        <button class="category-filter" data-category="food">🍔 Food</button>
+        <!-- Filters -->
+        <section class="coupon-filters">
+            <div class="container">
+                <div class="filters-wrapper">
+                    <div class="filter-group">
+                        <h3>🏪 Stores</h3>
+                        <div class="filter-buttons">
+                            <button class="filter-btn active" data-store="all">All Stores</button>
+                            <button class="filter-btn" data-store="amazon">
+                                <span class="store-dot amazon-bg"></span> Amazon
+                            </button>
+                            <button class="filter-btn" data-store="flipkart">
+                                <span class="store-dot flipkart-bg"></span> Flipkart
+                            </button>
+                            <button class="filter-btn" data-store="myntra">
+                                <span class="store-dot myntra-bg"></span> Myntra
+                            </button>
+                            <button class="filter-btn" data-store="nykaa">
+                                <span class="store-dot nykaa-bg"></span> Nykaa
+                            </button>
+                        </div>
                     </div>
-                </div>-->
-            </div>
-        </div>
-    </section>
 
-    <!-- Featured Coupons -->
-    <section class="coupon-section">
-        <div class="container">
-            <div class="section-header">
-                <div>
-                    <h2 class="section-title">🔥 Trending Coupons</h2>
-                    <p class="section-subtitle">Most used codes this week</p>
+                    <div class="filter-group">
+                        <h3>🗂️ Categories</h3>
+                        <div class="filter-buttons">
+                            <button class="category-filter active" data-category="all">All</button>
+                            <button class="category-filter" data-category="electronics">📱 Electronics</button>
+                            <button class="category-filter" data-category="fashion">👕 Fashion</button>
+                            <button class="category-filter" data-category="beauty">💄 Beauty</button>
+                            <button class="category-filter" data-category="food">🍔 Food</button>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="coupon-grid" id="featured-coupons-grid">
-                <!-- Featured coupons will be loaded here -->
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- All Coupons -->
-    <section class="coupon-section">
-        <div class="container">
-            <div class="section-header">
-                <div>
-                    <h2 class="section-title">🎯 All Coupons</h2>
+        <!-- Featured Coupons -->
+        <section class="coupon-section featured-section">
+            <div class="container">
+                <div class="section-header">
+                    <div>
+                        <h2 class="section-title">🔥 Trending Mega Loot Deals</h2>
+                        <p class="section-subtitle">Most grabbed deals this week</p>
+                    </div>
                 </div>
-                <div class="coupon-count">
-                    <span id="coupon-count">50</span> active coupons
+                <div class="coupon-grid" id="featured-coupons-grid">
+                    <!-- Featured coupons loaded by JS -->
                 </div>
             </div>
-            <div class="coupon-grid" id="coupon-grid">
-                <!-- All coupons will be loaded here -->
-            </div>
-            <div class="load-more-section">
-                <button class="load-more-btn" id="load-more-coupons">
-                    <i class="fas fa-plus"></i> Load More Coupons
-                </button>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Enhanced Modal -->
+        <!-- All Coupons -->
+        <section class="coupon-section">
+            <div class="container">
+                <div class="section-header">
+                    <div>
+                        <h2 class="section-title">🎯 All Coupons</h2>
+                    </div>
+                    <div class="coupon-count">
+                        <span id="coupon-count">50</span> active codes
+                    </div>
+                </div>
+                <div class="coupon-grid" id="coupon-grid">
+                    <!-- All coupons loaded by JS -->
+                </div>
+                <div class="load-more-section">
+                    <button class="load-more-btn" id="load-more-coupons">
+                        <i class="fas fa-plus"></i> Load More Coupons
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <div class="container">
+                <h2 class="section-heading">Frequently Asked Questions</h2>
+                <div class="faq-grid">
+                    <div class="faq-card">
+                        <div class="faq-icon"><i class="fas fa-question-circle"></i></div>
+                        <h3>How do coupons work?</h3>
+                        <p>Click "Get Code", the coupon is automatically copied. Then click "Shop Now" to visit the store and paste the code at checkout to get instant discount.</p>
+                    </div>
+                    <div class="faq-card">
+                        <div class="faq-icon"><i class="fas fa-shield-check"></i></div>
+                        <h3>Are codes verified?</h3>
+                        <p>Yes! All coupon codes are verified and updated daily. You can see how many users have successfully used each code today.</p>
+                    </div>
+                    <div class="faq-card">
+                        <div class="faq-icon"><i class="fas fa-clock"></i></div>
+                        <h3>How often updated?</h3>
+                        <p>We update our coupon database multiple times daily. New codes are added as soon as they become available from partner stores.</p>
+                    </div>
+                    <div class="faq-card">
+                        <div class="faq-icon"><i class="fas fa-tags"></i></div>
+                        <h3>Can I use multiple codes?</h3>
+                        <p>Most stores allow only one coupon per order. However, you can often combine a coupon code with ongoing sale discounts for maximum savings.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Modal -->
     <div class="coupon-modal-overlay" id="coupon-modal" aria-hidden="true">
         <div class="coupon-modal" role="dialog" aria-modal="true">
             <div class="modal-header">
@@ -278,7 +327,7 @@
             
             <div class="modal-body">
                 <div class="store-badge" id="modal-store">
-                    <div class="store-logo store-amazon" style="background: #FF9900; color: white; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 12px;">A</div>
+                    <div class="store-logo"></div>
                     <span class="store-name">Amazon India</span>
                 </div>
 
@@ -290,7 +339,7 @@
                             <i class="fas fa-copy"></i> Copy
                         </button>
                     </div>
-                    <p class="copy-success" id="copy-success">✅ Coupon code copied to clipboard!</p>
+                    <p class="copy-success" id="copy-success">✅ Code copied to clipboard!</p>
                 </div>
 
                 <div class="coupon-details">
@@ -300,7 +349,7 @@
                     </div>
                     <div class="detail-item">
                         <i class="fas fa-users"></i>
-                        <span>Used by <span id="modal-users">1,247</span> people</span>
+                        <span><span id="modal-users">1,247</span> people used today</span>
                     </div>
                 </div>
 
@@ -312,74 +361,69 @@
 
             <div class="modal-footer">
                 <button class="apply-coupon-btn" id="apply-coupon-btn">
-                    🚀 Apply Now & Shop
+                    🚀 Shop Now & Save Big
                 </button>
             </div>
         </div>
     </div>
 
-
-
-<!-- Updated Footer with All Pages -->
-<footer class="footer">
-    <div class="container">
-        <div class="footer-content">
-            <div class="footer-section">
-                <div class="footer-logo">
-                    <img src="images/logo/logo.png" alt="Thrift Zone">
-                    <h3>   </h3>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="images/logo/logo.png" alt="Thrift Zone">
+                        <h3>Thrift Zone</h3>
+                    </div>
+                    <p>Your smart shopping companion for verified coupons.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+                        <a href="#" class="social-link" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
                 </div>
-                <p>Your smart shopping companion.</p>
-                <div class="social-links">
-                    <a href="#" class="social-link"><i class="fab fa-telegram"></i></a>
-                    <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
-                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/coupons">All Coupons</a></li>
+                        <li><a href="/deals">Deals</a></li>
+                        <li><a href="/blog">Blog</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="/about">About</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                        <li><a href="/privacy">Privacy</a></li>
+                        <li><a href="/terms">Terms</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="/faq">FAQ</a></li>
+                        <li><a href="/help">Help</a></li>
+                        <li><a href="/contact">Report Issue</a></li>
+                    </ul>
                 </div>
             </div>
 
-            <div class="footer-section">
-                <h4>Quick Links</h4>
-                <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="#categories">Categories</a></li>
-                    <li><a href="#deals">Today's Deals</a></li>
-                    <li><a href="blog/">Blog</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-section">
-                <h4>Company</h4>
-                <ul>
-                    <li><a href="pages/about">About Us</a></li>
-                    <li><a href="pages/contact">Contact Us</a></li>
-                    <li><a href="pages/privacy-policy">Privacy Policy</a></li>
-                    <li><a href="pages/terms-of-service">Terms of Service</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-section">
-                <h4>Support</h4>
-                <ul>
-                    <li><a href="pages/faq">FAQ</a></li>
-                    <li><a href="pages/contact">Help Center</a></li>
-                    <li><a href="pages/contact">Report Issue</a></li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="footer-bottom">
-            <div class="footer-disclaimer">
-                <p>&copy; 2025 Thrift Maal. All rights reserved.</p>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Thrift Zone. All rights reserved.</p>
                 <p class="affiliate-disclosure">
-                    <strong>Affiliate Disclosure:</strong> We may earn commission from purchases made through our links. This doesn't affect the price you pay.
+                    <strong>Disclosure:</strong> We earn commission from purchases through our links at no extra cost to you.
                 </p>
             </div>
         </div>
-    </div>
-</footer>
+    </footer>
 
-
-    <!-- Coupon JavaScript -->
+    <!-- Your Existing JavaScript -->
     <script src="js/coupon.js"></script>
 </body>
 </html>
