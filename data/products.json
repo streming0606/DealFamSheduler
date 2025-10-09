@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-10-09T13:19:43.021673+05:30",
-  "total_products": 95,
+  "last_updated": "2025-10-09T18:47:04.103826+05:30",
+  "total_products": 97,
   "products": [
+    {
+      "id": "product_morning_20251009_131704",
+      "title": "Dyazo Water Resistant Laptop Sleeve | Laptop Case Cover for 15 Inches(38cm),15.6 Inch(39.6cm) Laptops & Notebook (Black)",
+      "image": "https://m.media-amazon.com/images/I/819-2gnxg3L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B09BFW41H4?tag=gadgetvill09f-21",
+      "price": "\u20b9279",
+      "rating": 4.3,
+      "category": "electronics",
+      "asin": "B09BFW41H4",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-09T18:47:04.103791+05:30",
+      "session_type": "morning",
+      "link_index": 48
+    },
+    {
+      "id": "product_morning_20251009_131701",
+      "title": "STRIFF World Map Extended Size (800 mm x 300 mm x 2 mm) Gaming Mouse Pad| Desk Mat | Stitched Edges| Non-Slip Rubber Bas",
+      "image": "https://m.media-amazon.com/images/I/61s6d6BxW4L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CXDN7V9N?tag=gadgetvill09f-21",
+      "price": "\u20b9169",
+      "rating": 4.4,
+      "category": "electronics",
+      "asin": "B0CXDN7V9N",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-09T18:47:01.819383+05:30",
+      "session_type": "morning",
+      "link_index": 48
+    },
     {
       "id": "product_afternoon_20251009_074943",
       "title": "MOBIEX cro USB Cable 1 m MICRO VOOC 20W 5V/4A FAST CHARGER CABLE (Compatible with Oppo F9 Pro, R7, R9 F11 Pro, REALME 3 ",
