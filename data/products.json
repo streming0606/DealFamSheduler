@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-10-10T10:17:55.131828+05:30",
-  "total_products": 101,
+  "last_updated": "2025-10-10T13:19:43.821617+05:30",
+  "total_products": 103,
   "products": [
+    {
+      "id": "product_afternoon_20251010_074943",
+      "title": "Sounce Spiral Cable Protector, Chargers Cable Protector Data Cable Protective Sleeve, Headphone Saver, Charger Protectiv",
+      "image": "https://m.media-amazon.com/images/I/81JYSIagq5L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CLV4XQFK?tag=gadgetvill09f-21",
+      "price": "\u20b994",
+      "rating": 4.2,
+      "category": "electronics",
+      "asin": "B0CLV4XQFK",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-10T13:19:43.821589+05:30",
+      "session_type": "afternoon",
+      "link_index": 54
+    },
+    {
+      "id": "product_afternoon_20251010_074941",
+      "title": "DIVIJA STORE Wood Smart Multipurpose Foldable Laptop Table with Cup Holder, Study Table, Bed Table, Breakfast Table, Fol",
+      "image": "https://m.media-amazon.com/images/I/71xiQD+sh8L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DK7B3B2G?tag=gadgetvill09f-21",
+      "price": "\u20b9369",
+      "rating": 4.2,
+      "category": "electronics",
+      "asin": "B0DK7B3B2G",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-10T13:19:41.860597+05:30",
+      "session_type": "afternoon",
+      "link_index": 54
+    },
     {
       "id": "product_morning_20251010_044755",
       "title": "SaleOn 8.3X5 Inch Portable Storage Organizer For Usb Cable, Earphone, Power Bank,Charger, Hard Disk & Digital Gadgets, W",
