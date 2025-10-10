@@ -2141,7 +2141,7 @@ p {
 }
 
 .product-image {
-  height: 150px !important; /* Reduced */
+  height: 140px !important; /* Reduced */
   overflow: hidden;
   position: relative;
   flex-shrink: 0;
