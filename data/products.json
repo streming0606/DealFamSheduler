@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-10-10T18:37:32.199716+05:30",
-  "total_products": 105,
+  "last_updated": "2025-10-10T21:20:34.672278+05:30",
+  "total_products": 107,
   "products": [
+    {
+      "id": "product_night_20251010_155034",
+      "title": "Seagate Expansion 1TB External HDD - USB 3.0 for Windows and Mac with 3 yr Data Recovery Services, Portable Hard Drive (",
+      "image": "https://m.media-amazon.com/images/I/814SDu24dnL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B08ZJDWTJ1?tag=gadgetvill09f-21",
+      "price": "\u20b95,499",
+      "rating": 4.3,
+      "category": "home",
+      "asin": "B08ZJDWTJ1",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-10T21:20:34.672253+05:30",
+      "session_type": "night",
+      "link_index": 58
+    },
+    {
+      "id": "product_night_20251010_155031",
+      "title": "Sounce 25 Pcs Spiral Cable Protectors & Wire Protectors Spring Wire for All Wired Accessories for USB Charger, Data Cabl",
+      "image": "https://m.media-amazon.com/images/I/61cK++Cg+LL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CK7X2W4P?tag=gadgetvill09f-21",
+      "price": "\u20b994",
+      "rating": 4.2,
+      "category": "electronics",
+      "asin": "B0CK7X2W4P",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-10T21:20:31.559926+05:30",
+      "session_type": "night",
+      "link_index": 58
+    },
     {
       "id": "product_morning_20251010_130732",
       "title": "Portronics Konnect X USB to Type C Cable with 3A Output, Fast Charging & Data Transfer, Nylon Braided, Aluminium Alloy S",
