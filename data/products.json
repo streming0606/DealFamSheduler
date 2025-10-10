@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-10-09T21:27:03.630476+05:30",
-  "total_products": 99,
+  "last_updated": "2025-10-10T10:17:55.131828+05:30",
+  "total_products": 101,
   "products": [
+    {
+      "id": "product_morning_20251010_044755",
+      "title": "SaleOn 8.3X5 Inch Portable Storage Organizer For Usb Cable, Earphone, Power Bank,Charger, Hard Disk & Digital Gadgets, W",
+      "image": "https://m.media-amazon.com/images/I/814GTqb4fEL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CP2K2XN8?tag=gadgetvill09f-21",
+      "price": "\u20b9285",
+      "rating": 4.2,
+      "category": "electronics",
+      "asin": "B0CP2K2XN8",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-10T10:17:55.131793+05:30",
+      "session_type": "morning",
+      "link_index": 52
+    },
+    {
+      "id": "product_morning_20251010_044750",
+      "title": "ZEBRONICS Zeb-Jaguar Wireless Mouse, 2.4GHz with USB Nano Receiver, High Precision Optical Tracking, 4 Buttons, Plug & P",
+      "image": "https://m.media-amazon.com/images/I/61XtYoH-kGL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B098JYT4SY?tag=gadgetvill09f-21",
+      "price": "\u20b9269",
+      "rating": 3.9,
+      "category": "electronics",
+      "asin": "B098JYT4SY",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-10T10:17:50.798737+05:30",
+      "session_type": "morning",
+      "link_index": 52
+    },
     {
       "id": "product_night_20251009_155703",
       "title": "Gizga Essentials Universal 2.5 Inch External Hard Drive Case| Shockproof, Water-Resistant PU Travel Pouch for HDD/SSD| C",
