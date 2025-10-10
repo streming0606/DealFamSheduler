@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-10-10T13:19:43.821617+05:30",
-  "total_products": 103,
+  "last_updated": "2025-10-10T18:37:32.199716+05:30",
+  "total_products": 105,
   "products": [
+    {
+      "id": "product_morning_20251010_130732",
+      "title": "Portronics Konnect X USB to Type C Cable with 3A Output, Fast Charging & Data Transfer, Nylon Braided, Aluminium Alloy S",
+      "image": "https://m.media-amazon.com/images/I/71lJnttqcML._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CR6JQT6F?tag=gadgetvill09f-21",
+      "price": "\u20b9125",
+      "rating": 4.2,
+      "category": "electronics",
+      "asin": "B0CR6JQT6F",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-10T18:37:32.199687+05:30",
+      "session_type": "morning",
+      "link_index": 56
+    },
+    {
+      "id": "product_morning_20251010_130728",
+      "title": "Ambrane Type-C to Lightning USB Cable, 22.5W Fast Charging, 480Mbps Data Sync Cable Compatible with iPhone, iPad, Macboo",
+      "image": "https://m.media-amazon.com/images/I/61avT8m81IL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0BWR911W9?tag=gadgetvill09f-21",
+      "price": "\u20b9129",
+      "rating": 3.7,
+      "category": "electronics",
+      "asin": "B0BWR911W9",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-10T18:37:28.278531+05:30",
+      "session_type": "morning",
+      "link_index": 56
+    },
     {
       "id": "product_afternoon_20251010_074943",
       "title": "Sounce Spiral Cable Protector, Chargers Cable Protector Data Cable Protective Sleeve, Headphone Saver, Charger Protectiv",
