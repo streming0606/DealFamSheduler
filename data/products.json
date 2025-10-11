@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-10-11T18:31:35.036187+05:30",
-  "total_products": 113,
+  "last_updated": "2025-10-11T21:20:15.011331+05:30",
+  "total_products": 115,
   "products": [
+    {
+      "id": "product_night_20251011_155015",
+      "title": "Portronics C-Konnect Type C to HDMI Adapter (3-in-1), Multiport USB C Hub with 4K@30Hz, USB 3.0 @ 5Gbps, 100 W PD Chargi",
+      "image": "https://m.media-amazon.com/images/I/51I6nxCojkL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B083DY9RXW?tag=gadgetvill09f-21",
+      "price": "\u20b9479",
+      "rating": 3.9,
+      "category": "electronics",
+      "asin": "B083DY9RXW",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-11T21:20:15.011303+05:30",
+      "session_type": "night",
+      "link_index": 66
+    },
+    {
+      "id": "product_night_20251011_155013",
+      "title": "Oneplus 80W Supervooc USB to Type C Data Sync Fast Charging Charger Cable for One plus 13,13r,12,12r,11,11r,10r,10t,10,1",
+      "image": "https://m.media-amazon.com/images/I/51FTWosVCgL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CVV3M72C?tag=gadgetvill09f-21",
+      "price": "\u20b9275",
+      "rating": 4.1,
+      "category": "electronics",
+      "asin": "B0CVV3M72C",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-11T21:20:13.426051+05:30",
+      "session_type": "night",
+      "link_index": 66
+    },
     {
       "id": "product_morning_20251011_130135",
       "title": "HAMMER Type C to Type C Cable 65W Braided, PD Fast Charging, Data Sync, 1.5 Meter Tangle Free Wire, Compatible with all ",
