@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-10-10T21:20:34.672278+05:30",
-  "total_products": 107,
+  "last_updated": "2025-10-11T10:15:25.572774+05:30",
+  "total_products": 109,
   "products": [
+    {
+      "id": "product_morning_20251011_044525",
+      "title": "Portronics Konnect X USB to 8 Pin Cable with 3A Output, Fast Charging & Data Transfer, Nylon Braided, Aluminium Alloy Sh",
+      "image": "https://m.media-amazon.com/images/I/61bu0r6-nEL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CR7M5FS6?tag=gadgetvill09f-21",
+      "price": "\u20b9135",
+      "rating": 4.0,
+      "category": "electronics",
+      "asin": "B0CR7M5FS6",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-11T10:15:25.572742+05:30",
+      "session_type": "morning",
+      "link_index": 60
+    },
+    {
+      "id": "product_morning_20251011_044522",
+      "title": "Rellon Plastic Industries Study Table for Students Bed Table for Study Foldable Laptop Table Portable & Lightweight Mini",
+      "image": "https://m.media-amazon.com/images/I/61okssN3Y6L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CW2VV681?tag=gadgetvill09f-21",
+      "price": "\u20b9449",
+      "rating": 4.0,
+      "category": "electronics",
+      "asin": "B0CW2VV681",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-11T10:15:22.781244+05:30",
+      "session_type": "morning",
+      "link_index": 60
+    },
     {
       "id": "product_night_20251010_155034",
       "title": "Seagate Expansion 1TB External HDD - USB 3.0 for Windows and Mac with 3 yr Data Recovery Services, Portable Hard Drive (",
