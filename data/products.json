@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-10-12T10:15:52.698837+05:30",
-  "total_products": 117,
+  "last_updated": "2025-10-12T13:19:56.200796+05:30",
+  "total_products": 119,
   "products": [
+    {
+      "id": "product_afternoon_20251012_074956",
+      "title": "ZEBRONICS HAV01 HDMI to VGA Adapter with Full HD 1080p @ 60Hz Native Resolution, Gold Plated connectors, Plug Play Usage",
+      "image": "https://m.media-amazon.com/images/I/51SqCroHfNL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0BGQF6MGK?tag=gadgetvill09f-21",
+      "price": "\u20b9169",
+      "rating": 3.7,
+      "category": "electronics",
+      "asin": "B0BGQF6MGK",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-12T13:19:56.200772+05:30",
+      "session_type": "afternoon",
+      "link_index": 70
+    },
+    {
+      "id": "product_afternoon_20251012_074953",
+      "title": "Digitek (DCR-007) USB-A 3.0 & Type C High-Speed Multi-Card Reader Supports All Standard SD/SDHC/SDXC and Micro SD/Micro ",
+      "image": "https://m.media-amazon.com/images/I/51Z+2C0v85L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0D9H3W8V6?tag=gadgetvill09f-21",
+      "price": "\u20b9299",
+      "rating": 4.3,
+      "category": "electronics",
+      "asin": "B0D9H3W8V6",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-12T13:19:53.226162+05:30",
+      "session_type": "afternoon",
+      "link_index": 70
+    },
     {
       "id": "product_morning_20251012_044552",
       "title": "Zebronics Zeb-Comfort Wired USB Mouse, 3-Button, 1000 DPI Optical Sensor, Plug & Play, for Windows/Mac, Black",
