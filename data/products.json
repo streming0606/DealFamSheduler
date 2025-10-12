@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-10-11T21:20:15.011331+05:30",
-  "total_products": 115,
+  "last_updated": "2025-10-12T10:15:52.698837+05:30",
+  "total_products": 117,
   "products": [
+    {
+      "id": "product_morning_20251012_044552",
+      "title": "Zebronics Zeb-Comfort Wired USB Mouse, 3-Button, 1000 DPI Optical Sensor, Plug & Play, for Windows/Mac, Black",
+      "image": "https://m.media-amazon.com/images/I/51NCNxkQ-YL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B079Y6JZC8?tag=gadgetvill09f-21",
+      "price": "\u20b999",
+      "rating": 3.9,
+      "category": "electronics",
+      "asin": "B079Y6JZC8",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-12T10:15:52.698805+05:30",
+      "session_type": "morning",
+      "link_index": 68
+    },
+    {
+      "id": "product_morning_20251012_044549",
+      "title": "Safari Omega Spacious/Large 5 Compartment Laptop Backpack With Raincover, College Bag, Travel Bag For Unisex, Navy Blue,",
+      "image": "https://m.media-amazon.com/images/I/51CoEnyGMnL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B097LC1DJ6?tag=gadgetvill09f-21",
+      "price": "\u20b9619",
+      "rating": 4.1,
+      "category": "electronics",
+      "asin": "B097LC1DJ6",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-12T10:15:49.241485+05:30",
+      "session_type": "morning",
+      "link_index": 68
+    },
     {
       "id": "product_night_20251011_155015",
       "title": "Portronics C-Konnect Type C to HDMI Adapter (3-in-1), Multiport USB C Hub with 4K@30Hz, USB 3.0 @ 5Gbps, 100 W PD Chargi",
