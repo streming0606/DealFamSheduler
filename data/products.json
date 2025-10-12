@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-10-12T13:19:56.200796+05:30",
-  "total_products": 119,
+  "last_updated": "2025-10-12T18:32:03.803173+05:30",
+  "total_products": 121,
   "products": [
+    {
+      "id": "product_morning_20251012_130203",
+      "title": "ZEBRONICS Fame, 2.0 USB Computer Speakers, 5 Watts, USB Powered, AUX, Volume Control Pod for PC, Laptops, Desktop",
+      "image": "https://m.media-amazon.com/images/I/81SHKIaQDXL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07L3NDN24?tag=gadgetvill09f-21",
+      "price": "\u20b9379",
+      "rating": 4.0,
+      "category": "electronics",
+      "asin": "B07L3NDN24",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-12T18:32:03.803145+05:30",
+      "session_type": "morning",
+      "link_index": 72
+    },
+    {
+      "id": "product_morning_20251012_130201",
+      "title": "Dell KB216 Wired Multimedia Keyboard - Full-Size Layout with USB Interface, Chiclet Keys, Spill Resistance with 3 Indica",
+      "image": "https://m.media-amazon.com/images/I/61mwM6q4smL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B00ZYLMQH0?tag=gadgetvill09f-21",
+      "price": "\u20b9599",
+      "rating": 4.3,
+      "category": "electronics",
+      "asin": "B00ZYLMQH0",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-12T18:32:01.606556+05:30",
+      "session_type": "morning",
+      "link_index": 72
+    },
     {
       "id": "product_afternoon_20251012_074956",
       "title": "ZEBRONICS HAV01 HDMI to VGA Adapter with Full HD 1080p @ 60Hz Native Resolution, Gold Plated connectors, Plug Play Usage",
