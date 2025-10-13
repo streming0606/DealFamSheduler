@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-10-13T13:20:03.091072+05:30",
-  "total_products": 127,
+  "last_updated": "2025-10-13T18:47:35.502677+05:30",
+  "total_products": 129,
   "products": [
+    {
+      "id": "product_morning_20251013_131735",
+      "title": "Arctic Fox Pureview Transparent Wireless and Bluetooth Rechargeable Mouse, USB Receiver,LED Battery Magic Silm for Offic",
+      "image": "https://m.media-amazon.com/images/I/61eiM4vykhL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CP9NMKCR?tag=gadgetvill09f-21",
+      "price": "\u20b9549",
+      "rating": 4.4,
+      "category": "electronics",
+      "asin": "B0CP9NMKCR",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-13T18:47:35.502647+05:30",
+      "session_type": "morning",
+      "link_index": 80
+    },
+    {
+      "id": "product_morning_20251013_131732",
+      "title": "Portronics Glide Stylus Pencil for iPads Only, Angle Tilt Sensitivity, Palm Rejection, Attaches Magnetically, Battery LE",
+      "image": "https://m.media-amazon.com/images/I/51qtxqNKPML._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DF38F64P?tag=gadgetvill09f-21",
+      "price": "\u20b9699",
+      "rating": 3.9,
+      "category": "electronics",
+      "asin": "B0DF38F64P",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-13T18:47:32.241987+05:30",
+      "session_type": "morning",
+      "link_index": 80
+    },
     {
       "id": "product_afternoon_20251013_075003",
       "title": "Cuzor Mini UPS 12V Router UPS up to 2A | Up to 5 Hours Backup | WiFi UPS Power Backup During powercuts | 2x2900 mAh | Mi",
