@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-10-13T10:18:45.641014+05:30",
-  "total_products": 125,
+  "last_updated": "2025-10-13T13:20:03.091072+05:30",
+  "total_products": 127,
   "products": [
+    {
+      "id": "product_afternoon_20251013_075003",
+      "title": "Cuzor Mini UPS 12V Router UPS up to 2A | Up to 5 Hours Backup | WiFi UPS Power Backup During powercuts | 2x2900 mAh | Mi",
+      "image": "https://m.media-amazon.com/images/I/6157sg8RLBL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07ZKD8T1Q?tag=gadgetvill09f-21",
+      "price": "\u20b91,399",
+      "rating": 4.4,
+      "category": "electronics",
+      "asin": "B07ZKD8T1Q",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-13T13:20:03.091038+05:30",
+      "session_type": "afternoon",
+      "link_index": 78
+    },
+    {
+      "id": "product_afternoon_20251013_075001",
+      "title": "OnePlus USB-A To Type-C Charging Cable Smartphone 10A 1M DL129 Red IN",
+      "image": "https://m.media-amazon.com/images/I/51ysDsW1sVL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CSKKKJVZ?tag=gadgetvill09f-21",
+      "price": "\u20b9699",
+      "rating": 4.3,
+      "category": "electronics",
+      "asin": "B0CSKKKJVZ",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-13T13:20:01.750687+05:30",
+      "session_type": "afternoon",
+      "link_index": 78
+    },
     {
       "id": "product_morning_20251013_044845",
       "title": "Portronics My Buddy K Portable Laptop Stand with Adjustable Height, Foldable, OverHeating Protection for Laptops & MacBo",
