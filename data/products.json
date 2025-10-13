@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-10-13T18:47:35.502677+05:30",
-  "total_products": 129,
+  "last_updated": "2025-10-13T21:20:11.121627+05:30",
+  "total_products": 131,
   "products": [
+    {
+      "id": "product_night_20251013_155011",
+      "title": "SanDisk Cruzer Blade 128GB, USB 2.0, Flash Drive, Pendrive, Red, 5Y Warranty (SDCZ50-128G-I35)",
+      "image": "https://m.media-amazon.com/images/I/61sFaDqQH8L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07G2LLHSD?tag=gadgetvill09f-21",
+      "price": "\u20b9729",
+      "rating": 4.2,
+      "category": "electronics",
+      "asin": "B07G2LLHSD",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-13T21:20:11.121601+05:30",
+      "session_type": "night",
+      "link_index": 82
+    },
+    {
+      "id": "product_night_20251013_155008",
+      "title": "Dyazo 6 Angle Foldable & Portable Laptop Riser Stand Made with Aluminum Alloy |Compatible for Dell, Mac Book Air/Pro, Le",
+      "image": "https://m.media-amazon.com/images/I/61MSSzgvXOL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B099ZXYCWP?tag=gadgetvill09f-21",
+      "price": "\u20b9320",
+      "rating": 4.3,
+      "category": "electronics",
+      "asin": "B099ZXYCWP",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-13T21:20:08.742838+05:30",
+      "session_type": "night",
+      "link_index": 82
+    },
     {
       "id": "product_morning_20251013_131735",
       "title": "Arctic Fox Pureview Transparent Wireless and Bluetooth Rechargeable Mouse, USB Receiver,LED Battery Magic Silm for Offic",
