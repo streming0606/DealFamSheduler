@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-10-14T13:19:45.712640+05:30",
-  "total_products": 135,
+  "last_updated": "2025-10-14T18:47:42.224815+05:30",
+  "total_products": 137,
   "products": [
+    {
+      "id": "product_morning_20251014_131742",
+      "title": "HP M290 Wireless Mouse (AB3C7AA)",
+      "image": "https://m.media-amazon.com/images/I/51kck5NJKeL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DXNY14GL?tag=gadgetvill09f-21",
+      "price": "\u20b9399",
+      "rating": 3.5,
+      "category": "electronics",
+      "asin": "B0DXNY14GL",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-14T18:47:42.224780+05:30",
+      "session_type": "morning",
+      "link_index": 88
+    },
+    {
+      "id": "product_morning_20251014_131740",
+      "title": "SanDisk Cruzer Blade 32GB USB Flash Drive",
+      "image": "https://m.media-amazon.com/images/I/61ERDR3tATL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B005FYNT3G?tag=gadgetvill09f-21",
+      "price": "\u20b9369",
+      "rating": 4.2,
+      "category": "electronics",
+      "asin": "B005FYNT3G",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-14T18:47:40.065472+05:30",
+      "session_type": "morning",
+      "link_index": 88
+    },
     {
       "id": "product_afternoon_20251014_074945",
       "title": "SanDisk Ultra Dual Drive Luxe USB_c Type-C 128GB, OTG, Upto 400MB/S, Pendrive, Silver, 5Y Warranty (SDDDC4-128G-I35)",
