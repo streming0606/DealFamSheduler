@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-10-14T18:47:42.224815+05:30",
-  "total_products": 137,
+  "last_updated": "2025-10-14T21:20:39.087036+05:30",
+  "total_products": 139,
   "products": [
+    {
+      "id": "product_night_20251014_155039",
+      "title": "LS LAPSTER Quality Assured Lapster Universal Silicone 15.6\" Keyboard Protector Skin|| Keyboard Dust Cover|| Keyboard Ski",
+      "image": "https://m.media-amazon.com/images/I/61VI+sDx5KL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0994GP1CX?tag=gadgetvill09f-21",
+      "price": "\u20b994",
+      "rating": 3.5,
+      "category": "electronics",
+      "asin": "B0994GP1CX",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-14T21:20:39.087001+05:30",
+      "session_type": "night",
+      "link_index": 90
+    },
+    {
+      "id": "product_night_20251014_155037",
+      "title": "TP-Link | AC1200 WiFi Range Extender | Up to 1200Mbps Speed | Dual Band Wireless Extender, Repeater, Signal Booster, Acc",
+      "image": "https://m.media-amazon.com/images/I/51tpUO90WFL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B01MD1SKLL?tag=gadgetvill09f-21",
+      "price": "\u20b92,099",
+      "rating": 4.3,
+      "category": "electronics",
+      "asin": "B01MD1SKLL",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-14T21:20:37.605357+05:30",
+      "session_type": "night",
+      "link_index": 90
+    },
     {
       "id": "product_morning_20251014_131742",
       "title": "HP M290 Wireless Mouse (AB3C7AA)",
