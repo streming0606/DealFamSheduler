@@ -2922,3 +2922,55 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
+
+
+
+
+
+
+
+// Quick Category Navigation - Smooth Scroll on Mobile
+document.addEventListener('DOMContentLoaded', function() {
+    const quickNavWrapper = document.querySelector('.quick-nav-wrapper');
+    
+    if (quickNavWrapper && window.innerWidth <= 768) {
+        let isDown = false;
+        let startX;
+        let scrollLeft;
+
+        quickNavWrapper.addEventListener('mousedown', (e) => {
+            isDown = true;
+            startX = e.pageX - quickNavWrapper.offsetLeft;
+            scrollLeft = quickNavWrapper.scrollLeft;
+        });
+
+        quickNavWrapper.addEventListener('mouseleave', () => {
+            isDown = false;
+        });
+
+        quickNavWrapper.addEventListener('mouseup', () => {
+            isDown = false;
+        });
+
+        quickNavWrapper.addEventListener('mousemove', (e) => {
+            if (!isDown) return;
+            e.preventDefault();
+            const x = e.pageX - quickNavWrapper.offsetLeft;
+            const walk = (x - startX) * 2;
+            quickNavWrapper.scrollLeft = scrollLeft - walk;
+        });
+    }
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
