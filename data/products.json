@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-10-15T10:18:07.936537+05:30",
-  "total_products": 141,
+  "last_updated": "2025-10-15T13:19:40.692149+05:30",
+  "total_products": 143,
   "products": [
+    {
+      "id": "product_afternoon_20251015_074940",
+      "title": "VODRAIS USB C Cable to Lightning-27W [Apple-MFi Certified] Fast Charger Cable Power Charging Cord Compatible with iPhone",
+      "image": "https://m.media-amazon.com/images/I/51JCkY0K4ML._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FGPPPQLH?tag=gadgetvill09f-21",
+      "price": "\u20b9279",
+      "rating": 4.0,
+      "category": "electronics",
+      "asin": "B0FGPPPQLH",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-15T13:19:40.692121+05:30",
+      "session_type": "afternoon",
+      "link_index": 94
+    },
+    {
+      "id": "product_afternoon_20251015_074938",
+      "title": "ZEBRONICS Aluminium Alloy Laptop Stand, Compatible with 9-15.6 inch Laptops, 7 Angles Adjustable, Anti Slip Silicon Rubb",
+      "image": "https://m.media-amazon.com/images/I/616LbNsSdGL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B08WKCTFF3?tag=gadgetvill09f-21",
+      "price": "\u20b9355",
+      "rating": 4.0,
+      "category": "electronics",
+      "asin": "B08WKCTFF3",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-15T13:19:38.673239+05:30",
+      "session_type": "afternoon",
+      "link_index": 94
+    },
     {
       "id": "product_morning_20251015_044807",
       "title": "TP-Link USB Bluetooth Adapter for PC, 5.3 Bluetooth Dongle Receiver (UB500) Supports Windows 11/10/8.1/7 for Desktop, La",
