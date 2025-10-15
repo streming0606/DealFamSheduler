@@ -4612,8 +4612,8 @@ body.promo-banner-visible .header {
 
 /* Search Button */
 .search-box .search-btn {
-    background: var(--primary, #2874F0);
-    color: white;
+    background: var(--primary, #f3efef);
+    color: orange;
     border: none;
     padding: 0 1.25rem;
     cursor: pointer;
