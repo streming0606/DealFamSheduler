@@ -2974,3 +2974,297 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
+
+
+
+
+
+
+
+
+
+
+// ============================================
+// ENDS SOON SECTION - HOURLY AUTO-ROTATION
+// ============================================
+
+class EndsSoonDealsRotation {
+    constructor() {
+        this.container = document.getElementById('horizontal-products-container');
+        this.productsPool = [];
+        this.displayedProductIds = [];
+        this.currentRotation = 0;
+        this.productsToShow = 8;
+        this.maxPrice = 1000; // Under 1000 rupees
+        this.rotationInterval = 60 * 60 * 1000; // 1 hour
+        this.timerInterval = null;
+        this.rotationTimer = null;
+        this.lastRotationTime = null;
+        this.storageKey = 'thriftzone_endssoon_rotation';
+        
+        console.log('✨ Ends Soon Rotation initialized');
+        this.init();
+    }
+
+    init() {
+        this.waitForProducts();
+        this.loadRotationState();
+        this.startTimerCountdown();
+        this.scheduleNextRotation();
+    }
+
+    waitForProducts() {
+        const checkProducts = () => {
+            if (allProducts && allProducts.length > 0) {
+                console.log(`✅ Products loaded: ${allProducts.length} available`);
+                this.prepareProductsPool();
+                this.renderEndsSoonProducts();
+            } else {
+                setTimeout(checkProducts, 500);
+            }
+        };
+        checkProducts();
+    }
+
+    prepareProductsPool() {
+        // Filter products under 1000 rupees
+        const filteredProducts = allProducts.filter(product => {
+            const price = this.extractPrice(product.price);
+            return price > 0 && price <= this.maxPrice;
+        });
+
+        // Sort by price (low to high)
+        this.productsPool = filteredProducts.sort((a, b) => {
+            return this.extractPrice(a.price) - this.extractPrice(b.price);
+        });
+
+        // Apply category diversity
+        this.productsPool = this.applyDiversityAndPriority(this.productsPool);
+    }
+
+    applyDiversityAndPriority(products) {
+        const categories = {};
+        const diverseProducts = [];
+        
+        products.forEach(product => {
+            const cat = product.category.toLowerCase();
+            if (!categories[cat]) categories[cat] = [];
+            categories[cat].push(product);
+        });
+
+        const categoryKeys = Object.keys(categories);
+        let maxPerCategory = Math.ceil(products.length / categoryKeys.length);
+        
+        categoryKeys.forEach(cat => {
+            const catProducts = categories[cat].slice(0, maxPerCategory);
+            diverseProducts.push(...catProducts);
+        });
+
+        return diverseProducts;
+    }
+
+    extractPrice(priceString) {
+        if (!priceString) return 0;
+        const match = priceString.match(/₹[\d,]+/);
+        return match ? parseInt(match[0].replace(/[₹,]/g, '')) : 0;
+    }
+
+    renderEndsSoonProducts() {
+        if (!this.container || this.productsPool.length === 0) return;
+
+        // Calculate products to show (8-20 range)
+        const minProducts = 8;
+        const maxProducts = 20;
+        this.productsToShow = Math.min(
+            Math.max(minProducts, Math.floor(this.productsPool.length / 3)),
+            maxProducts,
+            this.productsPool.length
+        );
+
+        const rotationProducts = this.getRotationProducts();
+        this.container.innerHTML = '';
+
+        rotationProducts.forEach((product, index) => {
+            const productCard = createProductCard(product, index);
+            productCard.style.opacity = '0';
+            productCard.style.transform = 'translateY(20px)';
+            this.container.appendChild(productCard);
+
+            setTimeout(() => {
+                productCard.style.opacity = '1';
+                productCard.style.transform = 'translateY(0)';
+            }, index * 100);
+        });
+
+        this.updateDealsCount(rotationProducts.length);
+        this.saveRotationState();
+    }
+
+    getRotationProducts() {
+        const startIndex = (this.currentRotation * this.productsToShow) % this.productsPool.length;
+        let rotationProducts = [];
+        
+        if (startIndex + this.productsToShow <= this.productsPool.length) {
+            rotationProducts = this.productsPool.slice(startIndex, startIndex + this.productsToShow);
+        } else {
+            const firstPart = this.productsPool.slice(startIndex);
+            const remaining = this.productsToShow - firstPart.length;
+            const secondPart = this.productsPool.slice(0, remaining);
+            rotationProducts = [...firstPart, ...secondPart];
+        }
+
+        rotationProducts = this.filterRecentlyShown(rotationProducts);
+        this.displayedProductIds = rotationProducts.map(p => p.id);
+        return rotationProducts;
+    }
+
+    filterRecentlyShown(products) {
+        const recentlyShown = this.getRecentlyShownProducts();
+        if (this.productsPool.length > this.productsToShow * 2) {
+            return products.filter(p => !recentlyShown.includes(p.id));
+        }
+        return products;
+    }
+
+    getRecentlyShownProducts() {
+        const stored = localStorage.getItem('thriftzone_recently_shown');
+        return stored ? JSON.parse(stored) : [];
+    }
+
+    updateRecentlyShown() {
+        const recentlyShown = this.getRecentlyShownProducts();
+        const updated = [...new Set([...this.displayedProductIds, ...recentlyShown])];
+        const limited = updated.slice(-50);
+        localStorage.setItem('thriftzone_recently_shown', JSON.stringify(limited));
+    }
+
+    scheduleNextRotation() {
+        if (this.rotationTimer) clearTimeout(this.rotationTimer);
+
+        const now = Date.now();
+        const lastRotation = this.lastRotationTime || now;
+        const timeSinceLastRotation = now - lastRotation;
+        const timeUntilNext = Math.max(0, this.rotationInterval - timeSinceLastRotation);
+
+        this.rotationTimer = setTimeout(() => {
+            this.rotateProducts();
+        }, timeUntilNext);
+    }
+
+    rotateProducts() {
+        this.currentRotation++;
+        this.lastRotationTime = Date.now();
+        this.updateRecentlyShown();
+        this.renderEndsSoonProducts();
+        this.scheduleNextRotation();
+        this.startTimerCountdown();
+    }
+
+    startTimerCountdown() {
+        if (this.timerInterval) clearInterval(this.timerInterval);
+        this.timerInterval = setInterval(() => {
+            this.updateCountdownDisplay();
+        }, 1000);
+        this.updateCountdownDisplay();
+    }
+
+    updateCountdownDisplay() {
+        const now = Date.now();
+        const lastRotation = this.lastRotationTime || now;
+        const timeSinceRotation = now - lastRotation;
+        const timeRemaining = Math.max(0, this.rotationInterval - timeSinceRotation);
+
+        const timerDisplays = document.querySelectorAll('.timer-compact-display');
+        
+        if (timerDisplays.length > 0) {
+            const hours = Math.floor(timeRemaining / (1000 * 60 * 60));
+            const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+            const timeText = hours > 0 ? `${hours}h ${minutes}m` : `${minutes}m`;
+            
+            timerDisplays.forEach(display => {
+                display.textContent = timeText;
+                if (minutes < 10 && hours === 0) {
+                    display.closest('.timer-compact-btn')?.classList.add('urgent');
+                } else {
+                    display.closest('.timer-compact-btn')?.classList.remove('urgent');
+                }
+            });
+        }
+    }
+
+    updateDealsCount(count) {
+        const countElement = document.querySelector('#deals-section .deals-count');
+        if (countElement) countElement.textContent = `${count} deals`;
+    }
+
+    saveRotationState() {
+        const state = {
+            currentRotation: this.currentRotation,
+            lastRotationTime: this.lastRotationTime,
+            displayedProductIds: this.displayedProductIds
+        };
+        localStorage.setItem(this.storageKey, JSON.stringify(state));
+    }
+
+    loadRotationState() {
+        const stored = localStorage.getItem(this.storageKey);
+        if (stored) {
+            try {
+                const state = JSON.parse(stored);
+                this.currentRotation = state.currentRotation || 0;
+                this.lastRotationTime = state.lastRotationTime || Date.now();
+                this.displayedProductIds = state.displayedProductIds || [];
+            } catch (error) {
+                this.resetRotationState();
+            }
+        } else {
+            this.resetRotationState();
+        }
+    }
+
+    resetRotationState() {
+        this.currentRotation = 0;
+        this.lastRotationTime = Date.now();
+        this.displayedProductIds = [];
+        this.saveRotationState();
+    }
+
+    destroy() {
+        if (this.rotationTimer) clearTimeout(this.rotationTimer);
+        if (this.timerInterval) clearInterval(this.timerInterval);
+    }
+}
+
+// Initialize
+let endsSoonRotation = null;
+
+function initializeEndsSoonRotation() {
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initializeEndsSoonRotation);
+        return;
+    }
+
+    setTimeout(() => {
+        if (endsSoonRotation) return;
+        const container = document.getElementById('horizontal-products-container');
+        if (container && allProducts) {
+            endsSoonRotation = new EndsSoonDealsRotation();
+        } else {
+            setTimeout(initializeEndsSoonRotation, 1000);
+        }
+    }, 2000);
+}
+
+initializeEndsSoonRotation();
+
+window.addEventListener('beforeunload', () => {
+    if (endsSoonRotation) {
+        endsSoonRotation.destroy();
+        endsSoonRotation = null;
+    }
+});
+
+
+
+
+
