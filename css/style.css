@@ -308,8 +308,7 @@ p {
 }
 
 .search-btn:hover {
-  background-color: var(--primary-hover);
-}
+  background-color: #eaedf4;
 
 /* Search Suggestions */
 .search-suggestions {
@@ -558,7 +557,7 @@ p {
 }
 
 .signup-btn:hover {
-    background: var(--primary-hover);
+    background: #ffffff;
     transform: translateY(-1px);
 }
 
