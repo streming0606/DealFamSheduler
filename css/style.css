@@ -529,7 +529,7 @@ p {
 
 .auth-btn {
     background: none;
-    border: 2px solid var(--primary-color);
+    border: 2px solid #ee9f0e;
     border-radius: var(--radius);
     padding: 8px 16px;
     cursor: pointer;
