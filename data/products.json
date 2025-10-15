@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-10-15T13:19:40.692149+05:30",
-  "total_products": 143,
+  "last_updated": "2025-10-15T18:48:28.597600+05:30",
+  "total_products": 145,
   "products": [
+    {
+      "id": "product_morning_20251015_131828",
+      "title": "STRIFF Gel_Wrist_Support Mouse pad with, Gaming Mouse Pad with Lycra Cloth Nonslip for Laptop, Computer, Home & Office (",
+      "image": "https://m.media-amazon.com/images/I/51+AOv4CMmL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CKF8QQLF?tag=gadgetvill09f-21",
+      "price": "\u20b9139",
+      "rating": 4.4,
+      "category": "electronics",
+      "asin": "B0CKF8QQLF",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-15T18:48:28.597568+05:30",
+      "session_type": "morning",
+      "link_index": 96
+    },
+    {
+      "id": "product_morning_20251015_131826",
+      "title": "TP-Link Archer AC1200 Archer C6 Wi-Fi Speed Up to 867 Mbps/5 GHz + 400Mbps/2.4 GHz, 5 Gigabit Ports, 4 External Antennas",
+      "image": "https://m.media-amazon.com/images/I/71Hu0MLbxqL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07GVR9TG7?tag=gadgetvill09f-21",
+      "price": "\u20b92,199",
+      "rating": 4.4,
+      "category": "electronics",
+      "asin": "B07GVR9TG7",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-15T18:48:26.106937+05:30",
+      "session_type": "morning",
+      "link_index": 96
+    },
     {
       "id": "product_afternoon_20251015_074940",
       "title": "VODRAIS USB C Cable to Lightning-27W [Apple-MFi Certified] Fast Charger Cable Power Charging Cord Compatible with iPhone",
