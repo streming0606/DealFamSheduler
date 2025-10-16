@@ -4944,9 +4944,9 @@ body.promo-banner-visible .header {
 .product-rating {
   display: flex;
   align-items: center;
-  gap: 6px;
-  margin: 8px 0 12px 0;
-  padding: 6px 0;
+  gap: 8px;
+  margin: 0.5px 0 12px 0;
+  padding: 1px 0;
   font-size: 0.85rem;
 }
 
