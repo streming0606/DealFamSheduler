@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-10-16T13:20:04.644884+05:30",
-  "total_products": 151,
+  "last_updated": "2025-10-16T18:48:02.203142+05:30",
+  "total_products": 152,
   "products": [
+    {
+      "id": "product_morning_20251016_131802",
+      "title": "Portronics Konnect L POR-1403 Fast Charging 3A Type-C Cable 1.2 Meter with Charge & Sync Function for All Type-C Devices",
+      "image": "https://m.media-amazon.com/images/I/61TAAu1LrqL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B09KH58JZR?tag=gadgetvill09f-21",
+      "price": "\u20b9109",
+      "rating": 4.1,
+      "category": "electronics",
+      "asin": "B09KH58JZR",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-16T18:48:02.203110+05:30",
+      "session_type": "morning",
+      "link_index": 104
+    },
+    {
+      "id": "product_morning_20251016_131800",
+      "title": "GRENARO Mic for YouTube Wireless, 3-Level Adjustable Noise Reduction Mic Wireless, Wireless Microphone for Youtubers wit",
+      "image": "https://m.media-amazon.com/images/I/71dhDqkgHPL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DQD8HWWG?tag=gadgetvill09f-21",
+      "price": "\u20b9755",
+      "rating": 3.9,
+      "category": "electronics",
+      "asin": "B0DQD8HWWG",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-16T18:48:00.629709+05:30",
+      "session_type": "morning",
+      "link_index": 104
+    },
     {
       "id": "product_afternoon_20251016_075004",
       "title": "Logitech M186 Wireless Mouse, 2.4GHz with USB Mini Receiver, 12-Month Battery Life, 1000 DPI Optical Tracking, Ambidextr",
@@ -1430,7 +1458,6 @@
       "session_type": "morning",
       "link_index": 45
     },
-    
     {
       "id": "product_morning_1_20251004_130107",
       "title": "Nivia Crysteal Gym / Exercise_and_Fitness Synthetic Gloves - Navy Blue",
