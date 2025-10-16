@@ -4922,3 +4922,81 @@ body.promo-banner-visible .header {
     background: var(--surface-dark);
     color: var(--primary-color);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ========================================
+   PRODUCT RATING STYLES - ADD THIS
+   ======================================== */
+
+.product-rating {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 8px 0 12px 0;
+  padding: 6px 0;
+  font-size: 0.85rem;
+}
+
+.rating-stars {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  color: #FFA500;
+}
+
+.rating-stars i {
+  font-size: 14px;
+  color: #FFA500;
+}
+
+.rating-stars .fa-star {
+  color: #FFA500;
+}
+
+.rating-stars .fa-star-half-alt {
+  color: #FFA500;
+}
+
+.rating-stars .fa-star.empty {
+  color: #E2E8F0;
+}
+
+.rating-value {
+  font-weight: 600;
+  color: var(--text-primary, #1a202c);
+  font-size: 0.9rem;
+  margin-left: 4px;
+}
+
+.rating-max {
+  color: var(--text-muted, #718096);
+  font-size: 0.85rem;
+  font-weight: 400;
+}
+
+/* Dark theme support */
+[data-theme="dark"] .rating-value {
+  color: #ffffff;
+}
+
+[data-theme="dark"] .rating-max {
+  color: #9ca3af;
+}
+
+[data-theme="dark"] .rating-stars .fa-star.empty {
+  color: #4a5568;
+}
+
