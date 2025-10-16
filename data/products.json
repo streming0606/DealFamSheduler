@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-10-16T10:17:50.267133+05:30",
-  "total_products": 149,
+  "last_updated": "2025-10-16T13:20:04.644884+05:30",
+  "total_products": 151,
   "products": [
+    {
+      "id": "product_afternoon_20251016_075004",
+      "title": "Logitech M186 Wireless Mouse, 2.4GHz with USB Mini Receiver, 12-Month Battery Life, 1000 DPI Optical Tracking, Ambidextr",
+      "image": "https://m.media-amazon.com/images/I/41xAn0iwc6L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0D18192T2?tag=gadgetvill09f-21",
+      "price": "\u20b9395",
+      "rating": 4.1,
+      "category": "electronics",
+      "asin": "B0D18192T2",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-16T13:20:04.644855+05:30",
+      "session_type": "afternoon",
+      "link_index": 102
+    },
+    {
+      "id": "product_afternoon_20251016_075003",
+      "title": "Portronics Bridge Y USB 3.0 to Type C OTG Adaptor, 10Gbps High Speed Data Transfer, Thunderbolt to USB Adapter, Compatib",
+      "image": "https://m.media-amazon.com/images/I/616jdfyhw8L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DH3J6LB9?tag=gadgetvill09f-21",
+      "price": "\u20b959",
+      "rating": 4.3,
+      "category": "electronics",
+      "asin": "B0DH3J6LB9",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-16T13:20:03.301171+05:30",
+      "session_type": "afternoon",
+      "link_index": 102
+    },
     {
       "id": "product_morning_20251016_044750",
       "title": "Fujifilm Instax Mini Picture Format Film (20 Shots)",
