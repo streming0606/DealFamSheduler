@@ -165,96 +165,135 @@ function initializeScrollers() {
 
 // Enhanced Product Card Functions
 function createProductCard(product, index = 0) {
-    const card = document.createElement('div');
-    card.className = 'product-card';
-    card.setAttribute('data-category', product.category);
-    card.style.opacity = '0';
-    card.style.transform = 'translateY(20px)';
-    card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+  const card = document.createElement('div');
+  card.className = 'product-card';
+  card.setAttribute('data-category', product.category);
+  card.style.opacity = '0';
+  card.style.transform = 'translateY(20px)';
+  card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+  
+  // Make card cursor pointer
+  card.style.cursor = 'pointer';
+  
+  const date = new Date(product.posted_date);
+  const formattedDate = date.toLocaleDateString('en-IN');
+  const enhancedData = enhanceProductData(product);
+  
+  // Generate rating stars HTML
+  const ratingHTML = generateRatingStars(product.rating);
+  
+  card.innerHTML = `
+    <div class="product-image-container">
+      ${product.image ? 
+        `<img src="${product.image}" alt="${product.title}" class="product-image" loading="lazy" onerror="this.parentElement.innerHTML='<div class=\\'product-placeholder\\'><i class=\\'fas fa-image\\'></i></div>'">` : 
+        `<div class="product-placeholder"><i class="fas fa-image"></i></div>`
+      }
+      <div class="product-badges">
+        <span class="badge badge-discount">${enhancedData.discountPercent}% OFF</span>
+        ${enhancedData.isLimitedTime ? '<span class="badge badge-limited">Limited Time</span>' : ''}
+        ${enhancedData.isLowStock ? '<span class="badge badge-stock-low">Few Left!</span>' : ''}
+      </div>
+      <div class="product-top-actions">
+        <button class="action-btn wishlist-btn" onclick="toggleWishlist('${product.id}', this)" title="Add to wishlist">
+          <i class="far fa-heart"></i>
+        </button>
+      </div>
+    </div>
     
-    // ADD THIS: Make card cursor pointer
-    card.style.cursor = 'pointer';
-    
-    const date = new Date(product.posted_date);
-    const formattedDate = date.toLocaleDateString('en-IN');
-    const enhancedData = enhanceProductData(product);
-    
-    card.innerHTML = `
-        <div class="product-image-container">
-            ${product.image ? 
-                `<img src="${product.image}" alt="${product.title}" class="product-image" loading="lazy" onerror="this.parentElement.innerHTML='<div class=\\"product-placeholder\\"><i class=\\"fas fa-image\\"></i></div>` 
-                : 
-                '<div class="product-placeholder"><i class="fas fa-image"></i></div>'
-            }
-            
-            <div class="product-badges">
-                <span class="badge badge-discount">${enhancedData.discountPercent}% OFF</span>
-                ${enhancedData.isLimitedTime ? '<span class="badge badge-limited">Limited Time</span>' : ''}
-                ${enhancedData.isLowStock ? '<span class="badge badge-stock-low">Few Left!</span>' : ''}
-            </div>
-            
-            <div class="product-top-actions">
-                <button class="action-btn wishlist-btn" onclick="toggleWishlist('${product.id}', this)" title="Add to wishlist">
-                    <i class="far fa-heart"></i>
-                </button>
-            </div>
+    <div class="product-info">
+      <div class="product-category">${product.category}</div>
+      <h3 class="product-title">${product.title}</h3>
+      
+      ${product.rating ? generateRatingStars(product.rating) : ''}
+      
+      <div class="product-pricing">
+        <div class="price-section">
+          <span class="price-current">
+            <span class="currency">₹</span>${enhancedData.salePrice}
+          </span>
+          <span class="price-original">₹${enhancedData.originalPrice}</span>
+          <span class="price-discount-badge">${enhancedData.discountPercent}% OFF</span>
         </div>
-        
-        <div class="product-info">
-            <div class="product-category">${product.category}</div>
-            
-            <h3 class="product-title">${product.title}</h3>
-            
-            <div class="product-pricing">
-                <div class="price-section">
-                    <span class="price-current">
-                        <span class="currency">₹</span>${enhancedData.salePrice}
-                    </span>
-                    <span class="price-original">₹${enhancedData.originalPrice}</span>
-                    <span class="price-discount-badge">${enhancedData.discountPercent}% OFF</span>
-                </div>
-                <div class="savings-amount">
-                    You Save ₹${enhancedData.savings}
-                </div>
+      </div>
+      
+      <div class="savings-amount">
+        You Save ₹${enhancedData.savings}
+      </div>
+      
+      <div class="product-actions">
+        <a href="#" class="deal-btn" onclick="openProductPage('${product.id}', '${product.title}'); return false;" rel="noopener noreferrer">
+          <div>
+            <div class="deal-btn-text">
+              <i class="fas fa-bolt"></i> View Deal Details
             </div>
-            
-            <div class="product-actions">
-                <a href="#" 
-                   class="deal-btn" 
-                   onclick="openProductPage('${product.id}', '${product.title}'); return false;"
-                   rel="noopener noreferrer">
-                    <div>
-                        <div class="deal-btn-text">
-                            <i class="fas fa-bolt"></i>
-                            View Deal Details
-                        </div>
-                        <div class="deal-btn-subtext">Save Big Today</div>
-                    </div>
-                </a>
-            </div>
-        </div>
-    `;
+            <div class="deal-btn-subtext">Save Big Today</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  `;
+  
+  // Card click handler that respects interactive elements
+  card.addEventListener('click', function(e) {
+    // Check if click is on interactive elements
+    const isInteractiveElement = 
+      e.target.closest('.wishlist-btn') ||
+      e.target.closest('.like-compact-btn') ||
+      e.target.closest('.share-compact-btn') ||
+      e.target.closest('.comment-compact-btn') ||
+      e.target.closest('.timer-compact-btn') ||
+      e.target.closest('.deal-btn') ||
+      e.target.closest('.feature-compact-btn');
     
-    // ADD THIS: Card click handler that respects interactive elements
-    card.addEventListener('click', function(e) {
-        // Check if click is on interactive elements
-        const isInteractiveElement = 
-            e.target.closest('.wishlist-btn') ||
-            e.target.closest('.like-compact-btn') ||
-            e.target.closest('.share-compact-btn') ||
-            e.target.closest('.comment-compact-btn') ||
-            e.target.closest('.timer-compact-btn') ||
-            e.target.closest('.deal-btn') ||
-            e.target.closest('.feature-compact-btn');
-        
-        // Only navigate if NOT clicking interactive elements
-        if (!isInteractiveElement) {
-            openProductPage(product.id, product.title);
-        }
-    });
-    
-    return card;
+    // Only navigate if NOT clicking interactive elements
+    if (!isInteractiveElement) {
+      openProductPage(product.id, product.title);
+    }
+  });
+  
+  return card;
 }
+
+// FIXED: Generate rating stars HTML
+function generateRatingStars(rating) {
+  // Convert rating to number if it's a string
+  const numRating = typeof rating === 'string' ? parseFloat(rating) : rating;
+  
+  // Default rating if not provided or invalid
+  if (!numRating || numRating === 0 || isNaN(numRating)) {
+    return ''; // Don't show rating if not available
+  }
+  
+  const fullStars = Math.floor(numRating);
+  const hasHalfStar = numRating % 1 >= 0.5;
+  const emptyStars = 5 - fullStars - (hasHalfStar ? 1 : 0);
+  
+  let starsHTML = '<div class="product-rating">';
+  starsHTML += '<div class="rating-stars">';
+  
+  // Full stars
+  for (let i = 0; i < fullStars; i++) {
+    starsHTML += '<i class="fas fa-star"></i>';
+  }
+  
+  // Half star
+  if (hasHalfStar) {
+    starsHTML += '<i class="fas fa-star-half-alt"></i>';
+  }
+  
+  // Empty stars
+  for (let i = 0; i < emptyStars; i++) {
+    starsHTML += '<i class="far fa-star empty"></i>';
+  }
+  
+  starsHTML += '</div>';
+  starsHTML += `<span class="rating-value">${numRating.toFixed(1)}</span>`;
+  starsHTML += '<span class="rating-max">/5</span>';
+  starsHTML += '</div>';
+  
+  return starsHTML;
+}
+
 
 
 
