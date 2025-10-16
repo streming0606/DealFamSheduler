@@ -911,6 +911,18 @@ class HorizontalDealsScroller {
     }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
 // FIXED Loot Deals Scroller
 class LootDealsScroller {
     constructor() {
@@ -927,8 +939,8 @@ class LootDealsScroller {
         
         this.isHorizontalMode = true;
         this.scrollAmount = 300;
-        this.maxHorizontalItems = 8;
-        this.currentPriceLimit = 500;
+        this.maxHorizontalItems = 25;
+        this.currentPriceLimit = 1000;
         this.displayedLootProducts = 0;
         this.lootProductsPerPage = 12;
         this.initialized = false;
