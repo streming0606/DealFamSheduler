@@ -224,9 +224,9 @@ function createProductCard(product, index = 0) {
         <a href="#" class="deal-btn" onclick="openProductPage('${product.id}', '${product.title}'); return false;" rel="noopener noreferrer">
           <div>
             <div class="deal-btn-text">
-              <i class="fas fa-bolt"></i> View Deal Details
+              Get This Deal
             </div>
-            <div class="deal-btn-subtext">Save Big Today</div>
+            <div class="deal-btn-subtext">      </div>
           </div>
         </a>
       </div>
