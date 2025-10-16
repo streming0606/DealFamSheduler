@@ -467,40 +467,162 @@
 
 <!-- Hero Banner Section with Slider -->
 <section id="home" class="hero">
-  <div class="hero-slider">
-    <div class="banner-container">
-      <!-- Banner Slide Example -->
-      <div class="banner-slide active">
-        <div class="banner-image">
-          <img src="images/banners/banner-1.jpg" alt="Today's Best Deals" loading="eager">
-        </div>
-        <div class="banner-content">
-          <div class="container">
-            <div class="banner-text">
-              <h2 class="banner-title">
-                <span class="fire-emoji">🔥</span>
-                Today's Mega Sale
-                <span class="deal-badge">Up to 80% OFF</span>
-              </h2>
-              <p class="banner-subtitle">
-                Discover amazing discounts on Electronics, Fashion & more
-              </p>
-              <div class="banner-cta">
-                <button class="btn-primary" onclick="scrollToDeals()">
-                  <i class="fas fa-bolt"></i> Shop Now
-                </button>
-                <button class="btn-secondary" onclick="scrollToCategories()">
-                  <i class="fas fa-th-large"></i> Browse Categories
-                </button>
-              </div>
+    <div class="hero-slider">
+        <div class="banner-container">
+          
+            <!-- Banner 1 -->
+            <div class="banner-slide active">
+                <div class="banner-image">
+                    <img src="images/banners/banner-1.jpg" alt="Today's Best Deals" loading="eager">
+                </div>
+              <!-- <div class="banner-overlay"></div>
+                <div class="banner-content">
+                    <div class="container">
+                        <div class="banner-text">
+                            <h2 class="banner-title">
+                                <span class="fire-emoji">🔥</span>
+                                Today's Mega Sale
+                                <span class="deal-badge">Up to 80% OFF</span>
+                            </h2>
+                            <p class="banner-subtitle">Discover amazing discounts on Electronics, Fashion & more</p>
+                            <div class="banner-stats">
+                                <div class="stat-item">
+                                    <span class="stat-number" id="total-deals">0</span>
+                                    <span class="stat-label">Active Deals</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-number">24/7</span>
+                                    <span class="stat-label">Updates</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-number">80%</span>
+                                    <span class="stat-label">Max Savings</span>
+                                </div>
+                            </div>
+                            <div class="banner-cta">
+                                <button class="btn-primary" onclick="scrollToDeals()">
+                                    <i class="fas fa-bolt"></i>
+                                    Shop Now
+                                </button>
+                                <button class="btn-secondary" onclick="scrollToCategories()">
+                                    <i class="fas fa-th-large"></i>
+                                    Browse Categories
+                                </button>
+                            </div>
+                        </div>
+                    </div>-->
+                </div>
             </div>
-          </div>
+
+            
+
+
+<!-- Banner 2 -->
+            <div class="banner-slide">
+                <div class="banner-image">
+                    <img src="images/banners/banner-2.jpg" alt="Electronics Sale" loading="lazy">
+                </div>
+
+
+                <!-- <div class="banner-overlay"></div>
+                <div class="banner-content">
+                    <div class="container">
+                        <div class="banner-text">
+                            <h2 class="banner-title">
+                                <span class="tech-emoji">📱</span>
+                                Electronics Festival
+                                <span class="deal-badge">Starting ₹99</span>
+                            </h2>
+                            <p class="banner-subtitle">Smartphones, Laptops, Gadgets at unbeatable prices</p>
+                            <div class="banner-cta">
+                                <button class="btn-primary" onclick="filterByCategory('electronics')">
+                                    <i class="fas fa-mobile-alt"></i>
+                                    Explore Electronics
+                                </button>
+                            </div>
+                        </div>
+                    </div>-->
+
+
+                </div>
+            </div>
+
+            <!-- Banner 3 -->
+            <div class="banner-slide">
+                <div class="banner-image">
+                    <img src="images/banners/banner-3.jpg" alt="Fashion Sale" loading="lazy">
+                </div>
+
+
+
+                <!-- <div class="banner-overlay"></div>
+                <div class="banner-content">
+                    <div class="container">
+                        <div class="banner-text">
+                            <h2 class="banner-title">
+                                <span class="fashion-emoji">👗</span>
+                                Fashion Fiesta
+                                <span class="deal-badge">Min 50% OFF</span>
+                            </h2>
+                            <p class="banner-subtitle">Trendy clothes, shoes & accessories for everyone</p>
+                            <div class="banner-cta">
+                                <button class="btn-primary" onclick="filterByCategory('fashion')">
+                                    <i class="fas fa-tshirt"></i>
+                                    Shop Fashion
+                                </button>
+                            </div>
+                        </div>
+                    </div>-->
+                </div>
+            </div>
+
+            <!-- Banner 4 -->
+            <div class="banner-slide">
+                <div class="banner-image">
+                    <img src="images/banners/banner-4.webp" alt="Home & Living" loading="lazy">
+                </div>
+               <!-- <div class="banner-overlay"></div>
+                <div class="banner-content">
+                    <div class="container">
+                        <div class="banner-text">
+                            <h2 class="banner-title">
+                                <span class="home-emoji">🏠</span>
+                                Home Makeover
+                                <span class="deal-badge">Up to 70% OFF</span>
+                            </h2>
+                            <p class="banner-subtitle">Transform your space with furniture & decor deals</p>
+                            <div class="banner-cta">
+                                <button class="btn-primary" onclick="filterByCategory('home')">
+                                    <i class="fas fa-home"></i>
+                                    Shop Home
+                                </button>
+                            </div>
+                        </div>
+                    </div>-->
+                </div>
+            </div>
         </div>
-      </div>
-      <!-- Repeat for other slides -->
+
+         <!--Banner Navigation -->
+        <div class="banner-navigation">
+            <button class="banner-nav prev" id="prev-banner">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="banner-nav next" id="next-banner">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+
+        <!-- Banner Dots-->
+        <div class="banner-dots">
+            <button class="dot active" data-slide="0"></button>
+            <button class="dot" data-slide="1"></button>
+            <button class="dot" data-slide="2"></button>
+            <button class="dot" data-slide="3"></button>
+        </div>
     </div>
-  </div>
 </section>
+
 
 
 
