@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-10-15T21:19:55.846566+05:30",
-  "total_products": 147,
+  "last_updated": "2025-10-16T10:17:50.267133+05:30",
+  "total_products": 149,
   "products": [
+    {
+      "id": "product_morning_20251016_044750",
+      "title": "Fujifilm Instax Mini Picture Format Film (20 Shots)",
+      "image": "https://m.media-amazon.com/images/I/61cpxtAOkFL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0000C73CQ?tag=gadgetvill09f-21",
+      "price": "\u20b9Special Price",
+      "rating": 4.4,
+      "category": "electronics",
+      "asin": "B0000C73CQ",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-16T10:17:50.267103+05:30",
+      "session_type": "morning",
+      "link_index": 100
+    },
+    {
+      "id": "product_morning_20251016_044748",
+      "title": "Hanutech Universal 1CH RS232/RS422/RS485 Optical Converter, Serial Data to Optical Fiber Converter, Interface Asynchrono",
+      "image": "https://m.media-amazon.com/images/I/41DQBuzH-PL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B09VC9FPXZ?tag=gadgetvill09f-21",
+      "price": "\u20b96,317",
+      "rating": 5.0,
+      "category": "electronics",
+      "asin": "B09VC9FPXZ",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-16T10:17:48.222469+05:30",
+      "session_type": "morning",
+      "link_index": 100
+    },
     {
       "id": "product_night_20251015_154955",
       "title": "Xiaomi Mi 6A Fast Charging Cable 120W USB C PD Hypercharge Power Cord Quick Charge Compatible with Mi, Redmi, iPhone 15 ",
