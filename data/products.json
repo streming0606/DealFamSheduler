@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-10-16T21:20:38.633609+05:30",
-  "total_products": 154,
+  "last_updated": "2025-10-17T10:17:33.002509+05:30",
+  "total_products": 156,
   "products": [
+    {
+      "id": "product_morning_20251017_044733",
+      "title": "DIGIROOT iPad Pencil?NO.1 Sales in US&EU,13 Mins Fast Charge Stylus Pen for iPad with Palm Rejection for 2018-2025 iPad ",
+      "image": "https://m.media-amazon.com/images/I/51UBr3cmxOL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CP914DZD?tag=gadgetvill09f-21",
+      "price": "\u20b91,138",
+      "rating": 4.4,
+      "category": "electronics",
+      "asin": "B0CP914DZD",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-17T10:17:33.002475+05:30",
+      "session_type": "morning",
+      "link_index": 108
+    },
+    {
+      "id": "product_morning_20251017_044731",
+      "title": "Cubiker Engineered Wood Multipurpose Foldable Laptop Table with Cup Holder | Table Home Study Writing Table, Foldable an",
+      "image": "https://m.media-amazon.com/images/I/61RBn+M0j3L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0D53YGZNK?tag=gadgetvill09f-21",
+      "price": "\u20b9448",
+      "rating": 4.0,
+      "category": "electronics",
+      "asin": "B0D53YGZNK",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-17T10:17:31.019697+05:30",
+      "session_type": "morning",
+      "link_index": 108
+    },
     {
       "id": "product_night_20251016_155038",
       "title": "Portronics Conch Theta C in Ear Type C Wired Earphones with in Line HD Mic, Powerful Audio, 14.2mm Driver, Unique Earbud",
