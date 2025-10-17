@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-10-17T13:20:04.173655+05:30",
-  "total_products": 158,
+  "last_updated": "2025-10-17T18:38:11.523687+05:30",
+  "total_products": 160,
   "products": [
+    {
+      "id": "product_morning_20251017_130811",
+      "title": "Noise Twist Round dial Smart Watch with Bluetooth Calling, 1.38\" TFT Display, up-to 7 Days Battery, 100+ Watch Faces, IP",
+      "image": "https://m.media-amazon.com/images/I/61-vRq2ulOL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0BJ72WZQ7?tag=gadgetvill09f-21",
+      "price": "\u20b91,099",
+      "rating": 3.9,
+      "category": "fashion",
+      "asin": "B0BJ72WZQ7",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-17T18:38:11.523660+05:30",
+      "session_type": "morning",
+      "link_index": 112
+    },
+    {
+      "id": "product_morning_20251017_130809",
+      "title": "BARROT TV & Laptop Screen Cleaner (500ml) | Designed for LED/OLED/QLED/Plasma/LCD Displays | New Non-Alcohol Formula, An",
+      "image": "https://m.media-amazon.com/images/I/51xOr5Y806L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0BXPVJF2Y?tag=gadgetvill09f-21",
+      "price": "\u20b9379",
+      "rating": 4.3,
+      "category": "electronics",
+      "asin": "B0BXPVJF2Y",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-17T18:38:09.700886+05:30",
+      "session_type": "morning",
+      "link_index": 112
+    },
     {
       "id": "product_afternoon_20251017_075004",
       "title": "Cello Whitemate Whiteboard BoldMarkers | Set of 6 | Assorted Ink Colours | Whiteboard Marker with Easily Erasable Ink | ",
