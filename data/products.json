@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-10-17T18:38:11.523687+05:30",
-  "total_products": 160,
+  "last_updated": "2025-10-17T21:20:30.527614+05:30",
+  "total_products": 162,
   "products": [
+    {
+      "id": "product_night_20251017_155030",
+      "title": "Panasonic CR-2032/5BE Lithium Coin Battery - Pack of 5",
+      "image": "https://m.media-amazon.com/images/I/71veSubNjuL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B00LVMTA2A?tag=gadgetvill09f-21",
+      "price": "\u20b9195",
+      "rating": 4.4,
+      "category": "electronics",
+      "asin": "B00LVMTA2A",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-17T21:20:30.527585+05:30",
+      "session_type": "night",
+      "link_index": 114
+    },
+    {
+      "id": "product_night_20251017_155028",
+      "title": "KRESHU Antislip 300x800x2 mm Gaming 3D Mousepad Extended Large Non Slip Desk Mat and Keyboard Mat XXL Gaming Keyboard Ma",
+      "image": "https://m.media-amazon.com/images/I/71ig4MhoV-L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FC2BQHCR?tag=gadgetvill09f-21",
+      "price": "\u20b9474",
+      "rating": 4.5,
+      "category": "electronics",
+      "asin": "B0FC2BQHCR",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-17T21:20:28.117658+05:30",
+      "session_type": "night",
+      "link_index": 114
+    },
     {
       "id": "product_morning_20251017_130811",
       "title": "Noise Twist Round dial Smart Watch with Bluetooth Calling, 1.38\" TFT Display, up-to 7 Days Battery, 100+ Watch Faces, IP",
