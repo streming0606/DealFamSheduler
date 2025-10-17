@@ -1,21 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-887DNYMLDD"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-887DNYMLDD');
-</script>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-887DNYMLDD"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-887DNYMLDD');
+    </script>
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title id="product-title">Exclusive Deal - Thrift Zone</title>
 
-    <!-- General CSS Matching Main Website -->
+    <!-- CSS Files -->
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/components.css" />
     <link rel="stylesheet" href="css/responsive.css" />
@@ -25,111 +24,69 @@
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
 
-    <!-- Meta Tags for SEO -->
-    <meta
-      name="description"
-      id="product-meta-description"
-      content="Amazing deals and exclusive offers at Thrift Zone - Your smart shopping hub"
-    />
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/logo/favicon.png">
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" id="product-meta-description" content="Amazing deals and exclusive offers at Thrift Zone - Your smart shopping hub" />
     <meta name="robots" content="index, follow" />
     <meta property="og:type" content="product" />
     <meta property="og:site_name" content="Thrift Zone" />
+    <meta property="og:title" id="og-title" content="Exclusive Deal - Thrift Zone" />
+    <meta property="og:description" id="og-description" content="Amazing deals at Thrift Zone" />
+    <meta property="og:image" id="og-image" content="" />
+    <meta property="og:url" id="og-url" content="" />
+    <meta name="twitter:card" content="summary_large_image" />
 </head>
 <body>
 
-
-
-
-
-
-<!-- Enhanced Header with Auth 
-  <link rel="icon" type="image/png" href="images/logo/favicon.png">-->
+<!-- Header -->
 <header class="header">
     <div class="container">
-
-        <!-- Mobile Menu Toggle -->
         <button class="mobile-menu-toggle" id="mobile-menu-toggle">
             <span></span>
             <span></span>
             <span></span>
         </button>
 
-        <!-- Logo Section -->
         <div class="logo">
-          <img src="images/logo/logo.png" alt="Thrift Zone" class="logo-icon">
-           <!-- <div class="logo-text">
-                <h1>Thrift Maal</h1>
-                <span class="tagline">Save Every Time</span>
-            </div>-->
+            <img src="images/logo/logo.png" alt="Thrift Zone" class="logo-icon">
         </div>
 
+        <div class="search-container">
+            <div class="search-box">
+                <input type="text" id="search-input" placeholder="Search for deals, products..." autocomplete="off">
+                <button type="submit" class="search-btn" id="search-btn">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+            <div class="search-suggestions" id="search-suggestions"></div>
+        </div>
 
-
-      <!-- enhance Search Bar-->
-<div class="search-container">
-    <div class="search-box">
-        <input type="text" 
-               id="search-input" 
-               placeholder="Search for deals, products..." 
-               autocomplete="off">
-       <!-- <button type="button" id="voice-search-btn" class="voice-btn" title="Voice Search">
-            <i class="fas fa-microphone"></i>
-        </button>-->
-        <button type="submit" class="search-btn" id="search-btn">
-            <i class="fas fa-search"></i>
-        </button>
-    </div>
-    <div class="search-suggestions" id="search-suggestions"></div>
-</div>
-
-
-
-      
-        <!-- Navigation -->
         <nav class="nav">
             <a href="/coupons" class="nav-link coupon-cta">Coupons</a>
-            <!--<a href="#categories" class="nav-link">Categories</a>-->
-            <a href="/community" class="mobile-nav-link highlight">community</a>
-           <!-- <a href="#deals" class="nav-link"> Deals Alert</a>-->
-            <a href="../#deals" class="mobile-nav-link">End Soon</a>
-
-          <a href="/deal-finder" class="nav-link deal-finder-link">
-        <i class="fas fa-search-dollar"></i>
-        Deal Finder
-        
-    </a>
+            <a href="/community" class="nav-link highlight">Community</a>
+            <a href="../#deals" class="nav-link">End Soon</a>
+            <a href="/deal-finder" class="nav-link deal-finder-link">
+                <i class="fas fa-search-dollar"></i> Deal Finder
+            </a>
         </nav>
-        
+    </div>
 
-        
-            
-
-             
-        
-
-    <!-- Mobile Navigation (updated) -->
+    <!-- Mobile Navigation -->
     <div class="mobile-nav" id="mobile-nav">
         <div class="mobile-nav-header">
             <h3>MENU</h3>
             <button class="mobile-nav-close">&times;</button>
         </div>
         <div class="mobile-nav-content">
-
-
-            <!-- Mobile Auth Section -->
             <div class="mobile-auth" id="mobile-auth"></div>
-                <div class="mobile-auth-buttons" id="mobile-auth-buttons"></div>
-
-
-  
-
-
-<!-- Navigation Links -->
-
+            <div class="mobile-auth-buttons" id="mobile-auth-buttons"></div>
+            
             <a href="index.html" class="mobile-nav-link">
                 <i class="fas fa-home"></i> Home
             </a>
-            <a href="deal-finder.html" class="mobile-nav-link highlight active">
+            <a href="deal-finder.html" class="mobile-nav-link highlight">
                 <i class="fas fa-search-dollar"></i> Deal Finder
             </a>
             <a href="coupons.html" class="mobile-nav-link highlight">
@@ -144,359 +101,352 @@
             <a href="blog/" class="mobile-nav-link highlight">
                 <i class="fas fa-blog"></i> Blog
             </a>
-
-
             <div class="mobile-nav-divider"></div>
-
-
+        </div>
+    </div>
 </header>
 
-
-
-
-
-
-
-
-    <!-- Main Product Content -->
-    <main class="product-main">
-        <div class="container">
-            <!-- Loading State -->
-            <div id="product-loading" class="product-loading">
-                <div class="loading-container">
-                    <div class="loading-spinner">
-                        <div class="spinner-ring"></div>
-                        <div class="spinner-ring"></div>
-                        <div class="spinner-ring"></div>
-                    </div>
-                    <h3 class="loading-title">Finding Your Perfect Deal...</h3>
-                    <p class="loading-subtitle">🔍 Searching through thousands of offers</p>
-                </div>
-            </div>
-
-            <!-- Product Not Found -->
-            <div id="product-not-found" class="product-not-found" style="display: none;">
-                <div class="not-found-container">
-                    <div class="not-found-icon">
-                        <i class="fas fa-search"></i>
-                        <div class="not-found-animation">❌</div>
-                    </div>
-                    <h2>Oops! Deal Not Available</h2>
-                    <p>This amazing deal might have expired or been claimed by other smart shoppers!</p>
-                    <div class="not-found-actions">
-                        <button class="btn-primary" onclick="window.location.href='index.html'">
-                            <i class="fas fa-home"></i> Explore More Deals
-                        </button>
-                        <button class="btn-secondary" onclick="history.back()">
-                            <i class="fas fa-arrow-left"></i> Go Back
-                        </button>
+<!-- Main Product Content -->
+<main class="product-main">
+    <div class="container">
+        
+        <!-- Loading State with Skeleton -->
+        <div id="product-loading" class="product-loading">
+            <div class="skeleton-container">
+                <div class="skeleton-breadcrumb"></div>
+                <div class="skeleton-grid">
+                    <div class="skeleton-image"></div>
+                    <div class="skeleton-info">
+                        <div class="skeleton-title"></div>
+                        <div class="skeleton-price"></div>
+                        <div class="skeleton-button"></div>
                     </div>
                 </div>
             </div>
+        </div>
 
-            <!-- Product Details -->
-            <div id="product-details" class="product-details" style="display: none;">
-                <!-- Breadcrumbs -->
-                <nav class="breadcrumbs">
-                    <div class="breadcrumb-container">
-                        <a href="index.html" class="breadcrumb-link">
-                            <i class="fas fa-home"></i> Home
-                        </a>
-                        <span class="breadcrumb-separator"><i class="fas fa-chevron-right"></i></span>
-                        <span class="breadcrumb-category" id="breadcrumb-category">Category</span>
-                        <span class="breadcrumb-separator"><i class="fas fa-chevron-right"></i></span>
-                        <span class="breadcrumb-current" id="breadcrumb-product">Product</span>
+        <!-- Product Not Found -->
+        <div id="product-not-found" class="product-not-found" style="display: none;">
+            <div class="not-found-container">
+                <div class="not-found-icon">
+                    <i class="fas fa-search"></i>
+                    <div class="not-found-animation">❌</div>
+                </div>
+                <h2>Oops! Deal Not Available</h2>
+                <p>This amazing deal might have expired or been claimed by other smart shoppers!</p>
+                <div class="not-found-actions">
+                    <button class="btn-primary" onclick="window.location.href='index.html'">
+                        <i class="fas fa-home"></i> Explore More Deals
+                    </button>
+                    <button class="btn-secondary" onclick="history.back()">
+                        <i class="fas fa-arrow-left"></i> Go Back
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product Details -->
+        <div id="product-details" class="product-details" style="display: none;">
+            
+            <!-- Breadcrumbs -->
+            <nav class="breadcrumbs">
+                <div class="breadcrumb-container">
+                    <a href="index.html" class="breadcrumb-link">
+                        <i class="fas fa-home"></i> Home
+                    </a>
+                    <span class="breadcrumb-separator"><i class="fas fa-chevron-right"></i></span>
+                    <span class="breadcrumb-category" id="breadcrumb-category">Category</span>
+                    <span class="breadcrumb-separator"><i class="fas fa-chevron-right"></i></span>
+                    <span class="breadcrumb-current" id="breadcrumb-product">Product</span>
+                </div>
+            </nav>
+
+            <!-- Deal Alert Banner -->
+            <div class="deal-alert-banner">
+                <div class="alert-content">
+                    <div class="alert-icon"></div>
+                    <div class="alert-text">
+                        <strong>Lightning Deal Alert!</strong>
+                        <span>Limited time offer - Grab it before it's gone!</span>
                     </div>
-                </nav>
-
-                <!-- Deal Alert Banner -->
-                <div class="deal-alert-banner">
-                    <div class="alert-content">
-                        <div class="alert-icon"><i class="fas fa-bolt"></i></div>
-                        <div class="alert-text">
-                            <strong>⚡ Lightning Deal Alert!</strong>
-                            <span>Limited time offer - Grab it before it's gone!</span>
-                        </div>
-                        <!--<div class="alert-timer" id="alert-timer">⏰ <span id="alert-countdown">Loading...</span></div>-->
+                    <div class="live-viewers">
+                        <i class="fas fa-eye"></i>
+                        <span id="viewer-count">0</span> viewing now
                     </div>
                 </div>
-                <!-- Product Content Grid -->
-                <div class="product-content-grid">
-                    <!-- Left: Product Images & Badges -->
-                    <div class="product-image-section">
-                        <div class="product-image-container">
-                            <div class="product-badges">
-                                <div class="badge badge-hot" id="discount-badge">50% OFF</div>
-                                <div class="badge badge-limited" id="limited-time-badge" style="display: none;">
-                                    <i class="fas fa-clock"></i> Limited Time
-                                </div>
-                                <div class="badge badge-trending" id="trending-badge" style="display: none;">
-                                    <i class="fas fa-fire"></i> Trending
-                                </div>
-                                <div class="badge badge-stock" id="stock-badge" style="display: none;">
-                                    <i class="fas fa-exclamation"></i> Few Left!
-                                </div>
+            </div>
+
+            <!-- Price Fluctuation Warning -->
+            <div class="price-warning-banner">
+                <div class="warning-icon">⚠️</div>
+                <div class="warning-text">
+                    <strong>Price Alert:</strong> If price fluctuates, this deal expires immediately! Check other deals or buy now to lock this price.
+                </div>
+            </div>
+
+            <!-- Product Content Grid -->
+            <div class="product-content-grid">
+                
+                <!-- Left: Product Images -->
+                <div class="product-image-section">
+                    <div class="product-image-container">
+
+
+                       <!-- <div class="product-badges">
+                            <div class="badge badge-hot" id="discount-badge">50% OFF</div>
+                            <div class="badge badge-limited" id="limited-time-badge" style="display: none;">
+                                <i class="fas fa-clock"></i> Limited Time
                             </div>
-                            <div class="product-image-wrapper">
-                                <img id="product-image" src="" alt="" class="product-image" loading="eager" />
-                                <div class="image-zoom-overlay">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
+                            <div class="badge badge-trending" id="trending-badge" style="display: none;">
+                                <i class="fas fa-fire"></i> Trending
                             </div>
-                            <div class="trust-indicators">
-                                <div class="trust-item"><i class="fas fa-shield-alt"></i> Verified Deal</div>
-                                <div class="trust-item"><i class="fab fa-amazon"></i> Amazon Verified</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Right: Product Details -->
-                    <div class="product-info-section">
-                        <div class="product-header">
+                        </div>-->
 
 
-                            <div class="product-category-tag" id="product-category">
-                                <i class="fas fa-tag"></i>
-                                <span class="category-name"> Category</span>
-
-
-
-                            </div>
-                            <h1 id="product-name" class="product-name">Amazing Product Deal</h1>
-                            <div class="product-social-proof">
-                                <div class="rating-section">
-                                    <div class="stars">
-                                        <i class="fas fa-star"></i><i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i><i class="fas fa-star"></i>
-                                        <i class="fas fa-star-half-alt"></i>
-                                    </div>
-                                    <span class="rating-text">4.5/5</span>
-                                    <span class="rating-count">(2,847 reviews)</span>
-                                </div>
-                                <div class="engagement-stats">
-                                    <div class="stat-item"><i class="fas fa-heart"></i><span id="like-count">245</span></div>
-                                    <div class="stat-item"><i class="fas fa-comment"></i><span id="comment-count">67</span></div>
-                                    <div class="stat-item"><i class="fas fa-share"></i><span>89</span></div>
-                                </div>
+                        <div class="product-image-wrapper" id="image-zoom-container">
+                            <img id="product-image" 
+                                 src="" 
+                                 alt="" 
+                                 class="product-image" 
+                                 loading="lazy" />
+                            <div class="image-zoom-lens" id="zoom-lens"></div>
+                            <div class="zoom-hint">
+                                <i class="fas fa-search-plus"></i> Hover to zoom
                             </div>
                         </div>
 
+                        <!-- Zoom Result Container -->
+                        <div id="zoom-result" class="zoom-result"></div>
 
-
-                        <!-- Buy Now Button -->
-                        <div class="product-actions-mega">
-                            <button id="buy-now-btn" class="mega-buy-button">
-                                <div class="button-content">
-                                    <div class="button-icon"><i class="fab fa-amazon"></i></div>
-                                    <div class="button-text">
-                                        <span class="main-text">Buy Now</span>
-                                       <!-- <span class="sub-text">Secure checkout in 1-click</span>-->
-                                    </div>
-                                    <div class="button-arrow"><i class="fas fa-bolt"></i></div>
-                                </div>
-                                <div class="button-pulse"></div>
-                            </button>
-
-
-
-
-
-
-<!-- Social Engagement -->
-                        <div class="social-engagement-section">
-                            <div class="engagement-header"><h4> </h4></div>
-
-                            <div class="engagement-buttons">
-                                <button class="engagement-btn like-btn" onclick="toggleLike()"><i class="far fa-thumbs-up"></i><span class="count" id="like-display">245</span><span class="label">Likes</span></button>
-                                <button class="engagement-btn comment-btn" onclick="showComments()"><i class="far fa-comment"></i><span class="count" id="comment-display">67</span><span class="label">Comments</span></button>
+                        <div class="trust-indicators">
+                            <div class="trust-item">
+                                <i class="fas fa-shield-alt"></i> Verified Deal
+                            </div>
+                            <div class="trust-item">
+                                <i class="fab fa-amazon"></i> Amazon Verified
                             </div>
                         </div>
                     </div>
                 </div>
 
-
-
-
-
-
-
-
-                        <!-- Pricing -->
-                        <div class="pricing-mega-section">
-                            <div class="price-container">
-                                <div class="current-price-section">
-                                    <span class="currency-symbol">₹</span>
-                                    <span id="current-price" class="current-price">999</span>
-                                    <div class="price-info">
-                                        <span class="price-label">Deal Price</span>
-                                        <div class="price-trend">
-                                            <i class="fas fa-arrow-down"></i>
-                                            <span>Lowest ever!</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="original-price-section">
-                                    <span class="original-price-label">MRP:</span>
-                                    <span id="original-price" class="original-price">₹1,999</span>
-                                    <div class="discount-info">
-                                        <span id="discount-percent" class="discount-percent">50% OFF</span>
-                                        <div class="savings-amount" id="savings-amount">You Save ₹1,000</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="deal-timer-mega" id="deal-timer">
-
-                                <!-- <div class="timer-header">
-                                    <div class="timer-icon"><i class="fas fa-clock"></i></div>
-                                    <div class="timer-text">
-                                        <h4>⚡ Deal Ends Soon!</h4>
-                                        <p>Don't miss this limited-time offer</p>
-                                    </div> -->
-
-                                </div>
-                                <div class="timer-display" id="timer-display">
-                                    <div class="time-unit"><span class="time-value" id="hours">12</span><span class="time-label">Hours</span></div>
-                                    <div class="time-separator">:</div>
-                                    <div class="time-unit"><span class="time-value" id="minutes">34</span><span class="time-label">Minutes</span></div>
-                                    <div class="time-separator">:</div>
-                                    <div class="time-unit"><span class="time-value" id="seconds">56</span><span class="time-label">Seconds</span></div>
-                                </div>
-                            </div>
+                <!-- Right: Product Info -->
+                <div class="product-info-section">
+                    <div class="product-header">
+                        <div class="product-category-tag" id="product-category">
+                            <i class="fas fa-tag"></i>
+                            <span class="category-name">Category</span>
                         </div>
-
-                        <!-- Key Features 
-                        <div class="product-features-grid">
-                            <div class="feature-highlight">
-                                <div class="feature-icon"><i class="fas fa-shipping-fast"></i></div>
-                                <div class="feature-content"><h4>Free Delivery</h4><p>Same day in major cities</p></div>
-                            </div>
-                            <div class="feature-highlight">
-                                <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
-                                <div class="feature-content"><h4>Secure Payment</h4><p>100% buyer protection</p></div>
-                            </div>
-                            <div class="feature-highlight">
-                                <div class="feature-icon"><i class="fas fa-undo"></i></div>
-                                <div class="feature-content"><h4>Easy Returns</h4><p>30-day return policy</p></div>
-                            </div>
-                            <div class="feature-highlight">
-                                <div class="feature-icon"><i class="fas fa-award"></i></div>
-                                <div class="feature-content"><h4>Quality Assured</h4><p>Genuine products only</p></div>
-                            </div>
-                        </div>-->
-
-                        <!-- Buy Now Button 
-                        <div class="product-actions-mega">
-                            <button id="buy-now-btn" class="mega-buy-button">
-                                <div class="button-content">
-                                    <div class="button-icon"><i class="fab fa-amazon"></i></div>
-                                    <div class="button-text">
-                                        <span class="main-text">Buy Now on Amazon</span>
-                                        <span class="sub-text">Secure checkout in 1-click</span>
-                                    </div>
-                                    <div class="button-arrow"><i class="fas fa-bolt"></i></div>
-                                </div>
-                                <div class="button-pulse"></div>
-                            </button>-->
-
-                            <!-- Secondary Actions 
-                            <div class="secondary-actions-grid">
-                                <button class="action-btn wishlist-btn" onclick="toggleWishlist()"><i class="far fa-heart"></i><span>Save for Later</span></button>
-                                <button class="action-btn share-btn" onclick="shareProduct()"><i class="fas fa-share-alt"></i><span>Share Deal</span></button>
-                                <button class="action-btn compare-btn"><i class="fas fa-balance-scale"></i><span>Compare</span></button>
-                            </div>
-                        </div>-->
-
+                        
+                        <h1 id="product-name" class="product-name">Amazing Product Deal</h1>
                         
 
-                <!-- Product Highlights ;
-                <div class="product-highlights-section">
-                    <h3>✨ Why This Deal is Amazing</h3>
-                    <div class="highlights-grid">
-                        <div class="highlight-card"><div class="highlight-icon">🏆</div><h4>Best Price Guaranteed</h4><p>We monitor prices 24/7 to ensure you get the lowest price available</p></div>
-                        <div class="highlight-card"><div class="highlight-icon">⚡</div><h4>Lightning Fast Delivery</h4><p>Fast delivery available in most cities</p></div>
-                        <div class="highlight-card"><div class="highlight-icon">🛡️</div><h4>Authentic Products</h4><p>Products sourced from trusted sellers</p></div>
-                    </div>
-                </div>-->
+                        <!--<div class="product-social-proof">
+                            <div class="rating-section">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="rating-text">4.5/5</span>
+                                <span class="rating-count">(2,847 reviews)</span>
+                            </div>
+                        </div>-->
 
-                <!-- Related Products 
-                <div class="related-products-section" id="related-products-section">
-                    <div class="related-header">
-                        <h3>🔥 More Amazing Deals Like This</h3>
-                        <p>Hand-picked deals you might love</p>
+
                     </div>
-                    <div class="related-products-grid" id="related-products-grid">
-                        <div class="related-loading">
-                            <div class="loading-spinner"><div class="spinner-ring"></div></div>
-                            <p>Loading similar deals...</p>
+
+                    <!-- Pricing Section -->
+                    <div class="pricing-mega-section">
+                        <div class="price-container">
+                            <div class="current-price-section">
+                                <span class="currency-symbol">₹</span>
+                                <span id="current-price" class="current-price">999</span>
+
+
+                                <!-- <div class="price-info">
+                                    <span class="price-label">Deal Price</span>
+                                    <div class="price-trend">
+                                        <i class="fas fa-arrow-down"></i>
+                                        <span>Lowest ever!</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="original-price-section">
+                                <span class="original-price-label">MRP:</span>
+                                <span id="original-price" class="original-price">₹1,999</span>
+                                <div class="discount-info">
+                                    <span id="discount-percent" class="discount-percent">50% OFF</span>
+                                    <div class="savings-amount" id="savings-amount">You Save ₹1,000</div>
+                                </div>
+                            </div>-->
+
+
+                        </div>
+
+                        <!-- Timer -->
+                        <div class="deal-timer-mega" id="deal-timer">
+                            <div class="timer-display" id="timer-display">
+                                <div class="time-unit">
+                                    <span class="time-value" id="hours">12</span>
+                                    <span class="time-label">Hours</span>
+                                </div>
+                                <div class="time-separator">:</div>
+                                <div class="time-unit">
+                                    <span class="time-value" id="minutes">34</span>
+                                    <span class="time-label">Minutes</span>
+                                </div>
+                                <div class="time-separator">:</div>
+                                <div class="time-unit">
+                                    <span class="time-value" id="seconds">56</span>
+                                    <span class="time-label">Seconds</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
-            </div>-->
-        </div>
-    </main>
 
-    <!-- Amazon Redirect Modal -->
-    <div id="redirect-modal" class="redirect-modal" style="display: none;">
-        <div class="redirect-modal-content">
-            <div class="redirect-animation">
-                <div class="amazon-logo"><i class="fab fa-amazon"></i></div>
-                <div class="redirect-arrows">
-                    <i class="fas fa-arrow-right arrow-1"></i>
-                    <i class="fas fa-arrow-right arrow-2"></i>
-                    <i class="fas fa-arrow-right arrow-3"></i>
-                </div>
-            </div>
-            <div class="redirect-content">
-                <h3>🎉 Taking You to Amazon!</h3>
-                <p>You're being redirected to complete your purchase on Amazon.in</p>
-                <div class="redirect-features">
-                    <div class="redirect-feature"><i class="fas fa-shield-alt"></i>100% Secure Payment</div>
-                    <div class="redirect-feature"><i class="fas fa-shipping-fast"></i>Fast & Free Delivery</div>
-                </div>
-                <div class="countdown-section">
-                    <div class="countdown-circle"><span id="countdown-timer">3</span></div>
-                    <p>Redirecting in <strong><span id="countdown-text">3</span> seconds</strong></p>
-                </div>
-            </div>
-        </div>
-    </div>
+                    <!-- Buy & Share Buttons -->
+                    <div class="product-actions-mega">
+                        <button id="buy-now-btn" class="mega-buy-button">
+                            <div class="button-content">
+                                <div class="button-icon"><i class="fab fa-amazon"></i></div>
+                                <div class="button-text">
+                                    <span class="main-text">Buy Now </span>
+                                </div>
+                                <div class="button-arrow"> </div>
+                            </div>
+                            <div class="button-pulse"></div>
+                        </button>
 
-    <!-- Comments Modal -->
-    <div id="comment-modal" class="comment-modal" style="display: none;">
-        <div class="comment-modal-content">
-            <div class="comment-modal-header">
-                <h3>💬 Community Comments</h3>
-                <button class="comment-modal-close" onclick="closeCommentModal()">×</button>
-            </div>
-            <div class="comment-modal-body">
-                <div class="comments-list" id="comments-list"></div>
-                <div class="comment-input-section">
-                    <div class="comment-input-wrapper">
-                        <textarea id="comment-input" class="comment-input" placeholder="Share your thoughts about this deal..."></textarea>
-                        <button class="comment-submit-btn" onclick="submitComment()"><i class="fas fa-paper-plane"></i> Post</button>
+                        <button id="share-btn" class="share-button">
+                            <i class="fas fa-share-alt"></i>
+                            <span>Share This Deal</span>
+                        </button>
                     </div>
+
+                    <!-- Product Specifications 
+                    <div class="product-specifications" id="product-specs">
+                        <h3 class="specs-title">
+                            <i class="fas fa-info-circle"></i> Product Specifications
+                        </h3>
+                        <div class="specs-grid" id="specs-content">-->
+
+                           <!--  Specifications will be loaded dynamically -->
+
+                      <!--  </div>
+                    </div>-->
+
+
                 </div>
+            </div>
+
+            <!-- Related Products Section 
+            <div class="related-products-section" id="related-products-section">
+                <div class="related-header">
+                    <h3>🔥 People Also Bought / Recently Viewed</h3>
+                    <p>Hand-picked deals you might love</p>
+                </div>
+                <div class="related-products-grid" id="related-products-grid">
+                    <!-- Skeleton loaders initially 
+                    <div class="skeleton-product-card"></div>
+                    <div class="skeleton-product-card"></div>
+                    <div class="skeleton-product-card"></div>
+                    <div class="skeleton-product-card"></div>
+                </div>
+            </div>-->
+
+        </div>
+    </div>
+</main>
+
+<!-- Sticky Mobile Buy Button -->
+<div class="sticky-mobile-buy" id="sticky-buy-mobile" style="display: none;">
+    <div class="sticky-buy-content">
+        <div class="sticky-price">
+            <span class="sticky-current-price" id="sticky-price">₹999</span>
+            <span class="sticky-original-price" id="sticky-original">₹1,999</span>
+        </div>
+        <button class="sticky-buy-btn" id="sticky-buy-btn">
+            <i class="fab fa-amazon"></i> Buy Now
+        </button>
+    </div>
+</div>
+
+<!-- Amazon Redirect Modal -->
+<div id="redirect-modal" class="redirect-modal" style="display: none;">
+    <div class="redirect-modal-content">
+        <div class="redirect-animation">
+            <div class="amazon-logo"><i class="fab fa-amazon"></i></div>
+            <div class="redirect-arrows">
+                <i class="fas fa-arrow-right arrow-1"></i>
+                <i class="fas fa-arrow-right arrow-2"></i>
+                <i class="fas fa-arrow-right arrow-3"></i>
+            </div>
+        </div>
+        <div class="redirect-content">
+            <h3>🎉 Taking You to Amazon!</h3>
+            <p>You're being redirected to complete your purchase securely</p>
+            <div class="redirect-features">
+                <div class="redirect-feature">
+                    <i class="fas fa-shield-alt"></i> 100% Secure Payment
+                </div>
+                <div class="redirect-feature">
+                    <i class="fas fa-shipping-fast"></i> Fast Delivery
+                </div>
+            </div>
+            <div class="countdown-section">
+                <div class="countdown-circle">
+                    <span id="countdown-timer">3</span>
+                </div>
+                <p>Redirecting in <strong><span id="countdown-text">3</span> seconds</strong></p>
             </div>
         </div>
     </div>
+</div>
 
+<!-- Share Modal -->
+<div id="share-modal" class="share-modal" style="display: none;">
+    <div class="share-modal-content">
+        <div class="share-modal-header">
+            <h3>📤 Share This Amazing Deal</h3>
+            <button class="share-modal-close" onclick="closeShareModal()">&times;</button>
+        </div>
+        <div class="share-modal-body">
+            <div class="share-options">
+                <button class="share-option whatsapp" onclick="shareOn('whatsapp')">
+                    <i class="fab fa-whatsapp"></i>
+                    <span>WhatsApp</span>
+                </button>
+                <button class="share-option facebook" onclick="shareOn('facebook')">
+                    <i class="fab fa-facebook"></i>
+                    <span>Facebook</span>
+                </button>
+                <button class="share-option twitter" onclick="shareOn('twitter')">
+                    <i class="fab fa-twitter"></i>
+                    <span>Twitter</span>
+                </button>
+                <button class="share-option telegram" onclick="shareOn('telegram')">
+                    <i class="fab fa-telegram"></i>
+                    <span>Telegram</span>
+                </button>
+                <button class="share-option copy" onclick="shareOn('copy')">
+                    <i class="fas fa-link"></i>
+                    <span>Copy Link</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
 
-
-
-
-
-
-
-
-
-
-<!-- Updated Footer with All Pages -->
+<!-- Footer -->
 <footer class="footer">
     <div class="container">
         <div class="footer-content">
             <div class="footer-section">
                 <div class="footer-logo">
                     <img src="images/logo/logo.png" alt="Thrift Zone">
-                    <h3>   </h3>
+                    <h3>Thrift Zone</h3>
                 </div>
                 <p>Your smart shopping companion.</p>
                 <div class="social-links">
@@ -538,23 +488,17 @@
 
         <div class="footer-bottom">
             <div class="footer-disclaimer">
-                <p>&copy; 2025 Thrift Maal. All rights reserved.</p>
+                <p>&copy; 2025 Thrift Zone. All rights reserved.</p>
                 <p class="affiliate-disclosure">
-                    <strong>Affiliate Disclosure:</strong> We may earn commission from purchases made through our links. This doesn't affect the price you pay.
+                    <strong>Affiliate Disclosure:</strong> We may earn commission from purchases made through our links.
                 </p>
             </div>
         </div>
     </div>
 </footer>
 
+<!-- JavaScript -->
+<script src="js/product.js"></script>
 
-
-
-
-
-
-
-    <!-- Script for product page -->
-    <script src="js/product.js"></script>
 </body>
-</html>"
+</html>
