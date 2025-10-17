@@ -1,535 +1,704 @@
-// Product Page JavaScript - Complete Implementation
-let currentProduct = null;
-let productTimer = null;
+// ====================================================================
+// THRIFT ZONE - CUSTOMIZED PRODUCT PAGE JAVASCRIPT
+// Features: Image Zoom, Lazy Loading, Live Viewers, Share, Sticky Buy
+// ====================================================================
 
-// Initialize product page
-document.addEventListener('DOMContentLoaded', function() {
-    const productId = getProductIdFromURL();
-    if (productId) {
-        loadProductData(productId);
-    } else {
-        showProductNotFound();
-    }
-});
+'use strict';
 
-// Get product ID from URL parameters
-function getProductIdFromURL() {
-    const urlParams = new URLSearchParams(window.location.search);
-    return urlParams.get('id') || urlParams.get('title');
-}
-
-// Load product data
-async function loadProductData(productId) {
-    try {
-        showLoadingState();
+// Product Page Module
+const ProductPage = (() => {
+    // Private variables
+    let currentProduct = null;
+    let productTimer = null;
+    let viewerInterval = null;
+    const cachedElements = {};
+    
+    // Initialize on DOM load
+    const init = () => {
+        cacheElements();
+        const productId = getProductIdFromURL();
         
-        // Load products data
-        const response = await fetch('data/products.json');
-        const data = await response.json();
-        
-        // Find product by ID or title
-        const product = data.products.find(p => 
-            p.id == productId || 
-            p.title.toLowerCase().replace(/[^a-z0-9]/g, '-') === productId
-        );
-        
-        if (product) {
-            currentProduct = product;
-            displayProduct(product);
-            loadRelatedProducts(product.category);
-            hideLoadingState();
+        if (productId) {
+            loadProductData(productId);
         } else {
             showProductNotFound();
         }
-    } catch (error) {
-        console.error('Error loading product:', error);
-        showProductNotFound();
-    }
-}
-
-// Display product information
-function displayProduct(product) {
-    // Enhanced product data
-    const enhancedData = enhanceProductData(product);
+        
+        initializeEventListeners();
+        initializeStickyBuyButton();
+    };
     
-    // Update page title and meta
-    document.title = `${product.title} - Thrift Zone`;
-    document.getElementById('product-meta-description').content = 
-        `${product.title} - Amazing deals and discounts. Save big on ${product.category} products at Thrift Zone.`;
+    // Cache DOM elements
+    const cacheElements = () => {
+        cachedElements.productLoading = document.getElementById('product-loading');
+        cachedElements.productDetails = document.getElementById('product-details');
+        cachedElements.productNotFound = document.getElementById('product-not-found');
+        cachedElements.productImage = document.getElementById('product-image');
+        cachedElements.stickyBuyMobile = document.getElementById('sticky-buy-mobile');
+        cachedElements.buyButton = document.getElementById('buy-now-btn');
+        cachedElements.stickyBuyBtn = document.getElementById('sticky-buy-btn');
+        cachedElements.shareBtn = document.getElementById('share-btn');
+    };
     
-    // Breadcrumbs
-    document.getElementById('breadcrumb-category').textContent = 
-        product.category.charAt(0).toUpperCase() + product.category.slice(1);
-    document.getElementById('breadcrumb-product').textContent = 
-        product.title.substring(0, 30) + (product.title.length > 30 ? '...' : '');
+    // Get product ID from URL
+    const getProductIdFromURL = () => {
+        const urlParams = new URLSearchParams(window.location.search);
+        return urlParams.get('id') || urlParams.get('title');
+    };
     
-    // Product image and badges
-    const productImage = document.getElementById('product-image');
-    productImage.src = product.image || 'images/placeholder.jpg';
-    productImage.alt = product.title;
+    // Load product data with retry logic
+    const loadProductData = async (productId, retries = 3) => {
+        showLoadingState();
+        
+        for (let i = 0; i < retries; i++) {
+            try {
+                const response = await fetch('data/products.json');
+                
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                
+                const data = await response.json();
+                const product = findProduct(data.products, productId);
+                
+                if (product) {
+                    currentProduct = product;
+                    await displayProduct(product);
+                    loadRelatedProducts(product.category, data.products);
+                    hideLoadingState();
+                    return;
+                } else {
+                    showProductNotFound();
+                    return;
+                }
+                
+            } catch (error) {
+                console.error(`Attempt ${i + 1} failed:`, error);
+                
+                if (i === retries - 1) {
+                    showToast('Failed to load product. Please refresh the page.');
+                    showProductNotFound();
+                }
+                
+                // Wait before retry
+                await new Promise(resolve => setTimeout(resolve, 1000 * (i + 1)));
+            }
+        }
+    };
+    
+    // Find product in data
+    const findProduct = (products, productId) => {
+        return products.find(p => 
+            p.id == productId || 
+            p.title.toLowerCase().replace(/[^a-z0-9]/g, '-') === productId
+        );
+    };
+    
+    // Display product information
+    const displayProduct = async (product) => {
+        cleanupTimers();
+        
+        // Enhanced product data
+        const enhancedData = enhanceProductData(product);
+        
+        // Update page metadata
+        updatePageMetadata(product, enhancedData);
+        
+        // Update breadcrumbs
+        updateBreadcrumbs(product);
+        
+        // Update product image with lazy loading
+        updateProductImage(product);
+        
+        // Update badges
+        updateBadges(enhancedData);
+        
+        // Update product info
+        updateProductInfo(product);
+        
+        // Update pricing
+        updatePricing(enhancedData);
+        
+        // Setup buy buttons
+        setupBuyButtons(product);
+        
+        // Initialize features
+        initializeProductTimer();
+        initializeLiveViewers();
+        initializeImageZoom();
+        
+        // Load product specifications
+        loadProductSpecifications(product);
+        
+        // Show product details
+        cachedElements.productDetails.style.display = 'block';
+        cachedElements.productDetails.classList.add('fade-in');
+    };
+    
+    // Enhance product data with calculated values
+    const enhanceProductData = (product) => {
+        const currentPriceMatch = product.price.match(/₹?([0-9,]+)/);
+        const currentPrice = currentPriceMatch ? 
+            parseInt(currentPriceMatch[1].replace(/,/g, '')) : 999;
+        
+        const markup = 1.3 + (Math.random() * 0.7);
+        const originalPrice = Math.round(currentPrice * markup);
+        const savings = originalPrice - currentPrice;
+        const discountPercent = Math.round((savings / originalPrice) * 100);
+        
+        return {
+            salePrice: currentPrice.toLocaleString('en-IN'),
+            originalPrice: originalPrice.toLocaleString('en-IN'),
+            savings: savings.toLocaleString('en-IN'),
+            discountPercent: discountPercent,
+            isLimitedTime: Math.random() > 0.6,
+            isLowStock: Math.random() > 0.7
+        };
+    };
+    
+    // Update page metadata
+    const updatePageMetadata = (product, enhancedData) => {
+        const title = `${product.title} - ${enhancedData.discountPercent}% OFF - Thrift Zone`;
+        const description = `Buy ${product.title} at ₹${enhancedData.salePrice} (was ₹${enhancedData.originalPrice}). Save ₹${enhancedData.savings} on ${product.category} products at Thrift Zone.`;
+        const currentUrl = window.location.href;
+        
+        document.title = title;
+        document.getElementById('product-title').textContent = title;
+        document.getElementById('product-meta-description').content = description;
+        
+        // Open Graph tags
+        document.getElementById('og-title')?.setAttribute('content', title);
+        document.getElementById('og-description')?.setAttribute('content', description);
+        document.getElementById('og-image')?.setAttribute('content', product.image || '');
+        document.getElementById('og-url')?.setAttribute('content', currentUrl);
+    };
+    
+    // Update breadcrumbs
+    const updateBreadcrumbs = (product) => {
+        const categoryElement = document.getElementById('breadcrumb-category');
+        const productElement = document.getElementById('breadcrumb-product');
+        
+        if (categoryElement) {
+            categoryElement.textContent = 
+                product.category.charAt(0).toUpperCase() + product.category.slice(1);
+        }
+        
+        if (productElement) {
+            const truncated = product.title.substring(0, 30);
+            productElement.textContent = truncated + (product.title.length > 30 ? '...' : '');
+        }
+    };
+    
+    // Update product image with lazy loading
+    const updateProductImage = (product) => {
+        const img = cachedElements.productImage;
+        if (!img) return;
+        
+        img.setAttribute('data-src', product.image || 'images/placeholder.jpg');
+        img.alt = product.title;
+        
+        // Lazy load image
+        const observer = new IntersectionObserver((entries, obs) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const imgElement = entry.target;
+                    imgElement.src = imgElement.getAttribute('data-src');
+                    imgElement.removeAttribute('data-src');
+                    obs.unobserve(imgElement);
+                }
+            });
+        });
+        
+        observer.observe(img);
+    };
     
     // Update badges
-    document.getElementById('discount-badge').textContent = `${enhancedData.discountPercent}% OFF`;
-    
-    if (enhancedData.isLimitedTime) {
-        document.getElementById('limited-time-badge').style.display = 'inline-block';
-    }
-    
-    if (enhancedData.isLowStock) {
-        document.getElementById('stock-badge').style.display = 'inline-block';
-    }
-    
-    // Product info
-    document.getElementById('product-name').textContent = product.title;
-    document.getElementById('product-category').querySelector('.category-name').textContent = 
-        product.category.charAt(0).toUpperCase() + product.category.slice(1);
-    
-    // Pricing
-    document.getElementById('current-price').textContent = enhancedData.salePrice;
-    document.getElementById('original-price').textContent = `₹${enhancedData.originalPrice}`;
-    document.getElementById('discount-percent').textContent = `${enhancedData.discountPercent}% OFF`;
-    document.getElementById('savings-amount').textContent = `You Save ₹${enhancedData.savings}`;
-    
-    // Buy button - FIXED: Use correct property name
-    const buyButton = document.getElementById('buy-now-btn');
-    buyButton.onclick = () => redirectToAmazon(product.affiliate_link || product.affiliateLink);
-    
-    // Initialize timer
-    initializeProductTimer();
-    
-    // Load enhanced features
-    loadProductFeatures(product);
-    
-    // Show product details
-    document.getElementById('product-details').style.display = 'block';
-}
-
-// Enhanced product data generator (same as main site)
-function enhanceProductData(product) {
-    const currentPriceMatch = product.price.match(/₹?([0-9,]+)/);
-    const currentPrice = currentPriceMatch ? parseInt(currentPriceMatch[1].replace(/,/g, '')) : 999;
-    
-    const markup = 1.3 + (Math.random() * 0.7);
-    const originalPrice = Math.round(currentPrice * markup);
-    const savings = originalPrice - currentPrice;
-    const discountPercent = Math.round((savings / originalPrice) * 100);
-    
-    return {
-        salePrice: currentPrice.toLocaleString('en-IN'),
-        originalPrice: originalPrice.toLocaleString('en-IN'),
-        savings: savings.toLocaleString('en-IN'),
-        discountPercent: discountPercent,
-        isLimitedTime: Math.random() > 0.6,
-        isLowStock: Math.random() > 0.7
-    };
-}
-
-// Initialize product timer
-function initializeProductTimer() {
-    const minMinutes = 30;
-    const maxMinutes = 720; // 12 hours
-    const randomMinutes = Math.floor(Math.random() * (maxMinutes - minMinutes + 1)) + minMinutes;
-    
-    let endTime = Date.now() + (randomMinutes * 60 * 1000);
-    
-    // Update timer immediately
-    updateTimer(endTime);
-    
-    // Update every second
-    productTimer = setInterval(() => updateTimer(endTime), 1000);
-}
-
-// Update timer display
-function updateTimer(endTime) {
-    const now = Date.now();
-    const timeLeft = endTime - now;
-    
-    if (timeLeft <= 0) {
-        // Reset timer
-        const minMinutes = 30;
-        const maxMinutes = 720;
-        const randomMinutes = Math.floor(Math.random() * (maxMinutes - minMinutes + 1)) + minMinutes;
-        endTime = Date.now() + (randomMinutes * 60 * 1000);
-        return;
-    }
-    
-    const hours = Math.floor(timeLeft / (1000 * 60 * 60));
-    const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
-    const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
-    
-    // Update individual timer elements
-    const hoursElement = document.getElementById('hours');
-    const minutesElement = document.getElementById('minutes');
-    const secondsElement = document.getElementById('seconds');
-    
-    if (hoursElement) hoursElement.textContent = hours.toString().padStart(2, '0');
-    if (minutesElement) minutesElement.textContent = minutes.toString().padStart(2, '0');
-    if (secondsElement) secondsElement.textContent = seconds.toString().padStart(2, '0');
-}
-
-// Load product features (likes, comments)
-function loadProductFeatures(product) {
-    const productIndex = product.id || Math.random().toString(36).substr(2, 9);
-    
-    // Load likes
-    const likes = getLikes(productIndex);
-    document.getElementById('like-count').textContent = likes;
-    document.getElementById('like-display').textContent = likes;
-    
-    // Load comments
-    const comments = getComments(productIndex);
-    document.getElementById('comment-count').textContent = comments.length;
-    document.getElementById('comment-display').textContent = comments.length;
-    
-    // Check if liked
-    if (isLiked(productIndex)) {
-        const likeBtn = document.querySelector('.like-btn');
-        if (likeBtn) {
-            likeBtn.classList.add('active');
-            likeBtn.querySelector('i').className = 'fas fa-thumbs-up';
-        }
-    }
-}
-
-// Load related products
-async function loadRelatedProducts(category) {
-    try {
-        const response = await fetch('data/products.json');
-        const data = await response.json();
+    const updateBadges = (enhancedData) => {
+        const discountBadge = document.getElementById('discount-badge');
+        const limitedBadge = document.getElementById('limited-time-badge');
         
-        // Get related products (same category, excluding current product)
-        const relatedProducts = data.products
+        if (discountBadge) {
+            discountBadge.textContent = `${enhancedData.discountPercent}% OFF`;
+        }
+        
+        if (limitedBadge && enhancedData.isLimitedTime) {
+            limitedBadge.style.display = 'inline-block';
+        }
+    };
+    
+    // Update product info
+    const updateProductInfo = (product) => {
+        const nameElement = document.getElementById('product-name');
+        const categoryElement = document.querySelector('#product-category .category-name');
+        
+        if (nameElement) nameElement.textContent = product.title;
+        if (categoryElement) {
+            categoryElement.textContent = 
+                product.category.charAt(0).toUpperCase() + product.category.slice(1);
+        }
+    };
+    
+    // Update pricing
+    const updatePricing = (enhancedData) => {
+        const elements = {
+            currentPrice: document.getElementById('current-price'),
+            originalPrice: document.getElementById('original-price'),
+            discountPercent: document.getElementById('discount-percent'),
+            savingsAmount: document.getElementById('savings-amount'),
+            stickyPrice: document.getElementById('sticky-price'),
+            stickyOriginal: document.getElementById('sticky-original')
+        };
+        
+        if (elements.currentPrice) elements.currentPrice.textContent = enhancedData.salePrice;
+        if (elements.originalPrice) elements.originalPrice.textContent = `₹${enhancedData.originalPrice}`;
+        if (elements.discountPercent) elements.discountPercent.textContent = `${enhancedData.discountPercent}% OFF`;
+        if (elements.savingsAmount) elements.savingsAmount.textContent = `You Save ₹${enhancedData.savings}`;
+        if (elements.stickyPrice) elements.stickyPrice.textContent = `₹${enhancedData.salePrice}`;
+        if (elements.stickyOriginal) elements.stickyOriginal.textContent = `₹${enhancedData.originalPrice}`;
+    };
+    
+    // Setup buy buttons
+    const setupBuyButtons = (product) => {
+        const affiliateLink = product.affiliate_link || product.affiliateLink || product.link;
+        
+        if (cachedElements.buyButton) {
+            cachedElements.buyButton.onclick = () => redirectToAmazon(affiliateLink);
+        }
+        
+        if (cachedElements.stickyBuyBtn) {
+            cachedElements.stickyBuyBtn.onclick = () => redirectToAmazon(affiliateLink);
+        }
+    };
+    
+    // Initialize product timer
+    const initializeProductTimer = () => {
+        const timerElements = {
+            hours: document.getElementById('hours'),
+            minutes: document.getElementById('minutes'),
+            seconds: document.getElementById('seconds')
+        };
+        
+        if (!timerElements.hours) return;
+        
+        const randomMinutes = Math.floor(Math.random() * 690) + 30;
+        let endTime = Date.now() + (randomMinutes * 60 * 1000);
+        
+        const updateTimer = () => {
+            const now = Date.now();
+            const timeLeft = endTime - now;
+            
+            if (timeLeft <= 0) {
+                endTime = Date.now() + (Math.floor(Math.random() * 690) + 30) * 60 * 1000;
+                return;
+            }
+            
+            const hours = Math.floor(timeLeft / (1000 * 60 * 60));
+            const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+            
+            if (timerElements.hours) {
+                timerElements.hours.textContent = hours.toString().padStart(2, '0');
+            }
+            if (timerElements.minutes) {
+                timerElements.minutes.textContent = minutes.toString().padStart(2, '0');
+            }
+            if (timerElements.seconds) {
+                timerElements.seconds.textContent = seconds.toString().padStart(2, '0');
+            }
+        };
+        
+        updateTimer();
+        productTimer = setInterval(updateTimer, 1000);
+    };
+    
+    // Initialize live viewers count
+    const initializeLiveViewers = () => {
+        const viewerElement = document.getElementById('viewer-count');
+        if (!viewerElement) return;
+        
+        let viewerCount = Math.floor(Math.random() * 50) + 15;
+        viewerElement.textContent = viewerCount;
+        
+        viewerInterval = setInterval(() => {
+            const change = Math.floor(Math.random() * 7) - 3;
+            viewerCount = Math.max(10, Math.min(100, viewerCount + change));
+            viewerElement.textContent = viewerCount;
+        }, 5000);
+    };
+    
+    // Initialize image zoom functionality
+    const initializeImageZoom = () => {
+        const img = cachedElements.productImage;
+        const container = document.getElementById('image-zoom-container');
+        const lens = document.getElementById('zoom-lens');
+        const result = document.getElementById('zoom-result');
+        
+        if (!img || !container || !lens || !result || window.innerWidth < 768) return;
+        
+        let zoomRatio = 2;
+        
+        container.addEventListener('mouseenter', () => {
+            lens.style.display = 'block';
+            result.style.display = 'block';
+            result.style.backgroundImage = `url('${img.src}')`;
+            result.style.backgroundSize = `${img.width * zoomRatio}px ${img.height * zoomRatio}px`;
+        });
+        
+        container.addEventListener('mouseleave', () => {
+            lens.style.display = 'none';
+            result.style.display = 'none';
+        });
+        
+        container.addEventListener('mousemove', (e) => {
+            const rect = container.getBoundingClientRect();
+            let x = e.clientX - rect.left;
+            let y = e.clientY - rect.top;
+            
+            x = Math.max(lens.offsetWidth / 2, Math.min(x, rect.width - lens.offsetWidth / 2));
+            y = Math.max(lens.offsetHeight / 2, Math.min(y, rect.height - lens.offsetHeight / 2));
+            
+            lens.style.left = (x - lens.offsetWidth / 2) + 'px';
+            lens.style.top = (y - lens.offsetHeight / 2) + 'px';
+            
+            const bgPosX = -((x / rect.width) * img.width * zoomRatio - result.offsetWidth / 2);
+            const bgPosY = -((y / rect.height) * img.height * zoomRatio - result.offsetHeight / 2);
+            
+            result.style.backgroundPosition = `${bgPosX}px ${bgPosY}px`;
+        });
+    };
+    
+    // Load product specifications
+    const loadProductSpecifications = (product) => {
+        const specsContainer = document.getElementById('specs-content');
+        if (!specsContainer) return;
+        
+        const specs = generateSpecs(product);
+        
+        specsContainer.innerHTML = specs.map(spec => `
+            <div class="spec-item">
+                <div class="spec-label">${spec.label}</div>
+                <div class="spec-value">${spec.value}</div>
+            </div>
+        `).join('');
+    };
+    
+    // Generate product specifications
+    const generateSpecs = (product) => {
+        const specs = [
+            { label: 'Category', value: product.category.charAt(0).toUpperCase() + product.category.slice(1) },
+            { label: 'Availability', value: 'In Stock' },
+            { label: 'Shipping', value: 'Free Delivery' },
+            { label: 'Return Policy', value: '30 Days' }
+        ];
+        
+        if (product.brand) {
+            specs.unshift({ label: 'Brand', value: product.brand });
+        }
+        
+        return specs;
+    };
+    
+    // Load related products
+    const loadRelatedProducts = (category, allProducts) => {
+        const container = document.getElementById('related-products-grid');
+        if (!container) return;
+        
+        // Get related products
+        let relatedProducts = allProducts
             .filter(p => p.category === category && p.id !== currentProduct.id)
             .slice(0, 4);
         
-        if (relatedProducts.length > 0) {
-            displayRelatedProducts(relatedProducts);
-        } else {
-            // Show random products if no same category products
-            const randomProducts = data.products
-                .filter(p => p.id !== currentProduct.id)
-                .slice(0, 4);
-            displayRelatedProducts(randomProducts);
+        // If not enough, add random products
+        if (relatedProducts.length < 4) {
+            const remaining = allProducts
+                .filter(p => p.id !== currentProduct.id && !relatedProducts.includes(p))
+                .slice(0, 4 - relatedProducts.length);
+            relatedProducts = [...relatedProducts, ...remaining];
         }
-    } catch (error) {
-        console.error('Error loading related products:', error);
-    }
-}
-
-// Display related products
-function displayRelatedProducts(products) {
-    const container = document.getElementById('related-products-grid');
-    container.innerHTML = '';
-    
-    products.forEach(product => {
-        const productUrl = createProductURL(product);
         
-        const card = document.createElement('div');
-        card.className = 'related-product-card';
-        card.onclick = () => window.location.href = productUrl;
+        // Display products
+        container.innerHTML = relatedProducts.map(product => {
+            const productUrl = createProductURL(product);
+            return `
+                <div class="related-product-card" onclick="window.location.href='${productUrl}'">
+                    <img src="${product.image || 'images/placeholder.jpg'}" 
+                         alt="${product.title}" 
+                         class="related-product-image"
+                         loading="lazy">
+                    <div class="related-product-info">
+                        <h3 class="related-product-title">${product.title}</h3>
+                        <div class="related-product-price">${product.price}</div>
+                    </div>
+                </div>
+            `;
+        }).join('');
+    };
+    
+    // Create product URL
+    const createProductURL = (product) => {
+        const titleSlug = product.title.toLowerCase()
+            .replace(/[^a-z0-9\s]/g, '')
+            .replace(/\s+/g, '-')
+            .substring(0, 50);
+        return `product.html?id=${product.id}&title=${titleSlug}`;
+    };
+    
+    // Redirect to Amazon with modal
+    const redirectToAmazon = (affiliateLink) => {
+        if (!affiliateLink || affiliateLink === 'undefined' || affiliateLink === '') {
+            showToast('Product link not available. Please try another product.');
+            return;
+        }
         
-        card.innerHTML = `
-            <img src="${product.image || 'images/placeholder.jpg'}" 
-                 alt="${product.title}" 
-                 class="related-product-image"
-                 loading="lazy">
-            <div class="related-product-info">
-                <h3 class="related-product-title">${product.title}</h3>
-                <div class="related-product-price">${product.price}</div>
-            </div>
-        `;
+        const modal = document.getElementById('redirect-modal');
+        if (!modal) return;
         
-        container.appendChild(card);
-    });
-}
-
-// Create product URL with title
-function createProductURL(product) {
-    const titleSlug = product.title.toLowerCase()
-        .replace(/[^a-z0-9\s]/g, '')
-        .replace(/\s+/g, '-')
-        .substring(0, 50);
-    return `product.html?id=${product.id}&title=${titleSlug}`;
-}
-
-// Redirect to Amazon with modal - FIXED AND ENHANCED
-function redirectToAmazon(affiliateLink) {
-    console.log('Redirecting to:', affiliateLink); // Debug log
-    
-    if (!affiliateLink || affiliateLink === 'undefined' || affiliateLink === '') {
-        alert('Product link not available. Please try another product.');
-        return;
-    }
-    
-    // Show redirect modal
-    const modal = document.getElementById('redirect-modal');
-    modal.style.display = 'flex';
-    
-    // Countdown timer (2 seconds)
-    let countdown = 2;
-    const countdownElement = document.getElementById('countdown-timer');
-    const countdownText = document.getElementById('countdown-text');
-    
-    // Update initial countdown display
-    if (countdownElement) countdownElement.textContent = countdown;
-    if (countdownText) countdownText.textContent = countdown;
-    
-    const countdownInterval = setInterval(() => {
-        countdown--;
+        modal.style.display = 'flex';
+        
+        let countdown = 3;
+        const countdownElement = document.getElementById('countdown-timer');
+        const countdownText = document.getElementById('countdown-text');
         
         if (countdownElement) countdownElement.textContent = countdown;
         if (countdownText) countdownText.textContent = countdown;
         
-        if (countdown < 0) {
-            clearInterval(countdownInterval);
+        const countdownInterval = setInterval(() => {
+            countdown--;
             
-            // Ensure we have a valid URL
-            let finalUrl = affiliateLink;
-            if (!finalUrl.startsWith('http')) {
-                finalUrl = 'https://' + finalUrl;
+            if (countdownElement) countdownElement.textContent = countdown;
+            if (countdownText) countdownText.textContent = countdown;
+            
+            if (countdown < 0) {
+                clearInterval(countdownInterval);
+                
+                // Validate and open URL
+                let finalUrl = affiliateLink;
+                if (!finalUrl.startsWith('http')) {
+                    finalUrl = 'https://' + finalUrl;
+                }
+                
+                try {
+                    const urlObj = new URL(finalUrl);
+                    window.open(urlObj.href, '_blank', 'noopener,noreferrer');
+                } catch (error) {
+                    console.error('Invalid URL:', error);
+                    showToast('Invalid product link.');
+                }
+                
+                modal.style.display = 'none';
+            }
+        }, 1000);
+        
+        // Close on outside click
+        const closeModal = (e) => {
+            if (e.target === modal) {
+                clearInterval(countdownInterval);
+                modal.style.display = 'none';
+                modal.removeEventListener('click', closeModal);
+            }
+        };
+        
+        modal.addEventListener('click', closeModal);
+    };
+    
+    // Initialize sticky buy button
+    const initializeStickyBuyButton = () => {
+        if (window.innerWidth > 768) return;
+        
+        let lastScrollTop = 0;
+        const stickyButton = cachedElements.stickyBuyMobile;
+        
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            const buyButtonRect = cachedElements.buyButton?.getBoundingClientRect();
+            
+            if (buyButtonRect && buyButtonRect.bottom < 0 && scrollTop > lastScrollTop) {
+                stickyButton.style.display = 'block';
+                setTimeout(() => stickyButton.classList.add('show'), 10);
+            } else if (buyButtonRect && buyButtonRect.top > 0) {
+                stickyButton.classList.remove('show');
+                setTimeout(() => stickyButton.style.display = 'none', 300);
             }
             
-            console.log('Opening URL:', finalUrl); // Debug log
-            window.open(finalUrl, '_blank');
-            modal.style.display = 'none';
-        }
-    }, 1000);
-    
-    // Close modal if clicked outside
-    modal.onclick = (e) => {
-        if (e.target === modal) {
-            clearInterval(countdownInterval);
-            modal.style.display = 'none';
-        }
-    };
-}
-
-// Product interaction functions
-function toggleLike() {
-    const productIndex = currentProduct.id || Math.random().toString(36).substr(2, 9);
-    const likeBtn = document.querySelector('.like-btn');
-    const likeCount = document.getElementById('like-display');
-    
-    let likes = getLikes(productIndex);
-    const isCurrentlyLiked = isLiked(productIndex);
-    
-    if (isCurrentlyLiked) {
-        likes = Math.max(0, likes - 1);
-        setLiked(productIndex, false);
-        likeBtn.classList.remove('active');
-        likeBtn.querySelector('i').className = 'far fa-thumbs-up';
-    } else {
-        likes += 1;
-        setLiked(productIndex, true);
-        likeBtn.classList.add('active');
-        likeBtn.querySelector('i').className = 'fas fa-thumbs-up';
-    }
-    
-    setLikes(productIndex, likes);
-    likeCount.textContent = likes;
-    document.getElementById('like-count').textContent = likes;
-}
-
-function toggleWishlist() {
-    const wishlistBtn = document.querySelector('.wishlist-btn');
-    const icon = wishlistBtn.querySelector('i');
-    const text = wishlistBtn.querySelector('span');
-    
-    if (wishlistBtn.classList.contains('active')) {
-        wishlistBtn.classList.remove('active');
-        icon.className = 'far fa-heart';
-        text.textContent = 'Save for Later';
-        showToast('Removed from wishlist');
-    } else {
-        wishlistBtn.classList.add('active');
-        icon.className = 'fas fa-heart';
-        text.textContent = 'In Wishlist';
-        showToast('Added to wishlist');
-    }
-}
-
-function shareProduct() {
-    const productTitle = currentProduct.title;
-    const currentUrl = window.location.href;
-    
-    if (navigator.share) {
-        navigator.share({
-            title: `${productTitle} - Thrift Zone`,
-            text: 'Check out this amazing deal!',
-            url: currentUrl
-        }).catch(err => console.log('Error sharing:', err));
-    } else {
-        // Fallback to copying link
-        navigator.clipboard.writeText(currentUrl).then(() => {
-            showToast('Product link copied!');
-        }).catch(() => {
-            // Manual copy fallback
-            const textArea = document.createElement('textarea');
-            textArea.value = currentUrl;
-            document.body.appendChild(textArea);
-            textArea.select();
-            document.execCommand('copy');
-            document.body.removeChild(textArea);
-            showToast('Product link copied!');
+            lastScrollTop = scrollTop;
         });
-    }
-}
-
-function showComments() {
-    const modal = document.getElementById('comment-modal');
-    const commentsList = document.getElementById('comments-list');
-    
-    const productIndex = currentProduct.id || Math.random().toString(36).substr(2, 9);
-    const comments = getComments(productIndex);
-    
-    commentsList.innerHTML = comments.map(comment => `
-        <div class="comment-item">
-            <div class="comment-author">${comment.author}</div>
-            <div class="comment-text">${comment.text}</div>
-            <div class="comment-date">${comment.date}</div>
-        </div>
-    `).join('');
-    
-    if (comments.length === 0) {
-        commentsList.innerHTML = '<p style="text-align: center; color: #6b7280; padding: 20px;">No comments yet!</p>';
-    }
-    
-    modal.style.display = 'flex';
-}
-
-function closeCommentModal() {
-    document.getElementById('comment-modal').style.display = 'none';
-}
-
-function submitComment() {
-    const input = document.getElementById('comment-input');
-    const text = input.value.trim();
-    
-    if (!text) return;
-    
-    const productIndex = currentProduct.id || Math.random().toString(36).substr(2, 9);
-    addComment(productIndex, text);
-    
-    input.value = '';
-    closeCommentModal();
-    
-    // Update comment count
-    const comments = getComments(productIndex);
-    document.getElementById('comment-count').textContent = comments.length;
-    document.getElementById('comment-display').textContent = comments.length;
-    
-    showToast('Comment added!');
-}
-
-// Utility functions (same as main site)
-function getLikes(productIndex) {
-    const likes = JSON.parse(localStorage.getItem('productLikes') || '{}');
-    return likes[productIndex] || Math.floor(Math.random() * 50) + 10;
-}
-
-function setLikes(productIndex, count) {
-    const likes = JSON.parse(localStorage.getItem('productLikes') || '{}');
-    likes[productIndex] = count;
-    localStorage.setItem('productLikes', JSON.stringify(likes));
-}
-
-function isLiked(productIndex) {
-    const liked = JSON.parse(localStorage.getItem('likedProducts') || '{}');
-    return liked[productIndex] || false;
-}
-
-function setLiked(productIndex, isLiked) {
-    const liked = JSON.parse(localStorage.getItem('likedProducts') || '{}');
-    liked[productIndex] = isLiked;
-    localStorage.setItem('likedProducts', JSON.stringify(liked));
-}
-
-function getComments(productIndex) {
-    const comments = JSON.parse(localStorage.getItem('productComments') || '{}');
-    if (!comments[productIndex]) {
-        comments[productIndex] = getDefaultComments();
-        localStorage.setItem('productComments', JSON.stringify(comments));
-    }
-    return comments[productIndex];
-}
-
-function getDefaultComments() {
-    const defaultComments = [
-        { author: 'Sarah', text: 'Great deal!', date: '2d ago' },
-        { author: 'Mike', text: 'Amazing quality!', date: '1d ago' },
-        { author: 'Priya', text: 'Love it!', date: '5h ago' }
-    ];
-    const numComments = Math.floor(Math.random() * 3);
-    return defaultComments.slice(0, numComments);
-}
-
-function addComment(productIndex, text) {
-    const comments = getComments(productIndex);
-    const newComment = {
-        author: 'You',
-        text: text,
-        date: 'now'
     };
-    comments.unshift(newComment);
     
-    const allComments = JSON.parse(localStorage.getItem('productComments') || '{}');
-    allComments[productIndex] = comments;
-    localStorage.setItem('productComments', JSON.stringify(allComments));
-}
-
-// UI state functions
-function showLoadingState() {
-    document.getElementById('product-loading').style.display = 'block';
-    document.getElementById('product-details').style.display = 'none';
-    document.getElementById('product-not-found').style.display = 'none';
-}
-
-function hideLoadingState() {
-    document.getElementById('product-loading').style.display = 'none';
-}
-
-function showProductNotFound() {
-    document.getElementById('product-loading').style.display = 'none';
-    document.getElementById('product-details').style.display = 'none';
-    document.getElementById('product-not-found').style.display = 'block';
-}
-
-function showToast(message) {
-    const toast = document.createElement('div');
-    toast.style.cssText = `
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        background: #2874F0;
-        color: white;
-        padding: 12px 16px;
-        border-radius: 6px;
-        font-weight: 500;
-        z-index: 10000;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-    `;
-    toast.textContent = message;
-    document.body.appendChild(toast);
-    
-    setTimeout(() => {
-        if (document.body.contains(toast)) {
-            document.body.removeChild(toast);
+    // Initialize event listeners
+    const initializeEventListeners = () => {
+        // Share button
+        if (cachedElements.shareBtn) {
+            cachedElements.shareBtn.addEventListener('click', openShareModal);
         }
-    }, 3000);
+        
+        // Mobile menu toggle
+        const menuToggle = document.getElementById('mobile-menu-toggle');
+        const mobileNav = document.getElementById('mobile-nav');
+        const closeBtn = document.querySelector('.mobile-nav-close');
+        
+        if (menuToggle && mobileNav) {
+            menuToggle.addEventListener('click', () => {
+                mobileNav.classList.toggle('active');
+            });
+        }
+        
+        if (closeBtn && mobileNav) {
+            closeBtn.addEventListener('click', () => {
+                mobileNav.classList.remove('active');
+            });
+        }
+    };
+    
+    // Open share modal
+    const openShareModal = () => {
+        const modal = document.getElementById('share-modal');
+        if (modal) {
+            modal.style.display = 'flex';
+        }
+    };
+    
+    // Close share modal
+    window.closeShareModal = () => {
+        const modal = document.getElementById('share-modal');
+        if (modal) {
+            modal.style.display = 'none';
+        }
+    };
+    
+    // Share on platform
+    window.shareOn = (platform) => {
+        const url = encodeURIComponent(window.location.href);
+        const title = encodeURIComponent(currentProduct?.title || 'Amazing Deal');
+        const text = encodeURIComponent(`Check out this amazing deal: ${currentProduct?.title}`);
+        
+        const shareUrls = {
+            whatsapp: `https://wa.me/?text=${text}%20${url}`,
+            facebook: `https://www.facebook.com/sharer/sharer.php?u=${url}`,
+            twitter: `https://twitter.com/intent/tweet?text=${text}&url=${url}`,
+            telegram: `https://t.me/share/url?url=${url}&text=${text}`,
+            copy: 'copy'
+        };
+        
+        if (platform === 'copy') {
+            navigator.clipboard.writeText(window.location.href)
+                .then(() => {
+                    showToast('Link copied to clipboard!');
+                    closeShareModal();
+                })
+                .catch(() => {
+                    // Fallback
+                    const textArea = document.createElement('textarea');
+                    textArea.value = window.location.href;
+                    document.body.appendChild(textArea);
+                    textArea.select();
+                    document.execCommand('copy');
+                    document.body.removeChild(textArea);
+                    showToast('Link copied!');
+                    closeShareModal();
+                });
+        } else if (shareUrls[platform]) {
+            window.open(shareUrls[platform], '_blank', 'width=600,height=400');
+            closeShareModal();
+        }
+    };
+    
+    // UI state functions
+    const showLoadingState = () => {
+        if (cachedElements.productLoading) cachedElements.productLoading.style.display = 'block';
+        if (cachedElements.productDetails) cachedElements.productDetails.style.display = 'none';
+        if (cachedElements.productNotFound) cachedElements.productNotFound.style.display = 'none';
+    };
+    
+    const hideLoadingState = () => {
+        if (cachedElements.productLoading) cachedElements.productLoading.style.display = 'none';
+    };
+    
+    const showProductNotFound = () => {
+        if (cachedElements.productLoading) cachedElements.productLoading.style.display = 'none';
+        if (cachedElements.productDetails) cachedElements.productDetails.style.display = 'none';
+        if (cachedElements.productNotFound) cachedElements.productNotFound.style.display = 'block';
+    };
+    
+    // Show toast notification
+    const showToast = (message, duration = 3000) => {
+        const toast = document.createElement('div');
+        toast.style.cssText = `
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #2874F0;
+            color: white;
+            padding: 14px 20px;
+            border-radius: 8px;
+            font-weight: 600;
+            z-index: 10000;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            animation: slideIn 0.3s ease-out;
+        `;
+        toast.textContent = message;
+        document.body.appendChild(toast);
+        
+        setTimeout(() => {
+            toast.style.animation = 'slideOut 0.3s ease-out';
+            setTimeout(() => {
+                if (document.body.contains(toast)) {
+                    document.body.removeChild(toast);
+                }
+            }, 300);
+        }, duration);
+    };
+    
+    // Cleanup timers
+    const cleanupTimers = () => {
+        if (productTimer) {
+            clearInterval(productTimer);
+            productTimer = null;
+        }
+        if (viewerInterval) {
+            clearInterval(viewerInterval);
+            viewerInterval = null;
+        }
+    };
+    
+    // Cleanup on page unload
+    window.addEventListener('beforeunload', cleanupTimers);
+    
+    // Public API
+    return {
+        init
+    };
+})();
+
+// Initialize when DOM is ready
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', ProductPage.init);
+} else {
+    ProductPage.init();
 }
 
-// Navigation functions
-function goBack() {
-    if (document.referrer && document.referrer.includes(window.location.hostname)) {
-        history.back();
-    } else {
-        window.location.href = 'index.html';
+// Add CSS animations
+const style = document.createElement('style');
+style.textContent = `
+    @keyframes slideIn {
+        from {
+            transform: translateX(100%);
+            opacity: 0;
+        }
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
     }
-}
-
-// Clean up timer on page unload
-window.addEventListener('beforeunload', () => {
-    if (productTimer) {
-        clearInterval(productTimer);
+    
+    @keyframes slideOut {
+        from {
+            transform: translateX(0);
+            opacity: 1;
+        }
+        to {
+            transform: translateX(100%);
+            opacity: 0;
+        }
     }
-});
+`;
+document.head.appendChild(style);
