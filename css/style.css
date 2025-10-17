@@ -2023,7 +2023,7 @@ p {
 }
 
 .deals .section-header .section-title {
-  margin-bottom: 0.3rem !important;
+  margin-bottom: 0.2rem !important;
   font-size: 1.5rem !important; /* Smaller */
   color: var(--text-primary) !important;
   display: flex !important;
@@ -2250,8 +2250,8 @@ p {
     flex-direction: column !important;
     align-items: center !important;
     text-align: center !important;
-    gap: 30px !important;
-    margin-bottom: 12px !important;
+    gap: 10px !important;
+    margin-bottom: 15px !important;
   }
 
   .deals .section-header .section-title-group,
@@ -2261,14 +2261,14 @@ p {
   }
 
   .deals .section-header .section-title {
-    font-size: 1.3rem !important;
-    justify-content: center !important;
+    font-size: 1.2rem !important;
+    justify-content: left !important;
   }
 
   .header-view-all-btn {
-    width: 100% !important;
+    width: 40% !important;
     max-width: 280px !important;
-    justify-content: center !important;
+    justify-content: right !important;
     padding: 0.8rem 1.2rem !important;
     font-size: 0.9rem !important;
   }
