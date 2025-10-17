@@ -228,7 +228,7 @@ body {
 .deal-alert-banner {
     background: linear-gradient(135deg, #ff6b35, #f39c12);
     color: white;
-    padding: 12px 16px;
+    padding: 1px 1px;
     border-radius: 8px;
     margin-bottom: 1rem;
     box-shadow: var(--shadow-md);
@@ -478,7 +478,7 @@ body {
     font-size: 1.2rem;
     font-weight: 500;
     color: var(--text-primary);
-    line-height: 1.5;
+    line-height: 1.2;
     margin: 0.7rem 0;
 }
 
@@ -1302,7 +1302,7 @@ body {
     }
     
     .pricing-mega-section {
-        padding: 1rem;
+        padding: 0.5rem;
     }
     
     .current-price {
