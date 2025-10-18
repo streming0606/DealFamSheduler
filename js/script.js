@@ -1829,115 +1829,120 @@ window.addEventListener('beforeunload', () => {
 
 
 
-// Banner Slider Functionality
-class BannerSlider {
-    constructor() {
-        this.currentSlide = 0;
-        this.totalSlides = document.querySelectorAll('.banner-slide').length;
-        this.slides = document.querySelectorAll('.banner-slide');
-        this.dots = document.querySelectorAll('.dot');
-        this.prevBtn = document.getElementById('prev-banner');
-        this.nextBtn = document.getElementById('next-banner');
-        this.autoSlideInterval = null;
-        this.init();
-    }
+// // Banner Slider Functionality
+// class BannerSlider {
+//     constructor() {
+//         this.currentSlide = 0;
+//         this.totalSlides = document.querySelectorAll('.banner-slide').length;
+//         this.slides = document.querySelectorAll('.banner-slide');
+//         this.dots = document.querySelectorAll('.dot');
+//         this.prevBtn = document.getElementById('prev-banner');
+//         this.nextBtn = document.getElementById('next-banner');
+//         this.autoSlideInterval = null;
+//         this.init();
+//     }
     
-    init() {
-        if (this.totalSlides === 0) return;
+//     init() {
+//         if (this.totalSlides === 0) return;
         
-        if (this.prevBtn) {
-            this.prevBtn.addEventListener('click', () => this.previousSlide());
-        }
+//         if (this.prevBtn) {
+//             this.prevBtn.addEventListener('click', () => this.previousSlide());
+//         }
         
-        if (this.nextBtn) {
-            this.nextBtn.addEventListener('click', () => this.nextSlide());
-        }
+//         if (this.nextBtn) {
+//             this.nextBtn.addEventListener('click', () => this.nextSlide());
+//         }
         
-        this.dots.forEach((dot, index) => {
-            dot.addEventListener('click', () => this.goToSlide(index));
-        });
+//         this.dots.forEach((dot, index) => {
+//             dot.addEventListener('click', () => this.goToSlide(index));
+//         });
         
-        this.startAutoSlide();
+//         this.startAutoSlide();
         
-        const heroSlider = document.querySelector('.hero-slider');
-        if (heroSlider) {
-            heroSlider.addEventListener('mouseenter', () => this.stopAutoSlide());
-            heroSlider.addEventListener('mouseleave', () => this.startAutoSlide());
-        }
+//         const heroSlider = document.querySelector('.hero-slider');
+//         if (heroSlider) {
+//             heroSlider.addEventListener('mouseenter', () => this.stopAutoSlide());
+//             heroSlider.addEventListener('mouseleave', () => this.startAutoSlide());
+//         }
         
-        this.addTouchSupport();
-    }
+//         this.addTouchSupport();
+//     }
     
-    goToSlide(slideIndex) {
-        this.slides[this.currentSlide].classList.remove('active');
-        this.dots[this.currentSlide].classList.remove('active');
+//     goToSlide(slideIndex) {
+//         this.slides[this.currentSlide].classList.remove('active');
+//         this.dots[this.currentSlide].classList.remove('active');
         
-        this.currentSlide = slideIndex;
+//         this.currentSlide = slideIndex;
         
-        this.slides[this.currentSlide].classList.add('active');
-        this.dots[this.currentSlide].classList.add('active');
-    }
+//         this.slides[this.currentSlide].classList.add('active');
+//         this.dots[this.currentSlide].classList.add('active');
+//     }
     
-    nextSlide() {
-        const nextIndex = (this.currentSlide + 1) % this.totalSlides;
-        this.goToSlide(nextIndex);
-    }
+//     nextSlide() {
+//         const nextIndex = (this.currentSlide + 1) % this.totalSlides;
+//         this.goToSlide(nextIndex);
+//     }
     
-    previousSlide() {
-        const prevIndex = (this.currentSlide - 1 + this.totalSlides) % this.totalSlides;
-        this.goToSlide(prevIndex);
-    }
+//     previousSlide() {
+//         const prevIndex = (this.currentSlide - 1 + this.totalSlides) % this.totalSlides;
+//         this.goToSlide(prevIndex);
+//     }
     
-    startAutoSlide() {
-        this.stopAutoSlide();
-        this.autoSlideInterval = setInterval(() => {
-            this.nextSlide();
-        }, 5000);
-    }
+//     startAutoSlide() {
+//         this.stopAutoSlide();
+//         this.autoSlideInterval = setInterval(() => {
+//             this.nextSlide();
+//         }, 5000);
+//     }
     
-    stopAutoSlide() {
-        if (this.autoSlideInterval) {
-            clearInterval(this.autoSlideInterval);
-            this.autoSlideInterval = null;
-        }
-    }
+//     stopAutoSlide() {
+//         if (this.autoSlideInterval) {
+//             clearInterval(this.autoSlideInterval);
+//             this.autoSlideInterval = null;
+//         }
+//     }
     
-    addTouchSupport() {
-        const heroSlider = document.querySelector('.hero-slider');
-        if (!heroSlider) return;
+//     addTouchSupport() {
+//         const heroSlider = document.querySelector('.hero-slider');
+//         if (!heroSlider) return;
         
-        let startX = 0;
-        let endX = 0;
+//         let startX = 0;
+//         let endX = 0;
         
-        heroSlider.addEventListener('touchstart', (e) => {
-            startX = e.touches.clientX;
-        });
+//         heroSlider.addEventListener('touchstart', (e) => {
+//             startX = e.touches.clientX;
+//         });
         
-        heroSlider.addEventListener('touchmove', (e) => {
-            endX = e.touches.clientX;
-        });
+//         heroSlider.addEventListener('touchmove', (e) => {
+//             endX = e.touches.clientX;
+//         });
         
-        heroSlider.addEventListener('touchend', () => {
-            const diff = startX - endX;
-            const minSwipeDistance = 50;
+//         heroSlider.addEventListener('touchend', () => {
+//             const diff = startX - endX;
+//             const minSwipeDistance = 50;
             
-            if (Math.abs(diff) > minSwipeDistance) {
-                if (diff > 0) {
-                    this.nextSlide();
-                } else {
-                    this.previousSlide();
-                }
-            }
-        });
-    }
-}
+//             if (Math.abs(diff) > minSwipeDistance) {
+//                 if (diff > 0) {
+//                     this.nextSlide();
+//                 } else {
+//                     this.previousSlide();
+//                 }
+//             }
+//         });
+//     }
+// }
 
-// Initialize banner slider
-function initializeBannerSlider() {
-    if (document.querySelector('.hero-slider')) {
-        window.bannerSlider = new BannerSlider();
-    }
-}
+// // Initialize banner slider
+// function initializeBannerSlider() {
+//     if (document.querySelector('.hero-slider')) {
+//         window.bannerSlider = new BannerSlider();
+//     }
+// }
+
+
+
+
+
 
 // Utility functions
 function getFilteredProducts() {
