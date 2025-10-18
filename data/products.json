@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-10-17T21:20:30.527614+05:30",
-  "total_products": 162,
+  "last_updated": "2025-10-18T10:16:11.202110+05:30",
+  "total_products": 164,
   "products": [
+    {
+      "id": "product_morning_20251018_044611",
+      "title": "Ceptics UK Adapter for Indian Pins, India to UAE, Hong Kong, Dubai, UK Plug - Type G - Perfect for Laptop, Camera, Charg",
+      "image": "https://m.media-amazon.com/images/I/51Xz1lxxqzL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0080R95XI?tag=gadgetvill09f-21",
+      "price": "\u20b9648",
+      "rating": 4.3,
+      "category": "electronics",
+      "asin": "B0080R95XI",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-18T10:16:11.202080+05:30",
+      "session_type": "morning",
+      "link_index": 116
+    },
+    {
+      "id": "product_morning_20251018_044609",
+      "title": "Duracell CR2032 Lithium Coin Battery, Pack of 5, Specialty Devices, Child Resistant Packaging, Electronic car Keys, Scal",
+      "image": "https://m.media-amazon.com/images/I/71o0p9eDFDL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B08Y1TQ8K7?tag=gadgetvill09f-21",
+      "price": "\u20b9140",
+      "rating": 4.4,
+      "category": "electronics",
+      "asin": "B08Y1TQ8K7",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-18T10:16:09.826571+05:30",
+      "session_type": "morning",
+      "link_index": 116
+    },
     {
       "id": "product_night_20251017_155030",
       "title": "Panasonic CR-2032/5BE Lithium Coin Battery - Pack of 5",
