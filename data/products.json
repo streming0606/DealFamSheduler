@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-10-18T13:19:24.852552+05:30",
-  "total_products": 166,
+  "last_updated": "2025-10-18T18:32:47.091309+05:30",
+  "total_products": 168,
   "products": [
+    {
+      "id": "product_morning_20251018_130247",
+      "title": "TECHBOOTH Ergonomic Laptop Stand for Desk with Detachable Mouse Pad & Phone Holder, Multi-Angle Riser, Compatible with M",
+      "image": "https://m.media-amazon.com/images/I/71fGeUbI03L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FM8K9XPJ?tag=gadgetvill09f-21",
+      "price": "\u20b91,099",
+      "rating": 4.0,
+      "category": "electronics",
+      "asin": "B0FM8K9XPJ",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-18T18:32:47.091283+05:30",
+      "session_type": "morning",
+      "link_index": 120
+    },
+    {
+      "id": "product_morning_20251018_130245",
+      "title": "Amazon Basics 32GB MicroSDHC Memory Card with Adapter, Upto 98MB/s, IPX6, Temperature & Shock Resistant",
+      "image": "https://m.media-amazon.com/images/I/71fnwTYD6jL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0B9XV7KZX?tag=gadgetvill09f-21",
+      "price": "\u20b9329",
+      "rating": 4.1,
+      "category": "electronics",
+      "asin": "B0B9XV7KZX",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-18T18:32:45.645128+05:30",
+      "session_type": "morning",
+      "link_index": 120
+    },
     {
       "id": "product_afternoon_20251018_074924",
       "title": "Portronics Konnect X USB to Type C Cable with 3A Output, Fast Charging & Data Transfer, Nylon Braided, Aluminium Alloy S",
