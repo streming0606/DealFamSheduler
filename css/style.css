@@ -1157,11 +1157,16 @@ p {
 
 
 
-/* ================== MOBILE OPTIMIZED BANNER SECTION ================== */
-/* RetailMeNot Style Banner - Ultra Compact for Mobile */
+
+
+/* ================== HERO BANNER - OPTIMIZED FOR ALL DEVICES ================== */
+
+/* Hero Container - Responsive Heights */
 .hero {
   position: relative;
-  height: 300px; /* Reduced from 400px for desktop */
+  height: 50vh; /* 50% of viewport height for desktop */
+  min-height: 350px; /* Minimum height prevents too small */
+  max-height: 500px; /* Maximum height prevents too large */
   overflow: hidden;
   background: var(--background);
   margin: 0;
@@ -1181,10 +1186,9 @@ p {
   position: relative;
   width: 100%;
   height: 100%;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   max-width: 1400px;
-  margin: 0 auto;
 }
 
 .banner-slide {
@@ -1207,6 +1211,7 @@ p {
   opacity: 1;
 }
 
+/* Banner Image - Better Responsive Handling */
 .banner-image {
   position: absolute;
   top: 0;
@@ -1224,7 +1229,7 @@ p {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center center;
+  object-position: center 40%; /* Focus on center-upper area */
   display: block;
   margin: 0;
   padding: 0;
@@ -1451,10 +1456,44 @@ p {
   background: rgba(255, 255, 255, 0.7);
 }
 
-/* ================== MOBILE RESPONSIVE BANNER ================== */
+/* ================== TABLET RESPONSIVE (768px - 1024px) ================== */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .hero {
+    height: 45vh;
+    min-height: 300px;
+    max-height: 400px;
+  }
+
+  .banner-title {
+    font-size: 2rem;
+  }
+
+  .banner-subtitle {
+    font-size: 1rem;
+  }
+
+  .banner-stats .stat-item {
+    padding: 10px 16px;
+    min-width: 75px;
+  }
+
+  .stat-number {
+    font-size: 1.1rem;
+  }
+
+  .banner-cta .btn-primary,
+  .banner-cta .btn-secondary {
+    padding: 12px 24px;
+    font-size: 0.9rem;
+  }
+}
+
+/* ================== MOBILE RESPONSIVE (≤768px) ================== */
 @media (max-width: 768px) {
   .hero {
-    height: 200px !important; /* Ultra compact for mobile */
+    height: 35vh !important;
+    min-height: 250px !important;
+    max-height: 320px !important;
     border-radius: 0 0 12px 12px;
   }
 
@@ -1462,11 +1501,11 @@ p {
   .banner-image,
   .banner-image img,
   .banner-overlay {
-    border-radius: 20px;
+    border-radius: 12px;
   }
 
   .banner-content {
-    padding: 0 15px;
+    padding: 0 20px;
     text-align: center;
   }
 
@@ -1476,22 +1515,112 @@ p {
   }
 
   .banner-title {
-    font-size: 1.4rem !important; /* Much smaller for mobile */
+    font-size: 1.5rem !important;
     justify-content: center;
-    margin-bottom: 8px !important;
+    margin-bottom: 10px !important;
   }
 
   .fire-emoji, .tech-emoji, .fashion-emoji, .home-emoji {
-    font-size: 1.4rem !important;
+    font-size: 1.5rem !important;
+  }
+
+  .deal-badge {
+    font-size: 0.75rem;
+    padding: 6px 12px;
   }
 
   .banner-subtitle {
-    font-size: 0.85rem !important;
-    margin-bottom: 12px !important;
+    font-size: 0.9rem !important;
+    margin-bottom: 16px !important;
   }
 
   .banner-stats {
     justify-content: center;
+    gap: 10px;
+    margin-bottom: 16px !important;
+  }
+
+  .banner-stats .stat-item {
+    padding: 8px 12px;
+    min-width: 70px;
+  }
+
+  .stat-number {
+    font-size: 1rem;
+  }
+
+  .stat-label {
+    font-size: 0.7rem;
+  }
+
+  .banner-cta {
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .banner-cta .btn-primary,
+  .banner-cta .btn-secondary {
+    padding: 10px 20px !important;
+    font-size: 0.85rem !important;
+  }
+
+  .banner-navigation {
+    left: 10px;
+    right: 10px;
+  }
+
+  .banner-nav {
+    width: 36px;
+    height: 36px;
+  }
+
+  .banner-nav i {
+    font-size: 1rem;
+  }
+
+  .banner-dots {
+    bottom: 12px;
+    gap: 6px;
+  }
+
+  .dot {
+    width: 8px;
+    height: 8px;
+  }
+}
+
+/* ================== SMALL MOBILE (≤480px) ================== */
+@media (max-width: 480px) {
+  .hero {
+    height: 30vh !important;
+    min-height: 220px !important;
+    max-height: 280px !important;
+  }
+
+  .banner-content {
+    padding: 0 15px;
+  }
+
+  .banner-title {
+    font-size: 1.2rem !important;
+    margin-bottom: 8px !important;
+  }
+
+  .fire-emoji, .tech-emoji, .fashion-emoji, .home-emoji {
+    font-size: 1.2rem !important;
+  }
+
+  .deal-badge {
+    font-size: 0.7rem;
+    padding: 5px 10px;
+  }
+
+  .banner-subtitle {
+    font-size: 0.8rem !important;
+    margin-bottom: 12px !important;
+  }
+
+  .banner-stats {
     gap: 8px;
     margin-bottom: 12px !important;
   }
@@ -1509,20 +1638,10 @@ p {
     font-size: 0.65rem;
   }
 
-  .banner-cta {
-    justify-content: center;
-    gap: 8px;
-  }
-
   .banner-cta .btn-primary,
   .banner-cta .btn-secondary {
     padding: 8px 16px !important;
-    font-size: 0.8rem !important;
-  }
-
-  .banner-navigation {
-    left: 10px;
-    right: 10px;
+    font-size: 0.75rem !important;
   }
 
   .banner-nav {
@@ -1543,6 +1662,55 @@ p {
     height: 6px;
   }
 }
+
+/* ================== EXTRA SMALL MOBILE (≤360px) ================== */
+@media (max-width: 360px) {
+  .hero {
+    height: 28vh !important;
+    min-height: 200px !important;
+    max-height: 250px !important;
+  }
+
+  .banner-title {
+    font-size: 1.1rem !important;
+  }
+
+  .banner-subtitle {
+    font-size: 0.75rem !important;
+  }
+
+  .banner-stats .stat-item {
+    padding: 5px 8px;
+    min-width: 55px;
+  }
+
+  .stat-number {
+    font-size: 0.85rem;
+  }
+
+  .banner-cta .btn-primary,
+  .banner-cta .btn-secondary {
+    padding: 7px 14px !important;
+    font-size: 0.7rem !important;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
