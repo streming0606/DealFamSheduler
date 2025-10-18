@@ -228,7 +228,7 @@
 /* DEALS SECTION ULTRA-COMPACT */
 @media (max-width: 768px) {
   .deals, .loot-deals {
-    padding: 30px 0 !important;
+    padding: 10px 0 !important;
   }
 
   .section-header {
