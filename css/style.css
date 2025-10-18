@@ -1224,8 +1224,8 @@ p {
 }
 
 .banner-image img {
-  width: 440px;
-  height: 160px;
+  width: 100%;
+  height: 100%;
   object-fit: cover; /* Covers container while maintaining aspect ratio */
   object-position: center center; /* Centers image horizontally and vertically */
   display: block;
@@ -3681,8 +3681,8 @@ p {
 
   /* Optimize touch targets */
   button, .btn, a[role="button"] {
-    min-height: 4px;
-    min-width: 44px;
+   /* min-height: 4px;
+    min-width: 44px;*/
     touch-action: manipulation;
     -webkit-tap-highlight-color: transparent;
   }
