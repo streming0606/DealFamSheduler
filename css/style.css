@@ -1160,7 +1160,7 @@ p {
 
 
 /* ================== HERO BANNER - OPTIMIZED FOR 1920x600 IMAGES ================== */
-/* Perfect fit for all devices with proper aspect ratio handling */
+/* Perfect fit for all devices with NO LEFT CROPPING */
 
 .hero {
   position: relative;
@@ -1209,7 +1209,7 @@ p {
   opacity: 1;
 }
 
-/* Banner Image - Optimized for 1920x600 aspect ratio (3.2:1) */
+/* Banner Image - CRITICAL FIX FOR MOBILE */
 .banner-image {
   position: absolute;
   top: 0;
@@ -1532,7 +1532,7 @@ p {
 /* ================== MOBILE LANDSCAPE & SMALL TABLET (481px - 768px) ================== */
 @media (min-width: 481px) and (max-width: 768px) {
   .hero {
-    height: 280px;
+    height: 300px;
     border-radius: 0 0 12px 12px;
   }
 
@@ -1542,10 +1542,15 @@ p {
     border-radius: 12px;
   }
 
+  /* CRITICAL: Make image fill width and show FULL WIDTH - no crop */
   .banner-image img {
     border-radius: 12px;
-    /* Show right 60% of image where main content is */
-    object-position: 70% center;
+    width: 100%;
+    min-width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center center;
+    background: #1a1a1a;
   }
 
   .banner-content {
@@ -1637,7 +1642,7 @@ p {
 /* ================== MOBILE PORTRAIT (≤480px) ================== */
 @media (max-width: 480px) {
   .hero {
-    height: 240px;
+    height: 280px;
     border-radius: 0 0 10px 10px;
   }
 
@@ -1647,18 +1652,25 @@ p {
     border-radius: 10px;
   }
 
-  /* CRITICAL FIX: Show right portion of image for mobile */
+  /* ABSOLUTE FIX: Show ENTIRE image without ANY cropping */
+  .banner-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #1a1a1a;
+  }
+
   .banner-image img {
     border-radius: 10px;
-    object-fit: cover;
-    /* Position image to show right 65% where people and "DEAL FOUND" are */
-    object-position: 75% center;
-    transform: scale(1.1);
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    object-fit: contain;
+    object-position: center center;
   }
 
   .banner-overlay {
-    /* Stronger overlay for mobile to ensure text readability */
-    background: linear-gradient(135deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.4) 100%);
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.45) 100%);
   }
 
   .banner-content {
@@ -1673,14 +1685,14 @@ p {
   }
 
   .banner-title {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     justify-content: center;
     margin-bottom: 10px;
     gap: 8px;
   }
 
   .fire-emoji, .tech-emoji, .fashion-emoji, .home-emoji {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
   }
 
   .deal-badge {
@@ -1752,22 +1764,22 @@ p {
 /* ================== EXTRA SMALL MOBILE (≤360px) ================== */
 @media (max-width: 360px) {
   .hero {
-    height: 200px;
+    height: 240px;
   }
 
   .banner-image img {
-    /* Keep focus on right side for very small screens */
-    object-position: 78% center;
-    transform: scale(1.15);
+    width: 100%;
+    height: auto;
+    max-height: 100%;
   }
 
   .banner-title {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     margin-bottom: 8px;
   }
 
   .fire-emoji, .tech-emoji, .fashion-emoji, .home-emoji {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 
   .deal-badge {
@@ -1817,7 +1829,7 @@ p {
 /* ================== VERY SMALL SCREENS (≤320px) ================== */
 @media (max-width: 320px) {
   .hero {
-    height: 180px;
+    height: 220px;
   }
 
   .banner-content {
@@ -1825,12 +1837,12 @@ p {
   }
 
   .banner-image img {
-    object-position: 80% center;
-    transform: scale(1.2);
+    width: 100%;
+    height: auto;
   }
 
   .banner-title {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
 
   .banner-subtitle {
@@ -1849,14 +1861,14 @@ p {
   }
 }
 
-/* Performance optimization for animations */
+/* Performance optimization */
 .banner-slide,
 .banner-nav,
 .dot {
   will-change: opacity, transform;
 }
 
-/* Ensure smooth transitions */
+/* Accessibility: Respect user motion preferences */
 @media (prefers-reduced-motion: reduce) {
   .banner-slide,
   .banner-nav,
@@ -1868,6 +1880,7 @@ p {
     animation: none;
   }
 }
+
 
 
 
