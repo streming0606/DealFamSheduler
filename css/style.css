@@ -1159,16 +1159,17 @@ p {
 
 
 
-/* ================== HERO BANNER - OPTIMIZED FOR 1920x600 IMAGES ================== */
-/* Perfect fit for all devices with proper aspect ratio handling */
+/* ================== HERO BANNER - COMPLETE FIXED VERSION ================== */
+/* Optimized for 1920x600 images with NO cutting on any device */
 
 .hero {
   position: relative;
-  height: 400px; /* Desktop standard height */
+  height: 400px;
   overflow: hidden;
   background: var(--background);
   margin: 0;
   padding: 0;
+  width: 100%;
   border-radius: 0 0 16px 16px;
 }
 
@@ -1186,7 +1187,7 @@ p {
   height: 100%;
   margin: 0 auto;
   padding: 0;
-  max-width: 1400px;
+  max-width: 100%; /* Changed from 1400px to ensure full width */
 }
 
 .banner-slide {
@@ -1209,7 +1210,7 @@ p {
   opacity: 1;
 }
 
-/* Banner Image - Optimized for 1920x600 aspect ratio (3.2:1) */
+/* Banner Image Container */
 .banner-image {
   position: absolute;
   top: 0;
@@ -1223,11 +1224,12 @@ p {
   border-radius: 16px;
 }
 
+/* Banner Image - FIXED: Shows left-side content without cutting */
 .banner-image img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Covers container while maintaining aspect ratio */
-  object-position: center center; /* Centers image horizontally and vertically */
+  object-fit: cover;
+  object-position: 20% center; /* Default: Shows left portion of image */
   display: block;
   margin: 0;
   padding: 0;
@@ -1446,7 +1448,7 @@ p {
 }
 
 .dot.active {
- /* background: white;*/
+  background: white;
   transform: scale(1.2);
 }
 
@@ -1457,7 +1459,12 @@ p {
 /* ================== LARGE DESKTOP (≥1400px) ================== */
 @media (min-width: 1400px) {
   .hero {
-    height: 450px; /* Slightly taller for large screens */
+    height: 450px;
+  }
+
+  /* Keep left focus for wide screens */
+  .banner-image img {
+    object-position: 25% center;
   }
 }
 
@@ -1474,12 +1481,17 @@ p {
   .banner-content {
     padding: 0 35px;
   }
+
+  /* Maintain left-side visibility */
+  .banner-image img {
+    object-position: 22% center;
+  }
 }
 
 /* ================== TABLET (769px - 1024px) ================== */
 @media (min-width: 769px) and (max-width: 1024px) {
   .hero {
-    height: 320px; /* Maintains aspect ratio better */
+    height: 320px;
   }
 
   .banner-content {
@@ -1522,12 +1534,17 @@ p {
     width: 40px;
     height: 40px;
   }
+
+  /* Slightly more centered for tablets */
+  .banner-image img {
+    object-position: 30% center;
+  }
 }
 
 /* ================== MOBILE LANDSCAPE & SMALL TABLET (481px - 768px) ================== */
 @media (min-width: 481px) and (max-width: 768px) {
   .hero {
-    height: 250px !important; /* Perfect for 1920x600 ratio on medium mobile */
+    height: 250px !important;
     border-radius: 0 0 12px 12px;
   }
 
@@ -1536,6 +1553,11 @@ p {
   .banner-image img,
   .banner-overlay {
     border-radius: 12px;
+  }
+
+  /* Better centering for medium mobile */
+  .banner-image img {
+    object-position: 35% center;
   }
 
   .banner-content {
@@ -1626,7 +1648,7 @@ p {
 /* ================== MOBILE PORTRAIT (≤480px) ================== */
 @media (max-width: 480px) {
   .hero {
-    height: 200px !important; /* Compact but maintains visibility */
+    height: 200px !important;
     border-radius: 0 0 10px 10px;
   }
 
@@ -1637,10 +1659,10 @@ p {
     border-radius: 10px;
   }
 
-  /* CRITICAL FIX: Better image positioning for mobile */
+  /* CRITICAL FIX: Fully centered for mobile - NO cutting */
   .banner-image img {
     object-fit: cover;
-    object-position: center 45%; /* Slightly lower focus point */
+    object-position: center center !important;
   }
 
   .banner-content {
@@ -1733,7 +1755,11 @@ p {
 /* ================== EXTRA SMALL MOBILE (≤360px) ================== */
 @media (max-width: 360px) {
   .hero {
-    height: 180px !important; /* Minimum viable height */
+    height: 180px !important;
+  }
+
+  .banner-image img {
+    object-position: center center !important;
   }
 
   .banner-title {
@@ -1792,11 +1818,15 @@ p {
 /* ================== VERY SMALL SCREENS (≤320px) ================== */
 @media (max-width: 320px) {
   .hero {
-    height: 160px !important; /* Absolute minimum */
+    height: 160px !important;
   }
 
   .banner-content {
     padding: 0 10px;
+  }
+
+  .banner-image img {
+    object-position: center center !important;
   }
 
   .banner-title {
@@ -1818,6 +1848,27 @@ p {
     font-size: 0.65rem !important;
   }
 }
+
+/* ================== ANIMATIONS ================== */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+
 
 
 
