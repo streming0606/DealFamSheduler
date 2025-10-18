@@ -1164,7 +1164,7 @@ p {
 
 .hero {
   position: relative;
-  height: 400px; /* Desktop standard height */
+  height: 400px;
   overflow: hidden;
   background: var(--background);
   margin: 0;
@@ -1226,8 +1226,8 @@ p {
 .banner-image img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Covers container while maintaining aspect ratio */
-  object-position: center center; /* Centers image horizontally and vertically */
+  object-fit: cover;
+  object-position: center center;
   display: block;
   margin: 0;
   padding: 0;
@@ -1420,6 +1420,11 @@ p {
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
 }
 
+.banner-nav:focus {
+  outline: 2px solid white;
+  outline-offset: 2px;
+}
+
 .banner-nav i {
   font-size: 1.1rem;
 }
@@ -1446,7 +1451,7 @@ p {
 }
 
 .dot.active {
- /* background: white;*/
+  background: white;
   transform: scale(1.2);
 }
 
@@ -1457,7 +1462,7 @@ p {
 /* ================== LARGE DESKTOP (≥1400px) ================== */
 @media (min-width: 1400px) {
   .hero {
-    height: 450px; /* Slightly taller for large screens */
+    height: 450px;
   }
 }
 
@@ -1479,7 +1484,7 @@ p {
 /* ================== TABLET (769px - 1024px) ================== */
 @media (min-width: 769px) and (max-width: 1024px) {
   .hero {
-    height: 320px; /* Maintains aspect ratio better */
+    height: 320px;
   }
 
   .banner-content {
@@ -1527,20 +1532,26 @@ p {
 /* ================== MOBILE LANDSCAPE & SMALL TABLET (481px - 768px) ================== */
 @media (min-width: 481px) and (max-width: 768px) {
   .hero {
-    height: 250px !important; /* Perfect for 1920x600 ratio on medium mobile */
+    height: 280px;
     border-radius: 0 0 12px 12px;
   }
 
   .banner-slide,
   .banner-image,
-  .banner-image img,
   .banner-overlay {
     border-radius: 12px;
+  }
+
+  .banner-image img {
+    border-radius: 12px;
+    /* Show right 60% of image where main content is */
+    object-position: 70% center;
   }
 
   .banner-content {
     padding: 0 20px;
     text-align: center;
+    justify-content: center;
   }
 
   .banner-text {
@@ -1549,13 +1560,13 @@ p {
   }
 
   .banner-title {
-    font-size: 1.6rem !important;
+    font-size: 1.8rem;
     justify-content: center;
-    margin-bottom: 10px !important;
+    margin-bottom: 12px;
   }
 
   .fire-emoji, .tech-emoji, .fashion-emoji, .home-emoji {
-    font-size: 1.6rem !important;
+    font-size: 1.8rem;
   }
 
   .deal-badge {
@@ -1564,14 +1575,14 @@ p {
   }
 
   .banner-subtitle {
-    font-size: 0.9rem !important;
-    margin-bottom: 14px !important;
+    font-size: 0.95rem;
+    margin-bottom: 16px;
   }
 
   .banner-stats {
     justify-content: center;
     gap: 10px;
-    margin-bottom: 14px !important;
+    margin-bottom: 16px;
   }
 
   .banner-stats .stat-item {
@@ -1594,8 +1605,8 @@ p {
 
   .banner-cta .btn-primary,
   .banner-cta .btn-secondary {
-    padding: 10px 20px !important;
-    font-size: 0.85rem !important;
+    padding: 11px 22px;
+    font-size: 0.85rem;
   }
 
   .banner-navigation {
@@ -1626,26 +1637,34 @@ p {
 /* ================== MOBILE PORTRAIT (≤480px) ================== */
 @media (max-width: 480px) {
   .hero {
-    height: 200px !important; /* Compact but maintains visibility */
+    height: 240px;
     border-radius: 0 0 10px 10px;
   }
 
   .banner-slide,
   .banner-image,
-  .banner-image img,
   .banner-overlay {
     border-radius: 10px;
   }
 
-  /* CRITICAL FIX: Better image positioning for mobile */
+  /* CRITICAL FIX: Show right portion of image for mobile */
   .banner-image img {
+    border-radius: 10px;
     object-fit: cover;
-    object-position: center 45%; /* Slightly lower focus point */
+    /* Position image to show right 65% where people and "DEAL FOUND" are */
+    object-position: 75% center;
+    transform: scale(1.1);
+  }
+
+  .banner-overlay {
+    /* Stronger overlay for mobile to ensure text readability */
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.4) 100%);
   }
 
   .banner-content {
     padding: 0 15px;
     text-align: center;
+    justify-content: center;
   }
 
   .banner-text {
@@ -1654,14 +1673,14 @@ p {
   }
 
   .banner-title {
-    font-size: 1.3rem !important;
+    font-size: 1.4rem;
     justify-content: center;
-    margin-bottom: 8px !important;
+    margin-bottom: 10px;
     gap: 8px;
   }
 
   .fire-emoji, .tech-emoji, .fashion-emoji, .home-emoji {
-    font-size: 1.3rem !important;
+    font-size: 1.4rem;
   }
 
   .deal-badge {
@@ -1670,15 +1689,15 @@ p {
   }
 
   .banner-subtitle {
-    font-size: 0.8rem !important;
-    margin-bottom: 10px !important;
+    font-size: 0.85rem;
+    margin-bottom: 12px;
     line-height: 1.3;
   }
 
   .banner-stats {
     justify-content: center;
     gap: 8px;
-    margin-bottom: 10px !important;
+    margin-bottom: 12px;
   }
 
   .banner-stats .stat-item {
@@ -1701,8 +1720,8 @@ p {
 
   .banner-cta .btn-primary,
   .banner-cta .btn-secondary {
-    padding: 8px 16px !important;
-    font-size: 0.75rem !important;
+    padding: 9px 18px;
+    font-size: 0.75rem;
   }
 
   .banner-navigation {
@@ -1720,29 +1739,35 @@ p {
   }
 
   .banner-dots {
-    bottom: 8px;
+    bottom: 10px;
     gap: 5px;
   }
 
   .dot {
-    width: 6px;
-    height: 6px;
+    width: 7px;
+    height: 7px;
   }
 }
 
 /* ================== EXTRA SMALL MOBILE (≤360px) ================== */
 @media (max-width: 360px) {
   .hero {
-    height: 180px !important; /* Minimum viable height */
+    height: 200px;
+  }
+
+  .banner-image img {
+    /* Keep focus on right side for very small screens */
+    object-position: 78% center;
+    transform: scale(1.15);
   }
 
   .banner-title {
-    font-size: 1.1rem !important;
-    margin-bottom: 6px !important;
+    font-size: 1.2rem;
+    margin-bottom: 8px;
   }
 
   .fire-emoji, .tech-emoji, .fashion-emoji, .home-emoji {
-    font-size: 1.1rem !important;
+    font-size: 1.2rem;
   }
 
   .deal-badge {
@@ -1751,13 +1776,13 @@ p {
   }
 
   .banner-subtitle {
-    font-size: 0.75rem !important;
-    margin-bottom: 8px !important;
+    font-size: 0.75rem;
+    margin-bottom: 10px;
   }
 
   .banner-stats {
     gap: 6px;
-    margin-bottom: 8px !important;
+    margin-bottom: 10px;
   }
 
   .banner-stats .stat-item {
@@ -1775,8 +1800,8 @@ p {
 
   .banner-cta .btn-primary,
   .banner-cta .btn-secondary {
-    padding: 7px 14px !important;
-    font-size: 0.7rem !important;
+    padding: 8px 16px;
+    font-size: 0.7rem;
   }
 
   .banner-nav {
@@ -1792,19 +1817,24 @@ p {
 /* ================== VERY SMALL SCREENS (≤320px) ================== */
 @media (max-width: 320px) {
   .hero {
-    height: 160px !important; /* Absolute minimum */
+    height: 180px;
   }
 
   .banner-content {
     padding: 0 10px;
   }
 
+  .banner-image img {
+    object-position: 80% center;
+    transform: scale(1.2);
+  }
+
   .banner-title {
-    font-size: 1rem !important;
+    font-size: 1.1rem;
   }
 
   .banner-subtitle {
-    font-size: 0.7rem !important;
+    font-size: 0.7rem;
   }
 
   .banner-stats .stat-item {
@@ -1814,8 +1844,28 @@ p {
 
   .banner-cta .btn-primary,
   .banner-cta .btn-secondary {
-    padding: 6px 12px !important;
-    font-size: 0.65rem !important;
+    padding: 7px 14px;
+    font-size: 0.65rem;
+  }
+}
+
+/* Performance optimization for animations */
+.banner-slide,
+.banner-nav,
+.dot {
+  will-change: opacity, transform;
+}
+
+/* Ensure smooth transitions */
+@media (prefers-reduced-motion: reduce) {
+  .banner-slide,
+  .banner-nav,
+  .dot,
+  .banner-stats .stat-item,
+  .banner-cta .btn-primary,
+  .banner-cta .btn-secondary {
+    transition: none;
+    animation: none;
   }
 }
 
