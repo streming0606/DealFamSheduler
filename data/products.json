@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-10-18T18:32:47.091309+05:30",
-  "total_products": 168,
+  "last_updated": "2025-10-18T21:20:20.396846+05:30",
+  "total_products": 170,
   "products": [
+    {
+      "id": "product_night_20251018_155020",
+      "title": "Eclet Craft Painting Brushes Set of 12 Professional Round Pointed Tip Nylon Hair Artist Acrylic Paint Brush for Acrylic/",
+      "image": "https://m.media-amazon.com/images/I/71-SvyCRF4L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CKW9P9Z7?tag=gadgetvill09f-21",
+      "price": "\u20b9166",
+      "rating": 4.0,
+      "category": "electronics",
+      "asin": "B0CKW9P9Z7",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-18T21:20:20.396815+05:30",
+      "session_type": "night",
+      "link_index": 122
+    },
+    {
+      "id": "product_night_20251018_155018",
+      "title": "APFEN\u00ae Type C to Lightning [MFi Certified] Fast Charging Cable Compatible with iPhone 14/14 Pro/ 14 Pro Max/ 13/13 Pro/ ",
+      "image": "https://m.media-amazon.com/images/I/41uSdnQa7nL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DFCGB2D6?tag=gadgetvill09f-21",
+      "price": "\u20b9301",
+      "rating": 4.1,
+      "category": "electronics",
+      "asin": "B0DFCGB2D6",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-18T21:20:18.904828+05:30",
+      "session_type": "night",
+      "link_index": 122
+    },
     {
       "id": "product_morning_20251018_130247",
       "title": "TECHBOOTH Ergonomic Laptop Stand for Desk with Detachable Mouse Pad & Phone Holder, Multi-Angle Riser, Compatible with M",
