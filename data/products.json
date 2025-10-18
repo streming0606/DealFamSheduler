@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-10-18T10:16:11.202110+05:30",
-  "total_products": 164,
+  "last_updated": "2025-10-18T13:19:24.852552+05:30",
+  "total_products": 166,
   "products": [
+    {
+      "id": "product_afternoon_20251018_074924",
+      "title": "Portronics Konnect X USB to Type C Cable with 3A Output, Fast Charging & Data Transfer, Nylon Braided, Aluminium Alloy S",
+      "image": "https://m.media-amazon.com/images/I/61qsIhub23L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CR7N9MD9?tag=gadgetvill09f-21",
+      "price": "\u20b9125",
+      "rating": 4.2,
+      "category": "electronics",
+      "asin": "B0CR7N9MD9",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-18T13:19:24.852520+05:30",
+      "session_type": "afternoon",
+      "link_index": 118
+    },
+    {
+      "id": "product_afternoon_20251018_074923",
+      "title": "Portronics My Buddy K Portable Laptop Stand with Adjustable Height, Foldable, OverHeating Protection for Laptops & MacBo",
+      "image": "https://m.media-amazon.com/images/I/51mN-RUnn5L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B00EU6TXC6?tag=gadgetvill09f-21",
+      "price": "\u20b9349",
+      "rating": 4.2,
+      "category": "electronics",
+      "asin": "B00EU6TXC6",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-18T13:19:23.023926+05:30",
+      "session_type": "afternoon",
+      "link_index": 118
+    },
     {
       "id": "product_morning_20251018_044611",
       "title": "Ceptics UK Adapter for Indian Pins, India to UAE, Hong Kong, Dubai, UK Plug - Type G - Perfect for Laptop, Camera, Charg",
