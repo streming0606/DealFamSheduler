@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-10-19T13:19:30.501755+05:30",
-  "total_products": 174,
+  "last_updated": "2025-10-19T18:32:44.004335+05:30",
+  "total_products": 176,
   "products": [
+    {
+      "id": "product_morning_20251019_130244",
+      "title": "Noise Twist Go Round dial Smartwatch with BT Calling, 1.39\" Display, Metal Build, 100+ Watch Faces, IP68, Sleep Tracking",
+      "image": "https://m.media-amazon.com/images/I/61Y6E3Y9heL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CQ4JT6NT?tag=gadgetvill09f-21",
+      "price": "\u20b91,399",
+      "rating": 4.0,
+      "category": "fashion",
+      "asin": "B0CQ4JT6NT",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-19T18:32:44.004305+05:30",
+      "session_type": "morning",
+      "link_index": 128
+    },
+    {
+      "id": "product_morning_20251019_130242",
+      "title": "SaleOn 8.3X5 Inch Portable Storage Organizer For Usb Cable, Earphone, Power Bank,Charger, Hard Disk & Digital Gadgets, W",
+      "image": "https://m.media-amazon.com/images/I/814GTqb4fEL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CP2K2XN8?tag=gadgetvill09f-21",
+      "price": "\u20b9285",
+      "rating": 4.2,
+      "category": "electronics",
+      "asin": "B0CP2K2XN8",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-19T18:32:42.308161+05:30",
+      "session_type": "morning",
+      "link_index": 128
+    },
     {
       "id": "product_afternoon_20251019_074930",
       "title": "JK Easy Copier Paper | A4 Size | 70 GSM | 500 Sheets | White Paper, 1 Ream | For Laserjet & Inkjet Printer | Fast Drying",
