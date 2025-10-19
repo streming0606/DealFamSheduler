@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-10-18T21:20:20.396846+05:30",
-  "total_products": 170,
+  "last_updated": "2025-10-19T10:18:13.886165+05:30",
+  "total_products": 172,
   "products": [
+    {
+      "id": "product_morning_20251019_044813",
+      "title": "STRIFF Multi Angle Tablet Tabletop Stand. Holder for iPhone, Android, Samsung, OnePlus, Xiaomi. Portable, Foldable Stand",
+      "image": "https://m.media-amazon.com/images/I/51XowXHyroL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B09VZBGL1N?tag=gadgetvill09f-21",
+      "price": "\u20b989",
+      "rating": 4.1,
+      "category": "electronics",
+      "asin": "B09VZBGL1N",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-19T10:18:13.886140+05:30",
+      "session_type": "morning",
+      "link_index": 124
+    },
+    {
+      "id": "product_morning_20251019_044811",
+      "title": "Portronics Toad 101 Wired Optical Mouse with 1200 DPI, Plug & Play, Hi-Optical Tracking, 1.25M Cable Length, 30Lakhs Cli",
+      "image": "https://m.media-amazon.com/images/I/51czxrySrVL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0BRKSQ7Z2?tag=gadgetvill09f-21",
+      "price": "\u20b9119",
+      "rating": 4.1,
+      "category": "electronics",
+      "asin": "B0BRKSQ7Z2",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-19T10:18:11.471163+05:30",
+      "session_type": "morning",
+      "link_index": 124
+    },
     {
       "id": "product_night_20251018_155020",
       "title": "Eclet Craft Painting Brushes Set of 12 Professional Round Pointed Tip Nylon Hair Artist Acrylic Paint Brush for Acrylic/",
