@@ -1012,7 +1012,7 @@ p {
 .mobile-auth-btn {
     flex: 1;
     background: none;
-    border: 2px solid var(--primary-color);
+    border: 2px solid #ed8c26;
     border-radius: var(--radius);
     padding: 10px;
     cursor: pointer;
