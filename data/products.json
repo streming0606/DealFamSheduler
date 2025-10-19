@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-10-19T10:18:13.886165+05:30",
-  "total_products": 172,
+  "last_updated": "2025-10-19T13:19:30.501755+05:30",
+  "total_products": 174,
   "products": [
+    {
+      "id": "product_afternoon_20251019_074930",
+      "title": "JK Easy Copier Paper | A4 Size | 70 GSM | 500 Sheets | White Paper, 1 Ream | For Laserjet & Inkjet Printer | Fast Drying",
+      "image": "https://m.media-amazon.com/images/I/81wJ+F7qehL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B00MVV9NUY?tag=gadgetvill09f-21",
+      "price": "\u20b9269",
+      "rating": 4.2,
+      "category": "electronics",
+      "asin": "B00MVV9NUY",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-19T13:19:30.501723+05:30",
+      "session_type": "afternoon",
+      "link_index": 126
+    },
+    {
+      "id": "product_afternoon_20251019_074928",
+      "title": "UNBREAKcable USB Type C to Lightning Cable 27W [MFi Certified + 2 Years Warranty*] Fast Charger Cable for iPhone 14/13/1",
+      "image": "https://m.media-amazon.com/images/I/61+Q2A2n+lL._AC_UY218_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/554403284X?tag=gadgetvill09f-21",
+      "price": "\u20b9669",
+      "rating": 4.3,
+      "category": "electronics",
+      "asin": "554403284X",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-19T13:19:28.767470+05:30",
+      "session_type": "afternoon",
+      "link_index": 126
+    },
     {
       "id": "product_morning_20251019_044813",
       "title": "STRIFF Multi Angle Tablet Tabletop Stand. Holder for iPhone, Android, Samsung, OnePlus, Xiaomi. Portable, Foldable Stand",
