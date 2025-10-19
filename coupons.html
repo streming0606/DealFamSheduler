@@ -4,49 +4,73 @@
     <!-- Meta Tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Get verified coupon codes and exclusive deals from Amazon, Flipkart, Myntra & more. Save money with 100% working discount coupons updated today.">
-    <meta name="keywords" content="coupon codes, discount coupons, promo codes, deals, offers, Amazon coupons, Flipkart offers">
+    <meta name="description" content="Get verified coupon codes and exclusive deals from Amazon, Flipkart, Myntra, Nykaa & more. Save up to 90% with 100% working discount coupons updated daily at ThriftMaal.">
+    <meta name="keywords" content="coupon codes, discount coupons, promo codes, deals, offers, Amazon coupons, Flipkart offers, ThriftMaal deals">
     <meta name="robots" content="index, follow">
     <meta name="geo.region" content="IN">
     <meta name="geo.placename" content="India">
-    <meta name="theme-color" content="#2874F0">
+    <meta name="theme-color" content="#FF6B35">
     
     <!-- Open Graph Tags -->
-    <meta property="og:title" content="Verified Coupon Codes & Deals - Thrift Zone">
-    <meta property="og:description" content="Save big with 100% working coupon codes from top stores">
+    <meta property="og:title" content="Verified Coupon Codes & Deals - ThriftMaal">
+    <meta property="og:description" content="Save big with 100% working coupon codes from top stores. Updated daily!">
     <meta property="og:type" content="website">
     <meta property="og:image" content="images/og-banner.jpg">
+    <meta property="og:url" content="https://thriftmaal.com/coupons">
     
     <!-- Canonical URL -->
-    <link rel="canonical" href="https://yoursite.com/coupons">
+    <link rel="canonical" href="https://thriftmaal.com/coupons">
     
-    <title>Verified Coupon Codes & Deals 2025 - Save Money | Thrift Zone</title>
+    <title>Verified Coupon Codes & Deals 2025 - Save Up To 90% | ThriftMaal</title>
     <link rel="icon" type="image/png" href="images/logo-favicon.png">
     
     <!-- Preconnect -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
     
-    <!-- CSS Files -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/components.css">
-    <link rel="stylesheet" href="css/responsive.css">
+    <!-- CSS File -->
     <link rel="stylesheet" href="css/coupon.css">
     
-    <!-- Structured Data -->
+    <!-- Structured Data - Organization -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "ThriftMaal",
+        "url": "https://thriftmaal.com",
+        "logo": "https://thriftmaal.com/images/logo/logo.png",
+        "description": "India's trusted platform for verified coupon codes and best deals"
+    }
+    </script>
+    
+    <!-- Structured Data - WebPage -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "WebPage",
         "name": "Verified Coupon Codes & Deals",
-        "description": "Get exclusive coupon codes and deals from top online stores",
-        "url": "https://yoursite.com/coupons"
+        "description": "Get exclusive coupon codes and deals from top online stores in India",
+        "url": "https://thriftmaal.com/coupons",
+        "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "itemListElement": [{
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://thriftmaal.com"
+            },{
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Coupons",
+                "item": "https://thriftmaal.com/coupons"
+            }]
+        }
     }
     </script>
     
@@ -58,18 +82,26 @@
         "mainEntity": [
             {
                 "@type": "Question",
-                "name": "How do I use a coupon code?",
+                "name": "Are these coupon codes verified and working?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Click on 'Get Code' button. The coupon code will be automatically copied and a popup will appear. Click 'Shop Now' to visit the store and paste the code at checkout."
+                    "text": "Yes, all coupon codes on ThriftMaal are verified by our team and real users. We update them daily and show you how many people have successfully used each code today."
                 }
             },
             {
                 "@type": "Question",
-                "name": "Are these coupon codes verified?",
+                "name": "How do I use a coupon code from ThriftMaal?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Yes, all coupon codes are verified and updated regularly. You can see how many users have successfully used each code."
+                    "text": "Simply click 'Get Code' button. The coupon code will be automatically copied to your clipboard. Then click 'Shop Now' to visit the store and paste the code at checkout to get your discount."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How often are coupon codes updated?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "We update our coupon database multiple times daily. New codes are added as soon as they become available from partner stores. Expired codes are removed immediately."
                 }
             }
         ]
@@ -83,203 +115,812 @@
     <!-- Header -->
     <header class="header">
         <div class="container">
-            <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-
             <div class="logo">
-                <img src="images/logo/logo.png" alt="Thrift Zone Logo" class="logo-icon">
+                <a href="/" aria-label="ThriftMaal Home">
+                    <img src="images/logo/logo.png" alt="ThriftMaal Logo" class="logo-img">
+                </a>
             </div>
 
             <div class="search-container">
                 <div class="search-box">
-                    <input type="text" id="search-input" placeholder="Search coupons, stores..." autocomplete="off" aria-label="Search coupons">
-                    <button type="submit" class="search-btn" id="search-btn" aria-label="Search">
-                        <i class="fas fa-search"></i>
-                    </button>
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" id="search-input" placeholder="Search for deals, products, stores..." autocomplete="off" aria-label="Search coupons">
                 </div>
-                <div class="search-suggestions" id="search-suggestions"></div>
             </div>
 
-            <nav class="nav" role="navigation">
+            <nav class="nav" role="navigation" aria-label="Main navigation">
                 <a href="/" class="nav-link">Home</a>
                 <a href="/coupons" class="nav-link active">Coupons</a>
                 <a href="/community" class="nav-link">Community</a>
-                <a href="/deal-finder" class="nav-link">Deal Finder</a>
+                <a href="/end-soon" class="nav-link">End Soon</a>
+                <a href="/deal-finder" class="nav-link"><i class="fas fa-search-dollar"></i> Deal Finder</a>
             </nav>
+
+            <button class="join-btn" aria-label="Join Now">
+                <i class="fas fa-user"></i> Join Now
+            </button>
+
+            <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
 
-        <!-- Mobile Nav -->
-        <div class="mobile-nav" id="mobile-nav">
+        <!-- Mobile Navigation -->
+        <div class="mobile-nav" id="mobile-nav" aria-hidden="true">
             <div class="mobile-nav-header">
                 <h3>Menu</h3>
-                <button class="mobile-nav-close" aria-label="Close">&times;</button>
+                <button class="mobile-nav-close" aria-label="Close menu">&times;</button>
             </div>
             <div class="mobile-nav-content">
                 <a href="/" class="mobile-nav-link"><i class="fas fa-home"></i> Home</a>
                 <a href="/coupons" class="mobile-nav-link active"><i class="fas fa-tags"></i> Coupons</a>
                 <a href="/community" class="mobile-nav-link"><i class="fas fa-users"></i> Community</a>
+                <a href="/end-soon" class="mobile-nav-link"><i class="fas fa-clock"></i> End Soon</a>
                 <a href="/deal-finder" class="mobile-nav-link"><i class="fas fa-search-dollar"></i> Deal Finder</a>
+                <button class="mobile-join-btn"><i class="fas fa-user"></i> Join Now</button>
             </div>
         </div>
     </header>
 
+    <!-- Category Navigation -->
+    <div class="category-nav">
+        <div class="container">
+            <nav class="categories" role="navigation" aria-label="Category navigation">
+                <a href="/category/electronics" class="category-link">Electronics</a>
+                <a href="/category/fashion" class="category-link">Fashion</a>
+                <a href="/category/home-kitchen" class="category-link">Home & Kitchen</a>
+                <a href="/category/health-beauty" class="category-link">Health & Beauty</a>
+                <a href="/category/sports-fitness" class="category-link">Sports & Fitness</a>
+            </nav>
+        </div>
+    </div>
+
     <!-- Main Content -->
     <main id="main-content">
         
-        <!-- Hero Section -->
-        <section class="coupon-hero">
+        <!-- Hero Banner -->
+        <section class="hero-banner">
             <div class="container">
                 <div class="hero-content">
-                    <h1 class="hero-title">
-                        🎫 <span class="gradient-text">Verified Coupons</span> & Best Deals
-                    </h1>
-                    <p class="hero-subtitle">
-                        100% Working Codes · Updated Today · Save Big on Every Purchase
-                    </p>
-                    <div class="hero-stats">
-                        <div class="stat-item">
-                            <span class="stat-number" id="stat-active">50</span>
-                            <span class="stat-label">Active Coupons</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number" id="stat-mega">15 MEGA</span>
-                            <span class="stat-label">Mega Loot Deals</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number" id="stat-flash">12 FLASH</span>
-                            <span class="stat-label">Flash Sales</span>
+                    <div class="hero-text">
+                        <h1 class="hero-title">
+                            India's <span class="highlight">Happiest Deal Hunters</span> Are Here 🎯
+                        </h1>
+                        <p class="hero-subtitle">
+                            Find, compare & grab the best deals every day — only at <strong>ThriftMaal</strong>
+                        </p>
+                        <button class="hero-cta">
+                            <i class="fas fa-rocket"></i> Explore Deals
+                        </button>
+                    </div>
+                    <div class="hero-image">
+                        <div class="hero-visual">
+                            <i class="fas fa-shopping-cart cart-icon"></i>
+                            <div class="deal-badge">
+                                <span class="discount-text">70%<br>OFF</span>
+                            </div>
+                            <div class="hot-deal-tag">
+                                <i class="fas fa-fire"></i> HOT DEAL
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Store Partners -->
-        <section class="store-partners">
+        <!-- Trust Indicators -->
+        <section class="trust-section">
             <div class="container">
-                <p class="partners-label">Trusted Coupons From</p>
-                <div class="partner-logos">
-                    <div class="partner-badge amazon-brand">Amazon</div>
-                    <div class="partner-badge flipkart-brand">Flipkart</div>
-                    <div class="partner-badge myntra-brand">Myntra</div>
-                    <div class="partner-badge nykaa-brand">Nykaa</div>
-                    <div class="partner-badge swiggy-brand">Swiggy</div>
+                <div class="trust-grid">
+                    <div class="trust-item">
+                        <div class="trust-icon">
+                            <i class="fas fa-shield-check"></i>
+                        </div>
+                        <div class="trust-text">
+                            <h3>100% Verified</h3>
+                            <p>All codes tested & working</p>
+                        </div>
+                    </div>
+                    <div class="trust-item">
+                        <div class="trust-icon">
+                            <i class="fas fa-sync"></i>
+                        </div>
+                        <div class="trust-text">
+                            <h3>Updated Daily</h3>
+                            <p>Fresh deals every day</p>
+                        </div>
+                    </div>
+                    <div class="trust-item">
+                        <div class="trust-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="trust-text">
+                            <h3>50K+ Users</h3>
+                            <p>Trusted by deal hunters</p>
+                        </div>
+                    </div>
+                    <div class="trust-item">
+                        <div class="trust-icon">
+                            <i class="fas fa-tags"></i>
+                        </div>
+                        <div class="trust-text">
+                            <h3>1000+ Coupons</h3>
+                            <p>Active deals available</p>
+                        </div>
+                    </div>
                 </div>
+            </div>
+        </section>
+
+        <!-- Store Sections -->
+        <section class="stores-section">
+            <div class="container">
+                
+                <!-- Amazon Section -->
+                <div class="store-block" id="amazon-store">
+                    <div class="store-header">
+                        <div class="store-logo-wrapper">
+                            <div class="store-logo amazon-logo">
+                                <img src="images/stores/amazon.png" alt="Amazon India Logo">
+                            </div>
+                            <div class="store-info">
+                                <h2 class="store-name">Amazon Coupon Codes</h2>
+                                <div class="store-meta">
+                                    <span class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                        <span class="rating-text">4.8 (5216 reviews)</span>
+                                    </span>
+                                    <span class="verified-badge">
+                                        <i class="fas fa-check-circle"></i> Verified Partner
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="https://amazon.in" target="_blank" rel="noopener sponsored" class="visit-store-btn">
+                            Visit Store <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+
+                    <div class="coupons-grid">
+                        <!-- Coupon Card 1 -->
+                        <div class="coupon-card featured">
+                            <div class="coupon-badge hot">🔥 HOT DEAL</div>
+                            <div class="coupon-content">
+                                <h3 class="coupon-title">Great Indian Festival: Up To 80% Off + Extra 10%</h3>
+                                <p class="coupon-desc">Get additional 10% instant discount on HDFC cards. Lowest prices of the year!</p>
+                                
+                                <div class="coupon-stats">
+                                    <div class="stat">
+                                        <i class="fas fa-users"></i>
+                                        <span><strong>324</strong> used today</span>
+                                    </div>
+                                    <div class="stat">
+                                        <i class="fas fa-clock"></i>
+                                        <span>Expires: <strong>Oct 31, 2025</strong></span>
+                                    </div>
+                                </div>
+
+                                <div class="coupon-actions">
+                                    <div class="code-box">
+                                        <span class="code-label">Code:</span>
+                                        <span class="coupon-code" id="code-amazon-1">FESTIVAL80</span>
+                                    </div>
+                                    <button class="get-code-btn" data-code="FESTIVAL80" data-store="amazon">
+                                        <i class="fas fa-copy"></i> Get Code
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Coupon Card 2 -->
+                        <div class="coupon-card">
+                            <div class="coupon-badge trending">📈 TRENDING</div>
+                            <div class="coupon-content">
+                                <h3 class="coupon-title">PC & Gaming Accessories: Up To 80% Off</h3>
+                                <p class="coupon-desc">Shop gaming keyboards, mouse, headsets, and more at unbeatable prices.</p>
+                                
+                                <div class="coupon-stats">
+                                    <div class="stat">
+                                        <i class="fas fa-users"></i>
+                                        <span><strong>3003</strong> used today</span>
+                                    </div>
+                                    <div class="stat">
+                                        <i class="fas fa-clock"></i>
+                                        <span>Expires: <strong>Nov 15, 2025</strong></span>
+                                    </div>
+                                </div>
+
+                                <div class="coupon-actions">
+                                    <div class="code-box">
+                                        <span class="code-label">Code:</span>
+                                        <span class="coupon-code">GAMING80</span>
+                                    </div>
+                                    <button class="get-code-btn" data-code="GAMING80" data-store="amazon">
+                                        <i class="fas fa-copy"></i> Get Code
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Coupon Card 3 -->
+                        <div class="coupon-card">
+                            <div class="coupon-badge limited">⏰ LIMITED</div>
+                            <div class="coupon-content">
+                                <h3 class="coupon-title">Smartphones: Up To 50% Off + Bank Discounts</h3>
+                                <p class="coupon-desc">Latest smartphones from Samsung, OnePlus, Xiaomi & more with exchange offers.</p>
+                                
+                                <div class="coupon-stats">
+                                    <div class="stat">
+                                        <i class="fas fa-users"></i>
+                                        <span><strong>1725</strong> used today</span>
+                                    </div>
+                                    <div class="stat">
+                                        <i class="fas fa-clock"></i>
+                                        <span>Expires: <strong>Dec 07, 2025</strong></span>
+                                    </div>
+                                </div>
+
+                                <div class="coupon-actions">
+                                    <div class="code-box no-code">
+                                        <span class="auto-apply">Auto Applied</span>
+                                    </div>
+                                    <button class="get-deal-btn" data-store="amazon">
+                                        <i class="fas fa-shopping-bag"></i> Get Deal
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="show-more-btn" data-store="amazon">
+                        Show More Amazon Deals <i class="fas fa-chevron-down"></i>
+                    </button>
+                </div>
+
+                <!-- Flipkart Section -->
+                <div class="store-block" id="flipkart-store">
+                    <div class="store-header">
+                        <div class="store-logo-wrapper">
+                            <div class="store-logo flipkart-logo">
+                                <img src="images/stores/flipkart.png" alt="Flipkart Logo">
+                            </div>
+                            <div class="store-info">
+                                <h2 class="store-name">Flipkart Coupon Codes</h2>
+                                <div class="store-meta">
+                                    <span class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <span class="rating-text">4.9 (4823 reviews)</span>
+                                    </span>
+                                    <span class="verified-badge">
+                                        <i class="fas fa-check-circle"></i> Verified Partner
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="https://flipkart.com" target="_blank" rel="noopener sponsored" class="visit-store-btn">
+                            Visit Store <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+
+                    <div class="coupons-grid">
+                        <div class="coupon-card featured">
+                            <div class="coupon-badge hot">🔥 HOT DEAL</div>
+                            <div class="coupon-content">
+                                <h3 class="coupon-title">Big Billion Days: Upto 90% Off on Everything</h3>
+                                <p class="coupon-desc">Biggest sale of the year! Extra discounts on credit cards + exchange offers.</p>
+                                
+                                <div class="coupon-stats">
+                                    <div class="stat">
+                                        <i class="fas fa-users"></i>
+                                        <span><strong>5421</strong> used today</span>
+                                    </div>
+                                    <div class="stat">
+                                        <i class="fas fa-clock"></i>
+                                        <span>Expires: <strong>Oct 25, 2025</strong></span>
+                                    </div>
+                                </div>
+
+                                <div class="coupon-actions">
+                                    <div class="code-box">
+                                        <span class="code-label">Code:</span>
+                                        <span class="coupon-code">BIGBILLION</span>
+                                    </div>
+                                    <button class="get-code-btn" data-code="BIGBILLION" data-store="flipkart">
+                                        <i class="fas fa-copy"></i> Get Code
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="coupon-card">
+                            <div class="coupon-badge new">✨ NEW</div>
+                            <div class="coupon-content">
+                                <h3 class="coupon-title">Fashion: Min 50% Off + Extra 10% on ₹2999+</h3>
+                                <p class="coupon-desc">Shop from top brands like Nike, Puma, Levi's & more with additional discounts.</p>
+                                
+                                <div class="coupon-stats">
+                                    <div class="stat">
+                                        <i class="fas fa-users"></i>
+                                        <span><strong>2156</strong> used today</span>
+                                    </div>
+                                    <div class="stat">
+                                        <i class="fas fa-clock"></i>
+                                        <span>Expires: <strong>Nov 30, 2025</strong></span>
+                                    </div>
+                                </div>
+
+                                <div class="coupon-actions">
+                                    <div class="code-box">
+                                        <span class="code-label">Code:</span>
+                                        <span class="coupon-code">FASHION10</span>
+                                    </div>
+                                    <button class="get-code-btn" data-code="FASHION10" data-store="flipkart">
+                                        <i class="fas fa-copy"></i> Get Code
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="coupon-card">
+                            <div class="coupon-content">
+                                <h3 class="coupon-title">Electronics: Flat ₹5000 Off on Orders Above ₹50,000</h3>
+                                <p class="coupon-desc">Buy TVs, laptops, cameras, and appliances with huge discounts.</p>
+                                
+                                <div class="coupon-stats">
+                                    <div class="stat">
+                                        <i class="fas fa-users"></i>
+                                        <span><strong>892</strong> used today</span>
+                                    </div>
+                                    <div class="stat">
+                                        <i class="fas fa-clock"></i>
+                                        <span>Expires: <strong>Dec 15, 2025</strong></span>
+                                    </div>
+                                </div>
+
+                                <div class="coupon-actions">
+                                    <div class="code-box">
+                                        <span class="code-label">Code:</span>
+                                        <span class="coupon-code">ELECT5000</span>
+                                    </div>
+                                    <button class="get-code-btn" data-code="ELECT5000" data-store="flipkart">
+                                        <i class="fas fa-copy"></i> Get Code
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="show-more-btn" data-store="flipkart">
+                        Show More Flipkart Deals <i class="fas fa-chevron-down"></i>
+                    </button>
+                </div>
+
+                <!-- Myntra Section -->
+                <div class="store-block" id="myntra-store">
+                    <div class="store-header">
+                        <div class="store-logo-wrapper">
+                            <div class="store-logo myntra-logo">
+                                <img src="images/stores/myntra.png" alt="Myntra Logo">
+                            </div>
+                            <div class="store-info">
+                                <h2 class="store-name">Myntra Coupon Codes</h2>
+                                <div class="store-meta">
+                                    <span class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                        <span class="rating-text">4.7 (3542 reviews)</span>
+                                    </span>
+                                    <span class="verified-badge">
+                                        <i class="fas fa-check-circle"></i> Verified Partner
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="https://myntra.com" target="_blank" rel="noopener sponsored" class="visit-store-btn">
+                            Visit Store <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+
+                    <div class="coupons-grid">
+                        <div class="coupon-card featured">
+                            <div class="coupon-badge hot">🔥 HOT DEAL</div>
+                            <div class="coupon-content">
+                                <h3 class="coupon-title">End of Season Sale: Up To 70% Off + Extra 20%</h3>
+                                <p class="coupon-desc">Shop from 5000+ brands with additional discounts on fashion & lifestyle.</p>
+                                
+                                <div class="coupon-stats">
+                                    <div class="stat">
+                                        <i class="fas fa-users"></i>
+                                        <span><strong>4267</strong> used today</span>
+                                    </div>
+                                    <div class="stat">
+                                        <i class="fas fa-clock"></i>
+                                        <span>Expires: <strong>Oct 28, 2025</strong></span>
+                                    </div>
+                                </div>
+
+                                <div class="coupon-actions">
+                                    <div class="code-box">
+                                        <span class="code-label">Code:</span>
+                                        <span class="coupon-code">EOSS20</span>
+                                    </div>
+                                    <button class="get-code-btn" data-code="EOSS20" data-store="myntra">
+                                        <i class="fas fa-copy"></i> Get Code
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="coupon-card">
+                            <div class="coupon-content">
+                                <h3 class="coupon-title">First Order: Flat ₹300 Off on Orders Above ₹1999</h3>
+                                <p class="coupon-desc">New users get instant discount on first purchase. Limited period offer!</p>
+                                
+                                <div class="coupon-stats">
+                                    <div class="stat">
+                                        <i class="fas fa-users"></i>
+                                        <span><strong>1543</strong> used today</span>
+                                    </div>
+                                    <div class="stat">
+                                        <i class="fas fa-clock"></i>
+                                        <span>Expires: <strong>Dec 31, 2025</strong></span>
+                                    </div>
+                                </div>
+
+                                <div class="coupon-actions">
+                                    <div class="code-box">
+                                        <span class="code-label">Code:</span>
+                                        <span class="coupon-code">FIRST300</span>
+                                    </div>
+                                    <button class="get-code-btn" data-code="FIRST300" data-store="myntra">
+                                        <i class="fas fa-copy"></i> Get Code
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="show-more-btn" data-store="myntra">
+                        Show More Myntra Deals <i class="fas fa-chevron-down"></i>
+                    </button>
+                </div>
+
+                <!-- Nykaa Section -->
+                <div class="store-block" id="nykaa-store">
+                    <div class="store-header">
+                        <div class="store-logo-wrapper">
+                            <div class="store-logo nykaa-logo">
+                                <img src="images/stores/nykaa.png" alt="Nykaa Logo">
+                            </div>
+                            <div class="store-info">
+                                <h2 class="store-name">Nykaa Coupon Codes</h2>
+                                <div class="store-meta">
+                                    <span class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <span class="rating-text">4.9 (2891 reviews)</span>
+                                    </span>
+                                    <span class="verified-badge">
+                                        <i class="fas fa-check-circle"></i> Verified Partner
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="https://nykaa.com" target="_blank" rel="noopener sponsored" class="visit-store-btn">
+                            Visit Store <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+
+                    <div class="coupons-grid">
+                        <div class="coupon-card featured">
+                            <div class="coupon-badge hot">🔥 HOT DEAL</div>
+                            <div class="coupon-content">
+                                <h3 class="coupon-title">Beauty Bonanza: Up To 60% Off + Free Gifts</h3>
+                                <p class="coupon-desc">Shop makeup, skincare, haircare & more from top brands with free shipping.</p>
+                                
+                                <div class="coupon-stats">
+                                    <div class="stat">
+                                        <i class="fas fa-users"></i>
+                                        <span><strong>3421</strong> used today</span>
+                                    </div>
+                                    <div class="stat">
+                                        <i class="fas fa-clock"></i>
+                                        <span>Expires: <strong>Nov 10, 2025</strong></span>
+                                    </div>
+                                </div>
+
+                                <div class="coupon-actions">
+                                    <div class="code-box">
+                                        <span class="code-label">Code:</span>
+                                        <span class="coupon-code">BEAUTY60</span>
+                                    </div>
+                                    <button class="get-code-btn" data-code="BEAUTY60" data-store="nykaa">
+                                        <i class="fas fa-copy"></i> Get Code
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="coupon-card">
+                            <div class="coupon-content">
+                                <h3 class="coupon-title">Luxury Brands: Extra 20% Off on Orders Above ₹2500</h3>
+                                <p class="coupon-desc">Get exclusive discounts on premium international beauty brands.</p>
+                                
+                                <div class="coupon-stats">
+                                    <div class="stat">
+                                        <i class="fas fa-users"></i>
+                                        <span><strong>987</strong> used today</span>
+                                    </div>
+                                    <div class="stat">
+                                        <i class="fas fa-clock"></i>
+                                        <span>Expires: <strong>Nov 20, 2025</strong></span>
+                                    </div>
+                                </div>
+
+                                <div class="coupon-actions">
+                                    <div class="code-box">
+                                        <span class="code-label">Code:</span>
+                                        <span class="coupon-code">LUXURY20</span>
+                                    </div>
+                                    <button class="get-code-btn" data-code="LUXURY20" data-store="nykaa">
+                                        <i class="fas fa-copy"></i> Get Code
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="show-more-btn" data-store="nykaa">
+                        Show More Nykaa Deals <i class="fas fa-chevron-down"></i>
+                    </button>
+                </div>
+
+                <!-- Ajio Section -->
+                <div class="store-block" id="ajio-store">
+                    <div class="store-header">
+                        <div class="store-logo-wrapper">
+                            <div class="store-logo ajio-logo">
+                                <img src="images/stores/ajio.png" alt="AJIO Logo">
+                            </div>
+                            <div class="store-info">
+                                <h2 class="store-name">AJIO Coupon Codes</h2>
+                                <div class="store-meta">
+                                    <span class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                        <span class="rating-text">4.6 (2134 reviews)</span>
+                                    </span>
+                                    <span class="verified-badge">
+                                        <i class="fas fa-check-circle"></i> Verified Partner
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="https://ajio.com" target="_blank" rel="noopener sponsored" class="visit-store-btn">
+                            Visit Store <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+
+                    <div class="coupons-grid">
+                        <div class="coupon-card featured">
+                            <div class="coupon-badge trending">📈 TRENDING</div>
+                            <div class="coupon-content">
+                                <h3 class="coupon-title">Fashion Week: Flat 70% Off on Entire Fashion Range</h3>
+                                <p class="coupon-desc">Shop western wear, ethnic wear, footwear & accessories at lowest prices.</p>
+                                
+                                <div class="coupon-stats">
+                                    <div class="stat">
+                                        <i class="fas fa-users"></i>
+                                        <span><strong>2567</strong> used today</span>
+                                    </div>
+                                    <div class="stat">
+                                        <i class="fas fa-clock"></i>
+                                        <span>Expires: <strong>Oct 30, 2025</strong></span>
+                                    </div>
+                                </div>
+
+                                <div class="coupon-actions">
+                                    <div class="code-box">
+                                        <span class="code-label">Code:</span>
+                                        <span class="coupon-code">AJIO70</span>
+                                    </div>
+                                    <button class="get-code-btn" data-code="AJIO70" data-store="ajio">
+                                        <i class="fas fa-copy"></i> Get Code
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="coupon-card">
+                            <div class="coupon-content">
+                                <h3 class="coupon-title">Bank Offer: Extra 10% Off with ICICI Cards</h3>
+                                <p class="coupon-desc">Get instant discount on orders above ₹1990 with ICICI credit cards.</p>
+                                
+                                <div class="coupon-stats">
+                                    <div class="stat">
+                                        <i class="fas fa-users"></i>
+                                        <span><strong>1234</strong> used today</span>
+                                    </div>
+                                    <div class="stat">
+                                        <i class="fas fa-clock"></i>
+                                        <span>Expires: <strong>Nov 05, 2025</strong></span>
+                                    </div>
+                                </div>
+
+                                <div class="coupon-actions">
+                                    <div class="code-box">
+                                        <span class="code-label">Code:</span>
+                                        <span class="coupon-code">ICICI10</span>
+                                    </div>
+                                    <button class="get-code-btn" data-code="ICICI10" data-store="ajio">
+                                        <i class="fas fa-copy"></i> Get Code
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="show-more-btn" data-store="ajio">
+                        Show More AJIO Deals <i class="fas fa-chevron-down"></i>
+                    </button>
+                </div>
+
+                <!-- Swiggy Section -->
+                <div class="store-block" id="swiggy-store">
+                    <div class="store-header">
+                        <div class="store-logo-wrapper">
+                            <div class="store-logo swiggy-logo">
+                                <img src="images/stores/swiggy.png" alt="Swiggy Logo">
+                            </div>
+                            <div class="store-info">
+                                <h2 class="store-name">Swiggy Coupon Codes</h2>
+                                <div class="store-meta">
+                                    <span class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <span class="rating-text">4.8 (6745 reviews)</span>
+                                    </span>
+                                    <span class="verified-badge">
+                                        <i class="fas fa-check-circle"></i> Verified Partner
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="https://swiggy.com" target="_blank" rel="noopener sponsored" class="visit-store-btn">
+                            Visit Store <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+
+                    <div class="coupons-grid">
+                        <div class="coupon-card featured">
+                            <div class="coupon-badge hot">🔥 HOT DEAL</div>
+                            <div class="coupon-content">
+                                <h3 class="coupon-title">Flat 60% Off on First 3 Orders for New Users</h3>
+                                <p class="coupon-desc">Order food from your favorite restaurants with massive discounts.</p>
+                                
+                                <div class="coupon-stats">
+                                    <div class="stat">
+                                        <i class="fas fa-users"></i>
+                                        <span><strong>8934</strong> used today</span>
+                                    </div>
+                                    <div class="stat">
+                                        <i class="fas fa-clock"></i>
+                                        <span>Expires: <strong>Dec 31, 2025</strong></span>
+                                    </div>
+                                </div>
+
+                                <div class="coupon-actions">
+                                    <div class="code-box">
+                                        <span class="code-label">Code:</span>
+                                        <span class="coupon-code">SWIGGY60</span>
+                                    </div>
+                                    <button class="get-code-btn" data-code="SWIGGY60" data-store="swiggy">
+                                        <i class="fas fa-copy"></i> Get Code
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="coupon-card">
+                            <div class="coupon-content">
+                                <h3 class="coupon-title">Free Delivery on Orders Above ₹199</h3>
+                                <p class="coupon-desc">Save on delivery charges with this exclusive code. Valid on all restaurants.</p>
+                                
+                                <div class="coupon-stats">
+                                    <div class="stat">
+                                        <i class="fas fa-users"></i>
+                                        <span><strong>5621</strong> used today</span>
+                                    </div>
+                                    <div class="stat">
+                                        <i class="fas fa-clock"></i>
+                                        <span>Expires: <strong>Nov 30, 2025</strong></span>
+                                    </div>
+                                </div>
+
+                                <div class="coupon-actions">
+                                    <div class="code-box">
+                                        <span class="code-label">Code:</span>
+                                        <span class="coupon-code">FREEDEL</span>
+                                    </div>
+                                    <button class="get-code-btn" data-code="FREEDEL" data-store="swiggy">
+                                        <i class="fas fa-copy"></i> Get Code
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="show-more-btn" data-store="swiggy">
+                        Show More Swiggy Deals <i class="fas fa-chevron-down"></i>
+                    </button>
+                </div>
+
             </div>
         </section>
 
         <!-- How It Works -->
         <section class="how-it-works">
             <div class="container">
-                <h2 class="section-heading">How to Use Coupons</h2>
-                <div class="steps-grid">
+                <h2 class="section-title">How to Use Coupons</h2>
+                <p class="section-subtitle">Save money in 3 simple steps</p>
+                
+                <div class="steps-container">
                     <div class="step-card">
+                        <div class="step-number">1</div>
                         <div class="step-icon">
                             <i class="fas fa-mouse-pointer"></i>
                         </div>
-                        <div class="step-number">1</div>
                         <h3>Click "Get Code"</h3>
-                        <p>Choose your coupon and click to activate</p>
+                        <p>Choose your favorite coupon and click to reveal the code</p>
                     </div>
+
                     <div class="step-arrow">
                         <i class="fas fa-arrow-right"></i>
                     </div>
+
                     <div class="step-card">
-                        <div class="step-icon">
-                            <i class="fas fa-check-circle"></i>
-                        </div>
                         <div class="step-number">2</div>
+                        <div class="step-icon">
+                            <i class="fas fa-copy"></i>
+                        </div>
                         <h3>Code Copied</h3>
-                        <p>Code automatically copied to clipboard</p>
+                        <p>Code is automatically copied to your clipboard</p>
                     </div>
+
                     <div class="step-arrow">
                         <i class="fas fa-arrow-right"></i>
                     </div>
+
                     <div class="step-card">
+                        <div class="step-number">3</div>
                         <div class="step-icon">
                             <i class="fas fa-shopping-bag"></i>
                         </div>
-                        <div class="step-number">3</div>
                         <h3>Shop & Save</h3>
-                        <p>Paste code at checkout and enjoy discount</p>
+                        <p>Paste code at checkout and enjoy your discount</p>
                     </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Filters -->
-        <section class="coupon-filters">
-            <div class="container">
-                <div class="filters-wrapper">
-                    <div class="filter-group">
-                        <h3>🏪 Stores</h3>
-                        <div class="filter-buttons">
-                            <button class="filter-btn active" data-store="all">All Stores</button>
-                            <button class="filter-btn" data-store="amazon">
-                                <span class="store-dot amazon-bg"></span> Amazon
-                            </button>
-                            <button class="filter-btn" data-store="flipkart">
-                                <span class="store-dot flipkart-bg"></span> Flipkart
-                            </button>
-                            <button class="filter-btn" data-store="myntra">
-                                <span class="store-dot myntra-bg"></span> Myntra
-                            </button>
-                            <button class="filter-btn" data-store="nykaa">
-                                <span class="store-dot nykaa-bg"></span> Nykaa
-                            </button>
-                        </div>
-                    </div>
-
-                    <div class="filter-group">
-                        <h3>🗂️ Categories</h3>
-                        <div class="filter-buttons">
-                            <button class="category-filter active" data-category="all">All</button>
-                            <button class="category-filter" data-category="electronics">📱 Electronics</button>
-                            <button class="category-filter" data-category="fashion">👕 Fashion</button>
-                            <button class="category-filter" data-category="beauty">💄 Beauty</button>
-                            <button class="category-filter" data-category="food">🍔 Food</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Featured Coupons -->
-        <section class="coupon-section featured-section">
-            <div class="container">
-                <div class="section-header">
-                    <div>
-                        <h2 class="section-title">🔥 Trending Mega Loot Deals</h2>
-                        <p class="section-subtitle">Most grabbed deals this week</p>
-                    </div>
-                </div>
-                <div class="coupon-grid" id="featured-coupons-grid">
-                    <!-- Featured coupons loaded by JS -->
-                </div>
-            </div>
-        </section>
-
-        <!-- All Coupons -->
-        <section class="coupon-section">
-            <div class="container">
-                <div class="section-header">
-                    <div>
-                        <h2 class="section-title">🎯 All Coupons</h2>
-                    </div>
-                    <div class="coupon-count">
-                        <span id="coupon-count">50</span> active codes
-                    </div>
-                </div>
-                <div class="coupon-grid" id="coupon-grid">
-                    <!-- All coupons loaded by JS -->
-                </div>
-                <div class="load-more-section">
-                    <button class="load-more-btn" id="load-more-coupons">
-                        <i class="fas fa-plus"></i> Load More Coupons
-                    </button>
                 </div>
             </div>
         </section>
@@ -287,27 +928,67 @@
         <!-- FAQ Section -->
         <section class="faq-section">
             <div class="container">
-                <h2 class="section-heading">Frequently Asked Questions</h2>
-                <div class="faq-grid">
-                    <div class="faq-card">
-                        <div class="faq-icon"><i class="fas fa-question-circle"></i></div>
-                        <h3>How do coupons work?</h3>
-                        <p>Click "Get Code", the coupon is automatically copied. Then click "Shop Now" to visit the store and paste the code at checkout to get instant discount.</p>
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>Are these coupon codes verified and working?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Yes, all coupon codes on ThriftMaal are verified by our team and real users. We update them daily and show you how many people have successfully used each code today. If a code doesn't work, we remove it immediately.</p>
+                        </div>
                     </div>
-                    <div class="faq-card">
-                        <div class="faq-icon"><i class="fas fa-shield-check"></i></div>
-                        <h3>Are codes verified?</h3>
-                        <p>Yes! All coupon codes are verified and updated daily. You can see how many users have successfully used each code today.</p>
+
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>How do I use a coupon code from ThriftMaal?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Simply click the "Get Code" button. The coupon code will be automatically copied to your clipboard. Then click "Shop Now" to visit the store and paste the code at checkout to get your discount. It's that easy!</p>
+                        </div>
                     </div>
-                    <div class="faq-card">
-                        <div class="faq-icon"><i class="fas fa-clock"></i></div>
-                        <h3>How often updated?</h3>
-                        <p>We update our coupon database multiple times daily. New codes are added as soon as they become available from partner stores.</p>
+
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>How often are coupon codes updated?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>We update our coupon database multiple times daily. New codes are added as soon as they become available from partner stores. Expired codes are removed immediately to ensure you only see working deals.</p>
+                        </div>
                     </div>
-                    <div class="faq-card">
-                        <div class="faq-icon"><i class="fas fa-tags"></i></div>
-                        <h3>Can I use multiple codes?</h3>
-                        <p>Most stores allow only one coupon per order. However, you can often combine a coupon code with ongoing sale discounts for maximum savings.</p>
+
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>Can I use multiple coupon codes on one order?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Most stores allow only one coupon code per order. However, you can often combine a coupon code with ongoing sale discounts and bank offers for maximum savings. Check the store's terms for details.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>What if my coupon code doesn't work?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>If a code doesn't work, check if: 1) The code has expired, 2) You meet the minimum order value, 3) The products in your cart are eligible. If the issue persists, please report it to us and we'll investigate immediately.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>Is ThriftMaal free to use?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Yes! ThriftMaal is 100% free for users. We earn a small commission from partner stores when you make a purchase, which helps us keep the service free and maintain our platform with fresh deals daily.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -315,54 +996,51 @@
 
     </main>
 
-    <!-- Modal -->
+    <!-- Coupon Modal -->
     <div class="coupon-modal-overlay" id="coupon-modal" aria-hidden="true">
-        <div class="coupon-modal" role="dialog" aria-modal="true">
-            <div class="modal-header">
-                <h3 class="modal-title" id="coupon-modal-title">🎉 Coupon Ready!</h3>
-                <button class="modal-close" id="modal-close" aria-label="Close">
-                    <i class="fas fa-times"></i>
-                </button>
-            </div>
-            
-            <div class="modal-body">
-                <div class="store-badge" id="modal-store">
-                    <div class="store-logo"></div>
-                    <span class="store-name">Amazon India</span>
+        <div class="coupon-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+            <button class="modal-close" id="modal-close" aria-label="Close modal">
+                <i class="fas fa-times"></i>
+            </button>
+
+            <div class="modal-content">
+                <div class="modal-icon">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                
+                <h3 class="modal-title" id="modal-title">🎉 Coupon Code Ready!</h3>
+                <p class="modal-subtitle">Your code has been copied to clipboard</p>
+
+                <div class="modal-code-box">
+                    <div class="code-display">
+                        <span class="code-text" id="modal-code-text">FESTIVAL80</span>
+                    </div>
+                    <button class="copy-again-btn" id="copy-again-btn">
+                        <i class="fas fa-copy"></i> Copy Again
+                    </button>
                 </div>
 
-                <div class="coupon-code-display">
-                    <div class="code-label">Your Coupon Code</div>
-                    <div class="code-container">
-                        <span class="coupon-code" id="modal-coupon-code">SAVE20</span>
-                        <button class="copy-btn-modal" id="copy-btn">
-                            <i class="fas fa-copy"></i> Copy
-                        </button>
-                    </div>
-                    <p class="copy-success" id="copy-success">✅ Code copied to clipboard!</p>
+                <div class="modal-store-info">
+                    <img src="images/stores/amazon.png" alt="Store Logo" id="modal-store-logo" class="modal-store-logo">
+                    <span id="modal-store-name">Amazon India</span>
                 </div>
 
-                <div class="coupon-details">
-                    <div class="detail-item">
-                        <i class="fas fa-clock"></i>
-                        <span>Expires: <span id="modal-expiry">15 Nov 2025</span></span>
-                    </div>
-                    <div class="detail-item">
+                <div class="modal-details">
+                    <div class="detail">
                         <i class="fas fa-users"></i>
-                        <span><span id="modal-users">1,247</span> people used today</span>
+                        <span><strong id="modal-users">324</strong> people used today</span>
+                    </div>
+                    <div class="detail">
+                        <i class="fas fa-clock"></i>
+                        <span>Valid till <strong id="modal-expiry">Oct 31, 2025</strong></span>
                     </div>
                 </div>
 
-                <div class="urgency-timer">
-                    <i class="fas fa-fire"></i>
-                    <span>⏰ Offer expires in <span id="countdown-timer">23:45:30</span></span>
-                </div>
-            </div>
-
-            <div class="modal-footer">
-                <button class="apply-coupon-btn" id="apply-coupon-btn">
-                    🚀 Shop Now & Save Big
+                <button class="modal-shop-btn" id="modal-shop-btn">
+                    <i class="fas fa-shopping-bag"></i> Shop Now & Save Big
                 </button>
+
+                <p class="modal-note">The code will be automatically applied at checkout</p>
             </div>
         </div>
     </div>
@@ -370,60 +1048,72 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
+            <div class="footer-top">
+                <div class="footer-col">
                     <div class="footer-logo">
-                        <img src="images/logo/logo.png" alt="Thrift Zone">
-                        <h3>Thrift Zone</h3>
+                        <img src="images/logo/logo.png" alt="ThriftMaal Logo">
                     </div>
-                    <p>Your smart shopping companion for verified coupons.</p>
+                    <p class="footer-desc">India's most trusted platform for verified coupon codes and best deals. Save money on every purchase!</p>
                     <div class="social-links">
-                        <a href="#" class="social-link" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
-                        <a href="#" class="social-link" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-                        <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link" aria-label="Telegram" target="_blank" rel="noopener">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="WhatsApp" target="_blank" rel="noopener">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram" target="_blank" rel="noopener">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter" target="_blank" rel="noopener">
+                            <i class="fab fa-twitter"></i>
+                        </a>
                     </div>
                 </div>
 
-                <div class="footer-section">
+                <div class="footer-col">
                     <h4>Quick Links</h4>
-                    <ul>
+                    <ul class="footer-links">
                         <li><a href="/">Home</a></li>
                         <li><a href="/coupons">All Coupons</a></li>
-                        <li><a href="/deals">Deals</a></li>
+                        <li><a href="/stores">Stores</a></li>
+                        <li><a href="/categories">Categories</a></li>
                         <li><a href="/blog">Blog</a></li>
                     </ul>
                 </div>
 
-                <div class="footer-section">
-                    <h4>Company</h4>
-                    <ul>
-                        <li><a href="/about">About</a></li>
-                        <li><a href="/contact">Contact</a></li>
-                        <li><a href="/privacy">Privacy</a></li>
-                        <li><a href="/terms">Terms</a></li>
+                <div class="footer-col">
+                    <h4>Top Stores</h4>
+                    <ul class="footer-links">
+                        <li><a href="/store/amazon">Amazon Coupons</a></li>
+                        <li><a href="/store/flipkart">Flipkart Coupons</a></li>
+                        <li><a href="/store/myntra">Myntra Coupons</a></li>
+                        <li><a href="/store/nykaa">Nykaa Coupons</a></li>
+                        <li><a href="/store/swiggy">Swiggy Coupons</a></li>
                     </ul>
                 </div>
 
-                <div class="footer-section">
-                    <h4>Support</h4>
-                    <ul>
-                        <li><a href="/faq">FAQ</a></li>
-                        <li><a href="/help">Help</a></li>
-                        <li><a href="/contact">Report Issue</a></li>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="/about">About Us</a></li>
+                        <li><a href="/contact">Contact Us</a></li>
+                        <li><a href="/privacy">Privacy Policy</a></li>
+                        <li><a href="/terms">Terms & Conditions</a></li>
+                        <li><a href="/sitemap">Sitemap</a></li>
                     </ul>
                 </div>
             </div>
 
             <div class="footer-bottom">
-                <p>&copy; 2025 Thrift Zone. All rights reserved.</p>
+                <p>&copy; 2025 ThriftMaal.com - All Rights Reserved</p>
                 <p class="affiliate-disclosure">
-                    <strong>Disclosure:</strong> We earn commission from purchases through our links at no extra cost to you.
+                    <strong>Disclosure:</strong> We may earn commission from purchases through our affiliate links at no extra cost to you.
                 </p>
             </div>
         </div>
     </footer>
 
-    <!-- Your Existing JavaScript -->
+    <!-- JavaScript -->
     <script src="js/coupon.js"></script>
 </body>
 </html>
