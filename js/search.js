@@ -1,4 +1,4 @@
-// Search Functionality for Thrift Zone
+// Search Functionality for Thrift Zone - COMPLETE FIXED VERSION
 // Global variables
 let allProducts = [];
 let filteredProducts = [];
@@ -7,10 +7,15 @@ const productsPerPage = 12;
 let currentSort = 'relevance';
 let searchQuery = '';
 
+// Voice recognition global
+let recognition = null;
+let isListening = false;
+
 // DOM Elements
 const searchForm = document.getElementById('search-form');
 const searchInput = document.getElementById('search-input');
 const searchBtn = document.getElementById('search-btn');
+const voiceSearchBtn = document.getElementById('voice-search-btn');
 const searchSuggestions = document.getElementById('search-suggestions');
 const resultsGrid = document.getElementById('search-results-grid');
 const resultsCount = document.getElementById('results-count');
@@ -54,37 +59,31 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Setup event listeners
     setupEventListeners();
+    
+    // Initialize voice search
+    initVoiceSearch();
 });
 
 // Setup all event listeners
 function setupEventListeners() {
-    // Search form submission
-    if (searchForm) {
-        searchForm.addEventListener('submit', handleSearchSubmit);
-    }
-    
     // Search button click
     if (searchBtn) {
-        searchBtn.addEventListener('click', function(e) {
-            e.preventDefault();
-            handleSearchSubmit(e);
-        });
+        searchBtn.addEventListener('click', handleSearchSubmit);
     }
     
-    // Search input for suggestions
+    // Search input Enter key
     if (searchInput) {
-        searchInput.addEventListener('input', handleSearchInput);
-        searchInput.addEventListener('focus', () => {
-            if (searchInput.value.length >= 2 && searchSuggestions) {
-                searchSuggestions.classList.add('active');
-            }
-        });
-        
-        // Enter key handler
         searchInput.addEventListener('keypress', function(e) {
             if (e.key === 'Enter') {
                 e.preventDefault();
                 handleSearchSubmit(e);
+            }
+        });
+        
+        searchInput.addEventListener('input', handleSearchInput);
+        searchInput.addEventListener('focus', () => {
+            if (searchInput.value.length >= 2) {
+                searchSuggestions.classList.add('active');
             }
         });
     }
@@ -129,11 +128,9 @@ function setupEventListeners() {
 
 // Handle search form submission
 function handleSearchSubmit(e) {
-    if (e) {
-        e.preventDefault();
-    }
+    if (e) e.preventDefault();
     
-    const query = searchInput ? searchInput.value.trim() : '';
+    const query = searchInput.value.trim();
     
     if (query) {
         // Redirect to search page with query
@@ -204,6 +201,85 @@ function selectSuggestion(title) {
     
     // Redirect to search page with the selected query
     window.location.href = `search.html?q=${encodeURIComponent(title)}`;
+}
+
+// VOICE SEARCH FUNCTIONALITY
+function initVoiceSearch() {
+    if (!voiceSearchBtn) {
+        console.log('Voice search button not found');
+        return;
+    }
+    
+    // Check for speech recognition support
+    if (!('webkitSpeechRecognition' in window) && !('SpeechRecognition' in window)) {
+        voiceSearchBtn.style.display = 'none';
+        console.log('Voice search not supported in this browser');
+        return;
+    }
+    
+    const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+    recognition = new SpeechRecognition();
+    
+    recognition.continuous = false;
+    recognition.interimResults = false;
+    recognition.lang = 'en-US';
+    
+    voiceSearchBtn.addEventListener('click', toggleVoiceSearch);
+    
+    recognition.onstart = () => {
+        isListening = true;
+        voiceSearchBtn.classList.add('listening');
+        voiceSearchBtn.innerHTML = '<i class="fas fa-microphone-slash"></i>';
+        console.log('🎤 Voice search started');
+    };
+    
+    recognition.onresult = (event) => {
+        const transcript = event.results[0][0].transcript;
+        console.log('🎤 Heard:', transcript);
+        
+        if (searchInput) {
+            searchInput.value = transcript;
+        }
+        
+        // Auto-submit after voice input
+        setTimeout(() => {
+            const query = transcript.trim();
+            if (query) {
+                window.location.href = `search.html?q=${encodeURIComponent(query)}`;
+            }
+        }, 1000);
+    };
+    
+    recognition.onend = () => {
+        isListening = false;
+        voiceSearchBtn.classList.remove('listening');
+        voiceSearchBtn.innerHTML = '<i class="fas fa-microphone"></i>';
+        console.log('🎤 Voice search ended');
+    };
+    
+    recognition.onerror = (event) => {
+        console.error('🎤 Voice search error:', event.error);
+        isListening = false;
+        voiceSearchBtn.classList.remove('listening');
+        voiceSearchBtn.innerHTML = '<i class="fas fa-microphone"></i>';
+        
+        showToast(`Voice search error: ${event.error}`);
+    };
+}
+
+function toggleVoiceSearch() {
+    if (!recognition) return;
+    
+    if (isListening) {
+        recognition.stop();
+    } else {
+        try {
+            recognition.start();
+        } catch (error) {
+            console.error('Error starting voice recognition:', error);
+            showToast('Could not start voice search');
+        }
+    }
 }
 
 // Load products from JSON
@@ -434,7 +510,7 @@ function loadMoreProducts() {
     }
 }
 
-// Create product card HTML - FIXED TO REDIRECT TO PRODUCT PAGE
+// Create product card HTML - FIXED TO REDIRECT TO PRODUCT PAGE FIRST
 function createProductCard(product) {
     if (!product) return '';
     
@@ -444,25 +520,25 @@ function createProductCard(product) {
     const productCategory = product.category || 'general';
     const productLink = product.affiliate_link || '#';
     const productRating = product.rating || '';
-    const productId = product.id || product.asin || '';
-    const titleSlug = (product.title || 'product')
-        .toLowerCase()
-        .replace(/[^a-z0-9]+/g, '-')
-        .replace(/^-+|-+$/g, '')
+    const productId = product.id || product.asin;
+    
+    // Create title slug for URL
+    const titleSlug = (product.title || 'product').toLowerCase()
+        .replace(/[^a-z0-9\s]/g, '')
+        .replace(/\s+/g, '-')
         .substring(0, 50);
     
+    const productPageUrl = `product.html?id=${productId}&title=${titleSlug}`;
+    
     return `
-        <div class="product-card" 
-             data-category="${productCategory}" 
-             onclick="openProductPage('${escapeHtml(productId)}', '${escapeHtml(product.title || 'Product')}')" 
-             style="cursor: pointer;">
-            <div class="product-image-container">
+        <div class="product-card" data-category="${productCategory}" style="cursor: pointer;">
+            <div class="product-image-container" onclick="window.location.href='${productPageUrl}'">
                 <img src="${productImage}" 
                      alt="${escapeHtml(product.title || 'Product')}" 
                      class="product-image"
                      onerror="this.src='images/placeholder.jpg'">
             </div>
-            <div class="product-info">
+            <div class="product-info" onclick="window.location.href='${productPageUrl}'">
                 <h3 class="product-title">${highlightedTitle}</h3>
                 ${productRating ? `
                     <div class="product-rating">
@@ -475,29 +551,17 @@ function createProductCard(product) {
                 <div class="product-category">
                     <span class="category-tag">${productCategory}</span>
                 </div>
-                <div class="product-actions">
-                    <a href="product.html?id=${encodeURIComponent(productId)}&title=${encodeURIComponent(titleSlug)}" 
-                       class="product-link"
-                       onclick="event.stopPropagation()">
-                        <i class="fas fa-shopping-cart"></i>
-                        View Deal
-                    </a>
-                </div>
+            </div>
+            <div class="product-actions">
+                <a href="${productPageUrl}" 
+                   class="product-link"
+                   onclick="event.stopPropagation()">
+                    <i class="fas fa-info-circle"></i>
+                    View Details
+                </a>
             </div>
         </div>
     `;
-}
-
-// Product page navigation function (same as homepage)
-function openProductPage(productId, productTitle) {
-    const titleSlug = (productTitle || 'product')
-        .toLowerCase()
-        .replace(/[^a-z0-9]+/g, '-')
-        .replace(/^-+|-+$/g, '')
-        .substring(0, 50);
-    
-    const productUrl = `product.html?id=${encodeURIComponent(productId)}&title=${encodeURIComponent(titleSlug)}`;
-    window.location.href = productUrl;
 }
 
 // Update results count
@@ -563,6 +627,33 @@ function escapeHtml(text) {
     const div = document.createElement('div');
     div.textContent = text;
     return div.innerHTML;
+}
+
+// Show toast notification
+function showToast(message) {
+    const toast = document.createElement('div');
+    toast.style.cssText = `
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background: #2874F0;
+        color: white;
+        padding: 12px 24px;
+        border-radius: 8px;
+        font-size: 14px;
+        font-weight: 500;
+        z-index: 10000;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        animation: slideIn 0.3s ease;
+    `;
+    toast.textContent = message;
+    
+    document.body.appendChild(toast);
+    
+    setTimeout(() => {
+        toast.style.animation = 'slideOut 0.3s ease';
+        setTimeout(() => document.body.removeChild(toast), 300);
+    }, 3000);
 }
 
 // Related Products Functionality
@@ -708,6 +799,5 @@ document.addEventListener('DOMContentLoaded', function() {
 // Make functions available globally
 window.clearSearch = clearSearch;
 window.selectSuggestion = selectSuggestion;
-window.openProductPage = openProductPage;
 
 console.log('✅ Search JavaScript loaded successfully');
