@@ -23,6 +23,8 @@ const loadMoreBtn = document.getElementById('load-more-btn');
 const loadMoreContainer = document.getElementById('load-more-container');
 const searchLoading = document.getElementById('search-loading');
 const noResults = document.getElementById('no-results');
+const relatedProductsSection = document.getElementById('related-products-section');
+const relatedProductsGrid = document.getElementById('related-products-grid');
 
 // Initialize on page load
 document.addEventListener('DOMContentLoaded', function() {
@@ -33,9 +35,15 @@ document.addEventListener('DOMContentLoaded', function() {
     searchQuery = urlParams.get('q') || '';
     
     if (searchQuery) {
-        searchInput.value = searchQuery;
-        searchQuerySpan.textContent = `"${searchQuery}"`;
-        searchTitle.textContent = `Search Results for "${searchQuery}"`;
+        if (searchInput) {
+            searchInput.value = searchQuery;
+        }
+        if (searchQuerySpan) {
+            searchQuerySpan.textContent = `"${searchQuery}"`;
+        }
+        if (searchTitle) {
+            searchTitle.textContent = `Search Results for "${searchQuery}"`;
+        }
         
         // Load and search products
         loadProducts();
@@ -55,12 +63,28 @@ function setupEventListeners() {
         searchForm.addEventListener('submit', handleSearchSubmit);
     }
     
+    // Search button click
+    if (searchBtn) {
+        searchBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            handleSearchSubmit(e);
+        });
+    }
+    
     // Search input for suggestions
     if (searchInput) {
         searchInput.addEventListener('input', handleSearchInput);
         searchInput.addEventListener('focus', () => {
-            if (searchInput.value.length >= 2) {
+            if (searchInput.value.length >= 2 && searchSuggestions) {
                 searchSuggestions.classList.add('active');
+            }
+        });
+        
+        // Enter key handler
+        searchInput.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                e.preventDefault();
+                handleSearchSubmit(e);
             }
         });
     }
@@ -80,9 +104,24 @@ function setupEventListeners() {
         loadMoreBtn.addEventListener('click', loadMoreProducts);
     }
     
+    // Event delegation for suggestion clicks
+    if (searchSuggestions) {
+        searchSuggestions.addEventListener('click', function(e) {
+            const suggestionItem = e.target.closest('.suggestion-item');
+            if (suggestionItem) {
+                const title = suggestionItem.getAttribute('data-title');
+                if (title) {
+                    selectSuggestion(title);
+                }
+            }
+        });
+    }
+    
     // Close suggestions when clicking outside
     document.addEventListener('click', (e) => {
-        if (!searchInput.contains(e.target) && !searchSuggestions.contains(e.target)) {
+        if (searchInput && searchSuggestions && 
+            !searchInput.contains(e.target) && 
+            !searchSuggestions.contains(e.target)) {
             searchSuggestions.classList.remove('active');
         }
     });
@@ -90,9 +129,11 @@ function setupEventListeners() {
 
 // Handle search form submission
 function handleSearchSubmit(e) {
-    e.preventDefault();
+    if (e) {
+        e.preventDefault();
+    }
     
-    const query = searchInput.value.trim();
+    const query = searchInput ? searchInput.value.trim() : '';
     
     if (query) {
         // Redirect to search page with query
@@ -112,14 +153,17 @@ function handleSearchInput(e) {
             showSuggestions(query);
         }, 300);
     } else {
-        searchSuggestions.classList.remove('active');
-        searchSuggestions.innerHTML = '';
+        if (searchSuggestions) {
+            searchSuggestions.classList.remove('active');
+            searchSuggestions.innerHTML = '';
+        }
     }
 }
 
 // Show search suggestions
 function showSuggestions(query) {
     if (!Array.isArray(allProducts) || allProducts.length === 0) return;
+    if (!searchSuggestions) return;
     
     const suggestions = allProducts.filter(product => 
         product.title.toLowerCase().includes(query.toLowerCase()) ||
@@ -128,7 +172,7 @@ function showSuggestions(query) {
     
     if (suggestions.length > 0) {
         searchSuggestions.innerHTML = suggestions.map(product => `
-            <div class="suggestion-item" onclick="selectSuggestion('${escapeHtml(product.title)}')">
+            <div class="suggestion-item" data-title="${escapeHtml(product.title)}">
                 <div class="suggestion-image">
                     <img src="${product.image}" alt="${escapeHtml(product.title)}" onerror="this.src='images/placeholder.jpg'">
                 </div>
@@ -149,14 +193,20 @@ function showSuggestions(query) {
     }
 }
 
-// Select a suggestion
+// Select a suggestion - FIXED VERSION
 function selectSuggestion(title) {
-    searchInput.value = title;
-    searchSuggestions.classList.remove('active');
-    searchForm.dispatchEvent(new Event('submit'));
+    if (searchInput) {
+        searchInput.value = title;
+    }
+    if (searchSuggestions) {
+        searchSuggestions.classList.remove('active');
+    }
+    
+    // Redirect to search page with the selected query
+    window.location.href = `search.html?q=${encodeURIComponent(title)}`;
 }
 
-// Load products from JSON - FIXED VERSION
+// Load products from JSON
 async function loadProducts() {
     try {
         showLoading(true);
@@ -171,15 +221,12 @@ async function loadProducts() {
         const data = await response.json();
         console.log('📦 Raw data loaded:', data);
         
-        // CRITICAL FIX: Handle different JSON structures
+        // Handle different JSON structures
         if (Array.isArray(data)) {
-            // If data is already an array
             allProducts = data;
         } else if (data.products && Array.isArray(data.products)) {
-            // If data has a 'products' property
             allProducts = data.products;
         } else if (typeof data === 'object') {
-            // If data is an object, try to find the array
             const keys = Object.keys(data);
             const arrayKey = keys.find(key => Array.isArray(data[key]));
             if (arrayKey) {
@@ -194,7 +241,6 @@ async function loadProducts() {
         console.log(`✅ Loaded ${allProducts.length} products`);
         console.log('🔍 First product:', allProducts[0]);
         
-        // Verify it's an array
         if (!Array.isArray(allProducts)) {
             throw new Error('allProducts is not an array after loading');
         }
@@ -208,7 +254,6 @@ async function loadProducts() {
         showLoading(false);
         showNoResults();
         
-        // Show error in the UI
         if (noResults) {
             const noResultsText = noResults.querySelector('p');
             if (noResultsText) {
@@ -224,6 +269,9 @@ function searchProducts() {
         filteredProducts = [];
         showLoading(false);
         showNoResults();
+        if (relatedProductsSection) {
+            relatedProductsSection.style.display = 'none';
+        }
         return;
     }
     
@@ -258,15 +306,25 @@ function searchProducts() {
     
     // Display products
     displayedProducts = 0;
-    resultsGrid.innerHTML = '';
+    if (resultsGrid) {
+        resultsGrid.innerHTML = '';
+    }
     
     showLoading(false);
     
     if (filteredProducts.length > 0) {
         loadMoreProducts();
-        noResults.style.display = 'none';
+        if (noResults) {
+            noResults.style.display = 'none';
+        }
+        
+        // Show related products
+        showRelatedProducts();
     } else {
         showNoResults();
+        if (relatedProductsSection) {
+            relatedProductsSection.style.display = 'none';
+        }
     }
 }
 
@@ -318,7 +376,9 @@ function handleSortChange(e) {
     
     // Re-render products
     displayedProducts = 0;
-    resultsGrid.innerHTML = '';
+    if (resultsGrid) {
+        resultsGrid.innerHTML = '';
+    }
     loadMoreProducts();
 }
 
@@ -329,10 +389,12 @@ function handleViewToggle(e) {
     viewToggleBtns.forEach(btn => btn.classList.remove('active'));
     e.currentTarget.classList.add('active');
     
-    if (view === 'list') {
-        resultsGrid.classList.add('list-view');
-    } else {
-        resultsGrid.classList.remove('list-view');
+    if (resultsGrid) {
+        if (view === 'list') {
+            resultsGrid.classList.add('list-view');
+        } else {
+            resultsGrid.classList.remove('list-view');
+        }
     }
 }
 
@@ -340,6 +402,11 @@ function handleViewToggle(e) {
 function loadMoreProducts() {
     if (!Array.isArray(filteredProducts)) {
         console.error('❌ Cannot load more: filteredProducts is not an array');
+        return;
+    }
+    
+    if (!resultsGrid) {
+        console.error('❌ Results grid not found');
         return;
     }
     
@@ -358,14 +425,16 @@ function loadMoreProducts() {
     updateResultsCount();
     
     // Show/hide load more button
-    if (displayedProducts < filteredProducts.length) {
-        loadMoreContainer.style.display = 'block';
-    } else {
-        loadMoreContainer.style.display = 'none';
+    if (loadMoreContainer) {
+        if (displayedProducts < filteredProducts.length) {
+            loadMoreContainer.style.display = 'block';
+        } else {
+            loadMoreContainer.style.display = 'none';
+        }
     }
 }
 
-// Create product card HTML
+// Create product card HTML - FIXED TO REDIRECT TO PRODUCT PAGE
 function createProductCard(product) {
     if (!product) return '';
     
@@ -375,9 +444,18 @@ function createProductCard(product) {
     const productCategory = product.category || 'general';
     const productLink = product.affiliate_link || '#';
     const productRating = product.rating || '';
+    const productId = product.id || product.asin || '';
+    const titleSlug = (product.title || 'product')
+        .toLowerCase()
+        .replace(/[^a-z0-9]+/g, '-')
+        .replace(/^-+|-+$/g, '')
+        .substring(0, 50);
     
     return `
-        <div class="product-card" data-category="${productCategory}">
+        <div class="product-card" 
+             data-category="${productCategory}" 
+             onclick="openProductPage('${escapeHtml(productId)}', '${escapeHtml(product.title || 'Product')}')" 
+             style="cursor: pointer;">
             <div class="product-image-container">
                 <img src="${productImage}" 
                      alt="${escapeHtml(product.title || 'Product')}" 
@@ -398,10 +476,9 @@ function createProductCard(product) {
                     <span class="category-tag">${productCategory}</span>
                 </div>
                 <div class="product-actions">
-                    <a href="${productLink}" 
-                       target="_blank" 
-                       rel="noopener noreferrer" 
-                       class="product-link">
+                    <a href="product.html?id=${encodeURIComponent(productId)}&title=${encodeURIComponent(titleSlug)}" 
+                       class="product-link"
+                       onclick="event.stopPropagation()">
                         <i class="fas fa-shopping-cart"></i>
                         View Deal
                     </a>
@@ -409,6 +486,18 @@ function createProductCard(product) {
             </div>
         </div>
     `;
+}
+
+// Product page navigation function (same as homepage)
+function openProductPage(productId, productTitle) {
+    const titleSlug = (productTitle || 'product')
+        .toLowerCase()
+        .replace(/[^a-z0-9]+/g, '-')
+        .replace(/^-+|-+$/g, '')
+        .substring(0, 50);
+    
+    const productUrl = `product.html?id=${encodeURIComponent(productId)}&title=${encodeURIComponent(titleSlug)}`;
+    window.location.href = productUrl;
 }
 
 // Update results count
@@ -450,7 +539,9 @@ function showNoResults() {
 
 // Clear search
 function clearSearch() {
-    searchInput.value = '';
+    if (searchInput) {
+        searchInput.value = '';
+    }
     window.location.href = 'index.html';
 }
 
@@ -474,27 +565,16 @@ function escapeHtml(text) {
     return div.innerHTML;
 }
 
-// Make functions available globally
-window.clearSearch = clearSearch;
-window.selectSuggestion = selectSuggestion;
-
-console.log('✅ Search JavaScript loaded successfully');
-
-
-
-
-
-
-
-
 // Related Products Functionality
 let relatedProducts = [];
-const relatedProductsSection = document.getElementById('related-products-section');
-const relatedProductsGrid = document.getElementById('related-products-grid');
 
 // Show related products based on search results
 function showRelatedProducts() {
     if (!Array.isArray(allProducts) || allProducts.length === 0) {
+        return;
+    }
+    
+    if (!relatedProductsSection || !relatedProductsGrid) {
         return;
     }
     
@@ -505,11 +585,8 @@ function showRelatedProducts() {
     
     // Find products from same categories that aren't in current results
     relatedProducts = allProducts.filter(product => {
-        // Check if product is in same category
         const sameCategory = searchCategories.includes(product.category);
-        
-        // Check if product is NOT already in filtered results
-        const notInResults = !filteredProducts.find(p => p.id === product.id);
+        const notInResults = !filteredProducts.find(p => p.asin === product.asin);
         
         return sameCategory && notInResults;
     });
@@ -549,108 +626,32 @@ function shuffleArray(array) {
     return shuffled;
 }
 
-// Update the searchProducts function to call showRelatedProducts
-// Find this part in your existing searchProducts function and add the showRelatedProducts() call:
-
-function searchProducts() {
-    if (!searchQuery) {
-        filteredProducts = [];
-        showLoading(false);
-        showNoResults();
-        return;
-    }
-    
-    if (!Array.isArray(allProducts)) {
-        console.error('❌ allProducts is not an array:', typeof allProducts);
-        showLoading(false);
-        showNoResults();
-        return;
-    }
-    
-    const query = searchQuery.toLowerCase();
-    console.log(`🔍 Searching for: "${query}"`);
-    
-    // Filter products by title, category, or ASIN
-    filteredProducts = allProducts.filter(product => {
-        if (!product) return false;
-        
-        const titleMatch = product.title && product.title.toLowerCase().includes(query);
-        const categoryMatch = product.category && product.category.toLowerCase().includes(query);
-        const asinMatch = product.asin && product.asin.toLowerCase().includes(query);
-        
-        return titleMatch || categoryMatch || asinMatch;
-    });
-    
-    console.log(`📊 Found ${filteredProducts.length} matching products`);
-    
-    // Update UI
-    updateResultsCount();
-    
-    // Sort products
-    sortProducts();
-    
-    // Display products
-    displayedProducts = 0;
-    resultsGrid.innerHTML = '';
-    
-    showLoading(false);
-    
-    if (filteredProducts.length > 0) {
-        loadMoreProducts();
-        noResults.style.display = 'none';
-        
-        // ✨ NEW: Show related products
-        showRelatedProducts();
-    } else {
-        showNoResults();
-        relatedProductsSection.style.display = 'none';
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // Mobile Menu Toggle Functionality
 document.addEventListener('DOMContentLoaded', function() {
     console.log('📱 Mobile menu initialized');
     
-    // Get elements
     const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
     const mobileNav = document.getElementById('mobile-nav');
     const mobileNavClose = document.querySelector('.mobile-nav-close');
     const body = document.body;
     
-    // Check if elements exist
     if (!mobileMenuToggle || !mobileNav) {
-        console.error('❌ Mobile menu elements not found');
+        console.log('ℹ️ Mobile menu elements not found (might not be on this page)');
         return;
     }
     
-    // Open mobile menu
     function openMobileMenu() {
         mobileNav.classList.add('active');
-        body.style.overflow = 'hidden'; // Prevent body scroll
+        body.style.overflow = 'hidden';
         console.log('📱 Mobile menu opened');
     }
     
-    // Close mobile menu
     function closeMobileMenu() {
         mobileNav.classList.remove('active');
-        body.style.overflow = ''; // Restore body scroll
+        body.style.overflow = '';
         console.log('📱 Mobile menu closed');
     }
     
-    // Toggle button click
     if (mobileMenuToggle) {
         mobileMenuToggle.addEventListener('click', function(e) {
             e.stopPropagation();
@@ -663,7 +664,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Close button click
     if (mobileNavClose) {
         mobileNavClose.addEventListener('click', function(e) {
             e.stopPropagation();
@@ -671,14 +671,14 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Close when clicking outside
-    mobileNav.addEventListener('click', function(e) {
-        if (e.target === mobileNav) {
-            closeMobileMenu();
-        }
-    });
+    if (mobileNav) {
+        mobileNav.addEventListener('click', function(e) {
+            if (e.target === mobileNav) {
+                closeMobileMenu();
+            }
+        });
+    }
     
-    // Close when clicking any nav link
     const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
     mobileNavLinks.forEach(function(link) {
         link.addEventListener('click', function() {
@@ -686,19 +686,17 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // Close on escape key
     document.addEventListener('keydown', function(e) {
-        if (e.key === 'Escape' && mobileNav.classList.contains('active')) {
+        if (e.key === 'Escape' && mobileNav && mobileNav.classList.contains('active')) {
             closeMobileMenu();
         }
     });
     
-    // Handle window resize - close menu on desktop
     let resizeTimer;
     window.addEventListener('resize', function() {
         clearTimeout(resizeTimer);
         resizeTimer = setTimeout(function() {
-            if (window.innerWidth > 768 && mobileNav.classList.contains('active')) {
+            if (window.innerWidth > 768 && mobileNav && mobileNav.classList.contains('active')) {
                 closeMobileMenu();
             }
         }, 250);
@@ -706,3 +704,10 @@ document.addEventListener('DOMContentLoaded', function() {
     
     console.log('✅ Mobile menu functionality loaded');
 });
+
+// Make functions available globally
+window.clearSearch = clearSearch;
+window.selectSuggestion = selectSuggestion;
+window.openProductPage = openProductPage;
+
+console.log('✅ Search JavaScript loaded successfully');
