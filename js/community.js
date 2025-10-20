@@ -1,746 +1,1025 @@
-// ThriftZone Community JavaScript
-// Complete functionality for discussion board with localStorage
+// ===================================
+// ThriftMaal Community Forum
+// Complete JavaScript with 300 Posts
+// Mobile-First, SEO Optimized
+// ===================================
 
-class ThriftZoneCommunity {
-    constructor() {
-        this.currentUser = null;
-        this.discussions = [];
-        this.simUsers = [];
-        this.currentPage = 1;
-        this.discussionsPerPage = 10;
-        this.currentCategory = 'all';
-        this.currentSort = 'latest';
-        
-        this.init();
-    }
+// ===================================
+// DEFAULT DATA - 300 Posts with Comments & Replies
+// ===================================
 
-    init() {
-        this.loadUserData();
-        this.initializeSimulatedUsers();
-        this.generateDailyContent();
-        this.setupEventListeners();
-        this.loadDiscussions();
-        this.updateUI();
-        this.startDailyRotation();
-    }
+const DEFAULT_POSTS_DATA = [
+  {
+    "id": 1,
+    "title": "Best time to find deals on electronics",
+    "author": "ThriftQueen",
+    "category": "Thrift Shopping Tips",
+    "timestamp": "2025-09-18T16:38:04.134169",
+    "views": 1989,
+    "likes": 312,
+    "commentsCount": 50,
+    "excerpt": "I've noticed that early morning is the best time to catch fresh deals...",
+    "content": "I've noticed that early morning is the best time to catch fresh deals...\n\nI've been shopping on ThriftMaal for a while now and wanted to share my experience. This is specifically about the thrift shopping tips section. Feel free to ask any questions in the comments below!\n\nHope this helps the community. Happy shopping! 🛍️",
+    "tags": ["tips", "shopping-guide", "savings"],
+    "isPinned": false,
+    "isLocked": false,
+    "comments": []
+  }
+  // Note: Full data with all 300 posts will be loaded from localStorage or initialized
+];
 
-    // === USER MANAGEMENT ===
-    loadUserData() {
-        const userData = localStorage.getItem('tz_user');
-        if (userData) {
-            this.currentUser = JSON.parse(userData);
-            this.showCommunityInterface();
-        } else {
-            this.showUserSetup();
-        }
-    }
+// ===================================
+// Global State Management
+// ===================================
 
-    saveUserData() {
-        localStorage.setItem('tz_user', JSON.stringify(this.currentUser));
-    }
+let allPosts = [];
+let displayedPosts = [];
+let filteredPosts = [];
+let currentCategory = 'all';
+let currentSort = 'latest';
+let currentSearchQuery = '';
+let postsPerPage = 12;
+let currentPage = 1;
+let currentUser = null;
 
-    createUser(username, avatar) {
-        this.currentUser = {
-            id: this.generateId(),
-            username: username,
-            avatar: avatar,
-            joinedAt: new Date().toISOString(),
-            reputation: 0,
-            postsCount: 0,
-            likesGiven: 0,
-            likesReceived: 0
-        };
-        this.saveUserData();
-        this.showCommunityInterface();
-        this.showToast('Welcome to ThriftZone Community! 🎉', 'success');
-    }
+// ===================================
+// LocalStorage Keys
+// ===================================
 
-    // === SIMULATED USERS AND CONTENT ===
-    initializeSimulatedUsers() {
-        const savedUsers = localStorage.getItem('tz_sim_users');
-        if (savedUsers) {
-            this.simUsers = JSON.parse(savedUsers);
-        } else {
-            this.generateSimulatedUsers();
-        }
-    }
-
-    generateSimulatedUsers() {
-        const indianNames = [
-            'Rahul_Deals', 'Priya_Shopper', 'Amit_Bargains', 'Sneha_Savings', 'Vikram_Hunter',
-            'Anita_Deals', 'Rajesh_Coupons', 'Kavya_Offers', 'Suresh_Loot', 'Neha_Discounts',
-            'Karan_Savings', 'Riya_Bargains', 'Ashish_Deals', 'Pooja_Offers', 'Manish_Hunter',
-            'Shreya_Coupons', 'Nikhil_Loot', 'Divya_Savings', 'Rohit_Deals', 'Sapna_Bargains'
-        ];
-        
-        const avatars = ['🛍️', '💰', '🔥', '⚡', '🎯', '💎', '🏆', '🌟', '⭐', '🎪'];
-        
-        this.simUsers = [];
-        for (let i = 0; i < 500; i++) {
-            this.simUsers.push({
-                id: `sim_${i}`,
-                username: `${indianNames[i % indianNames.length]}${Math.floor(Math.random() * 999)}`,
-                avatar: avatars[Math.floor(Math.random() * avatars.length)],
-                reputation: Math.floor(Math.random() * 1000) + 50,
-                joinedAt: this.getRandomPastDate(),
-                badge: this.getRandomBadge()
-            });
-        }
-        localStorage.setItem('tz_sim_users', JSON.stringify(this.simUsers));
-    }
-
-    getRandomBadge() {
-        const badges = ['Deal Hunter', 'Bargain Expert', 'Coupon Master', 'Shopping Guru', 'Loot King'];
-        return badges[Math.floor(Math.random() * badges.length)];
-    }
-
-    getRandomPastDate() {
-        const now = new Date();
-        const pastDate = new Date(now.getTime() - Math.random() * 90 * 24 * 60 * 60 * 1000);
-        return pastDate.toISOString();
-    }
-
-    // === DAILY CONTENT GENERATION ===
-    generateDailyContent() {
-        const today = new Date().toDateString();
-        const lastGenerated = localStorage.getItem('tz_last_content_date');
-        
-        if (lastGenerated !== today) {
-            this.createDailyDiscussions();
-            localStorage.setItem('tz_last_content_date', today);
-        }
-    }
-
-    createDailyDiscussions() {
-        const discussionTemplates = [
-            {
-                category: 'flash-deals',
-                titles: [
-                    '🔥 Amazon Lightning Deal: {product} for just ₹{price}!',
-                    '⚡ Flipkart Flash Sale: {product} 70% off!',
-                    '💥 Myntra Mega Deal: {brand} collection starting ₹{price}',
-                    '🚀 Paytm Mall Super Deal: {product} with extra cashback!'
-                ],
-                contents: [
-                    'Bhai log, just spotted this amazing deal! {product} original price ₹{original} but abhi sirf ₹{price} mein mil raha hai. Maine order kar diya, you guys should also check it out. Link expire ho jaega jaldi! 🏃‍♂️',
-                    'Guys, this is pure loot! {product} ka price drop dekh ke main shock ho gaya. Quality top-notch hai, reviews bhi acche hain. Paisa vasool deal hai yaar! 💯',
-                    'Fellow deal hunters! Found this gem on {platform}. {product} ke liye bohot time se wait kar raha tha. Finally good price mein mil gaya. Sharing with community! 🎯'
-                ]
-            },
-            {
-                category: 'coupons',
-                titles: [
-                    '💳 HDFC Card Offer: Extra 10% off on {platform}',
-                    '🎫 Working Coupon: {code} for ₹{discount} off',
-                    '💰 Cashback Alert: {percent}% back on {category} shopping',
-                    '🏦 Bank Offer: SBI users get ₹{amount} instant discount'
-                ],
-                contents: [
-                    'Verified working code guys! {code} use karke ₹{discount} save kiya just now. Valid till {date}. Hurry up! 🏃‍♀️',
-                    'Pro tip: {platform} pe {card} use karo for extra savings. Mujhe ₹{amount} extra discount mila. Thank me later! 😉',
-                    'Bank offer hack: First transaction with {bank} debit card gets ₹{amount} cashback. Tested and working! 🏧'
-                ]
-            },
-            {
-                category: 'reviews',
-                titles: [
-                    '⭐ {product} Review: Worth the hype?',
-                    '🔍 Honest Review: {brand} {product} after 6 months use',
-                    '💡 Should you buy {product}? My experience',
-                    '📱 {product} vs {competitor}: Which one to choose?'
-                ],
-                contents: [
-                    'Used {product} for {duration} now. Build quality solid hai, performance bhi acchi. Price ke hisaab se value for money. Recommended! 👍',
-                    'Maine {price} mein liya tha {product}. After using extensively, can say its worth every penny. Pros: {pros}. Cons: {cons}. Overall 8/10! ⭐',
-                    'Honest review time! {product} delivered more than expected. Quality, features, everything top-notch. For ₹{price}, its a steal deal! 💯'
-                ]
-            },
-            {
-                category: 'shopping-tips',
-                titles: [
-                    '💡 Pro Tips: How to get maximum discounts during sales',
-                    '🎯 Shopping Strategy: My Diwali shopping plan',
-                    '💳 Credit Card Hacks for extra savings',
-                    '📱 Best apps for price comparison and deals'
-                ],
-                contents: [
-                    'Sharing my tested shopping strategy: 1) Compare prices across platforms 2) Check bank offers 3) Use cashback apps 4) Time your purchase during sales. Saved ₹50K+ last year! 💰',
-                    'Festival season aane wala hai guys! Start karo preparations. Wishlist banao, price track karo, bank offers check karo. Early bird gets the best deals! 🐦',
-                    'Credit card game strong karna hai toh ye tricks follow karo: {tip1}, {tip2}, {tip3}. Mera monthly savings ₹5K+ increase hua hai! 📈'
-                ]
-            }
-        ];
-
-        const products = ['iPhone 15', 'Samsung Galaxy S24', 'OnePlus 12', 'Redmi Note 13', 'MacBook Air', 'iPad Pro', 'AirPods Pro', 'Sony WH-1000XM5', 'JBL Flip 6', 'Realme GT'];
-        const brands = ['Nike', 'Adidas', 'Puma', 'Reebok', 'Levi\'s', 'H&M', 'Zara', 'Uniqlo', 'Allen Solly', 'Peter England'];
-        const platforms = ['Amazon', 'Flipkart', 'Myntra', 'Ajio', 'Nykaa', 'BigBasket'];
-
-        const savedDiscussions = localStorage.getItem('tz_discussions');
-        this.discussions = savedDiscussions ? JSON.parse(savedDiscussions) : [];
-
-        // Generate 50 new discussions daily
-        for (let i = 0; i < 50; i++) {
-            const template = discussionTemplates[Math.floor(Math.random() * discussionTemplates.length)];
-            const randomUser = this.simUsers[Math.floor(Math.random() * this.simUsers.length)];
-            
-            const discussion = {
-                id: this.generateId(),
-                authorId: randomUser.id,
-                authorName: randomUser.username,
-                authorAvatar: randomUser.avatar,
-                category: template.category,
-                title: this.fillTemplate(template.titles[Math.floor(Math.random() * template.titles.length)], {
-                    product: products[Math.floor(Math.random() * products.length)],
-                    brand: brands[Math.floor(Math.random() * brands.length)],
-                    platform: platforms[Math.floor(Math.random() * platforms.length)],
-                    price: Math.floor(Math.random() * 50000) + 1000,
-                    code: this.generateCouponCode(),
-                    discount: Math.floor(Math.random() * 2000) + 100,
-                    percent: Math.floor(Math.random() * 50) + 5,
-                    amount: Math.floor(Math.random() * 1000) + 100
-                }),
-                content: this.fillTemplate(template.contents[Math.floor(Math.random() * template.contents.length)], {
-                    product: products[Math.floor(Math.random() * products.length)],
-                    platform: platforms[Math.floor(Math.random() * platforms.length)],
-                    price: Math.floor(Math.random() * 50000) + 1000,
-                    original: Math.floor(Math.random() * 80000) + 20000,
-                    duration: ['3 months', '6 months', '1 year'][Math.floor(Math.random() * 3)],
-                    pros: 'Good build, nice features, value for money',
-                    cons: 'Battery could be better'
-                }),
-                createdAt: new Date().toISOString(),
-                likes: Math.floor(Math.random() * 50),
-                views: Math.floor(Math.random() * 200) + 50,
-                replyCount: Math.floor(Math.random() * 20),
-                isSimulated: true
-            };
-
-            this.discussions.unshift(discussion);
-        }
-
-        // Keep only latest 1000 discussions to manage storage
-        if (this.discussions.length > 1000) {
-            this.discussions = this.discussions.slice(0, 1000);
-        }
-
-        this.saveDiscussions();
-    }
-
-    fillTemplate(template, data) {
-        return template.replace(/\{(\w+)\}/g, (match, key) => data[key] || match);
-    }
-
-    generateCouponCode() {
-        const codes = ['SAVE20', 'DEAL50', 'MEGA30', 'LOOT40', 'FLASH25', 'SUPER60', 'ULTRA35'];
-        return codes[Math.floor(Math.random() * codes.length)];
-    }
-
-    // === DISCUSSION MANAGEMENT ===
-    loadDiscussions() {
-        const saved = localStorage.getItem('tz_discussions');
-        this.discussions = saved ? JSON.parse(saved) : [];
-    }
-
-    saveDiscussions() {
-        localStorage.setItem('tz_discussions', JSON.stringify(this.discussions));
-    }
-
-    createDiscussion(title, content, category) {
-        if (!this.currentUser) return;
-
-        const discussion = {
-            id: this.generateId(),
-            authorId: this.currentUser.id,
-            authorName: this.currentUser.username,
-            authorAvatar: this.currentUser.avatar,
-            category: category,
-            title: title,
-            content: content,
-            createdAt: new Date().toISOString(),
-            likes: 0,
-            views: 0,
-            replyCount: 0,
-            replies: [],
-            isSimulated: false
-        };
-
-        this.discussions.unshift(discussion);
-        this.currentUser.postsCount++;
-        this.saveDiscussions();
-        this.saveUserData();
-        this.renderDiscussions();
-        this.showToast('Discussion posted successfully! 🎉', 'success');
-    }
-
-    // === UI MANAGEMENT ===
-    setupEventListeners() {
-        // User setup
-        document.getElementById('join-community-btn')?.addEventListener('click', () => {
-            const username = document.getElementById('username-input').value.trim();
-            const selectedAvatar = document.querySelector('.avatar-option.active')?.dataset.avatar || '💎';
-            
-            if (username.length < 3) {
-                this.showToast('Username must be at least 3 characters long', 'error');
-                return;
-            }
-            
-            this.createUser(username, selectedAvatar);
-        });
-
-        // Avatar selection
-        document.querySelectorAll('.avatar-option').forEach(option => {
-            option.addEventListener('click', () => {
-                document.querySelectorAll('.avatar-option').forEach(o => o.classList.remove('active'));
-                option.classList.add('active');
-            });
-        });
-
-        // Post creation
-        document.getElementById('create-post-btn')?.addEventListener('click', () => {
-            const title = document.getElementById('post-textarea').value.trim();
-            const category = document.getElementById('post-category').value;
-            
-            if (!title) {
-                this.showToast('Please write something to post', 'error');
-                return;
-            }
-            
-            this.createDiscussion(title.slice(0, 100), title, category);
-            document.getElementById('post-textarea').value = '';
-        });
-
-        // Character count
-        document.getElementById('post-textarea')?.addEventListener('input', (e) => {
-            const count = e.target.value.length;
-            document.getElementById('char-count').textContent = count;
-            
-            if (count > 450) {
-                document.getElementById('char-count').style.color = 'var(--error)';
-            } else {
-                document.getElementById('char-count').style.color = 'var(--text-muted)';
-            }
-        });
-
-        // Category filtering
-        document.querySelectorAll('.category-btn').forEach(btn => {
-            btn.addEventListener('click', (e) => {
-                e.preventDefault();
-                document.querySelectorAll('.category-btn').forEach(b => b.classList.remove('active'));
-                btn.classList.add('active');
-                this.currentCategory = btn.dataset.category;
-                this.currentPage = 1;
-                this.renderDiscussions();
-            });
-        });
-
-        // Sorting
-        document.getElementById('sort-discussions')?.addEventListener('change', (e) => {
-            this.currentSort = e.target.value;
-            this.renderDiscussions();
-        });
-
-        // Load more
-        document.getElementById('load-more-discussions')?.addEventListener('click', () => {
-            this.currentPage++;
-            this.renderDiscussions(true);
-        });
-
-        // Modal close
-        document.getElementById('modal-close')?.addEventListener('click', () => {
-            this.closeModal();
-        });
-
-        document.querySelector('.modal-overlay')?.addEventListener('click', () => {
-            this.closeModal();
-        });
-    }
-
-    showUserSetup() {
-        document.getElementById('user-setup-card').style.display = 'block';
-        document.getElementById('post-creation').style.display = 'none';
-    }
-
-    showCommunityInterface() {
-        document.getElementById('user-setup-card').style.display = 'none';
-        document.getElementById('post-creation').style.display = 'block';
-        
-        if (this.currentUser) {
-            document.getElementById('username-display').textContent = this.currentUser.username;
-            document.getElementById('user-avatar-display').textContent = this.currentUser.avatar;
-        }
-    }
-
-    renderDiscussions(append = false) {
-        let filteredDiscussions = this.discussions;
-        
-        // Apply category filter
-        if (this.currentCategory !== 'all') {
-            filteredDiscussions = filteredDiscussions.filter(d => d.category === this.currentCategory);
-        }
-        
-        // Apply sorting
-        switch (this.currentSort) {
-            case 'trending':
-                filteredDiscussions.sort((a, b) => (b.likes + b.views) - (a.likes + a.views));
-                break;
-            case 'most-liked':
-                filteredDiscussions.sort((a, b) => b.likes - a.likes);
-                break;
-            default: // latest
-                filteredDiscussions.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));
-        }
-        
-        const startIndex = (this.currentPage - 1) * this.discussionsPerPage;
-        const endIndex = startIndex + this.discussionsPerPage;
-        const pageDiscussions = filteredDiscussions.slice(startIndex, endIndex);
-        
-        const container = document.getElementById('discussions-container');
-        
-        if (!append) {
-            container.innerHTML = '';
-        }
-        
-        pageDiscussions.forEach(discussion => {
-            const discussionEl = this.createDiscussionElement(discussion);
-            container.appendChild(discussionEl);
-        });
-        
-        // Show/hide load more button
-        const loadMoreBtn = document.getElementById('load-more-discussions');
-        if (endIndex >= filteredDiscussions.length) {
-            loadMoreBtn.style.display = 'none';
-        } else {
-            loadMoreBtn.style.display = 'block';
-        }
-    }
-
-    createDiscussionElement(discussion) {
-        const div = document.createElement('div');
-        div.className = 'discussion-card';
-        div.innerHTML = `
-            <div class="discussion-header">
-                <div class="discussion-avatar">${discussion.authorAvatar}</div>
-                <div class="discussion-meta">
-                    <div class="discussion-author">${discussion.authorName}</div>
-                    <div class="discussion-time">${this.formatTimeAgo(discussion.createdAt)}</div>
-                </div>
-                <div class="category-tag">${this.getCategoryEmoji(discussion.category)} ${this.getCategoryName(discussion.category)}</div>
-            </div>
-            <div class="discussion-content">
-                <h4>${discussion.title}</h4>
-                <p class="discussion-preview">${discussion.content.slice(0, 150)}${discussion.content.length > 150 ? '...' : ''}</p>
-            </div>
-            <div class="discussion-stats">
-                <div class="stat-item">
-                    <i class="fas fa-heart"></i>
-                    <span>${discussion.likes}</span>
-                </div>
-                <div class="stat-item">
-                    <i class="fas fa-eye"></i>
-                    <span>${discussion.views}</span>
-                </div>
-                <div class="stat-item">
-                    <i class="fas fa-comments"></i>
-                    <span>${discussion.replyCount}</span>
-                </div>
-            </div>
-        `;
-        
-        div.addEventListener('click', () => {
-            this.openDiscussionModal(discussion);
-        });
-        
-        return div;
-    }
-
-    getCategoryEmoji(category) {
-        const emojis = {
-            'flash-deals': '⚡',
-            'reviews': '⭐',
-            'coupons': '🎫',
-            'shopping-tips': '💡',
-            'suggestions': '💭'
-        };
-        return emojis[category] || '🔥';
-    }
-
-    getCategoryName(category) {
-        const names = {
-            'flash-deals': 'Flash Deals',
-            'reviews': 'Reviews',
-            'coupons': 'Coupons',
-            'shopping-tips': 'Tips',
-            'suggestions': 'Suggestions'
-        };
-        return names[category] || 'Discussion';
-    }
-
-    openDiscussionModal(discussion) {
-        // Increment views
-        discussion.views++;
-        this.saveDiscussions();
-        
-        const modal = document.getElementById('discussion-modal');
-        const modalBody = document.getElementById('modal-body');
-        
-        modalBody.innerHTML = `
-            <div class="modal-discussion">
-                <div class="discussion-header">
-                    <div class="discussion-avatar">${discussion.authorAvatar}</div>
-                    <div class="discussion-meta">
-                        <div class="discussion-author">${discussion.authorName}</div>
-                        <div class="discussion-time">${this.formatTimeAgo(discussion.createdAt)}</div>
-                    </div>
-                    <div class="category-tag">${this.getCategoryEmoji(discussion.category)} ${this.getCategoryName(discussion.category)}</div>
-                </div>
-                <div class="discussion-content">
-                    <h3>${discussion.title}</h3>
-                    <p>${discussion.content}</p>
-                </div>
-                <div class="discussion-actions">
-                    <button class="like-btn ${discussion.likedByUser ? 'liked' : ''}" onclick="community.toggleLike('${discussion.id}')">
-                        <i class="fas fa-heart"></i>
-                        <span>${discussion.likes}</span>
-                    </button>
-                    <div class="discussion-stats">
-                        <span><i class="fas fa-eye"></i> ${discussion.views} views</span>
-                        <span><i class="fas fa-comments"></i> ${discussion.replyCount} replies</span>
-                    </div>
-                </div>
-            </div>
-            <div class="replies-section">
-                <h4>💬 Community Responses</h4>
-                <div class="replies-container" id="replies-container">
-                    ${this.generateSampleReplies(discussion)}
-                </div>
-            </div>
-        `;
-        
-        modal.classList.add('active');
-    }
-
-    generateSampleReplies(discussion) {
-        const sampleReplies = [
-            'Bhai, this is legit! Just ordered, thanks for sharing! 🔥',
-            'Price kitna tha original? Seems like good deal! 💰',
-            'Maine bhi same product liya tha last month, totally worth it! ⭐',
-            'Link working nahi hai yaar, koi alternative suggest karo 😢',
-            'Paisa vasool deal hai! Community rocks! 🎯',
-            'Quality kaisi hai? Reviews share kar sakte ho? 🤔',
-            'Bank offer ke saath aur discount mil sakta hai kya? 💳',
-            'Thanks for the heads up! Saved ₹2000 💪',
-            'Is deal ka expiry kab hai? Time limit? ⏰',
-            'Amazing find! This community is pure gold! 🏆'
-        ];
-        
-        let repliesHTML = '';
-        const replyCount = Math.min(Math.floor(Math.random() * 5) + 1, 5);
-        
-        for (let i = 0; i < replyCount; i++) {
-            const randomUser = this.simUsers[Math.floor(Math.random() * this.simUsers.length)];
-            const randomReply = sampleReplies[Math.floor(Math.random() * sampleReplies.length)];
-            
-            repliesHTML += `
-                <div class="reply-item">
-                    <div class="reply-avatar">${randomUser.avatar}</div>
-                    <div class="reply-content">
-                        <div class="reply-author">${randomUser.username}</div>
-                        <div class="reply-text">${randomReply}</div>
-                        <div class="reply-time">${this.formatTimeAgo(new Date(Date.now() - Math.random() * 86400000).toISOString())}</div>
-                    </div>
-                </div>
-            `;
-        }
-        
-        return repliesHTML;
-    }
-
-    closeModal() {
-        document.getElementById('discussion-modal').classList.remove('active');
-    }
-
-    updateUI() {
-        // Update stats
-        document.getElementById('total-members').textContent = this.simUsers.length.toLocaleString();
-        document.getElementById('today-discussions').textContent = Math.floor(Math.random() * 50) + 30;
-        
-        // Update top contributors
-        this.updateTopContributors();
-        
-        // Render discussions
-        this.renderDiscussions();
-    }
-
-    updateTopContributors() {
-        const topUsers = this.simUsers
-            .sort((a, b) => b.reputation - a.reputation)
-            .slice(0, 5);
-            
-        const container = document.getElementById('top-contributors');
-        container.innerHTML = topUsers.map(user => `
-            <div class="contributor-item">
-                <div class="contributor-avatar">${user.avatar}</div>
-                <div class="contributor-info">
-                    <div class="contributor-name">${user.username}</div>
-                    <div class="contributor-points">${user.reputation} points</div>
-                </div>
-            </div>
-        `).join('');
-    }
-
-    // === UTILITY FUNCTIONS ===
-    generateId() {
-        return Date.now().toString(36) + Math.random().toString(36).substr(2);
-    }
-
-    formatTimeAgo(dateString) {
-        const now = new Date();
-        const date = new Date(dateString);
-        const diffMs = now - date;
-        const diffHours = Math.floor(diffMs / (1000 * 60 * 60));
-        const diffDays = Math.floor(diffMs / (1000 * 60 * 60 * 24));
-        
-        if (diffHours < 1) return 'Just now';
-        if (diffHours < 24) return `${diffHours}h ago`;
-        if (diffDays < 7) return `${diffDays}d ago`;
-        
-        return date.toLocaleDateString('en-IN');
-    }
-
-    showToast(message, type = 'success') {
-        const toast = document.createElement('div');
-        toast.className = `toast ${type}`;
-        toast.textContent = message;
-        
-        const container = document.getElementById('toast-container');
-        container.appendChild(toast);
-        
-        setTimeout(() => toast.classList.add('show'), 100);
-        setTimeout(() => {
-            toast.classList.remove('show');
-            setTimeout(() => container.removeChild(toast), 300);
-        }, 3000);
-    }
-
-    startDailyRotation() {
-        // Check every hour for new day
-        setInterval(() => {
-            this.generateDailyContent();
-        }, 3600000); // 1 hour
-    }
-
-    // Monthly cleanup
-    performMonthlyCleanup() {
-        const oneMonthAgo = new Date();
-        oneMonthAgo.setMonth(oneMonthAgo.getMonth() - 1);
-        
-        // Keep user posts, remove old simulated content
-        this.discussions = this.discussions.filter(d => 
-            !d.isSimulated || new Date(d.createdAt) > oneMonthAgo
-        );
-        
-        this.saveDiscussions();
-    }
-}
-
-// Initialize community when DOM is loaded
-document.addEventListener('DOMContentLoaded', () => {
-    window.community = new ThriftZoneCommunity();
-});
-
-// Global functions for modal interactions
-window.toggleLike = function(discussionId) {
-    // Implementation for like toggle
-    console.log('Toggling like for:', discussionId);
+const STORAGE_KEYS = {
+    POSTS: 'thriftmaal_community_posts',
+    USER: 'thriftmaal_community_user',
+    LIKED_POSTS: 'thriftmaal_liked_posts',
+    LIKED_COMMENTS: 'thriftmaal_liked_comments'
 };
 
-// Add styles for reply items
-const additionalCSS = `
-.modal-discussion {
-    margin-bottom: 2rem;
+// ===================================
+// Initialization
+// ===================================
+
+document.addEventListener('DOMContentLoaded', function() {
+    console.log('🚀 ThriftMaal Community initialized');
+    initializeCommunity();
+});
+
+function initializeCommunity() {
+    // Load or initialize data
+    loadCommunityData();
+    
+    // Setup current user
+    setupCurrentUser();
+    
+    // Setup event listeners
+    setupEventListeners();
+    
+    // Initial render
+    renderPosts();
+    updateStatistics();
+    
+    console.log('✅ Community loaded with', allPosts.length, 'posts');
 }
 
-.discussion-actions {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 1rem;
-    padding-top: 1rem;
-    border-top: 1px solid var(--border-light);
+// ===================================
+// Data Management
+// ===================================
+
+function loadCommunityData() {
+    const savedPosts = localStorage.getItem(STORAGE_KEYS.POSTS);
+    
+    if (savedPosts) {
+        try {
+            allPosts = JSON.parse(savedPosts);
+            console.log('📦 Loaded posts from localStorage');
+        } catch (e) {
+            console.error('Error loading posts:', e);
+            initializeDefaultData();
+        }
+    } else {
+        initializeDefaultData();
+    }
+    
+    filteredPosts = [...allPosts];
 }
 
-.like-btn {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 0.5rem 1rem;
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 6px;
-    cursor: pointer;
-    transition: all 0.3s ease;
+function initializeDefaultData() {
+    console.log('🔧 Initializing default community data...');
+    
+    // Generate all 300 posts with complete data
+    allPosts = generateDefaultPosts();
+    
+    // Save to localStorage
+    saveCommunityData();
+    
+    console.log('✅ Generated', allPosts.length, 'default posts');
 }
 
-.like-btn:hover {
-    background: var(--primary-color);
-    color: white;
+function generateDefaultPosts() {
+    const categories = [
+        "Thrift Shopping Tips",
+        "Product Reviews", 
+        "Fashion & Style",
+        "Sustainability",
+        "Deal Alerts",
+        "General Discussion"
+    ];
+    
+    const postTemplates = {
+        "Thrift Shopping Tips": [
+            {"title": "Best time to find deals on electronics", "excerpt": "I've noticed that early morning is the best time to catch fresh deals..."},
+            {"title": "How to spot genuine products", "excerpt": "Here are my top 5 tips for identifying authentic products when shopping..."},
+            {"title": "Negotiation tricks that actually work", "excerpt": "After years of thrift shopping, I've learned these negotiation strategies..."},
+            {"title": "Hidden gems in home & kitchen category", "excerpt": "Found amazing kitchen appliances at 70% off! Let me share where..."},
+            {"title": "Weekend shopping strategy", "excerpt": "Weekends are tricky but here's how I maximize my savings..."}
+        ],
+        "Product Reviews": [
+            {"title": "Review: Amazing Bluetooth headphones under ₹500", "excerpt": "Just received these headphones and I'm blown away by the quality..."},
+            {"title": "My experience with trending fashion items", "excerpt": "Ordered 3 items last week and here's my honest review..."},
+            {"title": "Sports equipment - Worth it or not?", "excerpt": "Testing out the yoga mats and dumbbells from recent deals..."},
+            {"title": "Electronics haul - Quality check", "excerpt": "Bought 5 gadgets this month. Here's what worked and what didn't..."},
+            {"title": "Beauty products review - Surprised!", "excerpt": "Never expected such quality at these prices. Full review inside..."}
+        ],
+        "Fashion & Style": [
+            {"title": "Budget outfit ideas for office", "excerpt": "Created 5 professional looks under ₹2000 each using ThriftMaal finds..."},
+            {"title": "Trending accessories this season", "excerpt": "What's hot right now and how to style them affordably..."},
+            {"title": "Seasonal wardrobe update tips", "excerpt": "Switching from winter to summer without breaking the bank..."},
+            {"title": "Mixing high and low fashion", "excerpt": "How I combine thrift finds with premium pieces for killer looks..."},
+            {"title": "Sustainable fashion choices", "excerpt": "Building an eco-friendly wardrobe while saving money..."}
+        ],
+        "Sustainability": [
+            {"title": "Why thrift shopping is eco-friendly", "excerpt": "The environmental impact of choosing second-hand and discounted items..."},
+            {"title": "Reducing packaging waste", "excerpt": "Tips for minimal waste when online shopping..."},
+            {"title": "Upcycling old purchases", "excerpt": "Creative ways to give new life to old items..."},
+            {"title": "Conscious consumption guide", "excerpt": "How to shop smart and reduce environmental footprint..."},
+            {"title": "Community swap ideas", "excerpt": "Starting a local exchange program for items we no longer need..."}
+        ],
+        "Deal Alerts": [
+            {"title": "🔥 Flash sale alert - Electronics 80% off!", "excerpt": "Just saw this incredible deal go live. Limited stock!..."},
+            {"title": "Weekend mega sale incoming", "excerpt": "Insider info on upcoming deals this weekend. Don't miss..."},
+            {"title": "Price drop alert on trending items", "excerpt": "Tracking these products for weeks, finally at best price..."},
+            {"title": "Loot deal - Grab before it ends!", "excerpt": "This won't last long. Under ₹500 deal of the day..."},
+            {"title": "Bank offers stacking guide", "excerpt": "How to combine offers for maximum savings this month..."}
+        ],
+        "General Discussion": [
+            {"title": "Best purchase of the month", "excerpt": "What's the best thing you bought this month? Share your wins..."},
+            {"title": "ThriftMaal shopping experience", "excerpt": "How has your experience been? Let's discuss improvements..."},
+            {"title": "Budget management tips", "excerpt": "How do you manage your shopping budget? Share strategies..."},
+            {"title": "Favorite categories to shop", "excerpt": "What do you shop for most? Electronics, fashion, or something else?..."},
+            {"title": "Community wishlist thread", "excerpt": "What deals are you waiting for? Let's create a wishlist..."}
+        ]
+    };
+    
+    const usernames = [
+        "DealHunter", "SmartShopper", "ThriftQueen", "BudgetMaster", "SaveMoneyPro",
+        "FashionFinder", "TechDeals", "ShopSmart", "PriyaKumar", "RahulSharma",
+        "AnanyaR", "VikramSingh", "SnehaGupta", "ArjunMehta", "PoojaSharma",
+        "KaranJoshi", "NehaDas", "SiddharthK", "RiyaPatil", "AmitVerma",
+        "DivyaRao", "SanjayKumar", "MeghaShah", "VarunReddy", "KritikaS"
+    ];
+    
+    const commentTemplates = [
+        "Great tip! Thanks for sharing this.",
+        "I tried this and it works perfectly!",
+        "Do you have more details on this?",
+        "This saved me so much money!",
+        "Where exactly did you find this deal?",
+        "Totally agree with your points here.",
+        "Can you share the link please?",
+        "This is exactly what I was looking for!",
+        "Amazing quality for the price!",
+        "Has anyone else tried this?",
+        "Update: Just ordered this! Excited!",
+        "Thanks for the honest review.",
+        "What about the warranty on this?",
+        "Delivery was quick or took time?",
+        "Is it still available?",
+        "Best community for shopping tips! ❤️",
+        "You should check out the electronics section too!",
+        "Following this thread for updates.",
+        "This deal is 🔥🔥🔥",
+        "Absolutely worth every rupee!"
+    ];
+    
+    const replyTemplates = [
+        "Thanks for the info!",
+        "You're welcome! 😊",
+        "Check my latest post for more details.",
+        "DM me if you need the link.",
+        "Yes, it's still working!",
+        "I'll update once I receive mine."
+    ];
+    
+    const posts = [];
+    let postId = 1;
+    const postsPerCategory = 50;
+    
+    categories.forEach(category => {
+        const templates = postTemplates[category];
+        
+        for (let i = 0; i < postsPerCategory; i++) {
+            const template = templates[i % templates.length];
+            const postNum = Math.floor(i / templates.length) + 1;
+            const titleSuffix = postNum > 1 ? ` - Part ${postNum}` : "";
+            
+            const daysAgo = Math.floor(Math.random() * 90);
+            const hoursAgo = Math.floor(Math.random() * 24);
+            const postDate = new Date(Date.now() - (daysAgo * 24 * 60 * 60 * 1000) - (hoursAgo * 60 * 60 * 1000));
+            
+            const author = usernames[Math.floor(Math.random() * usernames.length)];
+            const views = Math.floor(Math.random() * 4950) + 50;
+            const likes = Math.floor(Math.random() * 495) + 5;
+            const commentsCount = Math.floor(Math.random() * 48) + 2;
+            
+            const fullContent = `${template.excerpt}\n\nI've been shopping on ThriftMaal for a while now and wanted to share my experience. This is specifically about the ${category.toLowerCase()} section. Feel free to ask any questions in the comments below!\n\nHope this helps the community. Happy shopping! 🛍️`;
+            
+            let tags = [];
+            if (category === "Deal Alerts") {
+                tags = ["deals", "flash-sale", "limited-time"];
+            } else if (category === "Product Reviews") {
+                tags = ["review", "honest-opinion", "quality-check"];
+            } else if (category === "Fashion & Style") {
+                tags = ["fashion", "style-tips", "trending"];
+            } else if (category === "Sustainability") {
+                tags = ["eco-friendly", "sustainable", "green"];
+            } else if (category === "Thrift Shopping Tips") {
+                tags = ["tips", "shopping-guide", "savings"];
+            } else {
+                tags = ["discussion", "community"];
+            }
+            
+            const post = {
+                id: postId,
+                title: template.title + titleSuffix,
+                author: author,
+                category: category,
+                timestamp: postDate.toISOString(),
+                views: views,
+                likes: likes,
+                commentsCount: commentsCount,
+                excerpt: template.excerpt,
+                content: fullContent,
+                tags: tags,
+                isPinned: (likes > 400 && commentsCount > 40),
+                isLocked: false,
+                comments: []
+            };
+            
+            // Generate comments
+            const numComments = Math.min(commentsCount, 15);
+            for (let j = 0; j < numComments; j++) {
+                const commentDate = new Date(postDate.getTime() + (Math.random() * 48 * 60 * 60 * 1000));
+                const comment = {
+                    id: `c${postId}_${j + 1}`,
+                    author: usernames[Math.floor(Math.random() * usernames.length)],
+                    content: commentTemplates[Math.floor(Math.random() * commentTemplates.length)],
+                    timestamp: commentDate.toISOString(),
+                    likes: Math.floor(Math.random() * 50),
+                    replies: []
+                };
+                
+                // Add replies (30% chance)
+                if (Math.random() > 0.7) {
+                    const numReplies = Math.floor(Math.random() * 3) + 1;
+                    for (let k = 0; k < numReplies; k++) {
+                        const replyDate = new Date(commentDate.getTime() + (Math.random() * 24 * 60 * 60 * 1000));
+                        const reply = {
+                            id: `r${postId}_${j + 1}_${k + 1}`,
+                            author: usernames[Math.floor(Math.random() * usernames.length)],
+                            content: replyTemplates[Math.floor(Math.random() * replyTemplates.length)],
+                            timestamp: replyDate.toISOString(),
+                            likes: Math.floor(Math.random() * 20)
+                        };
+                        comment.replies.push(reply);
+                    }
+                }
+                
+                post.comments.push(comment);
+            }
+            
+            posts.push(post);
+            postId++;
+        }
+    });
+    
+    return posts;
 }
 
-.like-btn.liked {
-    background: var(--error);
-    color: white;
+function saveCommunityData() {
+    try {
+        localStorage.setItem(STORAGE_KEYS.POSTS, JSON.stringify(allPosts));
+    } catch (e) {
+        console.error('Error saving posts:', e);
+    }
 }
 
-.replies-section h4 {
-    margin: 2rem 0 1rem;
-    color: var(--text-primary);
+function setupCurrentUser() {
+    let user = localStorage.getItem(STORAGE_KEYS.USER);
+    
+    if (!user) {
+        // Generate random guest user
+        const guestNames = ["Guest", "User", "Shopper", "Member"];
+        const randomNum = Math.floor(Math.random() * 10000);
+        user = `${guestNames[Math.floor(Math.random() * guestNames.length)]}${randomNum}`;
+        localStorage.setItem(STORAGE_KEYS.USER, user);
+    }
+    
+    currentUser = user;
+    console.log('👤 Current user:', currentUser);
 }
 
-.reply-item {
-    display: flex;
-    gap: 1rem;
-    margin-bottom: 1.5rem;
-    padding: 1rem;
-    background: var(--surface);
-    border-radius: 8px;
+// ===================================
+// Event Listeners
+// ===================================
+
+function setupEventListeners() {
+    // Category navigation
+    const categoryLinks = document.querySelectorAll('.category-link');
+    categoryLinks.forEach(link => {
+        link.addEventListener('click', handleCategoryClick);
+    });
+    
+    // Search
+    const searchBtn = document.getElementById('search-btn');
+    const searchInput = document.getElementById('search-input');
+    if (searchBtn) searchBtn.addEventListener('click', handleSearch);
+    if (searchInput) {
+        searchInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') handleSearch();
+        });
+    }
+    
+    // Sort
+    const sortSelect = document.getElementById('sort-select');
+    if (sortSelect) sortSelect.addEventListener('change', handleSortChange);
+    
+    // New post
+    const newPostBtn = document.getElementById('new-post-btn');
+    if (newPostBtn) newPostBtn.addEventListener('click', openNewPostModal);
+    
+    // Modal controls
+    const closeModal = document.getElementById('close-modal');
+    const cancelPost = document.getElementById('cancel-post');
+    if (closeModal) closeModal.addEventListener('click', closeNewPostModal);
+    if (cancelPost) cancelPost.addEventListener('click', closeNewPostModal);
+    
+    // Post form
+    const postForm = document.getElementById('new-post-form');
+    if (postForm) postForm.addEventListener('submit', handleNewPost);
+    
+    // Load more
+    const loadMoreBtn = document.getElementById('load-more-btn');
+    if (loadMoreBtn) loadMoreBtn.addEventListener('click', loadMorePosts);
+    
+    // Close modals on outside click
+    const modals = document.querySelectorAll('.modal');
+    modals.forEach(modal => {
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.classList.remove('active');
+            }
+        });
+    });
 }
 
-.reply-avatar {
-    width: 2rem;
-    height: 2rem;
-    border-radius: 50%;
-    background: var(--primary-color);
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 0.9rem;
-    flex-shrink: 0;
+// ===================================
+// Category Filtering
+// ===================================
+
+function handleCategoryClick(e) {
+    e.preventDefault();
+    
+    const category = e.currentTarget.dataset.category;
+    
+    // Update active state
+    document.querySelectorAll('.category-link').forEach(link => {
+        link.classList.remove('active');
+    });
+    e.currentTarget.classList.add('active');
+    
+    // Filter posts
+    currentCategory = category;
+    currentPage = 1;
+    filterAndSortPosts();
+    renderPosts();
 }
 
-.reply-content {
-    flex: 1;
+// ===================================
+// Search Functionality
+// ===================================
+
+function handleSearch() {
+    const searchInput = document.getElementById('search-input');
+    currentSearchQuery = searchInput.value.trim().toLowerCase();
+    currentPage = 1;
+    filterAndSortPosts();
+    renderPosts();
 }
 
-.reply-author {
-    font-weight: 600;
-    color: var(--text-primary);
-    margin-bottom: 0.25rem;
+// ===================================
+// Sort Functionality
+// ===================================
+
+function handleSortChange(e) {
+    currentSort = e.target.value;
+    filterAndSortPosts();
+    renderPosts();
 }
 
-.reply-text {
-    color: var(--text-secondary);
-    line-height: 1.5;
-    margin-bottom: 0.5rem;
+// ===================================
+// Filter and Sort Logic
+// ===================================
+
+function filterAndSortPosts() {
+    // Filter by category
+    if (currentCategory === 'all') {
+        filteredPosts = [...allPosts];
+    } else {
+        filteredPosts = allPosts.filter(post => post.category === currentCategory);
+    }
+    
+    // Filter by search query
+    if (currentSearchQuery) {
+        filteredPosts = filteredPosts.filter(post => {
+            return post.title.toLowerCase().includes(currentSearchQuery) ||
+                   post.excerpt.toLowerCase().includes(currentSearchQuery) ||
+                   post.content.toLowerCase().includes(currentSearchQuery) ||
+                   post.tags.some(tag => tag.toLowerCase().includes(currentSearchQuery));
+        });
+    }
+    
+    // Sort posts
+    switch (currentSort) {
+        case 'popular':
+            filteredPosts.sort((a, b) => b.likes - a.likes);
+            break;
+        case 'trending':
+            filteredPosts.sort((a, b) => (b.likes + b.commentsCount * 2) - (a.likes + a.commentsCount * 2));
+            break;
+        case 'most-commented':
+            filteredPosts.sort((a, b) => b.commentsCount - a.commentsCount);
+            break;
+        case 'latest':
+        default:
+            filteredPosts.sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp));
+            break;
+    }
+    
+    // Move pinned posts to top
+    const pinnedPosts = filteredPosts.filter(p => p.isPinned);
+    const regularPosts = filteredPosts.filter(p => !p.isPinned);
+    filteredPosts = [...pinnedPosts, ...regularPosts];
 }
 
-.reply-time {
-    font-size: 0.8rem;
-    color: var(--text-muted);
-}
-`;
+// ===================================
+// Render Posts
+// ===================================
 
-// Append additional CSS
-const styleSheet = document.createElement('style');
-styleSheet.textContent = additionalCSS;
-document.head.appendChild(styleSheet);
+function renderPosts() {
+    const container = document.getElementById('posts-container');
+    if (!container) return;
+    
+    // Calculate posts to display
+    const startIndex = 0;
+    const endIndex = currentPage * postsPerPage;
+    displayedPosts = filteredPosts.slice(startIndex, endIndex);
+    
+    // Clear container
+    container.innerHTML = '';
+    
+    // Check if no posts
+    if (displayedPosts.length === 0) {
+        container.innerHTML = `
+            <div class="empty-state">
+                <i class="fas fa-search"></i>
+                <h3>No posts found</h3>
+                <p>Try adjusting your search or filter criteria</p>
+            </div>
+        `;
+        updateLoadMoreButton();
+        return;
+    }
+    
+    // Render each post
+    displayedPosts.forEach(post => {
+        const postCard = createPostCard(post);
+        container.appendChild(postCard);
+    });
+    
+    updateLoadMoreButton();
+}
+
+function createPostCard(post) {
+    const card = document.createElement('div');
+    card.className = 'post-card' + (post.isPinned ? ' pinned' : '');
+    card.onclick = () => openPostDetail(post.id);
+    
+    const timeAgo = getTimeAgo(post.timestamp);
+    const authorInitial = post.author.charAt(0).toUpperCase();
+    
+    card.innerHTML = `
+        <div class="post-header">
+            <div class="post-avatar">${authorInitial}</div>
+            <div class="post-meta">
+                <span class="post-author">${escapeHtml(post.author)}</span>
+                <span class="post-time">${timeAgo}</span>
+            </div>
+            <span class="post-category-badge">${escapeHtml(post.category)}</span>
+        </div>
+        
+        <h3 class="post-title">${escapeHtml(post.title)}</h3>
+        <p class="post-excerpt">${escapeHtml(post.excerpt)}</p>
+        
+        <div class="post-tags">
+            ${post.tags.map(tag => `<span class="post-tag">#${escapeHtml(tag)}</span>`).join('')}
+        </div>
+        
+        <div class="post-footer">
+            <div class="post-stat">
+                <i class="fas fa-eye"></i>
+                <span>${formatNumber(post.views)}</span>
+            </div>
+            <div class="post-stat">
+                <i class="fas fa-heart"></i>
+                <span>${formatNumber(post.likes)}</span>
+            </div>
+            <div class="post-stat">
+                <i class="fas fa-comments"></i>
+                <span>${formatNumber(post.commentsCount)}</span>
+            </div>
+        </div>
+    `;
+    
+    return card;
+}
+
+// ===================================
+// Post Detail Modal
+// ===================================
+
+function openPostDetail(postId) {
+    const post = allPosts.find(p => p.id === postId);
+    if (!post) return;
+    
+    // Increment views
+    post.views++;
+    saveCommunityData();
+    
+    const modal = document.getElementById('post-detail-modal');
+    const content = document.getElementById('post-detail-content');
+    
+    if (!modal || !content) return;
+    
+    const timeAgo = getTimeAgo(post.timestamp);
+    const authorInitial = post.author.charAt(0).toUpperCase();
+    const isLiked = isPostLiked(post.id);
+    
+    content.innerHTML = `
+        <div class="post-detail-header">
+            <h2 class="post-detail-title">${escapeHtml(post.title)}</h2>
+            
+            <div class="post-detail-meta">
+                <div class="post-detail-author-info">
+                    <div class="post-detail-avatar">${authorInitial}</div>
+                    <div>
+                        <div class="post-detail-author-name">${escapeHtml(post.author)}</div>
+                        <div class="post-detail-time">${timeAgo}</div>
+                    </div>
+                </div>
+                
+                <span class="post-category-badge">${escapeHtml(post.category)}</span>
+                
+                <div class="post-detail-stats">
+                    <div class="post-detail-stat">
+                        <i class="fas fa-eye"></i>
+                        <span>${formatNumber(post.views)} views</span>
+                    </div>
+                    <div class="post-detail-stat">
+                        <i class="fas fa-heart"></i>
+                        <span>${formatNumber(post.likes)} likes</span>
+                    </div>
+                    <div class="post-detail-stat">
+                        <i class="fas fa-comments"></i>
+                        <span>${formatNumber(post.commentsCount)} comments</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="post-detail-content">${escapeHtml(post.content)}</div>
+        
+        <div class="post-tags">
+            ${post.tags.map(tag => `<span class="post-tag">#${escapeHtml(tag)}</span>`).join('')}
+        </div>
+        
+        <div class="post-detail-actions">
+            <button class="action-btn ${isLiked ? 'liked' : ''}" onclick="togglePostLike(${post.id})">
+                <i class="fas fa-heart"></i>
+                <span>${isLiked ? 'Liked' : 'Like'}</span>
+            </button>
+            <button class="action-btn" onclick="sharePost(${post.id})">
+                <i class="fas fa-share"></i>
+                <span>Share</span>
+            </button>
+        </div>
+        
+        <div class="comments-section">
+            <h3 class="comments-header">${post.comments.length} Comments</h3>
+            
+            <div class="comment-form">
+                <textarea class="comment-input" id="new-comment-input" placeholder="Add a comment..."></textarea>
+                <button class="comment-submit" onclick="submitComment(${post.id})">
+                    <i class="fas fa-paper-plane"></i> Post Comment
+                </button>
+            </div>
+            
+            <div class="comments-list" id="comments-list">
+                ${renderComments(post.comments)}
+            </div>
+        </div>
+    `;
+    
+    modal.classList.add('active');
+    
+    // Setup close button
+    const closeBtn = document.getElementById('close-detail-modal');
+    if (closeBtn) {
+        closeBtn.onclick = () => {
+            modal.classList.remove('active');
+            renderPosts(); // Refresh to show updated likes/views
+        };
+    }
+}
+
+function renderComments(comments) {
+    if (comments.length === 0) {
+        return '<p style="text-align: center; color: var(--text-light); padding: 20px;">No comments yet. Be the first to comment!</p>';
+    }
+    
+    return comments.map(comment => {
+        const timeAgo = getTimeAgo(comment.timestamp);
+        const authorInitial = comment.author.charAt(0).toUpperCase();
+        const isLiked = isCommentLiked(comment.id);
+        
+        return `
+            <div class="comment-item">
+                <div class="comment-header">
+                    <div class="comment-avatar">${authorInitial}</div>
+                    <span class="comment-author">${escapeHtml(comment.author)}</span>
+                    <span class="comment-time">${timeAgo}</span>
+                </div>
+                <div class="comment-content">${escapeHtml(comment.content)}</div>
+                <div class="comment-actions">
+                    <span class="comment-action ${isLiked ? 'liked' : ''}" onclick="toggleCommentLike('${comment.id}')">
+                        <i class="fas fa-heart"></i> ${comment.likes}
+                    </span>
+                    <span class="comment-action">
+                        <i class="fas fa-reply"></i> Reply
+                    </span>
+                </div>
+                
+                ${comment.replies.length > 0 ? `
+                    <div class="comment-replies">
+                        ${comment.replies.map(reply => {
+                            const replyTimeAgo = getTimeAgo(reply.timestamp);
+                            const replyInitial = reply.author.charAt(0).toUpperCase();
+                            const isReplyLiked = isCommentLiked(reply.id);
+                            
+                            return `
+                                <div class="reply-item">
+                                    <div class="comment-header">
+                                        <div class="comment-avatar">${replyInitial}</div>
+                                        <span class="comment-author">${escapeHtml(reply.author)}</span>
+                                        <span class="comment-time">${replyTimeAgo}</span>
+                                    </div>
+                                    <div class="comment-content">${escapeHtml(reply.content)}</div>
+                                    <div class="comment-actions">
+                                        <span class="comment-action ${isReplyLiked ? 'liked' : ''}" onclick="toggleCommentLike('${reply.id}')">
+                                            <i class="fas fa-heart"></i> ${reply.likes}
+                                        </span>
+                                    </div>
+                                </div>
+                            `;
+                        }).join('')}
+                    </div>
+                ` : ''}
+            </div>
+        `;
+    }).join('');
+}
+
+// ===================================
+// New Post Modal
+// ===================================
+
+function openNewPostModal() {
+    const modal = document.getElementById('new-post-modal');
+    if (modal) modal.classList.add('active');
+}
+
+function closeNewPostModal() {
+    const modal = document.getElementById('new-post-modal');
+    if (modal) modal.classList.remove('active');
+    
+    // Reset form
+    const form = document.getElementById('new-post-form');
+    if (form) form.reset();
+}
+
+function handleNewPost(e) {
+    e.preventDefault();
+    
+    const title = document.getElementById('post-title').value.trim();
+    const category = document.getElementById('post-category').value;
+    const content = document.getElementById('post-content').value.trim();
+    const tagsInput = document.getElementById('post-tags').value.trim();
+    
+    if (!title || !category || !content) {
+        alert('Please fill in all required fields');
+        return;
+    }
+    
+    // Parse tags
+    const tags = tagsInput ? tagsInput.split(',').map(t => t.trim()).filter(t => t) : [];
+    
+    // Create new post
+    const newPost = {
+        id: allPosts.length > 0 ? Math.max(...allPosts.map(p => p.id)) + 1 : 1,
+        title: title,
+        author: currentUser,
+        category: category,
+        timestamp: new Date().toISOString(),
+        views: 0,
+        likes: 0,
+        commentsCount: 0,
+        excerpt: content.substring(0, 150) + (content.length > 150 ? '...' : ''),
+        content: content,
+        tags: tags,
+        isPinned: false,
+        isLocked: false,
+        comments: []
+    };
+    
+    // Add to posts
+    allPosts.unshift(newPost);
+    saveCommunityData();
+    
+    // Close modal
+    closeNewPostModal();
+    
+    // Refresh view
+    currentCategory = 'all';
+    currentPage = 1;
+    filterAndSortPosts();
+    renderPosts();
+    updateStatistics();
+    
+    // Show success message
+    alert('Post created successfully! 🎉');
+}
+
+// ===================================
+// Comment Functionality
+// ===================================
+
+function submitComment(postId) {
+    const input = document.getElementById('new-comment-input');
+    const content = input.value.trim();
+    
+    if (!content) {
+        alert('Please enter a comment');
+        return;
+    }
+    
+    const post = allPosts.find(p => p.id === postId);
+    if (!post) return;
+    
+    const newComment = {
+        id: `c${postId}_${Date.now()}`,
+        author: currentUser,
+        content: content,
+        timestamp: new Date().toISOString(),
+        likes: 0,
+        replies: []
+    };
+    
+    post.comments.unshift(newComment);
+    post.commentsCount++;
+    saveCommunityData();
+    
+    // Refresh modal
+    openPostDetail(postId);
+}
+
+// ===================================
+// Like Functionality
+// ===================================
+
+function togglePostLike(postId) {
+    const post = allPosts.find(p => p.id === postId);
+    if (!post) return;
+    
+    const likedPosts = getLikedPosts();
+    const isLiked = likedPosts.includes(postId);
+    
+    if (isLiked) {
+        post.likes--;
+        const index = likedPosts.indexOf(postId);
+        likedPosts.splice(index, 1);
+    } else {
+        post.likes++;
+        likedPosts.push(postId);
+    }
+    
+    localStorage.setItem(STORAGE_KEYS.LIKED_POSTS, JSON.stringify(likedPosts));
+    saveCommunityData();
+    
+    // Refresh modal
+    openPostDetail(postId);
+}
+
+function isPostLiked(postId) {
+    const likedPosts = getLikedPosts();
+    return likedPosts.includes(postId);
+}
+
+function getLikedPosts() {
+    const liked = localStorage.getItem(STORAGE_KEYS.LIKED_POSTS);
+    return liked ? JSON.parse(liked) : [];
+}
+
+function toggleCommentLike(commentId) {
+    const likedComments = getLikedComments();
+    const isLiked = likedComments.includes(commentId);
+    
+    // Find and update comment
+    allPosts.forEach(post => {
+        post.comments.forEach(comment => {
+            if (comment.id === commentId) {
+                comment.likes += isLiked ? -1 : 1;
+            }
+            comment.replies.forEach(reply => {
+                if (reply.id === commentId) {
+                    reply.likes += isLiked ? -1 : 1;
+                }
+            });
+        });
+    });
+    
+    if (isLiked) {
+        const index = likedComments.indexOf(commentId);
+        likedComments.splice(index, 1);
+    } else {
+        likedComments.push(commentId);
+    }
+    
+    localStorage.setItem(STORAGE_KEYS.LIKED_COMMENTS, JSON.stringify(likedComments));
+    saveCommunityData();
+    
+    // Find current post and refresh
+    const modal = document.getElementById('post-detail-modal');
+    if (modal.classList.contains('active')) {
+        const postId = findPostByCommentId(commentId);
+        if (postId) openPostDetail(postId);
+    }
+}
+
+function isCommentLiked(commentId) {
+    const likedComments = getLikedComments();
+    return likedComments.includes(commentId);
+}
+
+function getLikedComments() {
+    const liked = localStorage.getItem(STORAGE_KEYS.LIKED_COMMENTS);
+    return liked ? JSON.parse(liked) : [];
+}
+
+function findPostByCommentId(commentId) {
+    for (const post of allPosts) {
+        for (const comment of post.comments) {
+            if (comment.id === commentId) return post.id;
+            for (const reply of comment.replies) {
+                if (reply.id === commentId) return post.id;
+            }
+        }
+    }
+    return null;
+}
+
+// ===================================
+// Share Functionality
+// ===================================
+
+function sharePost(postId) {
+    const post = allPosts.find(p => p.id === postId);
+    if (!post) return;
+    
+    const shareData = {
+        title: post.title,
+        text: post.excerpt,
+        url: `${window.location.origin}/community?post=${postId}`
+    };
+    
+    if (navigator.share) {
+        navigator.share(shareData).catch(err => console.log('Share cancelled'));
+    } else {
+        // Fallback: Copy link
+        navigator.clipboard.writeText(shareData.url).then(() => {
+            alert('Link copied to clipboard!');
+        }).catch(err => {
+            console.error('Could not copy:', err);
+        });
+    }
+}
+
+// ===================================
+// Load More Posts
+// ===================================
+
+function loadMorePosts() {
+    currentPage++;
+    renderPosts();
+}
+
+function updateLoadMoreButton() {
+    const loadMoreBtn = document.getElementById('load-more-btn');
+    if (!loadMoreBtn) return;
+    
+    const totalPosts = filteredPosts.length;
+    const displayedCount = displayedPosts.length;
+    
+    if (displayedCount >= totalPosts) {
+        loadMoreBtn.style.display = 'none';
+    } else {
+        loadMoreBtn.style.display = 'inline-flex';
+        const remaining = totalPosts - displayedCount;
+        loadMoreBtn.innerHTML = `<i class="fas fa-plus"></i> Load More (${remaining} remaining)`;
+    }
+}
+
+// ===================================
+// Update Statistics
+// ===================================
+
+function updateStatistics() {
+    // Update total posts
+    const totalPostsEl = document.getElementById('total-posts');
+    if (totalPostsEl) totalPostsEl.textContent = formatNumber(allPosts.length);
+    
+    // Update category counts
+    const categoryCounts = {
+        'all': allPosts.length,
+        'Thrift Shopping Tips': allPosts.filter(p => p.category === 'Thrift Shopping Tips').length,
+        'Product Reviews': allPosts.filter(p => p.category === 'Product Reviews').length,
+        'Fashion & Style': allPosts.filter(p => p.category === 'Fashion & Style').length,
+        'Sustainability': allPosts.filter(p => p.category === 'Sustainability').length,
+        'Deal Alerts': allPosts.filter(p => p.category === 'Deal Alerts').length,
+        'General Discussion': allPosts.filter(p => p.category === 'General Discussion').length
+    };
+    
+    document.getElementById('count-all').textContent = categoryCounts['all'];
+    document.getElementById('count-tips').textContent = categoryCounts['Thrift Shopping Tips'];
+    document.getElementById('count-reviews').textContent = categoryCounts['Product Reviews'];
+    document.getElementById('count-fashion').textContent = categoryCounts['Fashion & Style'];
+    document.getElementById('count-sustain').textContent = categoryCounts['Sustainability'];
+    document.getElementById('count-deals').textContent = categoryCounts['Deal Alerts'];
+    document.getElementById('count-general').textContent = categoryCounts['General Discussion'];
+}
+
+// ===================================
+// Utility Functions
+// ===================================
+
+function getTimeAgo(timestamp) {
+    const now = new Date();
+    const past = new Date(timestamp);
+    const diffMs = now - past;
+    const diffMins = Math.floor(diffMs / 60000);
+    const diffHours = Math.floor(diffMs / 3600000);
+    const diffDays = Math.floor(diffMs / 86400000);
+    
+    if (diffMins < 1) return 'Just now';
+    if (diffMins < 60) return `${diffMins} min${diffMins > 1 ? 's' : ''} ago`;
+    if (diffHours < 24) return `${diffHours} hour${diffHours > 1 ? 's' : ''} ago`;
+    if (diffDays < 30) return `${diffDays} day${diffDays > 1 ? 's' : ''} ago`;
+    
+    return past.toLocaleDateString('en-IN', { year: 'numeric', month: 'short', day: 'numeric' });
+}
+
+function formatNumber(num) {
+    if (num >= 1000000) return (num / 1000000).toFixed(1) + 'M';
+    if (num >= 1000) return (num / 1000).toFixed(1) + 'K';
+    return num.toString();
+}
+
+function escapeHtml(text) {
+    const div = document.createElement('div');
+    div.textContent = text;
+    return div.innerHTML;
+}
+
+// ===================================
+// Console Welcome Message
+// ===================================
+
+console.log('%c🛍️ ThriftMaal Community Forum', 'color: #FF6B35; font-size: 20px; font-weight: bold;');
+console.log('%cVersion 1.0.0 | Mobile-First | SEO Optimized', 'color: #6B7280; font-size: 12px;');
+console.log('%c300 Posts Loaded | LocalStorage Enabled', 'color: #10B981; font-size: 12px;');
