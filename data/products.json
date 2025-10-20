@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-10-20T13:20:00.941652+05:30",
-  "total_products": 182,
+  "last_updated": "2025-10-20T18:46:28.479114+05:30",
+  "total_products": 184,
   "products": [
+    {
+      "id": "product_morning_20251020_131628",
+      "title": "FEDUS Cat6 Ethernet Cable, 10M High Speed 550MHZ / 10 Gigabit Speed UTP LAN Cable, Network Cable Internet Cable RJ45 Cab",
+      "image": "https://m.media-amazon.com/images/I/81sGkqckhDL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B01DGVKBC6?tag=gadgetvill09f-21",
+      "price": "\u20b9239",
+      "rating": 4.4,
+      "category": "electronics",
+      "asin": "B01DGVKBC6",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-20T18:46:28.479081+05:30",
+      "session_type": "morning",
+      "link_index": 136
+    },
+    {
+      "id": "product_morning_20251020_131626",
+      "title": "Sounce Spiral Cable Protector, Chargers Cable Protector Data Cable Protective Sleeve, Headphone Saver, Charger Protectiv",
+      "image": "https://m.media-amazon.com/images/I/81JYSIagq5L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CLV4XQFK?tag=gadgetvill09f-21",
+      "price": "\u20b994",
+      "rating": 4.2,
+      "category": "electronics",
+      "asin": "B0CLV4XQFK",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-20T18:46:26.988523+05:30",
+      "session_type": "morning",
+      "link_index": 136
+    },
     {
       "id": "product_afternoon_20251020_075000",
       "title": "Springwel Dualis 2-in-1 Reversible 5 Inch Bed Mattress | 15 Yrs Warranty | Dual Side - Hard & Soft Support | Breathable ",
