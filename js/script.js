@@ -1312,7 +1312,7 @@ class LootDealsScroller {
         // HOURLY ROTATION SETTINGS
         this.storageKey = 'thriftzone_loot_deals';
         this.timerKey = 'thriftzone_loot_next_update';
-        this.priceRange = { min: 500, max: 1000 }; // Your specified range
+        this.priceRange = { min: 0, max: 500 }; // Your specified range
         this.rotationPool = 20; // Total products to rotate from
         this.hourInMs = 60 * 60 * 1000; // 1 hour
         this.updateInterval = null;
