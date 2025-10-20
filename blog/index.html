@@ -3,199 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thrift Zone Blog - Latest Deals & Shopping Tips</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/components.css">
-    <link rel="stylesheet" href="../css/responsive.css">
-    <link rel="stylesheet" href="../css/theme.css">
-    <link rel="stylesheet" href="css/blog.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <meta name="description" content="Read the latest articles about deals, shopping tips, product reviews and money-saving guides on Thrift Zone blog.">
-    <meta name="keywords" content="deals blog, shopping tips, product reviews, money saving, discount guides">
+    <meta name="description" content="ThriftMaal Blog - Latest deals, discounts, shopping tips, and money-saving guides from India's top deal aggregator">
+    <meta name="keywords" content="deals blog, discount tips, shopping guides, coupon codes, ThriftMaal, money saving tips">
+    <meta property="og:title" content="ThriftMaal Blog - Best Deals & Shopping Tips">
+    <meta property="og:description" content="Stay updated with the latest deals, discounts, and shopping guides curated by ThriftMaal">
+    <meta property="og:image" content="https://thriftmaal.com/logo.png">
+    <meta property="og:url" content="https://thriftmaal.com/blog/">
+    <meta name="robots" content="index, follow">
+    <title>ThriftMaal Blog - Latest Deals, Discounts & Shopping Tips</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Schema Markup for Blog -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Blog",
+      "name": "ThriftMaal Blog",
+      "description": "Latest deals, discounts, shopping tips and money-saving guides from India's top deal aggregator",
+      "url": "https://thriftmaal.com/blog/",
+      "publisher": {
+        "@type": "Organization",
+        "name": "ThriftMaal",
+        "logo": "https://thriftmaal.com/logo.png"
+      }
+    }
+    </script>
 </head>
 <body>
-    <!-- Header Section -->
+    <!-- Header -->
     <header class="header">
         <div class="container">
-            <!-- Mobile Menu Toggle -->
-            <button class="mobile-menu-toggle" id="mobile-menu-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-
-            <!-- Logo Section -->
-            <div class="logo">
-                <img src="../images/logo-icon.png" alt="Thrift Zone" class="logo-icon">
-                <div class="logo-text">
-                    <h1>Thrift Zone</h1>
-                    <span class="tagline">Smart Shopping Hub</span>
+            <nav class="navbar">
+                <div class="logo">
+                    <a href="/">
+                        <img src="/logo.png" alt="ThriftMaal Logo">
+                    </a>
                 </div>
-            </div>
-
-            <!-- Search Bar -->
-            <div class="search-container">
-                <div class="search-box">
-                    <input type="text" id="search-input" placeholder="Search articles, tips..." autocomplete="off">
-                    <button class="search-btn" id="search-btn">
-                        <i class="fas fa-search"></i>
-                    </button>
+                <ul class="nav-menu">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/deals">Deals</a></li>
+                    <li><a href="/coupons">Coupons</a></li>
+                    <li><a href="/blog/" class="active">Blog</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
-                <div class="search-suggestions" id="search-suggestions"></div>
-            </div>
-
-            <!-- Navigation & Actions -->
-            <nav class="nav">
-                <a href="../index.html" class="nav-link">Home</a>
-                <a href="/community.html" class="mobile-nav-link highlight">Discussion</a>
-                <a href="../index.html#categories" class="nav-link">Categories</a>
-                <a href="/coupons.html" class="mobile-nav-link highlight"> 🎫Coupons</a>
-                <a href="deal-finder.html" class="nav-link deal-finder-link">
-        <i class="fas fa-search-dollar"></i>
-        Deal Finder
-        <span class="nav-badge">New</span>
-    </a>
-                <a href="../index.html#deals" class="nav-link">End Soon</a>
-                
-                
             </nav>
-
-            <!-- Header Actions 
-            <div class="header-actions">
-                <button class="theme-toggle" id="theme-toggle" title="Toggle Dark Mode">
-                    <i class="fas fa-moon"></i>
-                </button>
-                <div class="live-indicator">
-                    <span class="pulse"></span>
-                    <span class="text">Live</span>
-                </div>
-            </div>
-        </div>-->
-
-        <!-- Mobile Navigation -->
-        <div class="mobile-nav" id="mobile-nav">
-            <div class="mobile-nav-header">
-                <h3>Menu</h3>
-                <button class="mobile-nav-close">&times;</button>
-            </div>
-            <div class="mobile-nav-content">
-                <a href="../index.html" class="mobile-nav-link">🏠 Home</a>
-                <a href="/community.html" class="mobile-nav-link highlight">Discussion</a>
-                <a href="../index.html#categories" class="mobile-nav-link">📂 Categories</a>
-                <a href="/coupons.html" class="mobile-nav-link highlight"> 🎫Coupons</a>
-                <a href="deal-finder.html" class="nav-link deal-finder-link">
-        <i class="fas fa-search-dollar"></i>
-        Deal Finder
-        <span class="nav-badge">New</span>
-    </a>
-                <a href="../index.html#deals" class="mobile-nav-link">End Soon</a>
-                
-                
-            </div>
         </div>
     </header>
 
     <!-- Blog Hero Section -->
     <section class="blog-hero">
         <div class="container">
-            <div class="blog-hero-content">
-                <h1 class="blog-hero-title">
-                    <span class="blog-emoji">📝</span>
-                    Thrift Zone Blog
-                </h1>
-                <p class="blog-hero-subtitle">
-                    Your ultimate guide to smart shopping, amazing deals, and money-saving tips
-                </p>
-                <div class="blog-stats">
-                    <div class="blog-stat">
-                        <span class="stat-number" id="total-articles">0</span>
-                        <span class="stat-label">Articles</span>
-                    </div>
-                    <div class="blog-stat">
-                        <span class="stat-number">Daily</span>
-                        <span class="stat-label">Updates</span>
-                    </div>
-                    <div class="blog-stat">
-                        <span class="stat-number">Free</span>
-                        <span class="stat-label">Tips</span>
-                    </div>
+            <h1>📰 ThriftMaal Blog</h1>
+            <p>Your ultimate guide to smart shopping, exclusive deals, and money-saving tips</p>
+        </div>
+    </section>
+
+    <!-- Search & Filter Section -->
+    <section class="search-filter-section">
+        <div class="container">
+            <div class="search-filter-wrapper">
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="🔍 Search blog posts...">
+                </div>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-category="all">All</button>
+                    <button class="filter-btn" data-category="Deals">🎯 Deals</button>
+                    <button class="filter-btn" data-category="Coupons">🎟️ Coupons</button>
+                    <button class="filter-btn" data-category="Tech Tips">💻 Tech Tips</button>
+                    <button class="filter-btn" data-category="Fashion">👗 Fashion</button>
+                    <button class="filter-btn" data-category="Shopping Guide">🛍️ Shopping Guide</button>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Blog Categories -->
-    <section class="blog-categories">
+    <!-- Blog Posts Grid -->
+    <section class="blog-section">
         <div class="container">
-            <h2 class="section-title">Browse Topics</h2>
-            <div class="category-filter">
-                <button class="category-filter-btn active" data-category="all">All Articles</button>
-                <button class="category-filter-btn" data-category="deals">Today's Deals</button>
-                <button class="category-filter-btn" data-category="reviews">Product Reviews</button>
-                <button class="category-filter-btn" data-category="tips">Shopping Tips</button>
-                <button class="category-filter-btn" data-category="guides">Buying Guides</button>
-                <button class="category-filter-btn" data-category="news">Deal News</button>
+            <div class="blog-container" id="blogContainer">
+                <!-- Blog cards will be dynamically loaded here -->
+                <div class="loading">Loading awesome content... 🚀</div>
             </div>
-        </div>
-    </section>
-
-    <!-- Featured Article -->
-    <section class="featured-article" id="featured-article">
-        <div class="container">
-            <div class="featured-content">
-                <!-- Will be populated by JavaScript -->
-            </div>
-        </div>
-    </section>
-
-    <!-- Blog Articles Grid -->
-    <section class="blog-articles">
-        <div class="container">
-            <div class="articles-header">
-                <h2 class="section-title">Latest Articles</h2>
-                <div class="articles-sort">
-                    <select id="sort-articles">
-                        <option value="latest">Latest First</option>
-                        <option value="popular">Most Popular</option>
-                        <option value="oldest">Oldest First</option>
-                    </select>
-                </div>
-            </div>
-
-            <div class="articles-grid" id="articles-grid">
-                <!-- Loading State -->
-                <div class="articles-loading">
-                    <div class="loading-spinner">
-                        <div class="spinner"></div>
-                    </div>
-                    <p>Loading amazing articles...</p>
-                </div>
-            </div>
-
-            <div class="load-more-articles">
-                <button id="load-more-articles-btn" class="btn-primary">
-                    <i class="fas fa-plus"></i>
-                    Load More Articles
-                </button>
-            </div>
-        </div>
-    </section>
-
-    <!-- Newsletter Signup -->
-    <section class="blog-newsletter">
-        <div class="container">
-            <div class="newsletter-content">
-                <div class="newsletter-text">
-                    <h3>Stay Updated with Latest Deals</h3>
-                    <p>Get daily deal alerts and shopping tips delivered to your inbox</p>
-                </div>
-                <div class="newsletter-form">
-                    <input type="email" placeholder="Enter your email address" id="newsletter-email">
-                    <button class="newsletter-btn" id="subscribe-btn">
-                        <i class="fas fa-bell"></i>
-                        Subscribe
-                    </button>
-                </div>
+            <div class="no-results" id="noResults" style="display: none;">
+                <p>😔 No posts found. Try a different search term or category.</p>
             </div>
         </div>
     </section>
@@ -205,63 +104,43 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <div class="footer-logo">
-                        <img src="../images/logo-icon.png" alt="Thrift Zone">
-                        <h3>Thrift Zone</h3>
-                    </div>
-                    <p>Your smart shopping companion for the best deals and offers online.</p>
+                    <h3>About ThriftMaal</h3>
+                    <p>India's most trusted deals and coupons aggregator. We help you save money on every purchase with verified deals from top stores.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/deals">Today's Deals</a></li>
+                        <li><a href="/coupons">Coupon Codes</a></li>
+                        <li><a href="/stores">All Stores</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Popular Categories</h3>
+                    <ul>
+                        <li><a href="/category/electronics">Electronics</a></li>
+                        <li><a href="/category/fashion">Fashion</a></li>
+                        <li><a href="/category/home">Home & Kitchen</a></li>
+                        <li><a href="/category/books">Books</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect With Us</h3>
                     <div class="social-links">
-                        <a href="#" class="social-link"><i class="fab fa-telegram"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Facebook">📘 Facebook</a>
+                        <a href="#" aria-label="Twitter">🐦 Twitter</a>
+                        <a href="#" aria-label="Instagram">📷 Instagram</a>
+                        <a href="#" aria-label="Telegram">✈️ Telegram</a>
                     </div>
-                </div>
-
-                <div class="footer-section">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="../index.html">Home</a></li>
-                        <li><a href="../index.html#categories">Categories</a></li>
-                        <li><a href="../index.html#deals">Today's Deals</a></li>
-                        <li><a href="index.html">Blog</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-section">
-                    <h4>Blog Categories</h4>
-                    <ul>
-                        <li><a href="#" data-category="deals">Deal Alerts</a></li>
-                        <li><a href="#" data-category="reviews">Product Reviews</a></li>
-                        <li><a href="#" data-category="tips">Shopping Tips</a></li>
-                        <li><a href="#" data-category="guides">Buying Guides</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-section">
-                    <h4>Support</h4>
-                    <ul>
-                        <li><a href="mailto:support@thriftzone.com">Contact Us</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Terms of Service</a></li>
-                        <li><a href="#">FAQ</a></li>
-                    </ul>
                 </div>
             </div>
-
             <div class="footer-bottom">
-                <div class="footer-disclaimer">
-                    <p>&copy; 2025 Thrift Zone Blog. All rights reserved.</p>
-                    <p class="affiliate-disclosure">
-                        <strong>Affiliate Disclosure:</strong> We may earn commission from purchases made through our links.
-                    </p>
-                </div>
+                <p>&copy; 2025 ThriftMaal.com - All Rights Reserved | Made with ❤️ in India</p>
             </div>
         </div>
     </footer>
 
-    <!-- Scripts -->
-    <script src="../js/script.js"></script>
-    <script src="../js/theme.js"></script>
-    <script src="js/blog.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
