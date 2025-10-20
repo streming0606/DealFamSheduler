@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-10-20T18:46:28.479114+05:30",
-  "total_products": 184,
+  "last_updated": "2025-10-20T21:20:08.728949+05:30",
+  "total_products": 186,
   "products": [
+    {
+      "id": "product_night_20251020_155008",
+      "title": "Portronics Toad One Bluetooth Mouse with 2.4 GHz & BT 5.3 Dual Wireless, 6 Buttons, Rechargeable, RGB Lights, Connect 3 ",
+      "image": "https://m.media-amazon.com/images/I/51hZtBRUFBL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0BG8LZNYL?tag=gadgetvill09f-21",
+      "price": "\u20b9499",
+      "rating": 4.3,
+      "category": "electronics",
+      "asin": "B0BG8LZNYL",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-20T21:20:08.728920+05:30",
+      "session_type": "night",
+      "link_index": 138
+    },
+    {
+      "id": "product_night_20251020_155007",
+      "title": "Sounce Smartwatch USB All Type Charging Cable Compatible With boAt, Fire Boltt, Noise, Dizo, beatXP, fast-track, pTron &",
+      "image": "https://m.media-amazon.com/images/I/51eteqH36FS._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CLJ5JH3T?tag=gadgetvill09f-21",
+      "price": "\u20b9134",
+      "rating": 3.3,
+      "category": "electronics",
+      "asin": "B0CLJ5JH3T",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-20T21:20:07.319257+05:30",
+      "session_type": "night",
+      "link_index": 138
+    },
     {
       "id": "product_morning_20251020_131628",
       "title": "FEDUS Cat6 Ethernet Cable, 10M High Speed 550MHZ / 10 Gigabit Speed UTP LAN Cable, Network Cable Internet Cable RJ45 Cab",
