@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+  
+  <!-- Blog Homepage -->
+  <url>
+    <loc>https://thriftmaal.com/blog/</loc>
+    <lastmod>2025-10-20</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <!-- Individual Posts - Add all from posts.json -->
+  <url>
+    <loc>https://thriftmaal.com/blog/top-20-earphone-deals-of-this-week</loc>
+    <lastmod>2025-10-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=800</image:loc>
+      <image:title>Top 20 Earphone Deals</image:title>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://thriftmaal.com/blog/amazon-great-indian-festival-2025-best-deals</loc>
+    <lastmod>2025-10-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Add remaining 8 posts here -->
+  
+</urlset>
