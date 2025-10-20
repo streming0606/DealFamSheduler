@@ -1,241 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-887DNYMLDD"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-887DNYMLDD');
-</script>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Community - Thrift Zone | Connect with Deal Hunters</title>
     
-    <!-- Existing CSS files -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/components.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    <link rel="stylesheet" href="css/theme.css">
-    <link rel="stylesheet" href="css/community.css">
+    <!-- SEO Meta Tags -->
+    <title>ThriftMaal Community - Share Tips, Reviews & Deals | Shopping Forum</title>
+    <meta name="description" content="Join ThriftMaal Community to share shopping tips, product reviews, deals and connect with smart shoppers. Get expert advice on thrift shopping, fashion, sustainability and more.">
+    <meta name="keywords" content="thriftmaal community, shopping forum, deal sharing, product reviews, thrift shopping tips, fashion community, shopping advice, budget shopping">
+    <meta name="author" content="ThriftMaal">
+    <meta name="robots" content="index, follow">
     
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    
-    <meta name="description" content="Join Thrift Zone community - Share deals, get shopping tips, and connect with fellow bargain hunters across India">
-    <meta name="keywords" content="deals, community, shopping, discounts, India, bargains, coupons">
-    <link rel="canonical" href="https://thriftzone.com/community.html">
-    
-    
-    
-    <!-- Open Graph -->
-    <meta property="og:title" content="Thrift Zone Community - Deal Hunters United">
-    <meta property="og:description" content="Connect with fellow deal hunters, share amazing finds, and get the best shopping tips!">
+    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://thriftzone.com/community.html">
-    <meta property="og:image" content="assets/community-og.jpg">
+    <meta property="og:url" content="https://thriftmaal.com/community">
+    <meta property="og:title" content="ThriftMaal Community - Smart Shopping Forum">
+    <meta property="og:description" content="Connect with thousands of smart shoppers. Share deals, tips and reviews.">
+    <meta property="og:image" content="https://thriftmaal.com/assets/community-banner.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://thriftmaal.com/community">
+    <meta property="twitter:title" content="ThriftMaal Community Forum">
+    <meta property="twitter:description" content="Join India's largest thrift shopping community">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://thriftmaal.com/community">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "DiscussionForumPosting",
+      "headline": "ThriftMaal Community Forum",
+      "description": "Share shopping tips, deals and product reviews with smart shoppers",
+      "url": "https://thriftmaal.com/community",
+      "discussionUrl": "https://thriftmaal.com/community",
+      "author": {
+        "@type": "Organization",
+        "name": "ThriftMaal"
+      }
+    }
+    </script>
+    
+    <link rel="stylesheet" href="css/community.css">
 </head>
 <body>
-
-
-
-   <!-- Enhanced Header with Auth 
-  <link rel="icon" type="image/png" href="images/logo/favicon.png">-->
-<header class="header">
-    <div class="container">
-
-        <!-- Mobile Menu Toggle -->
-        <button class="mobile-menu-toggle" id="mobile-menu-toggle">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-
-        <!-- Logo Section -->
-        <div class="logo">
-          <img src="images/logo/logo.png" alt="Thrift Zone" class="logo-icon">
-           <!-- <div class="logo-text">
-                <h1>Thrift Maal</h1>
-                <span class="tagline">Save Every Time</span>
-            </div>-->
-        </div>
-
-
-
-      <!-- enhance Search Bar-->
-<div class="search-container">
-    <div class="search-box">
-        <input type="text" 
-               id="search-input" 
-               placeholder="Search for deals, products..." 
-               autocomplete="off">
-       <!-- <button type="button" id="voice-search-btn" class="voice-btn" title="Voice Search">
-            <i class="fas fa-microphone"></i>
-        </button>-->
-        <button type="submit" class="search-btn" id="search-btn">
-            <i class="fas fa-search"></i>
-        </button>
-    </div>
-    <div class="search-suggestions" id="search-suggestions"></div>
-</div>
-
-
-
-      
-        <!-- Navigation -->
-        <nav class="nav">
-            <a href="/coupons" class="nav-link coupon-cta">Coupons</a>
-            <!--<a href="#categories" class="nav-link">Categories</a>-->
-            <a href="/community" class="mobile-nav-link highlight">community</a>
-           <!-- <a href="#deals" class="nav-link"> Deals Alert</a>-->
-            <a href="../#deals" class="mobile-nav-link">End Soon</a>
-
-          <a href="/deal-finder" class="nav-link deal-finder-link">
-        <i class="fas fa-search-dollar"></i>
-        Deal Finder
-        
-    </a>
-        </nav>
-        
-
-        
+    
+    <!-- Header (same as your main site) -->
+    <header class="header">
+        <div class="container header-content">
+            <div class="logo">
+                <a href="/" aria-label="ThriftMaal Home">
+                    <img src="/logo.svg" alt="ThriftMaal" class="logo-img">
+                </a>
+            </div>
             
-
-             
-        
-
-    <!-- Mobile Navigation (updated) -->
-    <div class="mobile-nav" id="mobile-nav">
-        <div class="mobile-nav-header">
-            <h3>MENU</h3>
-            <button class="mobile-nav-close">&times;</button>
+            <nav class="nav-menu" aria-label="Main navigation">
+                <a href="/">Home</a>
+                <a href="/coupons">Coupons</a>
+                <a href="/community" class="active">Community</a>
+                <a href="/end-soon">End Soon</a>
+                <a href="/deal-finder">Deal Finder</a>
+            </nav>
+            
+            <div class="header-actions">
+                <button class="btn-secondary" id="join-btn">Join Now</button>
+            </div>
         </div>
-        <div class="mobile-nav-content">
-
-
-            <!-- Mobile Auth Section -->
-            <div class="mobile-auth" id="mobile-auth"></div>
-                <div class="mobile-auth-buttons" id="mobile-auth-buttons"></div>
-
-
-  
-
-
-<!-- Navigation Links -->
-
-            <a href="index.html" class="mobile-nav-link">
-                <i class="fas fa-home"></i> Home
-            </a>
-            <a href="deal-finder.html" class="mobile-nav-link highlight active">
-                <i class="fas fa-search-dollar"></i> Deal Finder
-            </a>
-            <a href="coupons.html" class="mobile-nav-link highlight">
-                <i class="fas fa-tags"></i> Coupons
-            </a>
-            <a href="community.html" class="mobile-nav-link highlight">
-                <i class="fas fa-users"></i> Discussion
-            </a>
-            <a href="../#deals" class="mobile-nav-link">
-                <i class="fas fa-fire"></i> End Soon
-            </a>
-            <a href="blog/" class="mobile-nav-link highlight">
-                <i class="fas fa-blog"></i> Blog
-            </a>
-
-
-            <div class="mobile-nav-divider"></div>
-
-
-</header>
-
-
-
-       
+    </header>
 
     <!-- Community Hero Section -->
     <section class="community-hero">
         <div class="container">
             <div class="hero-content">
-                <h1><i class="fas fa-users"></i> ThriftZone Community</h1>
-                <p>Connect with fellow deal hunters, share amazing finds, and get the best shopping tips!</p>
-                <div class="community-stats">
-                    <div class="stat-item">
-                        <span class="stat-number" id="total-members">2,847</span>
-                        <span class="stat-label">Active Members</span>
+                <h1 class="hero-title">ThriftMaal Community</h1>
+                <p class="hero-subtitle">Connect. Share. Save Together.</p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number" id="total-members">25,847</span>
+                        <span class="stat-label">Members</span>
                     </div>
-                    <div class="stat-item">
-                        <span class="stat-number" id="today-discussions">47</span>
-                        <span class="stat-label">Today's Discussions</span>
+                    <div class="stat">
+                        <span class="stat-number" id="total-posts">300</span>
+                        <span class="stat-label">Posts</span>
                     </div>
-                    <div class="stat-item">
-                        <span class="stat-number" id="deals-shared">₹1.2L</span>
-                        <span class="stat-label">Savings This Week</span>
+                    <div class="stat">
+                        <span class="stat-number" id="total-deals">1,200+</span>
+                        <span class="stat-label">Deals Shared</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Main Community Content -->
+    <!-- Main Community Section -->
     <main class="community-main">
         <div class="container">
             <div class="community-layout">
                 
-                <!-- Left Sidebar - Categories -->
+                <!-- Sidebar -->
                 <aside class="community-sidebar">
-                    <div class="sidebar-section">
-                        <h3><i class="fas fa-fire"></i> Categories</h3>
-                        <ul class="category-list">
-                            <li>
-                                <a href="#" data-category="all" class="category-btn active">
-                                    🔥 All Discussions
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" data-category="flash-deals" class="category-btn">
-                                    ⚡ Flash Deals
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" data-category="reviews" class="category-btn">
-                                    ⭐ Product Reviews
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" data-category="coupons" class="category-btn">
-                                    🎫 Coupon Codes
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" data-category="shopping-tips" class="category-btn">
-                                    💡 Shopping Tips
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" data-category="suggestions" class="category-btn">
-                                    💭 Suggestions
-                                </a>
-                            </li>
-                        </ul>
+                    <div class="sidebar-widget">
+                        <button class="btn-primary btn-new-post" id="new-post-btn">
+                            <i class="fas fa-plus"></i> New Post
+                        </button>
                     </div>
-
-                    <div class="sidebar-section">
-                        <h3><i class="fas fa-crown"></i> Top Contributors</h3>
-                        <div class="top-contributors" id="top-contributors">
-                            <!-- Dynamic content loaded via JS -->
-                        </div>
+                    
+                    <div class="sidebar-widget">
+                        <h3 class="widget-title">Categories</h3>
+                        <nav class="category-nav" id="category-nav">
+                            <a href="#" class="category-link active" data-category="all">
+                                <i class="fas fa-home"></i>
+                                <span>All Posts</span>
+                                <span class="category-count" id="count-all">300</span>
+                            </a>
+                            <a href="#" class="category-link" data-category="Thrift Shopping Tips">
+                                <i class="fas fa-lightbulb"></i>
+                                <span>Shopping Tips</span>
+                                <span class="category-count" id="count-tips">50</span>
+                            </a>
+                            <a href="#" class="category-link" data-category="Product Reviews">
+                                <i class="fas fa-star"></i>
+                                <span>Product Reviews</span>
+                                <span class="category-count" id="count-reviews">50</span>
+                            </a>
+                            <a href="#" class="category-link" data-category="Fashion & Style">
+                                <i class="fas fa-tshirt"></i>
+                                <span>Fashion & Style</span>
+                                <span class="category-count" id="count-fashion">50</span>
+                            </a>
+                            <a href="#" class="category-link" data-category="Sustainability">
+                                <i class="fas fa-leaf"></i>
+                                <span>Sustainability</span>
+                                <span class="category-count" id="count-sustain">50</span>
+                            </a>
+                            <a href="#" class="category-link" data-category="Deal Alerts">
+                                <i class="fas fa-fire"></i>
+                                <span>Deal Alerts</span>
+                                <span class="category-count" id="count-deals">50</span>
+                            </a>
+                            <a href="#" class="category-link" data-category="General Discussion">
+                                <i class="fas fa-comments"></i>
+                                <span>General</span>
+                                <span class="category-count" id="count-general">50</span>
+                            </a>
+                        </nav>
                     </div>
-
-                    <div class="sidebar-section">
-                        <h3><i class="fas fa-tags"></i> Trending Topics</h3>
-                        <div class="trending-topics">
-                            <div class="topic-tag">#DiwaliDeals</div>
-                            <div class="topic-tag">#BigBillionDay</div>
-                            <div class="topic-tag">#CreditCardOffers</div>
-                            <div class="topic-tag">#MobileDeals</div>
-                            <div class="topic-tag">#FashionSale</div>
+                    
+                    <div class="sidebar-widget">
+                        <h3 class="widget-title">Popular Tags</h3>
+                        <div class="tags-cloud" id="tags-cloud">
+                            <span class="tag">deals</span>
+                            <span class="tag">review</span>
+                            <span class="tag">fashion</span>
+                            <span class="tag">tips</span>
+                            <span class="tag">eco-friendly</span>
+                            <span class="tag">flash-sale</span>
                         </div>
                     </div>
                 </aside>
@@ -243,369 +173,140 @@
                 <!-- Main Content Area -->
                 <div class="community-content">
                     
-                    <!-- User Profile Setup (shown if not logged in) -->
-                    <div class="user-setup-card" id="user-setup-card">
-                        <div class="setup-content">
-                            <h3><i class="fas fa-user-plus"></i> Join the Discussion!</h3>
-                            <p>Create your username to start participating in community discussions</p>
-                            <div class="username-input-group">
-                                <input type="text" id="username-input" placeholder="Enter your username (e.g., DealHunter123)" maxlength="20" autocomplete="off">
-                                <button id="join-community-btn">
-                                    <i class="fas fa-rocket"></i>
-                                    Join Community
-                                </button>
-                            </div>
-                            <div class="avatar-selection" id="avatar-selection">
-                                <span>Choose your avatar:</span>
-                                <div class="avatar-options">
-                                    <div class="avatar-option" data-avatar="🛍️">🛍️</div>
-                                    <div class="avatar-option" data-avatar="💰">💰</div>
-                                    <div class="avatar-option" data-avatar="🔥">🔥</div>
-                                    <div class="avatar-option" data-avatar="⚡">⚡</div>
-                                    <div class="avatar-option" data-avatar="🎯">🎯</div>
-                                    <div class="avatar-option active" data-avatar="💎">💎</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Post Creation (shown after user joins) -->
-                    <div class="post-creation" id="post-creation" style="display: none;">
-                        <div class="create-post-card">
-                            <div class="post-header">
-                                <div class="user-avatar" id="user-avatar-display">💎</div>
-                                <div class="user-info">
-                                    <span class="username" id="username-display">Guest User</span>
-                                    <span class="user-badge">Community Member</span>
-                                </div>
-                            </div>
-                            <div class="post-content">
-                                <textarea id="post-textarea" placeholder="Share a deal, ask for advice, or start a discussion..." maxlength="500" rows="3"></textarea>
-                                <div class="post-actions">
-                                    <select id="post-category">
-                                        <option value="flash-deals">⚡ Flash Deals</option>
-                                        <option value="reviews">⭐ Product Reviews</option>
-                                        <option value="coupons">🎫 Coupon Codes</option>
-                                        <option value="shopping-tips">💡 Shopping Tips</option>
-                                        <option value="suggestions">💭 Suggestions</option>
-                                    </select>
-                                    <button id="create-post-btn">
-                                        <i class="fas fa-paper-plane"></i>
-                                        Post
-                                    </button>
-                                </div>
-                                <div class="char-count">
-                                    <span id="char-count">0</span>/500
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Discussions Feed -->
-                    <div class="discussions-feed">
-                        <div class="feed-header">
-                            <h2><i class="fas fa-comments"></i> Community Discussions</h2>
-                            <div class="feed-controls">
-                                <!--<select id="sort-discussions">
-                                    <option value="latest">Latest First</option>
-                                    <option value="trending">Trending</option>
-                                    <option value="most-liked">Most Liked</option>
-                                </select>
-                                <button class="refresh-btn" id="refresh-discussions" title="Refresh">
-                                    <i class="fas fa-sync-alt"></i>
-                                </button>-->
-                            </div>
+                    <!-- Search and Filter Bar -->
+                    <div class="content-header">
+                        <div class="search-bar">
+                            <input type="text" id="search-input" placeholder="Search posts..." aria-label="Search posts">
+                            <button id="search-btn" aria-label="Search">
+                                <i class="fas fa-search"></i>
+                            </button>
                         </div>
                         
-                        <div class="discussions-container" id="discussions-container">
-                            <!-- Dynamic discussions will be loaded here via JavaScript -->
-                            <div class="loading-placeholder">
-                                <div class="loading-spinner">
-                                    <div class="spinner"></div>
-                                </div>
-                                <p>Loading community discussions...</p>
-                            </div>
-                        </div>
-                        
-                        <div class="load-more-container">
-                            <button id="load-more-discussions" class="load-more-btn">
-                                <i class="fas fa-chevron-down"></i>
-                                Load More Discussions
+                        <div class="filter-controls">
+                            <select id="sort-select" aria-label="Sort posts">
+                                <option value="latest">Latest</option>
+                                <option value="popular">Most Popular</option>
+                                <option value="trending">Trending</option>
+                                <option value="most-commented">Most Discussed</option>
+                            </select>
+                            
+                            <button class="view-toggle" id="view-toggle" aria-label="Toggle view">
+                                <i class="fas fa-th-large"></i>
                             </button>
                         </div>
                     </div>
+
+                    <!-- Posts Grid -->
+                    <div class="posts-grid" id="posts-container">
+                        <!-- Posts will be dynamically loaded here -->
+                    </div>
+
+                    <!-- Load More -->
+                    <div class="load-more-section">
+                        <button class="btn-secondary" id="load-more-btn">
+                            <i class="fas fa-plus"></i> Load More Posts
+                        </button>
+                    </div>
                 </div>
-
-                <!-- Right Sidebar - Activity & Guidelines -->
-                <aside class="community-rightsidebar">
-                    <div class="sidebar-section">
-                        <h3><i class="fas fa-chart-line"></i> Today's Activity</h3>
-                        <div class="activity-stats">
-                            <div class="activity-item">
-                                <i class="fas fa-comments text-primary"></i>
-                                <div class="activity-info">
-                                    <span class="activity-number">156</span>
-                                    <span class="activity-label">New Comments</span>
-                                </div>
-                            </div>
-                            <div class="activity-item">
-                                <i class="fas fa-heart text-danger"></i>
-                                <div class="activity-info">
-                                    <span class="activity-number">432</span>
-                                    <span class="activity-label">Likes Given</span>
-                                </div>
-                            </div>
-                            <div class="activity-item">
-                                <i class="fas fa-share text-success"></i>
-                                <div class="activity-info">
-                                    <span class="activity-number">89</span>
-                                    <span class="activity-label">Deals Shared</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="sidebar-section">
-                        <h3><i class="fas fa-gift"></i> Community Guidelines</h3>
-                        <ul class="guidelines-list">
-                            <li>✅ Share genuine deals only</li>
-                            <li>🤝 Be respectful to other members</li>
-                            <li>🔍 Verify deals before posting</li>
-                            <li>💬 Engage positively with community</li>
-                            <li>🚫 No spam or fake offers</li>
-                            <li>💡 Help fellow deal hunters</li>
-                            <li>🏆 Quality over quantity</li>
-                        </ul>
-                    </div>
-
-                   <!-- <div class="sidebar-section">
-                        <h3><i class="fas fa-question-circle"></i> Quick Help</h3>
-                        <div class="help-links">
-                            <a href="#" class="help-link">
-                                <i class="fas fa-book"></i>
-                                Community Guide
-                            </a>
-                            <a href="#" class="help-link">
-                                <i class="fas fa-flag"></i>
-                                Report Issue
-                            </a>
-                            <a href="#" class="help-link">
-                                <i class="fas fa-headset"></i>
-                                Contact Support
-                            </a>
-                        </div>
-                    </div>-->
-                </aside>
             </div>
         </div>
     </main>
 
-    <!-- Discussion Modal -->
-    <div class="discussion-modal" id="discussion-modal">
-        <div class="modal-overlay"></div>
+    <!-- New Post Modal -->
+    <div class="modal" id="new-post-modal">
         <div class="modal-content">
             <div class="modal-header">
-                <h3 id="modal-title">Discussion Details</h3>
-                <button class="modal-close" id="modal-close" aria-label="Close modal">
+                <h2>Create New Post</h2>
+                <button class="modal-close" id="close-modal">
                     <i class="fas fa-times"></i>
                 </button>
             </div>
-            <div class="modal-body" id="modal-body">
-                <!-- Dynamic content loaded via JavaScript -->
+            <form class="modal-body" id="new-post-form">
+                <div class="form-group">
+                    <label for="post-title">Title *</label>
+                    <input type="text" id="post-title" required placeholder="Enter post title..." maxlength="100">
+                </div>
+                
+                <div class="form-group">
+                    <label for="post-category">Category *</label>
+                    <select id="post-category" required>
+                        <option value="">Select category...</option>
+                        <option value="Thrift Shopping Tips">Shopping Tips</option>
+                        <option value="Product Reviews">Product Reviews</option>
+                        <option value="Fashion & Style">Fashion & Style</option>
+                        <option value="Sustainability">Sustainability</option>
+                        <option value="Deal Alerts">Deal Alerts</option>
+                        <option value="General Discussion">General Discussion</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="post-content">Content *</label>
+                    <textarea id="post-content" required placeholder="Share your thoughts..." rows="8"></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="post-tags">Tags (comma separated)</label>
+                    <input type="text" id="post-tags" placeholder="e.g., deals, electronics, review">
+                </div>
+                
+                <div class="modal-footer">
+                    <button type="button" class="btn-secondary" id="cancel-post">Cancel</button>
+                    <button type="submit" class="btn-primary">
+                        <i class="fas fa-paper-plane"></i> Post
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Post Detail Modal -->
+    <div class="modal" id="post-detail-modal">
+        <div class="modal-content modal-large">
+            <div class="modal-header">
+                <button class="modal-close" id="close-detail-modal">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body" id="post-detail-content">
+                <!-- Post details will be loaded here -->
             </div>
         </div>
     </div>
 
-    <!-- Footer (matching your existing design) 
-    <footer class="footer" id="footer">
+    <!-- Footer -->
+    <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <div class="footer-logo">
-                        <img src="assets/logo.png" alt="Thrift Zone" class="footer-logo-img">
-                        <h3>Thrift Zone</h3>
-                    </div>
-                    <p class="footer-description">
-                        Your ultimate destination for the best deals and offers. Connect with our community to discover amazing bargains and save money on every purchase.
-                    </p>
-                    <div class="social-links">
-                        <a href="#" class="social-link" aria-label="Facebook">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="#" class="social-link" aria-label="Twitter">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="#" class="social-link" aria-label="Instagram">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="#" class="social-link" aria-label="YouTube">
-                            <i class="fab fa-youtube"></i>
-                        </a>
-                    </div>
+                    <h4>ThriftMaal</h4>
+                    <p>India's Happiest Deal Hunters Are Here</p>
                 </div>
-
                 <div class="footer-section">
                     <h4>Quick Links</h4>
-                    <ul class="footer-links">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="deals.html">Today's Deals</a></li>
-                        <li><a href="categories.html">Categories</a></li>
-                        <li><a href="community.html">Community</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                    </ul>
+                    <a href="/">Home</a>
+                    <a href="/about">About</a>
+                    <a href="/community">Community</a>
+                    <a href="/contact">Contact</a>
                 </div>
-
                 <div class="footer-section">
-                    <h4>Categories</h4>
-                    <ul class="footer-links">
-                        <li><a href="categories.html#electronics">Electronics</a></li>
-                        <li><a href="categories.html#fashion">Fashion</a></li>
-                        <li><a href="categories.html#home">Home & Kitchen</a></li>
-                        <li><a href="categories.html#beauty">Beauty</a></li>
-                        <li><a href="categories.html#books">Books</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-section">
-                    <h4>Community</h4>
-                    <ul class="footer-links">
-                        <li><a href="community.html">Join Community</a></li>
-                        <li><a href="#" id="community-guidelines">Guidelines</a></li>
-                        <li><a href="#" id="help-support">Help & Support</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
-                        <li><a href="privacy.html">Privacy Policy</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="footer-bottom">
-                <div class="footer-bottom-content">
-                    <p>&copy; 2025 Thrift Zone Community. Made with ❤️ for Deal Hunters across India.</p>
-                    <div class="footer-bottom-links">
-                        <a href="terms.html">Terms of Service</a>
-                        <a href="privacy.html">Privacy Policy</a>
-                        <a href="sitemap.html">Sitemap</a>
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
             </div>
-        </div>
-    </footer>-->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- Updated Footer with All Pages -->
-<footer class="footer">
-    <div class="container">
-        <div class="footer-content">
-            <div class="footer-section">
-                <div class="footer-logo">
-                    <img src="images/logo/logo.png" alt="Thrift Zone">
-                    <h3>   </h3>
-                </div>
-                <p>Your smart shopping companion.</p>
-                <div class="social-links">
-                    <a href="#" class="social-link"><i class="fab fa-telegram"></i></a>
-                    <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
-                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-                </div>
-            </div>
-
-            <div class="footer-section">
-                <h4>Quick Links</h4>
-                <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="#categories">Categories</a></li>
-                    <li><a href="#deals">Today's Deals</a></li>
-                    <li><a href="blog/">Blog</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-section">
-                <h4>Company</h4>
-                <ul>
-                    <li><a href="pages/about">About Us</a></li>
-                    <li><a href="pages/contact">Contact Us</a></li>
-                    <li><a href="pages/privacy-policy">Privacy Policy</a></li>
-                    <li><a href="pages/terms-of-service">Terms of Service</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-section">
-                <h4>Support</h4>
-                <ul>
-                    <li><a href="pages/faq">FAQ</a></li>
-                    <li><a href="pages/contact">Help Center</a></li>
-                    <li><a href="pages/contact">Report Issue</a></li>
-                </ul>
+            <div class="footer-bottom">
+                <p>&copy; 2025 ThriftMaal.com. All rights reserved.</p>
             </div>
         </div>
-
-        <div class="footer-bottom">
-            <div class="footer-disclaimer">
-                <p>&copy; 2025 Thrift Maal. All rights reserved.</p>
-                <p class="affiliate-disclosure">
-                    <strong>Affiliate Disclosure:</strong> We may earn commission from purchases made through our links. This doesn't affect the price you pay.
-                </p>
-            </div>
-        </div>
-    </div>
-</footer>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- Toast Notifications Container -->
-    <div class="toast-container" id="toast-container"></div>
-
-    <!-- Back to Top Button -->
-    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
-        <i class="fas fa-chevron-up"></i>
-    </button>
+    </footer>
 
     <!-- Scripts -->
-    <script src="js/script.js"></script>
     <script src="js/community.js"></script>
-
-    <!-- Structured Data for SEO -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "WebPage",
-        "name": "Thrift Zone Community",
-        "description": "Join Thrift Zone community - Share deals, get shopping tips, and connect with fellow bargain hunters across India",
-        "url": "https://thriftzone.com/community.html",
-        "mainEntity": {
-            "@type": "Organization",
-            "name": "Thrift Zone",
-            "url": "https://thriftzone.com",
-            "sameAs": [
-                "https://facebook.com/thriftzone",
-                "https://twitter.com/thriftzone",
-                "https://instagram.com/thriftzone"
-            ]
-        }
-    }
-    </script>
+    
 </body>
 </html>
