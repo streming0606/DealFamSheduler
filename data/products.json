@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-10-20T10:18:50.993714+05:30",
-  "total_products": 180,
+  "last_updated": "2025-10-20T13:20:00.941652+05:30",
+  "total_products": 182,
   "products": [
+    {
+      "id": "product_afternoon_20251020_075000",
+      "title": "Springwel Dualis 2-in-1 Reversible 5 Inch Bed Mattress | 15 Yrs Warranty | Dual Side - Hard & Soft Support | Breathable ",
+      "image": "https://m.media-amazon.com/images/I/71kkCio9MmL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0BYZ26QGB?tag=gadgetvill09f-21",
+      "price": "\u20b916,379",
+      "rating": 4.0,
+      "category": "home",
+      "asin": "B0BYZ26QGB",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-20T13:20:00.941619+05:30",
+      "session_type": "afternoon",
+      "link_index": 134
+    },
+    {
+      "id": "product_afternoon_20251020_074959",
+      "title": "Duracell Alkaline AA Battery, Pack of 20, Everyday Devices, Clock, Toy, Remote",
+      "image": "https://m.media-amazon.com/images/I/71e6jKX5pqL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B09686TGF4?tag=gadgetvill09f-21",
+      "price": "\u20b9336",
+      "rating": 4.4,
+      "category": "electronics",
+      "asin": "B09686TGF4",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-20T13:19:59.481847+05:30",
+      "session_type": "afternoon",
+      "link_index": 134
+    },
     {
       "id": "product_morning_20251020_044850",
       "title": "Rellon Plastic Industries Study Table for Students Bed Table for Study Foldable Laptop Table Portable & Lightweight Mini",
