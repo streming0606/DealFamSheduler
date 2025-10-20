@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-10-19T21:20:28.899646+05:30",
-  "total_products": 178,
+  "last_updated": "2025-10-20T10:18:50.993714+05:30",
+  "total_products": 180,
   "products": [
+    {
+      "id": "product_morning_20251020_044850",
+      "title": "Rellon Plastic Industries Study Table for Students Bed Table for Study Foldable Laptop Table Portable & Lightweight Mini",
+      "image": "https://m.media-amazon.com/images/I/61okssN3Y6L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CW2VV681?tag=gadgetvill09f-21",
+      "price": "\u20b9449",
+      "rating": 4.0,
+      "category": "electronics",
+      "asin": "B0CW2VV681",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-20T10:18:50.993688+05:30",
+      "session_type": "morning",
+      "link_index": 132
+    },
+    {
+      "id": "product_morning_20251020_044849",
+      "title": "GOBOULT Z20 Pro Made in India Ear Buds Wireless with 60H Playtime, 4 Mics for Clear Calling, 45ms Low Latency Gaming, IP",
+      "image": "https://m.media-amazon.com/images/I/61dRXJvPh3L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0D22QWQHR?tag=gadgetvill09f-21",
+      "price": "\u20b91,639",
+      "rating": 4.0,
+      "category": "electronics",
+      "asin": "B0D22QWQHR",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-20T10:18:49.163414+05:30",
+      "session_type": "morning",
+      "link_index": 132
+    },
     {
       "id": "product_night_20251019_155028",
       "title": "OFIXO 100 Pieces Colour Sheets Copy Printing Papers/Art and Craft Paper A4 Sheets Double Sided Coloured Origami Folding ",
