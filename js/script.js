@@ -2577,215 +2577,215 @@ console.log('🎉 Thrift Zone JavaScript loaded successfully');
 
 
 
-// Live Promotion Banner Controller
-class LivePromoBanner {
-    constructor() {
-        this.banner = document.getElementById('live-promo-banner');
-        this.closeBtn = document.getElementById('promo-close');
-        this.shopNowBtn = document.querySelector('.shop-now-btn');
-        this.isVisible = true;
-        this.storageKey = 'thriftzone_promo_dismissed';
+// // Live Promotion Banner Controller
+// class LivePromoBanner {
+//     constructor() {
+//         this.banner = document.getElementById('live-promo-banner');
+//         this.closeBtn = document.getElementById('promo-close');
+//         this.shopNowBtn = document.querySelector('.shop-now-btn');
+//         this.isVisible = true;
+//         this.storageKey = 'thriftzone_promo_dismissed';
         
-        this.init();
-    }
+//         this.init();
+//     }
     
-    init() {
-        // Check if banner was previously dismissed
-        if (this.wasDismissed()) {
-            this.hideBanner(false);
-            return;
-        }
+//     init() {
+//         // Check if banner was previously dismissed
+//         if (this.wasDismissed()) {
+//             this.hideBanner(false);
+//             return;
+//         }
         
-        this.showBanner();
-        this.attachEventListeners();
-        this.startAutoRotation();
-    }
+//         this.showBanner();
+//         this.attachEventListeners();
+//         this.startAutoRotation();
+//     }
     
-    attachEventListeners() {
-        // Close button
-        this.closeBtn?.addEventListener('click', () => {
-            this.dismissBanner();
-        });
+//     attachEventListeners() {
+//         // Close button
+//         this.closeBtn?.addEventListener('click', () => {
+//             this.dismissBanner();
+//         });
         
-        // Shop now button
-        this.shopNowBtn?.addEventListener('click', () => {
-            this.handleShopNow();
-        });
+//         // Shop now button
+//         this.shopNowBtn?.addEventListener('click', () => {
+//             this.handleShopNow();
+//         });
         
-        // Auto-hide after 30 seconds
-        setTimeout(() => {
-            if (this.isVisible && !this.wasDismissed()) {
-                this.hideBanner(true);
-            }
-        }, 30000);
-    }
+//         // Auto-hide after 30 seconds
+//         setTimeout(() => {
+//             if (this.isVisible && !this.wasDismissed()) {
+//                 this.hideBanner(true);
+//             }
+//         }, 30000);
+//     }
     
-    showBanner() {
-        document.body.classList.add('promo-banner-visible');
-        this.isVisible = true;
-    }
+//     showBanner() {
+//         document.body.classList.add('promo-banner-visible');
+//         this.isVisible = true;
+//     }
     
-    hideBanner(animate = true) {
-        if (animate) {
-            this.banner?.classList.add('hidden');
-            setTimeout(() => {
-                document.body.classList.remove('promo-banner-visible');
-            }, 300);
-        } else {
-            this.banner.style.display = 'none';
-            document.body.classList.remove('promo-banner-visible');
-        }
-        this.isVisible = false;
-    }
+//     hideBanner(animate = true) {
+//         if (animate) {
+//             this.banner?.classList.add('hidden');
+//             setTimeout(() => {
+//                 document.body.classList.remove('promo-banner-visible');
+//             }, 300);
+//         } else {
+//             this.banner.style.display = 'none';
+//             document.body.classList.remove('promo-banner-visible');
+//         }
+//         this.isVisible = false;
+//     }
     
-    dismissBanner() {
-        this.hideBanner(true);
-        localStorage.setItem(this.storageKey, Date.now().toString());
-    }
+//     dismissBanner() {
+//         this.hideBanner(true);
+//         localStorage.setItem(this.storageKey, Date.now().toString());
+//     }
     
-    wasDismissed() {
-        const dismissed = localStorage.getItem(this.storageKey);
-        if (!dismissed) return false;
+//     wasDismissed() {
+//         const dismissed = localStorage.getItem(this.storageKey);
+//         if (!dismissed) return false;
         
-        // Reset dismissal after 24 hours
-        const dismissTime = parseInt(dismissed);
-        const now = Date.now();
-        const hoursPassed = (now - dismissTime) / (1000 * 60 * 60);
+//         // Reset dismissal after 24 hours
+//         const dismissTime = parseInt(dismissed);
+//         const now = Date.now();
+//         const hoursPassed = (now - dismissTime) / (1000 * 60 * 60);
         
-        if (hoursPassed > 24) {
-            localStorage.removeItem(this.storageKey);
-            return false;
-        }
+//         if (hoursPassed > 24) {
+//             localStorage.removeItem(this.storageKey);
+//             return false;
+//         }
         
-        return true;
-    }
+//         return true;
+//     }
     
-    handleShopNow() {
-        // Track click
-        if (typeof gtag !== 'undefined') {
-            gtag('event', 'promo_banner_click', {
-                event_category: 'engagement',
-                event_label: 'shop_now'
-            });
-        }
+//     handleShopNow() {
+//         // Track click
+//         if (typeof gtag !== 'undefined') {
+//             gtag('event', 'promo_banner_click', {
+//                 event_category: 'engagement',
+//                 event_label: 'shop_now'
+//             });
+//         }
         
-        // Scroll to deals section
-        const dealsSection = document.getElementById('deals');
-        if (dealsSection) {
-            dealsSection.scrollIntoView({ 
-                behavior: 'smooth',
-                block: 'start'
-            });
-        }
+//         // Scroll to deals section
+//         const dealsSection = document.getElementById('deals');
+//         if (dealsSection) {
+//             dealsSection.scrollIntoView({ 
+//                 behavior: 'smooth',
+//                 block: 'start'
+//             });
+//         }
         
-        // Hide banner after click
-        setTimeout(() => {
-            this.hideBanner(true);
-        }, 500);
-    }
+//         // Hide banner after click
+//         setTimeout(() => {
+//             this.hideBanner(true);
+//         }, 500);
+//     }
     
-    startAutoRotation() {
-        const promoData = [
-            {
-                title: "Diwali Mega Sale is Live!",
-                subtitle: "Up to 80% OFF on Electronics & Fashion",
-                icon: "fas fa-fire"
-            },
-            {
-                title: "Flash Sale Alert! ⚡",
-                subtitle: "Limited Time: Extra 20% OFF Everything",
-                icon: "fas fa-bolt"
-            },
-            {
-                title: "Free Shipping Weekend! 🚚",
-                subtitle: "No minimum order • All categories",
-                icon: "fas fa-shipping-fast"
-            }
-        ];
+//     startAutoRotation() {
+//         const promoData = [
+//             {
+//                 title: "Diwali Mega Sale is Live!",
+//                 subtitle: "Up to 80% OFF on Electronics & Fashion",
+//                 icon: "fas fa-fire"
+//             },
+//             {
+//                 title: "Flash Sale Alert! ⚡",
+//                 subtitle: "Limited Time: Extra 20% OFF Everything",
+//                 icon: "fas fa-bolt"
+//             },
+//             {
+//                 title: "Free Shipping Weekend! 🚚",
+//                 subtitle: "No minimum order • All categories",
+//                 icon: "fas fa-shipping-fast"
+//             }
+//         ];
         
-        let currentIndex = 0;
+//         let currentIndex = 0;
         
-        setInterval(() => {
-            if (!this.isVisible) return;
+//         setInterval(() => {
+//             if (!this.isVisible) return;
             
-            currentIndex = (currentIndex + 1) % promoData.length;
-            const data = promoData[currentIndex];
+//             currentIndex = (currentIndex + 1) % promoData.length;
+//             const data = promoData[currentIndex];
             
-            this.updateBannerContent(data);
-        }, 8000); // Rotate every 8 seconds
-    }
+//             this.updateBannerContent(data);
+//         }, 8000); // Rotate every 8 seconds
+//     }
     
-    updateBannerContent(data) {
-        const titleEl = this.banner?.querySelector('.promo-title');
-        const subtitleEl = this.banner?.querySelector('.promo-subtitle');
-        const iconEl = this.banner?.querySelector('.promo-icon i');
+//     updateBannerContent(data) {
+//         const titleEl = this.banner?.querySelector('.promo-title');
+//         const subtitleEl = this.banner?.querySelector('.promo-subtitle');
+//         const iconEl = this.banner?.querySelector('.promo-icon i');
         
-        if (titleEl) titleEl.textContent = data.title;
-        if (subtitleEl) subtitleEl.textContent = data.subtitle;
-        if (iconEl) iconEl.className = data.icon;
-    }
-}
+//         if (titleEl) titleEl.textContent = data.title;
+//         if (subtitleEl) subtitleEl.textContent = data.subtitle;
+//         if (iconEl) iconEl.className = data.icon;
+//     }
+// }
 
-// Initialize banner when DOM is loaded
-document.addEventListener('DOMContentLoaded', function() {
-    new LivePromoBanner();
-});
+// // Initialize banner when DOM is loaded
+// document.addEventListener('DOMContentLoaded', function() {
+//     new LivePromoBanner();
+// });
 
-// Global function for shop now button
-function scrollToDeals() {
-    const dealsSection = document.getElementById('deals');
-    if (dealsSection) {
-        dealsSection.scrollIntoView({ 
-            behavior: 'smooth',
-            block: 'start'
-        });
-    }
-}
+// // Global function for shop now button
+// function scrollToDeals() {
+//     const dealsSection = document.getElementById('deals');
+//     if (dealsSection) {
+//         dealsSection.scrollIntoView({ 
+//             behavior: 'smooth',
+//             block: 'start'
+//         });
+//     }
+// }
 
 
-// Add to your existing JavaScript
-const promoConfig = {
-    campaigns: [
-        {
-            id: 'diwali-2025',
-            title: "Diwali Mega Sale is Live!",
-            subtitle: "Up to 80% OFF on Electronics & Fashion",
-            icon: "fas fa-fire",
-            background: "linear-gradient(135deg, #FF6B35 0%, #F59E0B 50%, #EF4444 100%)",
-            startDate: "2025-10-20",
-            endDate: "2025-11-05",
-            priority: 1
-        },
-        {
-            id: 'weekend-flash',
-            title: "Weekend Flash Sale! ⚡",
-            subtitle: "Extra 30% OFF • Limited Time Only",
-            icon: "fas fa-bolt",
-            background: "linear-gradient(135deg, #8B5CF6 0%, #7C3AED 50%, #6D28D9 100%)",
-            days: [5, 6, 0], // Friday, Saturday, Sunday
-            priority: 2
-        }
-    ],
+// // Add to your existing JavaScript
+// const promoConfig = {
+//     campaigns: [
+//         {
+//             id: 'diwali-2025',
+//             title: "Diwali Mega Sale is Live!",
+//             subtitle: "Up to 80% OFF on Electronics & Fashion",
+//             icon: "fas fa-fire",
+//             background: "linear-gradient(135deg, #FF6B35 0%, #F59E0B 50%, #EF4444 100%)",
+//             startDate: "2025-10-20",
+//             endDate: "2025-11-05",
+//             priority: 1
+//         },
+//         {
+//             id: 'weekend-flash',
+//             title: "Weekend Flash Sale! ⚡",
+//             subtitle: "Extra 30% OFF • Limited Time Only",
+//             icon: "fas fa-bolt",
+//             background: "linear-gradient(135deg, #8B5CF6 0%, #7C3AED 50%, #6D28D9 100%)",
+//             days: [5, 6, 0], // Friday, Saturday, Sunday
+//             priority: 2
+//         }
+//     ],
     
-    getCurrentCampaign() {
-        const now = new Date();
-        const today = now.getDay();
+//     getCurrentCampaign() {
+//         const now = new Date();
+//         const today = now.getDay();
         
-        return this.campaigns
-            .filter(campaign => {
-                if (campaign.startDate && campaign.endDate) {
-                    const start = new Date(campaign.startDate);
-                    const end = new Date(campaign.endDate);
-                    return now >= start && now <= end;
-                }
-                if (campaign.days) {
-                    return campaign.days.includes(today);
-                }
-                return true;
-            })
-            .sort((a, b) => a.priority - b.priority)[0];
-    }
-};
+//         return this.campaigns
+//             .filter(campaign => {
+//                 if (campaign.startDate && campaign.endDate) {
+//                     const start = new Date(campaign.startDate);
+//                     const end = new Date(campaign.endDate);
+//                     return now >= start && now <= end;
+//                 }
+//                 if (campaign.days) {
+//                     return campaign.days.includes(today);
+//                 }
+//                 return true;
+//             })
+//             .sort((a, b) => a.priority - b.priority)[0];
+//     }
+// };
 
 
 
@@ -2802,392 +2802,392 @@ const promoConfig = {
 
 
 
-// Brand Offers Horizontal Slider - Completely Isolated
-class ThriftBrandOffersSlider {
-    constructor() {
-        this.currentSlide = 0;
-        this.slidesPerView = this.getSlidesPerView();
-        this.totalSlides = 6;
-        this.autoplayInterval = null;
-        this.autoplayDelay = 4000;
-        this.isAutoplay = true;
-        this.isDragging = false;
-        this.startX = 0;
-        this.currentX = 0;
-        this.translateX = 0;
-        this.instanceId = 'thrift-brand-' + Date.now(); // Unique instance ID
+// // Brand Offers Horizontal Slider - Completely Isolated
+// class ThriftBrandOffersSlider {
+//     constructor() {
+//         this.currentSlide = 0;
+//         this.slidesPerView = this.getSlidesPerView();
+//         this.totalSlides = 6;
+//         this.autoplayInterval = null;
+//         this.autoplayDelay = 4000;
+//         this.isAutoplay = true;
+//         this.isDragging = false;
+//         this.startX = 0;
+//         this.currentX = 0;
+//         this.translateX = 0;
+//         this.instanceId = 'thrift-brand-' + Date.now(); // Unique instance ID
         
-        this.init();
-    }
+//         this.init();
+//     }
     
-    init() {
-        this.slider = document.getElementById('thrift-brand-slider');
-        this.prevBtn = document.getElementById('thrift-brand-prev-btn');
-        this.nextBtn = document.getElementById('thrift-brand-next-btn');
-        this.pagination = document.getElementById('thrift-brand-pagination');
-        this.slides = document.querySelectorAll('.thrift-brand-banner-slide');
-        this.container = document.querySelector('.thrift-brand-offers-section');
+//     init() {
+//         this.slider = document.getElementById('thrift-brand-slider');
+//         this.prevBtn = document.getElementById('thrift-brand-prev-btn');
+//         this.nextBtn = document.getElementById('thrift-brand-next-btn');
+//         this.pagination = document.getElementById('thrift-brand-pagination');
+//         this.slides = document.querySelectorAll('.thrift-brand-banner-slide');
+//         this.container = document.querySelector('.thrift-brand-offers-section');
         
-        if (!this.slider || !this.slides.length) {
-            console.warn('ThriftBrandOffersSlider: Required elements not found');
-            return;
-        }
+//         if (!this.slider || !this.slides.length) {
+//             console.warn('ThriftBrandOffersSlider: Required elements not found');
+//             return;
+//         }
         
-        this.setupPagination();
-        this.setupEventListeners();
-        this.startAutoplay();
-        this.updateSlider();
+//         this.setupPagination();
+//         this.setupEventListeners();
+//         this.startAutoplay();
+//         this.updateSlider();
         
-        console.log('ThriftBrandOffersSlider initialized successfully');
-    }
+//         console.log('ThriftBrandOffersSlider initialized successfully');
+//     }
     
-    getSlidesPerView() {
-        if (window.innerWidth > 768) return 3;
-        if (window.innerWidth > 480) return 2;
-        return 1;
-    }
+//     getSlidesPerView() {
+//         if (window.innerWidth > 768) return 3;
+//         if (window.innerWidth > 480) return 2;
+//         return 1;
+//     }
     
-    setupPagination() {
-        if (!this.pagination) return;
+//     setupPagination() {
+//         if (!this.pagination) return;
         
-        this.pagination.innerHTML = '';
-        const totalPages = Math.ceil(this.totalSlides / this.slidesPerView);
+//         this.pagination.innerHTML = '';
+//         const totalPages = Math.ceil(this.totalSlides / this.slidesPerView);
         
-        for (let i = 0; i < totalPages; i++) {
-            const dot = document.createElement('button');
-            dot.className = `thrift-brand-pagination-dot ${i === 0 ? 'active' : ''}`;
-            dot.setAttribute('aria-label', `Go to slide ${i + 1}`);
-            dot.addEventListener('click', () => this.goToSlide(i * this.slidesPerView));
-            this.pagination.appendChild(dot);
-        }
-    }
+//         for (let i = 0; i < totalPages; i++) {
+//             const dot = document.createElement('button');
+//             dot.className = `thrift-brand-pagination-dot ${i === 0 ? 'active' : ''}`;
+//             dot.setAttribute('aria-label', `Go to slide ${i + 1}`);
+//             dot.addEventListener('click', () => this.goToSlide(i * this.slidesPerView));
+//             this.pagination.appendChild(dot);
+//         }
+//     }
     
-    setupEventListeners() {
-        // Navigation buttons
-        this.prevBtn?.addEventListener('click', () => {
-            this.previousSlide();
-            this.resetAutoplay();
-        });
+//     setupEventListeners() {
+//         // Navigation buttons
+//         this.prevBtn?.addEventListener('click', () => {
+//             this.previousSlide();
+//             this.resetAutoplay();
+//         });
         
-        this.nextBtn?.addEventListener('click', () => {
-            this.nextSlide();
-            this.resetAutoplay();
-        });
+//         this.nextBtn?.addEventListener('click', () => {
+//             this.nextSlide();
+//             this.resetAutoplay();
+//         });
         
-        // Banner clicks
-        this.slides.forEach((slide, index) => {
-            slide.addEventListener('click', (e) => {
-                const link = slide.dataset.link;
-                if (link && !this.isDragging) {
-                    // Track banner click
-                    if (typeof gtag !== 'undefined') {
-                        gtag('event', 'thrift_brand_banner_click', {
-                            'banner_url': link,
-                            'banner_position': index + 1,
-                            'banner_title': slide.querySelector('.thrift-brand-banner-title')?.textContent || '',
-                            'event_category': 'Brand Offers',
-                            'event_label': 'Horizontal Slider'
-                        });
-                    }
+//         // Banner clicks
+//         this.slides.forEach((slide, index) => {
+//             slide.addEventListener('click', (e) => {
+//                 const link = slide.dataset.link;
+//                 if (link && !this.isDragging) {
+//                     // Track banner click
+//                     if (typeof gtag !== 'undefined') {
+//                         gtag('event', 'thrift_brand_banner_click', {
+//                             'banner_url': link,
+//                             'banner_position': index + 1,
+//                             'banner_title': slide.querySelector('.thrift-brand-banner-title')?.textContent || '',
+//                             'event_category': 'Brand Offers',
+//                             'event_label': 'Horizontal Slider'
+//                         });
+//                     }
                     
-                    // Add visual feedback
-                    slide.style.transform = 'scale(0.98)';
-                    setTimeout(() => {
-                        slide.style.transform = '';
-                        window.open(link, '_blank', 'noopener,noreferrer');
-                    }, 150);
-                }
-            });
-        });
+//                     // Add visual feedback
+//                     slide.style.transform = 'scale(0.98)';
+//                     setTimeout(() => {
+//                         slide.style.transform = '';
+//                         window.open(link, '_blank', 'noopener,noreferrer');
+//                     }, 150);
+//                 }
+//             });
+//         });
         
-        // Touch/Mouse events for swiping - with proper event isolation
-        this.slider.addEventListener('mousedown', (e) => {
-            e.preventDefault();
-            this.handleStart(e);
-        });
+//         // Touch/Mouse events for swiping - with proper event isolation
+//         this.slider.addEventListener('mousedown', (e) => {
+//             e.preventDefault();
+//             this.handleStart(e);
+//         });
         
-        this.slider.addEventListener('touchstart', (e) => {
-            this.handleStart(e);
-        }, { passive: false });
+//         this.slider.addEventListener('touchstart', (e) => {
+//             this.handleStart(e);
+//         }, { passive: false });
         
-        document.addEventListener('mousemove', (e) => {
-            if (this.isDragging) this.handleMove(e);
-        });
+//         document.addEventListener('mousemove', (e) => {
+//             if (this.isDragging) this.handleMove(e);
+//         });
         
-        document.addEventListener('touchmove', (e) => {
-            if (this.isDragging) this.handleMove(e);
-        }, { passive: false });
+//         document.addEventListener('touchmove', (e) => {
+//             if (this.isDragging) this.handleMove(e);
+//         }, { passive: false });
         
-        document.addEventListener('mouseup', (e) => {
-            if (this.isDragging) this.handleEnd(e);
-        });
+//         document.addEventListener('mouseup', (e) => {
+//             if (this.isDragging) this.handleEnd(e);
+//         });
         
-        document.addEventListener('touchend', (e) => {
-            if (this.isDragging) this.handleEnd(e);
-        });
+//         document.addEventListener('touchend', (e) => {
+//             if (this.isDragging) this.handleEnd(e);
+//         });
         
-        // Pause autoplay on hover - only for this slider
-        this.container?.addEventListener('mouseenter', () => {
-            this.pauseAutoplay();
-        });
+//         // Pause autoplay on hover - only for this slider
+//         this.container?.addEventListener('mouseenter', () => {
+//             this.pauseAutoplay();
+//         });
         
-        this.container?.addEventListener('mouseleave', () => {
-            this.resumeAutoplay();
-        });
+//         this.container?.addEventListener('mouseleave', () => {
+//             this.resumeAutoplay();
+//         });
         
-        // Handle visibility change
-        document.addEventListener('visibilitychange', () => {
-            if (document.hidden) {
-                this.pauseAutoplay();
-            } else if (!this.container?.matches(':hover')) {
-                this.resumeAutoplay();
-            }
-        });
+//         // Handle visibility change
+//         document.addEventListener('visibilitychange', () => {
+//             if (document.hidden) {
+//                 this.pauseAutoplay();
+//             } else if (!this.container?.matches(':hover')) {
+//                 this.resumeAutoplay();
+//             }
+//         });
         
-        // Handle window resize with debouncing
-        const resizeHandler = this.debounce(() => {
-            const newSlidesPerView = this.getSlidesPerView();
-            if (newSlidesPerView !== this.slidesPerView) {
-                this.slidesPerView = newSlidesPerView;
-                this.setupPagination();
-                this.currentSlide = Math.min(this.currentSlide, this.totalSlides - this.slidesPerView);
-                this.updateSlider();
-            }
-        }, 250);
+//         // Handle window resize with debouncing
+//         const resizeHandler = this.debounce(() => {
+//             const newSlidesPerView = this.getSlidesPerView();
+//             if (newSlidesPerView !== this.slidesPerView) {
+//                 this.slidesPerView = newSlidesPerView;
+//                 this.setupPagination();
+//                 this.currentSlide = Math.min(this.currentSlide, this.totalSlides - this.slidesPerView);
+//                 this.updateSlider();
+//             }
+//         }, 250);
         
-        window.addEventListener('resize', resizeHandler);
+//         window.addEventListener('resize', resizeHandler);
         
-        // Store cleanup function
-        this.cleanup = () => {
-            window.removeEventListener('resize', resizeHandler);
-            if (this.autoplayInterval) {
-                clearInterval(this.autoplayInterval);
-            }
-        };
-    }
+//         // Store cleanup function
+//         this.cleanup = () => {
+//             window.removeEventListener('resize', resizeHandler);
+//             if (this.autoplayInterval) {
+//                 clearInterval(this.autoplayInterval);
+//             }
+//         };
+//     }
     
-    debounce(func, wait) {
-        let timeout;
-        return function executedFunction(...args) {
-            const later = () => {
-                clearTimeout(timeout);
-                func(...args);
-            };
-            clearTimeout(timeout);
-            timeout = setTimeout(later, wait);
-        };
-    }
+//     debounce(func, wait) {
+//         let timeout;
+//         return function executedFunction(...args) {
+//             const later = () => {
+//                 clearTimeout(timeout);
+//                 func(...args);
+//             };
+//             clearTimeout(timeout);
+//             timeout = setTimeout(later, wait);
+//         };
+//     }
     
-    handleStart(e) {
-        this.isDragging = true;
-        this.startX = e.type === 'mousedown' ? e.clientX : e.touches[0].clientX;
-        this.slider.style.cursor = 'grabbing';
-        this.slider.style.userSelect = 'none';
-        this.pauseAutoplay();
-    }
+//     handleStart(e) {
+//         this.isDragging = true;
+//         this.startX = e.type === 'mousedown' ? e.clientX : e.touches[0].clientX;
+//         this.slider.style.cursor = 'grabbing';
+//         this.slider.style.userSelect = 'none';
+//         this.pauseAutoplay();
+//     }
     
-    handleMove(e) {
-        if (!this.isDragging) return;
+//     handleMove(e) {
+//         if (!this.isDragging) return;
         
-        e.preventDefault();
-        this.currentX = e.type === 'mousemove' ? e.clientX : e.touches[0].clientX;
-        const deltaX = this.currentX - this.startX;
+//         e.preventDefault();
+//         this.currentX = e.type === 'mousemove' ? e.clientX : e.touches[0].clientX;
+//         const deltaX = this.currentX - this.startX;
         
-        // Apply resistance at boundaries
-        const resistance = 0.3;
-        let newTranslateX = this.translateX + deltaX;
+//         // Apply resistance at boundaries
+//         const resistance = 0.3;
+//         let newTranslateX = this.translateX + deltaX;
         
-        if (newTranslateX > 0) {
-            newTranslateX = newTranslateX * resistance;
-        } else if (newTranslateX < -(this.getMaxTranslate())) {
-            const over = Math.abs(newTranslateX + this.getMaxTranslate());
-            newTranslateX = -(this.getMaxTranslate() + over * resistance);
-        }
+//         if (newTranslateX > 0) {
+//             newTranslateX = newTranslateX * resistance;
+//         } else if (newTranslateX < -(this.getMaxTranslate())) {
+//             const over = Math.abs(newTranslateX + this.getMaxTranslate());
+//             newTranslateX = -(this.getMaxTranslate() + over * resistance);
+//         }
         
-        this.slider.style.transform = `translateX(${newTranslateX}px)`;
-    }
+//         this.slider.style.transform = `translateX(${newTranslateX}px)`;
+//     }
     
-    handleEnd(e) {
-        if (!this.isDragging) return;
+//     handleEnd(e) {
+//         if (!this.isDragging) return;
         
-        this.isDragging = false;
-        this.slider.style.cursor = 'grab';
-        this.slider.style.userSelect = '';
+//         this.isDragging = false;
+//         this.slider.style.cursor = 'grab';
+//         this.slider.style.userSelect = '';
         
-        const deltaX = this.currentX - this.startX;
-        const threshold = 50;
+//         const deltaX = this.currentX - this.startX;
+//         const threshold = 50;
         
-        if (Math.abs(deltaX) > threshold) {
-            if (deltaX > 0) {
-                this.previousSlide();
-            } else {
-                this.nextSlide();
-            }
-        } else {
-            this.updateSlider();
-        }
+//         if (Math.abs(deltaX) > threshold) {
+//             if (deltaX > 0) {
+//                 this.previousSlide();
+//             } else {
+//                 this.nextSlide();
+//             }
+//         } else {
+//             this.updateSlider();
+//         }
         
-        // Resume autoplay after interaction
-        setTimeout(() => {
-            if (!this.container?.matches(':hover')) {
-                this.resumeAutoplay();
-            }
-        }, 1000);
-    }
+//         // Resume autoplay after interaction
+//         setTimeout(() => {
+//             if (!this.container?.matches(':hover')) {
+//                 this.resumeAutoplay();
+//             }
+//         }, 1000);
+//     }
     
-    getMaxTranslate() {
-        const slideWidth = this.slides[0]?.offsetWidth + 20 || 320; // Including gap + fallback
-        return Math.max(0, (this.totalSlides - this.slidesPerView) * slideWidth);
-    }
+//     getMaxTranslate() {
+//         const slideWidth = this.slides[0]?.offsetWidth + 20 || 320; // Including gap + fallback
+//         return Math.max(0, (this.totalSlides - this.slidesPerView) * slideWidth);
+//     }
     
-    updateSlider() {
-        const slideWidth = this.slides[0]?.offsetWidth + 20 || 320; // Including gap + fallback
-        this.translateX = -this.currentSlide * slideWidth;
+//     updateSlider() {
+//         const slideWidth = this.slides[0]?.offsetWidth + 20 || 320; // Including gap + fallback
+//         this.translateX = -this.currentSlide * slideWidth;
         
-        this.slider.style.transform = `translateX(${this.translateX}px)`;
-        this.updatePagination();
-        this.updateNavigationButtons();
-    }
+//         this.slider.style.transform = `translateX(${this.translateX}px)`;
+//         this.updatePagination();
+//         this.updateNavigationButtons();
+//     }
     
-    updatePagination() {
-        const dots = this.pagination?.querySelectorAll('.thrift-brand-pagination-dot');
-        if (!dots) return;
+//     updatePagination() {
+//         const dots = this.pagination?.querySelectorAll('.thrift-brand-pagination-dot');
+//         if (!dots) return;
         
-        dots.forEach((dot, index) => {
-            const pageStart = index * this.slidesPerView;
-            const isActive = this.currentSlide >= pageStart && 
-                           this.currentSlide < pageStart + this.slidesPerView;
-            dot.classList.toggle('active', isActive);
-        });
-    }
+//         dots.forEach((dot, index) => {
+//             const pageStart = index * this.slidesPerView;
+//             const isActive = this.currentSlide >= pageStart && 
+//                            this.currentSlide < pageStart + this.slidesPerView;
+//             dot.classList.toggle('active', isActive);
+//         });
+//     }
     
-    updateNavigationButtons() {
-        if (this.prevBtn) {
-            this.prevBtn.disabled = this.currentSlide === 0;
-        }
+//     updateNavigationButtons() {
+//         if (this.prevBtn) {
+//             this.prevBtn.disabled = this.currentSlide === 0;
+//         }
         
-        if (this.nextBtn) {
-            this.nextBtn.disabled = this.currentSlide >= this.totalSlides - this.slidesPerView;
-        }
-    }
+//         if (this.nextBtn) {
+//             this.nextBtn.disabled = this.currentSlide >= this.totalSlides - this.slidesPerView;
+//         }
+//     }
     
-    nextSlide() {
-        if (this.currentSlide < this.totalSlides - this.slidesPerView) {
-            this.currentSlide++;
-        } else {
-            this.currentSlide = 0; // Loop back to start
-        }
-        this.updateSlider();
-    }
+//     nextSlide() {
+//         if (this.currentSlide < this.totalSlides - this.slidesPerView) {
+//             this.currentSlide++;
+//         } else {
+//             this.currentSlide = 0; // Loop back to start
+//         }
+//         this.updateSlider();
+//     }
     
-    previousSlide() {
-        if (this.currentSlide > 0) {
-            this.currentSlide--;
-        } else {
-            this.currentSlide = this.totalSlides - this.slidesPerView; // Loop to end
-        }
-        this.updateSlider();
-    }
+//     previousSlide() {
+//         if (this.currentSlide > 0) {
+//             this.currentSlide--;
+//         } else {
+//             this.currentSlide = this.totalSlides - this.slidesPerView; // Loop to end
+//         }
+//         this.updateSlider();
+//     }
     
-    goToSlide(slideIndex) {
-        this.currentSlide = Math.max(0, Math.min(slideIndex, this.totalSlides - this.slidesPerView));
-        this.updateSlider();
-        this.resetAutoplay();
-    }
+//     goToSlide(slideIndex) {
+//         this.currentSlide = Math.max(0, Math.min(slideIndex, this.totalSlides - this.slidesPerView));
+//         this.updateSlider();
+//         this.resetAutoplay();
+//     }
     
-    startAutoplay() {
-        this.stopAutoplay(); // Prevent multiple intervals
+//     startAutoplay() {
+//         this.stopAutoplay(); // Prevent multiple intervals
         
-        this.autoplayInterval = setInterval(() => {
-            if (this.isAutoplay && !this.isDragging && document.visibilityState === 'visible') {
-                this.nextSlide();
-            }
-        }, this.autoplayDelay);
-    }
+//         this.autoplayInterval = setInterval(() => {
+//             if (this.isAutoplay && !this.isDragging && document.visibilityState === 'visible') {
+//                 this.nextSlide();
+//             }
+//         }, this.autoplayDelay);
+//     }
     
-    stopAutoplay() {
-        if (this.autoplayInterval) {
-            clearInterval(this.autoplayInterval);
-            this.autoplayInterval = null;
-        }
-    }
+//     stopAutoplay() {
+//         if (this.autoplayInterval) {
+//             clearInterval(this.autoplayInterval);
+//             this.autoplayInterval = null;
+//         }
+//     }
     
-    pauseAutoplay() {
-        this.isAutoplay = false;
-    }
+//     pauseAutoplay() {
+//         this.isAutoplay = false;
+//     }
     
-    resumeAutoplay() {
-        this.isAutoplay = true;
-        if (!this.autoplayInterval) {
-            this.startAutoplay();
-        }
-    }
+//     resumeAutoplay() {
+//         this.isAutoplay = true;
+//         if (!this.autoplayInterval) {
+//             this.startAutoplay();
+//         }
+//     }
     
-    resetAutoplay() {
-        this.stopAutoplay();
-        this.pauseAutoplay();
+//     resetAutoplay() {
+//         this.stopAutoplay();
+//         this.pauseAutoplay();
         
-        setTimeout(() => {
-            this.resumeAutoplay();
-            this.startAutoplay();
-        }, 2000);
-    }
+//         setTimeout(() => {
+//             this.resumeAutoplay();
+//             this.startAutoplay();
+//         }, 2000);
+//     }
     
-    destroy() {
-        this.stopAutoplay();
-        if (this.cleanup) {
-            this.cleanup();
-        }
-        console.log('ThriftBrandOffersSlider destroyed');
-    }
-}
+//     destroy() {
+//         this.stopAutoplay();
+//         if (this.cleanup) {
+//             this.cleanup();
+//         }
+//         console.log('ThriftBrandOffersSlider destroyed');
+//     }
+// }
 
-// Initialize Brand Offers Slider - Isolated from other sliders
-let thriftBrandOffersSlider = null;
+// // Initialize Brand Offers Slider - Isolated from other sliders
+// let thriftBrandOffersSlider = null;
 
-// Safe initialization that won't conflict with existing code
-function initThriftBrandOffers() {
-    // Wait for DOM to be ready
-    if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', initThriftBrandOffers);
-        return;
-    }
+// // Safe initialization that won't conflict with existing code
+// function initThriftBrandOffers() {
+//     // Wait for DOM to be ready
+//     if (document.readyState === 'loading') {
+//         document.addEventListener('DOMContentLoaded', initThriftBrandOffers);
+//         return;
+//     }
     
-    // Check if already initialized
-    if (thriftBrandOffersSlider) {
-        console.warn('ThriftBrandOffersSlider already initialized');
-        return;
-    }
+//     // Check if already initialized
+//     if (thriftBrandOffersSlider) {
+//         console.warn('ThriftBrandOffersSlider already initialized');
+//         return;
+//     }
     
-    // Initialize only if elements exist
-    const brandSliderElement = document.getElementById('thrift-brand-slider');
-    if (brandSliderElement) {
-        thriftBrandOffersSlider = new ThriftBrandOffersSlider();
-    }
-}
+//     // Initialize only if elements exist
+//     const brandSliderElement = document.getElementById('thrift-brand-slider');
+//     if (brandSliderElement) {
+//         thriftBrandOffersSlider = new ThriftBrandOffersSlider();
+//     }
+// }
 
-// Initialize when ready
-initThriftBrandOffers();
+// // Initialize when ready
+// initThriftBrandOffers();
 
-// Cleanup on page unload
-window.addEventListener('beforeunload', () => {
-    if (thriftBrandOffersSlider) {
-        thriftBrandOffersSlider.destroy();
-        thriftBrandOffersSlider = null;
-    }
-});
+// // Cleanup on page unload
+// window.addEventListener('beforeunload', () => {
+//     if (thriftBrandOffersSlider) {
+//         thriftBrandOffersSlider.destroy();
+//         thriftBrandOffersSlider = null;
+//     }
+// });
 
-// Export for manual control if needed
-window.ThriftBrandOffersSlider = {
-    instance: () => thriftBrandOffersSlider,
-    reinitialize: () => {
-        if (thriftBrandOffersSlider) {
-            thriftBrandOffersSlider.destroy();
-        }
-        thriftBrandOffersSlider = null;
-        initThriftBrandOffers();
-    }
-};
+// // Export for manual control if needed
+// window.ThriftBrandOffersSlider = {
+//     instance: () => thriftBrandOffersSlider,
+//     reinitialize: () => {
+//         if (thriftBrandOffersSlider) {
+//             thriftBrandOffersSlider.destroy();
+//         }
+//         thriftBrandOffersSlider = null;
+//         initThriftBrandOffers();
+//     }
+// };
 
 
 
