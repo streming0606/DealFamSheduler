@@ -340,6 +340,8 @@ document.addEventListener('DOMContentLoaded', async function() {
   
 //   return starsHTML;
 // }
+
+
 /**
  * Enhanced Product Card Creation with Wishlist Integration
  * @param {Object} product - Product data object
@@ -367,7 +369,7 @@ function createProductCard(product, index = 0) {
     // Generate rating stars HTML
     const ratingHTML = generateRatingStars(product.rating);
     
-    // Check if product is in wishlist
+    // ✅ NEW: Check if product is in wishlist
     const isInWishlist = window.wishlistManager?.isInWishlist(product.id) || false;
     
     card.innerHTML = `
@@ -392,7 +394,7 @@ function createProductCard(product, index = 0) {
                 ${enhancedData.isLowStock ? `<span class="badge badge-stock-low">Few Left!</span>` : ''}
             </div>
             
-            <!-- NEW WISHLIST BUTTON - Updated with Wishlist Integration -->
+            <!-- ✅ UPDATED WISHLIST BUTTON -->
             <div class="product-top-actions">
                 <button class="action-btn wishlist-btn ${isInWishlist ? 'active' : ''}" 
                         data-product-id="${product.id}" 
@@ -459,112 +461,6 @@ function createProductCard(product, index = 0) {
     
     return card;
 }
-
-/**
- * Handle wishlist button clicks
- * @param {Event} event - Click event
- * @param {string} productId - Product ID
- */
-async function handleWishlistClick(event, productId) {
-    event.stopPropagation();
-    event.preventDefault();
-    
-    console.log('Wishlist clicked for product:', productId);
-    
-    if (!window.wishlistManager) {
-        console.error('❌ Wishlist manager not initialized');
-        showQuickToast('Wishlist system not ready', 'error');
-        return;
-    }
-    
-    // Find product from allProducts array
-    const product = allProducts.find(p => p.id === productId);
-    if (!product) {
-        console.error('❌ Product not found:', productId);
-        showQuickToast('Product not found', 'error');
-        return;
-    }
-    
-    // Add button animation
-    const button = event.currentTarget;
-    button.style.transition = 'transform 0.2s ease';
-    button.style.transform = 'scale(1.3)';
-    
-    setTimeout(() => {
-        button.style.transform = 'scale(1)';
-    }, 200);
-    
-    // Toggle wishlist
-    await window.wishlistManager.toggleWishlist(product);
-}
-
-/**
- * Update wishlist UI for all product cards
- * Call this after rendering products
- */
-function updateWishlistUI() {
-    if (!window.wishlistManager) return;
-    
-    console.log('Updating wishlist UI...');
-    
-    document.querySelectorAll('.wishlist-btn').forEach(btn => {
-        const productId = btn.dataset.productId;
-        const isInWishlist = window.wishlistManager.isInWishlist(productId);
-        
-        if (isInWishlist) {
-            btn.classList.add('active');
-            btn.title = 'Remove from wishlist';
-            btn.setAttribute('aria-label', 'Remove from wishlist');
-            const icon = btn.querySelector('i');
-            if (icon) {
-                icon.classList.remove('far');
-                icon.classList.add('fas');
-            }
-        } else {
-            btn.classList.remove('active');
-            btn.title = 'Add to wishlist';
-            btn.setAttribute('aria-label', 'Add to wishlist');
-            const icon = btn.querySelector('i');
-            if (icon) {
-                icon.classList.remove('fas');
-                icon.classList.add('far');
-            }
-        }
-    });
-}
-
-/**
- * Quick toast notification (fallback if WishlistManager toast not available)
- */
-function showQuickToast(message, type = 'info') {
-    const toast = document.createElement('div');
-    toast.className = 'quick-toast';
-    toast.style.cssText = `
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        background: ${type === 'success' ? '#10B981' : type === 'error' ? '#EF4444' : '#3B82F6'};
-        color: white;
-        padding: 12px 20px;
-        border-radius: 8px;
-        font-size: 14px;
-        font-weight: 500;
-        z-index: 10000;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-        animation: slideInRight 0.3s ease;
-    `;
-    toast.textContent = message;
-    document.body.appendChild(toast);
-    
-    setTimeout(() => {
-        toast.style.animation = 'slideOutRight 0.3s ease';
-        setTimeout(() => toast.remove(), 300);
-    }, 2500);
-}
-
-// Export for use in other files
-window.updateWishlistUI = updateWishlistUI;
-window.handleWishlistClick = handleWishlistClick;
 
 
 
