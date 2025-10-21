@@ -163,136 +163,408 @@ function initializeScrollers() {
 
 
 
-// Enhanced Product Card Functions
-function createProductCard(product, index = 0) {
-  const card = document.createElement('div');
-  card.className = 'product-card';
-  card.setAttribute('data-category', product.category);
-  card.style.opacity = '0';
-  card.style.transform = 'translateY(20px)';
-  card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
-  
-  // Make card cursor pointer
-  card.style.cursor = 'pointer';
-  
-  const date = new Date(product.posted_date);
-  const formattedDate = date.toLocaleDateString('en-IN');
-  const enhancedData = enhanceProductData(product);
-  
-  // Generate rating stars HTML
-  const ratingHTML = generateRatingStars(product.rating);
-  
-  card.innerHTML = `
-    <div class="product-image-container">
-      ${product.image ? 
-        `<img src="${product.image}" alt="${product.title}" class="product-image" loading="lazy" onerror="this.parentElement.innerHTML='<div class=\\'product-placeholder\\'><i class=\\'fas fa-image\\'></i></div>'">` : 
-        `<div class="product-placeholder"><i class="fas fa-image"></i></div>`
-      }
-      <div class="product-badges">
-        <span class="badge badge-discount">${enhancedData.discountPercent}% OFF</span>
-        ${enhancedData.isLimitedTime ? '<span class="badge badge-limited">Limited Time</span>' : ''}
-        ${enhancedData.isLowStock ? '<span class="badge badge-stock-low">Few Left!</span>' : ''}
-      </div>
-      <div class="product-top-actions">
-        <button class="action-btn wishlist-btn" onclick="toggleWishlist('${product.id}', this)" title="Add to wishlist">
-          <i class="far fa-heart"></i>
-        </button>
-      </div>
-    </div>
+
+
+
+
+
+// Initialize Supabase Client
+const SUPABASE_URL = 'https://osymkmdqflqhjdomxdga.supabase.co';
+const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im9zeW1rbWRxZmxxaGpkb214ZGdhIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTc3NDY3NzAsImV4cCI6MjA3MzMyMjc3MH0.dg3reeNJhf9iyu7SjUktvOiF--yhA5bz4JkCdETflZU';
+const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+
+// Global wishlist manager
+let wishlistManager;
+
+// Update your DOMContentLoaded function
+document.addEventListener('DOMContentLoaded', async function() {
+    console.log('🚀 Thrift Zone initialized');
     
-    <div class="product-info">
-      <div class="product-category">${product.category}</div>
-      <h3 class="product-title">${product.title}</h3>
-      
-      ${product.rating ? generateRatingStars(product.rating) : ''}
-      
-      <div class="product-pricing">
-        <div class="price-section">
-          <span class="price-current">
-            <span class="currency">₹</span>${enhancedData.salePrice}
-          </span>
-          <span class="price-original">₹${enhancedData.originalPrice}</span>
-          <span class="price-discount-badge">${enhancedData.discountPercent}% OFF</span>
-        </div>
-      </div>
-      
-      <div class="savings-amount">
-        You Save ₹${enhancedData.savings}
-      </div>
-      
-      <div class="product-actions">
-        <a href="#" class="deal-btn" onclick="openProductPage('${product.id}', '${product.title}'); return false;" rel="noopener noreferrer">
-          <div>
-            <div class="deal-btn-text">
-              Get This Deal
-            </div>
-            <div class="deal-btn-subtext">      </div>
-          </div>
-        </a>
-      </div>
-    </div>
-  `;
-  
-  // Card click handler that respects interactive elements
-  card.addEventListener('click', function(e) {
-    // Check if click is on interactive elements
-    const isInteractiveElement = 
-      e.target.closest('.wishlist-btn') ||
-      e.target.closest('.like-compact-btn') ||
-      e.target.closest('.share-compact-btn') ||
-      e.target.closest('.comment-compact-btn') ||
-      e.target.closest('.timer-compact-btn') ||
-      e.target.closest('.deal-btn') ||
-      e.target.closest('.feature-compact-btn');
+    // Initialize wishlist manager
+    wishlistManager = new WishlistManager(supabase);
+    window.wishlistManager = wishlistManager;
     
-    // Only navigate if NOT clicking interactive elements
-    if (!isInteractiveElement) {
-      openProductPage(product.id, product.title);
+    // Check if user is authenticated
+    const isAuth = await wishlistManager.isAuthenticated();
+    
+    if (isAuth) {
+        await wishlistManager.initialize();
     }
-  });
+    
+    initializeApp();
+});
+
+
+
+
+
+
+
+
+
+
+// // Enhanced Product Card Functions
+// function createProductCard(product, index = 0) {
+//   const card = document.createElement('div');
+//   card.className = 'product-card';
+//   card.setAttribute('data-category', product.category);
+//   card.style.opacity = '0';
+//   card.style.transform = 'translateY(20px)';
+//   card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
   
-  return card;
+//   // Make card cursor pointer
+//   card.style.cursor = 'pointer';
+  
+//   const date = new Date(product.posted_date);
+//   const formattedDate = date.toLocaleDateString('en-IN');
+//   const enhancedData = enhanceProductData(product);
+  
+//   // Generate rating stars HTML
+//   const ratingHTML = generateRatingStars(product.rating);
+  
+//   card.innerHTML = `
+//     <div class="product-image-container">
+//       ${product.image ? 
+//         `<img src="${product.image}" alt="${product.title}" class="product-image" loading="lazy" onerror="this.parentElement.innerHTML='<div class=\\'product-placeholder\\'><i class=\\'fas fa-image\\'></i></div>'">` : 
+//         `<div class="product-placeholder"><i class="fas fa-image"></i></div>`
+//       }
+//       <div class="product-badges">
+//         <span class="badge badge-discount">${enhancedData.discountPercent}% OFF</span>
+//         ${enhancedData.isLimitedTime ? '<span class="badge badge-limited">Limited Time</span>' : ''}
+//         ${enhancedData.isLowStock ? '<span class="badge badge-stock-low">Few Left!</span>' : ''}
+//       </div>
+
+      
+//       <div class="product-top-actions">
+//         <button class="action-btn wishlist-btn" onclick="toggleWishlist('${product.id}', this)" title="Add to wishlist">
+//           <i class="far fa-heart"></i>
+//         </button>
+//       </div>
+
+
+
+      
+//     </div>
+    
+    
+//     <div class="product-info">
+//       <div class="product-category">${product.category}</div>
+//       <h3 class="product-title">${product.title}</h3>
+      
+//       ${product.rating ? generateRatingStars(product.rating) : ''}
+      
+//       <div class="product-pricing">
+//         <div class="price-section">
+//           <span class="price-current">
+//             <span class="currency">₹</span>${enhancedData.salePrice}
+//           </span>
+//           <span class="price-original">₹${enhancedData.originalPrice}</span>
+//           <span class="price-discount-badge">${enhancedData.discountPercent}% OFF</span>
+//         </div>
+//       </div>
+      
+//       <div class="savings-amount">
+//         You Save ₹${enhancedData.savings}
+//       </div>
+      
+//       <div class="product-actions">
+//         <a href="#" class="deal-btn" onclick="openProductPage('${product.id}', '${product.title}'); return false;" rel="noopener noreferrer">
+//           <div>
+//             <div class="deal-btn-text">
+//               Get This Deal
+//             </div>
+//             <div class="deal-btn-subtext">      </div>
+//           </div>
+//         </a>
+//       </div>
+//     </div>
+//   `;
+  
+//   // Card click handler that respects interactive elements
+//   card.addEventListener('click', function(e) {
+//     // Check if click is on interactive elements
+//     const isInteractiveElement = 
+//       e.target.closest('.wishlist-btn') ||
+//       e.target.closest('.like-compact-btn') ||
+//       e.target.closest('.share-compact-btn') ||
+//       e.target.closest('.comment-compact-btn') ||
+//       e.target.closest('.timer-compact-btn') ||
+//       e.target.closest('.deal-btn') ||
+//       e.target.closest('.feature-compact-btn');
+    
+//     // Only navigate if NOT clicking interactive elements
+//     if (!isInteractiveElement) {
+//       openProductPage(product.id, product.title);
+//     }
+//   });
+  
+//   return card;
+// }
+
+// // FIXED: Generate rating stars HTML
+// function generateRatingStars(rating) {
+//   // Convert rating to number if it's a string
+//   const numRating = typeof rating === 'string' ? parseFloat(rating) : rating;
+  
+//   // Default rating if not provided or invalid
+//   if (!numRating || numRating === 0 || isNaN(numRating)) {
+//     return ''; // Don't show rating if not available
+//   }
+  
+//   const fullStars = Math.floor(numRating);
+//   const hasHalfStar = numRating % 1 >= 0.5;
+//   const emptyStars = 5 - fullStars - (hasHalfStar ? 1 : 0);
+  
+//   let starsHTML = '<div class="product-rating">';
+//   starsHTML += '<div class="rating-stars">';
+  
+//   // Full stars
+//   for (let i = 0; i < fullStars; i++) {
+//     starsHTML += '<i class="fas fa-star"></i>';
+//   }
+  
+//   // Half star
+//   if (hasHalfStar) {
+//     starsHTML += '<i class="fas fa-star-half-alt"></i>';
+//   }
+  
+//   // Empty stars
+//   for (let i = 0; i < emptyStars; i++) {
+//     starsHTML += '<i class="far fa-star empty"></i>';
+//   }
+  
+//   starsHTML += '</div>';
+//   starsHTML += `<span class="rating-value">${numRating.toFixed(1)}</span>`;
+//   starsHTML += '<span class="rating-max">/5</span>';
+//   starsHTML += '</div>';
+  
+//   return starsHTML;
+// }
+/**
+ * Enhanced Product Card Creation with Wishlist Integration
+ * @param {Object} product - Product data object
+ * @param {Number} index - Product index for animation delay
+ * @returns {HTMLElement} Product card element
+ */
+function createProductCard(product, index = 0) {
+    const card = document.createElement('div');
+    card.className = 'product-card';
+    card.setAttribute('data-category', product.category);
+    card.style.opacity = '0';
+    card.style.transform = 'translateY(20px)';
+    card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+    
+    // Make card cursor pointer
+    card.style.cursor = 'pointer';
+    
+    // Format date
+    const date = new Date(product.posteddate);
+    const formattedDate = date.toLocaleDateString('en-IN');
+    
+    // Enhanced product data
+    const enhancedData = enhanceProductData(product);
+    
+    // Generate rating stars HTML
+    const ratingHTML = generateRatingStars(product.rating);
+    
+    // Check if product is in wishlist
+    const isInWishlist = window.wishlistManager?.isInWishlist(product.id) || false;
+    
+    card.innerHTML = `
+        <!-- Product Image Container -->
+        <div class="product-image-container">
+            ${product.image ? `
+                <img src="${product.image}" 
+                     alt="${product.title}" 
+                     class="product-image" 
+                     loading="lazy" 
+                     onerror="this.parentElement.innerHTML='<div class=\\'product-placeholder\\'><i class=\\'fas fa-image\\'></i></div>'">
+            ` : `
+                <div class="product-placeholder">
+                    <i class="fas fa-image"></i>
+                </div>
+            `}
+            
+            <!-- Product Badges -->
+            <div class="product-badges">
+                <span class="badge badge-discount">${enhancedData.discountPercent}% OFF</span>
+                ${enhancedData.isLimitedTime ? `<span class="badge badge-limited">Limited Time</span>` : ''}
+                ${enhancedData.isLowStock ? `<span class="badge badge-stock-low">Few Left!</span>` : ''}
+            </div>
+            
+            <!-- NEW WISHLIST BUTTON - Updated with Wishlist Integration -->
+            <div class="product-top-actions">
+                <button class="action-btn wishlist-btn ${isInWishlist ? 'active' : ''}" 
+                        data-product-id="${product.id}" 
+                        onclick="handleWishlistClick(event, '${product.id}')" 
+                        title="${isInWishlist ? 'Remove from wishlist' : 'Add to wishlist'}"
+                        aria-label="${isInWishlist ? 'Remove from wishlist' : 'Add to wishlist'}">
+                    <i class="${isInWishlist ? 'fas' : 'far'} fa-heart"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Product Info -->
+        <div class="product-info">
+            <div class="product-category">${product.category}</div>
+            <h3 class="product-title">${product.title}</h3>
+            
+            <!-- Rating -->
+            ${product.rating ? generateRatingStars(product.rating) : ''}
+            
+            <!-- Pricing -->
+            <div class="product-pricing">
+                <div class="price-section">
+                    <span class="price-current">
+                        <span class="currency">₹</span>${enhancedData.salePrice}
+                    </span>
+                    <span class="price-original">₹${enhancedData.originalPrice}</span>
+                    <span class="price-discount-badge">${enhancedData.discountPercent}% OFF</span>
+                </div>
+                <div class="savings-amount">
+                    You Save ₹${enhancedData.savings}
+                </div>
+            </div>
+            
+            <!-- Product Actions -->
+            <div class="product-actions">
+                <a href="#" 
+                   class="deal-btn" 
+                   onclick="openProductPage('${product.id}', '${product.title}'); return false;"
+                   rel="noopener noreferrer">
+                    <div class="deal-btn-text">Get This Deal</div>
+                    <div class="deal-btn-subtext">🔥</div>
+                </a>
+            </div>
+        </div>
+    `;
+    
+    // Card click handler that respects interactive elements
+    card.addEventListener('click', function(e) {
+        // Check if click is on interactive elements
+        const isInteractiveElement = 
+            e.target.closest('.wishlist-btn') ||
+            e.target.closest('.like-compact-btn') ||
+            e.target.closest('.share-compact-btn') ||
+            e.target.closest('.comment-compact-btn') ||
+            e.target.closest('.timer-compact-btn') ||
+            e.target.closest('.deal-btn') ||
+            e.target.closest('.feature-compact-btn');
+        
+        // Only navigate if NOT clicking interactive elements
+        if (!isInteractiveElement) {
+            openProductPage(product.id, product.title);
+        }
+    });
+    
+    return card;
 }
 
-// FIXED: Generate rating stars HTML
-function generateRatingStars(rating) {
-  // Convert rating to number if it's a string
-  const numRating = typeof rating === 'string' ? parseFloat(rating) : rating;
-  
-  // Default rating if not provided or invalid
-  if (!numRating || numRating === 0 || isNaN(numRating)) {
-    return ''; // Don't show rating if not available
-  }
-  
-  const fullStars = Math.floor(numRating);
-  const hasHalfStar = numRating % 1 >= 0.5;
-  const emptyStars = 5 - fullStars - (hasHalfStar ? 1 : 0);
-  
-  let starsHTML = '<div class="product-rating">';
-  starsHTML += '<div class="rating-stars">';
-  
-  // Full stars
-  for (let i = 0; i < fullStars; i++) {
-    starsHTML += '<i class="fas fa-star"></i>';
-  }
-  
-  // Half star
-  if (hasHalfStar) {
-    starsHTML += '<i class="fas fa-star-half-alt"></i>';
-  }
-  
-  // Empty stars
-  for (let i = 0; i < emptyStars; i++) {
-    starsHTML += '<i class="far fa-star empty"></i>';
-  }
-  
-  starsHTML += '</div>';
-  starsHTML += `<span class="rating-value">${numRating.toFixed(1)}</span>`;
-  starsHTML += '<span class="rating-max">/5</span>';
-  starsHTML += '</div>';
-  
-  return starsHTML;
+/**
+ * Handle wishlist button clicks
+ * @param {Event} event - Click event
+ * @param {string} productId - Product ID
+ */
+async function handleWishlistClick(event, productId) {
+    event.stopPropagation();
+    event.preventDefault();
+    
+    console.log('Wishlist clicked for product:', productId);
+    
+    if (!window.wishlistManager) {
+        console.error('❌ Wishlist manager not initialized');
+        showQuickToast('Wishlist system not ready', 'error');
+        return;
+    }
+    
+    // Find product from allProducts array
+    const product = allProducts.find(p => p.id === productId);
+    if (!product) {
+        console.error('❌ Product not found:', productId);
+        showQuickToast('Product not found', 'error');
+        return;
+    }
+    
+    // Add button animation
+    const button = event.currentTarget;
+    button.style.transition = 'transform 0.2s ease';
+    button.style.transform = 'scale(1.3)';
+    
+    setTimeout(() => {
+        button.style.transform = 'scale(1)';
+    }, 200);
+    
+    // Toggle wishlist
+    await window.wishlistManager.toggleWishlist(product);
 }
+
+/**
+ * Update wishlist UI for all product cards
+ * Call this after rendering products
+ */
+function updateWishlistUI() {
+    if (!window.wishlistManager) return;
+    
+    console.log('Updating wishlist UI...');
+    
+    document.querySelectorAll('.wishlist-btn').forEach(btn => {
+        const productId = btn.dataset.productId;
+        const isInWishlist = window.wishlistManager.isInWishlist(productId);
+        
+        if (isInWishlist) {
+            btn.classList.add('active');
+            btn.title = 'Remove from wishlist';
+            btn.setAttribute('aria-label', 'Remove from wishlist');
+            const icon = btn.querySelector('i');
+            if (icon) {
+                icon.classList.remove('far');
+                icon.classList.add('fas');
+            }
+        } else {
+            btn.classList.remove('active');
+            btn.title = 'Add to wishlist';
+            btn.setAttribute('aria-label', 'Add to wishlist');
+            const icon = btn.querySelector('i');
+            if (icon) {
+                icon.classList.remove('fas');
+                icon.classList.add('far');
+            }
+        }
+    });
+}
+
+/**
+ * Quick toast notification (fallback if WishlistManager toast not available)
+ */
+function showQuickToast(message, type = 'info') {
+    const toast = document.createElement('div');
+    toast.className = 'quick-toast';
+    toast.style.cssText = `
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background: ${type === 'success' ? '#10B981' : type === 'error' ? '#EF4444' : '#3B82F6'};
+        color: white;
+        padding: 12px 20px;
+        border-radius: 8px;
+        font-size: 14px;
+        font-weight: 500;
+        z-index: 10000;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        animation: slideInRight 0.3s ease;
+    `;
+    toast.textContent = message;
+    document.body.appendChild(toast);
+    
+    setTimeout(() => {
+        toast.style.animation = 'slideOutRight 0.3s ease';
+        setTimeout(() => toast.remove(), 300);
+    }, 2500);
+}
+
+// Export for use in other files
+window.updateWishlistUI = updateWishlistUI;
+window.handleWishlistClick = handleWishlistClick;
 
 
 
