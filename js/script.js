@@ -186,6 +186,10 @@ function createProductCard(product, index = 0) {
   const enhancedData = enhanceProductData(product);
   
   // Generate rating stars HTML
+
+// this is the category js full code of line no.224 (  <div class="product-category">${product.category}</div> )
+
+    
   const ratingHTML = generateRatingStars(product.rating);
   
   card.innerHTML = `
@@ -214,7 +218,12 @@ function createProductCard(product, index = 0) {
     
     
     <div class="product-info">
-      <div class="product-category">${product.category}</div>
+
+    
+       <div class="product-category">By Amazon</div>
+
+
+      
       <h3 class="product-title">${product.title}</h3>
       
       ${product.rating ? generateRatingStars(product.rating) : ''}
