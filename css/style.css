@@ -2399,7 +2399,7 @@ p {
 /* Header View All Button */
 .header-view-all-btn {
  /* background: linear-gradient(135deg, var(--primary-color), var(--primary-hover)) !important;*/
-  color: black !important;
+  color: orange !important;
   border: none !important;
  /* padding: 0.7rem 1.5rem !important; /* Reduced */
   border-radius: var(--radius-xl) !important;
