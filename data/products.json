@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-10-20T21:20:08.728949+05:30",
-  "total_products": 186,
+  "last_updated": "2025-10-21T10:18:11.546325+05:30",
+  "total_products": 188,
   "products": [
+    {
+      "id": "product_morning_20251021_044811",
+      "title": "HP M290 Wireless Mouse (AB3C7AA)",
+      "image": "https://m.media-amazon.com/images/I/51kck5NJKeL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DXNY14GL?tag=gadgetvill09f-21",
+      "price": "\u20b9359",
+      "rating": 3.6,
+      "category": "electronics",
+      "asin": "B0DXNY14GL",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-21T10:18:11.546293+05:30",
+      "session_type": "morning",
+      "link_index": 140
+    },
+    {
+      "id": "product_morning_20251021_044809",
+      "title": "Dyazo Water Resistant Laptop Sleeve/Laptop case/laptop cover with Handle Compatible for 15 Inch to 15.6\" Inches laptops ",
+      "image": "https://m.media-amazon.com/images/I/81s4wKEliIL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B09BFV96TS?tag=gadgetvill09f-21",
+      "price": "\u20b9279",
+      "rating": 4.3,
+      "category": "electronics",
+      "asin": "B09BFV96TS",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-21T10:18:09.142515+05:30",
+      "session_type": "morning",
+      "link_index": 140
+    },
     {
       "id": "product_night_20251020_155008",
       "title": "Portronics Toad One Bluetooth Mouse with 2.4 GHz & BT 5.3 Dual Wireless, 6 Buttons, Rechargeable, RGB Lights, Connect 3 ",
