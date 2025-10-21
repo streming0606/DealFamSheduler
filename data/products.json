@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-10-21T13:19:34.241854+05:30",
-  "total_products": 190,
+  "last_updated": "2025-10-21T18:51:02.173139+05:30",
+  "total_products": 192,
   "products": [
+    {
+      "id": "product_morning_20251021_132102",
+      "title": "Logitech M221 Wireless Mouse, Silent Buttons, 2.4 GHz with USB Mini Receiver, 1000 DPI Optical Tracking, 18-Month Batter",
+      "image": "https://m.media-amazon.com/images/I/51IuaaMgjdL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B01M72LILF?tag=gadgetvill09f-21",
+      "price": "\u20b9645",
+      "rating": 4.2,
+      "category": "electronics",
+      "asin": "B01M72LILF",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-21T18:51:02.173112+05:30",
+      "session_type": "morning",
+      "link_index": 144
+    },
+    {
+      "id": "product_morning_20251021_132059",
+      "title": "HAMMER 100W 5A USB to Type-C for OnePlus with WARP/VOOC/FLASH support, Super Fast Charging Cable,1.2M Nylon Braided,Tang",
+      "image": "https://m.media-amazon.com/images/I/71L4r2qAVTL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DXV31MLB?tag=gadgetvill09f-21",
+      "price": "\u20b9179",
+      "rating": 4.2,
+      "category": "electronics",
+      "asin": "B0DXV31MLB",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-21T18:50:59.293400+05:30",
+      "session_type": "morning",
+      "link_index": 144
+    },
     {
       "id": "product_afternoon_20251021_074934",
       "title": "Amazon Product B0CXDN7V9N",
