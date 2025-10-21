@@ -28,7 +28,7 @@
     <link rel="canonical" href="https://thriftmaal.com/community">
     
     <!-- Favicon -->
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/logo/favicon1.png" sizes="32x32" href="/favicon-32x32.png">
     
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -69,7 +69,7 @@
                 <a href="/">Home</a>
                 <a href="/coupons">Coupons</a>
                 <a href="/community" class="active">Community</a>
-                <a href="/end-soon">End Soon</a>
+                <a href="../#loot-deals">End Soon</a>
                 <a href="/deal-finder">Deal Finder</a>
             </nav>
             
@@ -103,10 +103,34 @@
         </div>
     </section>
 
-    <!-- Main Community Section -->
+    <!-- Main Community Section 
     <main class="community-main">
         <div class="container">
-            <div class="community-layout">
+            <div class="community-layout">-->
+
+
+    <!-- Search and Filter Bar -->
+                    <div class="content-header">
+                        <div class="search-bar">
+                            <input type="text" id="search-input" placeholder="Search posts..." aria-label="Search posts">
+                            <button id="search-btn" aria-label="Search">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                        
+                        <div class="filter-controls">
+                            <select id="sort-select" aria-label="Sort posts">
+                                <option value="latest">Latest</option>
+                                <option value="popular">Most Popular</option>
+                                <option value="trending">Trending</option>
+                                <option value="most-commented">Most Discussed</option>
+                            </select>
+                            
+                            <button class="view-toggle" id="view-toggle" aria-label="Toggle view">
+                                <i class="fas fa-th-large"></i>
+                            </button>
+                        </div>
+                    </div>
                 
                 <!-- Sidebar -->
                 <aside class="community-sidebar">
@@ -170,10 +194,18 @@
                     </div>
                 </aside>
 
+
+<!-- Main Community Section -->
+    <main class="community-main">
+        <div class="container">
+            <div class="community-layout">
+
+                
+
                 <!-- Main Content Area -->
                 <div class="community-content">
                     
-                    <!-- Search and Filter Bar -->
+                    <!-- Search and Filter Bar 
                     <div class="content-header">
                         <div class="search-bar">
                             <input type="text" id="search-input" placeholder="Search posts..." aria-label="Search posts">
@@ -194,7 +226,7 @@
                                 <i class="fas fa-th-large"></i>
                             </button>
                         </div>
-                    </div>
+                    </div>-->
 
                     <!-- Posts Grid -->
                     <div class="posts-grid" id="posts-container">
