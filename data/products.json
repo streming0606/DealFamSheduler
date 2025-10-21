@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-10-21T18:51:02.173139+05:30",
-  "total_products": 192,
+  "last_updated": "2025-10-21T21:21:15.443567+05:30",
+  "total_products": 194,
   "products": [
+    {
+      "id": "product_night_20251021_155115",
+      "title": "Portronics Glide Stylus Pencil for iPads Only, Angle Tilt Sensitivity, Palm Rejection, Attaches Magnetically, Battery LE",
+      "image": "https://m.media-amazon.com/images/I/51qtxqNKPML._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DF38F64P?tag=gadgetvill09f-21",
+      "price": "\u20b9699",
+      "rating": 3.9,
+      "category": "electronics",
+      "asin": "B0DF38F64P",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-21T21:21:15.443536+05:30",
+      "session_type": "night",
+      "link_index": 146
+    },
+    {
+      "id": "product_night_20251021_155113",
+      "title": "Geonix Pendrive I Silver I USB 2.0 I Keyring Design I Lightweight I Variant 8GB I 5 Years Warranty",
+      "image": "https://m.media-amazon.com/images/I/51XWind5tIL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CPYFKS41?tag=gadgetvill09f-21",
+      "price": "\u20b9189",
+      "rating": 4.1,
+      "category": "electronics",
+      "asin": "B0CPYFKS41",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-21T21:21:13.930535+05:30",
+      "session_type": "night",
+      "link_index": 146
+    },
     {
       "id": "product_morning_20251021_132102",
       "title": "Logitech M221 Wireless Mouse, Silent Buttons, 2.4 GHz with USB Mini Receiver, 1000 DPI Optical Tracking, 18-Month Batter",
