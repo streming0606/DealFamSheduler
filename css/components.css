@@ -127,10 +127,10 @@
 }
 
 .product-category {
-    background: #2874F0;
-    color: white;
-    font-size: 0.65rem;
-    font-weight: 600;
+    background: #ffffff;
+    color: orange;
+    font-size: 0.7rem;
+    font-weight: 900;
     padding: 3px 8px;
     border-radius: 4px;
     display: inline-block;
