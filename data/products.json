@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-10-22T13:19:47.985776+05:30",
-  "total_products": 198,
+  "last_updated": "2025-10-22T18:50:03.571411+05:30",
+  "total_products": 200,
   "products": [
+    {
+      "id": "product_morning_20251022_132003",
+      "title": "Noise Pulse 2 Max 1.85\" Display, Bluetooth Calling Smart Watch, 10 Days Battery, 550 NITS Brightness, Smart DND, 100 Spo",
+      "image": "https://m.media-amazon.com/images/I/61bm7UEdGAL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0B6BLTGTT?tag=gadgetvill09f-21",
+      "price": "\u20b9999",
+      "rating": 4.0,
+      "category": "fashion",
+      "asin": "B0B6BLTGTT",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-22T18:50:03.571381+05:30",
+      "session_type": "morning",
+      "link_index": 152
+    },
+    {
+      "id": "product_morning_20251022_132001",
+      "title": "Maono AU-400 Lavalier Microphone (Black)",
+      "image": "https://m.media-amazon.com/images/I/61qQrv9iAfL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07JF9B592?tag=gadgetvill09f-21",
+      "price": "\u20b9397",
+      "rating": 3.8,
+      "category": "electronics",
+      "asin": "B07JF9B592",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-22T18:50:01.660074+05:30",
+      "session_type": "morning",
+      "link_index": 152
+    },
     {
       "id": "product_afternoon_20251022_074947",
       "title": "HAMMER 27W Type-C to Lightning 8 Pin Nylon Braided Cable, 27W Fast Charging, 480Mbps High Speed Data Transfer & Durable ",
