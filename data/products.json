@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-10-22T18:50:03.571411+05:30",
-  "total_products": 200,
+  "last_updated": "2025-10-22T21:20:04.098343+05:30",
+  "total_products": 202,
   "products": [
+    {
+      "id": "product_night_20251022_155004",
+      "title": "Portronics Adapto 66 2.4A 12w Dual USB Port 5V/2.4A Wall Charger,Comes with 1M Micro USB Cable, USB Wall Charger Adapter",
+      "image": "https://m.media-amazon.com/images/I/41UhCI6+p7L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B09HN3BMD8?tag=gadgetvill09f-21",
+      "price": "\u20b9264",
+      "rating": 4.0,
+      "category": "electronics",
+      "asin": "B09HN3BMD8",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-22T21:20:04.098317+05:30",
+      "session_type": "night",
+      "link_index": 154
+    },
+    {
+      "id": "product_night_20251022_155002",
+      "title": "Portronics Ruffpad 12E Re-Writable LCD Writing Pad with 30.4cm (12 inch) Writing Area, India's First Notepad to Save and",
+      "image": "https://m.media-amazon.com/images/I/614cir2QNOL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B09VC2D2WG?tag=gadgetvill09f-21",
+      "price": "\u20b9249",
+      "rating": 3.9,
+      "category": "home",
+      "asin": "B09VC2D2WG",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-22T21:20:02.463877+05:30",
+      "session_type": "night",
+      "link_index": 154
+    },
     {
       "id": "product_morning_20251022_132003",
       "title": "Noise Pulse 2 Max 1.85\" Display, Bluetooth Calling Smart Watch, 10 Days Battery, 550 NITS Brightness, Smart DND, 100 Spo",
