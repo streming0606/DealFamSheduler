@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-10-21T21:21:15.443567+05:30",
-  "total_products": 194,
+  "last_updated": "2025-10-22T10:19:44.273104+05:30",
+  "total_products": 196,
   "products": [
+    {
+      "id": "product_morning_20251022_044944",
+      "title": "Fevicryl Acrylic Colours Sunflower Kit | 10 Colours x 15 ml | DIY Paint, Rich Pigment | Multicolour & Multi-surface | No",
+      "image": "https://m.media-amazon.com/images/I/51ZZ9aMQfoL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B00LXTFMRS?tag=gadgetvill09f-21",
+      "price": "\u20b9189",
+      "rating": 4.4,
+      "category": "electronics",
+      "asin": "B00LXTFMRS",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-22T10:19:44.273070+05:30",
+      "session_type": "morning",
+      "link_index": 148
+    },
+    {
+      "id": "product_morning_20251022_044942",
+      "title": "Scotch 6-inches Stainless Steel Multi-Purpose Scissor (Red)",
+      "image": "https://m.media-amazon.com/images/I/61HaSwsqltL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B078KLYH4T?tag=gadgetvill09f-21",
+      "price": "\u20b9141",
+      "rating": 4.4,
+      "category": "electronics",
+      "asin": "B078KLYH4T",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-22T10:19:42.559859+05:30",
+      "session_type": "morning",
+      "link_index": 148
+    },
     {
       "id": "product_night_20251021_155115",
       "title": "Portronics Glide Stylus Pencil for iPads Only, Angle Tilt Sensitivity, Palm Rejection, Attaches Magnetically, Battery LE",
