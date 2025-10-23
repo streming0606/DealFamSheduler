@@ -2399,12 +2399,12 @@ p {
 /* Header View All Button */
 .header-view-all-btn {
  /* background: linear-gradient(135deg, var(--primary-color), var(--primary-hover)) !important;*/
-  color: orange !important;
+  color: black !important;
   border: none !important;
  /* padding: 0.7rem 1.5rem !important; /* Reduced */
   border-radius: var(--radius-xl) !important;
-  font-size: 0.85rem !important; /* Smaller */
-  font-weight: 600 !important;
+  font-size: 1rem !important; /* Smaller */
+  font-weight: 900 !important;
   cursor: pointer !important;
   transition: var(--transition) !important;
   display: inline-flex !important;
@@ -2421,7 +2421,7 @@ p {
   /*background: linear-gradient(135deg, var(--primary-hover), #1a4d8c) !important;*/
   transform: translateY(-2px) !important;
   box-shadow: var(--shadow-lg) !important;
-  color: white !important;
+  color: orange !important;
   text-decoration: none !important;
 }
 
