@@ -79,7 +79,9 @@
         </button>
 
         <div class="logo">
-            <img src="images/logo/logo.png" alt="Thrift Zone - Best Deals in India" class="logo-icon">
+            <a href="/" aria-label="ThriftMaal Home">
+            <img src="images/logo/logo.png" alt="Thrift Maal - Best Deals in India" class="logo-icon">
+            </a>
         </div>
 
         <!-- 
@@ -99,6 +101,8 @@
         
 
         <nav class="nav" aria-label="Main navigation">
+             <a href="/" class="nav-link">Home</a>
+
             <a href="/coupons" class="nav-link coupon-cta">Coupons</a>
             <a href="/community" class="mobile-nav-link highlight">Community</a>
             <a href="../#deals" class="mobile-nav-link">End Soon</a>
@@ -113,17 +117,35 @@
             <div class="mobile-nav-content">
                 <div class="mobile-auth" id="mobile-auth"></div>
                 <div class="mobile-auth-buttons" id="mobile-auth-buttons"></div>
-                <a href="index.html" class="mobile-nav-link">Home</a>
+                <a href="/" class="mobile-nav-link">Home</a>
                 <a href="deal-finder.html" class="mobile-nav-link highlight active">Deal Finder</a>
-                <a href="coupons.html" class="mobile-nav-link highlight">Coupons</a>
-                <a href="community.html" class="mobile-nav-link highlight">Discussion</a>
-                <a href="../#deals" class="mobile-nav-link">End Soon</a>
+                <a href="coupons" class="mobile-nav-link highlight">Coupons</a>
+                <a href="community" class="mobile-nav-link highlight">Discussion</a>
+                <a href="./#loot-deals" class="mobile-nav-link">End Soon</a>
                 <a href="blog/" class="mobile-nav-link highlight">Blog</a>
                 <div class="mobile-nav-divider"></div>
             </div>
         </div>
     </div>
 </header>
+
+
+
+
+<!-- Breadcrumb Navigation -->
+<section class="breadcrumb-section">
+    <div class="container">
+        <nav class="breadcrumb">
+            <a href="/"><i class="fas fa-home"></i> Home</a>
+            <span class="separator">/</span>
+            <span id="deal-finder-breadcrumb">deal-finder</span>
+        </nav>
+    </div>
+</section>
+
+
+
+    
 
 <!-- Main Content -->
 <main class="deal-finder-main">
@@ -252,9 +274,9 @@
         <div class="footer-content">
             <div class="footer-section">
                 <div class="footer-logo">
-                    <img src="images/logo/logo.png" alt="Thrift Zone Logo">
+                    <img src="images/logo/logo.png" alt="Thrift Maal Logo">
                 </div>
-                <p>Your smart shopping companion.</p>
+                
             </div>
 
             <div class="footer-section">
