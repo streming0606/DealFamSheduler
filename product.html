@@ -12,7 +12,7 @@
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title id="product-title">Exclusive Deal - Thrift Zone</title>
+    <title id="product-title">Exclusive Deal - Thrift Maal</title>
 
     <!-- CSS Files -->
     <link rel="stylesheet" href="css/style.css" />
@@ -56,7 +56,9 @@
         </button>
 
         <div class="logo">
+            <a href="/" aria-label="ThriftMaal Home">
             <img src="images/logo/logo.png" alt="Thrift Zone" class="logo-icon">
+            </a>
         </div>
 
       <!--  <div class="search-container">
@@ -70,11 +72,12 @@
         </div>-->
 
         <nav class="nav">
-            <a href="/coupons" class="nav-link coupon-cta">Coupons</a>
-            <a href="/community" class="nav-link highlight">Community</a>
-            <a href="../#deals" class="nav-link">End Soon</a>
-            <a href="/deal-finder" class="nav-link deal-finder-link">
-                <i class="fas fa-search-dollar"></i> Deal Finder
+             <a href="/" class="nav-link">Home</a>
+            <a href="coupons" class="nav-link coupon-cta">Coupons</a>
+            <a href="community" class="nav-link highlight">Community</a>
+            <a href="./#loot-deals" class="nav-link">End Soon</a>
+            <a href="deal-finder" class="nav-link deal-finder-link">
+                 Deal Finder
             </a>
         </nav>
     </div>
@@ -89,19 +92,19 @@
             <div class="mobile-auth" id="mobile-auth"></div>
             <div class="mobile-auth-buttons" id="mobile-auth-buttons"></div>
             
-            <a href="index.html" class="mobile-nav-link">
+            <a href="index" class="mobile-nav-link">
                 <i class="fas fa-home"></i> Home
             </a>
-            <a href="deal-finder.html" class="mobile-nav-link highlight">
+            <a href="deal-finder" class="mobile-nav-link highlight">
                 <i class="fas fa-search-dollar"></i> Deal Finder
             </a>
-            <a href="coupons.html" class="mobile-nav-link highlight">
+            <a href="coupons" class="mobile-nav-link highlight">
                 <i class="fas fa-tags"></i> Coupons
             </a>
-            <a href="community.html" class="mobile-nav-link highlight">
+            <a href="community" class="mobile-nav-link highlight">
                 <i class="fas fa-users"></i> Discussion
             </a>
-            <a href="../#deals" class="mobile-nav-link">
+            <a href="./#loot-deals" class="mobile-nav-link">
                 <i class="fas fa-fire"></i> End Soon
             </a>
             <a href="blog/" class="mobile-nav-link highlight">
@@ -111,6 +114,20 @@
         </div>
     </div>
 </header>
+
+<!-- Breadcrumb Navigation -->
+<section class="breadcrumb-section">
+    <div class="container">
+        <nav class="breadcrumb">
+            <a href="/"><i class="fas fa-home"></i> Home</a>
+            <span class="separator">/</span>
+            <span id="product-page-breadcrumb">product-Page</span>
+        </nav>
+    </div>
+</section>
+
+
+    
 
 <!-- Main Product Content -->
 <main class="product-main">
