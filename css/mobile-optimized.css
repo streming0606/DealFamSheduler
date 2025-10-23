@@ -1,4 +1,3 @@
-
 /* ULTRA-COMPACT MOBILE CSS FOR INDIAN USERS */
 /* Primary focus on maximum space efficiency and touch-friendly design */
 
@@ -248,9 +247,9 @@
 
   /* Header view all button compact */
   .header-view-all-btn {
-    padding: 6px 12px !important;
-    font-size: 0.75rem !important;
-    height: 32px !important;
+    padding: 1px 1px !important;
+    font-size: 0.9rem !important;
+    height: 50px !important;
   }
 
   /* Horizontal scroll optimization */
@@ -669,5 +668,175 @@
 
   li {
     margin-bottom: 2px !important;
+  }
+}
+
+/* ==============================================
+   FLASH DEALS - 2 COLUMN GRID FOR MOBILE
+   ============================================== */
+
+/* Only apply to DEALS section, not LOOT DEALS */
+@media (max-width: 768px) {
+  
+  /* Convert horizontal scroll to vertical grid */
+  .deals .horizontal-products-scroll {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 10px !important;
+    overflow-x: visible !important;
+    overflow-y: visible !important;
+    padding: 10px 8px !important;
+    margin: 0 !important;
+    min-height: auto !important;
+    scroll-snap-type: none !important;
+  }
+
+  /* Product cards in grid layout */
+  .deals .horizontal-products-scroll .product-card {
+    flex: none !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-height: 300px !important;
+    margin-bottom: 0 !important;
+    scroll-snap-align: none !important;
+    scroll-margin-left: 0 !important;
+  }
+
+  /* Limit to 2 rows (4 products) initially */
+  .deals .horizontal-products-scroll .product-card:nth-child(n+5) {
+    display: none;
+  }
+
+  /* Show all products when "view-all" is active */
+  .deals .horizontal-products-scroll.show-all .product-card {
+    display: flex !important;
+  }
+
+  /* Product image height adjustment */
+  .deals .product-card .product-image {
+    height: 110px !important;
+    min-height: 110px !important;
+  }
+
+  /* Product info padding */
+  .deals .product-card .product-info {
+    padding: 8px !important;
+  }
+
+  /* Product title */
+  .deals .product-card .product-title {
+    font-size: 0.75rem !important;
+    line-height: 1.2 !important;
+    margin-bottom: 6px !important;
+    -webkit-line-clamp: 2 !important;
+  }
+
+  /* Product price */
+  .deals .product-card .product-price {
+    font-size: 0.95rem !important;
+    margin-bottom: 6px !important;
+  }
+
+  /* Product rating */
+  .deals .product-card .product-rating {
+    font-size: 0.7rem !important;
+    margin-bottom: 6px !important;
+  }
+
+  /* Action buttons */
+  .deals .product-card .deal-btn,
+  .deals .product-card .wishlist-btn {
+    padding: 6px 10px !important;
+    font-size: 0.7rem !important;
+    height: 28px !important;
+  }
+
+  /* Remove horizontal scroll gradient fade */
+  .deals .horizontal-deals-container::after {
+    display: none !important;
+  }
+
+  /* Hide scroll navigation buttons */
+  .deals .horizontal-scroll-wrapper .scroll-btn,
+  .deals #scroll-left,
+  .deals #scroll-right {
+    display: none !important;
+  }
+
+  /* Container adjustments */
+  .deals .horizontal-deals-container {
+    margin-bottom: 15px !important;
+    position: relative;
+  }
+
+  .deals .horizontal-scroll-wrapper {
+    gap: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* View All button positioning */
+  .deals .section-header {
+    margin-bottom: 12px !important;
+  }
+
+  /* Ensure proper spacing */
+  .deals {
+    padding: 12px 0 !important;
+  }
+}
+
+/* Extra small mobile devices */
+@media (max-width: 480px) {
+  
+  .deals .horizontal-products-scroll {
+    gap: 8px !important;
+    padding: 8px 6px !important;
+  }
+
+  .deals .horizontal-products-scroll .product-card {
+    min-height: 280px !important;
+  }
+
+  .deals .product-card .product-image {
+    height: 100px !important;
+    min-height: 100px !important;
+  }
+
+  .deals .product-card .product-info {
+    padding: 6px !important;
+  }
+
+  .deals .product-card .product-title {
+    font-size: 0.7rem !important;
+  }
+
+  .deals .product-card .product-price {
+    font-size: 0.9rem !important;
+  }
+
+  .deals .product-card .deal-btn,
+  .deals .product-card .wishlist-btn {
+    padding: 5px 8px !important;
+    font-size: 0.65rem !important;
+    height: 26px !important;
+  }
+}
+
+/* Very small devices */
+@media (max-width: 360px) {
+  
+  .deals .horizontal-products-scroll {
+    gap: 6px !important;
+    padding: 6px 4px !important;
+  }
+
+  .deals .horizontal-products-scroll .product-card {
+    min-height: 260px !important;
+  }
+
+  .deals .product-card .product-image {
+    height: 90px !important;
+    min-height: 90px !important;
   }
 }
