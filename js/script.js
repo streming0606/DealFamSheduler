@@ -332,7 +332,7 @@ function openProductPage(productId, productTitle) {
         .replace(/\s+/g, '-')
         .substring(0, 50);
     
-    const productUrl = `product?id=${productId}&title=${titleSlug}`;
+    const productUrl = `product &title=${titleSlug}`;
     window.location.href = productUrl;
 }
 
