@@ -3716,7 +3716,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         if (query) {
             // Redirect to search page with query
-            window.location.href = `search.html?q=${encodeURIComponent(query)}`;
+            window.location.href = `search?q=${encodeURIComponent(query)}`;
         }
     }
 });
