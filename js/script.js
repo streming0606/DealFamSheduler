@@ -976,7 +976,7 @@ class HorizontalDealsScroller {
         this.dealsCountSpan = document.querySelector('.deals-count');
         this.totalDealsPreview = document.getElementById('total-deals-preview');
         
-        this.maxVerticalItems = 15; // Changed from 20 to 6 for vertical display
+        this.maxVerticalItems = 10; // Changed from 20 to 6 for vertical display
         this.isInitialized = false;
     }
     
