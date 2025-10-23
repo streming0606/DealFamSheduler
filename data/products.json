@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-10-23T18:48:54.328923+05:30",
-  "total_products": 208,
+  "last_updated": "2025-10-23T21:23:29.405459+05:30",
+  "total_products": 210,
   "products": [
+    {
+      "id": "product_night_20251023_155329",
+      "title": "Classmate Pulse Single Subject Spiral Notebook-Pack Of 1|Single Line|200 Pages|24.0Cm X 18.0Cm|Attractive Cover Designs|",
+      "image": "https://m.media-amazon.com/images/I/61uJauT5THL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B01N5P1W5G?tag=gadgetvill09f-21",
+      "price": "\u20b980",
+      "rating": 4.2,
+      "category": "electronics",
+      "asin": "B01N5P1W5G",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-23T21:23:29.405434+05:30",
+      "session_type": "night",
+      "link_index": 162
+    },
+    {
+      "id": "product_night_20251023_155327",
+      "title": "Sounce Shutter Remote Control with Bluetooth Wireless Technology - Create Amazing Photos and Videos Hands-Free - Works w",
+      "image": "https://m.media-amazon.com/images/I/51x9HSFrFrL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0922XL7SH?tag=gadgetvill09f-21",
+      "price": "\u20b9152",
+      "rating": 4.2,
+      "category": "electronics",
+      "asin": "B0922XL7SH",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-23T21:23:27.602249+05:30",
+      "session_type": "night",
+      "link_index": 162
+    },
     {
       "id": "product_morning_20251023_131854",
       "title": "Radhe Flutes | PVC Fiber | C Natural | Right Handed | With Velvet Cover | Black & Orange Threads + Complete Flute Beginn",
