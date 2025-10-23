@@ -87,14 +87,14 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Search Results - Thrift Zone</title>
+    <title>Search Results - Thrift Maal</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/components.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/theme.css">
     <link rel="stylesheet" href="css/search.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <meta name="description" content="Search results for deals and offers on Thrift Zone - Smart Shopping Hub">
+    <meta name="description" content="Search results for deals and offers on Thrift Maal - Smart Shopping Hub">
 
 
 
@@ -126,7 +126,9 @@
 
         <!-- Logo Section -->
         <div class="logo">
-          <img src="images/logo/logo.png" alt="Thrift Zone" class="logo-icon">
+            <a href="/" aria-label="ThriftMaal Home">
+          <img src="images/logo/logo.png" alt="Thrift Maal" class="logo-icon">
+            </a>
            <!-- <div class="logo-text">
                 <h1>Thrift Maal</h1>
                 <span class="tagline">Save Every Time</span>
@@ -176,14 +178,16 @@
       
         <!-- Navigation -->
         <nav class="nav">
-            <a href="/coupons" class="nav-link coupon-cta">Coupons</a>
-            <!--<a href="#categories" class="nav-link">Categories</a>-->
-            <a href="/community" class="mobile-nav-link highlight">community</a>
-           <!-- <a href="#deals" class="nav-link"> Deals Alert</a>-->
-            <a href="../#deals" class="mobile-nav-link">End Soon</a>
+             <a href="/" class="nav-link">Home</a>
 
-          <a href="/deal-finder" class="nav-link deal-finder-link">
-        <i class="fas fa-search-dollar"></i>
+            <a href="coupons" class="nav-link coupon-cta">Coupons</a>
+            <!--<a href="#categories" class="nav-link">Categories</a>-->
+            <a href="community" class="mobile-nav-link highlight">community</a>
+           <!-- <a href="#deals" class="nav-link"> Deals Alert</a>-->
+            <a href="./#loot-deals" class="mobile-nav-link">End Soon</a>
+
+          <a href="deal-finder" class="nav-link deal-finder-link">
+        
         Deal Finder
         
     </a>
@@ -215,19 +219,19 @@
 
 <!-- Navigation Links -->
 
-            <a href="index.html" class="mobile-nav-link">
+            <a href="index" class="mobile-nav-link">
                 <i class="fas fa-home"></i> Home
             </a>
-            <a href="deal-finder.html" class="mobile-nav-link highlight active">
+            <a href="deal-finder" class="mobile-nav-link highlight active">
                 <i class="fas fa-search-dollar"></i> Deal Finder
             </a>
-            <a href="coupons.html" class="mobile-nav-link highlight">
+            <a href="coupons" class="mobile-nav-link highlight">
                 <i class="fas fa-tags"></i> Coupons
             </a>
-            <a href="community.html" class="mobile-nav-link highlight">
+            <a href="community" class="mobile-nav-link highlight">
                 <i class="fas fa-users"></i> Discussion
             </a>
-            <a href="../#deals" class="mobile-nav-link">
+            <a href="./#loot-deals" class="mobile-nav-link">
                 <i class="fas fa-fire"></i> End Soon
             </a>
             <a href="blog/" class="mobile-nav-link highlight">
@@ -243,6 +247,16 @@
 
 
 
+<!-- Breadcrumb Navigation -->
+<section class="breadcrumb-section">
+    <div class="container">
+        <nav class="breadcrumb">
+            <a href="/"><i class="fas fa-home"></i> Home</a>
+            <span class="separator">/</span>
+            <span id="search-breadcrumb">search-page</span>
+        </nav>
+    </div>
+</section>
 
 
 
