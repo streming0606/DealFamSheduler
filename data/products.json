@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-10-23T13:20:11.870420+05:30",
-  "total_products": 206,
+  "last_updated": "2025-10-23T18:48:54.328923+05:30",
+  "total_products": 208,
   "products": [
+    {
+      "id": "product_morning_20251023_131854",
+      "title": "Radhe Flutes | PVC Fiber | C Natural | Right Handed | With Velvet Cover | Black & Orange Threads + Complete Flute Beginn",
+      "image": "https://m.media-amazon.com/images/I/61gkHwcc5HL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07T35ZBHB?tag=gadgetvill09f-21",
+      "price": "\u20b9398",
+      "rating": 4.2,
+      "category": "electronics",
+      "asin": "B07T35ZBHB",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-23T18:48:54.328897+05:30",
+      "session_type": "morning",
+      "link_index": 160
+    },
+    {
+      "id": "product_morning_20251023_131846",
+      "title": "Amazon Basics Long-Lasting CR2032 Lithium Coin Batteries | 3V Voltage | Versatile Applications (Pack of 5)",
+      "image": "https://m.media-amazon.com/images/I/61N6WQ0DeeL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CYLDQ1D3?tag=gadgetvill09f-21",
+      "price": "\u20b9149",
+      "rating": 4.3,
+      "category": "electronics",
+      "asin": "B0CYLDQ1D3",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-23T18:48:46.465653+05:30",
+      "session_type": "morning",
+      "link_index": 160
+    },
     {
       "id": "product_afternoon_20251023_075011",
       "title": "Noise Pulse Go Buzz Smart Watch with Advanced Bluetooth Calling, 1.69\" TFT Display, SpO2, 100 Sports Mode with Auto Dete",
