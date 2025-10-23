@@ -704,7 +704,7 @@
   }
 
   /* Limit to 2 rows (4 products) initially */
-  .deals .horizontal-products-scroll .product-card:nth-child(n+5) {
+  .deals .horizontal-products-scroll .product-card:nth-child(n+7) {
     display: none;
   }
 
