@@ -786,187 +786,7 @@ function enhanceProductData(product) {
 
 
 
-// FIXED Horizontal Scrolling Functionality
-class HorizontalDealsScroller {
-    constructor() {
-        this.horizontalContainer = document.getElementById('horizontal-products-container');
-        this.scrollLeftBtn = document.getElementById('scroll-left');
-        this.scrollRightBtn = document.getElementById('scroll-right');
-        this.viewAllBtn = document.getElementById('view-all-deals');
-        this.dealsCountSpan = document.querySelector('.deals-count');
-        this.totalDealsPreview = document.getElementById('total-deals-preview');
-        
-        this.scrollAmount = 300;
-        this.maxHorizontalItems = 6;
-        this.isInitialized = false;
-    }
-    
-    init() {
-        if (!this.horizontalContainer || this.isInitialized) return;
-        
-        console.log('🎮 Initializing horizontal scroller...');
-        this.setupEventListeners();
-        this.isInitialized = true;
-        
-        if (allProducts && allProducts.length > 0) {
-            this.renderHorizontalProducts();
-        }
-    }
-    
-    setupEventListeners() {
-        this.scrollLeftBtn?.addEventListener('click', () => this.scrollLeft());
-        this.scrollRightBtn?.addEventListener('click', () => this.scrollRight());
-        this.horizontalContainer?.addEventListener('scroll', () => this.updateScrollButtons());
-        
-        if (this.viewAllBtn) {
-            this.viewAllBtn.addEventListener('click', (e) => {
-                e.preventDefault();
-                this.trackViewAllClick();
-                window.open('deals/today.html', '_blank');
-            });
-        }
-    }
-    
-    renderHorizontalProducts() {
-        if (!this.horizontalContainer || !allProducts || allProducts.length === 0) {
-            console.log('❌ Cannot render: missing container or products');
-            return;
-        }
-        
-        console.log(`🎨 Rendering ${allProducts.length} horizontal products`);
-        
-        this.horizontalContainer.innerHTML = '';
-        
-        const filteredProducts = this.getFilteredProducts();
-        const sortedProducts = this.sortProducts(filteredProducts);
-        const productsToShow = sortedProducts.slice(0, this.maxHorizontalItems);
-        
-        if (productsToShow.length === 0) {
-            this.horizontalContainer.innerHTML = `
-                <div class="empty-horizontal-state" style="
-                    padding: 2rem; 
-                    text-align: center; 
-                    color: var(--text-secondary);
-                    grid-column: 1 / -1;
-                ">
-                    <p>No deals available in this category</p>
-                </div>
-            `;
-            return;
-        }
-        
-        productsToShow.forEach((product, index) => {
-            const productCard = createProductCard(product, index);
-            this.horizontalContainer.appendChild(productCard);
-            
-            setTimeout(() => {
-                productCard.style.opacity = '1';
-                productCard.style.transform = 'translateY(0)';
-            }, index * 100);
-        });
-        
-        this.updateDealsCount(filteredProducts.length);
-        setTimeout(() => this.updateScrollButtons(), 200);
-        
-        console.log('✅ Horizontal products rendered successfully');
-    }
-    
-    getFilteredProducts() {
-        if (currentFilter === 'all') {
-            return allProducts;
-        }
-        return allProducts.filter(product => 
-            product.category.toLowerCase() === currentFilter
-        );
-    }
-    
-    sortProducts(products) {
-        const sorted = [...products];
-        
-        switch (currentSort) {
-            case 'price-low':
-                return sorted.sort((a, b) => this.extractPrice(a.price) - this.extractPrice(b.price));
-            case 'price-high':
-                return sorted.sort((a, b) => this.extractPrice(b.price) - this.extractPrice(a.price));
-            case 'discount':
-                return sorted.sort((a, b) => this.calculateDiscount(b.price) - this.calculateDiscount(a.price));
-            case 'latest':
-            default:
-                return sorted.sort((a, b) => new Date(b.posted_date) - new Date(a.posted_date));
-        }
-    }
-    
-    extractPrice(priceString) {
-        const match = priceString.match(/₹(\d+,?\d*)/);
-        return match ? parseInt(match[1].replace(',', '')) : 0;
-    }
-    
-    calculateDiscount(priceString) {
-        return Math.floor(Math.random() * 50) + 10;
-    }
-    
-    scrollLeft() {
-        this.horizontalContainer.scrollBy({
-            left: -this.scrollAmount,
-            behavior: 'smooth'
-        });
-    }
-    
-    scrollRight() {
-        this.horizontalContainer.scrollBy({
-            left: this.scrollAmount,
-            behavior: 'smooth'
-        });
-    }
-    
-    updateScrollButtons() {
-        const container = this.horizontalContainer;
-        if (!container) return;
-        
-        const scrollLeft = container.scrollLeft;
-        const maxScroll = container.scrollWidth - container.clientWidth;
-        
-        if (this.scrollLeftBtn) {
-            this.scrollLeftBtn.disabled = scrollLeft <= 0;
-            this.scrollLeftBtn.style.opacity = scrollLeft <= 0 ? '0.5' : '1';
-        }
-        
-        if (this.scrollRightBtn) {
-            this.scrollRightBtn.disabled = scrollLeft >= maxScroll;
-            this.scrollRightBtn.style.opacity = scrollLeft >= maxScroll ? '0.5' : '1';
-        }
-    }
-    
-    updateDealsCount(count) {
-        if (this.dealsCountSpan) {
-            this.dealsCountSpan.textContent = `${count} deals`;
-        }
-        if (this.totalDealsPreview) {
-            this.totalDealsPreview.textContent = count;
-        }
-    }
-    
-    trackViewAllClick() {
-        console.log('📊 View All Deals clicked');
-        if (typeof gtag !== 'undefined') {
-            gtag('event', 'view_all_deals_click', {
-                event_category: 'engagement',
-                event_label: 'horizontal_scroll_section'
-            });
-        }
-    }
-    
-    refresh() {
-        if (this.isInitialized) {
-            this.renderHorizontalProducts();
-        }
-    }
-}
-
-
-
-
-// // FIXED Vertical Layout for Flash Deals Section
+// // FIXED Horizontal Scrolling Functionality
 // class HorizontalDealsScroller {
 //     constructor() {
 //         this.horizontalContainer = document.getElementById('horizontal-products-container');
@@ -976,27 +796,28 @@ class HorizontalDealsScroller {
 //         this.dealsCountSpan = document.querySelector('.deals-count');
 //         this.totalDealsPreview = document.getElementById('total-deals-preview');
         
-//         this.maxVerticalItems = 6; // Changed from 20 to 6 for vertical display
+//         this.scrollAmount = 300;
+//         this.maxHorizontalItems = 6;
 //         this.isInitialized = false;
 //     }
     
 //     init() {
 //         if (!this.horizontalContainer || this.isInitialized) return;
         
-//         console.log('🎮 Initializing vertical deals display...');
+//         console.log('🎮 Initializing horizontal scroller...');
 //         this.setupEventListeners();
 //         this.isInitialized = true;
         
-//         // Hide scroll buttons since we're going vertical
-//         if (this.scrollLeftBtn) this.scrollLeftBtn.style.display = 'none';
-//         if (this.scrollRightBtn) this.scrollRightBtn.style.display = 'none';
-        
 //         if (allProducts && allProducts.length > 0) {
-//             this.renderVerticalProducts();
+//             this.renderHorizontalProducts();
 //         }
 //     }
     
 //     setupEventListeners() {
+//         this.scrollLeftBtn?.addEventListener('click', () => this.scrollLeft());
+//         this.scrollRightBtn?.addEventListener('click', () => this.scrollRight());
+//         this.horizontalContainer?.addEventListener('scroll', () => this.updateScrollButtons());
+        
 //         if (this.viewAllBtn) {
 //             this.viewAllBtn.addEventListener('click', (e) => {
 //                 e.preventDefault();
@@ -1006,30 +827,23 @@ class HorizontalDealsScroller {
 //         }
 //     }
     
-//     renderVerticalProducts() {
+//     renderHorizontalProducts() {
 //         if (!this.horizontalContainer || !allProducts || allProducts.length === 0) {
 //             console.log('❌ Cannot render: missing container or products');
 //             return;
 //         }
         
-//         console.log(`🎨 Rendering ${this.maxVerticalItems} vertical products`);
-        
-//         // Change container to vertical grid layout
-//         this.horizontalContainer.style.display = 'grid';
-//         this.horizontalContainer.style.gridTemplateColumns = 'repeat(auto-fill, minmax(280px, 1fr))';
-//         this.horizontalContainer.style.gap = '20px';
-//         this.horizontalContainer.style.overflowX = 'visible';
-//         this.horizontalContainer.style.scrollSnapType = 'none';
+//         console.log(`🎨 Rendering ${allProducts.length} horizontal products`);
         
 //         this.horizontalContainer.innerHTML = '';
         
 //         const filteredProducts = this.getFilteredProducts();
 //         const sortedProducts = this.sortProducts(filteredProducts);
-//         const productsToShow = sortedProducts.slice(0, this.maxVerticalItems);
+//         const productsToShow = sortedProducts.slice(0, this.maxHorizontalItems);
         
 //         if (productsToShow.length === 0) {
 //             this.horizontalContainer.innerHTML = `
-//                 <div class="empty-vertical-state" style="
+//                 <div class="empty-horizontal-state" style="
 //                     padding: 2rem; 
 //                     text-align: center; 
 //                     color: var(--text-secondary);
@@ -1052,39 +866,9 @@ class HorizontalDealsScroller {
 //         });
         
 //         this.updateDealsCount(filteredProducts.length);
+//         setTimeout(() => this.updateScrollButtons(), 200);
         
-//         // Show View All button
-//         this.positionViewAllButton();
-        
-//         console.log('✅ Vertical products rendered successfully');
-//     }
-    
-//     positionViewAllButton() {
-//         if (!this.viewAllBtn) return;
-        
-//         // Style the View All button to appear below the grid
-//         this.viewAllBtn.style.display = 'block';
-//         this.viewAllBtn.style.margin = '30px auto 0';
-//         this.viewAllBtn.style.width = 'fit-content';
-//         this.viewAllBtn.style.padding = '12px 40px';
-//         this.viewAllBtn.style.fontSize = '16px';
-//         this.viewAllBtn.style.fontWeight = '600';
-//         this.viewAllBtn.style.borderRadius = '8px';
-//         this.viewAllBtn.style.cursor = 'pointer';
-//         this.viewAllBtn.style.transition = 'all 0.3s ease';
-        
-//         // Ensure button is visible and centered
-//         const parentSection = this.horizontalContainer.closest('.horizontal-deals-container') || 
-//                              this.horizontalContainer.parentElement;
-        
-//         if (parentSection && !parentSection.querySelector('.view-all-button-container')) {
-//             const buttonContainer = document.createElement('div');
-//             buttonContainer.className = 'view-all-button-container';
-//             buttonContainer.style.textAlign = 'center';
-//             buttonContainer.style.marginTop = '30px';
-//             buttonContainer.appendChild(this.viewAllBtn);
-//             parentSection.appendChild(buttonContainer);
-//         }
+//         console.log('✅ Horizontal products rendered successfully');
 //     }
     
 //     getFilteredProducts() {
@@ -1121,6 +905,38 @@ class HorizontalDealsScroller {
 //         return Math.floor(Math.random() * 50) + 10;
 //     }
     
+//     scrollLeft() {
+//         this.horizontalContainer.scrollBy({
+//             left: -this.scrollAmount,
+//             behavior: 'smooth'
+//         });
+//     }
+    
+//     scrollRight() {
+//         this.horizontalContainer.scrollBy({
+//             left: this.scrollAmount,
+//             behavior: 'smooth'
+//         });
+//     }
+    
+//     updateScrollButtons() {
+//         const container = this.horizontalContainer;
+//         if (!container) return;
+        
+//         const scrollLeft = container.scrollLeft;
+//         const maxScroll = container.scrollWidth - container.clientWidth;
+        
+//         if (this.scrollLeftBtn) {
+//             this.scrollLeftBtn.disabled = scrollLeft <= 0;
+//             this.scrollLeftBtn.style.opacity = scrollLeft <= 0 ? '0.5' : '1';
+//         }
+        
+//         if (this.scrollRightBtn) {
+//             this.scrollRightBtn.disabled = scrollLeft >= maxScroll;
+//             this.scrollRightBtn.style.opacity = scrollLeft >= maxScroll ? '0.5' : '1';
+//         }
+//     }
+    
 //     updateDealsCount(count) {
 //         if (this.dealsCountSpan) {
 //             this.dealsCountSpan.textContent = `${count} deals`;
@@ -1135,17 +951,201 @@ class HorizontalDealsScroller {
 //         if (typeof gtag !== 'undefined') {
 //             gtag('event', 'view_all_deals_click', {
 //                 event_category: 'engagement',
-//                 event_label: 'vertical_deals_section'
+//                 event_label: 'horizontal_scroll_section'
 //             });
 //         }
 //     }
     
 //     refresh() {
 //         if (this.isInitialized) {
-//             this.renderVerticalProducts();
+//             this.renderHorizontalProducts();
 //         }
 //     }
 // }
+
+
+
+
+// FIXED Vertical Layout for Flash Deals Section
+class HorizontalDealsScroller {
+    constructor() {
+        this.horizontalContainer = document.getElementById('horizontal-products-container');
+        this.scrollLeftBtn = document.getElementById('scroll-left');
+        this.scrollRightBtn = document.getElementById('scroll-right');
+        this.viewAllBtn = document.getElementById('view-all-deals');
+        this.dealsCountSpan = document.querySelector('.deals-count');
+        this.totalDealsPreview = document.getElementById('total-deals-preview');
+        
+        this.maxVerticalItems = 15; // Changed from 20 to 6 for vertical display
+        this.isInitialized = false;
+    }
+    
+    init() {
+        if (!this.horizontalContainer || this.isInitialized) return;
+        
+        console.log('🎮 Initializing vertical deals display...');
+        this.setupEventListeners();
+        this.isInitialized = true;
+        
+        // Hide scroll buttons since we're going vertical
+        if (this.scrollLeftBtn) this.scrollLeftBtn.style.display = 'none';
+        if (this.scrollRightBtn) this.scrollRightBtn.style.display = 'none';
+        
+        if (allProducts && allProducts.length > 0) {
+            this.renderVerticalProducts();
+        }
+    }
+    
+    setupEventListeners() {
+        if (this.viewAllBtn) {
+            this.viewAllBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                this.trackViewAllClick();
+                window.open('deals/today.html', '_blank');
+            });
+        }
+    }
+    
+    renderVerticalProducts() {
+        if (!this.horizontalContainer || !allProducts || allProducts.length === 0) {
+            console.log('❌ Cannot render: missing container or products');
+            return;
+        }
+        
+        console.log(`🎨 Rendering ${this.maxVerticalItems} vertical products`);
+        
+        // Change container to vertical grid layout
+        this.horizontalContainer.style.display = 'grid';
+        this.horizontalContainer.style.gridTemplateColumns = 'repeat(auto-fill, minmax(280px, 1fr))';
+        this.horizontalContainer.style.gap = '20px';
+        this.horizontalContainer.style.overflowX = 'visible';
+        this.horizontalContainer.style.scrollSnapType = 'none';
+        
+        this.horizontalContainer.innerHTML = '';
+        
+        const filteredProducts = this.getFilteredProducts();
+        const sortedProducts = this.sortProducts(filteredProducts);
+        const productsToShow = sortedProducts.slice(0, this.maxVerticalItems);
+        
+        if (productsToShow.length === 0) {
+            this.horizontalContainer.innerHTML = `
+                <div class="empty-vertical-state" style="
+                    padding: 2rem; 
+                    text-align: center; 
+                    color: var(--text-secondary);
+                    grid-column: 1 / -1;
+                ">
+                    <p>No deals available in this category</p>
+                </div>
+            `;
+            return;
+        }
+        
+        productsToShow.forEach((product, index) => {
+            const productCard = createProductCard(product, index);
+            this.horizontalContainer.appendChild(productCard);
+            
+            setTimeout(() => {
+                productCard.style.opacity = '1';
+                productCard.style.transform = 'translateY(0)';
+            }, index * 100);
+        });
+        
+        this.updateDealsCount(filteredProducts.length);
+        
+        // Show View All button
+        this.positionViewAllButton();
+        
+        console.log('✅ Vertical products rendered successfully');
+    }
+    
+    positionViewAllButton() {
+        if (!this.viewAllBtn) return;
+        
+        // Style the View All button to appear below the grid
+        this.viewAllBtn.style.display = 'block';
+        this.viewAllBtn.style.margin = '30px auto 0';
+        this.viewAllBtn.style.width = 'fit-content';
+        this.viewAllBtn.style.padding = '12px 40px';
+        this.viewAllBtn.style.fontSize = '16px';
+        this.viewAllBtn.style.fontWeight = '600';
+        this.viewAllBtn.style.borderRadius = '8px';
+        this.viewAllBtn.style.cursor = 'pointer';
+        this.viewAllBtn.style.transition = 'all 0.3s ease';
+        
+        // Ensure button is visible and centered
+        const parentSection = this.horizontalContainer.closest('.horizontal-deals-container') || 
+                             this.horizontalContainer.parentElement;
+        
+        if (parentSection && !parentSection.querySelector('.view-all-button-container')) {
+            const buttonContainer = document.createElement('div');
+            buttonContainer.className = 'view-all-button-container';
+            buttonContainer.style.textAlign = 'center';
+            buttonContainer.style.marginTop = '30px';
+            buttonContainer.appendChild(this.viewAllBtn);
+            parentSection.appendChild(buttonContainer);
+        }
+    }
+    
+    getFilteredProducts() {
+        if (currentFilter === 'all') {
+            return allProducts;
+        }
+        return allProducts.filter(product => 
+            product.category.toLowerCase() === currentFilter
+        );
+    }
+    
+    sortProducts(products) {
+        const sorted = [...products];
+        
+        switch (currentSort) {
+            case 'price-low':
+                return sorted.sort((a, b) => this.extractPrice(a.price) - this.extractPrice(b.price));
+            case 'price-high':
+                return sorted.sort((a, b) => this.extractPrice(b.price) - this.extractPrice(a.price));
+            case 'discount':
+                return sorted.sort((a, b) => this.calculateDiscount(b.price) - this.calculateDiscount(a.price));
+            case 'latest':
+            default:
+                return sorted.sort((a, b) => new Date(b.posted_date) - new Date(a.posted_date));
+        }
+    }
+    
+    extractPrice(priceString) {
+        const match = priceString.match(/₹(\d+,?\d*)/);
+        return match ? parseInt(match[1].replace(',', '')) : 0;
+    }
+    
+    calculateDiscount(priceString) {
+        return Math.floor(Math.random() * 50) + 10;
+    }
+    
+    updateDealsCount(count) {
+        if (this.dealsCountSpan) {
+            this.dealsCountSpan.textContent = `${count} deals`;
+        }
+        if (this.totalDealsPreview) {
+            this.totalDealsPreview.textContent = count;
+        }
+    }
+    
+    trackViewAllClick() {
+        console.log('📊 View All Deals clicked');
+        if (typeof gtag !== 'undefined') {
+            gtag('event', 'view_all_deals_click', {
+                event_category: 'engagement',
+                event_label: 'vertical_deals_section'
+            });
+        }
+    }
+    
+    refresh() {
+        if (this.isInitialized) {
+            this.renderVerticalProducts();
+        }
+    }
+}
 
 
 
