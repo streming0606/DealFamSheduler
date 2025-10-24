@@ -1,35 +1,196 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
-        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
-  
-  <!-- Blog Homepage -->
-  <url>
-    <loc>https://thriftmaal.com/blog/</loc>
-    <lastmod>2025-10-20</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
-  </url>
-  
-  <!-- Individual Posts - Add all from posts.json -->
-  <url>
-    <loc>https://thriftmaal.com/blog/top-20-earphone-deals-of-this-week</loc>
-    <lastmod>2025-10-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=800</image:loc>
-      <image:title>Top 20 Earphone Deals</image:title>
-    </image:image>
-  </url>
-  
-  <url>
-    <loc>https://thriftmaal.com/blog/amazon-great-indian-festival-2025-best-deals</loc>
-    <lastmod>2025-10-18</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  <!-- Add remaining 8 posts here -->
-  
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+    
+    <!-- Homepage -->
+    <url>
+        <loc>https://thriftmaal.com/</loc>
+        <lastmod>2025-10-24</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    
+    <!-- Blog Main Page -->
+    <url>
+        <loc>https://thriftmaal.com/blog/</loc>
+        <lastmod>2025-10-24</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <!-- Blog Category Pages -->
+    <url>
+        <loc>https://thriftmaal.com/blog/category/shopping-tips</loc>
+        <lastmod>2025-10-24</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://thriftmaal.com/blog/category/product-guides</loc>
+        <lastmod>2025-10-24</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://thriftmaal.com/blog/category/deals-offers</loc>
+        <lastmod>2025-10-24</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://thriftmaal.com/blog/category/student-discounts</loc>
+        <lastmod>2025-10-24</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://thriftmaal.com/blog/category/festival-sales</loc>
+        <lastmod>2025-10-24</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://thriftmaal.com/blog/category/brand-reviews</loc>
+        <lastmod>2025-10-24</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <!-- Blog Posts -->
+    <url>
+        <loc>https://thriftmaal.com/blog/festival-sales/big-billion-days-shopping-guide-2025</loc>
+        <lastmod>2025-10-20</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=800&amp;q=80</image:loc>
+            <image:title>Big Billion Days 2025 Shopping Guide</image:title>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://thriftmaal.com/blog/student-discounts/student-budget-shopping-tips-india</loc>
+        <lastmod>2025-10-22</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+        <image:image>
+            <image:loc>https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=800&amp;q=80</image:loc>
+            <image:title>Student Budget Shopping Tips</image:title>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://thriftmaal.com/blog/shopping-tips/how-to-find-best-online-deals-india</loc>
+        <lastmod>2025-10-12</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+        <image:image>
+            <image:loc>https://images.unsplash.com/photo-1556742111-a301076d9d18?w=800&amp;q=80</image:loc>
+            <image:title>How to Find Best Online Deals</image:title>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://thriftmaal.com/blog/brand-reviews/amazon-vs-flipkart-comparison-2025</loc>
+        <lastmod>2025-10-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <image:image>
+            <image:loc>https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&amp;q=80</image:loc>
+            <image:title>Amazon vs Flipkart Comparison</image:title>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://thriftmaal.com/blog/product-guides/best-laptops-under-50000-students</loc>
+        <lastmod>2025-10-08</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <image:image>
+            <image:loc>https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?w=800&amp;q=80</image:loc>
+            <image:title>Best Laptops Under 50000</image:title>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://thriftmaal.com/blog/shopping-tips/how-to-use-coupon-codes-effectively</loc>
+        <lastmod>2025-10-05</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+        <image:image>
+            <image:loc>https://images.unsplash.com/photo-1607083206869-4c7672e72a8a?w=800&amp;q=80</image:loc>
+            <image:title>How to Use Coupon Codes</image:title>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://thriftmaal.com/blog/festival-sales/diwali-shopping-guide-2025</loc>
+        <lastmod>2025-10-01</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://images.unsplash.com/photo-1541963058-62a6a099bd2a?w=800&amp;q=80</image:loc>
+            <image:title>Diwali Shopping Guide 2025</image:title>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://thriftmaal.com/blog/shopping-tips/credit-card-vs-debit-card-online-shopping</loc>
+        <lastmod>2025-09-28</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+        <image:image>
+            <image:loc>https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=800&amp;q=80</image:loc>
+            <image:title>Credit Card vs Debit Card</image:title>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://thriftmaal.com/blog/brand-reviews/top-fashion-brands-india-2025</loc>
+        <lastmod>2025-09-25</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+        <image:image>
+            <image:loc>https://images.unsplash.com/photo-1445205170230-053b83016050?w=800&amp;q=80</image:loc>
+            <image:title>Top Fashion Brands India</image:title>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://thriftmaal.com/blog/product-guides/smartphone-buying-guide-2025</loc>
+        <lastmod>2025-09-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <image:image>
+            <image:loc>https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=800&amp;q=80</image:loc>
+            <image:title>Smartphone Buying Guide 2025</image:title>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://thriftmaal.com/blog/deals-offers/amazon-prime-day-shopping-strategies</loc>
+        <lastmod>2025-09-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <image:image>
+            <image:loc>https://images.unsplash.com/photo-1523474253046-8cd2748b5fd2?w=800&amp;q=80</image:loc>
+            <image:title>Amazon Prime Day Strategies</image:title>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://thriftmaal.com/blog/shopping-tips/cashback-apps-india-comparison</loc>
+        <lastmod>2025-09-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+        <image:image>
+            <image:loc>https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800&amp;q=80</image:loc>
+            <image:title>Cashback Apps India Comparison</image:title>
+        </image:image>
+    </url>
+    
+    <!-- Other Important Pages -->
+
+    
 </urlset>
