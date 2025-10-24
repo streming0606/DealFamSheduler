@@ -1,0 +1,75 @@
+name: Update Sitemap on New Blog Post
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'blog/data/posts.json'
+
+jobs:
+  update-sitemap:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+      
+      - name: Check if posts.json was modified
+        id: check_changes
+        run: |
+          # Check if posts.json has actual changes
+          if git diff HEAD~1 HEAD --name-only | grep -q "blog/data/posts.json"; then
+            echo "posts_changed=true" >> $GITHUB_OUTPUT
+            echo "✅ posts.json has been modified"
+          else
+            echo "posts_changed=false" >> $GITHUB_OUTPUT
+            echo "ℹ️ posts.json not modified, skipping sitemap update"
+          fi
+      
+      - name: Generate Sitemap
+        if: steps.check_changes.outputs.posts_changed == 'true'
+        run: |
+          echo "🚀 Running sitemap generation..."
+          python .github/scripts/update-sitemap.py
+      
+      - name: Check for sitemap changes
+        if: steps.check_changes.outputs.posts_changed == 'true'
+        id: check_sitemap
+        run: |
+          if git diff --quiet blog/sitemap.xml; then
+            echo "sitemap_changed=false" >> $GITHUB_OUTPUT
+            echo "ℹ️ No changes to sitemap.xml"
+          else
+            echo "sitemap_changed=true" >> $GITHUB_OUTPUT
+            echo "✅ sitemap.xml has been updated"
+          fi
+      
+      - name: Commit and push sitemap
+        if: steps.check_sitemap.outputs.sitemap_changed == 'true'
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add blog/sitemap.xml
+          git commit -m "🤖 Auto-update sitemap.xml - New blog post added"
+          git push
+      
+      - name: Summary
+        if: steps.check_changes.outputs.posts_changed == 'true'
+        run: |
+          echo "### 📊 Sitemap Update Summary" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          if [ "${{ steps.check_sitemap.outputs.sitemap_changed }}" == "true" ]; then
+            echo "✅ Sitemap successfully updated and pushed!" >> $GITHUB_STEP_SUMMARY
+            echo "🔗 Updated sitemap: https://thriftmaal.com/blog/sitemap.xml" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "ℹ️ Sitemap generated but no changes detected" >> $GITHUB_STEP_SUMMARY
+          fi
