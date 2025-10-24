@@ -50,7 +50,7 @@ function displayPosts(posts) {
     noResults.style.display = 'none';
 
     blogContainer.innerHTML = posts.map(post => `
-<div class="blog-card" onclick="window.location.href='./posts/article.html?post=${post.slug}'">
+<div class="blog-card" onclick="window.location.href='./posts/article?post=${post.slug}'">
             <img src="${post.image}" alt="${post.title}" loading="lazy">
             <div class="blog-info">
                 <span class="blog-category">${post.category}</span>
