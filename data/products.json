@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-10-24T10:17:00.250917+05:30",
-  "total_products": 212,
+  "last_updated": "2025-10-24T13:19:59.434731+05:30",
+  "total_products": 214,
   "products": [
+    {
+      "id": "product_afternoon_20251024_074959",
+      "title": "Amazon Product B0F4FPN58L",
+      "image": "https://m.media-amazon.com/images/I/B0F4FPN58L._AC_SL1500_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0F4FPN58L?tag=gadgetvill09f-21",
+      "price": "\u20b9Special Price",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B0F4FPN58L",
+      "data_source": "fallback",
+      "posted_date": "2025-10-24T13:19:59.434698+05:30",
+      "session_type": "afternoon",
+      "link_index": 166
+    },
+    {
+      "id": "product_afternoon_20251024_074959",
+      "title": "Amazon Product B0CVNF19PC",
+      "image": "https://m.media-amazon.com/images/I/B0CVNF19PC._AC_SL1500_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CVNF19PC?tag=gadgetvill09f-21",
+      "price": "\u20b9Special Price",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B0CVNF19PC",
+      "data_source": "fallback",
+      "posted_date": "2025-10-24T13:19:59.307788+05:30",
+      "session_type": "afternoon",
+      "link_index": 166
+    },
     {
       "id": "product_morning_20251024_044700",
       "title": "DOMS 14 Shades Brush Pen Box Pack | Super Soft Tip With Brilliant Colors | Water Based Ink Which Gives Water Color Effec",
