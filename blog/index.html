@@ -1,351 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-887DNYMLDD"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-887DNYMLDD');
-    </script>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Thrift Maal Blog - Best shopping tips, deal hunting guides, product reviews, and money-saving strategies for Indian shoppers. Weekly updates on festival sales and budget shopping.">
-    <meta name="keywords" content="best deals India, shopping tips, online shopping guide, coupon codes India, festival sales, budget shopping, product reviews, student discounts">
-    <meta name="author" content="Thrift Maal Team">
-    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-    
-    <!-- Open Graph Meta Tags -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Thrift Maal Blog - Shopping Tips & Deal Guides">
-    <meta property="og:description" content="Expert shopping guides, deal alerts, and money-saving tips for smart Indian shoppers.">
+    <meta name="description" content="ThriftMaal Blog - Latest deals, discounts, shopping tips, and money-saving guides from India's top deal aggregator">
+    <meta name="keywords" content="deals blog, discount tips, shopping guides, coupon codes, ThriftMaal, money saving tips">
+    <meta property="og:title" content="ThriftMaal Blog - Best Deals & Shopping Tips">
+    <meta property="og:description" content="Stay updated with the latest deals, discounts, and shopping guides curated by ThriftMaal">
+    <meta property="og:image" content="https://thriftmaal.com/logo.png">
     <meta property="og:url" content="https://thriftmaal.com/blog/">
-    <meta property="og:site_name" content="Thrift Maal">
-    <meta property="og:image" content="https://thriftmaal.com/images/blog-banner.jpg">
-    
-    <!-- Twitter Card Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Thrift Maal Blog - Shopping Tips & Deal Guides">
-    <meta name="twitter:description" content="Expert shopping guides, deal alerts, and money-saving tips for smart Indian shoppers.">
-    <meta name="twitter:image" content="https://thriftmaal.com/images/blog-banner.jpg">
-    
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://thriftmaal.com/blog/">
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
-    
-    <title>Thrift Maal Blog - Shopping Tips, Deal Guides & Product Reviews</title>
-    
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="css/blog.css">
-    <link rel="stylesheet" href="css/blog-responsive.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    
-    <!-- Preconnect for Performance -->
+    <meta name="robots" content="index, follow">
+    <title>ThriftMaal Blog - Latest Deals, Discounts & Shopping Tips</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
-    <!-- Schema.org Markup for Blog -->
+    <!-- Schema Markup for Blog -->
     <script type="application/ld+json">
     {
-        "@context": "https://schema.org",
-        "@type": "Blog",
-        "name": "Thrift Maal Blog",
-        "description": "Shopping tips, deal guides, and product reviews for Indian consumers",
-        "url": "https://thriftmaal.com/blog/",
-        "publisher": {
-            "@type": "Organization",
-            "name": "Thrift Maal",
-            "logo": {
-                "@type": "ImageObject",
-                "url": "https://thriftmaal.com/images/logo.png"
-            }
-        },
-        "inLanguage": "en-IN",
-        "blogPost": []
-    }
-    </script>
-    
-    <!-- Breadcrumb Schema -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-            {
-                "@type": "ListItem",
-                "position": 1,
-                "name": "Home",
-                "item": "https://thriftmaal.com/"
-            },
-            {
-                "@type": "ListItem",
-                "position": 2,
-                "name": "Blog",
-                "item": "https://thriftmaal.com/blog/"
-            }
-        ]
+      "@context": "https://schema.org",
+      "@type": "Blog",
+      "name": "ThriftMaal Blog",
+      "description": "Latest deals, discounts, shopping tips and money-saving guides from India's top deal aggregator",
+      "url": "https://thriftmaal.com/blog/",
+      "publisher": {
+        "@type": "Organization",
+        "name": "ThriftMaal",
+        "logo": "https://thriftmaal.com/logo.png"
+      }
     }
     </script>
 </head>
-
 <body>
-    <!-- Header Navigation (Same as main site) -->
-    <header class="main-header sticky-header">
+    <!-- Header -->
+    <header class="header">
         <div class="container">
             <nav class="navbar">
-                <div class="nav-left">
-                    <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle Menu">
-                        <i class="fas fa-bars"></i>
-                    </button>
-                    <a href="../index.html" class="logo">
-                        <img src="../images/logo.png" alt="Thrift Maal Logo" width="180" height="50">
+                <div class="logo">
+                    <a href="/">
+                        <img src="/logo.png" alt="ThriftMaal Logo">
                     </a>
                 </div>
-                
-                <div class="nav-center">
-                    <div class="search-bar">
-                        <input type="text" id="blog-search-input" placeholder="Search blog posts..." aria-label="Search blog">
-                        <button class="search-btn" aria-label="Search">
-                            <i class="fas fa-search"></i>
-                        </button>
-                    </div>
-                </div>
-                
-                <div class="nav-right">
-                    <a href="../index.html" class="nav-link">
-                        <i class="fas fa-home"></i> Home
-                    </a>
-                    <a href="index.html" class="nav-link active">
-                        <i class="fas fa-blog"></i> Blog
-                    </a>
+                <ul class="nav-menu">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/deals">Deals</a></li>
+                    <li><a href="/coupons">Coupons</a></li>
+                    <li><a href="/blog/" class="active">Blog</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
             </nav>
         </div>
     </header>
 
-    <!-- Breadcrumb Navigation -->
-    <div class="breadcrumb-container">
-        <div class="container">
-            <nav aria-label="breadcrumb">
-                <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
-                    <li class="breadcrumb-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                        <a href="../index.html" itemprop="item">
-                            <span itemprop="name">Home</span>
-                        </a>
-                        <meta itemprop="position" content="1" />
-                    </li>
-                    <li class="breadcrumb-item active" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                        <span itemprop="name">Blog</span>
-                        <meta itemprop="position" content="2" />
-                    </li>
-                </ol>
-            </nav>
-        </div>
-    </div>
-
     <!-- Blog Hero Section -->
     <section class="blog-hero">
         <div class="container">
-            <div class="hero-content">
-                <h1 class="hero-title">Thrift Maal Blog</h1>
-                <p class="hero-subtitle">Your ultimate guide to smart shopping, exclusive deals, and money-saving tips</p>
-            </div>
+            <h1>📰 ThriftMaal Blog</h1>
+            <p>Your ultimate guide to smart shopping, exclusive deals, and money-saving tips</p>
         </div>
     </section>
 
-    <!-- Category Filter Tabs -->
-    <section class="category-filter-section">
+    <!-- Search & Filter Section -->
+    <section class="search-filter-section">
         <div class="container">
-            <div class="category-tabs" role="tablist">
-                <button class="category-tab active" data-category="all" role="tab" aria-selected="true">
-                    <i class="fas fa-th"></i> All Posts
-                </button>
-                <button class="category-tab" data-category="shopping-tips" role="tab" aria-selected="false">
-                    <i class="fas fa-lightbulb"></i> Shopping Tips
-                </button>
-                <button class="category-tab" data-category="deal-guides" role="tab" aria-selected="false">
-                    <i class="fas fa-tags"></i> Deal Guides
-                </button>
-                <button class="category-tab" data-category="product-reviews" role="tab" aria-selected="false">
-                    <i class="fas fa-star"></i> Product Reviews
-                </button>
-                <button class="category-tab" data-category="festival-sales" role="tab" aria-selected="false">
-                    <i class="fas fa-gift"></i> Festival Sales
-                </button>
-                <button class="category-tab" data-category="student-discounts" role="tab" aria-selected="false">
-                    <i class="fas fa-graduation-cap"></i> Student Discounts
-                </button>
-                <button class="category-tab" data-category="brand-reviews" role="tab" aria-selected="false">
-                    <i class="fas fa-building"></i> Brand Reviews
-                </button>
-            </div>
-        </div>
-    </section>
-
-    <!-- Main Blog Content -->
-    <main class="blog-main">
-        <div class="container">
-            <div class="blog-layout">
-                <!-- Main Content Area -->
-                <div class="blog-content">
-                    <!-- Featured Post -->
-                    <section class="featured-post-section" id="featured-post">
-                        <!-- Dynamically loaded -->
-                    </section>
-
-                    <!-- Sort & Filter Controls -->
-                    <div class="blog-controls">
-                        <div class="results-count">
-                            Showing <span id="posts-count">0</span> posts
-                        </div>
-                        <div class="sort-controls">
-                            <label for="sort-posts">Sort by:</label>
-                            <select id="sort-posts" class="sort-select">
-                                <option value="latest">Latest First</option>
-                                <option value="oldest">Oldest First</option>
-                                <option value="popular">Most Popular</option>
-                                <option value="trending">Trending</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <!-- Blog Posts Grid -->
-                    <div class="blog-grid" id="blog-posts-grid">
-                        <!-- Dynamically loaded blog posts -->
-                    </div>
-
-                    <!-- Load More Button -->
-                    <div class="load-more-section">
-                        <button class="btn-load-more" id="load-more-posts">
-                            <i class="fas fa-sync-alt"></i> Load More Posts
-                        </button>
-                    </div>
-
-                    <!-- Newsletter Subscription -->
-                    <section class="newsletter-section">
-                        <div class="newsletter-box">
-                            <div class="newsletter-icon">
-                                <i class="fas fa-envelope"></i>
-                            </div>
-                            <h3>Never Miss a Deal!</h3>
-                            <p>Subscribe to our weekly newsletter and get the best shopping tips delivered to your inbox</p>
-                            <form class="newsletter-form" id="newsletter-form">
-                                <input type="email" placeholder="Enter your email" required aria-label="Email for newsletter">
-                                <button type="submit" class="btn-subscribe">
-                                    <i class="fas fa-paper-plane"></i> Subscribe
-                                </button>
-                            </form>
-                            <p class="newsletter-note">🔒 We respect your privacy. Unsubscribe anytime.</p>
-                        </div>
-                    </section>
+            <div class="search-filter-wrapper">
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="🔍 Search blog posts...">
                 </div>
-
-                <!-- Sidebar -->
-                <aside class="blog-sidebar">
-                    <!-- Search Widget -->
-                    <div class="sidebar-widget search-widget">
-                        <h3 class="widget-title">Search Blog</h3>
-                        <div class="sidebar-search">
-                            <input type="text" id="sidebar-search" placeholder="Search posts..." aria-label="Search sidebar">
-                            <button aria-label="Search"><i class="fas fa-search"></i></button>
-                        </div>
-                    </div>
-
-                    <!-- Popular Posts Widget -->
-                    <div class="sidebar-widget popular-posts-widget">
-                        <h3 class="widget-title">
-                            <i class="fas fa-fire"></i> Popular Posts
-                        </h3>
-                        <div class="popular-posts-list" id="popular-posts">
-                            <!-- Dynamically loaded -->
-                        </div>
-                    </div>
-
-                    <!-- Categories Widget -->
-                    <div class="sidebar-widget categories-widget">
-                        <h3 class="widget-title">
-                            <i class="fas fa-folder"></i> Categories
-                        </h3>
-                        <ul class="categories-list" id="categories-list">
-                            <!-- Dynamically loaded -->
-                        </ul>
-                    </div>
-
-                    <!-- Tags Widget -->
-                    <div class="sidebar-widget tags-widget">
-                        <h3 class="widget-title">
-                            <i class="fas fa-tags"></i> Popular Tags
-                        </h3>
-                        <div class="tags-cloud" id="tags-cloud">
-                            <!-- Dynamically loaded -->
-                        </div>
-                    </div>
-
-                    <!-- Ad Space Widget -->
-                    <div class="sidebar-widget ad-widget">
-                        <h3 class="widget-title">Sponsored</h3>
-                        <div class="ad-space" id="sidebar-ad">
-                            <!-- Google AdSense or Sponsored Content -->
-                            <div class="ad-placeholder">
-                                <p>Advertisement</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Sticky CTA -->
-                    <div class="sidebar-widget cta-widget sticky-sidebar">
-                        <div class="cta-box">
-                            <i class="fas fa-gift"></i>
-                            <h4>Today's Hot Deals</h4>
-                            <p>Check out amazing deals handpicked for you!</p>
-                            <a href="../index.html" class="btn-cta">View All Deals</a>
-                        </div>
-                    </div>
-                </aside>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-category="all">All</button>
+                    <button class="filter-btn" data-category="Deals">🎯 Deals</button>
+                    <button class="filter-btn" data-category="Coupons">🎟️ Coupons</button>
+                    <button class="filter-btn" data-category="Tech Tips">💻 Tech Tips</button>
+                    <button class="filter-btn" data-category="Fashion">👗 Fashion</button>
+                    <button class="filter-btn" data-category="Shopping Guide">🛍️ Shopping Guide</button>
+                </div>
             </div>
         </div>
-    </main>
+    </section>
 
-    <!-- Footer (Same as main site) -->
-    <footer class="main-footer">
+    <!-- Blog Posts Grid -->
+    <section class="blog-section">
+        <div class="container">
+            <div class="blog-container" id="blogContainer">
+                <!-- Blog cards will be dynamically loaded here -->
+                <div class="loading">Loading awesome content... 🚀</div>
+            </div>
+            <div class="no-results" id="noResults" style="display: none;">
+                <p>😔 No posts found. Try a different search term or category.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h4>About Thrift Maal</h4>
-                    <p>Your trusted source for the best deals, shopping tips, and product reviews in India.</p>
+                    <h3>About ThriftMaal</h3>
+                    <p>India's most trusted deals and coupons aggregator. We help you save money on every purchase with verified deals from top stores.</p>
                 </div>
                 <div class="footer-section">
-                    <h4>Quick Links</h4>
+                    <h3>Quick Links</h3>
                     <ul>
-                        <li><a href="../index.html">Home</a></li>
-                        <li><a href="index.html">Blog</a></li>
-                        <li><a href="../about.html">About Us</a></li>
-                        <li><a href="../contact.html">Contact</a></li>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/deals">Today's Deals</a></li>
+                        <li><a href="/coupons">Coupon Codes</a></li>
+                        <li><a href="/stores">All Stores</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h4>Follow Us</h4>
+                    <h3>Popular Categories</h3>
+                    <ul>
+                        <li><a href="/category/electronics">Electronics</a></li>
+                        <li><a href="/category/fashion">Fashion</a></li>
+                        <li><a href="/category/home">Home & Kitchen</a></li>
+                        <li><a href="/category/books">Books</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect With Us</h3>
                     <div class="social-links">
-                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
-                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" aria-label="Facebook">📘 Facebook</a>
+                        <a href="#" aria-label="Twitter">🐦 Twitter</a>
+                        <a href="#" aria-label="Instagram">📷 Instagram</a>
+                        <a href="#" aria-label="Telegram">✈️ Telegram</a>
                     </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 Thrift Maal. All rights reserved.</p>
+                <p>&copy; 2025 ThriftMaal.com - All Rights Reserved | Made with ❤️ in India</p>
             </div>
         </div>
     </footer>
 
-    <!-- Scripts -->
-    <script src="js/blog.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
