@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-10-24T13:34:54.445432+05:30",
-  "total_products": 216,
+  "last_updated": "2025-10-24T18:47:50.899835+05:30",
+  "total_products": 215,
   "products": [
+    {
+      "id": "product_morning_20251024_131750",
+      "title": "Fire-Boltt Rise Smart Watch with 1.85\u201d HD Display, Metal Body, Bluetooth Calling, AI Voice Assistant, 120 Sports Modes, ",
+      "image": "https://m.media-amazon.com/images/I/61IGSSfF-JL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CMF25TKG?tag=gadgetvill09f-21",
+      "price": "\u20b9Special Price",
+      "rating": 3.9,
+      "category": "fashion",
+      "asin": "B0CMF25TKG",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-24T18:47:50.899810+05:30",
+      "session_type": "morning",
+      "link_index": 170
+    },
+    {
+      "id": "product_morning_20251024_131748",
+      "title": "Juarez JRZ10HM Key C Diatonic Blues Harmonica 10 Hole 20 Tones with Case, Mouth Organ for Beginners, Students, Kids & Pr",
+      "image": "https://m.media-amazon.com/images/I/615RyYFVkzL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B088KRHPG5?tag=gadgetvill09f-21",
+      "price": "\u20b9337",
+      "rating": 4.2,
+      "category": "electronics",
+      "asin": "B088KRHPG5",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-24T18:47:48.869185+05:30",
+      "session_type": "morning",
+      "link_index": 170
+    },
     {
       "id": "product_afternoon_20251024_080454",
       "title": "Sounce 5-in-1 Multi-Function Laptop Cleaning Brush/Keyboard Cleaning kit/Gadget Cleaning kit Gap Duster Key-Cap Puller f",
@@ -30,7 +58,6 @@
       "session_type": "afternoon",
       "link_index": 168
     },
-   
     {
       "id": "product_morning_20251024_044700",
       "title": "DOMS 14 Shades Brush Pen Box Pack | Super Soft Tip With Brilliant Colors | Water Based Ink Which Gives Water Color Effec",
@@ -45,7 +72,6 @@
       "session_type": "morning",
       "link_index": 164
     },
-    
     {
       "id": "product_night_20251023_155329",
       "title": "Classmate Pulse Single Subject Spiral Notebook-Pack Of 1|Single Line|200 Pages|24.0Cm X 18.0Cm|Attractive Cover Designs|",
