@@ -1,118 +1,39 @@
-# robots.txt for Thrift Maal Blog
-# Last Updated: 2025-10-24
+# robots.txt for thriftmaal.com
 
-# Allow all search engines to crawl the site
+# Allow all search engines
 User-agent: *
-Allow: /
 
-# Sitemap location
+# Allow all content by default
+Disallow:
+
+# Allow crawling of main blog paths and categories
+Allow: /blog/
+Allow: /blog/category/
+Allow: /blog/category/shopping-tips
+Allow: /blog/category/deal-guides
+Allow: /blog/category/product-reviews
+Allow: /blog/category/festival-sales
+Allow: /blog/category/student-discounts
+Allow: /blog/category/brand-reviews
+
+# Disallow any temporary or private resource endpoints (if used)
+Disallow: /blog/drafts/
+Disallow: /blog/admin/
+Disallow: /blog/api/
+
+# Block indexing of query strings that are not SEO-friendly
+Disallow: /*?replytocom
+Disallow: /*?utm_
+
+# Sitemap references
 Sitemap: https://thriftmaal.com/sitemap.xml
+Sitemap: https://thriftmaal.com/sitemap-blog.xml
 
-# Disallow crawling of admin areas
-Disallow: /admin/
-Disallow: /admin-panel/
-Disallow: /login/
-Disallow: /private/
+# Crawl-delay (for heavy sites; optional, adjust as needed)
+# Crawl-delay: 10
 
-# Disallow crawling of scripts and styles (optional, but can save crawl budget)
-Disallow: /js/
-Disallow: /css/
+# Additional directives for specific bots (optional)
+# User-agent: AhrefsBot
+# Disallow: /
 
-# Disallow crawling of JSON data files
-Disallow: /data/
-
-# Disallow specific query parameters to avoid duplicate content
-Disallow: /*?sort=
-Disallow: /*?filter=
-Disallow: /*?page=
-Disallow: /*?search=
-
-# Google-specific rules
-User-agent: Googlebot
-Allow: /
-Crawl-delay: 0
-
-# Googlebot Image
-User-agent: Googlebot-Image
-Allow: /
-Disallow: /images/private/
-
-# Googlebot Mobile
-User-agent: Googlebot-Mobile
-Allow: /
-
-# Bing Bot
-User-agent: Bingbot
-Allow: /
-Crawl-delay: 1
-
-# Yandex Bot
-User-agent: Yandexbot
-Allow: /
-Crawl-delay: 2
-
-# Baidu Bot (for Chinese market)
-User-agent: Baiduspider
-Allow: /
-Crawl-delay: 2
-
-# DuckDuckGo Bot
-User-agent: DuckDuckBot
-Allow: /
-
-# Facebook Bot (for Open Graph previews)
-User-agent: Facebot
-Allow: /
-
-# Twitter Bot (for Twitter Card previews)
-User-agent: Twitterbot
-Allow: /
-
-# LinkedIn Bot
-User-agent: LinkedInBot
-Allow: /
-
-# WhatsApp Bot
-User-agent: WhatsApp
-Allow: /
-
-# Disallow AI crawlers (optional - for content protection)
-User-agent: GPTBot
-Disallow: /
-
-User-agent: ChatGPT-User
-Disallow: /
-
-User-agent: CCBot
-Disallow: /
-
-User-agent: anthropic-ai
-Disallow: /
-
-User-agent: Claude-Web
-Disallow: /
-
-# Disallow known bad bots
-User-agent: AhrefsBot
-Disallow: /
-
-User-agent: SemrushBot
-Disallow: /
-
-User-agent: MJ12bot
-Disallow: /
-
-User-agent: dotbot
-Disallow: /
-
-# Allow specific good SEO tools
-User-agent: Screaming Frog SEO Spider
-Allow: /
-
-# Notes:
-# - This robots.txt is optimized for SEO and search engine indexing
-# - All major search engines are allowed to crawl the blog
-# - Sitemap is provided for efficient crawling
-# - Admin areas and sensitive files are protected
-# - AI crawlers are blocked to protect original content
-# - Bad bots and aggressive crawlers are blocked
+# END robots.txt
