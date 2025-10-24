@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-10-23T21:23:29.405459+05:30",
-  "total_products": 210,
+  "last_updated": "2025-10-24T10:17:00.250917+05:30",
+  "total_products": 212,
   "products": [
+    {
+      "id": "product_morning_20251024_044700",
+      "title": "DOMS 14 Shades Brush Pen Box Pack | Super Soft Tip With Brilliant Colors | Water Based Ink Which Gives Water Color Effec",
+      "image": "https://m.media-amazon.com/images/I/91HgOiKlyVL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B08B3L43X4?tag=gadgetvill09f-21",
+      "price": "\u20b9160",
+      "rating": 4.4,
+      "category": "electronics",
+      "asin": "B08B3L43X4",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-24T10:17:00.250891+05:30",
+      "session_type": "morning",
+      "link_index": 164
+    },
+    {
+      "id": "product_morning_20251024_044658",
+      "title": "Amazon Product B0D7SLTNZY",
+      "image": "https://m.media-amazon.com/images/I/B0D7SLTNZY._AC_SL1500_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0D7SLTNZY?tag=gadgetvill09f-21",
+      "price": "\u20b9Special Price",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B0D7SLTNZY",
+      "data_source": "fallback",
+      "posted_date": "2025-10-24T10:16:58.510565+05:30",
+      "session_type": "morning",
+      "link_index": 164
+    },
     {
       "id": "product_night_20251023_155329",
       "title": "Classmate Pulse Single Subject Spiral Notebook-Pack Of 1|Single Line|200 Pages|24.0Cm X 18.0Cm|Attractive Cover Designs|",
