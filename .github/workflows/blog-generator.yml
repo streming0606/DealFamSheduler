@@ -2,7 +2,12 @@ name: AI Blog Post Generator
 
 on:
   schedule:
-    - cron: '0 10 * * 1'  # Runs every Monday at 10 AM IST
+    # Runs at 11:00 AM IST (5:30 AM UTC)
+    - cron: '30 5 * * *'
+    # Runs at 2:00 PM IST (8:30 AM UTC)
+    - cron: '30 8 * * *'
+    # Runs at 7:00 PM IST (1:30 PM UTC)
+    - cron: '30 13 * * *'
   workflow_dispatch:  # Manual trigger option
 
 jobs:
