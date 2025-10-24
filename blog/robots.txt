@@ -1,12 +1,118 @@
+# robots.txt for Thrift Maal Blog
+# Last Updated: 2025-10-24
+
+# Allow all search engines to crawl the site
 User-agent: *
 Allow: /
-Sitemap: https://thriftmaal.com/blog/sitemap.xml
 
+# Sitemap location
+Sitemap: https://thriftmaal.com/sitemap.xml
+
+# Disallow crawling of admin areas
+Disallow: /admin/
+Disallow: /admin-panel/
+Disallow: /login/
+Disallow: /private/
+
+# Disallow crawling of scripts and styles (optional, but can save crawl budget)
+Disallow: /js/
+Disallow: /css/
+
+# Disallow crawling of JSON data files
+Disallow: /data/
+
+# Disallow specific query parameters to avoid duplicate content
+Disallow: /*?sort=
+Disallow: /*?filter=
+Disallow: /*?page=
+Disallow: /*?search=
+
+# Google-specific rules
 User-agent: Googlebot
 Allow: /
+Crawl-delay: 0
 
-User-agent: GPTBot
+# Googlebot Image
+User-agent: Googlebot-Image
 Allow: /
+Disallow: /images/private/
+
+# Googlebot Mobile
+User-agent: Googlebot-Mobile
+Allow: /
+
+# Bing Bot
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# Yandex Bot
+User-agent: Yandexbot
+Allow: /
+Crawl-delay: 2
+
+# Baidu Bot (for Chinese market)
+User-agent: Baiduspider
+Allow: /
+Crawl-delay: 2
+
+# DuckDuckGo Bot
+User-agent: DuckDuckBot
+Allow: /
+
+# Facebook Bot (for Open Graph previews)
+User-agent: Facebot
+Allow: /
+
+# Twitter Bot (for Twitter Card previews)
+User-agent: Twitterbot
+Allow: /
+
+# LinkedIn Bot
+User-agent: LinkedInBot
+Allow: /
+
+# WhatsApp Bot
+User-agent: WhatsApp
+Allow: /
+
+# Disallow AI crawlers (optional - for content protection)
+User-agent: GPTBot
+Disallow: /
 
 User-agent: ChatGPT-User
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+User-agent: Claude-Web
+Disallow: /
+
+# Disallow known bad bots
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: dotbot
+Disallow: /
+
+# Allow specific good SEO tools
+User-agent: Screaming Frog SEO Spider
 Allow: /
+
+# Notes:
+# - This robots.txt is optimized for SEO and search engine indexing
+# - All major search engines are allowed to crawl the blog
+# - Sitemap is provided for efficient crawling
+# - Admin areas and sensitive files are protected
+# - AI crawlers are blocked to protect original content
+# - Bad bots and aggressive crawlers are blocked
