@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-10-24T13:19:59.434731+05:30",
-  "total_products": 214,
+  "last_updated": "2025-10-24T13:34:54.445432+05:30",
+  "total_products": 216,
   "products": [
+    {
+      "id": "product_afternoon_20251024_080454",
+      "title": "Sounce 5-in-1 Multi-Function Laptop Cleaning Brush/Keyboard Cleaning kit/Gadget Cleaning kit Gap Duster Key-Cap Puller f",
+      "image": "https://m.media-amazon.com/images/I/61ePjhX6O8L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0BQDSZWFR?tag=gadgetvill09f-21",
+      "price": "\u20b989",
+      "rating": 4.0,
+      "category": "electronics",
+      "asin": "B0BQDSZWFR",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-24T13:34:54.445402+05:30",
+      "session_type": "afternoon",
+      "link_index": 168
+    },
+    {
+      "id": "product_afternoon_20251024_080449",
+      "title": "Sounce Mouse Pad Speed Type Mouse Pad with Antifray Stitched Embroidery Edges, Non-Slip Rubber Base Mousepad for Laptop ",
+      "image": "https://m.media-amazon.com/images/I/512kJc9mROL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0BSR2N5W9?tag=gadgetvill09f-21",
+      "price": "\u20b989",
+      "rating": 4.4,
+      "category": "electronics",
+      "asin": "B0BSR2N5W9",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-24T13:34:49.922756+05:30",
+      "session_type": "afternoon",
+      "link_index": 168
+    },
     {
       "id": "product_afternoon_20251024_074959",
       "title": "Amazon Product B0F4FPN58L",
