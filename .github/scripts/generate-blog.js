@@ -18,8 +18,7 @@ console.log('✅ API Key found');
 
 const genAI = new GoogleGenerativeAI(API_KEY);
 
-// CRITICAL FIX: Use the correct model name as of October 2025
-// Options: 'gemini-2.0-flash' or 'gemini-flash-latest'
+// Use gemini-2.0-flash model
 const model = genAI.getGenerativeModel({ 
   model: 'gemini-2.0-flash',
   generationConfig: {
@@ -31,6 +30,22 @@ const model = genAI.getGenerativeModel({
 });
 
 console.log('✅ Model initialized: gemini-2.0-flash');
+
+// Helper function to clean markdown code blocks from content
+function cleanMarkdownCodeBlocks(text) {
+  // Remove `````` at the end
+  let cleaned = text.trim();
+  
+  // Remove opening code block markers (``````HTML, ```
+  cleaned = cleaned.replace(/^```html\n?/i, '');
+  cleaned = cleaned.replace(/^```
+  
+  // Remove closing code block markers (```)
+  cleaned = cleaned.replace(/\n?```
+  cleaned = cleaned.replace(/```$/, '');
+  
+  return cleaned.trim();
+}
 
 // Helper function to generate slug
 function generateSlug(title) {
@@ -50,45 +65,48 @@ function calculateReadTime(content) {
 
 // Function to generate SEO-optimized blog content
 async function generateBlogPost(topic) {
-  const prompt = `You are an expert content writer specializing in SEO-optimized, engaging, and informational blog posts for ThriftMaal.com - a deals and shopping guide website.
+  const prompt = `You are an expert content writer for ThriftMaal.com - a deals and shopping guide website in India.
 
-Write a comprehensive, 100% original, humanized blog post on the following topic:
+Write a comprehensive, SEO-optimized blog post on:
 Title: "${topic.title}"
 Category: "${topic.category}"
 Keywords: "${topic.keywords}"
 
-Requirements:
-1. Write in a natural, conversational, and engaging tone that sounds completely human
-2. Create 100% original content with zero plagiarism
-3. Optimize for SEO with proper keyword placement (but avoid keyword stuffing)
-4. Include practical tips, actionable advice, and real value for readers
-5. Use HTML formatting ONLY with these tags: <h2>, <h3>, <p>, <ul>, <li>, <strong>, <a>
-6. Include emojis where appropriate to make content engaging
-7. Length: 800-1200 words
-8. Include ONE internal link to https://thriftmaal.com naturally in the content
-9. Structure: Introduction paragraph → Main sections with <h2> or <h3> subheadings → Pro tips section → Brief conclusion
-10. Make it rank-worthy on Google with proper heading hierarchy and content structure
+CRITICAL FORMATTING INSTRUCTIONS:
+- Output ONLY pure HTML content with NO markdown formatting
+- DO NOT wrap the output in code blocks (NO \`\`\`html or \`\`\`)
+- DO NOT use any markdown syntax
+- Start directly with HTML tags like <h2> or <p>
+- Use ONLY these HTML tags: <h2>, <h3>, <p>, <ul>, <li>, <ol>, <strong>, <a>
 
-DO NOT include:
-- Any AI-sounding phrases like "in conclusion", "in summary", "it's important to note"
+CONTENT REQUIREMENTS:
+1. Write 800-1200 words in natural, conversational, human tone
+2. 100% original content with zero plagiarism
+3. SEO-optimized with natural keyword placement
+4. Include practical tips and actionable advice
+5. Add emojis in headings and text for engagement
+6. Include ONE link to https://thriftmaal.com naturally in content
+7. Structure: Introduction → Main sections with headings → Pro tips → Conclusion
+
+AVOID:
+- AI phrases like "in conclusion", "in summary", "it's important to note"
 - Generic templates
-- Any markdown formatting (NO ** or # symbols)
-- External links except the one ThriftMaal.com link
+- Any markdown formatting
+- Code blocks or backticks
+- External links except ThriftMaal.com
 
-DO include:
-- Specific examples, numbers, dates where relevant
-- Actionable insights
-- Natural keyword integration
-- Emojis in headings and content
-
-Generate ONLY the HTML content body. Start directly with content (no title needed - we have that already).`;
+START YOUR RESPONSE DIRECTLY WITH HTML CONTENT (NO EXPLANATIONS, NO CODE BLOCKS):`;
 
   try {
     console.log('⏳ Calling Gemini API...');
     const result = await model.generateContent(prompt);
     const response = result.response;
-    const content = response.text();
-    console.log('✅ Content generated successfully');
+    let content = response.text();
+    
+    // Clean markdown code blocks if present
+    content = cleanMarkdownCodeBlocks(content);
+    
+    console.log('✅ Content generated and cleaned');
     return content.trim();
   } catch (error) {
     console.error('❌ Error generating blog content:', error.message);
@@ -102,16 +120,20 @@ Generate ONLY the HTML content body. Start directly with content (no title neede
 // Function to generate AI summary
 async function generateAISummary(content, title) {
   const cleanContent = content.replace(/<[^>]*>/g, ' ').substring(0, 800);
-  const prompt = `Summarize this blog post in ONE sentence (maximum 120 characters):
-Title: ${title}
-Content: ${cleanContent}
+  const prompt = `Summarize this blog post in ONE sentence (maximum 120 characters). Output ONLY the summary text with NO markdown, NO code blocks, NO backticks:
 
-Provide ONLY the summary sentence, nothing else.`;
+Title: ${title}
+Content: ${cleanContent}`;
 
   try {
     const result = await model.generateContent(prompt);
     const response = result.response;
     let summary = response.text().trim();
+    
+    // Clean any markdown formatting
+    summary = cleanMarkdownCodeBlocks(summary);
+    summary = summary.replace(/^["']|["']$/g, ''); // Remove quotes if added
+    
     // Ensure it's not too long
     if (summary.length > 150) {
       summary = summary.substring(0, 147) + '...';
@@ -125,12 +147,17 @@ Provide ONLY the summary sentence, nothing else.`;
 
 // Function to generate article summary
 async function generateSummary(title, keywords) {
-  const prompt = `Write a compelling summary (120-140 characters) for a blog post titled "${title}" focusing on: ${keywords}. Make it engaging and SEO-friendly. Output ONLY the summary text.`;
+  const prompt = `Write a compelling 120-140 character summary for: "${title}" focusing on: ${keywords}. Make it SEO-friendly. Output ONLY the summary text with NO markdown, NO code blocks, NO backticks.`;
   
   try {
     const result = await model.generateContent(prompt);
     const response = result.response;
     let summary = response.text().trim();
+    
+    // Clean any markdown formatting
+    summary = cleanMarkdownCodeBlocks(summary);
+    summary = summary.replace(/^["']|["']$/g, ''); // Remove quotes if added
+    
     // Ensure it's not too long
     if (summary.length > 150) {
       summary = summary.substring(0, 147) + '...';
@@ -199,7 +226,8 @@ async function main() {
     // Generate blog content
     console.log('Step 1/3: Generating main content...');
     const content = await generateBlogPost(topic);
-    console.log(`✅ Content generated (${content.length} characters)\n`);
+    console.log(`✅ Content generated (${content.length} characters)`);
+    console.log(`📄 Content preview: ${content.substring(0, 100)}...\n`);
     
     // Add delay to avoid rate limits
     await new Promise(resolve => setTimeout(resolve, 2000));
