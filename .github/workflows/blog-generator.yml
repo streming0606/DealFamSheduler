@@ -9,14 +9,17 @@ jobs:
   generate-blog:
     runs-on: ubuntu-latest
     
+    permissions:
+      contents: write
+    
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         
       - name: Setup Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
-          node-version: '18'
+          node-version: '20'
           
       - name: Install dependencies
         run: |
@@ -34,5 +37,5 @@ jobs:
         run: |
           git config --global user.name 'Blog Bot'
           git config --global user.email 'bot@thriftmaal.com'
-          git add blog/data/posts.json
-          git diff --quiet && git diff --staged --quiet || (git commit -m "🤖 Auto-generated blog post" && git push)
+          git add blog/data/posts.json .github/scripts/topics.json
+          git diff --quiet && git diff --staged --quiet || (git commit -m "🤖 Auto-generated blog post [skip ci]" && git push)
