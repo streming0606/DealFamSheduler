@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-10-24T18:47:50.899835+05:30",
-  "total_products": 215,
+  "last_updated": "2025-10-24T21:21:28.934176+05:30",
+  "total_products": 217,
   "products": [
+    {
+      "id": "product_night_20251024_155128",
+      "title": "KINGONE Upgraded Stylus Pen, iPad Pencil, Ultra High Precision&Sensitivity, Palm Rejection, Prevents False ON/Off Touch,",
+      "image": "https://m.media-amazon.com/images/I/613jbjQTn8L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B09KGV7WSV?tag=gadgetvill09f-21",
+      "price": "\u20b91,139",
+      "rating": 4.1,
+      "category": "electronics",
+      "asin": "B09KGV7WSV",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-24T21:21:28.934140+05:30",
+      "session_type": "night",
+      "link_index": 172
+    },
+    {
+      "id": "product_night_20251024_155127",
+      "title": "Ambrane Braided Type C Fast Charging Cable (Pack Of 2) Unbreakable 3A 1.5M For Smartphones,Tablets,Laptops & Other Type ",
+      "image": "https://m.media-amazon.com/images/I/71TO6AigwDL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CCRZWCBN?tag=gadgetvill09f-21",
+      "price": "\u20b9199",
+      "rating": 4.0,
+      "category": "electronics",
+      "asin": "B0CCRZWCBN",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-24T21:21:27.615272+05:30",
+      "session_type": "night",
+      "link_index": 172
+    },
     {
       "id": "product_morning_20251024_131750",
       "title": "Fire-Boltt Rise Smart Watch with 1.85\u201d HD Display, Metal Body, Bluetooth Calling, AI Voice Assistant, 120 Sports Modes, ",
