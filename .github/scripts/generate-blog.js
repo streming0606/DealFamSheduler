@@ -14,13 +14,23 @@ if (!API_KEY) {
   process.exit(1);
 }
 
+console.log('✅ API Key found');
+
 const genAI = new GoogleGenerativeAI(API_KEY);
 
-// CRITICAL FIX: Use gemini-1.5-flash instead of gemini-1.5-pro
-// gemini-1.5-flash is more reliable and doesn't require v1beta API
+// CRITICAL FIX: Use the correct model name as of October 2025
+// Options: 'gemini-2.0-flash' or 'gemini-flash-latest'
 const model = genAI.getGenerativeModel({ 
-  model: 'gemini-1.5-flash'
+  model: 'gemini-2.0-flash',
+  generationConfig: {
+    temperature: 0.9,
+    topP: 0.95,
+    topK: 40,
+    maxOutputTokens: 8192,
+  }
 });
+
+console.log('✅ Model initialized: gemini-2.0-flash');
 
 // Helper function to generate slug
 function generateSlug(title) {
@@ -33,7 +43,7 @@ function generateSlug(title) {
 // Helper function to calculate read time
 function calculateReadTime(content) {
   const wordsPerMinute = 200;
-  const wordCount = content.replace(/<[^>]*>/g, ' ').split(/\s+/).length;
+  const wordCount = content.replace(/<[^>]*>/g, ' ').split(/\s+/).filter(w => w.length > 0).length;
   const minutes = Math.ceil(wordCount / wordsPerMinute);
   return `${minutes} min read`;
 }
@@ -52,65 +62,89 @@ Requirements:
 2. Create 100% original content with zero plagiarism
 3. Optimize for SEO with proper keyword placement (but avoid keyword stuffing)
 4. Include practical tips, actionable advice, and real value for readers
-5. Use HTML formatting with <h2>, <h3>, <p>, <ul>, <li>, <strong>, <a> tags
+5. Use HTML formatting ONLY with these tags: <h2>, <h3>, <p>, <ul>, <li>, <strong>, <a>
 6. Include emojis where appropriate to make content engaging
 7. Length: 800-1200 words
-8. Include internal link to https://thriftmaal.com in the content naturally
-9. Structure: Introduction → Main sections with subheadings → Pro tips → Conclusion
+8. Include ONE internal link to https://thriftmaal.com naturally in the content
+9. Structure: Introduction paragraph → Main sections with <h2> or <h3> subheadings → Pro tips section → Brief conclusion
 10. Make it rank-worthy on Google with proper heading hierarchy and content structure
 
-DO NOT include any AI-sounding phrases like "in conclusion", "in summary", "it's important to note"
-DO NOT use generic templates - make each sentence unique and valuable
-DO include specific examples, numbers, dates, and actionable insights
+DO NOT include:
+- Any AI-sounding phrases like "in conclusion", "in summary", "it's important to note"
+- Generic templates
+- Any markdown formatting (NO ** or # symbols)
+- External links except the one ThriftMaal.com link
 
-Generate ONLY the HTML content body without any meta descriptions or titles. Start directly with content.`;
+DO include:
+- Specific examples, numbers, dates where relevant
+- Actionable insights
+- Natural keyword integration
+- Emojis in headings and content
+
+Generate ONLY the HTML content body. Start directly with content (no title needed - we have that already).`;
 
   try {
+    console.log('⏳ Calling Gemini API...');
     const result = await model.generateContent(prompt);
-    const response = await result.response;
+    const response = result.response;
     const content = response.text();
-    return content;
+    console.log('✅ Content generated successfully');
+    return content.trim();
   } catch (error) {
     console.error('❌ Error generating blog content:', error.message);
+    if (error.response) {
+      console.error('Response error:', JSON.stringify(error.response, null, 2));
+    }
     throw error;
   }
 }
 
 // Function to generate AI summary
 async function generateAISummary(content, title) {
-  const prompt = `Summarize the following blog post in 1-2 concise sentences (max 150 characters):
+  const cleanContent = content.replace(/<[^>]*>/g, ' ').substring(0, 800);
+  const prompt = `Summarize this blog post in ONE sentence (maximum 120 characters):
 Title: ${title}
-Content: ${content.replace(/<[^>]*>/g, ' ').substring(0, 1000)}...
+Content: ${cleanContent}
 
-Provide only the summary, nothing else.`;
+Provide ONLY the summary sentence, nothing else.`;
 
   try {
     const result = await model.generateContent(prompt);
-    const response = await result.response;
-    return response.text().trim();
+    const response = result.response;
+    let summary = response.text().trim();
+    // Ensure it's not too long
+    if (summary.length > 150) {
+      summary = summary.substring(0, 147) + '...';
+    }
+    return summary;
   } catch (error) {
     console.error('⚠️ Warning: Could not generate AI summary:', error.message);
-    return `${title} - Expert guide and tips from ThriftMaal`;
+    return `Complete guide to ${title}. Expert insights from ThriftMaal.`;
   }
 }
 
 // Function to generate article summary
 async function generateSummary(title, keywords) {
-  const prompt = `Write a compelling 150-character summary for a blog post titled "${title}" with focus on keywords: ${keywords}. Make it engaging and SEO-friendly. Provide only the summary text.`;
+  const prompt = `Write a compelling summary (120-140 characters) for a blog post titled "${title}" focusing on: ${keywords}. Make it engaging and SEO-friendly. Output ONLY the summary text.`;
   
   try {
     const result = await model.generateContent(prompt);
-    const response = await result.response;
-    return response.text().trim();
+    const response = result.response;
+    let summary = response.text().trim();
+    // Ensure it's not too long
+    if (summary.length > 150) {
+      summary = summary.substring(0, 147) + '...';
+    }
+    return summary;
   } catch (error) {
     console.error('⚠️ Warning: Could not generate summary:', error.message);
-    return `Complete guide to ${title}. Expert tips and insights from ThriftMaal.`;
+    return `Complete guide to ${title}. Expert tips and deals from ThriftMaal.`;
   }
 }
 
-// Function to get random Unsplash image URL based on topic
+// Function to get Unsplash image URL based on category
 function getImageURL(category) {
-  const imageKeywords = {
+  const imageIds = {
     'Shopping Guide': '1607082348824-0a96f2a4b9da',
     'Tech Guide': '1519389950473-47ba0277781c',
     'Fashion': '1445205170230-053b83016050',
@@ -118,17 +152,18 @@ function getImageURL(category) {
     'Electronics': '1498049794561-7780e7231661'
   };
   
-  const photoId = imageKeywords[category] || '1607082348824-0a96f2a4b9da';
+  const photoId = imageIds[category] || '1607082348824-0a96f2a4b9da';
   return `https://images.unsplash.com/photo-${photoId}?w=800`;
 }
 
 // Main function
 async function main() {
   try {
-    console.log('🤖 Starting blog post generation...');
+    console.log('🤖 Starting blog post generation...\n');
     
     // Read topics file
     const topicsPath = path.join(__dirname, 'topics.json');
+    console.log('📂 Topics path:', topicsPath);
     
     if (!fs.existsSync(topicsPath)) {
       console.error('❌ topics.json file not found at:', topicsPath);
@@ -136,9 +171,11 @@ async function main() {
     }
     
     const topicsData = JSON.parse(fs.readFileSync(topicsPath, 'utf8'));
+    console.log('✅ Topics file loaded');
     
     // Read existing posts
     const postsPath = path.join(__dirname, '../../blog/data/posts.json');
+    console.log('📂 Posts path:', postsPath);
     
     if (!fs.existsSync(postsPath)) {
       console.error('❌ posts.json file not found at:', postsPath);
@@ -146,25 +183,37 @@ async function main() {
     }
     
     const existingPosts = JSON.parse(fs.readFileSync(postsPath, 'utf8'));
+    console.log('✅ Posts file loaded');
     
-    // Find unprocessed topic (first topic in the list)
+    // Find unprocessed topic
     if (!topicsData.topics || topicsData.topics.length === 0) {
-      console.log('⚠️ No topics found in topics.json');
+      console.log('⚠️ No topics found in topics.json - nothing to generate');
       process.exit(0);
     }
     
     const topic = topicsData.topics[0];
-    console.log(`📝 Generating post: ${topic.title}`);
+    console.log(`\n📝 Generating post: "${topic.title}"`);
+    console.log(`📁 Category: ${topic.category}`);
+    console.log(`🔑 Keywords: ${topic.keywords}\n`);
     
     // Generate blog content
-    console.log('⏳ Generating content...');
+    console.log('Step 1/3: Generating main content...');
     const content = await generateBlogPost(topic);
+    console.log(`✅ Content generated (${content.length} characters)\n`);
     
-    console.log('⏳ Generating summary...');
+    // Add delay to avoid rate limits
+    await new Promise(resolve => setTimeout(resolve, 2000));
+    
+    console.log('Step 2/3: Generating summary...');
     const summary = await generateSummary(topic.title, topic.keywords);
+    console.log(`✅ Summary: ${summary}\n`);
     
-    console.log('⏳ Generating AI summary...');
+    // Add delay to avoid rate limits
+    await new Promise(resolve => setTimeout(resolve, 2000));
+    
+    console.log('Step 3/3: Generating AI summary...');
     const aiSummary = await generateAISummary(content, topic.title);
+    console.log(`✅ AI Summary: ${aiSummary}\n`);
     
     // Create post object
     const today = new Date();
@@ -201,13 +250,17 @@ async function main() {
     fs.writeFileSync(topicsPath, JSON.stringify(topicsData, null, 2));
     console.log('✅ Topic removed from topics.json');
     
-    console.log('🎉 Blog generation completed successfully!');
-    console.log(`📄 Generated: ${newPost.title}`);
+    console.log('\n🎉 Blog generation completed successfully!');
+    console.log(`📄 Title: ${newPost.title}`);
     console.log(`🔗 Slug: ${newPost.slug}`);
+    console.log(`📅 Date: ${newPost.date}`);
+    console.log(`⏱️ Read time: ${newPost.readTime}`);
     
   } catch (error) {
-    console.error('❌ Error generating blog:', error);
-    console.error('Error details:', error.stack);
+    console.error('\n❌ Fatal error:', error.message);
+    if (error.stack) {
+      console.error('Stack trace:', error.stack);
+    }
     process.exit(1);
   }
 }
