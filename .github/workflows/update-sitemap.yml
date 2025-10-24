@@ -1,11 +1,25 @@
 name: Update Sitemap on New Blog Post
 
+# Multiple trigger options for reliability
 on:
+  # Trigger when posts.json changes
   push:
     branches:
       - main
     paths:
       - 'blog/data/posts.json'
+  
+  # Manual trigger option (backup)
+  workflow_dispatch:
+    inputs:
+      debug:
+        description: 'Enable debug mode'
+        required: false
+        default: 'false'
+
+# CRITICAL FIX: Grant write permissions
+permissions:
+  contents: write
 
 jobs:
   update-sitemap:
@@ -16,60 +30,93 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          token: ${{ secrets.GITHUB_TOKEN }}
       
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.11'
       
-      - name: Check if posts.json was modified
-        id: check_changes
+      - name: Debug - Show repository structure
         run: |
-          # Check if posts.json has actual changes
-          if git diff HEAD~1 HEAD --name-only | grep -q "blog/data/posts.json"; then
-            echo "posts_changed=true" >> $GITHUB_OUTPUT
-            echo "✅ posts.json has been modified"
+          echo "🔍 Repository structure:"
+          ls -la
+          echo ""
+          echo "📁 Blog directory:"
+          ls -la blog/ || echo "blog/ not found"
+          echo ""
+          echo "📁 Blog data directory:"
+          ls -la blog/data/ || echo "blog/data/ not found"
+      
+      - name: Debug - Check posts.json
+        run: |
+          echo "📄 Checking posts.json..."
+          if [ -f "blog/data/posts.json" ]; then
+            echo "✅ posts.json exists"
+            echo "📊 File size: $(wc -c < blog/data/posts.json) bytes"
+            echo "📝 First 200 characters:"
+            head -c 200 blog/data/posts.json
           else
-            echo "posts_changed=false" >> $GITHUB_OUTPUT
-            echo "ℹ️ posts.json not modified, skipping sitemap update"
+            echo "❌ posts.json NOT found"
+            exit 1
           fi
       
       - name: Generate Sitemap
-        if: steps.check_changes.outputs.posts_changed == 'true'
         run: |
           echo "🚀 Running sitemap generation..."
           python .github/scripts/update-sitemap.py
       
-      - name: Check for sitemap changes
-        if: steps.check_changes.outputs.posts_changed == 'true'
-        id: check_sitemap
+      - name: Verify sitemap was created
         run: |
+          echo "🔍 Checking if sitemap was created/updated..."
+          if [ -f "blog/sitemap.xml" ]; then
+            echo "✅ sitemap.xml exists"
+            echo "📊 File size: $(wc -c < blog/sitemap.xml) bytes"
+            echo "📝 First 20 lines:"
+            head -n 20 blog/sitemap.xml
+          else
+            echo "❌ sitemap.xml NOT found"
+            exit 1
+          fi
+      
+      - name: Check for changes
+        id: check_changes
+        run: |
+          git diff --exit-code blog/sitemap.xml || echo "sitemap_changed=true" >> $GITHUB_OUTPUT
           if git diff --quiet blog/sitemap.xml; then
             echo "sitemap_changed=false" >> $GITHUB_OUTPUT
             echo "ℹ️ No changes to sitemap.xml"
           else
             echo "sitemap_changed=true" >> $GITHUB_OUTPUT
             echo "✅ sitemap.xml has been updated"
+            echo "📝 Changes:"
+            git diff blog/sitemap.xml
           fi
       
       - name: Commit and push sitemap
-        if: steps.check_sitemap.outputs.sitemap_changed == 'true'
+        if: steps.check_changes.outputs.sitemap_changed == 'true'
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git add blog/sitemap.xml
-          git commit -m "🤖 Auto-update sitemap.xml - New blog post added"
+          git commit -m "🤖 Auto-update sitemap.xml - New blog post added [$(date +'%Y-%m-%d %H:%M:%S')]"
           git push
       
       - name: Summary
-        if: steps.check_changes.outputs.posts_changed == 'true'
         run: |
           echo "### 📊 Sitemap Update Summary" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
-          if [ "${{ steps.check_sitemap.outputs.sitemap_changed }}" == "true" ]; then
-            echo "✅ Sitemap successfully updated and pushed!" >> $GITHUB_STEP_SUMMARY
-            echo "🔗 Updated sitemap: https://thriftmaal.com/blog/sitemap.xml" >> $GITHUB_STEP_SUMMARY
+          if [ "${{ steps.check_changes.outputs.sitemap_changed }}" == "true" ]; then
+            echo "✅ **Sitemap successfully updated and pushed!**" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "🔗 View sitemap: https://thriftmaal.com/blog/sitemap.xml" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "⏰ Updated at: $(date +'%Y-%m-%d %H:%M:%S UTC')" >> $GITHUB_STEP_SUMMARY
           else
             echo "ℹ️ Sitemap generated but no changes detected" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "This means the sitemap already contained all posts." >> $GITHUB_STEP_SUMMARY
           fi
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "---" >> $GITHUB_STEP_SUMMARY
+          echo "Triggered by: ${{ github.event_name }}" >> $GITHUB_STEP_SUMMARY
+          echo "Branch: ${{ github.ref }}" >> $GITHUB_STEP_SUMMARY
