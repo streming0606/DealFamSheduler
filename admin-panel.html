@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Admin Panel - Thrift Maal</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            background: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .admin-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .admin-header h1 {
+            font-size: 1.8rem;
+            margin-bottom: 5px;
+        }
+        
+        .admin-header p {
+            opacity: 0.9;
+            font-size: 0.95rem;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.08);
+            margin-bottom: 30px;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #555;
+        }
+        
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #e2e8f0;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-family: inherit;
+            transition: border-color 0.3s;
+        }
+        
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+        
+        .form-group textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+        
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        
+        .btn {
+            padding: 12px 30px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .btn-primary {
+            background: #667eea;
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            background: #5568d3;
+            transform: translateY(-2px);
+        }
+        
+        .btn-secondary {
+            background: #f1f5f9;
+            color: #555;
+        }
+        
+        .btn-secondary:hover {
+            background: #e2e8f0;
+        }
+        
+        .output-box {
+            background: #1e293b;
+            color: #e2e8f0;
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9rem;
+            line-height: 1.6;
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        
+        .helper-text {
+            font-size: 0.85rem;
+            color: #718096;
+            margin-top: 5px;
+        }
+        
+        .tag-input-wrapper {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+        
+        .tag-input-wrapper input {
+            flex: 1;
+        }
+        
+        .tags-display {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 10px;
+        }
+        
+        .tag-item {
+            background: #667eea;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .tag-item .remove {
+            cursor: pointer;
+            opacity: 0.8;
+        }
+        
+        .tag-item .remove:hover {
+            opacity: 1;
+        }
+        
+        .success-message {
+            background: #10b981;
+            color: white;
+            padding: 15px 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            display: none;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .success-message.show {
+            display: flex;
+        }
+        
+        @media (max-width: 768px) {
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="admin-header">
+        <div class="container">
+            <h1><i class="fas fa-pen-fancy"></i> Blog Post Creator</h1>
+            <p>Create SEO-optimized blog posts for Thrift Maal</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="success-message" id="success-message">
+            <i class="fas fa-check-circle"></i>
+            <span>Blog post JSON generated successfully! Copy and add to blog-data.json</span>
+        </div>
+
+        <div class="card">
+            <h2 style="margin-bottom: 20px;">📝 Blog Post Details</h2>
+            
+            <form id="blog-form">
+                <div class="form-group">
+                    <label for="title">Post Title *</label>
+                    <input type="text" id="title" required placeholder="e.g., Big Billion Days 2025: Complete Shopping Guide">
+                    <p class="helper-text">Keep it 50-60 characters for SEO. Include main keyword.</p>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="category">Category *</label>
+                        <select id="category" required>
+                            <option value="">Select Category</option>
+                            <option value="shopping-tips">Shopping Tips</option>
+                            <option value="product-guides">Product Guides</option>
+                            <option value="deals-offers">Deals & Offers</option>
+                            <option value="student-discounts">Student Discounts</option>
+                            <option value="festival-sales">Festival Sales</option>
+                            <option value="brand-reviews">Brand Reviews</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="author">Author Name *</label>
+                        <input type="text" id="author" required placeholder="e.g., Thrift Maal Team">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="excerpt">Excerpt (Meta Description) *</label>
+                    <textarea id="excerpt" required placeholder="Short description for search engines and social media"></textarea>
+                    <p class="helper-text">Keep it 150-160 characters for optimal SEO.</p>
+                </div>
+
+                <div class="form-group">
+                    <label for="image">Featured Image URL *</label>
+                    <input type="url" id="image" required placeholder="https://images.unsplash.com/photo-xxxxx?w=800&q=80">
+                    <p class="helper-text">Use external URLs from Unsplash, Pexels, or your CDN.</p>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="readTime">Reading Time (minutes) *</label>
+                        <input type="number" id="readTime" required placeholder="8" min="1">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="publishDate">Publish Date *</label>
+                        <input type="date" id="publishDate" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="tags">Tags</label>
+                    <div class="tag-input-wrapper">
+                        <input type="text" id="tag-input" placeholder="Enter a tag and press Add">
+                        <button type="button" class="btn btn-secondary" onclick="addTag()">
+                            <i class="fas fa-plus"></i> Add Tag
+                        </button>
+                    </div>
+                    <div class="tags-display" id="tags-display"></div>
+                    <p class="helper-text">Add 3-7 relevant tags for better discoverability.</p>
+                </div>
+
+                <div class="form-group">
+                    <label for="content">Blog Post Content (HTML) *</label>
+                    <textarea id="content" required placeholder="<p>Your blog content here...</p>"></textarea>
+                    <p class="helper-text">Write in HTML format with proper headings (h2, h3), paragraphs, lists, etc.</p>
+                </div>
+
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" id="featured" style="width: auto; margin-right: 10px;">
+                        Mark as Featured Post
+                    </label>
+                </div>
+
+                <div style="display: flex; gap: 15px; margin-top: 30px;">
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-code"></i> Generate JSON
+                    </button>
+                    <button type="button" class="btn btn-secondary" onclick="resetForm()">
+                        <i class="fas fa-redo"></i> Reset Form
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <div class="card">
+            <h2 style="margin-bottom: 20px;">📄 Generated JSON Output</h2>
+            <p style="margin-bottom: 15px; color: #718096;">Copy this JSON and add it to your <code>data/blog-data.json</code> file.</p>
+            <div class="output-box" id="output">
+                <em>Fill out the form above and click "Generate JSON" to see the output here.</em>
+            </div>
+            <button class="btn btn-primary" style="margin-top: 15px;" onclick="copyToClipboard()">
+                <i class="fas fa-copy"></i> Copy to Clipboard
+            </button>
+        </div>
+
+        <div class="card">
+            <h2 style="margin-bottom: 15px;">💡 Quick Tips</h2>
+            <ul style="line-height: 2; color: #555; padding-left: 20px;">
+                <li>Use <strong>external image URLs</strong> to avoid bloating your server</li>
+                <li>Write titles with <strong>50-60 characters</strong> for better SEO</li>
+                <li>Meta descriptions should be <strong>150-160 characters</strong></li>
+                <li>Include <strong>primary keyword</strong> in title, excerpt, and first paragraph</li>
+                <li>Use <strong>H2 and H3 headings</strong> to structure your content</li>
+                <li>Add <strong>3-7 relevant tags</strong> for better discoverability</li>
+                <li>Aim for <strong>1,500-2,500 words</strong> for comprehensive articles</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        let tags = [];
+        let nextId = 13; // Start from 13 as sample data has 12 posts
+
+        // Generate slug from title
+        function generateSlug(title) {
+            return title.toLowerCase()
+                .replace(/[^\w\s-]/g, '')
+                .replace(/\s+/g, '-')
+                .replace(/--+/g, '-')
+                .trim();
+        }
+
+        // Add tag
+        function addTag() {
+            const tagInput = document.getElementById('tag-input');
+            const tag = tagInput.value.trim();
+            
+            if (tag && !tags.includes(tag)) {
+                tags.push(tag);
+                renderTags();
+                tagInput.value = '';
+            }
+        }
+
+        // Render tags
+        function renderTags() {
+            const tagsDisplay = document.getElementById('tags-display');
+            tagsDisplay.innerHTML = tags.map(tag => `
+                <span class="tag-item">
+                    ${tag}
+                    <span class="remove" onclick="removeTag('${tag}')">
+                        <i class="fas fa-times"></i>
+                    </span>
+                </span>
+            `).join('');
+        }
+
+        // Remove tag
+        function removeTag(tag) {
+            tags = tags.filter(t => t !== tag);
+            renderTags();
+        }
+
+        // Handle form submission
+        document.getElementById('blog-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const title = document.getElementById('title').value;
+            const category = document.getElementById('category').value;
+            const author = document.getElementById('author').value;
+            const excerpt = document.getElementById('excerpt').value;
+            const image = document.getElementById('image').value;
+            const readTime = parseInt(document.getElementById('readTime').value);
+            const publishDate = document.getElementById('publishDate').value;
+            const content = document.getElementById('content').value;
+            const featured = document.getElementById('featured').checked;
+            
+            const slug = generateSlug(title);
+            const url = `/blog/${category}/${slug}`;
+            
+            const blogPost = {
+                id: nextId,
+                slug: slug,
+                title: title,
+                excerpt: excerpt,
+                image: image,
+                category: category,
+                author: author,
+                publishDate: publishDate,
+                updatedDate: publishDate,
+                readTime: readTime,
+                views: 0,
+                trending: 50,
+                featured: featured,
+                tags: tags,
+                url: url,
+                content: content
+            };
+            
+            const output = document.getElementById('output');
+            output.textContent = JSON.stringify(blogPost, null, 2);
+            
+            // Show success message
+            const successMessage = document.getElementById('success-message');
+            successMessage.classList.add('show');
+            setTimeout(() => {
+                successMessage.classList.remove('show');
+            }, 5000);
+            
+            // Increment ID for next post
+            nextId++;
+        });
+
+        // Copy to clipboard
+        function copyToClipboard() {
+            const output = document.getElementById('output');
+            const text = output.textContent;
+            
+            if (text && text !== 'Fill out the form above and click "Generate JSON" to see the output here.') {
+                navigator.clipboard.writeText(text).then(() => {
+                    alert('JSON copied to clipboard! You can now paste it into blog-data.json');
+                });
+            } else {
+                alert('Please generate JSON first by filling out the form.');
+            }
+        }
+
+        // Reset form
+        function resetForm() {
+            document.getElementById('blog-form').reset();
+            tags = [];
+            renderTags();
+            document.getElementById('output').innerHTML = '<em>Fill out the form above and click "Generate JSON" to see the output here.</em>';
+        }
+
+        // Set today's date as default
+        document.getElementById('publishDate').valueAsDate = new Date();
+    </script>
+</body>
+</html>
