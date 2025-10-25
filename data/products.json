@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-10-25T10:16:19.116794+05:30",
-  "total_products": 219,
+  "last_updated": "2025-10-25T13:20:05.130869+05:30",
+  "total_products": 221,
   "products": [
+    {
+      "id": "product_afternoon_20251025_075005",
+      "title": "Resonate RouterUPS\u00ae Gen2 | Original Router UPS for 12V WiFi Router & Modem (Supports up to 2A) (7800mAh - 95% Longer Pow",
+      "image": "https://m.media-amazon.com/images/I/61ANbUDel-L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B017NC2IPM?tag=gadgetvill09f-21",
+      "price": "\u20b91,649",
+      "rating": 4.1,
+      "category": "electronics",
+      "asin": "B017NC2IPM",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-25T13:20:05.130836+05:30",
+      "session_type": "afternoon",
+      "link_index": 176
+    },
+    {
+      "id": "product_afternoon_20251025_075003",
+      "title": "Amazon Basics Engineered Wood Foldable Laptop Table with Cup Holder, Tablet Groove and Mini Drawer (60L x 40W x 26H cm, ",
+      "image": "https://m.media-amazon.com/images/I/411lql4dHlL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0BP71RWGF?tag=gadgetvill09f-21",
+      "price": "\u20b9649",
+      "rating": 4.1,
+      "category": "electronics",
+      "asin": "B0BP71RWGF",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-25T13:20:03.334026+05:30",
+      "session_type": "afternoon",
+      "link_index": 176
+    },
     {
       "id": "product_morning_20251025_044619",
       "title": "ROMITAZ Ailkin USB To Lightning Cable 27W [Mfi Certified + 2 Years Warranty*] Fast Charger Cable For iPhone 14/13/12/11/",
