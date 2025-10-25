@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-10-25T18:32:53.693861+05:30",
-  "total_products": 223,
+  "last_updated": "2025-10-25T21:20:33.179594+05:30",
+  "total_products": 225,
   "products": [
+    {
+      "id": "product_night_20251025_155033",
+      "title": "Kanget EHS61 Wired in Ear Earphones Wired Earphones True Sound Hands-Free with 3.5mm Jack & with Mic for All Samsung Sma",
+      "image": "https://m.media-amazon.com/images/I/51xndJnf0uL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07X9HN89S?tag=gadgetvill09f-21",
+      "price": "\u20b9219",
+      "rating": 3.2,
+      "category": "electronics",
+      "asin": "B07X9HN89S",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-25T21:20:33.179569+05:30",
+      "session_type": "night",
+      "link_index": 180
+    },
+    {
+      "id": "product_night_20251025_155030",
+      "title": "Portronics Konnect X 60W 6A USB-A to Type C Fast Charging Cable With WARP/DASH/VOOC/SuperVOOC/FLASH Charging Support, Co",
+      "image": "https://m.media-amazon.com/images/I/61w9SDINq6L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CSNKC44N?tag=gadgetvill09f-21",
+      "price": "\u20b9149",
+      "rating": 4.2,
+      "category": "electronics",
+      "asin": "B0CSNKC44N",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-25T21:20:30.910069+05:30",
+      "session_type": "night",
+      "link_index": 180
+    },
     {
       "id": "product_morning_20251025_130253",
       "title": "Duracell Ultra AA Battery, pack of 8, High-Drain Devices, Digital Camera, Toy, Electric Toothbrush",
