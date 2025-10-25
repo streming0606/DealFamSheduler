@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-10-25T13:20:05.130869+05:30",
-  "total_products": 221,
+  "last_updated": "2025-10-25T18:32:53.693861+05:30",
+  "total_products": 223,
   "products": [
+    {
+      "id": "product_morning_20251025_130253",
+      "title": "Duracell Ultra AA Battery, pack of 8, High-Drain Devices, Digital Camera, Toy, Electric Toothbrush",
+      "image": "https://m.media-amazon.com/images/I/71Bye4xoosL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B014SZO90Y?tag=gadgetvill09f-21",
+      "price": "\u20b9344",
+      "rating": 4.5,
+      "category": "electronics",
+      "asin": "B014SZO90Y",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-25T18:32:53.693826+05:30",
+      "session_type": "morning",
+      "link_index": 178
+    },
+    {
+      "id": "product_morning_20251025_130249",
+      "title": "YOUVA Navneet Soft Bound Long Book/Soft cover Notebook for Students | Single Line | 172 Pages | Pack of 6 | Regular Size",
+      "image": "https://m.media-amazon.com/images/I/81R3CbZguyL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07GWSP98R?tag=gadgetvill09f-21",
+      "price": "\u20b9300",
+      "rating": 4.2,
+      "category": "electronics",
+      "asin": "B07GWSP98R",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-25T18:32:49.597100+05:30",
+      "session_type": "morning",
+      "link_index": 178
+    },
     {
       "id": "product_afternoon_20251025_075005",
       "title": "Resonate RouterUPS\u00ae Gen2 | Original Router UPS for 12V WiFi Router & Modem (Supports up to 2A) (7800mAh - 95% Longer Pow",
