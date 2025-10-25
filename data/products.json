@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-10-24T21:21:28.934176+05:30",
-  "total_products": 217,
+  "last_updated": "2025-10-25T10:16:19.116794+05:30",
+  "total_products": 219,
   "products": [
+    {
+      "id": "product_morning_20251025_044619",
+      "title": "ROMITAZ Ailkin USB To Lightning Cable 27W [Mfi Certified + 2 Years Warranty*] Fast Charger Cable For iPhone 14/13/12/11/",
+      "image": "https://m.media-amazon.com/images/I/71Q03oP48wL._AC_UY218_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0F5W1TTCH?tag=gadgetvill09f-21",
+      "price": "\u20b9549",
+      "rating": 4.2,
+      "category": "electronics",
+      "asin": "B0F5W1TTCH",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-25T10:16:19.116768+05:30",
+      "session_type": "morning",
+      "link_index": 174
+    },
+    {
+      "id": "product_morning_20251025_044616",
+      "title": "Fire-Boltt Phoenix Pro Smart Watch 1.39\u201d HD Display, Bluetooth Calling, AI Voice Assistant, 120 Sports Modes, IP67 Water",
+      "image": "https://m.media-amazon.com/images/I/61Y8u2y5XOL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0BRKXXPZ7?tag=gadgetvill09f-21",
+      "price": "\u20b91,399",
+      "rating": 3.9,
+      "category": "fashion",
+      "asin": "B0BRKXXPZ7",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-25T10:16:16.836007+05:30",
+      "session_type": "morning",
+      "link_index": 174
+    },
     {
       "id": "product_night_20251024_155128",
       "title": "KINGONE Upgraded Stylus Pen, iPad Pencil, Ultra High Precision&Sensitivity, Palm Rejection, Prevents False ON/Off Touch,",
