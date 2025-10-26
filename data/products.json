@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-10-26T18:34:07.352553+05:30",
-  "total_products": 231,
+  "last_updated": "2025-10-26T21:20:38.245132+05:30",
+  "total_products": 233,
   "products": [
+    {
+      "id": "product_night_20251026_155038",
+      "title": "Red Lemon Dhoom D110 Sports Neckband,Buds, Vibration Alert, Bluetooth Wireless Earphone with Mic, 8hrs Battery & BT v5.0",
+      "image": "https://m.media-amazon.com/images/I/71DhZFIK5LL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07Y38VRCV?tag=gadgetvill09f-21",
+      "price": "\u20b91,999",
+      "rating": 3.9,
+      "category": "electronics",
+      "asin": "B07Y38VRCV",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-26T21:20:38.245102+05:30",
+      "session_type": "night",
+      "link_index": 188
+    },
+    {
+      "id": "product_night_20251026_155036",
+      "title": "Lexingham 3.5 Jack Earphones Share Adaptor",
+      "image": "https://m.media-amazon.com/images/I/61HH1Vb5LIL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B083G75X2B?tag=gadgetvill09f-21",
+      "price": "\u20b9557",
+      "rating": 2.9,
+      "category": "electronics",
+      "asin": "B083G75X2B",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-26T21:20:36.233207+05:30",
+      "session_type": "night",
+      "link_index": 188
+    },
     {
       "id": "product_morning_20251026_130407",
       "title": "JaxKing VMware Workstation 17 Pro CD Key (Lifetime / 12 Devices) (Instant Delivery)",
