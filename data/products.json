@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-10-26T13:19:44.110803+05:30",
-  "total_products": 229,
+  "last_updated": "2025-10-26T18:34:07.352553+05:30",
+  "total_products": 231,
   "products": [
+    {
+      "id": "product_morning_20251026_130407",
+      "title": "JaxKing VMware Workstation 17 Pro CD Key (Lifetime / 12 Devices) (Instant Delivery)",
+      "image": "https://m.media-amazon.com/images/I/61toa3UyNHL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B08DH9LVXW?tag=gadgetvill09f-21",
+      "price": "\u20b91,499",
+      "rating": 3.2,
+      "category": "electronics",
+      "asin": "B08DH9LVXW",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-26T18:34:07.352528+05:30",
+      "session_type": "morning",
+      "link_index": 186
+    },
+    {
+      "id": "product_morning_20251026_130404",
+      "title": "Johra Yison Series CX300 Magnetic Deep Bass Hi-Fi Stereo Sound in-Ear Earphone with Mic for Smartphones, iPhones, Featur",
+      "image": "https://m.media-amazon.com/images/I/61OmH3JvTVL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07JBRDQB3?tag=gadgetvill09f-21",
+      "price": "\u20b9499",
+      "rating": 3.4,
+      "category": "electronics",
+      "asin": "B07JBRDQB3",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-26T18:34:04.508690+05:30",
+      "session_type": "morning",
+      "link_index": 186
+    },
     {
       "id": "product_afternoon_20251026_074944",
       "title": "Amazon Product B07S9S86BF",
