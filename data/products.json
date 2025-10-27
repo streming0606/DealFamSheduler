@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-10-26T21:20:38.245132+05:30",
-  "total_products": 233,
+  "last_updated": "2025-10-27T10:23:06.529612+05:30",
+  "total_products": 235,
   "products": [
+    {
+      "id": "product_morning_20251027_045306",
+      "title": "Meizu Flow 3-Driver Hybrid Earphones (Silver),in-Ear,Wired",
+      "image": "https://m.media-amazon.com/images/I/71UBc9JGIcL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B01GXHUOKO?tag=gadgetvill09f-21",
+      "price": "\u20b95,999",
+      "rating": 4.2,
+      "category": "electronics",
+      "asin": "B01GXHUOKO",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-27T10:23:06.529578+05:30",
+      "session_type": "morning",
+      "link_index": 190
+    },
+    {
+      "id": "product_morning_20251027_045304",
+      "title": "Yootech 360\u00b0 Rotation, Foldable Design Mobile Stand with Stable Metalic Round Base, Multiple Height & Angle adjustments ",
+      "image": "https://m.media-amazon.com/images/I/51K+185gIZL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FNDQ5V2C?tag=gadgetvill09f-21",
+      "price": "\u20b9449",
+      "rating": 3.3,
+      "category": "electronics",
+      "asin": "B0FNDQ5V2C",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-27T10:23:04.956427+05:30",
+      "session_type": "morning",
+      "link_index": 190
+    },
     {
       "id": "product_night_20251026_155038",
       "title": "Red Lemon Dhoom D110 Sports Neckband,Buds, Vibration Alert, Bluetooth Wireless Earphone with Mic, 8hrs Battery & BT v5.0",
