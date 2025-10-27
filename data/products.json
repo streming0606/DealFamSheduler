@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-10-27T18:48:40.732821+05:30",
-  "total_products": 239,
+  "last_updated": "2025-10-27T21:20:52.322811+05:30",
+  "total_products": 241,
   "products": [
+    {
+      "id": "product_night_20251027_155052",
+      "title": "PULOKA Universal Mobile PU Leather Holster Pouch Belt Loop Carry Two Phone Upto 6.5 inch and Cash Card ID Proof and Acce",
+      "image": "https://m.media-amazon.com/images/I/71UYC6+e-UL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B08P18Z294?tag=gadgetvill09f-21",
+      "price": "\u20b9799",
+      "rating": 3.6,
+      "category": "electronics",
+      "asin": "B08P18Z294",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-27T21:20:52.322787+05:30",
+      "session_type": "night",
+      "link_index": 196
+    },
+    {
+      "id": "product_night_20251027_155050",
+      "title": "ONYC Cloudy Toddlers's First Step Walking Shoes - Sea Green (Unisex for Boys and Girls)",
+      "image": "https://m.media-amazon.com/images/I/61RXVcjF3EL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B079KS7DPJ?tag=gadgetvill09f-21",
+      "price": "\u20b9499",
+      "rating": 4.4,
+      "category": "fashion",
+      "asin": "B079KS7DPJ",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-27T21:20:50.880207+05:30",
+      "session_type": "night",
+      "link_index": 196
+    },
     {
       "id": "product_morning_20251027_131840",
       "title": "Amazon Product B07P29XQR4",
