@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-10-27T10:23:06.529612+05:30",
-  "total_products": 235,
+  "last_updated": "2025-10-27T13:19:47.158270+05:30",
+  "total_products": 237,
   "products": [
+    {
+      "id": "product_afternoon_20251027_074947",
+      "title": "Amazon Product B07QLZQH29",
+      "image": "https://m.media-amazon.com/images/I/B07QLZQH29._AC_SL1500_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07QLZQH29?tag=gadgetvill09f-21",
+      "price": "\u20b9Special Price",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B07QLZQH29",
+      "data_source": "fallback",
+      "posted_date": "2025-10-27T13:19:47.158239+05:30",
+      "session_type": "afternoon",
+      "link_index": 192
+    },
+    {
+      "id": "product_afternoon_20251027_074945",
+      "title": "Philips Avent Hands-Free/ Wearable Single Electric Breast Pump | Hospital Grade Motor | Reflects Baby's Drinking Rhythm ",
+      "image": "https://m.media-amazon.com/images/I/61wkdwUwa5L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B082NN2NK2?tag=gadgetvill09f-21",
+      "price": "\u20b910,899",
+      "rating": 4.3,
+      "category": "electronics",
+      "asin": "B082NN2NK2",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-27T13:19:45.293932+05:30",
+      "session_type": "afternoon",
+      "link_index": 192
+    },
     {
       "id": "product_morning_20251027_045306",
       "title": "Meizu Flow 3-Driver Hybrid Earphones (Silver),in-Ear,Wired",
