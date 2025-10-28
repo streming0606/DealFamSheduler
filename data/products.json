@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-10-28T10:19:03.899984+05:30",
-  "total_products": 243,
+  "last_updated": "2025-10-28T13:19:32.036965+05:30",
+  "total_products": 245,
   "products": [
+    {
+      "id": "product_afternoon_20251028_074932",
+      "title": "realme Buds Q Truly Wireless Bluetooth in Ear Earbuds with Mic (Black)",
+      "image": "https://m.media-amazon.com/images/I/51OLP-JbAcL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B08BPHPNCT?tag=gadgetvill09f-21",
+      "price": "\u20b92,329",
+      "rating": 3.2,
+      "category": "electronics",
+      "asin": "B08BPHPNCT",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-28T13:19:32.036931+05:30",
+      "session_type": "afternoon",
+      "link_index": 200
+    },
+    {
+      "id": "product_afternoon_20251028_074929",
+      "title": "pTron Tangentbeat in Ear Bluetooth 5.0 Wireless Headphones with Mic, Deep Bass, 10mm Drivers, Clear Calls, Dual Pairing,",
+      "image": "https://m.media-amazon.com/images/I/61SAv5VlLWL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B08D77XZX5?tag=gadgetvill09f-21",
+      "price": "\u20b9549",
+      "rating": 3.8,
+      "category": "electronics",
+      "asin": "B08D77XZX5",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-28T13:19:29.774890+05:30",
+      "session_type": "afternoon",
+      "link_index": 200
+    },
     {
       "id": "product_morning_20251028_044903",
       "title": "Meizu Flow 3-Driver Hybrid Earphones (Black),in-Ear,Wired",
