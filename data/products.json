@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-10-28T13:19:32.036965+05:30",
-  "total_products": 245,
+  "last_updated": "2025-10-28T18:47:37.880799+05:30",
+  "total_products": 247,
   "products": [
+    {
+      "id": "product_morning_20251028_131737",
+      "title": "Allen Solly Men Cotton Calf Length Socks",
+      "image": "https://m.media-amazon.com/images/I/614nBhQGO-L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B08R8X6CFP?tag=gadgetvill09f-21",
+      "price": "\u20b9475",
+      "rating": 4.2,
+      "category": "electronics",
+      "asin": "B08R8X6CFP",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-28T18:47:37.880773+05:30",
+      "session_type": "morning",
+      "link_index": 202
+    },
+    {
+      "id": "product_morning_20251028_131735",
+      "title": "pTron Boom Ultima 4D Dual Driver, in Ear Gaming Wired Headphones with in-Line Mic, Volume Control & Passive Noise Cancel",
+      "image": "https://m.media-amazon.com/images/I/61PlUpGmAYL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B08D75R3Z1?tag=gadgetvill09f-21",
+      "price": "\u20b9299",
+      "rating": 3.6,
+      "category": "electronics",
+      "asin": "B08D75R3Z1",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-28T18:47:35.686410+05:30",
+      "session_type": "morning",
+      "link_index": 202
+    },
     {
       "id": "product_afternoon_20251028_074932",
       "title": "realme Buds Q Truly Wireless Bluetooth in Ear Earbuds with Mic (Black)",
