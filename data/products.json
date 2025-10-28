@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-10-27T21:20:52.322811+05:30",
-  "total_products": 241,
+  "last_updated": "2025-10-28T10:19:03.899984+05:30",
+  "total_products": 243,
   "products": [
+    {
+      "id": "product_morning_20251028_044903",
+      "title": "Meizu Flow 3-Driver Hybrid Earphones (Black),in-Ear,Wired",
+      "image": "https://m.media-amazon.com/images/I/71d+06zqnML._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B01GXHUNVE?tag=gadgetvill09f-21",
+      "price": "\u20b94,909",
+      "rating": 2.8,
+      "category": "electronics",
+      "asin": "B01GXHUNVE",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-28T10:19:03.899958+05:30",
+      "session_type": "morning",
+      "link_index": 198
+    },
+    {
+      "id": "product_morning_20251028_044901",
+      "title": "Artful Abode Lippan Art DIY Kit \u2013 Create, Decorate & Celebrate Indian Heritage Beginner-Friendly | Age 8+ | Premium Craf",
+      "image": "https://m.media-amazon.com/images/I/71FnF0aYz+L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07HCNR6R3?tag=gadgetvill09f-21",
+      "price": "\u20b9549",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "home",
+      "asin": "B07HCNR6R3",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-28T10:19:01.457978+05:30",
+      "session_type": "morning",
+      "link_index": 198
+    },
     {
       "id": "product_night_20251027_155052",
       "title": "PULOKA Universal Mobile PU Leather Holster Pouch Belt Loop Carry Two Phone Upto 6.5 inch and Cash Card ID Proof and Acce",
