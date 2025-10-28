@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-10-28T18:47:37.880799+05:30",
-  "total_products": 247,
+  "last_updated": "2025-10-28T21:22:23.438912+05:30",
+  "total_products": 249,
   "products": [
+    {
+      "id": "product_night_20251028_155223",
+      "title": "Jockey 7097 Men's Compact Cotton Stretch Low Show Modern Socks With Stay Fresh Treatment (Pack of 3)",
+      "image": "https://m.media-amazon.com/images/I/31ufb+vJeNL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0B51NNVX8?tag=gadgetvill09f-21",
+      "price": "\u20b9389",
+      "rating": 4.0,
+      "category": "electronics",
+      "asin": "B0B51NNVX8",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-28T21:22:23.438879+05:30",
+      "session_type": "night",
+      "link_index": 204
+    },
+    {
+      "id": "product_night_20251028_155221",
+      "title": "Fitness Mantra\u00ae 12 Pairs Sports Ankle Cotton Socks | Free Size| Breathable| Daily Use| Multicolor| 12 Pairs|",
+      "image": "https://m.media-amazon.com/images/I/81SEVBzTWhL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CTQ4RSMB?tag=gadgetvill09f-21",
+      "price": "\u20b9189",
+      "rating": 4.0,
+      "category": "electronics",
+      "asin": "B0CTQ4RSMB",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-28T21:22:21.571509+05:30",
+      "session_type": "night",
+      "link_index": 204
+    },
     {
       "id": "product_morning_20251028_131737",
       "title": "Allen Solly Men Cotton Calf Length Socks",
