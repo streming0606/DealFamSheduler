@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-10-29T10:21:19.879723+05:30",
-  "total_products": 251,
+  "last_updated": "2025-10-29T13:19:44.087614+05:30",
+  "total_products": 253,
   "products": [
+    {
+      "id": "product_afternoon_20251029_074944",
+      "title": "Peter England Men Classic Cotton Socks",
+      "image": "https://m.media-amazon.com/images/I/61dT7yjFZIL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07JN95S5D?tag=gadgetvill09f-21",
+      "price": "\u20b9429",
+      "rating": 4.1,
+      "category": "electronics",
+      "asin": "B07JN95S5D",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-29T13:19:44.087589+05:30",
+      "session_type": "afternoon",
+      "link_index": 208
+    },
+    {
+      "id": "product_afternoon_20251029_074940",
+      "title": "SWAGR 12 Pairs Sports Cotton Ankle Length Socks for Men, Pack of 12., Assorted",
+      "image": "https://m.media-amazon.com/images/I/81biKixsaDL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DGX12XXV?tag=gadgetvill09f-21",
+      "price": "\u20b9178",
+      "rating": 4.1,
+      "category": "electronics",
+      "asin": "B0DGX12XXV",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-29T13:19:40.044860+05:30",
+      "session_type": "afternoon",
+      "link_index": 208
+    },
     {
       "id": "product_morning_20251029_045119",
       "title": "Allen Solly Men's Cotton Handkerchief (AHW16365E_Multi_One Size)",
