@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-10-29T13:19:44.087614+05:30",
-  "total_products": 253,
+  "last_updated": "2025-10-29T18:49:43.665929+05:30",
+  "total_products": 255,
   "products": [
+    {
+      "id": "product_morning_20251029_131943",
+      "title": "Boldfit Woolen Winter Cap for Women & Men in Winter for Thermal Wear Stylish Soft Caps for Boys & Girls for Warm Wear He",
+      "image": "https://m.media-amazon.com/images/I/71A7tYnlJuL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0BJZ5QYFV?tag=gadgetvill09f-21",
+      "price": "\u20b9399",
+      "rating": 4.0,
+      "category": "fashion",
+      "asin": "B0BJZ5QYFV",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-29T18:49:43.665910+05:30",
+      "session_type": "morning",
+      "link_index": 210
+    },
+    {
+      "id": "product_morning_20251029_131941",
+      "title": "GRAFFY Men's Cotton Handkerchief - Pack of 12 Soft & Durable Hankies for Men | White Handkerchief with Color Border | Pu",
+      "image": "https://m.media-amazon.com/images/I/71bCgJOGvaL._AC_UY218_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DZ1847ZB?tag=gadgetvill09f-21",
+      "price": "\u20b9299",
+      "rating": 4.1,
+      "category": "electronics",
+      "asin": "B0DZ1847ZB",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-29T18:49:41.419153+05:30",
+      "session_type": "morning",
+      "link_index": 210
+    },
     {
       "id": "product_afternoon_20251029_074944",
       "title": "Peter England Men Classic Cotton Socks",
