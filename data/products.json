@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-10-28T21:22:23.438912+05:30",
-  "total_products": 249,
+  "last_updated": "2025-10-29T10:21:19.879723+05:30",
+  "total_products": 251,
   "products": [
+    {
+      "id": "product_morning_20251029_045119",
+      "title": "Allen Solly Men's Cotton Handkerchief (AHW16365E_Multi_One Size)",
+      "image": "https://m.media-amazon.com/images/I/61M9krzageL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B01N2SFZD1?tag=gadgetvill09f-21",
+      "price": "\u20b9364",
+      "rating": 4.3,
+      "category": "electronics",
+      "asin": "B01N2SFZD1",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-29T10:21:19.879672+05:30",
+      "session_type": "morning",
+      "link_index": 206
+    },
+    {
+      "id": "product_morning_20251029_045118",
+      "title": "Aferelle Shirt Stays Elastic Adjustable Tucker Belt For Men Women",
+      "image": "https://m.media-amazon.com/images/I/51kvrK0iQ9L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B085TQ7PRN?tag=gadgetvill09f-21",
+      "price": "\u20b9185",
+      "rating": 3.6,
+      "category": "fashion",
+      "asin": "B085TQ7PRN",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-29T10:21:18.748776+05:30",
+      "session_type": "morning",
+      "link_index": 206
+    },
     {
       "id": "product_night_20251028_155223",
       "title": "Jockey 7097 Men's Compact Cotton Stretch Low Show Modern Socks With Stay Fresh Treatment (Pack of 3)",
