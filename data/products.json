@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-10-29T18:49:43.665929+05:30",
-  "total_products": 255,
+  "last_updated": "2025-10-29T21:23:22.104137+05:30",
+  "total_products": 257,
   "products": [
+    {
+      "id": "product_night_20251029_155322",
+      "title": "Allen Solly Men's Cotton Pastel Multicolour Handkerchief- Pack of 3",
+      "image": "https://m.media-amazon.com/images/I/51h7AOz5nFL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07YZKKXW4?tag=gadgetvill09f-21",
+      "price": "\u20b9364",
+      "rating": 4.4,
+      "category": "electronics",
+      "asin": "B07YZKKXW4",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-29T21:23:22.104106+05:30",
+      "session_type": "night",
+      "link_index": 212
+    },
+    {
+      "id": "product_night_20251029_155319",
+      "title": "ANEMONE Advanced Tucker Shirt Stay Tuck in Adjustable Belt For Men And Women | Formal, Garter Elastic Strecheable Belt (",
+      "image": "https://m.media-amazon.com/images/I/51icmBqdnPL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0D56KQP5V?tag=gadgetvill09f-21",
+      "price": "\u20b9189",
+      "rating": 3.8,
+      "category": "fashion",
+      "asin": "B0D56KQP5V",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-29T21:23:19.917932+05:30",
+      "session_type": "night",
+      "link_index": 212
+    },
     {
       "id": "product_morning_20251029_131943",
       "title": "Boldfit Woolen Winter Cap for Women & Men in Winter for Thermal Wear Stylish Soft Caps for Boys & Girls for Warm Wear He",
