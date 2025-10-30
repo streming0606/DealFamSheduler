@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-10-30T18:48:12.043958+05:30",
-  "total_products": 263,
+  "last_updated": "2025-10-30T21:22:13.464287+05:30",
+  "total_products": 265,
   "products": [
+    {
+      "id": "product_night_20251030_155213",
+      "title": "SELLORIA Brand Black Cotton Adjustable Unisex Cap Quick Drying Sun Hat for Summers Outdoor Activites Sports Baseball Bla",
+      "image": "https://m.media-amazon.com/images/I/41OgLEtNIxL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0BB437PLB?tag=gadgetvill09f-21",
+      "price": "\u20b9198",
+      "rating": 3.9,
+      "category": "fashion",
+      "asin": "B0BB437PLB",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-30T21:22:13.464256+05:30",
+      "session_type": "night",
+      "link_index": 220
+    },
+    {
+      "id": "product_night_20251030_155210",
+      "title": "PUMA Unisex-Adult Baseball Cap",
+      "image": "https://m.media-amazon.com/images/I/51nIWupLUmL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B08QTZ5DG7?tag=gadgetvill09f-21",
+      "price": "\u20b9349",
+      "rating": 4.1,
+      "category": "fashion",
+      "asin": "B08QTZ5DG7",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-30T21:22:10.205175+05:30",
+      "session_type": "night",
+      "link_index": 220
+    },
     {
       "id": "product_morning_20251030_131812",
       "title": "SELLORIA Acrylic Brand A- Adjustable Black Plain Cap Unisex Quick Drying Sun Hat For Summer Activities Sports Baseball H",
