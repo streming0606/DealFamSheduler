@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-10-30T10:18:41.387126+05:30",
-  "total_products": 259,
+  "last_updated": "2025-10-30T13:20:04.484636+05:30",
+  "total_products": 261,
   "products": [
+    {
+      "id": "product_afternoon_20251030_075004",
+      "title": "RC. ROYAL CLASS Men's Woolen Calf Length Solid Thick Terry Winter Wear Socks (Multicolor, Free Size) - Combo Pack of 5 P",
+      "image": "https://m.media-amazon.com/images/I/A1W38FgAtkL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07YGR43WZ?tag=gadgetvill09f-21",
+      "price": "\u20b9398",
+      "rating": 4.3,
+      "category": "electronics",
+      "asin": "B07YGR43WZ",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-30T13:20:04.484602+05:30",
+      "session_type": "afternoon",
+      "link_index": 216
+    },
+    {
+      "id": "product_afternoon_20251030_075002",
+      "title": "SWAGR 12 Pairs Solid Cotton Ankle Length Socks for Men Women, Pack of 12., Assorted",
+      "image": "https://m.media-amazon.com/images/I/819J-5RMtHL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DC14CYKR?tag=gadgetvill09f-21",
+      "price": "\u20b9178",
+      "rating": 4.0,
+      "category": "electronics",
+      "asin": "B0DC14CYKR",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-30T13:20:02.691837+05:30",
+      "session_type": "afternoon",
+      "link_index": 216
+    },
     {
       "id": "product_morning_20251030_044841",
       "title": "Ootacamund",
