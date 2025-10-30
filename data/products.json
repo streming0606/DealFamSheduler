@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-10-30T13:20:04.484636+05:30",
-  "total_products": 261,
+  "last_updated": "2025-10-30T18:48:12.043958+05:30",
+  "total_products": 263,
   "products": [
+    {
+      "id": "product_morning_20251030_131812",
+      "title": "SELLORIA Acrylic Brand A- Adjustable Black Plain Cap Unisex Quick Drying Sun Hat For Summer Activities Sports Baseball H",
+      "image": "https://m.media-amazon.com/images/I/514BX0olXHL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0BBWP5V8T?tag=gadgetvill09f-21",
+      "price": "\u20b9Special Price",
+      "rating": 3.8,
+      "category": "fashion",
+      "asin": "B0BBWP5V8T",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-30T18:48:12.043931+05:30",
+      "session_type": "morning",
+      "link_index": 218
+    },
+    {
+      "id": "product_morning_20251030_131810",
+      "title": "AFEREVZ\u00ae Tucker Shirt Stay Belt with Anti-Slip Technology, Elastic Formal Garter With Adjustable Size And Stretchable Ma",
+      "image": "https://m.media-amazon.com/images/I/61fr1T86p2L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FLDTBT31?tag=gadgetvill09f-21",
+      "price": "\u20b9184",
+      "rating": 4.2,
+      "category": "fashion",
+      "asin": "B0FLDTBT31",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-30T18:48:10.196733+05:30",
+      "session_type": "morning",
+      "link_index": 218
+    },
     {
       "id": "product_afternoon_20251030_075004",
       "title": "RC. ROYAL CLASS Men's Woolen Calf Length Solid Thick Terry Winter Wear Socks (Multicolor, Free Size) - Combo Pack of 5 P",
