@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-10-29T21:23:22.104137+05:30",
-  "total_products": 257,
+  "last_updated": "2025-10-30T10:18:41.387126+05:30",
+  "total_products": 259,
   "products": [
+    {
+      "id": "product_morning_20251030_044841",
+      "title": "Ootacamund",
+      "image": "https://m.media-amazon.com/images/I/71Vas4cEB7L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07MZ3B4SS?tag=gadgetvill09f-21",
+      "price": "\u20b9360",
+      "rating": 4.7,
+      "category": "electronics",
+      "asin": "B07MZ3B4SS",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-30T10:18:41.387097+05:30",
+      "session_type": "morning",
+      "link_index": 214
+    },
+    {
+      "id": "product_morning_20251030_044839",
+      "title": "CREATURE Formal/Casual Black Color Genuine Leather Belts For Men (Length- 46 inches||40MM||BL-042-BLK)",
+      "image": "https://m.media-amazon.com/images/I/71KCjw8zzlL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0C971B9MQ?tag=gadgetvill09f-21",
+      "price": "\u20b9444",
+      "rating": 4.0,
+      "category": "electronics",
+      "asin": "B0C971B9MQ",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-30T10:18:39.403440+05:30",
+      "session_type": "morning",
+      "link_index": 214
+    },
     {
       "id": "product_night_20251029_155322",
       "title": "Allen Solly Men's Cotton Pastel Multicolour Handkerchief- Pack of 3",
