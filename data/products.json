@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-10-31T10:20:20.328176+05:30",
-  "total_products": 267,
+  "last_updated": "2025-10-31T13:19:47.296701+05:30",
+  "total_products": 269,
   "products": [
+    {
+      "id": "product_afternoon_20251031_074947",
+      "title": "NAVYSPORT Socks for Men Solid Ankle Length Cotton Socks, Free Size, Pack of 3 (Multicoloured)",
+      "image": "https://m.media-amazon.com/images/I/81Ev5kuqL8L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B073WX582T?tag=gadgetvill09f-21",
+      "price": "\u20b9220",
+      "rating": 4.0,
+      "category": "electronics",
+      "asin": "B073WX582T",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-31T13:19:47.296683+05:30",
+      "session_type": "afternoon",
+      "link_index": 224
+    },
+    {
+      "id": "product_afternoon_20251031_074945",
+      "title": "Boldfit Polyester Blend Head Band for Man Sports Head Bandana for Men & Women Gym Hair Band for Men Workout, Running Bre",
+      "image": "https://m.media-amazon.com/images/I/71wpVvT-MCL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0B293BVRT?tag=gadgetvill09f-21",
+      "price": "\u20b9249",
+      "rating": 3.8,
+      "category": "electronics",
+      "asin": "B0B293BVRT",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-31T13:19:45.908065+05:30",
+      "session_type": "afternoon",
+      "link_index": 224
+    },
     {
       "id": "product_morning_20251031_045020",
       "title": "URBAN FOREST Leather Belt for Men",
