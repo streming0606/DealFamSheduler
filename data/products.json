@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-10-30T21:22:13.464287+05:30",
-  "total_products": 265,
+  "last_updated": "2025-10-31T10:20:20.328176+05:30",
+  "total_products": 267,
   "products": [
+    {
+      "id": "product_morning_20251031_045020",
+      "title": "URBAN FOREST Leather Belt for Men",
+      "image": "https://m.media-amazon.com/images/I/81jv56HsVOL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0824PLNV5?tag=gadgetvill09f-21",
+      "price": "\u20b9597",
+      "rating": 4.0,
+      "category": "electronics",
+      "asin": "B0824PLNV5",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-31T10:20:20.328145+05:30",
+      "session_type": "morning",
+      "link_index": 222
+    },
+    {
+      "id": "product_morning_20251031_045018",
+      "title": "Jockey 7036 Men's Compact Cotton Terry Ankle Length Socks With Stay Fresh Treatment (Pack of 3)",
+      "image": "https://m.media-amazon.com/images/I/81DsZMMFr1L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B09X5RLGY5?tag=gadgetvill09f-21",
+      "price": "\u20b9426",
+      "rating": 4.1,
+      "category": "electronics",
+      "asin": "B09X5RLGY5",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-31T10:20:18.427294+05:30",
+      "session_type": "morning",
+      "link_index": 222
+    },
     {
       "id": "product_night_20251030_155213",
       "title": "SELLORIA Brand Black Cotton Adjustable Unisex Cap Quick Drying Sun Hat for Summers Outdoor Activites Sports Baseball Bla",
