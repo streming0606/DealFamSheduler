@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-10-31T13:19:47.296701+05:30",
-  "total_products": 269,
+  "last_updated": "2025-10-31T18:47:30.705193+05:30",
+  "total_products": 271,
   "products": [
+    {
+      "id": "product_morning_20251031_131730",
+      "title": "CREATURE Men's Reversible Shiny Pu-Leather Formal Belts(Color-Black/Brown||BL-014)",
+      "image": "https://m.media-amazon.com/images/I/61F5Iw8unKL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B075KCLGP6?tag=gadgetvill09f-21",
+      "price": "\u20b9369",
+      "rating": 4.0,
+      "category": "electronics",
+      "asin": "B075KCLGP6",
+      "data_source": "serpapi",
+      "posted_date": "2025-10-31T18:47:30.705166+05:30",
+      "session_type": "morning",
+      "link_index": 226
+    },
+    {
+      "id": "product_morning_20251031_131728",
+      "title": "Amazon Product B09DCKXK3M",
+      "image": "https://m.media-amazon.com/images/I/B09DCKXK3M._AC_SL1500_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B09DCKXK3M?tag=gadgetvill09f-21",
+      "price": "\u20b9Special Price",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B09DCKXK3M",
+      "data_source": "fallback",
+      "posted_date": "2025-10-31T18:47:28.397354+05:30",
+      "session_type": "morning",
+      "link_index": 226
+    },
     {
       "id": "product_afternoon_20251031_074947",
       "title": "NAVYSPORT Socks for Men Solid Ankle Length Cotton Socks, Free Size, Pack of 3 (Multicoloured)",
