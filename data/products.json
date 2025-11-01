@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-11-01T10:16:49.755433+05:30",
-  "total_products": 275,
+  "last_updated": "2025-11-01T13:19:55.107070+05:30",
+  "total_products": 277,
   "products": [
+    {
+      "id": "product_afternoon_20251101_074955",
+      "title": "XJARVIS\u00ae CUBA/LYON 12 Pairs Ankle Length Cotton Socks Men & Women for Sports Unisex Multicolor Socks Ideal for Gym, Casu",
+      "image": "https://m.media-amazon.com/images/I/71aWx1mvCpL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0D63BD91W?tag=gadgetvill09f-21",
+      "price": "\u20b9399",
+      "rating": 4.1,
+      "category": "electronics",
+      "asin": "B0D63BD91W",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-01T13:19:55.107032+05:30",
+      "session_type": "afternoon",
+      "link_index": 232
+    },
+    {
+      "id": "product_afternoon_20251101_074947",
+      "title": "NAVYSPORT Men's Calf Length Cotton Socks (Pack of 3)",
+      "image": "https://m.media-amazon.com/images/I/61TcsScgQdL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B073WX582G?tag=gadgetvill09f-21",
+      "price": "\u20b9254",
+      "rating": 3.9,
+      "category": "electronics",
+      "asin": "B073WX582G",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-01T13:19:47.969953+05:30",
+      "session_type": "afternoon",
+      "link_index": 232
+    },
     {
       "id": "product_morning_20251101_044649",
       "title": "Labnoft Men's Auto Lock PU Leather Belt",
