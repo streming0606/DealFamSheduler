@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-11-01T18:33:19.323283+05:30",
-  "total_products": 279,
+  "last_updated": "2025-11-01T21:20:21.724719+05:30",
+  "total_products": 281,
   "products": [
+    {
+      "id": "product_night_20251101_155021",
+      "title": "Kuber Industries Cotton Premium Collection Handkerchief|Easy Wash & Premium Cotton Fabric|Size 42 x 42 CM, Pack of 12 (M",
+      "image": "https://m.media-amazon.com/images/I/61hd1dpS9fL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07PV17L4Z?tag=gadgetvill09f-21",
+      "price": "\u20b9387",
+      "rating": 3.9,
+      "category": "electronics",
+      "asin": "B07PV17L4Z",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-01T21:20:21.724688+05:30",
+      "session_type": "night",
+      "link_index": 236
+    },
+    {
+      "id": "product_night_20251101_155020",
+      "title": "Nivia Classic Football Stockings, Micro Yarn Stocking, For Men & Women, Knee Length, Soccer Stockings, Sports Stockings",
+      "image": "https://m.media-amazon.com/images/I/71EluTwV6kL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B09JG6DLL9?tag=gadgetvill09f-21",
+      "price": "\u20b9129",
+      "rating": 4.2,
+      "category": "electronics",
+      "asin": "B09JG6DLL9",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-01T21:20:20.386104+05:30",
+      "session_type": "night",
+      "link_index": 236
+    },
     {
       "id": "product_morning_20251101_130319",
       "title": "Handkerchief for men cotton suitable for daily use big size hankies in pack of 12 Pure Cotton Kerchiefs soft and durable",
