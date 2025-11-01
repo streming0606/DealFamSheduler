@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-11-01T13:19:55.107070+05:30",
-  "total_products": 277,
+  "last_updated": "2025-11-01T18:33:19.323283+05:30",
+  "total_products": 279,
   "products": [
+    {
+      "id": "product_morning_20251101_130319",
+      "title": "Handkerchief for men cotton suitable for daily use big size hankies in pack of 12 Pure Cotton Kerchiefs soft and durable",
+      "image": "https://m.media-amazon.com/images/I/71qIdcVor2L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FC26VL3J?tag=gadgetvill09f-21",
+      "price": "\u20b9298",
+      "rating": 4.3,
+      "category": "home",
+      "asin": "B0FC26VL3J",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-01T18:33:19.323257+05:30",
+      "session_type": "morning",
+      "link_index": 234
+    },
+    {
+      "id": "product_morning_20251101_130317",
+      "title": "SELLORIA Brand A Combo Pack of 2 Acrylic Stylish Sport Inspire + Baseball.Cap for Men's and Boy's Cap (Pack of 2) Multic",
+      "image": "https://m.media-amazon.com/images/I/414bD9ec7FL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0BBWN1KZX?tag=gadgetvill09f-21",
+      "price": "\u20b9234",
+      "rating": 3.8,
+      "category": "fashion",
+      "asin": "B0BBWN1KZX",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-01T18:33:17.252320+05:30",
+      "session_type": "morning",
+      "link_index": 234
+    },
     {
       "id": "product_afternoon_20251101_074955",
       "title": "XJARVIS\u00ae CUBA/LYON 12 Pairs Ankle Length Cotton Socks Men & Women for Sports Unisex Multicolor Socks Ideal for Gym, Casu",
