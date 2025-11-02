@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-11-01T21:20:21.724719+05:30",
-  "total_products": 281,
+  "last_updated": "2025-11-02T10:18:05.030698+05:30",
+  "total_products": 283,
   "products": [
+    {
+      "id": "product_morning_20251102_044805",
+      "title": "Amazon Product B0DHSVKX5Z",
+      "image": "https://m.media-amazon.com/images/I/B0DHSVKX5Z._AC_SL1500_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DHSVKX5Z?tag=gadgetvill09f-21",
+      "price": "\u20b9Special Price",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B0DHSVKX5Z",
+      "data_source": "fallback",
+      "posted_date": "2025-11-02T10:18:05.030663+05:30",
+      "session_type": "morning",
+      "link_index": 238
+    },
+    {
+      "id": "product_morning_20251102_044803",
+      "title": "Contacts Genuine Leather Belt for Men with Easier Adjustable Autolock Buckle - Micro Adjustable Belt Fit Everywhere |For",
+      "image": "https://m.media-amazon.com/images/I/71a5CvjG9mL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CG9QL5WV?tag=gadgetvill09f-21",
+      "price": "\u20b9897",
+      "rating": 4.2,
+      "category": "home",
+      "asin": "B0CG9QL5WV",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-02T10:18:03.518073+05:30",
+      "session_type": "morning",
+      "link_index": 238
+    },
     {
       "id": "product_night_20251101_155021",
       "title": "Kuber Industries Cotton Premium Collection Handkerchief|Easy Wash & Premium Cotton Fabric|Size 42 x 42 CM, Pack of 12 (M",
