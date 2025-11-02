@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-11-02T10:18:05.030698+05:30",
-  "total_products": 283,
+  "last_updated": "2025-11-02T13:19:39.654648+05:30",
+  "total_products": 285,
   "products": [
+    {
+      "id": "product_afternoon_20251102_074939",
+      "title": "Nivia Plain Encounter Football Stockings, Micro Yarn Stockings, For Men & Women, Knee Length Stockings, Football Socks, ",
+      "image": "https://m.media-amazon.com/images/I/71FE0Mob7SL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B079SCPN7W?tag=gadgetvill09f-21",
+      "price": "\u20b9149",
+      "rating": 4.1,
+      "category": "electronics",
+      "asin": "B079SCPN7W",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-02T13:19:39.654627+05:30",
+      "session_type": "afternoon",
+      "link_index": 240
+    },
+    {
+      "id": "product_afternoon_20251102_074938",
+      "title": "Kuber Industries Cotton 12 Piece Men's Handkerchief Set - White (CTKTC05634) Standard",
+      "image": "https://m.media-amazon.com/images/I/71PSwfKMJgL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07NJDRLWC?tag=gadgetvill09f-21",
+      "price": "\u20b9299",
+      "rating": 4.1,
+      "category": "electronics",
+      "asin": "B07NJDRLWC",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-02T13:19:38.128791+05:30",
+      "session_type": "afternoon",
+      "link_index": 240
+    },
     {
       "id": "product_morning_20251102_044805",
       "title": "Amazon Product B0DHSVKX5Z",
