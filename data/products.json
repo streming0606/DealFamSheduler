@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-11-02T13:19:39.654648+05:30",
-  "total_products": 285,
+  "last_updated": "2025-11-02T18:32:43.023322+05:30",
+  "total_products": 287,
   "products": [
+    {
+      "id": "product_morning_20251102_130243",
+      "title": "Boldfit Socks For Men Winter Socks For Women Calf Length Winter Socks For Men Woolen Winter Socks For Men Thermal Woolen",
+      "image": "https://m.media-amazon.com/images/I/71rsofRBZ6L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DN22BXZ1?tag=gadgetvill09f-21",
+      "price": "\u20b9349",
+      "rating": 4.1,
+      "category": "electronics",
+      "asin": "B0DN22BXZ1",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-02T18:32:43.023294+05:30",
+      "session_type": "morning",
+      "link_index": 242
+    },
+    {
+      "id": "product_morning_20251102_130241",
+      "title": "Men's Athletic ankle Socks, 12 Pairs, Black Grey Navy,",
+      "image": "https://m.media-amazon.com/images/I/71qtfY41KIL._AC_UY218_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0F76Q4XZ7?tag=gadgetvill09f-21",
+      "price": "\u20b9229",
+      "rating": 4.0,
+      "category": "electronics",
+      "asin": "B0F76Q4XZ7",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-02T18:32:41.039223+05:30",
+      "session_type": "morning",
+      "link_index": 242
+    },
     {
       "id": "product_afternoon_20251102_074939",
       "title": "Nivia Plain Encounter Football Stockings, Micro Yarn Stockings, For Men & Women, Knee Length Stockings, Football Socks, ",
