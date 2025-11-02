@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-11-02T18:32:43.023322+05:30",
-  "total_products": 287,
+  "last_updated": "2025-11-02T21:20:29.031042+05:30",
+  "total_products": 289,
   "products": [
+    {
+      "id": "product_night_20251102_155029",
+      "title": "Kuber Industries 100% Cotton Premium Collection Handkerchiefs Hanky for Men, Set of 6 (White), Standard (HS_37_KUBMART02",
+      "image": "https://m.media-amazon.com/images/I/51z43kh7jRS._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B092DQZSDC?tag=gadgetvill09f-21",
+      "price": "\u20b9208",
+      "rating": 3.9,
+      "category": "electronics",
+      "asin": "B092DQZSDC",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-02T21:20:29.031007+05:30",
+      "session_type": "night",
+      "link_index": 244
+    },
+    {
+      "id": "product_night_20251102_155027",
+      "title": "ZORO Men's Vegan Leather Belt for Men, Formal/Casual,Autolock,Black | Fit on up to 40 Inches Waist size (BLACK 58-BK72, ",
+      "image": "https://m.media-amazon.com/images/I/61WefssrG3L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B09RB6LKTN?tag=gadgetvill09f-21",
+      "price": "\u20b9148",
+      "rating": 3.3,
+      "category": "electronics",
+      "asin": "B09RB6LKTN",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-02T21:20:27.432797+05:30",
+      "session_type": "night",
+      "link_index": 244
+    },
     {
       "id": "product_morning_20251102_130243",
       "title": "Boldfit Socks For Men Winter Socks For Women Calf Length Winter Socks For Men Woolen Winter Socks For Men Thermal Woolen",
