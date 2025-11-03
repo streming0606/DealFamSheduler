@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-11-03T10:22:45.606461+05:30",
-  "total_products": 291,
+  "last_updated": "2025-11-03T13:19:35.763985+05:30",
+  "total_products": 293,
   "products": [
+    {
+      "id": "product_afternoon_20251103_074935",
+      "title": "Amazon Product B08QW5QPLF",
+      "image": "https://m.media-amazon.com/images/I/B08QW5QPLF._AC_SL1500_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B08QW5QPLF?tag=gadgetvill09f-21",
+      "price": "\u20b9Special Price",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B08QW5QPLF",
+      "data_source": "fallback",
+      "posted_date": "2025-11-03T13:19:35.763956+05:30",
+      "session_type": "afternoon",
+      "link_index": 248
+    },
+    {
+      "id": "product_afternoon_20251103_074934",
+      "title": "Adidas Unisex Ankle Length Cotton Socks Multicolored Pack of 3",
+      "image": "https://m.media-amazon.com/images/I/71FrbzI87YL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0BGZPS9CQ?tag=gadgetvill09f-21",
+      "price": "\u20b9299",
+      "rating": 4.0,
+      "category": "electronics",
+      "asin": "B0BGZPS9CQ",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-03T13:19:34.426880+05:30",
+      "session_type": "afternoon",
+      "link_index": 248
+    },
     {
       "id": "product_morning_20251103_045245",
       "title": "HEELIUM Bamboo Ankle Socks for Men | Odour-Free and Breathable | Padded Base and Anti-bacterial | 3X Softer Than Regular",
