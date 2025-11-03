@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-11-02T21:20:29.031042+05:30",
-  "total_products": 289,
+  "last_updated": "2025-11-03T10:22:45.606461+05:30",
+  "total_products": 291,
   "products": [
+    {
+      "id": "product_morning_20251103_045245",
+      "title": "HEELIUM Bamboo Ankle Socks for Men | Odour-Free and Breathable | Padded Base and Anti-bacterial | 3X Softer Than Regular",
+      "image": "https://m.media-amazon.com/images/I/81lTp636YqS._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B093C3DNXH?tag=gadgetvill09f-21",
+      "price": "\u20b9797",
+      "rating": 4.2,
+      "category": "electronics",
+      "asin": "B093C3DNXH",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-03T10:22:45.606436+05:30",
+      "session_type": "morning",
+      "link_index": 246
+    },
+    {
+      "id": "product_morning_20251103_045241",
+      "title": "NAVYSPORT Men's Crew Length Cushion Cotton Socks (Pack of 3) (SF-M-1_Multicolour) Free Size",
+      "image": "https://m.media-amazon.com/images/I/91a4Z4AwWhL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B073WZD93T?tag=gadgetvill09f-21",
+      "price": "\u20b9251",
+      "rating": 4.0,
+      "category": "electronics",
+      "asin": "B073WZD93T",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-03T10:22:41.572291+05:30",
+      "session_type": "morning",
+      "link_index": 246
+    },
     {
       "id": "product_night_20251102_155029",
       "title": "Kuber Industries 100% Cotton Premium Collection Handkerchiefs Hanky for Men, Set of 6 (White), Standard (HS_37_KUBMART02",
