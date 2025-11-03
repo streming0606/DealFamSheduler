@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-11-03T18:47:52.848708+05:30",
-  "total_products": 295,
+  "last_updated": "2025-11-03T21:21:11.609333+05:30",
+  "total_products": 297,
   "products": [
+    {
+      "id": "product_night_20251103_155111",
+      "title": "Fitness Mantra\u00ae Athletic Special Design Sneaker Length Socks |Free Size |Pack of 3 Pairs |Activewear Sports Socks|Ankle ",
+      "image": "https://m.media-amazon.com/images/I/81VywlOKB1L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CMXPBJY8?tag=gadgetvill09f-21",
+      "price": "\u20b9149",
+      "rating": 4.0,
+      "category": "electronics",
+      "asin": "B0CMXPBJY8",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-03T21:21:11.609286+05:30",
+      "session_type": "night",
+      "link_index": 252
+    },
+    {
+      "id": "product_night_20251103_155108",
+      "title": "JABA'S Multicolour Unisex Ankle length Socks, Made With Durable & Breathable Cotton, Free Size, Addy Edition, Suitable f",
+      "image": "https://m.media-amazon.com/images/I/41xoCt7VqyL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DQYBZGZQ?tag=gadgetvill09f-21",
+      "price": "\u20b9499",
+      "rating": 4.2,
+      "category": "home",
+      "asin": "B0DQYBZGZQ",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-03T21:21:08.058621+05:30",
+      "session_type": "night",
+      "link_index": 252
+    },
     {
       "id": "product_morning_20251103_131752",
       "title": "JEMOX Ankle Socks Pack of 10, Assorted Colours - Premium Comfort, Breathable & Durable Socks for Men & Women. Ideal for ",
