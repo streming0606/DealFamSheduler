@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-11-03T13:19:35.763985+05:30",
-  "total_products": 293,
+  "last_updated": "2025-11-03T18:47:52.848708+05:30",
+  "total_products": 295,
   "products": [
+    {
+      "id": "product_morning_20251103_131752",
+      "title": "JEMOX Ankle Socks Pack of 10, Assorted Colours - Premium Comfort, Breathable & Durable Socks for Men & Women. Ideal for ",
+      "image": "https://m.media-amazon.com/images/I/81ZcFWznREL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DG5DQQ2C?tag=gadgetvill09f-21",
+      "price": "\u20b9199",
+      "rating": 3.8,
+      "category": "electronics",
+      "asin": "B0DG5DQQ2C",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-03T18:47:52.848671+05:30",
+      "session_type": "morning",
+      "link_index": 250
+    },
+    {
+      "id": "product_morning_20251103_131751",
+      "title": "10 Pairs of Socks for Men Combo | Pure Organic Cotton, Breathable Fabric | Ideal For Gym, Sports, Running and Daily Use ",
+      "image": "https://m.media-amazon.com/images/I/71o6MCt66uL._AC_UY218_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0F4PJ4KJT?tag=gadgetvill09f-21",
+      "price": "\u20b9279",
+      "rating": 4.2,
+      "category": "electronics",
+      "asin": "B0F4PJ4KJT",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-03T18:47:51.043578+05:30",
+      "session_type": "morning",
+      "link_index": 250
+    },
     {
       "id": "product_afternoon_20251103_074935",
       "title": "Amazon Product B08QW5QPLF",
