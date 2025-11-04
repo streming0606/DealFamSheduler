@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-11-04T10:19:11.927430+05:30",
-  "total_products": 299,
+  "last_updated": "2025-11-04T13:19:44.688252+05:30",
+  "total_products": 301,
   "products": [
+    {
+      "id": "product_afternoon_20251104_074944",
+      "title": "Allen Solly Mens Cotton Quarter Length Socks (Pack of 3)",
+      "image": "https://m.media-amazon.com/images/I/512vyNQ+wYL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B075N2BMFL?tag=gadgetvill09f-21",
+      "price": "\u20b9449",
+      "rating": 4.0,
+      "category": "electronics",
+      "asin": "B075N2BMFL",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-04T13:19:44.688218+05:30",
+      "session_type": "afternoon",
+      "link_index": 256
+    },
+    {
+      "id": "product_afternoon_20251104_074943",
+      "title": "Fitness Mantra\u00ae 3 Pairs Premium Loafer/No Show Anti Slip Free Size Cotton Socks for Men's and Women's",
+      "image": "https://m.media-amazon.com/images/I/71BelU6QSqL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CJJVZD1M?tag=gadgetvill09f-21",
+      "price": "\u20b9149",
+      "rating": 3.6,
+      "category": "electronics",
+      "asin": "B0CJJVZD1M",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-04T13:19:43.580356+05:30",
+      "session_type": "afternoon",
+      "link_index": 256
+    },
     {
       "id": "product_morning_20251104_044911",
       "title": "Allen Solly Cotton Men Socks Crew Length",
