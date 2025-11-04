@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-11-04T18:51:10.973402+05:30",
-  "total_products": 303,
+  "last_updated": "2025-11-04T21:22:19.323413+05:30",
+  "total_products": 305,
   "products": [
+    {
+      "id": "product_night_20251104_155219",
+      "title": "Van Heusen Men Cotton Regular Socks",
+      "image": "https://m.media-amazon.com/images/I/410f1h0rpGL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B08SJZ2NHW?tag=gadgetvill09f-21",
+      "price": "\u20b9479",
+      "rating": 4.2,
+      "category": "electronics",
+      "asin": "B08SJZ2NHW",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-04T21:22:19.323385+05:30",
+      "session_type": "night",
+      "link_index": 260
+    },
+    {
+      "id": "product_night_20251104_155217",
+      "title": "Peter England Men's Cotton White Handkerchief (Pack of 6)",
+      "image": "https://m.media-amazon.com/images/I/51sBry3nFDL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0BX9WVNLR?tag=gadgetvill09f-21",
+      "price": "\u20b9449",
+      "rating": 4.4,
+      "category": "electronics",
+      "asin": "B0BX9WVNLR",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-04T21:22:17.563122+05:30",
+      "session_type": "night",
+      "link_index": 260
+    },
     {
       "id": "product_morning_20251104_132110",
       "title": "VOGARD Men's Vegan Leather Belt for Men | Formal & Casual | Autolock Buckle,Black | Fit all size upto 40 Inches Waist si",
