@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-11-05T13:19:50.109289+05:30",
-  "total_products": 295,
+  "last_updated": "2025-11-05T18:49:04.727435+05:30",
+  "total_products": 297,
   "products": [
+    {
+      "id": "product_morning_20251105_131904",
+      "title": "RC. ROYAL CLASS Thick Heavy Duty Thermal Socks For Men Cushioned Towel Warm Winter Woolen Socks, Calf Length Hi-Performa",
+      "image": "https://m.media-amazon.com/images/I/A1jwFOO5ZBL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CD5L21CJ?tag=gadgetvill09f-21",
+      "price": "\u20b9368",
+      "rating": 4.4,
+      "category": "electronics",
+      "asin": "B0CD5L21CJ",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-05T18:49:04.727402+05:30",
+      "session_type": "morning",
+      "link_index": 266
+    },
+    {
+      "id": "product_morning_20251105_131903",
+      "title": "MENLEE Girls Ankle Length Cotton Socks With Colourful Cute Colours Also for Women Low Cut Ankle socks Combo (Cotton blen",
+      "image": "https://m.media-amazon.com/images/I/51pwHhsBW1L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CHGHGK2P?tag=gadgetvill09f-21",
+      "price": "\u20b9289",
+      "rating": 4.0,
+      "category": "electronics",
+      "asin": "B0CHGHGK2P",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-05T18:49:03.468902+05:30",
+      "session_type": "morning",
+      "link_index": 266
+    },
     {
       "id": "product_afternoon_20251105_074950",
       "title": "LEALDEALZ Ankle Length Socks For Men And Women - Pack Of 5 Multicoloured Cotton Socks - Free Size",
