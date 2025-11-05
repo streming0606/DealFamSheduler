@@ -1,0 +1,54 @@
+# ThriftMaal Blog - Robots.txt
+# Last updated: 2025-11-05
+# Purpose: Guide search engines to crawl blog efficiently
+
+# Allow all search engines full access to blog
+User-agent: *
+Allow: /
+
+# Block specific search engine bots from indexing (optional)
+# User-agent: Googlebot-Image
+# Disallow: /
+
+# Block specific paths that waste crawl budget
+Disallow: /admin-panel
+Disallow: /login
+Disallow: /*?preview=
+Disallow: /*?draft=
+
+# Allow important blog assets
+Allow: /css/
+Allow: /js/
+Allow: /images/
+Allow: /data/posts.json
+
+# Block AI training crawlers (optional - remove if you want AI to use your content)
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ChatGPT-User
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+User-agent: Claude-Web
+Disallow: /
+
+# Google AdSense crawler (allow if you use ads)
+User-agent: Mediapartners-Google
+Allow: /
+
+# Bing AdCenter
+User-agent: adidxbot
+Allow: /
+
+# Reference XML Sitemap (helps search engines find all posts)
+Sitemap: https://thriftmaal.com/blog/sitemap.xml
+
+# Crawl-delay directive (optional - uncomment if needed)
+# User-agent: *
+# Crawl-delay: 10
