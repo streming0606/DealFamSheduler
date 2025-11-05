@@ -1,28 +1,30 @@
-# ThriftMaal Blog - Robots.txt
-# Last updated: 2025-11-05
-# Purpose: Guide search engines to crawl blog efficiently
+# ThriftMaal Blog - Advanced SEO Configuration
+# Optimized for Google, Bing, and other search engines
+# Updated: November 2025
 
-# Allow all search engines full access to blog
-User-agent: *
+# === PRIMARY SEARCH ENGINES ===
+
+# Google
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 2
+
+# Bing
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 2
+
+# Yahoo
+User-agent: Slurp
 Allow: /
 
-# Block specific search engine bots from indexing (optional)
-# User-agent: Googlebot-Image
-# Disallow: /
+# DuckDuckGo
+User-agent: DuckDuckBot
+Allow: /
 
-# Block specific paths that waste crawl budget
-Disallow: /admin-panel
-Disallow: /login
-Disallow: /*?preview=
-Disallow: /*?draft=
+# === BLOCK AI TRAINING CRAWLERS ===
+# Prevent content from being used to train AI models
 
-# Allow important blog assets
-Allow: /css/
-Allow: /js/
-Allow: /images/
-Allow: /data/posts.json
-
-# Block AI training crawlers (optional - remove if you want AI to use your content)
 User-agent: GPTBot
 Disallow: /
 
@@ -38,17 +40,61 @@ Disallow: /
 User-agent: Claude-Web
 Disallow: /
 
-# Google AdSense crawler (allow if you use ads)
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: FacebookBot
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+# === ADVERTISING CRAWLERS (ALLOW) ===
+
 User-agent: Mediapartners-Google
 Allow: /
 
-# Bing AdCenter
+User-agent: AdsBot-Google
+Allow: /
+
 User-agent: adidxbot
 Allow: /
 
-# Reference XML Sitemap (helps search engines find all posts)
+# === ALL OTHER BOTS ===
+
+User-agent: *
+Allow: /
+
+# === BLOCKED PATHS ===
+# Pages that waste crawl budget or shouldn't be indexed
+
+Disallow: /admin-panel
+Disallow: /login
+Disallow: /404.html
+Disallow: /*?preview=*
+Disallow: /*?draft=*
+Disallow: /*?utm_*
+Disallow: /search?*
+
+# === ALLOWED ASSETS ===
+# Ensure search engines can access important resources
+
+Allow: /css/
+Allow: /js/
+Allow: /images/
+Allow: /data/posts.json
+Allow: /*.css$
+Allow: /*.js$
+Allow: /*.png$
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.webp$
+
+# === XML SITEMAP REFERENCE ===
+# Primary signal for search engines to discover all blog posts
+
 Sitemap: https://thriftmaal.com/blog/sitemap.xml
 
-# Crawl-delay directive (optional - uncomment if needed)
-# User-agent: *
-# Crawl-delay: 10
+# === CRAWL RATE ===
+# Optional: Adjust if your server experiences high load
+# Crawl-delay: 5
