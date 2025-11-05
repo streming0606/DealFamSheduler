@@ -1,1 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Blog listing page -->
+  <url>
+    <loc>https://thriftmaal.com/blog/</loc>
+    <lastmod>2025-11-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
 
+  <!-- Auto-generated blog posts -->
+  <url>
+    <loc>https://thriftmaal.com/blog/gaming-laptop-buying-guide-under-60000-india</loc>
+    <lastmod>2025-11-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://thriftmaal.com/blog/best-camera-phone-buying-guide-under-30000</loc>
+    <lastmod>2025-11-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+</urlset>
