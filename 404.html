@@ -1,25 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Redirecting...</title>
+  <head>
+    <meta charset="utf-8" />
+    <title>Redirecting…</title>
+    <meta name="robots" content="noindex" />
     <script>
-        // GitHub Pages SPA redirect script
-        (function() {
-            var redirect = sessionStorage.redirect;
-            delete sessionStorage.redirect;
-            if (redirect && redirect != location.href) {
-                history.replaceState(null, null, redirect);
-            }
-        })();
+      // Preserve the originally requested path so /blog/ can load the right post
+      sessionStorage.redirect = location.href;
     </script>
-</head>
-<body>
-    <script>
-        // Store the attempted URL and redirect to index
-        sessionStorage.redirect = location.href;
-        location.replace(location.origin + '/blog/');
-    </script>
-</body>
+    <meta http-equiv="refresh" content="0;url=/blog/">
+  </head>
+  <body></body>
 </html>
