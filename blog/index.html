@@ -1,156 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="ThriftMaal Blog - Latest deals, discounts, shopping tips, and money-saving guides from India's top deal aggregator">
-    <meta name="keywords" content="deals blog, discount tips, shopping guides, coupon codes, ThriftMaal, money saving tips">
-    <meta property="og:title" content="ThriftMaal Blog - Best Deals & Shopping Tips">
-    <meta property="og:description" content="Stay updated with the latest deals, discounts, and shopping guides curated by ThriftMaal">
-    <meta property="og:image" content="https://thriftmaal.com/logo.png">
-    <meta property="og:url" content="https://thriftmaal.com/blog/">
-    <meta name="robots" content="index, follow">
-    <title>ThriftMaal Blog - Latest Deals, Discounts & Shopping Tips</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Schema Markup for Blog -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Blog",
-      "name": "ThriftMaal Blog",
-      "description": "Latest deals, discounts, shopping tips and money-saving guides from India's top deal aggregator",
-      "url": "https://thriftmaal.com/blog/",
-      "publisher": {
-        "@type": "Organization",
-        "name": "ThriftMaal",
-        "logo": "https://thriftmaal.com/logo.png"
-      }
-    }
-    </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ThriftMaal Blog - Buying Guides & Deals</title>
+  <meta name="description" content="Expert buying guides, product tips, and best deals in India on the ThriftMaal Blog." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://thriftmaal.com/blog/" />
 
+  <!-- Open Graph defaults (overridden on post view) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="ThriftMaal Blog - Buying Guides & Deals" />
+  <meta property="og:description" content="Expert buying guides, product tips, and best deals in India on the ThriftMaal Blog." />
+  <meta property="og:url" content="https://thriftmaal.com/blog/" />
+  <meta property="og:image" content="https://thriftmaal.com/images/logo/logo.png" />
 
-
-<!-- Favicon -->
-<link rel="icon" type="image/png" href="../images/logo/favicon1.png">
-
-
-
-
-    
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="icon" type="image/png" href="../images/logo/favicon1.png">
 </head>
 <body>
-    <!-- Header -->
-    <header class="header">
-        <div class="container">
-            <nav class="navbar">
-                <div class="logo">
-                    <a href="/">
-                        <img src="../images//logo/logo.png" alt="ThriftMaal Logo">
-                    </a>
-                </div>
-                <ul class="nav-menu">
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/deals">Deals</a></li>
-                    <li><a href="/coupons">Coupons</a></li>
-                    <li><a href="/blog/" class="active">Blog</a></li>
-                    <li><a href="/about">About</a></li>
-                    <li><a href="/contact">Contact</a></li>
-                </ul>
-                <div class="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </nav>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <nav class="navbar">
+        <div class="logo">
+          <a href="/"><img src="../images/logo/logo.png" alt="ThriftMaal Logo" /></a>
         </div>
-    </header>
+        <ul class="nav-menu">
+          <li><a href="/">Home</a></li>
+          <li><a href="/deals">Deals</a></li>
+          <li><a href="/coupons">Coupons</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+        <div class="hamburger"><span></span><span></span><span></span></div>
+      </nav>
+    </div>
+  </header>
 
-    <!-- Blog Hero Section -->
-    <section class="blog-hero">
-        <div class="container">
-            <h1>📰 ThriftMaal Blog</h1>
-            <p>Your ultimate guide to smart shopping, exclusive deals, and money-saving tips</p>
-        </div>
+  <!-- Blog listing and post container -->
+  <main class="container">
+    <!-- Controls (shown in listing view) -->
+    <section id="controls" class="blog-controls">
+      <input id="searchInput" class="search-box" placeholder="Search articles…" />
+      <div class="filter-buttons">
+        <button class="filter-btn active" data-category="all">All</button>
+        <button class="filter-btn" data-category="Buying Guide">Buying Guide</button>
+        <button class="filter-btn" data-category="Review">Review</button>
+        <button class="filter-btn" data-category="Tips & Tricks">Tips & Tricks</button>
+      </div>
     </section>
 
-    <!-- Search & Filter Section -->
-    <section class="search-filter-section">
-        <div class="container">
-            <div class="search-filter-wrapper">
-                <div class="search-box">
-                    <input type="text" id="searchInput" placeholder="🔍 Search blog posts...">
-                </div>
-                <div class="filter-buttons">
-                    <button class="filter-btn active" data-category="all">All</button>
-                    <button class="filter-btn" data-category="Deals"> Deals</button>
-                    <button class="filter-btn" data-category="Coupons"> Coupons</button>
-                    <button class="filter-btn" data-category="Tech Tips"> Tech Tips</button>
-                    <button class="filter-btn" data-category="Fashion"> Fashion</button>
-                    <button class="filter-btn" data-category="Shopping Guide"> Shopping Guide</button>
-                </div>
-            </div>
-        </div>
+    <!-- Listing grid (hidden in post view) -->
+    <section id="listing">
+      <div id="blogContainer" class="grid"></div>
+      <div id="noResults" class="no-results" style="display:none;">
+        <h2>No articles found</h2>
+        <p>Try a different search or category.</p>
+      </div>
     </section>
 
-    <!-- Blog Posts Grid -->
-    <section class="blog-section">
-        <div class="container">
-            <div class="blog-container" id="blogContainer">
-                <!-- Blog cards will be dynamically loaded here -->
-                <div class="loading">Loading awesome content... 🚀</div>
-            </div>
-            <div class="no-results" id="noResults" style="display: none;">
-                <p>😔 No posts found. Try a different search term or category.</p>
-            </div>
-        </div>
-    </section>
+    <!-- Post view root (filled dynamically) -->
+    <section id="postRoot" style="display:none;"></section>
+  </main>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>About ThriftMaal</h3>
-                    <p>India's most trusted deals and coupons aggregator. We help you save money on every purchase with verified deals from top stores.</p>
-                </div>
-                <div class="footer-section">
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/deals">Today's Deals</a></li>
-                        <li><a href="/coupons">Coupon Codes</a></li>
-                        <li><a href="/stores">All Stores</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h3>Popular Categories</h3>
-                    <ul>
-                        <li><a href="/category/electronics">Electronics</a></li>
-                        <li><a href="/category/fashion">Fashion</a></li>
-                        <li><a href="/category/home">Home & Kitchen</a></li>
-                        <li><a href="/category/books">Books</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h3>Connect With Us</h3>
-                    <div class="social-links">
-                        <a href="#" aria-label="Facebook"> Facebook</a>
-                        <a href="#" aria-label="Twitter"> Twitter</a>
-                        <a href="#" aria-label="Instagram"> Instagram</a>
-                        <a href="#" aria-label="Telegram"> Telegram</a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 ThriftMaal.com - All Rights Reserved | Made with ❤️ in India</p>
-            </div>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>About ThriftMaal</h3>
+          <p>India's trusted deals and coupons aggregator helping you save on every purchase.</p>
         </div>
-    </footer>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/deals">Today's Deals</a></li>
+            <li><a href="/coupons">Coupon Codes</a></li>
+            <li><a href="/blog/">Blog</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Popular Categories</h3>
+          <ul>
+            <li><a href="/category/electronics">Electronics</a></li>
+            <li><a href="/category/fashion">Fashion</a></li>
+            <li><a href="/category/home">Home & Kitchen</a></li>
+            <li><a href="/category/books">Books</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Connect</h3>
+          <div class="social-links">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+            <a href="#">Telegram</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 ThriftMaal.com</p>
+      </div>
+    </div>
+  </footer>
 
-    <script src="js/script.js"></script>
+  <!-- App script -->
+  <script src="./js/script.js" defer></script>
 </body>
 </html>
