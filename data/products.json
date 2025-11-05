@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-11-05T18:49:04.727435+05:30",
-  "total_products": 297,
+  "last_updated": "2025-11-05T21:22:29.868691+05:30",
+  "total_products": 299,
   "products": [
+    {
+      "id": "product_night_20251105_155229",
+      "title": "Caruso Italy Men's Premium 100% Pure Cotton Handkerchief White Base Colored Border",
+      "image": "https://m.media-amazon.com/images/I/61KmP7bAAqL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B08ZSXN2YQ?tag=gadgetvill09f-21",
+      "price": "\u20b9299",
+      "rating": 4.2,
+      "category": "electronics",
+      "asin": "B08ZSXN2YQ",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-05T21:22:29.868657+05:30",
+      "session_type": "night",
+      "link_index": 268
+    },
+    {
+      "id": "product_night_20251105_155226",
+      "title": "ANCHOR, Cotton Socks for Men Full Length, Pack of 5 Pair Socks",
+      "image": "https://m.media-amazon.com/images/I/91ayPr++UgL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B09ZGLW8T3?tag=gadgetvill09f-21",
+      "price": "\u20b9379",
+      "rating": 4.0,
+      "category": "electronics",
+      "asin": "B09ZGLW8T3",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-05T21:22:26.187429+05:30",
+      "session_type": "night",
+      "link_index": 268
+    },
     {
       "id": "product_morning_20251105_131904",
       "title": "RC. ROYAL CLASS Thick Heavy Duty Thermal Socks For Men Cushioned Towel Warm Winter Woolen Socks, Calf Length Hi-Performa",
