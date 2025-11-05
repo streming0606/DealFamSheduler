@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-11-04T21:22:19.323413+05:30",
-  "total_products": 305,
+  "last_updated": "2025-11-05T10:19:48.456505+05:30",
+  "total_products": 307,
   "products": [
+    {
+      "id": "product_morning_20251105_044948",
+      "title": "Supersox Ankle Socks for Men & Women (Unisex) Made With Durable, Breathable Cotton, Anti Odour & Anti Bacterial - Pack o",
+      "image": "https://m.media-amazon.com/images/I/81JGwp4flIL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B09W5S4ZHL?tag=gadgetvill09f-21",
+      "price": "\u20b9285",
+      "rating": 4.3,
+      "category": "electronics",
+      "asin": "B09W5S4ZHL",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-05T10:19:48.456471+05:30",
+      "session_type": "morning",
+      "link_index": 262
+    },
+    {
+      "id": "product_morning_20251105_044947",
+      "title": "Adidas Men Ankle Length Cotton Blend Socks Pack of 1",
+      "image": "https://m.media-amazon.com/images/I/71V4YnALSxL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B09RWL4VQK?tag=gadgetvill09f-21",
+      "price": "\u20b9298",
+      "rating": 4.2,
+      "category": "electronics",
+      "asin": "B09RWL4VQK",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-05T10:19:47.083259+05:30",
+      "session_type": "morning",
+      "link_index": 262
+    },
     {
       "id": "product_night_20251104_155219",
       "title": "Van Heusen Men Cotton Regular Socks",
