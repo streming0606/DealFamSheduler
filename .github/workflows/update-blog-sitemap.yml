@@ -8,6 +8,10 @@ on:
     branches:
       - main
 
+  # Trigger at 12 PM IST daily (6:30 AM UTC)
+  schedule:
+    - cron: '30 6 * * *'
+
   # Allow manual trigger
   workflow_dispatch:
 
