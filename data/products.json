@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-11-05T10:19:48.456505+05:30",
-  "total_products": 307,
+  "last_updated": "2025-11-05T13:19:50.109289+05:30",
+  "total_products": 295,
   "products": [
+    {
+      "id": "product_afternoon_20251105_074950",
+      "title": "LEALDEALZ Ankle Length Socks For Men And Women - Pack Of 5 Multicoloured Cotton Socks - Free Size",
+      "image": "https://m.media-amazon.com/images/I/61lfOJiVWyL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07FRXCM79?tag=gadgetvill09f-21",
+      "price": "\u20b9296",
+      "rating": 4.1,
+      "category": "electronics",
+      "asin": "B07FRXCM79",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-05T13:19:50.109262+05:30",
+      "session_type": "afternoon",
+      "link_index": 264
+    },
+    {
+      "id": "product_afternoon_20251105_074941",
+      "title": "Supersox Ankle Sports Socks for Men Combo, Made With Durable, Breathable, Cushioned Cotton, Anti Odour, Anti Sweat, Idea",
+      "image": "https://m.media-amazon.com/images/I/71APu49TSFL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0C3MDKD4G?tag=gadgetvill09f-21",
+      "price": "\u20b9286",
+      "rating": 4.0,
+      "category": "electronics",
+      "asin": "B0C3MDKD4G",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-05T13:19:41.931165+05:30",
+      "session_type": "afternoon",
+      "link_index": 264
+    },
     {
       "id": "product_morning_20251105_044948",
       "title": "Supersox Ankle Socks for Men & Women (Unisex) Made With Durable, Breathable Cotton, Anti Odour & Anti Bacterial - Pack o",
