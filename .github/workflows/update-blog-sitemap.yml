@@ -1,39 +1,25 @@
 name: Update Blog Sitemap
 
 on:
-  # Trigger 1: When posts.json is modified
+  # Trigger when posts.json is modified
   push:
     paths:
       - 'blog/data/posts.json'
     branches:
       - main
-      - master
 
-  # Trigger 2: Daily at 2:00 AM IST (UTC+5:30 = 20:30 UTC previous day)
-  schedule:
-    - cron: '30 20 * * *'  # Runs daily at 2:00 AM IST
-
-  # Trigger 3: Manual trigger from GitHub UI
+  # Allow manual trigger
   workflow_dispatch:
-
-  # Trigger 4: When any blog file changes (backup)
-  push:
-    paths:
-      - 'blog/**'
-    branches:
-      - main
-      - master
 
 jobs:
   update-sitemap:
-    name: Generate and Update Sitemap
     runs-on: ubuntu-latest
     
     permissions:
       contents: write
-      
+    
     steps:
-      # Step 1: Checkout code
+      # Step 1: Checkout repository
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
@@ -45,80 +31,38 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '18'
-          cache: 'npm'
 
-      # Step 3: Show trigger info
-      - name: Show trigger information
-        run: |
-          echo "Workflow triggered by: ${{ github.event_name }}"
-          echo "Branch: ${{ github.ref }}"
-          echo "Commit: ${{ github.sha }}"
-          echo "Actor: ${{ github.actor }}"
-          if [ "${{ github.event_name }}" = "schedule" ]; then
-            echo "⏰ Scheduled daily run"
-          elif [ "${{ github.event_name }}" = "push" ]; then
-            echo "📝 Triggered by push to posts.json"
-          else
-            echo "👤 Manual trigger"
-          fi
-
-      # Step 4: Generate sitemap
+      # Step 3: Generate sitemap
       - name: Generate Blog Sitemap
-        run: |
-          echo "Starting sitemap generation..."
-          node blog/generate-sitemap.js
-          echo "Sitemap generation complete!"
+        run: node blog/generate-sitemap.js
 
-      # Step 5: Show git diff
-      - name: Check sitemap changes
-        id: check-changes
+      # Step 4: Check if sitemap changed
+      - name: Check if sitemap changed
+        id: sitemap-changed
         run: |
-          git diff blog/sitemap.xml
           if git diff --quiet blog/sitemap.xml; then
             echo "changed=false" >> $GITHUB_OUTPUT
-            echo "ℹ️ No changes detected in sitemap"
+            echo "Sitemap unchanged"
           else
             echo "changed=true" >> $GITHUB_OUTPUT
-            echo "✅ Sitemap has been updated"
+            echo "Sitemap updated"
           fi
 
-      # Step 6: Configure git
-      - name: Configure Git
-        if: steps.check-changes.outputs.changed == 'true'
+      # Step 5: Commit and push if changed
+      - name: Commit and push sitemap
+        if: steps.sitemap-changed.outputs.changed == 'true'
         run: |
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
-
-      # Step 7: Commit and push
-      - name: Commit and Push Changes
-        if: steps.check-changes.outputs.changed == 'true'
-        run: |
+          git config user.name "Blog Sitemap Bot"
+          git config user.email "bot@github.actions"
           git add blog/sitemap.xml
-          git commit -m "🤖 Auto-update blog sitemap [$(date +'%Y-%m-%d %H:%M:%S')]"
-          git push origin ${{ github.ref_name }}
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          git commit -m "🤖 Auto-update blog sitemap from posts.json"
+          git push
 
-      # Step 8: Summary
-      - name: Workflow Summary
+      # Step 6: Log result
+      - name: Log result
         run: |
-          echo "### Sitemap Update Summary" >> $GITHUB_STEP_SUMMARY
-          echo "" >> $GITHUB_STEP_SUMMARY
-          if [ "${{ steps.check-changes.outputs.changed }}" = "true" ]; then
-            echo "✅ **Sitemap updated successfully**" >> $GITHUB_STEP_SUMMARY
-            echo "- Sitemap URL: https://thriftmaal.com/blog/sitemap.xml" >> $GITHUB_STEP_SUMMARY
-            echo "- Changes committed and pushed" >> $GITHUB_STEP_SUMMARY
+          if [ "${{ steps.sitemap-changed.outputs.changed }}" = "true" ]; then
+            echo "✅ Sitemap updated and committed successfully"
           else
-            echo "ℹ️ **No changes needed**" >> $GITHUB_STEP_SUMMARY
-            echo "- Sitemap is already up-to-date" >> $GITHUB_STEP_SUMMARY
+            echo "ℹ️ Sitemap already up-to-date, no changes needed"
           fi
-          echo "" >> $GITHUB_STEP_SUMMARY
-          echo "**Trigger:** ${{ github.event_name }}" >> $GITHUB_STEP_SUMMARY
-          echo "**Time:** $(date)" >> $GITHUB_STEP_SUMMARY
-
-      # Step 9: Notify on failure
-      - name: Workflow Failed
-        if: failure()
-        run: |
-          echo "❌ Sitemap generation failed!" >> $GITHUB_STEP_SUMMARY
-          echo "Check the logs above for errors." >> $GITHUB_STEP_SUMMARY
