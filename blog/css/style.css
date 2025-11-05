@@ -1,79 +1,634 @@
+/* ===========================
+   ThriftMaal Blog - Customized Styles
+   Maintaining Brand Identity
+   =========================== */
+
+/* Font Import - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 :root {
   --brand: #FF6F00;
   --brand-2: #FF8F3D;
   --ink: #0B1727;
   --muted: #666;
-  --border: #f0f0f0;
+  --border: #E0E0E0;
   --card: #fff;
-  --bg: #fafafa;
+  --bg: #F8F9FA;
+  --shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  --shadow-hover: 0 8px 20px rgba(255, 111, 0, 0.2);
+  --transition: all 0.3s ease;
 }
 
-* { box-sizing: border-box; }
-body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; color: var(--ink); background: var(--bg); }
-.container { max-width: 1100px; margin: 0 auto; padding: 0 16px; }
+* { 
+  box-sizing: border-box; 
+  margin: 0;
+  padding: 0;
+}
 
-/* Header */
-.header { background: #fff; border-bottom: 1px solid var(--border); }
-.navbar { display: flex; align-items: center; justify-content: space-between; padding: 12px 0; }
-.nav-menu { display: flex; gap: 16px; list-style: none; margin: 0; padding: 0; }
-.nav-menu a { text-decoration: none; color: var(--ink); font-weight: 600; }
-.hamburger { display: none; cursor: pointer; }
-.hamburger span { display: block; width: 24px; height: 2px; background: var(--ink); margin: 5px 0; }
+body { 
+  margin: 0; 
+  font-family: 'Poppins', sans-serif;
+  color: var(--ink); 
+  background: var(--bg);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
 
-/* Controls */
-.blog-controls { display: flex; gap: 12px; align-items: center; padding: 24px 0; flex-wrap: wrap; }
-.search-box { flex: 1; min-width: 220px; padding: 10px 12px; border: 2px solid #eaeaea; border-radius: 8px; }
-.filter-buttons { display: flex; gap: 8px; flex-wrap: wrap; }
-.filter-btn { padding: 10px 14px; border: 2px solid #eaeaea; background: #fff; border-radius: 8px; cursor: pointer; font-weight: 600; }
-.filter-btn.active, .filter-btn:hover { border-color: var(--brand); color: var(--brand); }
+.container { 
+  max-width: 1100px; 
+  margin: 0 auto; 
+  padding: 0 20px;
+}
 
-/* Grid */
-.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; padding-bottom: 32px; }
+/* Focus Accessibility */
+*:focus-visible {
+  outline: 3px solid var(--brand);
+  outline-offset: 2px;
+}
 
-/* Card */
-.blog-card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,.06); cursor: pointer; transition: transform .2s ease; }
-.blog-card:hover { transform: translateY(-4px); }
-.blog-card img { width: 100%; height: 190px; object-fit: cover; display: block; }
-.blog-info { padding: 14px; }
-.blog-category { display: inline-block; background: linear-gradient(135deg, var(--brand), var(--brand-2)); color: #fff; padding: 4px 10px; border-radius: 14px; font-size: 12px; font-weight: 700; }
-.blog-info h3 { margin: 8px 0; font-size: 18px; line-height: 1.35; }
-.blog-info p { color: var(--muted); margin: 0 0 10px; }
-.blog-meta { display: flex; gap: 12px; color: #999; font-size: 13px; }
-.btn { display: inline-block; margin-top: 8px; padding: 10px 14px; background: var(--brand); color: #fff; border-radius: 999px; text-decoration: none; font-weight: 700; }
+/* ===========================
+   HEADER - Dark ThriftMaal Style
+   =========================== */
+.header { 
+  background: var(--ink);
+  border-bottom: none;
+  box-shadow: var(--shadow);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
 
-/* Post */
-.post-container { max-width: 900px; margin: 24px auto; background: #fff; padding: 28px; border-radius: 14px; box-shadow: 0 4px 20px rgba(0,0,0,.06); border: 1px solid var(--border); }
-.post-header { margin-bottom: 14px; }
-.post-category { display: inline-block; padding: 6px 12px; background: linear-gradient(135deg, var(--brand), var(--brand-2)); color: #fff; border-radius: 16px; font-weight: 700; }
-.post-title { font-size: 32px; line-height: 1.3; margin: 10px 0; }
-.post-meta { display: flex; gap: 16px; color: var(--muted); border-bottom: 2px solid var(--border); padding-bottom: 14px; }
-.post-banner { width: 100%; height: 380px; object-fit: cover; border-radius: 12px; margin: 18px 0; }
-.ai-summary { background: linear-gradient(135deg, #FFF3E6, #FFE8D6); border-left: 4px solid var(--brand); padding: 14px; border-radius: 10px; }
-.post-content { font-size: 17px; line-height: 1.7; color: #333; }
-.post-content h2 { margin-top: 28px; font-size: 24px; }
-.post-content h3 { margin-top: 20px; font-size: 20px; }
-.post-content a { color: var(--brand); text-decoration: underline; }
+.navbar { 
+  display: flex; 
+  align-items: center; 
+  justify-content: space-between; 
+  padding: 1rem 0;
+}
 
-.back-to-blog { display: inline-block; padding: 10px 16px; background: #0B1727; color: #fff; border-radius: 999px; text-decoration: none; font-weight: 700; margin: 16px 0; }
+.logo img {
+  height: 50px;
+  width: auto;
+  transition: var(--transition);
+}
 
-/* Related */
-.related-posts { margin: 38px auto; padding-top: 18px; border-top: 2px solid var(--border); max-width: 900px; }
-.related-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 18px; }
-.related-card { background: #fff; border: 1px solid var(--border); border-radius: 10px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,.06); transition: transform .2s; cursor: pointer; }
-.related-card:hover { transform: translateY(-3px); }
-.related-card img { width: 100%; height: 160px; object-fit: cover; }
+.logo img:hover {
+  transform: scale(1.05);
+}
 
-/* Footer */
-.footer { background: #fff; border-top: 1px solid var(--border); margin-top: 24px; }
-.footer-content { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; padding: 24px 0; }
-.footer-section h3 { margin: 0 0 8px; }
-.footer-bottom { border-top: 1px solid var(--border); padding: 12px 0; color: #888; font-size: 14px; text-align: center; }
+.nav-menu { 
+  display: flex; 
+  gap: 2rem;
+  list-style: none; 
+  margin: 0; 
+  padding: 0;
+}
 
-/* Mobile */
+.nav-menu a { 
+  text-decoration: none; 
+  color: var(--card);
+  font-weight: 600;
+  position: relative;
+  padding: 0.5rem 0;
+  transition: var(--transition);
+}
+
+.nav-menu a:hover,
+.nav-menu a.active {
+  color: var(--brand);
+}
+
+.nav-menu a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--brand);
+  transition: width 0.3s ease;
+}
+
+.nav-menu a:hover::after,
+.nav-menu a.active::after {
+  width: 100%;
+}
+
+.hamburger { 
+  display: none; 
+  cursor: pointer;
+  flex-direction: column;
+}
+
+.hamburger span { 
+  display: block; 
+  width: 25px;
+  height: 3px;
+  background: var(--card);
+  margin: 4px 0;
+  transition: var(--transition);
+  border-radius: 2px;
+}
+
+/* ===========================
+   BLOG CONTROLS
+   =========================== */
+.blog-controls { 
+  display: flex; 
+  gap: 1rem;
+  align-items: center; 
+  padding: 2rem 0;
+  flex-wrap: wrap;
+  background: var(--card);
+  margin-top: 0;
+  border-radius: 15px;
+  box-shadow: var(--shadow);
+  padding: 1.5rem;
+}
+
+.search-box { 
+  flex: 1; 
+  min-width: 250px;
+  padding: 1rem 1.5rem;
+  border: 2px solid var(--border);
+  border-radius: 50px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  outline: none;
+  transition: var(--transition);
+}
+
+.search-box:focus {
+  border-color: var(--brand);
+  box-shadow: 0 0 0 3px rgba(255, 111, 0, 0.1);
+}
+
+.filter-buttons { 
+  display: flex; 
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.filter-btn { 
+  padding: 0.75rem 1.5rem;
+  border: 2px solid var(--border);
+  background: var(--bg);
+  border-radius: 50px;
+  cursor: pointer; 
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  transition: var(--transition);
+  font-size: 0.95rem;
+}
+
+.filter-btn.active, 
+.filter-btn:hover { 
+  border-color: var(--brand);
+  color: var(--card);
+  background: var(--brand);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 111, 0, 0.3);
+}
+
+.filter-btn:focus-visible {
+  outline: 3px solid var(--ink);
+  box-shadow: 0 0 0 5px rgba(255, 111, 0, 0.2);
+}
+
+/* ===========================
+   GRID LAYOUT
+   =========================== */
+.grid { 
+  display: grid; 
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 2rem 0 3rem;
+}
+
+/* ===========================
+   BLOG CARDS - ThriftMaal Style
+   =========================== */
+.blog-card { 
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 15px;
+  overflow: hidden; 
+  box-shadow: var(--shadow);
+  cursor: pointer; 
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+  will-change: transform;
+}
+
+.blog-card:hover { 
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-hover);
+}
+
+.blog-card img { 
+  width: 100%;
+  height: 220px;
+  object-fit: cover; 
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.blog-card:hover img {
+  transform: scale(1.1);
+}
+
+.blog-info { 
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  flex-grow: 1;
+}
+
+.blog-category { 
+  display: inline-block; 
+  background: linear-gradient(135deg, var(--brand), var(--brand-2));
+  color: var(--card);
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  align-self: flex-start;
+}
+
+.blog-info h3 { 
+  margin: 0.5rem 0;
+  font-size: 1.3rem;
+  line-height: 1.4;
+  color: var(--ink);
+}
+
+.blog-info p { 
+  color: #595959;
+  margin: 0;
+  flex-grow: 1;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.blog-meta { 
+  display: flex; 
+  gap: 1rem;
+  color: #595959;
+  font-size: 0.85rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+  justify-content: space-between;
+}
+
+.btn { 
+  display: inline-block; 
+  margin-top: 1rem;
+  padding: 0.75rem 2rem;
+  background: var(--brand);
+  color: var(--card);
+  border-radius: 50px;
+  text-decoration: none; 
+  font-weight: 700;
+  transition: var(--transition);
+  text-align: center;
+}
+
+.btn:hover {
+  background: var(--brand-2);
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(255, 111, 0, 0.4);
+}
+
+.btn:focus-visible {
+  outline: 3px solid var(--ink);
+  box-shadow: 0 0 0 5px rgba(255, 111, 0, 0.3);
+}
+
+/* ===========================
+   POST PAGE
+   =========================== */
+.post-container { 
+  max-width: 900px;
+  margin: 2rem auto;
+  background: var(--card);
+  padding: 2.5rem;
+  border-radius: 15px;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border);
+}
+
+.post-header { 
+  margin-bottom: 1.5rem;
+}
+
+.post-category { 
+  display: inline-block; 
+  padding: 0.5rem 1.2rem;
+  background: linear-gradient(135deg, var(--brand), var(--brand-2));
+  color: var(--card);
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.post-title { 
+  font-size: clamp(1.75rem, 5vw, 2.5rem);
+  line-height: 1.3;
+  margin: 1rem 0;
+  color: var(--ink);
+}
+
+.post-meta { 
+  display: flex; 
+  gap: 1.5rem;
+  color: #595959;
+  border-bottom: 2px solid var(--border);
+  padding-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+.post-banner { 
+  width: 100%;
+  height: 400px;
+  object-fit: cover; 
+  border-radius: 12px;
+  margin: 1.5rem 0;
+  box-shadow: var(--shadow);
+}
+
+.ai-summary { 
+  background: linear-gradient(135deg, #FFF3E6, #FFE8D6);
+  border-left: 4px solid var(--brand);
+  padding: 1.5rem;
+  border-radius: 10px;
+  margin: 1.5rem 0;
+  box-shadow: 0 2px 8px rgba(255, 111, 0, 0.1);
+}
+
+.ai-summary h3 {
+  color: var(--brand);
+  margin-bottom: 0.75rem;
+}
+
+.post-content { 
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #333;
+}
+
+.post-content h2 { 
+  margin-top: 2rem;
+  font-size: 1.75rem;
+  color: var(--ink);
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid var(--brand);
+}
+
+.post-content h3 { 
+  margin-top: 1.5rem;
+  font-size: 1.4rem;
+  color: var(--ink);
+}
+
+.post-content a { 
+  color: var(--brand);
+  text-decoration: underline;
+  font-weight: 600;
+  transition: var(--transition);
+}
+
+.post-content a:hover {
+  color: var(--brand-2);
+}
+
+.back-to-blog { 
+  display: inline-block; 
+  padding: 0.75rem 1.5rem;
+  background: var(--ink);
+  color: var(--card);
+  border-radius: 50px;
+  text-decoration: none; 
+  font-weight: 700;
+  margin: 1.5rem 0;
+  transition: var(--transition);
+}
+
+.back-to-blog:hover {
+  background: var(--brand);
+  transform: translateX(-5px);
+}
+
+/* ===========================
+   RELATED POSTS
+   =========================== */
+.related-posts { 
+  margin: 3rem auto;
+  padding-top: 2rem;
+  border-top: 2px solid var(--border);
+  max-width: 900px;
+}
+
+.related-posts h2 {
+  color: var(--ink);
+  margin-bottom: 1.5rem;
+}
+
+.related-grid { 
+  display: grid; 
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.related-card { 
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden; 
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.related-card:hover { 
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-hover);
+}
+
+.related-card img { 
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.related-card:hover img {
+  transform: scale(1.1);
+}
+
+/* ===========================
+   FOOTER - ThriftMaal Style
+   =========================== */
+.footer { 
+  background: var(--ink);
+  border-top: none;
+  margin-top: 3rem;
+  color: var(--card);
+  padding: 3rem 0 1rem;
+}
+
+.footer-content { 
+  display: grid; 
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+.footer-section h3 { 
+  margin: 0 0 1rem;
+  color: var(--brand);
+  font-size: 1.2rem;
+}
+
+.footer-section p,
+.footer-section ul {
+  color: #B0B0B0;
+  line-height: 1.6;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-section ul li a {
+  color: #B0B0B0;
+  transition: var(--transition);
+  text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+  color: var(--brand);
+  transform: translateX(5px);
+  display: inline-block;
+}
+
+.footer-bottom { 
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 1.5rem 0;
+  color: #B0B0B0;
+  font-size: 0.9rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+/* ===========================
+   ANIMATIONS
+   =========================== */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===========================
+   ACCESSIBILITY - Reduced Motion
+   =========================== */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* ===========================
+   MOBILE RESPONSIVE
+   =========================== */
 @media (max-width: 768px) {
-  .hamburger { display: block; }
-  .nav-menu { display: none; }
-  .nav-menu.active { display: flex; flex-direction: column; gap: 10px; }
-  .post-title { font-size: 24px; }
-  .post-banner { height: 240px; }
+  .hamburger { 
+    display: flex;
+  }
+  
+  .nav-menu { 
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    flex-direction: column;
+    background: var(--ink);
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    padding: 2rem 0;
+    gap: 0;
+  }
+  
+  .nav-menu li {
+    margin: 1rem 0;
+  }
+  
+  .nav-menu.active { 
+    left: 0;
+  }
+  
+  .blog-controls {
+    flex-direction: column;
+    padding: 1rem;
+  }
+  
+  .search-box {
+    min-width: 100%;
+  }
+  
+  .filter-buttons {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .post-container {
+    padding: 1.5rem;
+    margin: 1rem auto;
+  }
+  
+  .post-title { 
+    font-size: 1.5rem;
+  }
+  
+  .post-banner { 
+    height: 240px;
+  }
+  
+  .related-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ===========================
+   PRINT STYLES
+   =========================== */
+@media print {
+  .header, .footer, .filter-buttons, .blog-controls {
+    display: none;
+  }
+  
+  .blog-card,
+  .post-container {
+    break-inside: avoid;
+  }
 }
