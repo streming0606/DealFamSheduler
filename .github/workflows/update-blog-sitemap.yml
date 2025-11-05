@@ -1,54 +1,62 @@
 name: Update Blog Sitemap
 
 on:
-  # Trigger when posts.json is modified
   push:
     paths:
       - 'blog/data/posts.json'
     branches:
       - main
-
-  # Allow manual trigger
   workflow_dispatch:
 
 jobs:
   update-sitemap:
     runs-on: ubuntu-latest
+    timeout-minutes: 5
     
     permissions:
       contents: write
     
     steps:
-      # Step 1: Checkout repository
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0
+          fetch-depth: 1
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      # Step 2: Setup Node.js
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '18'
+          cache: 'npm'  # Cache node_modules if you use npm
 
-      # Step 3: Generate sitemap
       - name: Generate Blog Sitemap
-        run: node blog/generate-sitemap.js
+        run: |
+          node blog/generate-sitemap.js || {
+            echo "❌ Sitemap generation failed"
+            exit 1
+          }
 
-      # Step 4: Check if sitemap changed
+      - name: Validate Sitemap XML
+        run: |
+          if ! command -v xmllint &> /dev/null; then
+            sudo apt-get install -y libxml2-utils
+          fi
+          xmllint --noout blog/sitemap.xml || {
+            echo "❌ Generated sitemap is invalid XML"
+            exit 1
+          }
+
       - name: Check if sitemap changed
         id: sitemap-changed
         run: |
           if git diff --quiet blog/sitemap.xml; then
             echo "changed=false" >> $GITHUB_OUTPUT
-            echo "Sitemap unchanged"
+            echo "ℹ️ Sitemap unchanged"
           else
             echo "changed=true" >> $GITHUB_OUTPUT
-            echo "Sitemap updated"
+            echo "✅ Sitemap updated"
           fi
 
-      # Step 5: Commit and push if changed
       - name: Commit and push sitemap
         if: steps.sitemap-changed.outputs.changed == 'true'
         run: |
@@ -56,13 +64,26 @@ jobs:
           git config user.email "bot@github.actions"
           git add blog/sitemap.xml
           git commit -m "🤖 Auto-update blog sitemap from posts.json"
-          git push
+          
+          # Retry logic
+          for i in {1..3}; do
+            if git push; then
+              echo "✅ Sitemap updated and pushed successfully"
+              exit 0
+            fi
+            if [ $i -lt 3 ]; then
+              echo "⚠️ Push attempt $i failed, retrying..."
+              sleep $((2 ** i))
+            fi
+          done
+          
+          echo "❌ Failed to push after 3 attempts"
+          exit 1
 
-      # Step 6: Log result
-      - name: Log result
+      - name: Log final status
         run: |
           if [ "${{ steps.sitemap-changed.outputs.changed }}" = "true" ]; then
-            echo "✅ Sitemap updated and committed successfully"
+            echo "✅ Workflow completed: Sitemap updated"
           else
-            echo "ℹ️ Sitemap already up-to-date, no changes needed"
+            echo "ℹ️ Workflow completed: No changes needed"
           fi
