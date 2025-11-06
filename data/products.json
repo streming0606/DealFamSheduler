@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-11-05T21:22:29.868691+05:30",
-  "total_products": 299,
+  "last_updated": "2025-11-06T10:21:24.968718+05:30",
+  "total_products": 301,
   "products": [
+    {
+      "id": "product_morning_20251106_045124",
+      "title": "ZORO Men's Nylon Fabric Belt for Men, Plastic Flap Buckle, fits on upto 40 inches waist size",
+      "image": "https://m.media-amazon.com/images/I/61GOs4MJE2L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07NRY1VZ2?tag=gadgetvill09f-21",
+      "price": "\u20b9149",
+      "rating": 4.0,
+      "category": "electronics",
+      "asin": "B07NRY1VZ2",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-06T10:21:24.968669+05:30",
+      "session_type": "morning",
+      "link_index": 270
+    },
+    {
+      "id": "product_morning_20251106_045122",
+      "title": "Kuber Industries Cotton Premium Collection Handkerchiefs for Men (Light Colour) - Set of 6",
+      "image": "https://m.media-amazon.com/images/I/71zyhjSkLBS._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B092DP7TJC?tag=gadgetvill09f-21",
+      "price": "\u20b9209",
+      "rating": 3.9,
+      "category": "electronics",
+      "asin": "B092DP7TJC",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-06T10:21:22.978923+05:30",
+      "session_type": "morning",
+      "link_index": 270
+    },
     {
       "id": "product_night_20251105_155229",
       "title": "Caruso Italy Men's Premium 100% Pure Cotton Handkerchief White Base Colored Border",
