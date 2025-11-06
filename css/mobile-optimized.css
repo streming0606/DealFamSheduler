@@ -248,8 +248,8 @@
   /* Header view all button compact */
   .header-view-all-btn {
     padding: 1px 1px !important;
-    font-size: 0.9rem !important;
-    height: 50px !important;
+    font-size: 1.1rem !important;
+    height: 60px !important;
   }
 
   /* Horizontal scroll optimization */
