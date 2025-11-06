@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-11-06T10:21:24.968718+05:30",
-  "total_products": 301,
+  "last_updated": "2025-11-06T13:19:44.305271+05:30",
+  "total_products": 303,
   "products": [
+    {
+      "id": "product_afternoon_20251106_074944",
+      "title": "SPIN CART Cotton Premium Collection Casual Style Handkerchiefs Hanky For Men - Pack Of 12. - White Striped Xxl King Size",
+      "image": "https://m.media-amazon.com/images/I/71Tk6cEXO4L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B078NG88VT?tag=gadgetvill09f-21",
+      "price": "\u20b9371",
+      "rating": 4.1,
+      "category": "electronics",
+      "asin": "B078NG88VT",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-06T13:19:44.305244+05:30",
+      "session_type": "afternoon",
+      "link_index": 272
+    },
+    {
+      "id": "product_afternoon_20251106_074942",
+      "title": "Jockey Cotton Men White Casual Style Handkerchief (Pack Of 3) Hk01_White_Free Size",
+      "image": "https://m.media-amazon.com/images/I/51ow5uRVwFL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B09K39XYKB?tag=gadgetvill09f-21",
+      "price": "\u20b9297",
+      "rating": 4.3,
+      "category": "electronics",
+      "asin": "B09K39XYKB",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-06T13:19:42.437984+05:30",
+      "session_type": "afternoon",
+      "link_index": 272
+    },
     {
       "id": "product_morning_20251106_045124",
       "title": "ZORO Men's Nylon Fabric Belt for Men, Plastic Flap Buckle, fits on upto 40 inches waist size",
