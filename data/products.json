@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-11-06T13:19:44.305271+05:30",
-  "total_products": 303,
+  "last_updated": "2025-11-06T18:48:52.179375+05:30",
+  "total_products": 305,
   "products": [
+    {
+      "id": "product_morning_20251106_131852",
+      "title": "SWAGR Sports Crew Socks for Men Premimum Cotton Athletic Socks, Pack of 3, Free Size",
+      "image": "https://m.media-amazon.com/images/I/913coqRee6L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DHSHNZ98?tag=gadgetvill09f-21",
+      "price": "\u20b998",
+      "rating": 4.0,
+      "category": "electronics",
+      "asin": "B0DHSHNZ98",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-06T18:48:52.179348+05:30",
+      "session_type": "morning",
+      "link_index": 274
+    },
+    {
+      "id": "product_morning_20251106_131849",
+      "title": "Supersox Men Calf Length Combed Cotton Formal/Office Calf Socks Combo, Made With Breathable, Anti Odour & Moisture Absor",
+      "image": "https://m.media-amazon.com/images/I/81NFMvMUhnL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B08JQD1QYZ?tag=gadgetvill09f-21",
+      "price": "\u20b9284",
+      "rating": 4.1,
+      "category": "electronics",
+      "asin": "B08JQD1QYZ",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-06T18:48:49.030887+05:30",
+      "session_type": "morning",
+      "link_index": 274
+    },
     {
       "id": "product_afternoon_20251106_074944",
       "title": "SPIN CART Cotton Premium Collection Casual Style Handkerchiefs Hanky For Men - Pack Of 12. - White Striped Xxl King Size",
