@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-11-07T10:19:04.753672+05:30",
-  "total_products": 309,
+  "last_updated": "2025-11-07T13:20:08.298687+05:30",
+  "total_products": 311,
   "products": [
+    {
+      "id": "product_afternoon_20251107_075008",
+      "title": "HAMMONDS FLYCATCHER Genuine Leather Belt for Men, Premium Leather Belt with Auto Lock mechanism, Mens Belt Leather Brand",
+      "image": "https://m.media-amazon.com/images/I/71aX+BBmsSL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0BK1HQZD4?tag=gadgetvill09f-21",
+      "price": "\u20b9989",
+      "rating": 4.3,
+      "category": "electronics",
+      "asin": "B0BK1HQZD4",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-07T13:20:08.298653+05:30",
+      "session_type": "afternoon",
+      "link_index": 280
+    },
+    {
+      "id": "product_afternoon_20251107_075006",
+      "title": "Jockey 7491 Women's Compact Cotton Stretch Solid Low Show Modern Socks with Stay Fresh Treatment (Pack of 2)",
+      "image": "https://m.media-amazon.com/images/I/81yho5F8IjL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0B9WQ6L1R?tag=gadgetvill09f-21",
+      "price": "\u20b9229",
+      "rating": 4.4,
+      "category": "electronics",
+      "asin": "B0B9WQ6L1R",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-07T13:20:06.278977+05:30",
+      "session_type": "afternoon",
+      "link_index": 280
+    },
     {
       "id": "product_morning_20251107_044904",
       "title": "JACK & JONES Men's Cotton Baseball Cap with Adjustable Back Closure | Unisex Cap",
