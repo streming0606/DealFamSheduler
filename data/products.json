@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-11-07T18:45:52.934830+05:30",
-  "total_products": 313,
+  "last_updated": "2025-11-07T21:20:49.900844+05:30",
+  "total_products": 315,
   "products": [
+    {
+      "id": "product_night_20251107_155049",
+      "title": "ME STORES Unisex Loafer Socks No-Show Cotton Socks Multicolored Pack of 5",
+      "image": "https://m.media-amazon.com/images/I/71f87fU6e1L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07JJZ52JZ?tag=gadgetvill09f-21",
+      "price": "\u20b9251",
+      "rating": 3.8,
+      "category": "electronics",
+      "asin": "B07JJZ52JZ",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-07T21:20:49.900809+05:30",
+      "session_type": "night",
+      "link_index": 284
+    },
+    {
+      "id": "product_night_20251107_155047",
+      "title": "SWAGR Ankle Socks for Men & Women, Multicolor, Pack of 5, Free Size",
+      "image": "https://m.media-amazon.com/images/I/91Wl5xcJ+GL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0BWPGC2PR?tag=gadgetvill09f-21",
+      "price": "\u20b9116",
+      "rating": 3.7,
+      "category": "electronics",
+      "asin": "B0BWPGC2PR",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-07T21:20:47.898667+05:30",
+      "session_type": "night",
+      "link_index": 284
+    },
     {
       "id": "product_morning_20251107_131552",
       "title": "MITUL Home Fashion Flannel Fleece AC Blanket for Winter Double Size,Soft Plush Blanket for Travel & Sleeping Malmal (Pin",
