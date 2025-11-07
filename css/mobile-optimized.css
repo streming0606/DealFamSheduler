@@ -727,7 +727,7 @@
   /* Product title */
   .deals .product-card .product-title {
     font-size: 0.75rem !important;
-    line-height: 1.2 !important;
+    line-height: 1 !important;
     margin-bottom: 6px !important;
     -webkit-line-clamp: 2 !important;
   }
