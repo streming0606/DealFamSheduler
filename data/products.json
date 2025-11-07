@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-11-07T13:20:08.298687+05:30",
-  "total_products": 311,
+  "last_updated": "2025-11-07T18:45:52.934830+05:30",
+  "total_products": 313,
   "products": [
+    {
+      "id": "product_morning_20251107_131552",
+      "title": "MITUL Home Fashion Flannel Fleece AC Blanket for Winter Double Size,Soft Plush Blanket for Travel & Sleeping Malmal (Pin",
+      "image": "https://m.media-amazon.com/images/I/61ze9ip2ekL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B09QHYWRYT?tag=gadgetvill09f-21",
+      "price": "\u20b9498",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "home",
+      "asin": "B09QHYWRYT",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-07T18:45:52.934798+05:30",
+      "session_type": "morning",
+      "link_index": 282
+    },
+    {
+      "id": "product_morning_20251107_131551",
+      "title": "Jockey Men's Crew Cotton Modern Socks",
+      "image": "https://m.media-amazon.com/images/I/71vBiTajtvL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0B4ZQJ8R3?tag=gadgetvill09f-21",
+      "price": "\u20b9479",
+      "rating": 4.3,
+      "category": "electronics",
+      "asin": "B0B4ZQJ8R3",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-07T18:45:51.304838+05:30",
+      "session_type": "morning",
+      "link_index": 282
+    },
     {
       "id": "product_afternoon_20251107_075008",
       "title": "HAMMONDS FLYCATCHER Genuine Leather Belt for Men, Premium Leather Belt with Auto Lock mechanism, Mens Belt Leather Brand",
