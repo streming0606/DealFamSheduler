@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-11-07T21:20:49.900844+05:30",
-  "total_products": 315,
+  "last_updated": "2025-11-08T10:17:48.089564+05:30",
+  "total_products": 317,
   "products": [
+    {
+      "id": "product_morning_20251108_044748",
+      "title": "XYXX Mens Intellieaze Everyday Ankle-Length Socks",
+      "image": "https://m.media-amazon.com/images/I/715GOEUCt+L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DKJR8LTK?tag=gadgetvill09f-21",
+      "price": "\u20b9499",
+      "rating": 4.2,
+      "category": "electronics",
+      "asin": "B0DKJR8LTK",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-08T10:17:48.089530+05:30",
+      "session_type": "morning",
+      "link_index": 286
+    },
+    {
+      "id": "product_morning_20251108_044746",
+      "title": "SELLORIA Acrylic Plain Baseball Sport Cap Men's Baseball Head Hat Stylish All Sports Caps With Adjustable Strap Pack Of ",
+      "image": "https://m.media-amazon.com/images/I/41eNv6-C5EL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0C9VVB1Y6?tag=gadgetvill09f-21",
+      "price": "\u20b9140",
+      "rating": 3.8,
+      "category": "fashion",
+      "asin": "B0C9VVB1Y6",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-08T10:17:46.756161+05:30",
+      "session_type": "morning",
+      "link_index": 286
+    },
     {
       "id": "product_night_20251107_155049",
       "title": "ME STORES Unisex Loafer Socks No-Show Cotton Socks Multicolored Pack of 5",
