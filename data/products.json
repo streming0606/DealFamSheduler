@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-11-08T13:19:50.448815+05:30",
-  "total_products": 319,
+  "last_updated": "2025-11-08T18:33:54.072405+05:30",
+  "total_products": 321,
   "products": [
+    {
+      "id": "product_morning_20251108_130354",
+      "title": "Skullfit Sports Headbands For Men (Black) - Lightweight Moisture Wicking Workout Sweatbands For Running, Gym, Yoga, Cycl",
+      "image": "https://m.media-amazon.com/images/I/61-n+ddVIHL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B08QGP3JVV?tag=gadgetvill09f-21",
+      "price": "\u20b9298",
+      "rating": 4.0,
+      "category": "electronics",
+      "asin": "B08QGP3JVV",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-08T18:33:54.072370+05:30",
+      "session_type": "morning",
+      "link_index": 290
+    },
+    {
+      "id": "product_morning_20251108_130350",
+      "title": "NAVYSPORT Men's Crew Length Cushion Cotton Socks (Pack of 3) (Free Size)",
+      "image": "https://m.media-amazon.com/images/I/814erH1qlwL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B08F131Q29?tag=gadgetvill09f-21",
+      "price": "\u20b9251",
+      "rating": 4.1,
+      "category": "electronics",
+      "asin": "B08F131Q29",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-08T18:33:50.350735+05:30",
+      "session_type": "morning",
+      "link_index": 290
+    },
     {
       "id": "product_afternoon_20251108_074950",
       "title": "ARKYLE Winter Socks for Men Thick Terry Towel Cushion Socks, Free Size, Pack of 4",
