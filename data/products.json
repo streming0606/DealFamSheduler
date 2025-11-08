@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-11-08T10:17:48.089564+05:30",
-  "total_products": 317,
+  "last_updated": "2025-11-08T13:19:50.448815+05:30",
+  "total_products": 319,
   "products": [
+    {
+      "id": "product_afternoon_20251108_074950",
+      "title": "ARKYLE Winter Socks for Men Thick Terry Towel Cushion Socks, Free Size, Pack of 4",
+      "image": "https://m.media-amazon.com/images/I/91hIyGIagmL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07RSL1R5N?tag=gadgetvill09f-21",
+      "price": "\u20b9291",
+      "rating": 4.1,
+      "category": "electronics",
+      "asin": "B07RSL1R5N",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-08T13:19:50.448789+05:30",
+      "session_type": "afternoon",
+      "link_index": 288
+    },
+    {
+      "id": "product_afternoon_20251108_074946",
+      "title": "FRONTECH Wired Gaming Combo Keyboard and Optical Mouse with RGB Backlight Effects| 104 Membrane Keys | USB Plug & Play |",
+      "image": "https://m.media-amazon.com/images/I/71npfCB5vIL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CTMQ7SCD?tag=gadgetvill09f-21",
+      "price": "\u20b9569",
+      "rating": 3.4,
+      "category": "electronics",
+      "asin": "B0CTMQ7SCD",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-08T13:19:46.372372+05:30",
+      "session_type": "afternoon",
+      "link_index": 288
+    },
     {
       "id": "product_morning_20251108_044748",
       "title": "XYXX Mens Intellieaze Everyday Ankle-Length Socks",
