@@ -3,12 +3,30 @@
   <!-- Blog listing page -->
   <url>
     <loc>https://thriftmaal.com/blog/</loc>
-    <lastmod>2025-11-08</lastmod>
+    <lastmod>2025-11-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <!-- Auto-generated blog posts -->
+  <url>
+    <loc>https://thriftmaal.com/blog/credit-card-offers-electronics-shopping-india</loc>
+    <lastmod>2025-11-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://thriftmaal.com/blog/best-cashback-offers-online-shopping-india</loc>
+    <lastmod>2025-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://thriftmaal.com/blog/men-shirts-discount-offers-under-300-india</loc>
+    <lastmod>2025-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
   <url>
     <loc>https://thriftmaal.com/blog/fashion-deals-women-clothing-under-500</loc>
     <lastmod>2025-11-08</lastmod>
