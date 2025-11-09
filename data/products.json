@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-11-09T18:33:36.735116+05:30",
-  "total_products": 329,
+  "last_updated": "2025-11-09T21:20:02.660793+05:30",
+  "total_products": 331,
   "products": [
+    {
+      "id": "product_night_20251109_155002",
+      "title": "NAVYSPORT Men's Crew Length Cushion Cotton Socks (Pack of 3) (SF-W-1_White) Free Size",
+      "image": "https://m.media-amazon.com/images/I/81hvZrAApGL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B073WW4SKX?tag=gadgetvill09f-21",
+      "price": "\u20b9251",
+      "rating": 4.2,
+      "category": "electronics",
+      "asin": "B073WW4SKX",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-09T21:20:02.660753+05:30",
+      "session_type": "night",
+      "link_index": 300
+    },
+    {
+      "id": "product_night_20251109_154956",
+      "title": "Jockey Cotton Men White Casual Style Handkerchief With Coloured Border (Pack Of 3)_HK02_White_Free Size",
+      "image": "https://m.media-amazon.com/images/I/414SEWfOmaL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0B2QGH8SW?tag=gadgetvill09f-21",
+      "price": "\u20b9297",
+      "rating": 4.2,
+      "category": "electronics",
+      "asin": "B0B2QGH8SW",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-09T21:19:56.807320+05:30",
+      "session_type": "night",
+      "link_index": 300
+    },
     {
       "id": "product_morning_20251109_130336",
       "title": "Men's Vegan Leather Belt for Men | (Formal/Casual) | Black",
