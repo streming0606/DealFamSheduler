@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-11-09T21:20:02.660793+05:30",
-  "total_products": 331,
+  "last_updated": "2025-11-10T10:21:07.909617+05:30",
+  "total_products": 333,
   "products": [
+    {
+      "id": "product_morning_20251110_045107",
+      "title": "SJeware Polyester 5 Pairs Solid Ankle Length Socks For Men & Women, Multicolor, Pack Of 5, Free Size",
+      "image": "https://m.media-amazon.com/images/I/A10JGz2JOZL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0BSNRF8KM?tag=gadgetvill09f-21",
+      "price": "\u20b9118",
+      "rating": 3.8,
+      "category": "electronics",
+      "asin": "B0BSNRF8KM",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-10T10:21:07.909571+05:30",
+      "session_type": "morning",
+      "link_index": 302
+    },
+    {
+      "id": "product_morning_20251110_045106",
+      "title": "Van Heusen Men Cotton Regular Socks",
+      "image": "https://m.media-amazon.com/images/I/41uQO7HB1SL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B014GVOMPW?tag=gadgetvill09f-21",
+      "price": "\u20b9454",
+      "rating": 4.2,
+      "category": "electronics",
+      "asin": "B014GVOMPW",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-10T10:21:06.183434+05:30",
+      "session_type": "morning",
+      "link_index": 302
+    },
     {
       "id": "product_night_20251109_155002",
       "title": "NAVYSPORT Men's Crew Length Cushion Cotton Socks (Pack of 3) (SF-W-1_White) Free Size",
