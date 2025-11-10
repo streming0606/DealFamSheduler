@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-11-10T18:48:51.786761+05:30",
-  "total_products": 337,
+  "last_updated": "2025-11-10T21:21:27.031063+05:30",
+  "total_products": 339,
   "products": [
+    {
+      "id": "product_night_20251110_155127",
+      "title": "PULIDIKI Car Cleaning Gel Cleaning Putty Car Interior Cleaner Car Detailing Kit Car Cleaning Slime Car Cleaning Supplies",
+      "image": "https://m.media-amazon.com/images/I/71BQM3eHmdL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B09VKPZRN4?tag=gadgetvill09f-21",
+      "price": "\u20b9199",
+      "rating": 4.1,
+      "category": "electronics",
+      "asin": "B09VKPZRN4",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-10T21:21:27.031036+05:30",
+      "session_type": "night",
+      "link_index": 308
+    },
+    {
+      "id": "product_night_20251110_155125",
+      "title": "Vehicle Fastag Card Holder Heavy Duty All Vehicle Suitable, Universal Fit with Double Sided Tape Acrylic Material Car, S",
+      "image": "https://m.media-amazon.com/images/I/61DETuiu--L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FNKB7Z7J?tag=gadgetvill09f-21",
+      "price": "\u20b9269",
+      "rating": 1.0,
+      "category": "home",
+      "asin": "B0FNKB7Z7J",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-10T21:21:25.398579+05:30",
+      "session_type": "night",
+      "link_index": 308
+    },
     {
       "id": "product_morning_20251110_131851",
       "title": "COLORCORAL Cleaning Gel for Car Universal Gel Cleaner Auto Detailing Car Vent Keyboard Cleaning Putty Car Interior Clean",
