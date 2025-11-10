@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-11-10T13:19:36.883216+05:30",
-  "total_products": 335,
+  "last_updated": "2025-11-10T18:48:51.786761+05:30",
+  "total_products": 337,
   "products": [
+    {
+      "id": "product_morning_20251110_131851",
+      "title": "COLORCORAL Cleaning Gel for Car Universal Gel Cleaner Auto Detailing Car Vent Keyboard Cleaning Putty Car Interior Clean",
+      "image": "https://m.media-amazon.com/images/I/71dmaXgSUwL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0D2RGR9N1?tag=gadgetvill09f-21",
+      "price": "\u20b9195",
+      "rating": 3.9,
+      "category": "electronics",
+      "asin": "B0D2RGR9N1",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-10T18:48:51.786734+05:30",
+      "session_type": "morning",
+      "link_index": 306
+    },
+    {
+      "id": "product_morning_20251110_131849",
+      "title": "Heavy Duty Buffer Rubber Spring Compatible for Ape City 3 Wheeler Rubber, Rear Jumping Rubber Spring Flat Top,Part Numbe",
+      "image": "https://m.media-amazon.com/images/I/51p1C7HpTTL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FPD2S1ZK?tag=gadgetvill09f-21",
+      "price": "\u20b9650",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B0FPD2S1ZK",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-10T18:48:49.382904+05:30",
+      "session_type": "morning",
+      "link_index": 306
+    },
     {
       "id": "product_afternoon_20251110_074936",
       "title": "Garbify All Fastag Card Car Holder Acrylic Material All Vehicle Suitable,Universal Fit,and Multipurpose Microfiber Clean",
