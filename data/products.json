@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-11-11T13:19:42.785366+05:30",
-  "total_products": 343,
+  "last_updated": "2025-11-11T18:48:42.054265+05:30",
+  "total_products": 345,
   "products": [
+    {
+      "id": "product_morning_20251111_131842",
+      "title": "flying CLOUDS Nylon Portable Projector Bag Carrying Case with Detachable Shoulder Strap for Acer, Epson, Benq, LG, Optom",
+      "image": "https://m.media-amazon.com/images/I/91BPLTRkQuL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FP4QZN32?tag=gadgetvill09f-21",
+      "price": "\u20b9935.30",
+      "rating": 4.2,
+      "category": "fashion",
+      "asin": "B0FP4QZN32",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-11T18:48:42.054231+05:30",
+      "session_type": "morning",
+      "link_index": 314
+    },
+    {
+      "id": "product_morning_20251111_131835",
+      "title": "3-Pin Automotive Electrical Connector with Wiring Harness, Grey and Blue, Weather-Resistant (NHY-320)",
+      "image": "https://m.media-amazon.com/images/I/51DMrnBJcjL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FK2DWC32?tag=gadgetvill09f-21",
+      "price": "\u20b9599",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B0FK2DWC32",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-11T18:48:35.126036+05:30",
+      "session_type": "morning",
+      "link_index": 314
+    },
     {
       "id": "product_afternoon_20251111_074942",
       "title": "Automotive Relay 740-12-1A-1SAB-TM, 85 Ohm Coil, 4-Pin Terminal",
