@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-11-11T18:48:42.054265+05:30",
-  "total_products": 345,
+  "last_updated": "2025-11-11T21:21:23.916101+05:30",
+  "total_products": 347,
   "products": [
+    {
+      "id": "product_night_20251111_155123",
+      "title": "RainDrives\u2122 Water Repellent Coating with Microfiber Cloth | 2 Months Pack (100ml) | Improves Visibility in Rain, Clear V",
+      "image": "https://m.media-amazon.com/images/I/419JBbIdhFL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DZCT5CQV?tag=gadgetvill09f-21",
+      "price": "\u20b9259",
+      "rating": 3.6,
+      "category": "electronics",
+      "asin": "B0DZCT5CQV",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-11T21:21:23.916074+05:30",
+      "session_type": "night",
+      "link_index": 316
+    },
+    {
+      "id": "product_night_20251111_155122",
+      "title": "Amazon Product B07QCPGQ7V",
+      "image": "https://m.media-amazon.com/images/I/B07QCPGQ7V._AC_SL1500_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07QCPGQ7V?tag=gadgetvill09f-21",
+      "price": "\u20b9Special Price",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B07QCPGQ7V",
+      "data_source": "fallback",
+      "posted_date": "2025-11-11T21:21:22.061790+05:30",
+      "session_type": "night",
+      "link_index": 316
+    },
     {
       "id": "product_morning_20251111_131842",
       "title": "flying CLOUDS Nylon Portable Projector Bag Carrying Case with Detachable Shoulder Strap for Acer, Epson, Benq, LG, Optom",
