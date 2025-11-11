@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-11-10T21:21:27.031063+05:30",
-  "total_products": 339,
+  "last_updated": "2025-11-11T10:19:45.816445+05:30",
+  "total_products": 341,
   "products": [
+    {
+      "id": "product_morning_20251111_044945",
+      "title": "DUFFEL-100% Waterproof Two Wheeler Bike/Scooty Body Cover Comfortable for Hero CBZHero CBZ Heat Protectio/UV-Rays/Birds ",
+      "image": "https://m.media-amazon.com/images/I/515nd51vhDL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B09LDD4XJ1?tag=gadgetvill09f-21",
+      "price": "\u20b9649",
+      "rating": 3.3,
+      "category": "home",
+      "asin": "B09LDD4XJ1",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-11T10:19:45.816419+05:30",
+      "session_type": "morning",
+      "link_index": 310
+    },
+    {
+      "id": "product_morning_20251111_044944",
+      "title": "3-Pin Automotive Electrical Connector with Wire Harness, Black (GLT-321)",
+      "image": "https://m.media-amazon.com/images/I/5160eJ5WmZL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FK2FVPCM?tag=gadgetvill09f-21",
+      "price": "\u20b9599",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B0FK2FVPCM",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-11T10:19:44.108527+05:30",
+      "session_type": "morning",
+      "link_index": 310
+    },
     {
       "id": "product_night_20251110_155127",
       "title": "PULIDIKI Car Cleaning Gel Cleaning Putty Car Interior Cleaner Car Detailing Kit Car Cleaning Slime Car Cleaning Supplies",
