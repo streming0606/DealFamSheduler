@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-11-12T18:50:14.605540+05:30",
-  "total_products": 351,
+  "last_updated": "2025-11-12T21:23:36.291281+05:30",
+  "total_products": 353,
   "products": [
+    {
+      "id": "product_night_20251112_155336",
+      "title": "Waico 30 X Tubeless Tyre Puncture Repair Strips | for Car, Bike Tire Self Sealing Rubber Plugs (30 Pcs)",
+      "image": "https://m.media-amazon.com/images/I/71YD9GLOphL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CT5NP96P?tag=gadgetvill09f-21",
+      "price": "\u20b9189",
+      "rating": 3.4,
+      "category": "electronics",
+      "asin": "B0CT5NP96P",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-12T21:23:36.291252+05:30",
+      "session_type": "night",
+      "link_index": 324
+    },
+    {
+      "id": "product_night_20251112_155333",
+      "title": "Sanitary Pads For Women XL pak of 10",
+      "image": "https://m.media-amazon.com/images/I/41qseMXYeTL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FHHMCG29?tag=gadgetvill09f-21",
+      "price": "\u20b9352",
+      "rating": 4.6,
+      "category": "electronics",
+      "asin": "B0FHHMCG29",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-12T21:23:33.249232+05:30",
+      "session_type": "night",
+      "link_index": 324
+    },
     {
       "id": "product_morning_20251112_132014",
       "title": "Tyre Mounting Paste, Tyre Fitting Paste 4kgs",
