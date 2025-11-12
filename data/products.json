@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-11-12T13:19:57.982380+05:30",
+  "last_updated": "2025-11-12T18:50:14.605540+05:30",
   "total_products": 351,
   "products": [
+    {
+      "id": "product_morning_20251112_132014",
+      "title": "Tyre Mounting Paste, Tyre Fitting Paste 4kgs",
+      "image": "https://m.media-amazon.com/images/I/41gXhf3+84L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0D1GB4RJW?tag=gadgetvill09f-21",
+      "price": "\u20b91,534",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B0D1GB4RJW",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-12T18:50:14.605505+05:30",
+      "session_type": "morning",
+      "link_index": 322
+    },
+    {
+      "id": "product_morning_20251112_132012",
+      "title": "WADFOW 5 Pcs air Tools Set, Includes 4m Recoil Hose, Air Washing Gun, Air Spray Gun, Air Tire Inflating Gun, Nitto Type ",
+      "image": "https://m.media-amazon.com/images/I/71ySH+mOfpL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DCNDPX7M?tag=gadgetvill09f-21",
+      "price": "\u20b91,900",
+      "rating": 4.0,
+      "category": "health",
+      "asin": "B0DCNDPX7M",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-12T18:50:12.629392+05:30",
+      "session_type": "morning",
+      "link_index": 322
+    },
     {
       "id": "product_afternoon_20251112_074957",
       "title": "Winberg Cleaning Gel for Car Detail Tools Car Cleaning Automotive Dust Air Vent Interior Detail Pack of 2 Dust Cleaner f",
@@ -240,7 +268,6 @@
       "session_type": "afternoon",
       "link_index": 304
     },
-    
     {
       "id": "product_morning_20251110_045107",
       "title": "SJeware Polyester 5 Pairs Solid Ankle Length Socks For Men & Women, Multicolor, Pack Of 5, Free Size",
@@ -437,7 +464,6 @@
       "session_type": "morning",
       "link_index": 290
     },
-    
     {
       "id": "product_afternoon_20251108_074946",
       "title": "FRONTECH Wired Gaming Combo Keyboard and Optical Mouse with RGB Backlight Effects| 104 Membrane Keys | USB Plug & Play |",
