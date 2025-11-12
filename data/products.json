@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-11-12T10:20:14.662330+05:30",
-  "total_products": 349,
+  "last_updated": "2025-11-12T13:19:57.982380+05:30",
+  "total_products": 351,
   "products": [
+    {
+      "id": "product_afternoon_20251112_074957",
+      "title": "Winberg Cleaning Gel for Car Detail Tools Car Cleaning Automotive Dust Air Vent Interior Detail Pack of 2 Dust Cleaner f",
+      "image": "https://m.media-amazon.com/images/I/71e-IcvaykL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DYD8PPKK?tag=gadgetvill09f-21",
+      "price": "\u20b9169",
+      "rating": 2.1,
+      "category": "electronics",
+      "asin": "B0DYD8PPKK",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-12T13:19:57.982356+05:30",
+      "session_type": "afternoon",
+      "link_index": 320
+    },
+    {
+      "id": "product_afternoon_20251112_074955",
+      "title": "Lite Adult Diapers Extra Large Size (XL) | Unisex Diapers Pants Style | Waist (48-64 cm) | Wetness Indicator, Super Abso",
+      "image": "https://m.media-amazon.com/images/I/61S1-LdM1OL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FK219NDG?tag=gadgetvill09f-21",
+      "price": "\u20b9589",
+      "rating": 3.4,
+      "category": "electronics",
+      "asin": "B0FK219NDG",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-12T13:19:55.410436+05:30",
+      "session_type": "afternoon",
+      "link_index": 320
+    },
     {
       "id": "product_morning_20251112_045014",
       "title": "NOFOX Pilot Power FG-17 Foam Gun for Washing and Cleaning Air Assisted Sprayer Air Foam Gun (1 FoamGun, 1, Extension, 1 ",
