@@ -3,12 +3,30 @@
   <!-- Blog listing page -->
   <url>
     <loc>https://thriftmaal.com/blog/</loc>
-    <lastmod>2025-11-12</lastmod>
+    <lastmod>2025-11-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <!-- Auto-generated blog posts -->
+  <url>
+    <loc>https://thriftmaal.com/blog/cyber-monday-deals-india-december</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://thriftmaal.com/blog/christmas-sale-deals-gifts-india-2025</loc>
+    <lastmod>2025-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://thriftmaal.com/blog/independence-day-sale-electronics-august</loc>
+    <lastmod>2025-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
   <url>
     <loc>https://thriftmaal.com/blog/holi-sale-offers-colors-home-decor</loc>
     <lastmod>2025-11-12</lastmod>
