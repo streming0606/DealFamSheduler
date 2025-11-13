@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-11-12T21:23:36.291281+05:30",
-  "total_products": 353,
+  "last_updated": "2025-11-13T10:20:27.285302+05:30",
+  "total_products": 355,
   "products": [
+    {
+      "id": "product_morning_20251113_045027",
+      "title": "Guance Car Cigarette Lighter 12 V For Maruti Suzuki Cellario",
+      "image": "https://m.media-amazon.com/images/I/41DHjnmOYlL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B075WYW37P?tag=gadgetvill09f-21",
+      "price": "\u20b9280",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B075WYW37P",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-13T10:20:27.285268+05:30",
+      "session_type": "morning",
+      "link_index": 326
+    },
+    {
+      "id": "product_morning_20251113_045025",
+      "title": "Anti Rain (AR) Hydrophobic Glass Coating",
+      "image": "https://m.media-amazon.com/images/I/61HLBO7dxvL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CMQ1ZZXY?tag=gadgetvill09f-21",
+      "price": "\u20b91,990",
+      "rating": 3.7,
+      "category": "electronics",
+      "asin": "B0CMQ1ZZXY",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-13T10:20:25.039291+05:30",
+      "session_type": "morning",
+      "link_index": 326
+    },
     {
       "id": "product_night_20251112_155336",
       "title": "Waico 30 X Tubeless Tyre Puncture Repair Strips | for Car, Bike Tire Self Sealing Rubber Plugs (30 Pcs)",
