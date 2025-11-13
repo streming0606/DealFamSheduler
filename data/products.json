@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-11-13T13:19:51.338059+05:30",
-  "total_products": 357,
+  "last_updated": "2025-11-13T18:49:49.501277+05:30",
+  "total_products": 359,
   "products": [
+    {
+      "id": "product_morning_20251113_131949",
+      "title": "Car Heavy Duty Auto Jumper Cable Battery Booster Wire Clamp with Alligator Wire Emergency Car Battery Charging Booster C",
+      "image": "https://m.media-amazon.com/images/I/61EpHKPepZL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DGGX1K7Q?tag=gadgetvill09f-21",
+      "price": "\u20b9329",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B0DGGX1K7Q",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-13T18:49:49.501244+05:30",
+      "session_type": "morning",
+      "link_index": 330
+    },
+    {
+      "id": "product_morning_20251113_131948",
+      "title": "S.I Two Way Air Chuck Lite Two Way Nozzle with Rubber Hoser Free",
+      "image": "https://m.media-amazon.com/images/I/61ROrw7jSAS._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B097QYWQBX?tag=gadgetvill09f-21",
+      "price": "\u20b9289",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B097QYWQBX",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-13T18:49:48.339505+05:30",
+      "session_type": "morning",
+      "link_index": 330
+    },
     {
       "id": "product_afternoon_20251113_074951",
       "title": "Guance Car Mud Flaps for Volkswagen Polo GTI",
