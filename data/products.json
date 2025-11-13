@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-11-13T18:49:49.501277+05:30",
-  "total_products": 359,
+  "last_updated": "2025-11-13T21:21:29.204618+05:30",
+  "total_products": 361,
   "products": [
+    {
+      "id": "product_night_20251113_155129",
+      "title": "1532 for Tubeless Tyre Valve Set of 50 Pcs, Heavy Duty Product",
+      "image": "https://m.media-amazon.com/images/I/2120vRrVyoL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B09F6SMTV9?tag=gadgetvill09f-21",
+      "price": "\u20b91,240",
+      "rating": 5.0,
+      "category": "electronics",
+      "asin": "B09F6SMTV9",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-13T21:21:29.204582+05:30",
+      "session_type": "night",
+      "link_index": 332
+    },
+    {
+      "id": "product_night_20251113_155124",
+      "title": "Car Wash Shampoo, pH Balanced, Streak-Free Shine, 500ml",
+      "image": "https://m.media-amazon.com/images/I/61NvBzhr7iL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FL8559J7?tag=gadgetvill09f-21",
+      "price": "\u20b9265",
+      "rating": 5.0,
+      "category": "electronics",
+      "asin": "B0FL8559J7",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-13T21:21:24.410674+05:30",
+      "session_type": "night",
+      "link_index": 332
+    },
     {
       "id": "product_morning_20251113_131949",
       "title": "Car Heavy Duty Auto Jumper Cable Battery Booster Wire Clamp with Alligator Wire Emergency Car Battery Charging Booster C",
