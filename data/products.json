@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-11-13T21:21:29.204618+05:30",
-  "total_products": 361,
+  "last_updated": "2025-11-14T10:19:44.504445+05:30",
+  "total_products": 363,
   "products": [
+    {
+      "id": "product_morning_20251114_044944",
+      "title": "TVS Mobile Holder for Bikes Or Bike Mobile Holder for Maps and GPS Navigation, One Click Locking, Firm Gripping, Anti Sh",
+      "image": "https://m.media-amazon.com/images/I/61I31SbOl3L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B09QHRFX5X?tag=gadgetvill09f-21",
+      "price": "\u20b9209",
+      "rating": 3.0,
+      "category": "electronics",
+      "asin": "B09QHRFX5X",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-14T10:19:44.504425+05:30",
+      "session_type": "morning",
+      "link_index": 334
+    },
+    {
+      "id": "product_morning_20251114_044941",
+      "title": "AutoCare Car Detailing Brush Holder 12 Slot Heavy Duty Wall Mount Organizer Rack for Detailing Brushes, Black Metal Stor",
+      "image": "https://m.media-amazon.com/images/I/71bGbBwBaUL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DZ6WZQQB?tag=gadgetvill09f-21",
+      "price": "\u20b92,689",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B0DZ6WZQQB",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-14T10:19:41.394850+05:30",
+      "session_type": "morning",
+      "link_index": 334
+    },
     {
       "id": "product_night_20251113_155129",
       "title": "1532 for Tubeless Tyre Valve Set of 50 Pcs, Heavy Duty Product",
