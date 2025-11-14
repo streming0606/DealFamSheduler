@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-11-14T16:53:07.820737+05:30",
-  "total_products": 367,
+  "last_updated": "2025-11-14T16:56:21.889067+05:30",
+  "total_products": 369,
   "products": [
+    {
+      "id": "product_morning_20251114_112621",
+      "title": "Eveready Ultima Alkaline AA Battery, 400% Longer Lasting, Anti-Leak Turbolock Technology, Eco-Friendly Batteries for Hig",
+      "image": "https://m.media-amazon.com/images/I/71xl38UmsIL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CGNN4S4T?tag=gadgetvill09f-21",
+      "price": "\u20b9189",
+      "rating": 4.4,
+      "category": "electronics",
+      "asin": "B0CGNN4S4T",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-14T16:56:21.889030+05:30",
+      "session_type": "morning",
+      "link_index": 4
+    },
+    {
+      "id": "product_morning_20251114_112620",
+      "title": "Butterfly Straw Cover Cap 3 PCS Bling Straw Cap for Sipper for 10mm Straws, Cute Straw Cover Tumbler Accessories for Sta",
+      "image": "https://m.media-amazon.com/images/I/61ZxSoXEGfL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FLR6PKPJ?tag=gadgetvill09f-21",
+      "price": "\u20b9229",
+      "rating": 4.0,
+      "category": "fashion",
+      "asin": "B0FLR6PKPJ",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-14T16:56:20.278887+05:30",
+      "session_type": "morning",
+      "link_index": 4
+    },
     {
       "id": "product_morning_20251114_112307",
       "title": "Santoor Fresh Skin Aloe Vera & Lime Bathing Soap with Nourishing & Anti-Aging Properties| For Smooth & Soft and Younger-",
