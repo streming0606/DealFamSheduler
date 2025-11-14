@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-11-14T10:19:44.504445+05:30",
-  "total_products": 363,
+  "last_updated": "2025-11-14T13:19:32.480232+05:30",
+  "total_products": 365,
   "products": [
+    {
+      "id": "product_afternoon_20251114_074932",
+      "title": "106 Inch Diagonal Motorised/Motorized Projector Screen Ratio 16:9,(8x4.5,WxH-feet) Screen Hanging Ceiling&Wall Option (L",
+      "image": "https://m.media-amazon.com/images/I/61ytC2GnkcL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FNPLSGV7?tag=gadgetvill09f-21",
+      "price": "\u20b99,999",
+      "rating": 5.0,
+      "category": "electronics",
+      "asin": "B0FNPLSGV7",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-14T13:19:32.480205+05:30",
+      "session_type": "afternoon",
+      "link_index": 336
+    },
+    {
+      "id": "product_afternoon_20251114_074930",
+      "title": "Universal Cleaning Gel for Car Automotive Dust Car Crevice Cleaner Cleaning Mud Dust for Cars and Keyboard Cleaner Gel C",
+      "image": "https://m.media-amazon.com/images/I/61wLfbV3GYL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FJ8T59J6?tag=gadgetvill09f-21",
+      "price": "\u20b9129",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B0FJ8T59J6",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-14T13:19:30.487949+05:30",
+      "session_type": "afternoon",
+      "link_index": 336
+    },
     {
       "id": "product_morning_20251114_044944",
       "title": "TVS Mobile Holder for Bikes Or Bike Mobile Holder for Maps and GPS Navigation, One Click Locking, Firm Gripping, Anti Sh",
