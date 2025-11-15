@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-11-14T21:20:01.469635+05:30",
-  "total_products": 373,
+  "last_updated": "2025-11-15T10:18:13.643102+05:30",
+  "total_products": 375,
   "products": [
+    {
+      "id": "product_morning_20251115_044813",
+      "title": "Tata 1mg Magnesium Glycinate Tablets |2000mg | High Absorption Chelated form for Muscle Recovery, Sleep & Nerve Health |",
+      "image": "https://m.media-amazon.com/images/I/71BgeV8HILL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DWMQDYSZ?tag=gadgetvill09f-21",
+      "price": "\u20b9404",
+      "rating": 4.3,
+      "category": "electronics",
+      "asin": "B0DWMQDYSZ",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-15T10:18:13.643069+05:30",
+      "session_type": "morning",
+      "link_index": 10
+    },
+    {
+      "id": "product_morning_20251115_044811",
+      "title": "AILKIN 80W Charger Cable USB to Type C Warp Charger SuperVooc/Dash Super Charge Cable Compatible for Oneplus 11,11R,10Pr",
+      "image": "https://m.media-amazon.com/images/I/616+3XXXfsL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0D6RGMC2L?tag=gadgetvill09f-21",
+      "price": "\u20b9199",
+      "rating": 4.1,
+      "category": "electronics",
+      "asin": "B0D6RGMC2L",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-15T10:18:11.710008+05:30",
+      "session_type": "morning",
+      "link_index": 10
+    },
     {
       "id": "product_night_20251114_155001",
       "title": "Loctite Mini Trio Power Gel Super Glue for Repairs - All Purpose Adhesive Compatible With China, Rubber, Wood, Metal, Pl",
