@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-11-15T13:19:50.992476+05:30",
-  "total_products": 377,
+  "last_updated": "2025-11-15T18:34:17.601145+05:30",
+  "total_products": 379,
   "products": [
+    {
+      "id": "product_morning_20251115_130417",
+      "title": "Ezee Garbage Bags - 48x54 cm (6 Rolls, 180 Bags, Medium)",
+      "image": "https://m.media-amazon.com/images/I/71D6PuAPSSL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B074CW3JV4?tag=gadgetvill09f-21",
+      "price": "\u20b9299",
+      "rating": 4.2,
+      "category": "fashion",
+      "asin": "B074CW3JV4",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-15T18:34:17.601112+05:30",
+      "session_type": "morning",
+      "link_index": 14
+    },
+    {
+      "id": "product_morning_20251115_130414",
+      "title": "Nike Rubber Hypersport Bottle 20 Oz (Blue Lagoon/Black/Black/Blue Lagoon), 500 ml",
+      "image": "https://m.media-amazon.com/images/I/51jUjQOo5ZL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0B1NG72JC?tag=gadgetvill09f-21",
+      "price": "\u20b9945",
+      "rating": 4.3,
+      "category": "electronics",
+      "asin": "B0B1NG72JC",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-15T18:34:14.968109+05:30",
+      "session_type": "morning",
+      "link_index": 14
+    },
     {
       "id": "product_afternoon_20251115_074950",
       "title": "Milton Steel Convey 900 Insulated Inner Stainless Steel Water Bottle,Set of 2, 630 ml Each, Blue, Black | Leak Proof | B",
