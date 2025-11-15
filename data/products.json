@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-11-15T10:18:13.643102+05:30",
-  "total_products": 375,
+  "last_updated": "2025-11-15T13:19:50.992476+05:30",
+  "total_products": 377,
   "products": [
+    {
+      "id": "product_afternoon_20251115_074950",
+      "title": "Milton Steel Convey 900 Insulated Inner Stainless Steel Water Bottle,Set of 2, 630 ml Each, Blue, Black | Leak Proof | B",
+      "image": "https://m.media-amazon.com/images/I/61+GyDHgIbL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B09DLBL4C3?tag=gadgetvill09f-21",
+      "price": "\u20b9688",
+      "rating": 3.9,
+      "category": "electronics",
+      "asin": "B09DLBL4C3",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-15T13:19:50.992445+05:30",
+      "session_type": "afternoon",
+      "link_index": 12
+    },
+    {
+      "id": "product_afternoon_20251115_074948",
+      "title": "Pigeon by Stovekraft Amaze Plus Electric Kettle (14289) with Stainless Steel Body, 1.5 litre, used for boiling Water, ma",
+      "image": "https://m.media-amazon.com/images/I/51DGcy8eBCL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07WMS7TWB?tag=gadgetvill09f-21",
+      "price": "\u20b9579",
+      "rating": 4.0,
+      "category": "health",
+      "asin": "B07WMS7TWB",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-15T13:19:48.612699+05:30",
+      "session_type": "afternoon",
+      "link_index": 12
+    },
     {
       "id": "product_morning_20251115_044813",
       "title": "Tata 1mg Magnesium Glycinate Tablets |2000mg | High Absorption Chelated form for Muscle Recovery, Sleep & Nerve Health |",
