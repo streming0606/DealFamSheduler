@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-11-16T18:34:06.429288+05:30",
-  "total_products": 387,
+  "last_updated": "2025-11-16T21:20:23.810045+05:30",
+  "total_products": 389,
   "products": [
+    {
+      "id": "product_night_20251116_155023",
+      "title": "Wahl 9243-4724 Corded Home Cut Complete Hair Cutting Clipper; 10 Cutting Lengths;Thumb Adjustable Taper; Black",
+      "image": "https://m.media-amazon.com/images/I/41B8wMq-T5L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B00QNOZ7GO?tag=gadgetvill09f-21",
+      "price": "\u20b9699",
+      "rating": 3.7,
+      "category": "home",
+      "asin": "B00QNOZ7GO",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-16T21:20:23.810011+05:30",
+      "session_type": "night",
+      "link_index": 24
+    },
+    {
+      "id": "product_night_20251116_155021",
+      "title": "Anchor by Panasonic 6A 3 Pin Multiplug Travel Adapter with Universal Socket | 3 Pin Multi Plug Universal Socket (White)",
+      "image": "https://m.media-amazon.com/images/I/51JON7XePEL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07FZ18FMF?tag=gadgetvill09f-21",
+      "price": "\u20b9129",
+      "rating": 4.4,
+      "category": "electronics",
+      "asin": "B07FZ18FMF",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-16T21:20:21.726339+05:30",
+      "session_type": "night",
+      "link_index": 24
+    },
     {
       "id": "product_morning_20251116_130406",
       "title": "STRIFF World Map Extended Size (800 mm x 300 mm x 2 mm) Gaming Mouse Pad| Desk Mat | Stitched Edges| Non-Slip Rubber Bas",
