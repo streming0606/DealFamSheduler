@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-11-15T21:20:17.864988+05:30",
-  "total_products": 381,
+  "last_updated": "2025-11-16T10:19:16.654984+05:30",
+  "total_products": 383,
   "products": [
+    {
+      "id": "product_morning_20251116_044916",
+      "title": "Lotus Herbals YouthRx Anti Ageing Transforming Face Cream SPF 25 and PA+++ | Reduce Dark Spots and Blemishes | Preservat",
+      "image": "https://m.media-amazon.com/images/I/51FkuOUdOmL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B00WM0RGKS?tag=gadgetvill09f-21",
+      "price": "\u20b9499",
+      "rating": 4.3,
+      "category": "health",
+      "asin": "B00WM0RGKS",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-16T10:19:16.654958+05:30",
+      "session_type": "morning",
+      "link_index": 18
+    },
+    {
+      "id": "product_morning_20251116_044914",
+      "title": "Amazon Basics Premium Mild Steel Cloth Drying Stand - 3 Way Folding, Lightweight, 42 Feet Drying Length, 20 Drying Rails",
+      "image": "https://m.media-amazon.com/images/I/71vkps3XMVL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DY4XZQ8L?tag=gadgetvill09f-21",
+      "price": "\u20b91,298",
+      "rating": 4.0,
+      "category": "electronics",
+      "asin": "B0DY4XZQ8L",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-16T10:19:14.704913+05:30",
+      "session_type": "morning",
+      "link_index": 18
+    },
     {
       "id": "product_night_20251115_155017",
       "title": "Nutrabud Organics Himalayan Sea Buckthorn Berry Juice - 500 ml - Natural Source of Vitamin C, Omega 3 6 7 9, Antioxidant",
