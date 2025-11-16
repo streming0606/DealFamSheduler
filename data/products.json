@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-11-16T10:19:16.654984+05:30",
-  "total_products": 383,
+  "last_updated": "2025-11-16T13:19:43.208709+05:30",
+  "total_products": 385,
   "products": [
+    {
+      "id": "product_afternoon_20251116_074943",
+      "title": "Good Knight Flash Liquid Vaporiser Combo Pack | Machine + Pack Of 3 Refills | 2x Faster Than Before | Mosquito Repellent",
+      "image": "https://m.media-amazon.com/images/I/61pR0iyislL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0812B76GH?tag=gadgetvill09f-21",
+      "price": "\u20b9209",
+      "rating": 4.2,
+      "category": "electronics",
+      "asin": "B0812B76GH",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-16T13:19:43.208685+05:30",
+      "session_type": "afternoon",
+      "link_index": 20
+    },
+    {
+      "id": "product_afternoon_20251116_074939",
+      "title": "Syrotech 20KM 1.25G 1310 Single Mode Single Fiber SFP Module - Pair",
+      "image": "https://m.media-amazon.com/images/I/41sC2r8AhJL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B083M1JKD4?tag=gadgetvill09f-21",
+      "price": "\u20b91,305",
+      "rating": 3.9,
+      "category": "electronics",
+      "asin": "B083M1JKD4",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-16T13:19:39.764516+05:30",
+      "session_type": "afternoon",
+      "link_index": 20
+    },
     {
       "id": "product_morning_20251116_044916",
       "title": "Lotus Herbals YouthRx Anti Ageing Transforming Face Cream SPF 25 and PA+++ | Reduce Dark Spots and Blemishes | Preservat",
