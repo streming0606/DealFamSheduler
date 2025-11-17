@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-11-17T18:49:21.918477+05:30",
-  "total_products": 395,
+  "last_updated": "2025-11-17T21:22:36.362785+05:30",
+  "total_products": 397,
   "products": [
+    {
+      "id": "product_night_20251117_155236",
+      "title": "Wild Stone Ultra Sensual, Forest Spice and Musk Soaps for Bath, (Pack of 6, 100gm each) | Grade 1 soaps | Refreshing Bat",
+      "image": "https://m.media-amazon.com/images/I/51EJeh48bZS._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B08HDT835B?tag=gadgetvill09f-21",
+      "price": "\u20b9174",
+      "rating": 4.2,
+      "category": "health",
+      "asin": "B08HDT835B",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-17T21:22:36.362751+05:30",
+      "session_type": "night",
+      "link_index": 32
+    },
+    {
+      "id": "product_night_20251117_155234",
+      "title": "Sounce 3 in 1 Cleaning Set for Screen PC, Laptops, Monitors, Mobiles, LCD, LED, TV/Professional Quality/Prevents Static ",
+      "image": "https://m.media-amazon.com/images/I/71CFc-fYMBL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0BSLRB8NJ?tag=gadgetvill09f-21",
+      "price": "\u20b9149",
+      "rating": 4.2,
+      "category": "electronics",
+      "asin": "B0BSLRB8NJ",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-17T21:22:34.847723+05:30",
+      "session_type": "night",
+      "link_index": 32
+    },
     {
       "id": "product_morning_20251117_131921",
       "title": "Polypropylene Plastic Squeeze Sipper Bottle for Sports - 1 Liter | BPA-Free | Running Bottle for Running, Cycling, Train",
