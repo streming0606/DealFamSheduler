@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-11-16T21:20:23.810045+05:30",
-  "total_products": 389,
+  "last_updated": "2025-11-17T10:21:24.995822+05:30",
+  "total_products": 391,
   "products": [
+    {
+      "id": "product_morning_20251117_045124",
+      "title": "Lifelong PVC Hex Dumbbells Pack of 2 (5kg*2) Black Color for Home Gym Equipment Fitness Barbell|Gym Exercise|Home Workou",
+      "image": "https://m.media-amazon.com/images/I/710SxepIfiL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B09W5PSTBP?tag=gadgetvill09f-21",
+      "price": "\u20b9449",
+      "rating": 4.0,
+      "category": "home",
+      "asin": "B09W5PSTBP",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-17T10:21:24.995790+05:30",
+      "session_type": "morning",
+      "link_index": 26
+    },
+    {
+      "id": "product_morning_20251117_045121",
+      "title": "The Derma Co. 2% Kojic Acid Face Serum with Alpha Arbutin, Powered by Deep Penetration Formula\u2122 | Fights Pigmentation | ",
+      "image": "https://m.media-amazon.com/images/I/61vlqzndA6L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B09H3CYJF3?tag=gadgetvill09f-21",
+      "price": "\u20b9438",
+      "rating": 4.0,
+      "category": "electronics",
+      "asin": "B09H3CYJF3",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-17T10:21:21.936260+05:30",
+      "session_type": "morning",
+      "link_index": 26
+    },
     {
       "id": "product_night_20251116_155023",
       "title": "Wahl 9243-4724 Corded Home Cut Complete Hair Cutting Clipper; 10 Cutting Lengths;Thumb Adjustable Taper; Black",
