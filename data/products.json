@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-11-18T13:19:24.347145+05:30",
-  "total_products": 401,
+  "last_updated": "2025-11-18T18:48:55.324941+05:30",
+  "total_products": 403,
   "products": [
+    {
+      "id": "product_morning_20251118_131855",
+      "title": "GOTEO Water Bottle Carrier Bag for 1L Bottles | Sling Crossbody Bag with Water Bottle Holder Cover, Adjustable Shoulder ",
+      "image": "https://m.media-amazon.com/images/I/61DzcGmI-uL._AC_UY218_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0F8RFB7VC?tag=gadgetvill09f-21",
+      "price": "\u20b9599",
+      "rating": 4.7,
+      "category": "fashion",
+      "asin": "B0F8RFB7VC",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-18T18:48:55.324917+05:30",
+      "session_type": "morning",
+      "link_index": 38
+    },
+    {
+      "id": "product_morning_20251118_131850",
+      "title": "Fire-Boltt Talk Bluetooth Calling Smartwatch, 1.39\" TFT Display with Dual Button, Hands On Voice Assistance, 120 Sports ",
+      "image": "https://m.media-amazon.com/images/I/61Vk-Npjs-L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0BY2QJJ8J?tag=gadgetvill09f-21",
+      "price": "\u20b9999",
+      "rating": 4.0,
+      "category": "fashion",
+      "asin": "B0BY2QJJ8J",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-18T18:48:50.257081+05:30",
+      "session_type": "morning",
+      "link_index": 38
+    },
     {
       "id": "product_afternoon_20251118_074924",
       "title": "Sunfeast Bounce Cream Tangy Orange, 58g/62g/64g/49.6 g + 6.4 g Extra = 56g ( Weight May Vary )",
