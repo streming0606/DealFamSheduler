@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-11-19T18:48:45.581738+05:30",
-  "total_products": 411,
+  "last_updated": "2025-11-19T21:20:42.743482+05:30",
+  "total_products": 413,
   "products": [
+    {
+      "id": "product_night_20251119_155042",
+      "title": "GM 3060 Extension Board 10Amp Output 250 Volts with 2 Mtr Extension Cord & Surge Protector | Master Switch, Safety Shutt",
+      "image": "https://m.media-amazon.com/images/I/51IEZWXSkgL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B008XT42JU?tag=gadgetvill09f-21",
+      "price": "\u20b9453",
+      "rating": 4.4,
+      "category": "electronics",
+      "asin": "B008XT42JU",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-19T21:20:42.743456+05:30",
+      "session_type": "night",
+      "link_index": 48
+    },
+    {
+      "id": "product_night_20251119_155040",
+      "title": "PrettyKrafts 45L Non Woven Wave Printed Round Foldable Large Laundry Bag/Basket With Handle, Freestanding Cloth Storage ",
+      "image": "https://m.media-amazon.com/images/I/71xiEY0q9lL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07WW1DTZF?tag=gadgetvill09f-21",
+      "price": "\u20b9155",
+      "rating": 4.0,
+      "category": "fashion",
+      "asin": "B07WW1DTZF",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-19T21:20:40.873289+05:30",
+      "session_type": "night",
+      "link_index": 48
+    },
     {
       "id": "product_morning_20251119_131845",
       "title": "boAt Aavante Bar 490 10W Signature Sound, Dual Full-Range Drivers,7 HRS Battery, Built-in Mic,2.0 CH, Free Music Streami",
