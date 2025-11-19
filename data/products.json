@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-11-19T13:19:55.326763+05:30",
-  "total_products": 409,
+  "last_updated": "2025-11-19T18:48:45.581738+05:30",
+  "total_products": 411,
   "products": [
+    {
+      "id": "product_morning_20251119_131845",
+      "title": "boAt Aavante Bar 490 10W Signature Sound, Dual Full-Range Drivers,7 HRS Battery, Built-in Mic,2.0 CH, Free Music Streami",
+      "image": "https://m.media-amazon.com/images/I/71-I9Bk8dgL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CH3G9VR2?tag=gadgetvill09f-21",
+      "price": "\u20b9949",
+      "rating": 3.9,
+      "category": "electronics",
+      "asin": "B0CH3G9VR2",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-19T18:48:45.581716+05:30",
+      "session_type": "morning",
+      "link_index": 46
+    },
+    {
+      "id": "product_morning_20251119_131843",
+      "title": "Undergarment Liquid Detergent for Men/Women,Mild Detergent, No Soaking Formulation, Plant-Based, Bio Wash, Disinfectant ",
+      "image": "https://m.media-amazon.com/images/I/61pmLXhDPoL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B09NKZHS57?tag=gadgetvill09f-21",
+      "price": "\u20b9224",
+      "rating": 4.5,
+      "category": "electronics",
+      "asin": "B09NKZHS57",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-19T18:48:43.815108+05:30",
+      "session_type": "morning",
+      "link_index": 46
+    },
     {
       "id": "product_afternoon_20251119_074955",
       "title": "Boat Airdopes Joy, 35Hrs Battery, Fast Charge, IWP Tech, Low Latency, 2Mic ENx, Type-C Port, v5.3 Bluetooth Earbuds, TWS",
