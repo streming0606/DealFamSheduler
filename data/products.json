@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-11-20T10:19:25.086200+05:30",
-  "total_products": 415,
+  "last_updated": "2025-11-20T13:19:53.215834+05:30",
+  "total_products": 417,
   "products": [
+    {
+      "id": "product_afternoon_20251120_074953",
+      "title": "Havells 1200 Watts Foldable Hair Dryer; 3 Heat Settings With Cool Shot (Hot/Cool/ Warm), Heat Balance Technology|Cool Tu",
+      "image": "https://m.media-amazon.com/images/I/51gHGxAfg1L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B01N33BLDT?tag=gadgetvill09f-21",
+      "price": "\u20b9999",
+      "rating": 4.2,
+      "category": "electronics",
+      "asin": "B01N33BLDT",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-20T13:19:53.215806+05:30",
+      "session_type": "afternoon",
+      "link_index": 52
+    },
+    {
+      "id": "product_afternoon_20251120_074951",
+      "title": "Glass Oil Sprayer and Dispenser Bottle, 500ml Capacity, 2-in-1 Design, Black",
+      "image": "https://m.media-amazon.com/images/I/713+2UPOISL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DH4WS3B4?tag=gadgetvill09f-21",
+      "price": "\u20b9239",
+      "rating": 4.0,
+      "category": "fashion",
+      "asin": "B0DH4WS3B4",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-20T13:19:51.568078+05:30",
+      "session_type": "afternoon",
+      "link_index": 52
+    },
     {
       "id": "product_morning_20251120_044925",
       "title": "ORILEY 4 Pcs Round Plant Stand Galvanised Metal Flower Pot Holder Rust Resistant Gamla Support Corner Rack Outdoor Displ",
