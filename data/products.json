@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-11-21T13:19:23.025019+05:30",
-  "total_products": 425,
+  "last_updated": "2025-11-21T18:45:51.714713+05:30",
+  "total_products": 427,
   "products": [
+    {
+      "id": "product_morning_20251121_131551",
+      "title": "Scotch-Brite 2-in-1 Bucket Spin Mop (Green, 2 Refills), 4 Pcs",
+      "image": "https://m.media-amazon.com/images/I/61ITlnte9uL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07LDKFM2Y?tag=gadgetvill09f-21",
+      "price": "\u20b91,085",
+      "rating": 4.1,
+      "category": "electronics",
+      "asin": "B07LDKFM2Y",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-21T18:45:51.714677+05:30",
+      "session_type": "morning",
+      "link_index": 62
+    },
+    {
+      "id": "product_morning_20251121_131549",
+      "title": "NIVEA Cocoa Nourish 200ml Body Lotion with Deep Moisture Serum| 48 H Moisturization | With Cocoa Butter & Coconut Oil | ",
+      "image": "https://m.media-amazon.com/images/I/51VCw4lYmBL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B01GQ1EW3C?tag=gadgetvill09f-21",
+      "price": "\u20b9221",
+      "rating": 4.5,
+      "category": "health",
+      "asin": "B01GQ1EW3C",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-21T18:45:49.422408+05:30",
+      "session_type": "morning",
+      "link_index": 62
+    },
     {
       "id": "product_afternoon_20251121_074923",
       "title": "Amazon Brand - Presto! Garbage Bags | Extra Large XL | 30 x 37 in | 60 Count | 10 Bags x 6 Rolls | For Dry & Wet Waste |",
