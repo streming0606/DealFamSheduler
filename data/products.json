@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-11-21T18:45:51.714713+05:30",
-  "total_products": 427,
+  "last_updated": "2025-11-21T21:20:12.375859+05:30",
+  "total_products": 429,
   "products": [
+    {
+      "id": "product_night_20251121_155012",
+      "title": "Good Knight Flash Liquid Vaporiser Pack Of 4 (45ml Each) | 2x Faster Than Before | Mosquito Repellent Refill | India s M",
+      "image": "https://m.media-amazon.com/images/I/61pLprNK8LL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07YX8M37J?tag=gadgetvill09f-21",
+      "price": "\u20b9236",
+      "rating": 4.3,
+      "category": "electronics",
+      "asin": "B07YX8M37J",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-21T21:20:12.375826+05:30",
+      "session_type": "night",
+      "link_index": 64
+    },
+    {
+      "id": "product_night_20251121_155009",
+      "title": "Panasonic CR-2032/5BE Lithium Coin Battery - Pack of 5",
+      "image": "https://m.media-amazon.com/images/I/71veSubNjuL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B00LVMTA2A?tag=gadgetvill09f-21",
+      "price": "\u20b9205",
+      "rating": 4.4,
+      "category": "electronics",
+      "asin": "B00LVMTA2A",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-21T21:20:09.883191+05:30",
+      "session_type": "night",
+      "link_index": 64
+    },
     {
       "id": "product_morning_20251121_131551",
       "title": "Scotch-Brite 2-in-1 Bucket Spin Mop (Green, 2 Refills), 4 Pcs",
