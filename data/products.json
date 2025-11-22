@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-11-22T10:17:52.250338+05:30",
-  "total_products": 431,
+  "last_updated": "2025-11-22T13:19:51.083976+05:30",
+  "total_products": 433,
   "products": [
+    {
+      "id": "product_afternoon_20251122_074951",
+      "title": "One94Store Astronaut Galaxy Projector Night Light \u2013 360\u00b0 Rotating Nebula Star Projector with Remote Control, Timer & Adj",
+      "image": "https://m.media-amazon.com/images/I/81r6tIbS1cL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DN1RWNSQ?tag=gadgetvill09f-21",
+      "price": "\u20b9749",
+      "rating": 4.1,
+      "category": "electronics",
+      "asin": "B0DN1RWNSQ",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-22T13:19:51.083942+05:30",
+      "session_type": "afternoon",
+      "link_index": 68
+    },
+    {
+      "id": "product_afternoon_20251122_074948",
+      "title": "iBuddy Cute Tumbler Accessories Straw Cover Cap & Keychain Charms for Stanley Sipper Accessories Tumbler Boot Cover, Str",
+      "image": "https://m.media-amazon.com/images/I/61NT7diN+KL._AC_UY218_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FBWX9YFG?tag=gadgetvill09f-21",
+      "price": "\u20b9499",
+      "rating": 4.0,
+      "category": "fashion",
+      "asin": "B0FBWX9YFG",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-22T13:19:48.989395+05:30",
+      "session_type": "afternoon",
+      "link_index": 68
+    },
     {
       "id": "product_morning_20251122_044752",
       "title": "Sounce Spiral Cable Protector, Chargers Cable Protector Data Cable Protective Sleeve, Headphone Saver, Charger Protectiv",
