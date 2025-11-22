@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-11-22T13:19:51.083976+05:30",
-  "total_products": 433,
+  "last_updated": "2025-11-22T18:33:07.846650+05:30",
+  "total_products": 435,
   "products": [
+    {
+      "id": "product_morning_20251122_130307",
+      "title": "Tata 1mg Salmon Omega 3 Fish Oil Supplements 1000mg - 90 Capsules |Tryglycride form | 180mg EPA & 120mg DHA | High Absor",
+      "image": "https://m.media-amazon.com/images/I/51v3TtTu0wL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0C9TGS9P4?tag=gadgetvill09f-21",
+      "price": "\u20b9529",
+      "rating": 4.3,
+      "category": "fashion",
+      "asin": "B0C9TGS9P4",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-22T18:33:07.846614+05:30",
+      "session_type": "morning",
+      "link_index": 70
+    },
+    {
+      "id": "product_morning_20251122_130305",
+      "title": "MILTON Appliances Go Electric Kettle 2 Litre I 3X Protection - Dry Boil, Auto Shut Off, Overheat I 1500 Watt I Super Fas",
+      "image": "https://m.media-amazon.com/images/I/612jrIe9zEL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B091V8HK8Z?tag=gadgetvill09f-21",
+      "price": "\u20b9799",
+      "rating": 4.0,
+      "category": "home",
+      "asin": "B091V8HK8Z",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-22T18:33:05.716674+05:30",
+      "session_type": "morning",
+      "link_index": 70
+    },
     {
       "id": "product_afternoon_20251122_074951",
       "title": "One94Store Astronaut Galaxy Projector Night Light \u2013 360\u00b0 Rotating Nebula Star Projector with Remote Control, Timer & Adj",
