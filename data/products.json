@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-11-23T13:19:40.495746+05:30",
-  "total_products": 441,
+  "last_updated": "2025-11-23T18:33:01.516260+05:30",
+  "total_products": 443,
   "products": [
+    {
+      "id": "product_morning_20251123_130301",
+      "title": "rts Universal Travel Adapter, International All in One Worldwide Travel Adapter and Wall Charger with USB Ports with Mul",
+      "image": "https://m.media-amazon.com/images/I/611RCy1XjsL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B082WYMTWF?tag=gadgetvill09f-21",
+      "price": "\u20b9509",
+      "rating": 4.2,
+      "category": "electronics",
+      "asin": "B082WYMTWF",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-23T18:33:01.516224+05:30",
+      "session_type": "morning",
+      "link_index": 78
+    },
+    {
+      "id": "product_morning_20251123_130259",
+      "title": "Dyazo 6 Angles Adjustable Aluminum Ergonomic Foldable Portable Tabletop Laptop/Desktop Riser Stand Holder Compatible for",
+      "image": "https://m.media-amazon.com/images/I/61kBmC8NfGL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B08LHTJTBB?tag=gadgetvill09f-21",
+      "price": "\u20b9349",
+      "rating": 4.3,
+      "category": "electronics",
+      "asin": "B08LHTJTBB",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-23T18:32:59.632556+05:30",
+      "session_type": "morning",
+      "link_index": 78
+    },
     {
       "id": "product_afternoon_20251123_074940",
       "title": "Sounce 2 in 1 Bluetooth 5.0 Transmitter Receiver | 3.5mm Stereo Audio Adapter with Mic | Portable Design | Driverless Pl",
