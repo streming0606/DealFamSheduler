@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-11-23T18:33:01.516260+05:30",
-  "total_products": 443,
+  "last_updated": "2025-11-23T21:19:51.701783+05:30",
+  "total_products": 445,
   "products": [
+    {
+      "id": "product_night_20251123_154951",
+      "title": "Bluetooth Smart Scale, BMI Weight Machine for Body Weight with 18 Body Parameters, Body Fat Analyzer Machine & Body Comp",
+      "image": "https://m.media-amazon.com/images/I/7195-rdxvlL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DV9JLF48?tag=gadgetvill09f-21",
+      "price": "\u20b91,097",
+      "rating": 4.2,
+      "category": "electronics",
+      "asin": "B0DV9JLF48",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-23T21:19:51.701755+05:30",
+      "session_type": "night",
+      "link_index": 80
+    },
+    {
+      "id": "product_night_20251123_154949",
+      "title": "Good Knight Power Activ+ Liquid Vaporiser Pack Of 6 (45ml Each) | 2x Faster Than Before | Mosquito Repellent Refill | In",
+      "image": "https://m.media-amazon.com/images/I/714k7aOFerL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07N7NK48S?tag=gadgetvill09f-21",
+      "price": "\u20b9389",
+      "rating": 4.3,
+      "category": "electronics",
+      "asin": "B07N7NK48S",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-23T21:19:49.763667+05:30",
+      "session_type": "night",
+      "link_index": 80
+    },
     {
       "id": "product_morning_20251123_130301",
       "title": "rts Universal Travel Adapter, International All in One Worldwide Travel Adapter and Wall Charger with USB Ports with Mul",
