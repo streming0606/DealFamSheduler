@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-11-24T10:26:28.149432+05:30",
-  "total_products": 447,
+  "last_updated": "2025-11-24T13:19:47.409943+05:30",
+  "total_products": 449,
   "products": [
+    {
+      "id": "product_afternoon_20251124_074947",
+      "title": "Lifelong Gallon Water Bottle 1.6Litre for Gym, Sports & Home | Gallon Bottles for Men & Women | Gym Water Bottle for Men",
+      "image": "https://m.media-amazon.com/images/I/61jsnfUdIAL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DS8SWTMV?tag=gadgetvill09f-21",
+      "price": "\u20b9499",
+      "rating": 4.4,
+      "category": "home",
+      "asin": "B0DS8SWTMV",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-24T13:19:47.409915+05:30",
+      "session_type": "afternoon",
+      "link_index": 84
+    },
+    {
+      "id": "product_afternoon_20251124_074945",
+      "title": "MuscleBlaze BCAA Pro Powder, Powerful Intra Workout (Tropical Fest, 240g, 30 Servings) | With 5g BCAAs & 500mg Electroly",
+      "image": "https://m.media-amazon.com/images/I/61e2j2JElQL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0C3MM3QWM?tag=gadgetvill09f-21",
+      "price": "\u20b9649",
+      "rating": 4.0,
+      "category": "electronics",
+      "asin": "B0C3MM3QWM",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-24T13:19:45.877055+05:30",
+      "session_type": "afternoon",
+      "link_index": 84
+    },
     {
       "id": "product_morning_20251124_045628",
       "title": "Zulaxy Photo Frame Hooks for Wall Without Drilling, 10 Pack Self Adhesive Hooks for Wall Heavy Duty Strong Nail Free for",
