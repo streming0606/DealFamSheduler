@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-11-25T18:50:10.639503+05:30",
-  "total_products": 459,
+  "last_updated": "2025-11-25T21:23:31.944438+05:30",
+  "total_products": 461,
   "products": [
+    {
+      "id": "product_night_20251125_155331",
+      "title": "Large Spring Snap Hook Carabiner, Clip Heavy Duty Clip, Stainless Steel Spring Snap Hook Carabiner Outdoor (8MM Screw) M",
+      "image": "https://m.media-amazon.com/images/I/61BcFSgqh8L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0BW99S531?tag=gadgetvill09f-21",
+      "price": "\u20b9Special Price",
+      "rating": 4.4,
+      "category": "electronics",
+      "asin": "B0BW99S531",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-25T21:23:31.944403+05:30",
+      "session_type": "night",
+      "link_index": 96
+    },
+    {
+      "id": "product_night_20251125_155330",
+      "title": "Ambrane Unbreakable 3A Fast Charging 1.5m Braided Type C Cable for Smartphones, Tablets & other Type C devices, 480Mbps ",
+      "image": "https://m.media-amazon.com/images/I/61W8xeZTwxL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B098NS6PVG?tag=gadgetvill09f-21",
+      "price": "\u20b9159",
+      "rating": 4.0,
+      "category": "electronics",
+      "asin": "B098NS6PVG",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-25T21:23:30.130482+05:30",
+      "session_type": "night",
+      "link_index": 96
+    },
     {
       "id": "product_morning_20251125_132010",
       "title": "Surf Excel Matic Top Load Liquid Detergent 3 L Refill Pouch, Specially designed to remove Tough Dried Stains, 1st time i",
