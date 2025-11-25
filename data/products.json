@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-11-25T13:19:45.486642+05:30",
-  "total_products": 457,
+  "last_updated": "2025-11-25T18:50:10.639503+05:30",
+  "total_products": 459,
   "products": [
+    {
+      "id": "product_morning_20251125_132010",
+      "title": "Surf Excel Matic Top Load Liquid Detergent 3 L Refill Pouch, Specially designed to remove Tough Dried Stains, 1st time i",
+      "image": "https://m.media-amazon.com/images/I/618GnLi39ML._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0BHJ1HVTH?tag=gadgetvill09f-21",
+      "price": "\u20b9343",
+      "rating": 4.5,
+      "category": "electronics",
+      "asin": "B0BHJ1HVTH",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-25T18:50:10.639477+05:30",
+      "session_type": "morning",
+      "link_index": 94
+    },
+    {
+      "id": "product_morning_20251125_132008",
+      "title": "ASGARD Nonwoven Fabric Disposable Multilayer Protective Mask (Black, Pack of 50) for Unisex",
+      "image": "https://m.media-amazon.com/images/I/71YHKxoo3GL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B08WWHKN7C?tag=gadgetvill09f-21",
+      "price": "\u20b9272",
+      "rating": 4.3,
+      "category": "electronics",
+      "asin": "B08WWHKN7C",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-25T18:50:08.607112+05:30",
+      "session_type": "morning",
+      "link_index": 94
+    },
     {
       "id": "product_afternoon_20251125_074945",
       "title": "Roff Cera Clean All Purpose Tile, Floor & Wall Cleaner 1 liter Pack of 1, Advance, Bedroom & Bathroom Floors, Removes Gr",
