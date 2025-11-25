@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-11-25T10:21:03.879473+05:30",
-  "total_products": 455,
+  "last_updated": "2025-11-25T13:19:45.486642+05:30",
+  "total_products": 457,
   "products": [
+    {
+      "id": "product_afternoon_20251125_074945",
+      "title": "Roff Cera Clean All Purpose Tile, Floor & Wall Cleaner 1 liter Pack of 1, Advance, Bedroom & Bathroom Floors, Removes Gr",
+      "image": "https://m.media-amazon.com/images/I/51m+-Z0kk3L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B01LZSWXWI?tag=gadgetvill09f-21",
+      "price": "\u20b9187",
+      "rating": 4.0,
+      "category": "electronics",
+      "asin": "B01LZSWXWI",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-25T13:19:45.486605+05:30",
+      "session_type": "afternoon",
+      "link_index": 92
+    },
+    {
+      "id": "product_afternoon_20251125_074942",
+      "title": "NIVEA MEN Deep Impact Freshness Deodorant Underarm Roll-on | 72 H Long Lasting Freshness | Infused with Black Carbon to ",
+      "image": "https://m.media-amazon.com/images/I/51kZ0bEXlYL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07D9GF1NW?tag=gadgetvill09f-21",
+      "price": "\u20b9149",
+      "rating": 4.3,
+      "category": "electronics",
+      "asin": "B07D9GF1NW",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-25T13:19:42.978852+05:30",
+      "session_type": "afternoon",
+      "link_index": 92
+    },
     {
       "id": "product_morning_20251125_045103",
       "title": "Dr. Reckeweg Dr Reckeweg R 53 Acne Vulgaris 22 ml",
