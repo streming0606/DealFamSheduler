@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-11-26T13:19:40.108619+05:30",
-  "total_products": 465,
+  "last_updated": "2025-11-26T18:51:48.661147+05:30",
+  "total_products": 467,
   "products": [
+    {
+      "id": "product_morning_20251126_132148",
+      "title": "Homestrap Set of 6 Non-Woven Printed Saree Cover/Cloth Storage/Wardrobe Organizer For Clothes with Transparent Window (G",
+      "image": "https://m.media-amazon.com/images/I/71zjvUApaRL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B08LQRXXNB?tag=gadgetvill09f-21",
+      "price": "\u20b9329",
+      "rating": 4.0,
+      "category": "home",
+      "asin": "B08LQRXXNB",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-26T18:51:48.661113+05:30",
+      "session_type": "morning",
+      "link_index": 102
+    },
+    {
+      "id": "product_morning_20251126_132145",
+      "title": "Amazon Brand - Presto! Dishwash Gel | Lemon | 5 Litre Refill Can | Dishwash Liquid | Cuts Through Grease | Safe On Hands",
+      "image": "https://m.media-amazon.com/images/I/717ZF6moV2L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07ZKP4R14?tag=gadgetvill09f-21",
+      "price": "\u20b9525",
+      "rating": 4.3,
+      "category": "electronics",
+      "asin": "B07ZKP4R14",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-26T18:51:45.584117+05:30",
+      "session_type": "morning",
+      "link_index": 102
+    },
     {
       "id": "product_afternoon_20251126_074940",
       "title": "PROBEROS\u00ae Carabiner Clip for Bicycle, 3.1\" Aluminum D-Ring Keychain Chain Lock for Outdoor, Camping, Hiking, Fishing",
