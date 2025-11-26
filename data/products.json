@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-11-26T18:51:48.661147+05:30",
-  "total_products": 467,
+  "last_updated": "2025-11-26T21:20:38.617172+05:30",
+  "total_products": 469,
   "products": [
+    {
+      "id": "product_night_20251126_155038",
+      "title": "PEXPO Craft Pro 1000 ISI Certified Stainless Steel Sports/Fridge Water Bottle with Sipper Cap - 950ml | Single Wall | Fo",
+      "image": "https://m.media-amazon.com/images/I/51KoFtDZxLL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DRCYP93L?tag=gadgetvill09f-21",
+      "price": "\u20b9299",
+      "rating": 4.1,
+      "category": "fashion",
+      "asin": "B0DRCYP93L",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-26T21:20:38.617144+05:30",
+      "session_type": "night",
+      "link_index": 104
+    },
+    {
+      "id": "product_night_20251126_155036",
+      "title": "Noise Twist Round dial Smart Watch with Bluetooth Calling, 1.38\" TFT Display, up-to 7 Days Battery, 100+ Watch Faces, IP",
+      "image": "https://m.media-amazon.com/images/I/61-vRq2ulOL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0BJ72WZQ7?tag=gadgetvill09f-21",
+      "price": "\u20b91,199",
+      "rating": 4.0,
+      "category": "fashion",
+      "asin": "B0BJ72WZQ7",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-26T21:20:36.694400+05:30",
+      "session_type": "night",
+      "link_index": 104
+    },
     {
       "id": "product_morning_20251126_132148",
       "title": "Homestrap Set of 6 Non-Woven Printed Saree Cover/Cloth Storage/Wardrobe Organizer For Clothes with Transparent Window (G",
