@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-11-25T21:23:31.944438+05:30",
-  "total_products": 461,
+  "last_updated": "2025-11-26T10:21:07.175149+05:30",
+  "total_products": 463,
   "products": [
+    {
+      "id": "product_morning_20251126_045107",
+      "title": "Noise Pulse 2 Max 1.85\" Display, Bluetooth Calling Smart Watch, 10 Days Battery, 550 NITS Brightness, Smart DND, 100 Spo",
+      "image": "https://m.media-amazon.com/images/I/61bm7UEdGAL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0B6BLTGTT?tag=gadgetvill09f-21",
+      "price": "\u20b9999",
+      "rating": 4.0,
+      "category": "fashion",
+      "asin": "B0B6BLTGTT",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-26T10:21:07.175116+05:30",
+      "session_type": "morning",
+      "link_index": 98
+    },
+    {
+      "id": "product_morning_20251126_045105",
+      "title": "Mankind Acnestar Unisex Face Wash - (50 Gr, 3 Pc)",
+      "image": "https://m.media-amazon.com/images/I/71PARsy59JL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B08T5Z1XNN?tag=gadgetvill09f-21",
+      "price": "\u20b9275",
+      "rating": 4.2,
+      "category": "electronics",
+      "asin": "B08T5Z1XNN",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-26T10:21:05.563699+05:30",
+      "session_type": "morning",
+      "link_index": 98
+    },
     {
       "id": "product_night_20251125_155331",
       "title": "Large Spring Snap Hook Carabiner, Clip Heavy Duty Clip, Stainless Steel Spring Snap Hook Carabiner Outdoor (8MM Screw) M",
