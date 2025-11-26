@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-11-26T10:21:07.175149+05:30",
-  "total_products": 463,
+  "last_updated": "2025-11-26T13:19:40.108619+05:30",
+  "total_products": 465,
   "products": [
+    {
+      "id": "product_afternoon_20251126_074940",
+      "title": "PROBEROS\u00ae Carabiner Clip for Bicycle, 3.1\" Aluminum D-Ring Keychain Chain Lock for Outdoor, Camping, Hiking, Fishing",
+      "image": "https://m.media-amazon.com/images/I/61UhFuTT4eL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0BRKZB4TR?tag=gadgetvill09f-21",
+      "price": "\u20b9298",
+      "rating": 4.0,
+      "category": "electronics",
+      "asin": "B0BRKZB4TR",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-26T13:19:40.108594+05:30",
+      "session_type": "afternoon",
+      "link_index": 100
+    },
+    {
+      "id": "product_afternoon_20251126_074938",
+      "title": "Ace Blend Outshine Omega 3 Fish Oil Capsules (60 Softgels) | 1650 Mg with 743 EPA & 528 DHA | 2 capsules for 4X Strength",
+      "image": "https://m.media-amazon.com/images/I/61deZgy0x4L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DCVVKLZW?tag=gadgetvill09f-21",
+      "price": "\u20b9876",
+      "rating": 4.4,
+      "category": "fashion",
+      "asin": "B0DCVVKLZW",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-26T13:19:38.507550+05:30",
+      "session_type": "afternoon",
+      "link_index": 100
+    },
     {
       "id": "product_morning_20251126_045107",
       "title": "Noise Pulse 2 Max 1.85\" Display, Bluetooth Calling Smart Watch, 10 Days Battery, 550 NITS Brightness, Smart DND, 100 Spo",
