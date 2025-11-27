@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-11-27T10:20:43.676875+05:30",
-  "total_products": 471,
+  "last_updated": "2025-11-27T13:19:56.765720+05:30",
+  "total_products": 473,
   "products": [
+    {
+      "id": "product_afternoon_20251127_074956",
+      "title": "All Out Ultra Liquid Vaporizer, 4 Refills (45ml) | Kills Dengue, Malaria & Chikungunya Spreading Mosquitoes | India's On",
+      "image": "https://m.media-amazon.com/images/I/51P+rmMpdVL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CGJ2WTJR?tag=gadgetvill09f-21",
+      "price": "\u20b9259",
+      "rating": 4.3,
+      "category": "electronics",
+      "asin": "B0CGJ2WTJR",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-27T13:19:56.765687+05:30",
+      "session_type": "afternoon",
+      "link_index": 108
+    },
+    {
+      "id": "product_afternoon_20251127_074954",
+      "title": "Speedex BIS Certified Stainless Steel Sports/Fridge Water Bottle 1 Ltr with Sipper Cap - 1000ml | For Home, Office, Gym,",
+      "image": "https://m.media-amazon.com/images/I/51-VxJDI3nL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0BFCSY51S?tag=gadgetvill09f-21",
+      "price": "\u20b9333",
+      "rating": 3.8,
+      "category": "fashion",
+      "asin": "B0BFCSY51S",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-27T13:19:54.946152+05:30",
+      "session_type": "afternoon",
+      "link_index": 108
+    },
     {
       "id": "product_morning_20251127_045043",
       "title": "Acnestar Gel| Anti-inflammatory | Anti-bacterial | For Acne, Pimples, Whiteheads And Blackheads | (22 gm x Pack of 2)",
