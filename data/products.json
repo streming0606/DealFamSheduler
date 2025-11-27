@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-11-26T21:20:38.617172+05:30",
-  "total_products": 469,
+  "last_updated": "2025-11-27T10:20:43.676875+05:30",
+  "total_products": 471,
   "products": [
+    {
+      "id": "product_morning_20251127_045043",
+      "title": "Acnestar Gel| Anti-inflammatory | Anti-bacterial | For Acne, Pimples, Whiteheads And Blackheads | (22 gm x Pack of 2)",
+      "image": "https://m.media-amazon.com/images/I/61TgFqWOWLL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B09CGRP4C4?tag=gadgetvill09f-21",
+      "price": "\u20b9185",
+      "rating": 4.2,
+      "category": "electronics",
+      "asin": "B09CGRP4C4",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-27T10:20:43.676848+05:30",
+      "session_type": "morning",
+      "link_index": 106
+    },
+    {
+      "id": "product_morning_20251127_045041",
+      "title": "OnePlus Nord Buds 2r True Wireless in Ear Earbuds with Mic, 12.4mm Drivers, Playback:Upto 38hr case,4-Mic Design, IP55 R",
+      "image": "https://m.media-amazon.com/images/I/51raakZN9fL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0C8J7W6PL?tag=gadgetvill09f-21",
+      "price": "\u20b91,599",
+      "rating": 4.2,
+      "category": "electronics",
+      "asin": "B0C8J7W6PL",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-27T10:20:41.402095+05:30",
+      "session_type": "morning",
+      "link_index": 106
+    },
     {
       "id": "product_night_20251126_155038",
       "title": "PEXPO Craft Pro 1000 ISI Certified Stainless Steel Sports/Fridge Water Bottle with Sipper Cap - 950ml | Single Wall | Fo",
