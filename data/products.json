@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-11-27T18:49:08.969381+05:30",
-  "total_products": 475,
+  "last_updated": "2025-11-27T21:20:58.526324+05:30",
+  "total_products": 477,
   "products": [
+    {
+      "id": "product_night_20251127_155058",
+      "title": "Amazon Product B079Y6JZC8",
+      "image": "https://m.media-amazon.com/images/I/B079Y6JZC8._AC_SL1500_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B079Y6JZC8?tag=gadgetvill09f-21",
+      "price": "\u20b9Special Price",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B079Y6JZC8",
+      "data_source": "fallback",
+      "posted_date": "2025-11-27T21:20:58.526296+05:30",
+      "session_type": "night",
+      "link_index": 112
+    },
+    {
+      "id": "product_night_20251127_155058",
+      "title": "Amazon Product B0F2YZ22LK",
+      "image": "https://m.media-amazon.com/images/I/B0F2YZ22LK._AC_SL1500_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0F2YZ22LK?tag=gadgetvill09f-21",
+      "price": "\u20b9Special Price",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B0F2YZ22LK",
+      "data_source": "fallback",
+      "posted_date": "2025-11-27T21:20:58.423473+05:30",
+      "session_type": "night",
+      "link_index": 112
+    },
     {
       "id": "product_morning_20251127_131908",
       "title": "OnePlus Nord Buds 3r TWS Earbuds up to 54 Hours Playback, 2-mic Clear Calls, 3D Spatial Audio, AI Translation, 12.4mm Dr",
