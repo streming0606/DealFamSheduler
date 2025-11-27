@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-11-27T13:19:56.765720+05:30",
-  "total_products": 473,
+  "last_updated": "2025-11-27T18:49:08.969381+05:30",
+  "total_products": 475,
   "products": [
+    {
+      "id": "product_morning_20251127_131908",
+      "title": "OnePlus Nord Buds 3r TWS Earbuds up to 54 Hours Playback, 2-mic Clear Calls, 3D Spatial Audio, AI Translation, 12.4mm Dr",
+      "image": "https://m.media-amazon.com/images/I/51nBTTG3hNL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FMDL81GS?tag=gadgetvill09f-21",
+      "price": "\u20b91,699",
+      "rating": 4.2,
+      "category": "electronics",
+      "asin": "B0FMDL81GS",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-27T18:49:08.969346+05:30",
+      "session_type": "morning",
+      "link_index": 110
+    },
+    {
+      "id": "product_morning_20251127_131902",
+      "title": "HealthyHey Nutrition Magnesium Glycinate Supplement High Absorption for Sleep, Cramps, & Nerves Health -120 Vegetable Ca",
+      "image": "https://m.media-amazon.com/images/I/71883u7DKhL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07H729BCJ?tag=gadgetvill09f-21",
+      "price": "\u20b9594",
+      "rating": 4.3,
+      "category": "home",
+      "asin": "B07H729BCJ",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-27T18:49:02.903530+05:30",
+      "session_type": "morning",
+      "link_index": 110
+    },
     {
       "id": "product_afternoon_20251127_074956",
       "title": "All Out Ultra Liquid Vaporizer, 4 Refills (45ml) | Kills Dengue, Malaria & Chikungunya Spreading Mosquitoes | India's On",
