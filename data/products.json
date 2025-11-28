@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-11-28T13:19:49.873208+05:30",
-  "total_products": 481,
+  "last_updated": "2025-11-28T18:48:06.581055+05:30",
+  "total_products": 483,
   "products": [
+    {
+      "id": "product_morning_20251128_131806",
+      "title": "realme Buds T200x True Wireless Earbuds with 12.4mm Dynamic Bass Drivers, 25 dB ANC, Quad Mic, 45ms Latency, Upto 48 Hrs",
+      "image": "https://m.media-amazon.com/images/I/61Ow0V-mzkL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FBR6HGXM?tag=gadgetvill09f-21",
+      "price": "\u20b91,299",
+      "rating": 4.0,
+      "category": "electronics",
+      "asin": "B0FBR6HGXM",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-28T18:48:06.581028+05:30",
+      "session_type": "morning",
+      "link_index": 118
+    },
+    {
+      "id": "product_morning_20251128_131804",
+      "title": "Hydration Pack Backpack with 3L Bladder, Tactical Water Bag for Hiking, Biking, Running, Walking",
+      "image": "https://m.media-amazon.com/images/I/71jc+GTQBnL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0C45RY8TG?tag=gadgetvill09f-21",
+      "price": "\u20b9999",
+      "rating": 4.0,
+      "category": "fashion",
+      "asin": "B0C45RY8TG",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-28T18:48:04.895101+05:30",
+      "session_type": "morning",
+      "link_index": 118
+    },
     {
       "id": "product_afternoon_20251128_074949",
       "title": "Minimalist Cream Sunscreen SPF 50 Lightweight With Multi-Vitamins, No White Cast, Broad Spectrum PA ++++ Acne Safe For U",
