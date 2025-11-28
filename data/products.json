@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-11-28T18:48:06.581055+05:30",
-  "total_products": 483,
+  "last_updated": "2025-11-28T21:20:30.296075+05:30",
+  "total_products": 485,
   "products": [
+    {
+      "id": "product_night_20251128_155030",
+      "title": "Dharam Paul Traders Replacement lid for Milton thermosteel flask | Flip lid | 1 liter and 750 ml, ONLY LID",
+      "image": "https://m.media-amazon.com/images/I/31F5kBGbTjL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0B749DH4P?tag=gadgetvill09f-21",
+      "price": "\u20b9259",
+      "rating": 4.2,
+      "category": "electronics",
+      "asin": "B0B749DH4P",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-28T21:20:30.296045+05:30",
+      "session_type": "night",
+      "link_index": 120
+    },
+    {
+      "id": "product_night_20251128_155023",
+      "title": "Fitness Mantra\u00ae 12 Pairs Sports Ankle Cotton Socks | Free Size| Breathable| Daily Use| Multicolor| 12 Pairs|",
+      "image": "https://m.media-amazon.com/images/I/81SEVBzTWhL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CTQ4RSMB?tag=gadgetvill09f-21",
+      "price": "\u20b9189",
+      "rating": 4.0,
+      "category": "electronics",
+      "asin": "B0CTQ4RSMB",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-28T21:20:23.427349+05:30",
+      "session_type": "night",
+      "link_index": 120
+    },
     {
       "id": "product_morning_20251128_131806",
       "title": "realme Buds T200x True Wireless Earbuds with 12.4mm Dynamic Bass Drivers, 25 dB ANC, Quad Mic, 45ms Latency, Upto 48 Hrs",
