@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-11-27T21:20:58.526324+05:30",
-  "total_products": 477,
+  "last_updated": "2025-11-28T10:20:36.657263+05:30",
+  "total_products": 479,
   "products": [
+    {
+      "id": "product_morning_20251128_045036",
+      "title": "iBuddy Tumbler Lid Replacement For 1.2L Stanley Cap Replacement With Straw Hole Stanley Cup - Leak Proof For Tumbler Cap",
+      "image": "https://m.media-amazon.com/images/I/71-QktDbipL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FHDY3H5D?tag=gadgetvill09f-21",
+      "price": "\u20b9229",
+      "rating": 4.1,
+      "category": "fashion",
+      "asin": "B0FHDY3H5D",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-28T10:20:36.657235+05:30",
+      "session_type": "morning",
+      "link_index": 114
+    },
+    {
+      "id": "product_morning_20251128_045034",
+      "title": "TATA 1MG Lumbar Sacral Belt for Relief from Back Pain and Muscle Spasms | With 5 Flexible Splints for Optimal Lower Back",
+      "image": "https://m.media-amazon.com/images/I/61CdenSzdKL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0BR1H9VLM?tag=gadgetvill09f-21",
+      "price": "\u20b9495",
+      "rating": 4.2,
+      "category": "electronics",
+      "asin": "B0BR1H9VLM",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-28T10:20:34.557969+05:30",
+      "session_type": "morning",
+      "link_index": 114
+    },
     {
       "id": "product_night_20251127_155058",
       "title": "Amazon Product B079Y6JZC8",
