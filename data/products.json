@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-11-28T10:20:36.657263+05:30",
-  "total_products": 479,
+  "last_updated": "2025-11-28T13:19:49.873208+05:30",
+  "total_products": 481,
   "products": [
+    {
+      "id": "product_afternoon_20251128_074949",
+      "title": "Minimalist Cream Sunscreen SPF 50 Lightweight With Multi-Vitamins, No White Cast, Broad Spectrum PA ++++ Acne Safe For U",
+      "image": "https://m.media-amazon.com/images/I/51liYV8g2DL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B09FPS9D5T?tag=gadgetvill09f-21",
+      "price": "\u20b9379",
+      "rating": 4.1,
+      "category": "health",
+      "asin": "B09FPS9D5T",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-28T13:19:49.873160+05:30",
+      "session_type": "afternoon",
+      "link_index": 116
+    },
+    {
+      "id": "product_afternoon_20251128_074947",
+      "title": "VOLTURI Microfiber Feather Duster Bendable & Extendable Fan Cleaning Duster with 100 inches Expandable Pole Handle Washa",
+      "image": "https://m.media-amazon.com/images/I/811KbW2kVUL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DMZWL16Z?tag=gadgetvill09f-21",
+      "price": "\u20b9236",
+      "rating": 4.0,
+      "category": "electronics",
+      "asin": "B0DMZWL16Z",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-28T13:19:47.804159+05:30",
+      "session_type": "afternoon",
+      "link_index": 116
+    },
     {
       "id": "product_morning_20251128_045036",
       "title": "iBuddy Tumbler Lid Replacement For 1.2L Stanley Cap Replacement With Straw Hole Stanley Cup - Leak Proof For Tumbler Cap",
