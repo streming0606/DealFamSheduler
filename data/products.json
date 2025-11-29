@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-11-29T13:19:23.679999+05:30",
-  "total_products": 489,
+  "last_updated": "2025-11-29T18:36:30.964443+05:30",
+  "total_products": 491,
   "products": [
+    {
+      "id": "product_morning_20251129_130630",
+      "title": "DIGIROOT iPad Pencil NO.1 Sales in US&EU,13 Mins Fast Charge Stylus Pen for iPad with Palm Rejection for 2018-2025 iPad ",
+      "image": "https://m.media-amazon.com/images/I/51UBr3cmxOL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CP914DZD?tag=gadgetvill09f-21",
+      "price": "\u20b91,465",
+      "rating": 4.4,
+      "category": "electronics",
+      "asin": "B0CP914DZD",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-29T18:36:30.964414+05:30",
+      "session_type": "morning",
+      "link_index": 126
+    },
+    {
+      "id": "product_morning_20251129_130628",
+      "title": "Saara HERBAL FRESH Sitharathai Powder, Kulanjan, Lesser Galangal, Chitharathai Powder, helps to relieve the nasal proble",
+      "image": "https://m.media-amazon.com/images/I/81f1IR3ww4L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07RYPNZ1Y?tag=gadgetvill09f-21",
+      "price": "\u20b9113",
+      "rating": 4.2,
+      "category": "electronics",
+      "asin": "B07RYPNZ1Y",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-29T18:36:28.742930+05:30",
+      "session_type": "morning",
+      "link_index": 126
+    },
     {
       "id": "product_afternoon_20251129_074923",
       "title": "Zero B H2Ohh Portable Water Filter Bottle \u2013 600ml | Removes 99.9% Bacteria & Viruses | Durable TRITAN Material | Instant",
