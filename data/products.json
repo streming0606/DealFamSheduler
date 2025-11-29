@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-11-29T18:36:30.964443+05:30",
-  "total_products": 491,
+  "last_updated": "2025-11-29T21:20:00.608058+05:30",
+  "total_products": 493,
   "products": [
+    {
+      "id": "product_night_20251129_155000",
+      "title": "Aristocrat Nova 15L Laptop Backpack for Men & Women with Bottle Pocket | Padded Shoulder Straps, Multi Compartments | Tr",
+      "image": "https://m.media-amazon.com/images/I/71aYGrOy6gL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0D8BG7S4P?tag=gadgetvill09f-21",
+      "price": "\u20b9329",
+      "rating": 4.1,
+      "category": "electronics",
+      "asin": "B0D8BG7S4P",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-29T21:20:00.608022+05:30",
+      "session_type": "night",
+      "link_index": 128
+    },
+    {
+      "id": "product_night_20251129_154958",
+      "title": "HASTHIP\u00ae Water Bottle Carrier Bag for 32 oz Bottles, Crossbody Water Bottle Case Cover with Adjustable Shoulder Strap Po",
+      "image": "https://m.media-amazon.com/images/I/61dcv+NpxhL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CHYPZQP6?tag=gadgetvill09f-21",
+      "price": "\u20b9483",
+      "rating": 3.8,
+      "category": "fashion",
+      "asin": "B0CHYPZQP6",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-29T21:19:58.649496+05:30",
+      "session_type": "night",
+      "link_index": 128
+    },
     {
       "id": "product_morning_20251129_130630",
       "title": "DIGIROOT iPad Pencil NO.1 Sales in US&EU,13 Mins Fast Charge Stylus Pen for iPad with Palm Rejection for 2018-2025 iPad ",
