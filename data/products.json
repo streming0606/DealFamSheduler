@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-11-30T10:26:00.216460+05:30",
-  "total_products": 495,
+  "last_updated": "2025-11-30T13:19:57.256812+05:30",
+  "total_products": 497,
   "products": [
+    {
+      "id": "product_afternoon_20251130_074957",
+      "title": "Neuherbs Deep Sea Omega 3 Fish Oil - Omega 3 Supplement Triple Strength 2500 Mg (Essential Fatty Acid Combination of 148",
+      "image": "https://m.media-amazon.com/images/I/617bIhj6KOL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07WTBN75M?tag=gadgetvill09f-21",
+      "price": "\u20b9580",
+      "rating": 4.2,
+      "category": "health",
+      "asin": "B07WTBN75M",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-30T13:19:57.256784+05:30",
+      "session_type": "afternoon",
+      "link_index": 132
+    },
+    {
+      "id": "product_afternoon_20251130_074954",
+      "title": "Sharrets CPH+ 200g, Orange Flavored - Fish Collagen Powder Supplement with Hyaluronic Acid & Vitamin C for Skin, Hair, N",
+      "image": "https://m.media-amazon.com/images/I/71ZLtv1p8YL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B08B3FZTJF?tag=gadgetvill09f-21",
+      "price": "\u20b91,529",
+      "rating": 3.4,
+      "category": "health",
+      "asin": "B08B3FZTJF",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-30T13:19:54.972961+05:30",
+      "session_type": "afternoon",
+      "link_index": 132
+    },
     {
       "id": "product_morning_20251130_045600",
       "title": "Dervin UV Protected Polarized Sports Sunglasses for Men & Women | Ideal for Driving, Cycling, Biking & Cricket",
