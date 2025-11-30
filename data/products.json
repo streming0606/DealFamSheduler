@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-11-30T18:36:23.999444+05:30",
-  "total_products": 499,
+  "last_updated": "2025-11-30T21:20:26.358941+05:30",
+  "total_products": 501,
   "products": [
+    {
+      "id": "product_night_20251130_155026",
+      "title": "Pilgrim Squalane Niacinamide & Vitamin C Glow Moisturizer Cream for face | Moisturizer for dry skin hydration | Face moi",
+      "image": "https://m.media-amazon.com/images/I/61CbRzTxrgL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B09TBBHMG6?tag=gadgetvill09f-21",
+      "price": "\u20b9340",
+      "rating": 4.1,
+      "category": "health",
+      "asin": "B09TBBHMG6",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-30T21:20:26.358907+05:30",
+      "session_type": "night",
+      "link_index": 136
+    },
+    {
+      "id": "product_night_20251130_155024",
+      "title": "truke New Launch Buds Elite True Wireless in Ear Earbuds with 10mm Dynamic Driver, 70Hrs Battery & Fast Charging EarBuds",
+      "image": "https://m.media-amazon.com/images/I/61IJb69H+wL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DVL9D7JD?tag=gadgetvill09f-21",
+      "price": "\u20b9599",
+      "rating": 3.9,
+      "category": "electronics",
+      "asin": "B0DVL9D7JD",
+      "data_source": "serpapi",
+      "posted_date": "2025-11-30T21:20:24.938566+05:30",
+      "session_type": "night",
+      "link_index": 136
+    },
     {
       "id": "product_morning_20251130_130623",
       "title": "DeLonghi Rivelia EXAM440.55.W, Fully Automatic Coffee Maker with LatteCrema, Automatic Milk Frother, Compact Size, Bean-",
