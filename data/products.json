@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-12-01T13:20:41.839812+05:30",
-  "total_products": 505,
+  "last_updated": "2025-12-01T18:52:10.304309+05:30",
+  "total_products": 507,
   "products": [
+    {
+      "id": "product_morning_20251201_132210",
+      "title": "ROCKBROS Cycling Water Bottle, 20-25oz Cycling Bottle,Without BPA and BPS",
+      "image": "https://m.media-amazon.com/images/I/61nLMFjfXBL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CSSMMCJ9?tag=gadgetvill09f-21",
+      "price": "\u20b9350",
+      "rating": 4.2,
+      "category": "electronics",
+      "asin": "B0CSSMMCJ9",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-01T18:52:10.304275+05:30",
+      "session_type": "morning",
+      "link_index": 142
+    },
+    {
+      "id": "product_morning_20251201_132208",
+      "title": "2 PCS Silicone Boot Sleeve Compatible with Stanley Cup H2.0 Tumbler 20 30 40oz & Hydro Flask 18-24oz\u20132.85-3.0 Inch Prote",
+      "image": "https://m.media-amazon.com/images/I/41yB2Z+M2JL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FSY3YTJG?tag=gadgetvill09f-21",
+      "price": "\u20b9338",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B0FSY3YTJG",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-01T18:52:08.926511+05:30",
+      "session_type": "morning",
+      "link_index": 142
+    },
     {
       "id": "product_afternoon_20251201_075041",
       "title": "Motul Combo of C2 Chain Lube (150 ml) and C1 Chain Clean for All Bikes (150 ml) (LBCH001)",
