@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-12-01T10:35:23.894243+05:30",
-  "total_products": 503,
+  "last_updated": "2025-12-01T13:20:41.839812+05:30",
+  "total_products": 505,
   "products": [
+    {
+      "id": "product_afternoon_20251201_075041",
+      "title": "Motul Combo of C2 Chain Lube (150 ml) and C1 Chain Clean for All Bikes (150 ml) (LBCH001)",
+      "image": "https://m.media-amazon.com/images/I/81kD7t3z+LL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B01ESPB2WM?tag=gadgetvill09f-21",
+      "price": "\u20b9409",
+      "rating": 4.4,
+      "category": "electronics",
+      "asin": "B01ESPB2WM",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-01T13:20:41.839788+05:30",
+      "session_type": "afternoon",
+      "link_index": 140
+    },
+    {
+      "id": "product_afternoon_20251201_075039",
+      "title": "Arka Home Products Canvas Water Bottle Sling Bags - Eco-Friendly, Reusable - Set Of 2, Off-White, 1 Liters",
+      "image": "https://m.media-amazon.com/images/I/61AiOb-1sSL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07Y6CMTQQ?tag=gadgetvill09f-21",
+      "price": "\u20b9240",
+      "rating": 4.0,
+      "category": "fashion",
+      "asin": "B07Y6CMTQQ",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-01T13:20:39.171526+05:30",
+      "session_type": "afternoon",
+      "link_index": 140
+    },
     {
       "id": "product_morning_20251201_050523",
       "title": "realme Buds 3 (3.5 mm) Wired in Ear Earphones with Mic (Black)",
