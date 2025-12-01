@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-12-01T18:52:10.304309+05:30",
-  "total_products": 507,
+  "last_updated": "2025-12-01T21:22:57.974783+05:30",
+  "total_products": 509,
   "products": [
+    {
+      "id": "product_night_20251201_155257",
+      "title": "AllExtreme \u200eCYL-06-T Multi-Purpose Bike Chain Cleaner Brush with Soft & Long Bristles Ideal for Quick Cleaning of Cycles",
+      "image": "https://m.media-amazon.com/images/I/610XWnl+nXL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B076DC73XF?tag=gadgetvill09f-21",
+      "price": "\u20b9149",
+      "rating": 4.2,
+      "category": "electronics",
+      "asin": "B076DC73XF",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-01T21:22:57.974765+05:30",
+      "session_type": "night",
+      "link_index": 144
+    },
+    {
+      "id": "product_night_20251201_155256",
+      "title": "ALNA-TURA Sport sunglasses For Kids Boys & Girls| Stylish Sport UV 400 Protected, Cycling Outdoor Sports Sunglasses for ",
+      "image": "https://m.media-amazon.com/images/I/61nLDWJo2eL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FBLCZ6JR?tag=gadgetvill09f-21",
+      "price": "\u20b9407",
+      "rating": 4.2,
+      "category": "fashion",
+      "asin": "B0FBLCZ6JR",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-01T21:22:56.369715+05:30",
+      "session_type": "night",
+      "link_index": 144
+    },
     {
       "id": "product_morning_20251201_132210",
       "title": "ROCKBROS Cycling Water Bottle, 20-25oz Cycling Bottle,Without BPA and BPS",
