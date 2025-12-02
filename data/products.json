@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-12-02T13:20:38.157274+05:30",
-  "total_products": 513,
+  "last_updated": "2025-12-02T18:52:37.728958+05:30",
+  "total_products": 515,
   "products": [
+    {
+      "id": "product_morning_20251202_132237",
+      "title": "TEGO - Rush Sugarcane Plastic Running Bottle For cycling, exercise, gym, portable,fitness,sipper For Men, Women & Kids",
+      "image": "https://m.media-amazon.com/images/I/61OVJhk3uAL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0B1HC5D8F?tag=gadgetvill09f-21",
+      "price": "\u20b9296",
+      "rating": 3.6,
+      "category": "home",
+      "asin": "B0B1HC5D8F",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-02T18:52:37.728920+05:30",
+      "session_type": "morning",
+      "link_index": 150
+    },
+    {
+      "id": "product_morning_20251202_132236",
+      "title": "Fresh Assorted Roses (Button Roses), 100g",
+      "image": "https://m.media-amazon.com/images/I/616ICYrahhL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FQ5JVLL8?tag=gadgetvill09f-21",
+      "price": "\u20b927",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B0FQ5JVLL8",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-02T18:52:36.332734+05:30",
+      "session_type": "morning",
+      "link_index": 150
+    },
     {
       "id": "product_afternoon_20251202_075038",
       "title": "Amazon Basics 20000 mAh Power Bank | 22.5W Fast Charging | Dual Output & Input | Charge 3 Devices Simultaneously | for S",
