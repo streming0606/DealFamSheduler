@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-12-02T10:24:03.451373+05:30",
-  "total_products": 511,
+  "last_updated": "2025-12-02T13:20:38.157274+05:30",
+  "total_products": 513,
   "products": [
+    {
+      "id": "product_afternoon_20251202_075038",
+      "title": "Amazon Basics 20000 mAh Power Bank | 22.5W Fast Charging | Dual Output & Input | Charge 3 Devices Simultaneously | for S",
+      "image": "https://m.media-amazon.com/images/I/61dSDJrmIlL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0D96HMLYX?tag=gadgetvill09f-21",
+      "price": "\u20b9899",
+      "rating": 3.9,
+      "category": "electronics",
+      "asin": "B0D96HMLYX",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-02T13:20:38.157242+05:30",
+      "session_type": "afternoon",
+      "link_index": 148
+    },
+    {
+      "id": "product_afternoon_20251202_075036",
+      "title": "NutriPro Juicer Mixer Grinder - Smoothie Maker - 500 Watts (2 Jars & 1 Blade, Silver) - 2 Year Warranty",
+      "image": "https://m.media-amazon.com/images/I/71rH4vEE4nL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B09J2T124D?tag=gadgetvill09f-21",
+      "price": "\u20b91,599",
+      "rating": 4.3,
+      "category": "electronics",
+      "asin": "B09J2T124D",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-02T13:20:36.411550+05:30",
+      "session_type": "afternoon",
+      "link_index": 148
+    },
     {
       "id": "product_morning_20251202_045403",
       "title": "Lifelong Universal & Adjustable Metal Washing Machine Stand (5 KG to 12 KG) | Trolley with Wheels | Single/Double Door F",
