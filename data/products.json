@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-12-02T18:52:37.728958+05:30",
-  "total_products": 515,
+  "last_updated": "2025-12-02T21:24:40.173602+05:30",
+  "total_products": 517,
   "products": [
+    {
+      "id": "product_night_20251202_155440",
+      "title": "Odestar Engineering Wood Premier Award Medal Display Rack and Trophy Shelf- (Brown, Large)",
+      "image": "https://m.media-amazon.com/images/I/61mvjJ5ShCL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B097CJ5V7G?tag=gadgetvill09f-21",
+      "price": "\u20b9899",
+      "rating": 4.2,
+      "category": "electronics",
+      "asin": "B097CJ5V7G",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-02T21:24:40.173566+05:30",
+      "session_type": "night",
+      "link_index": 152
+    },
+    {
+      "id": "product_night_20251202_155436",
+      "title": "boAt 2025 Launch Airdopes Plus 311,Glass Design,ENx Tech,50 H Battery, Fast Charge, Stream Ad Free Music via App Support",
+      "image": "https://m.media-amazon.com/images/I/61USnP14RqL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DZXT72RY?tag=gadgetvill09f-21",
+      "price": "\u20b9899",
+      "rating": 3.7,
+      "category": "electronics",
+      "asin": "B0DZXT72RY",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-02T21:24:36.673089+05:30",
+      "session_type": "night",
+      "link_index": 152
+    },
     {
       "id": "product_morning_20251202_132237",
       "title": "TEGO - Rush Sugarcane Plastic Running Bottle For cycling, exercise, gym, portable,fitness,sipper For Men, Women & Kids",
