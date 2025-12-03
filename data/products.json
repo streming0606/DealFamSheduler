@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-12-03T13:20:36.032122+05:30",
-  "total_products": 521,
+  "last_updated": "2025-12-03T18:52:23.635999+05:30",
+  "total_products": 523,
   "products": [
+    {
+      "id": "product_morning_20251203_132223",
+      "title": "Fire-Boltt Phoenix Ultra Smart Watch 1.39\u201d HD Display, Bluetooth Calling, AI Voice Assistant, 120 Sports Modes, IP67 Wat",
+      "image": "https://m.media-amazon.com/images/I/819DWQLgjKL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0BY2PWDFQ?tag=gadgetvill09f-21",
+      "price": "\u20b91,599",
+      "rating": 3.9,
+      "category": "fashion",
+      "asin": "B0BY2PWDFQ",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-03T18:52:23.635963+05:30",
+      "session_type": "morning",
+      "link_index": 158
+    },
+    {
+      "id": "product_morning_20251203_132221",
+      "title": "Victorinox Metal 4.1835 Simple Coupling, Silver",
+      "image": "https://m.media-amazon.com/images/I/41RyGvZUYLL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B000MLR5VY?tag=gadgetvill09f-21",
+      "price": "\u20b9530",
+      "rating": 4.6,
+      "category": "electronics",
+      "asin": "B000MLR5VY",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-03T18:52:21.114209+05:30",
+      "session_type": "morning",
+      "link_index": 158
+    },
     {
       "id": "product_afternoon_20251203_075036",
       "title": "Whisper Bindazzz Nights 44 XXL Sanitary Pads, Upto 0% Leaks All Night Long, For Heavy Flow, Nearly 40% Longer with Wider",
