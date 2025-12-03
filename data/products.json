@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-12-03T10:23:25.033910+05:30",
-  "total_products": 519,
+  "last_updated": "2025-12-03T13:20:36.032122+05:30",
+  "total_products": 521,
   "products": [
+    {
+      "id": "product_afternoon_20251203_075036",
+      "title": "Whisper Bindazzz Nights 44 XXL Sanitary Pads, Upto 0% Leaks All Night Long, For Heavy Flow, Nearly 40% Longer with Wider",
+      "image": "https://m.media-amazon.com/images/I/71h70yIRqtL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B083WV4S86?tag=gadgetvill09f-21",
+      "price": "\u20b9314",
+      "rating": 4.5,
+      "category": "electronics",
+      "asin": "B083WV4S86",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-03T13:20:36.032094+05:30",
+      "session_type": "afternoon",
+      "link_index": 156
+    },
+    {
+      "id": "product_afternoon_20251203_075034",
+      "title": "3 in 1 steamer for cold and cough, vaporizer steamer for cough,cold and facial, steam inhaler & vapourisers for adult - ",
+      "image": "https://m.media-amazon.com/images/I/61SDLg0EOnL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07XTG2YSP?tag=gadgetvill09f-21",
+      "price": "\u20b9277",
+      "rating": 3.8,
+      "category": "electronics",
+      "asin": "B07XTG2YSP",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-03T13:20:34.419064+05:30",
+      "session_type": "afternoon",
+      "link_index": 156
+    },
     {
       "id": "product_morning_20251203_045325",
       "title": "Water Bottle Cover with Zipper & Handle | Durable Black Bottle Sleeve Protector | Leak-Proof, Dust-Resistant Water Bottl",
