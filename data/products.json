@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-12-03T18:52:23.635999+05:30",
-  "total_products": 523,
+  "last_updated": "2025-12-03T21:24:57.620599+05:30",
+  "total_products": 525,
   "products": [
+    {
+      "id": "product_night_20251203_155457",
+      "title": "Blaze Shaker Bottle | Leak-Proof and Mess-Free | Non-Slip Grip | Ideal for Protein Shakes, Smoothies, Pre Workout and Mo",
+      "image": "https://m.media-amazon.com/images/I/71tly2ASz4L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DWFCFK9L?tag=gadgetvill09f-21",
+      "price": "\u20b9199",
+      "rating": 3.8,
+      "category": "electronics",
+      "asin": "B0DWFCFK9L",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-03T21:24:57.620563+05:30",
+      "session_type": "night",
+      "link_index": 160
+    },
+    {
+      "id": "product_night_20251203_155456",
+      "title": "Aerol Silicone Lubricant Spray, Grade 70 (300g/513 ml) Odourless, Colourless & Non-Toxic Lubricant, Rejuvenates & Shines",
+      "image": "https://m.media-amazon.com/images/I/61U3CNsyZsL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B01M0OK2LA?tag=gadgetvill09f-21",
+      "price": "\u20b9407",
+      "rating": 4.3,
+      "category": "electronics",
+      "asin": "B01M0OK2LA",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-03T21:24:56.132661+05:30",
+      "session_type": "night",
+      "link_index": 160
+    },
     {
       "id": "product_morning_20251203_132223",
       "title": "Fire-Boltt Phoenix Ultra Smart Watch 1.39\u201d HD Display, Bluetooth Calling, AI Voice Assistant, 120 Sports Modes, IP67 Wat",
