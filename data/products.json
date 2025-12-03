@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-12-02T21:24:40.173602+05:30",
-  "total_products": 517,
+  "last_updated": "2025-12-03T10:23:25.033910+05:30",
+  "total_products": 519,
   "products": [
+    {
+      "id": "product_morning_20251203_045325",
+      "title": "Water Bottle Cover with Zipper & Handle | Durable Black Bottle Sleeve Protector | Leak-Proof, Dust-Resistant Water Bottl",
+      "image": "https://m.media-amazon.com/images/I/61mGdEDcj4L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07FYGCXH2?tag=gadgetvill09f-21",
+      "price": "\u20b9344",
+      "rating": 3.0,
+      "category": "electronics",
+      "asin": "B07FYGCXH2",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-03T10:23:25.033875+05:30",
+      "session_type": "morning",
+      "link_index": 154
+    },
+    {
+      "id": "product_morning_20251203_045323",
+      "title": "AMBRANE USB Type C Female to USB Male OTG Adapter with 5 Gbps High-Speed Data Transfer, Compatible with Laptops, Tablets",
+      "image": "https://m.media-amazon.com/images/I/61s4K51Go3L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0D1FZQLYD?tag=gadgetvill09f-21",
+      "price": "\u20b9149",
+      "rating": 4.2,
+      "category": "electronics",
+      "asin": "B0D1FZQLYD",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-03T10:23:23.103497+05:30",
+      "session_type": "morning",
+      "link_index": 154
+    },
     {
       "id": "product_night_20251202_155440",
       "title": "Odestar Engineering Wood Premier Award Medal Display Rack and Trophy Shelf- (Brown, Large)",
