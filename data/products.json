@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-12-04T18:52:38.573319+05:30",
-  "total_products": 531,
+  "last_updated": "2025-12-04T21:24:20.243823+05:30",
+  "total_products": 533,
   "products": [
+    {
+      "id": "product_night_20251204_155420",
+      "title": "SAS SPORTS Collapsible Water Bottle Carrier for 10 Bottles",
+      "image": "https://m.media-amazon.com/images/I/812Kv02C7hL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07CVYYVBB?tag=gadgetvill09f-21",
+      "price": "\u20b9586",
+      "rating": 4.0,
+      "category": "electronics",
+      "asin": "B07CVYYVBB",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-04T21:24:20.243784+05:30",
+      "session_type": "night",
+      "link_index": 168
+    },
+    {
+      "id": "product_night_20251204_155417",
+      "title": "Portronics Conch Theta A in Ear 3.5mm Wired Earphones with In Line HD Mic, Powerful Audio, 14.2mm Dynamic Driver, Unique",
+      "image": "https://m.media-amazon.com/images/I/51DV4xHYsTL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DGLRPVB6?tag=gadgetvill09f-21",
+      "price": "\u20b9229",
+      "rating": 4.0,
+      "category": "electronics",
+      "asin": "B0DGLRPVB6",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-04T21:24:17.932702+05:30",
+      "session_type": "night",
+      "link_index": 168
+    },
     {
       "id": "product_morning_20251204_132238",
       "title": "Fire-Boltt Ninja Call Pro Max Smart Watch 2.01 inch Display, Bluetooth Calling, 120+ Sports Modes, Health Suite, Voice A",
