@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-12-04T10:24:04.289475+05:30",
-  "total_products": 527,
+  "last_updated": "2025-12-04T13:19:48.853427+05:30",
+  "total_products": 529,
   "products": [
+    {
+      "id": "product_afternoon_20251204_074948",
+      "title": "Fine Quality Metal Lobster Claw Clasps with Wide 1/2 Inch D Ring | 360 Swivel Clips Trigger Snap Hooks for Lanyards Keyc",
+      "image": "https://m.media-amazon.com/images/I/41UM9i+qP9L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DZH6BBCJ?tag=gadgetvill09f-21",
+      "price": "\u20b9165",
+      "rating": 4.0,
+      "category": "electronics",
+      "asin": "B0DZH6BBCJ",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-04T13:19:48.853390+05:30",
+      "session_type": "afternoon",
+      "link_index": 164
+    },
+    {
+      "id": "product_afternoon_20251204_074945",
+      "title": "Eveready Ultima Alkaline AA Battery, 400% Longer Lasting, Anti-Leak Turbolock Technology, Eco-Friendly Batteries for Hig",
+      "image": "https://m.media-amazon.com/images/I/71xl38UmsIL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CGNN4S4T?tag=gadgetvill09f-21",
+      "price": "\u20b9189",
+      "rating": 4.4,
+      "category": "electronics",
+      "asin": "B0CGNN4S4T",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-04T13:19:45.146108+05:30",
+      "session_type": "afternoon",
+      "link_index": 164
+    },
     {
       "id": "product_morning_20251204_045404",
       "title": "The Face Shop Rice Water Bright Foaming Face Wash 100ml | Face Wash for Glowing Skin | Cleanser for Uneven Skin Tone | K",
