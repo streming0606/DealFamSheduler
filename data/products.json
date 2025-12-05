@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-12-05T10:23:45.122754+05:30",
-  "total_products": 535,
+  "last_updated": "2025-12-05T13:19:56.242990+05:30",
+  "total_products": 537,
   "products": [
+    {
+      "id": "product_afternoon_20251205_074956",
+      "title": "Glass Water Bottle Cover Only (For 1 Litre and 750 ML) | Keeps drink hot and cold | Pair of 2 (BLACK)",
+      "image": "https://m.media-amazon.com/images/I/31kDZXEftZL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DXQG4HQX?tag=gadgetvill09f-21",
+      "price": "\u20b9365",
+      "rating": 4.0,
+      "category": "electronics",
+      "asin": "B0DXQG4HQX",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-05T13:19:56.242954+05:30",
+      "session_type": "afternoon",
+      "link_index": 172
+    },
+    {
+      "id": "product_afternoon_20251205_074954",
+      "title": "Shalimar Premium (Lavender Fragrance) Scented Garbage Bags | Large 24 X 32 Inches | 60 Bags (15 Bags X 4 Rolls) | Dustbi",
+      "image": "https://m.media-amazon.com/images/I/71iG-BIYUlL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07KT98RKS?tag=gadgetvill09f-21",
+      "price": "\u20b9318",
+      "rating": 4.5,
+      "category": "fashion",
+      "asin": "B07KT98RKS",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-05T13:19:54.492805+05:30",
+      "session_type": "afternoon",
+      "link_index": 172
+    },
     {
       "id": "product_morning_20251205_045345",
       "title": "Premium Detox Foot patches 30 pads, Cleansing Toxin Remover Foot Pads, Pain Relief,Stress Relief Sleep Patch for Detoxif",
