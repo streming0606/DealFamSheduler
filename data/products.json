@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-12-04T21:24:20.243823+05:30",
-  "total_products": 533,
+  "last_updated": "2025-12-05T10:23:45.122754+05:30",
+  "total_products": 535,
   "products": [
+    {
+      "id": "product_morning_20251205_045345",
+      "title": "Premium Detox Foot patches 30 pads, Cleansing Toxin Remover Foot Pads, Pain Relief,Stress Relief Sleep Patch for Detoxif",
+      "image": "https://m.media-amazon.com/images/I/51QlFASEFZL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CFM4KRF1?tag=gadgetvill09f-21",
+      "price": "\u20b9332",
+      "rating": 4.0,
+      "category": "electronics",
+      "asin": "B0CFM4KRF1",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-05T10:23:45.122721+05:30",
+      "session_type": "morning",
+      "link_index": 170
+    },
+    {
+      "id": "product_morning_20251205_045343",
+      "title": "7 SEVEN\u00ae Compatible with Samsung Smart 4K Tv Remote Led UHD QLED Television and Monitor Suitable for Frame Ultra 6 7 8 S",
+      "image": "https://m.media-amazon.com/images/I/41MCSc5LFxL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B09L8DSSFH?tag=gadgetvill09f-21",
+      "price": "\u20b9299",
+      "rating": 3.7,
+      "category": "electronics",
+      "asin": "B09L8DSSFH",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-05T10:23:43.666475+05:30",
+      "session_type": "morning",
+      "link_index": 170
+    },
     {
       "id": "product_night_20251204_155420",
       "title": "SAS SPORTS Collapsible Water Bottle Carrier for 10 Bottles",
