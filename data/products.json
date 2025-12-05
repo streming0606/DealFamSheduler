@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-12-05T18:49:22.520516+05:30",
-  "total_products": 539,
+  "last_updated": "2025-12-05T21:22:38.983406+05:30",
+  "total_products": 541,
   "products": [
+    {
+      "id": "product_night_20251205_155238",
+      "title": "Noise Buds VS104 Truly Wireless Earbuds with 45H of Playtime, Quad Mic with ENC, Instacharge(10 Min=200 Min), 13Mm Drive",
+      "image": "https://m.media-amazon.com/images/I/51+e7yrgPpL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B09Y5MK1KB?tag=gadgetvill09f-21",
+      "price": "\u20b91,099",
+      "rating": 3.8,
+      "category": "electronics",
+      "asin": "B09Y5MK1KB",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-05T21:22:38.983370+05:30",
+      "session_type": "night",
+      "link_index": 176
+    },
+    {
+      "id": "product_night_20251205_155237",
+      "title": "Fixderma Nigrifix Cream for Acanthosis Nigricans with Lactic Acid | Dermatologist Tested Retinol Cream | For Dark Body P",
+      "image": "https://m.media-amazon.com/images/I/61ez4XQ3aqL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0B18SZNDQ?tag=gadgetvill09f-21",
+      "price": "\u20b9405",
+      "rating": 3.6,
+      "category": "health",
+      "asin": "B0B18SZNDQ",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-05T21:22:37.561838+05:30",
+      "session_type": "night",
+      "link_index": 176
+    },
     {
       "id": "product_morning_20251205_131922",
       "title": "EPOS I SENNHEISER Adapt 160T USB II,Headset,On Ear,Black",
