@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-12-05T21:22:38.983406+05:30",
-  "total_products": 541,
+  "last_updated": "2025-12-06T10:18:51.647046+05:30",
+  "total_products": 543,
   "products": [
+    {
+      "id": "product_morning_20251206_044851",
+      "title": "YOUVA Navneet Soft Bound Long Book/Soft cover Notebook for Students | Single Line | 172 Pages | Pack of 6 | Regular Size",
+      "image": "https://m.media-amazon.com/images/I/81R3CbZguyL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07GWSP98R?tag=gadgetvill09f-21",
+      "price": "\u20b9360",
+      "rating": 4.2,
+      "category": "electronics",
+      "asin": "B07GWSP98R",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-06T10:18:51.647013+05:30",
+      "session_type": "morning",
+      "link_index": 178
+    },
+    {
+      "id": "product_morning_20251206_044849",
+      "title": "boAt Rockerz 255 Z Plus, AI-Enx Tech, Spatial Audio, 50HRS Battery, Low Latency Mode, Fast Charge, App Support, IPX4 BT ",
+      "image": "https://m.media-amazon.com/images/I/61vaxn5X09L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0D6Y7Y3N3?tag=gadgetvill09f-21",
+      "price": "\u20b91,099",
+      "rating": 3.9,
+      "category": "electronics",
+      "asin": "B0D6Y7Y3N3",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-06T10:18:49.447955+05:30",
+      "session_type": "morning",
+      "link_index": 178
+    },
     {
       "id": "product_night_20251205_155238",
       "title": "Noise Buds VS104 Truly Wireless Earbuds with 45H of Playtime, Quad Mic with ENC, Instacharge(10 Min=200 Min), 13Mm Drive",
