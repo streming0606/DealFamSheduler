@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-12-06T13:19:24.071778+05:30",
-  "total_products": 545,
+  "last_updated": "2025-12-06T18:36:35.080686+05:30",
+  "total_products": 547,
   "products": [
+    {
+      "id": "product_morning_20251206_130635",
+      "title": "The Derma Co 10% Vitamin C Face Serum with 5% Niacinamide, Powered by Deep Penetration Formula\u2122 | Fades Dark Spots | Red",
+      "image": "https://m.media-amazon.com/images/I/61dY-NS8lPL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B096MNYLWS?tag=gadgetvill09f-21",
+      "price": "\u20b9557",
+      "rating": 4.0,
+      "category": "health",
+      "asin": "B096MNYLWS",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-06T18:36:35.080651+05:30",
+      "session_type": "morning",
+      "link_index": 182
+    },
+    {
+      "id": "product_morning_20251206_130632",
+      "title": "Solid Rugs Modern Carpet with Premium Wool Carpets for Living Room Size 5X8 Feet",
+      "image": "https://m.media-amazon.com/images/I/41Xes9FX5VL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FF4XB573?tag=gadgetvill09f-21",
+      "price": "\u20b9Special Price",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B0FF4XB573",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-06T18:36:32.683870+05:30",
+      "session_type": "morning",
+      "link_index": 182
+    },
     {
       "id": "product_afternoon_20251206_074924",
       "title": "Pilgrim 25% AHA + 2% BHA + 5% PHA Peeling Solution 30ml For Face & Body |10-Minute Facial At Home|Gentle Exfoliating Ser",
