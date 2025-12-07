@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-12-07T10:23:29.223663+05:30",
-  "total_products": 551,
+  "last_updated": "2025-12-07T13:19:38.446272+05:30",
+  "total_products": 553,
   "products": [
+    {
+      "id": "product_afternoon_20251207_074938",
+      "title": "PROBEROS\u00ae Cycling Sunglasses for Men Stylish, UV400 Tinted Polarized Sunglasses Fashion Sport Set, Unique Frame Design, ",
+      "image": "https://m.media-amazon.com/images/I/61NrKLIUcSL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FCRP855X?tag=gadgetvill09f-21",
+      "price": "\u20b9646",
+      "rating": 3.5,
+      "category": "fashion",
+      "asin": "B0FCRP855X",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-07T13:19:38.446240+05:30",
+      "session_type": "afternoon",
+      "link_index": 188
+    },
+    {
+      "id": "product_afternoon_20251207_074936",
+      "title": "Amazon Brand - Presto! Disinfectant Surface & Floor Cleaner Liquid | Lavendar | 2 Litre | 1 Can | Kills 99.9% Germs | Re",
+      "image": "https://m.media-amazon.com/images/I/714-KR1qgzL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0755CG1LW?tag=gadgetvill09f-21",
+      "price": "\u20b9183",
+      "rating": 4.2,
+      "category": "electronics",
+      "asin": "B0755CG1LW",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-07T13:19:36.293121+05:30",
+      "session_type": "afternoon",
+      "link_index": 188
+    },
     {
       "id": "product_morning_20251207_045329",
       "title": "Thermal 1L Bottle Cover Carrier Holder Sleeve with Adjustable Shoulder Handle & Zipper Closure (Black)",
