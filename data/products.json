@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-12-07T13:19:38.446272+05:30",
-  "total_products": 553,
+  "last_updated": "2025-12-07T18:35:29.583757+05:30",
+  "total_products": 555,
   "products": [
+    {
+      "id": "product_morning_20251207_130529",
+      "title": "V-Guard Zio Geyser 5 Litre Instant Water Heater | Advanced Multi-Layered Safety | 3000 W Powerful Heating | Suitable For",
+      "image": "https://m.media-amazon.com/images/I/61lBjdCE+aL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CHMB39H5?tag=gadgetvill09f-21",
+      "price": "\u20b93,749",
+      "rating": 4.1,
+      "category": "home",
+      "asin": "B0CHMB39H5",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-07T18:35:29.583723+05:30",
+      "session_type": "morning",
+      "link_index": 190
+    },
+    {
+      "id": "product_morning_20251207_130523",
+      "title": "Lifelong Protein Shaker|100% Leakproof Stylish Protein Shaker Bottle|Sipper Bottle|Gym Bottle for Protein- 700ml (LLSHB0",
+      "image": "https://m.media-amazon.com/images/I/51aPy+tftlL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CFFBZ23F?tag=gadgetvill09f-21",
+      "price": "\u20b9159",
+      "rating": 4.0,
+      "category": "electronics",
+      "asin": "B0CFFBZ23F",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-07T18:35:23.560582+05:30",
+      "session_type": "morning",
+      "link_index": 190
+    },
     {
       "id": "product_afternoon_20251207_074938",
       "title": "PROBEROS\u00ae Cycling Sunglasses for Men Stylish, UV400 Tinted Polarized Sunglasses Fashion Sport Set, Unique Frame Design, ",
