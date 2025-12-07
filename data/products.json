@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-12-07T18:35:29.583757+05:30",
-  "total_products": 555,
+  "last_updated": "2025-12-07T21:20:11.452086+05:30",
+  "total_products": 557,
   "products": [
+    {
+      "id": "product_night_20251207_155011",
+      "title": "Amazon Product B0FPQYP45H",
+      "image": "https://m.media-amazon.com/images/I/B0FPQYP45H._AC_SL1500_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FPQYP45H?tag=gadgetvill09f-21",
+      "price": "\u20b9Special Price",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B0FPQYP45H",
+      "data_source": "fallback",
+      "posted_date": "2025-12-07T21:20:11.452052+05:30",
+      "session_type": "night",
+      "link_index": 192
+    },
+    {
+      "id": "product_night_20251207_155008",
+      "title": "Portronics 65W Adapto 65M Triple Port Fast Charging Laptop Adaptor, 2 x Type C PD Port,1 x USB-A Port, GaN Technology, C",
+      "image": "https://m.media-amazon.com/images/I/51Lb0lChR3L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FMFK6QPH?tag=gadgetvill09f-21",
+      "price": "\u20b91,399",
+      "rating": 4.1,
+      "category": "electronics",
+      "asin": "B0FMFK6QPH",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-07T21:20:08.587312+05:30",
+      "session_type": "night",
+      "link_index": 192
+    },
     {
       "id": "product_morning_20251207_130529",
       "title": "V-Guard Zio Geyser 5 Litre Instant Water Heater | Advanced Multi-Layered Safety | 3000 W Powerful Heating | Suitable For",
