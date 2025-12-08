@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-12-08T10:27:03.344932+05:30",
-  "total_products": 559,
+  "last_updated": "2025-12-08T13:21:19.835764+05:30",
+  "total_products": 561,
   "products": [
+    {
+      "id": "product_afternoon_20251208_075119",
+      "title": "Kids Cooling Patches for Fever Discomfort & Pain Relief, Cooling Relief Fever Reducer, Soothe Headache Pain, Pack of 10",
+      "image": "https://m.media-amazon.com/images/I/71mO5Mkpb7S._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B09416G9CP?tag=gadgetvill09f-21",
+      "price": "\u20b9284",
+      "rating": 4.0,
+      "category": "electronics",
+      "asin": "B09416G9CP",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-08T13:21:19.835738+05:30",
+      "session_type": "afternoon",
+      "link_index": 196
+    },
+    {
+      "id": "product_afternoon_20251208_075113",
+      "title": "Amazon Basics ABS 2-in-1 Laptop and Mobile Stand, Ergonomic, Adjustable Height, Anti-Slip Base, Heat Dissipation, Portab",
+      "image": "https://m.media-amazon.com/images/I/61QxfC9mAGL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0BTNT8X6K?tag=gadgetvill09f-21",
+      "price": "\u20b9289",
+      "rating": 4.1,
+      "category": "electronics",
+      "asin": "B0BTNT8X6K",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-08T13:21:13.533319+05:30",
+      "session_type": "afternoon",
+      "link_index": 196
+    },
     {
       "id": "product_morning_20251208_045703",
       "title": "One Plus Fast 80W Original USB Type C Data Sync Fast Charging Charger Cable for One Plus 13,13s,13r,12,12r,11,11r,10,10r",
