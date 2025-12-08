@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-12-08T18:51:37.113753+05:30",
-  "total_products": 563,
+  "last_updated": "2025-12-08T21:21:30.981606+05:30",
+  "total_products": 565,
   "products": [
+    {
+      "id": "product_night_20251208_155130",
+      "title": "UNBREAKcable USB Type C to Lightning Cable 27W [MFi Certified + 2 Years Warranty] Fast Charger Cable for iPhone 14/13/12",
+      "image": "https://m.media-amazon.com/images/I/61+Q2A2n+lL._AC_UY218_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/554403284X?tag=gadgetvill09f-21",
+      "price": "\u20b9689",
+      "rating": 4.1,
+      "category": "electronics",
+      "asin": "554403284X",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-08T21:21:30.981574+05:30",
+      "session_type": "night",
+      "link_index": 200
+    },
+    {
+      "id": "product_night_20251208_155129",
+      "title": "HASTHIP\u00ae for Stanley Cup Accessories & Charm Kit Set of 9Pcs Kit Cute Bow Straw Cap, 2 Straight Straws, Cleaning Brush, ",
+      "image": "https://m.media-amazon.com/images/I/519rWp2FLqL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DXT4JLJN?tag=gadgetvill09f-21",
+      "price": "\u20b9472",
+      "rating": 3.9,
+      "category": "fashion",
+      "asin": "B0DXT4JLJN",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-08T21:21:29.573158+05:30",
+      "session_type": "night",
+      "link_index": 200
+    },
     {
       "id": "product_morning_20251208_132137",
       "title": "Boldfit Wrist Band for Gym Workout Wrist Support for Gym Straps for Men Hand Band Strap for Man Accessories for Men Work",
