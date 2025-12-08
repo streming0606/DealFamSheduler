@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-12-07T21:20:11.452086+05:30",
-  "total_products": 557,
+  "last_updated": "2025-12-08T10:27:03.344932+05:30",
+  "total_products": 559,
   "products": [
+    {
+      "id": "product_morning_20251208_045703",
+      "title": "One Plus Fast 80W Original USB Type C Data Sync Fast Charging Charger Cable for One Plus 13,13s,13r,12,12r,11,11r,10,10r",
+      "image": "https://m.media-amazon.com/images/I/61CFmYmgQyL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CXDRZFSC?tag=gadgetvill09f-21",
+      "price": "\u20b9259",
+      "rating": 4.4,
+      "category": "electronics",
+      "asin": "B0CXDRZFSC",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-08T10:27:03.344906+05:30",
+      "session_type": "morning",
+      "link_index": 194
+    },
+    {
+      "id": "product_morning_20251208_045701",
+      "title": "Dyazo 6 Angles Adjustable Aluminum Ergonomic Foldable Portable Tabletop Laptop/Desktop Riser Stand Holder Compatible for",
+      "image": "https://m.media-amazon.com/images/I/61kBmC8NfGL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B08LHTJTBB?tag=gadgetvill09f-21",
+      "price": "\u20b9349",
+      "rating": 4.3,
+      "category": "electronics",
+      "asin": "B08LHTJTBB",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-08T10:27:01.671813+05:30",
+      "session_type": "morning",
+      "link_index": 194
+    },
     {
       "id": "product_night_20251207_155011",
       "title": "Amazon Product B0FPQYP45H",
