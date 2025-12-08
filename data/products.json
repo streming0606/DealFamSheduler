@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-12-08T13:21:19.835764+05:30",
-  "total_products": 561,
+  "last_updated": "2025-12-08T18:51:37.113753+05:30",
+  "total_products": 563,
   "products": [
+    {
+      "id": "product_morning_20251208_132137",
+      "title": "Boldfit Wrist Band for Gym Workout Wrist Support for Gym Straps for Men Hand Band Strap for Man Accessories for Men Work",
+      "image": "https://m.media-amazon.com/images/I/71rnjOkkJZL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CH1769G7?tag=gadgetvill09f-21",
+      "price": "\u20b9199",
+      "rating": 4.3,
+      "category": "electronics",
+      "asin": "B0CH1769G7",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-08T18:51:37.113723+05:30",
+      "session_type": "morning",
+      "link_index": 198
+    },
+    {
+      "id": "product_morning_20251208_132134",
+      "title": "Amazon Brand - Presto! Garbage Bags | Small | 180 Count | 30 Bags X 6 Rolls | 17 X 19 Inches | For Dry & Wet Waste | Bla",
+      "image": "https://m.media-amazon.com/images/I/71CxGC97O9L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0821PKWBW?tag=gadgetvill09f-21",
+      "price": "\u20b9250",
+      "rating": 4.4,
+      "category": "fashion",
+      "asin": "B0821PKWBW",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-08T18:51:34.891490+05:30",
+      "session_type": "morning",
+      "link_index": 198
+    },
     {
       "id": "product_afternoon_20251208_075119",
       "title": "Kids Cooling Patches for Fever Discomfort & Pain Relief, Cooling Relief Fever Reducer, Soothe Headache Pain, Pack of 10",
