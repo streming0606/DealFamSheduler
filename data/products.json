@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-12-09T10:22:54.303867+05:30",
-  "total_products": 567,
+  "last_updated": "2025-12-09T13:20:38.317232+05:30",
+  "total_products": 569,
   "products": [
+    {
+      "id": "product_afternoon_20251209_075038",
+      "title": "Vector X Gym Sipper Bottle, Leakproof Guarantee Sipper Bottle Ideal for Cycling, Protein, Preworkout and Bcaas, Bpa-Free",
+      "image": "https://m.media-amazon.com/images/I/51JuvFhvW6L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0BFHHWF96?tag=gadgetvill09f-21",
+      "price": "\u20b9151",
+      "rating": 4.0,
+      "category": "electronics",
+      "asin": "B0BFHHWF96",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-09T13:20:38.317198+05:30",
+      "session_type": "afternoon",
+      "link_index": 204
+    },
+    {
+      "id": "product_afternoon_20251209_075035",
+      "title": "Nike Plastic Hypersport Bike Accessories 915 Clear/Black/Black/Clear One Size, 946 ml",
+      "image": "https://m.media-amazon.com/images/I/41BVrm42PoL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B09PGN256T?tag=gadgetvill09f-21",
+      "price": "\u20b9895",
+      "rating": 4.1,
+      "category": "electronics",
+      "asin": "B09PGN256T",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-09T13:20:35.713996+05:30",
+      "session_type": "afternoon",
+      "link_index": 204
+    },
     {
       "id": "product_morning_20251209_045254",
       "title": "HASTHIP\u00ae 2Pcs Compatible with Stanley Leak-Proof Replacement Lid for Stanley 40oz Tumbler Cup Straw Hole Fit Secure Comp",
