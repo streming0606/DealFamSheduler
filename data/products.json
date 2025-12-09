@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-12-09T18:52:35.957645+05:30",
-  "total_products": 571,
+  "last_updated": "2025-12-09T21:21:52.887629+05:30",
+  "total_products": 573,
   "products": [
+    {
+      "id": "product_night_20251209_155152",
+      "title": "Boat 2025 Launch Bassheads 300C Wired Earphones,Type-C Jack, 10mm Drivers, Signature Sound, in-Line Microphone, Integrat",
+      "image": "https://m.media-amazon.com/images/I/51sxI5xpalL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FM38916Y?tag=gadgetvill09f-21",
+      "price": "\u20b9449",
+      "rating": 4.0,
+      "category": "electronics",
+      "asin": "B0FM38916Y",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-09T21:21:52.887603+05:30",
+      "session_type": "night",
+      "link_index": 208
+    },
+    {
+      "id": "product_night_20251209_155150",
+      "title": "Cleevo Kitchen Cleaner Spray- 1L Bottle Pack | Natural Plant-Based Cleaning Spray for Tough Stains, Gas Stove, Counterto",
+      "image": "https://m.media-amazon.com/images/I/71gKtqY5cfL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CW9R5C3V?tag=gadgetvill09f-21",
+      "price": "\u20b9199",
+      "rating": 4.1,
+      "category": "home",
+      "asin": "B0CW9R5C3V",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-09T21:21:50.946316+05:30",
+      "session_type": "night",
+      "link_index": 208
+    },
     {
       "id": "product_morning_20251209_132235",
       "title": "Muuchstac Ocean Face Wash for Men | Fight Acne & Pimples, Brighten Skin, Clears Dirt, Oil Control, Refreshing Feel - Mul",
