@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-12-09T13:20:38.317232+05:30",
-  "total_products": 569,
+  "last_updated": "2025-12-09T18:52:35.957645+05:30",
+  "total_products": 571,
   "products": [
+    {
+      "id": "product_morning_20251209_132235",
+      "title": "Muuchstac Ocean Face Wash for Men | Fight Acne & Pimples, Brighten Skin, Clears Dirt, Oil Control, Refreshing Feel - Mul",
+      "image": "https://m.media-amazon.com/images/I/71M33O0-KyL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B083SMXD1Z?tag=gadgetvill09f-21",
+      "price": "\u20b9245",
+      "rating": 4.0,
+      "category": "health",
+      "asin": "B083SMXD1Z",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-09T18:52:35.957611+05:30",
+      "session_type": "morning",
+      "link_index": 206
+    },
+    {
+      "id": "product_morning_20251209_132234",
+      "title": "Kuber Industries Stainless Steel Dish Rack for Kitchen | Vessels Organizer Stands with Handle | Spoon Holder & Draining ",
+      "image": "https://m.media-amazon.com/images/I/71HMFdjYM1L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0D9BHVTVW?tag=gadgetvill09f-21",
+      "price": "\u20b9848",
+      "rating": 4.1,
+      "category": "home",
+      "asin": "B0D9BHVTVW",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-09T18:52:34.094524+05:30",
+      "session_type": "morning",
+      "link_index": 206
+    },
     {
       "id": "product_afternoon_20251209_075038",
       "title": "Vector X Gym Sipper Bottle, Leakproof Guarantee Sipper Bottle Ideal for Cycling, Protein, Preworkout and Bcaas, Bpa-Free",
