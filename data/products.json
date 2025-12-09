@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-12-08T21:21:30.981606+05:30",
-  "total_products": 565,
+  "last_updated": "2025-12-09T10:22:54.303867+05:30",
+  "total_products": 567,
   "products": [
+    {
+      "id": "product_morning_20251209_045254",
+      "title": "HASTHIP\u00ae 2Pcs Compatible with Stanley Leak-Proof Replacement Lid for Stanley 40oz Tumbler Cup Straw Hole Fit Secure Comp",
+      "image": "https://m.media-amazon.com/images/I/61zN43Nim9L._AC_UY218_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0F1FHS7BX?tag=gadgetvill09f-21",
+      "price": "\u20b9458",
+      "rating": 3.8,
+      "category": "electronics",
+      "asin": "B0F1FHS7BX",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-09T10:22:54.303833+05:30",
+      "session_type": "morning",
+      "link_index": 202
+    },
+    {
+      "id": "product_morning_20251209_045252",
+      "title": "CP PLUS 128GB microSDXC Memory Card Grade UHS-3 Class 10, Up to 70 Mbps Reading & 30 Mbps Writing Speed with High Perfor",
+      "image": "https://m.media-amazon.com/images/I/51g3YhFG5qL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CKR1MQQN?tag=gadgetvill09f-21",
+      "price": "\u20b91,099",
+      "rating": 4.0,
+      "category": "electronics",
+      "asin": "B0CKR1MQQN",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-09T10:22:52.553597+05:30",
+      "session_type": "morning",
+      "link_index": 202
+    },
     {
       "id": "product_night_20251208_155130",
       "title": "UNBREAKcable USB Type C to Lightning Cable 27W [MFi Certified + 2 Years Warranty] Fast Charger Cable for iPhone 14/13/12",
