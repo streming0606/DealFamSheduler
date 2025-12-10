@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-12-09T21:21:52.887629+05:30",
-  "total_products": 573,
+  "last_updated": "2025-12-10T10:26:55.227485+05:30",
+  "total_products": 575,
   "products": [
+    {
+      "id": "product_morning_20251210_045655",
+      "title": "Origami 3 Ply Toilet Tissue Paper Roll - Pack of 6 (160 Pulls Per Roll, 960 Sheets)",
+      "image": "https://m.media-amazon.com/images/I/61eTP6OnwOL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B00E3QVP06?tag=gadgetvill09f-21",
+      "price": "\u20b9254",
+      "rating": 4.2,
+      "category": "health",
+      "asin": "B00E3QVP06",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-10T10:26:55.227455+05:30",
+      "session_type": "morning",
+      "link_index": 210
+    },
+    {
+      "id": "product_morning_20251210_045652",
+      "title": "hk vitals DHT Blocker with Biotin (60 Tablets) | Stinging Nettle and Soya Protein | Helps Reduce Hair Fall, Stimulates H",
+      "image": "https://m.media-amazon.com/images/I/61CIRYA4FhL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0B152TBRS?tag=gadgetvill09f-21",
+      "price": "\u20b9379",
+      "rating": 3.8,
+      "category": "electronics",
+      "asin": "B0B152TBRS",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-10T10:26:52.473598+05:30",
+      "session_type": "morning",
+      "link_index": 210
+    },
     {
       "id": "product_night_20251209_155152",
       "title": "Boat 2025 Launch Bassheads 300C Wired Earphones,Type-C Jack, 10mm Drivers, Signature Sound, in-Line Microphone, Integrat",
