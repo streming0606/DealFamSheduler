@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-12-10T13:21:24.364918+05:30",
-  "total_products": 577,
+  "last_updated": "2025-12-10T18:53:30.683276+05:30",
+  "total_products": 579,
   "products": [
+    {
+      "id": "product_morning_20251210_132330",
+      "title": "JIALTO 10 Pcs Stainless Steel, PVC, ABS Nail Free Seamless Adhesive Non-Trace No Drilling Installation Hanging, Waterpro",
+      "image": "https://m.media-amazon.com/images/I/410a9N3gxpL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B08X2R1HM5?tag=gadgetvill09f-21",
+      "price": "\u20b9149",
+      "rating": 4.0,
+      "category": "electronics",
+      "asin": "B08X2R1HM5",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-10T18:53:30.683243+05:30",
+      "session_type": "morning",
+      "link_index": 214
+    },
+    {
+      "id": "product_morning_20251210_132326",
+      "title": "4 Pack Bottle Holder, Carabiner for Water Bottles, Portable Hydration Solution for Outdoor Cycling, Hiking, Travel, Camp",
+      "image": "https://m.media-amazon.com/images/I/71c7BhHotxL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FLK4W8P7?tag=gadgetvill09f-21",
+      "price": "\u20b9299",
+      "rating": 4.0,
+      "category": "home",
+      "asin": "B0FLK4W8P7",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-10T18:53:26.615549+05:30",
+      "session_type": "morning",
+      "link_index": 214
+    },
     {
       "id": "product_afternoon_20251210_075124",
       "title": "Portronics MODESK Universal Mobile Holder Stand with Metal Body, Anti Skid Design, Light Weight for All Smartphones, Tab",
