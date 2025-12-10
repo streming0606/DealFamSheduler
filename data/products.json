@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-12-10T18:53:30.683276+05:30",
-  "total_products": 579,
+  "last_updated": "2025-12-10T21:24:18.435904+05:30",
+  "total_products": 581,
   "products": [
+    {
+      "id": "product_night_20251210_155418",
+      "title": "Fitkit Classic Bottle Shaker 700ml",
+      "image": "https://m.media-amazon.com/images/I/510gHLM8t4L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B074VHN2F3?tag=gadgetvill09f-21",
+      "price": "\u20b989",
+      "rating": 3.9,
+      "category": "electronics",
+      "asin": "B074VHN2F3",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-10T21:24:18.435876+05:30",
+      "session_type": "night",
+      "link_index": 216
+    },
+    {
+      "id": "product_night_20251210_155416",
+      "title": "NIVEA Nourishing Body Milk 120ml Body Lotion with Deep Moisture Serum | 48 H Moisturization | With 2X Almond Oil | Smoot",
+      "image": "https://m.media-amazon.com/images/I/41OGraWXVsL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B01N4665BU?tag=gadgetvill09f-21",
+      "price": "\u20b999",
+      "rating": 4.4,
+      "category": "health",
+      "asin": "B01N4665BU",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-10T21:24:16.772684+05:30",
+      "session_type": "night",
+      "link_index": 216
+    },
     {
       "id": "product_morning_20251210_132330",
       "title": "JIALTO 10 Pcs Stainless Steel, PVC, ABS Nail Free Seamless Adhesive Non-Trace No Drilling Installation Hanging, Waterpro",
