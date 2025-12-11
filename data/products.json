@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-12-11T13:20:30.110592+05:30",
-  "total_products": 585,
+  "last_updated": "2025-12-11T18:54:42.377311+05:30",
+  "total_products": 587,
   "products": [
+    {
+      "id": "product_morning_20251211_132442",
+      "title": "BELLAVITA Water based Hydrating Sunscreen, SPF 50, Lightweight PA+++, For All Skin Types, No White Cast, Non - Greasy Fi",
+      "image": "https://m.media-amazon.com/images/I/51eYX3t1ctL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0D6YFXVQ8?tag=gadgetvill09f-21",
+      "price": "\u20b9199",
+      "rating": 4.1,
+      "category": "electronics",
+      "asin": "B0D6YFXVQ8",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-11T18:54:42.377284+05:30",
+      "session_type": "morning",
+      "link_index": 222
+    },
+    {
+      "id": "product_morning_20251211_132440",
+      "title": "All Out Ultra Mosquito Repellant Refill Faster Action (45 mL each) Pack of 6",
+      "image": "https://m.media-amazon.com/images/I/71LNiz94BtL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B00VFMFXRC?tag=gadgetvill09f-21",
+      "price": "\u20b9395",
+      "rating": 4.2,
+      "category": "electronics",
+      "asin": "B00VFMFXRC",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-11T18:54:40.607344+05:30",
+      "session_type": "morning",
+      "link_index": 222
+    },
     {
       "id": "product_afternoon_20251211_075030",
       "title": "AGARO Grand Egg Boiler And Poacher, 2-in1 Boils 8 Eggs, Poach 4 Eggs, Steamed Vegetables, 3 Boiling Types, Stainless Ste",
