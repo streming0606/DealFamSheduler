@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-12-10T21:24:18.435904+05:30",
-  "total_products": 581,
+  "last_updated": "2025-12-11T10:28:25.362801+05:30",
+  "total_products": 583,
   "products": [
+    {
+      "id": "product_morning_20251211_045825",
+      "title": "Ganesh Spark Gas Lighter for Kitchen Use Restaurants Metal Gas Stove Lighter Regular Size Easy Grip Long Lasting, Rust P",
+      "image": "https://m.media-amazon.com/images/I/61A2OYtJ3OL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CNW8YPK4?tag=gadgetvill09f-21",
+      "price": "\u20b992",
+      "rating": 4.1,
+      "category": "home",
+      "asin": "B0CNW8YPK4",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-11T10:28:25.362777+05:30",
+      "session_type": "morning",
+      "link_index": 218
+    },
+    {
+      "id": "product_morning_20251211_045818",
+      "title": "Scotch-Brite Rubber Heavy Duty Hand gloves for Dishwashing, gardening, kitchen cleaning ( Inner cotton lining for comfor",
+      "image": "https://m.media-amazon.com/images/I/61JDg6pGGJL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B00NBM0WD4?tag=gadgetvill09f-21",
+      "price": "\u20b9159",
+      "rating": 4.0,
+      "category": "home",
+      "asin": "B00NBM0WD4",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-11T10:28:18.101265+05:30",
+      "session_type": "morning",
+      "link_index": 218
+    },
     {
       "id": "product_night_20251210_155418",
       "title": "Fitkit Classic Bottle Shaker 700ml",
