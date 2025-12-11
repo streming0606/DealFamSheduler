@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-12-11T18:54:42.377311+05:30",
-  "total_products": 587,
+  "last_updated": "2025-12-11T21:26:58.902900+05:30",
+  "total_products": 589,
   "products": [
+    {
+      "id": "product_night_20251211_155658",
+      "title": "Karsaer Polarized Cycling Sunglasses for Men Stylish Running Sports Goggles for Women Youth UV400 Protection E1297",
+      "image": "https://m.media-amazon.com/images/I/514q-FIdM8L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DH182X5S?tag=gadgetvill09f-21",
+      "price": "\u20b9889",
+      "rating": 3.0,
+      "category": "fashion",
+      "asin": "B0DH182X5S",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-11T21:26:58.902865+05:30",
+      "session_type": "night",
+      "link_index": 224
+    },
+    {
+      "id": "product_night_20251211_155657",
+      "title": "Bosch Wiper Blade 3397016583KTS CLEAR Advantage, Single, 24 Inch Flat Blade, Driver Side, Comes with Quick-clip Adapter",
+      "image": "https://m.media-amazon.com/images/I/51ywgC39+AL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B01H078CNM?tag=gadgetvill09f-21",
+      "price": "\u20b9515",
+      "rating": 4.2,
+      "category": "electronics",
+      "asin": "B01H078CNM",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-11T21:26:57.069051+05:30",
+      "session_type": "night",
+      "link_index": 224
+    },
     {
       "id": "product_morning_20251211_132442",
       "title": "BELLAVITA Water based Hydrating Sunscreen, SPF 50, Lightweight PA+++, For All Skin Types, No White Cast, Non - Greasy Fi",
