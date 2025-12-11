@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-12-11T10:28:25.362801+05:30",
-  "total_products": 583,
+  "last_updated": "2025-12-11T13:20:30.110592+05:30",
+  "total_products": 585,
   "products": [
+    {
+      "id": "product_afternoon_20251211_075030",
+      "title": "AGARO Grand Egg Boiler And Poacher, 2-in1 Boils 8 Eggs, Poach 4 Eggs, Steamed Vegetables, 3 Boiling Types, Stainless Ste",
+      "image": "https://m.media-amazon.com/images/I/81670ZfgQ-L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0B257ZYVB?tag=gadgetvill09f-21",
+      "price": "\u20b9881",
+      "rating": 4.2,
+      "category": "home",
+      "asin": "B0B257ZYVB",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-11T13:20:30.110560+05:30",
+      "session_type": "afternoon",
+      "link_index": 220
+    },
+    {
+      "id": "product_afternoon_20251211_075028",
+      "title": "Pigeon by Stovekraft Edge High Grade Stainless Steel 4 Pcs Kitchen Knife Set | Black",
+      "image": "https://m.media-amazon.com/images/I/41-wAn5MVlL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CYZ48MDL?tag=gadgetvill09f-21",
+      "price": "\u20b999",
+      "rating": 4.3,
+      "category": "home",
+      "asin": "B0CYZ48MDL",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-11T13:20:28.396387+05:30",
+      "session_type": "afternoon",
+      "link_index": 220
+    },
     {
       "id": "product_morning_20251211_045825",
       "title": "Ganesh Spark Gas Lighter for Kitchen Use Restaurants Metal Gas Stove Lighter Regular Size Easy Grip Long Lasting, Rust P",
