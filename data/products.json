@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-12-11T21:26:58.902900+05:30",
-  "total_products": 589,
+  "last_updated": "2025-12-12T10:26:58.280275+05:30",
+  "total_products": 591,
   "products": [
+    {
+      "id": "product_morning_20251212_045658",
+      "title": "ORJILO 5 PCS Microfiber Car Duster Kit Interior & Exterior Car Cleaning Detailing Tool Scratch & Lint Free, Pollen Remov",
+      "image": "https://m.media-amazon.com/images/I/61BWhTVSf0L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FFZ9QMGD?tag=gadgetvill09f-21",
+      "price": "\u20b9298",
+      "rating": 4.0,
+      "category": "electronics",
+      "asin": "B0FFZ9QMGD",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-12T10:26:58.280230+05:30",
+      "session_type": "morning",
+      "link_index": 226
+    },
+    {
+      "id": "product_morning_20251212_045656",
+      "title": "Boldfit Weight Machine for Home Digital Weighing Machine for Human Body with LCD Display Max Weight Capacity 180Kgs (Bat",
+      "image": "https://m.media-amazon.com/images/I/511kyPU4UaL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0BTDM7LLC?tag=gadgetvill09f-21",
+      "price": "\u20b9399",
+      "rating": 4.0,
+      "category": "fashion",
+      "asin": "B0BTDM7LLC",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-12T10:26:56.804496+05:30",
+      "session_type": "morning",
+      "link_index": 226
+    },
     {
       "id": "product_night_20251211_155658",
       "title": "Karsaer Polarized Cycling Sunglasses for Men Stylish Running Sports Goggles for Women Youth UV400 Protection E1297",
