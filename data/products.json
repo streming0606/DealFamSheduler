@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-12-12T10:26:58.280275+05:30",
-  "total_products": 591,
+  "last_updated": "2025-12-12T13:20:58.632448+05:30",
+  "total_products": 593,
   "products": [
+    {
+      "id": "product_afternoon_20251212_075058",
+      "title": "Oral-B ORIGINAL Precision Clean Electric Toothbrush Soft Replacement Brush [10X POWERFUL THAN COMPATIBLE PRODUCTS] For V",
+      "image": "https://m.media-amazon.com/images/I/61Idi4uTm7L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B08ZJPZBJN?tag=gadgetvill09f-21",
+      "price": "\u20b9392",
+      "rating": 4.4,
+      "category": "electronics",
+      "asin": "B08ZJPZBJN",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-12T13:20:58.632421+05:30",
+      "session_type": "afternoon",
+      "link_index": 228
+    },
+    {
+      "id": "product_afternoon_20251212_075055",
+      "title": "MuscleBlaze MB-Vite Daily Multivitamin (60 Tablets) | With 51 Ingredients & 6 Blends, Vitamins & Minerals, Prebiotic & P",
+      "image": "https://m.media-amazon.com/images/I/61CVm4xU1SL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B00KDFRUGY?tag=gadgetvill09f-21",
+      "price": "\u20b9479",
+      "rating": 4.2,
+      "category": "electronics",
+      "asin": "B00KDFRUGY",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-12T13:20:55.728628+05:30",
+      "session_type": "afternoon",
+      "link_index": 228
+    },
     {
       "id": "product_morning_20251212_045658",
       "title": "ORJILO 5 PCS Microfiber Car Duster Kit Interior & Exterior Car Cleaning Detailing Tool Scratch & Lint Free, Pollen Remov",
