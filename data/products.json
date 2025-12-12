@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-12-12T18:51:13.794421+05:30",
-  "total_products": 595,
+  "last_updated": "2025-12-12T21:23:59.959270+05:30",
+  "total_products": 597,
   "products": [
+    {
+      "id": "product_night_20251212_155359",
+      "title": "Tripole Hydration Backpacks for Cycling and Trail Running | Without Bladder (Black)",
+      "image": "https://m.media-amazon.com/images/I/8109+FngMqL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B09D7G885D?tag=gadgetvill09f-21",
+      "price": "\u20b9809",
+      "rating": 4.1,
+      "category": "electronics",
+      "asin": "B09D7G885D",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-12T21:23:59.959237+05:30",
+      "session_type": "night",
+      "link_index": 232
+    },
+    {
+      "id": "product_night_20251212_155357",
+      "title": "Vector X Camo Sipper Shaker Water Bottle for Cycling & Gym Fitness, Pack of 2, 750 ml, Plastic, BPA Free",
+      "image": "https://m.media-amazon.com/images/I/61h7uXdRttL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0BY87Z8SQ?tag=gadgetvill09f-21",
+      "price": "\u20b9349",
+      "rating": 3.7,
+      "category": "electronics",
+      "asin": "B0BY87Z8SQ",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-12T21:23:57.278165+05:30",
+      "session_type": "night",
+      "link_index": 232
+    },
     {
       "id": "product_morning_20251212_132113",
       "title": "WishCare Sunscreen Body Lotion For All Skin Type with SPF 50 PA+++ - Broad Spectrum UVA & UVB Protection, No White Cast,",
