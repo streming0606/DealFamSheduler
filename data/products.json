@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-12-12T13:20:58.632448+05:30",
-  "total_products": 593,
+  "last_updated": "2025-12-12T18:51:13.794421+05:30",
+  "total_products": 595,
   "products": [
+    {
+      "id": "product_morning_20251212_132113",
+      "title": "WishCare Sunscreen Body Lotion For All Skin Type with SPF 50 PA+++ - Broad Spectrum UVA & UVB Protection, No White Cast,",
+      "image": "https://m.media-amazon.com/images/I/41zeex9DBnL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0BG8W7PJ7?tag=gadgetvill09f-21",
+      "price": "\u20b9374",
+      "rating": 4.4,
+      "category": "electronics",
+      "asin": "B0BG8W7PJ7",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-12T18:51:13.794385+05:30",
+      "session_type": "morning",
+      "link_index": 230
+    },
+    {
+      "id": "product_morning_20251212_132112",
+      "title": "Prestige PGMFB 800 Watt Grill Sandwich Toaster with Fixed Grill Plates, Black",
+      "image": "https://m.media-amazon.com/images/I/61wURjcgIEL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B00935MGKK?tag=gadgetvill09f-21",
+      "price": "\u20b91,099",
+      "rating": 4.1,
+      "category": "electronics",
+      "asin": "B00935MGKK",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-12T18:51:12.304137+05:30",
+      "session_type": "morning",
+      "link_index": 230
+    },
     {
       "id": "product_afternoon_20251212_075058",
       "title": "Oral-B ORIGINAL Precision Clean Electric Toothbrush Soft Replacement Brush [10X POWERFUL THAN COMPATIBLE PRODUCTS] For V",
