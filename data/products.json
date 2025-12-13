@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-12-13T10:21:04.344097+05:30",
-  "total_products": 599,
+  "last_updated": "2025-12-13T13:19:38.056779+05:30",
+  "total_products": 601,
   "products": [
+    {
+      "id": "product_afternoon_20251213_074938",
+      "title": "Shalimar Premium (Lavender Fragrance) Scented Garbage Bags | Medium 19 X 21 Inches | 120 Bags (30 Bags X 4 Rolls) | Dust",
+      "image": "https://m.media-amazon.com/images/I/71lXH8K7D9L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07KT9Q54M?tag=gadgetvill09f-21",
+      "price": "\u20b9309",
+      "rating": 4.5,
+      "category": "fashion",
+      "asin": "B07KT9Q54M",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-13T13:19:38.056748+05:30",
+      "session_type": "afternoon",
+      "link_index": 236
+    },
+    {
+      "id": "product_afternoon_20251213_074930",
+      "title": "MuscleBlaze Beginner's Whey Protein Powder, Chocolate (500g / 1.1lbs) | 12g Protein Per Scoop",
+      "image": "https://m.media-amazon.com/images/I/61SRe2Ed7GL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B09GG47TC9?tag=gadgetvill09f-21",
+      "price": "\u20b9799",
+      "rating": 4.0,
+      "category": "electronics",
+      "asin": "B09GG47TC9",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-13T13:19:30.373295+05:30",
+      "session_type": "afternoon",
+      "link_index": 236
+    },
     {
       "id": "product_morning_20251213_045104",
       "title": "RockBros Polarized Sports Sunglasses UV Protection Cycling Glasses for Men Women Outdoor Running Driving Fishing Golfing",
