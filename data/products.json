@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-12-13T18:37:56.130731+05:30",
-  "total_products": 603,
+  "last_updated": "2025-12-13T21:20:11.868796+05:30",
+  "total_products": 605,
   "products": [
+    {
+      "id": "product_night_20251213_155011",
+      "title": "ZIBUYU\u00ae Water Bottle Carrier Bag, Black Cup Holder with Strap Tumbler Cup Bag Accessories, Fits Most Tumblers & Bottles,",
+      "image": "https://m.media-amazon.com/images/I/41NSmFybKuL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FHKNH39G?tag=gadgetvill09f-21",
+      "price": "\u20b9304",
+      "rating": 4.0,
+      "category": "fashion",
+      "asin": "B0FHKNH39G",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-13T21:20:11.868771+05:30",
+      "session_type": "night",
+      "link_index": 240
+    },
+    {
+      "id": "product_night_20251213_155008",
+      "title": "Boldfit Hand Gripper for Men & Women Hand Grip Strengthener for Forearm, Wrist & Finger Workout Fitness Equipment for Ho",
+      "image": "https://m.media-amazon.com/images/I/61Av1lptLkL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0B77X44MX?tag=gadgetvill09f-21",
+      "price": "\u20b9151",
+      "rating": 4.1,
+      "category": "electronics",
+      "asin": "B0B77X44MX",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-13T21:20:08.526794+05:30",
+      "session_type": "night",
+      "link_index": 240
+    },
     {
       "id": "product_morning_20251213_130756",
       "title": "OnePlus Bullets Wireless Z3 in-Ear Neckband with 12.4mm Drivers, 3D Spatial Audio,10 mins Charge for 27 hrs Playback, AI",
