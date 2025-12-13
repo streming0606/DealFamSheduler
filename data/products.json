@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-12-13T13:19:38.056779+05:30",
-  "total_products": 601,
+  "last_updated": "2025-12-13T18:37:56.130731+05:30",
+  "total_products": 603,
   "products": [
+    {
+      "id": "product_morning_20251213_130756",
+      "title": "OnePlus Bullets Wireless Z3 in-Ear Neckband with 12.4mm Drivers, 3D Spatial Audio,10 mins Charge for 27 hrs Playback, AI",
+      "image": "https://m.media-amazon.com/images/I/51IorIBvbKL._AC_UY218_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FBRGQ7PM?tag=gadgetvill09f-21",
+      "price": "\u20b91,299",
+      "rating": 4.1,
+      "category": "electronics",
+      "asin": "B0FBRGQ7PM",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-13T18:37:56.130696+05:30",
+      "session_type": "morning",
+      "link_index": 238
+    },
+    {
+      "id": "product_morning_20251213_130753",
+      "title": "Fevicryl Acrylic Colours Sunflower Kit | 10 Colours x 15 ml | DIY Paint, Rich Pigment | Multicolour & Multi-surface | No",
+      "image": "https://m.media-amazon.com/images/I/51ZZ9aMQfoL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B00LXTFMRS?tag=gadgetvill09f-21",
+      "price": "\u20b9225",
+      "rating": 4.4,
+      "category": "electronics",
+      "asin": "B00LXTFMRS",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-13T18:37:53.927522+05:30",
+      "session_type": "morning",
+      "link_index": 238
+    },
     {
       "id": "product_afternoon_20251213_074938",
       "title": "Shalimar Premium (Lavender Fragrance) Scented Garbage Bags | Medium 19 X 21 Inches | 120 Bags (30 Bags X 4 Rolls) | Dust",
