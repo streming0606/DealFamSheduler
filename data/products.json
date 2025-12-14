@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-12-13T21:20:11.868796+05:30",
-  "total_products": 605,
+  "last_updated": "2025-12-14T10:27:19.744416+05:30",
+  "total_products": 607,
   "products": [
+    {
+      "id": "product_morning_20251214_045719",
+      "title": "boAt Rockerz 245 v2 Pro, 30HRS Battery, ENx Tech, Fast Charge, Low Latency, Dual Pairing, Magnetic Ear Buds, IPX5, Type-",
+      "image": "https://m.media-amazon.com/images/I/61T1Z4mwdgL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CC8VF47L?tag=gadgetvill09f-21",
+      "price": "\u20b9749",
+      "rating": 3.9,
+      "category": "electronics",
+      "asin": "B0CC8VF47L",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-14T10:27:19.744378+05:30",
+      "session_type": "morning",
+      "link_index": 242
+    },
+    {
+      "id": "product_morning_20251214_045717",
+      "title": "Portronics Conch Theta C in Ear Type C Wired Earphones with in Line HD Mic, Powerful Audio, 14.2mm Driver, Unique Earbud",
+      "image": "https://m.media-amazon.com/images/I/51Bl64-+u7L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DGLQHBF9?tag=gadgetvill09f-21",
+      "price": "\u20b9279",
+      "rating": 4.0,
+      "category": "electronics",
+      "asin": "B0DGLQHBF9",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-14T10:27:17.481928+05:30",
+      "session_type": "morning",
+      "link_index": 242
+    },
     {
       "id": "product_night_20251213_155011",
       "title": "ZIBUYU\u00ae Water Bottle Carrier Bag, Black Cup Holder with Strap Tumbler Cup Bag Accessories, Fits Most Tumblers & Bottles,",
