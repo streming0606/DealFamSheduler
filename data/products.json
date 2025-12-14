@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-12-14T13:19:41.881538+05:30",
-  "total_products": 609,
+  "last_updated": "2025-12-14T18:38:41.361171+05:30",
+  "total_products": 611,
   "products": [
+    {
+      "id": "product_morning_20251214_130841",
+      "title": "DOMS HEXEL PEN BLUE 20 PCS BOX",
+      "image": "https://m.media-amazon.com/images/I/71ODss4pHSL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CRL58RC1?tag=gadgetvill09f-21",
+      "price": "\u20b999",
+      "rating": 4.3,
+      "category": "electronics",
+      "asin": "B0CRL58RC1",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-14T18:38:41.361145+05:30",
+      "session_type": "morning",
+      "link_index": 246
+    },
+    {
+      "id": "product_morning_20251214_130839",
+      "title": "CamelBak UnBottle Insulated Hydration Crux Reservoir Set, Frost Grey/Turkish Sea, 2L",
+      "image": "https://m.media-amazon.com/images/I/51z9UdLBr-L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0D8CYFD7S?tag=gadgetvill09f-21",
+      "price": "\u20b9Special Price",
+      "rating": 4.3,
+      "category": "electronics",
+      "asin": "B0D8CYFD7S",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-14T18:38:39.862009+05:30",
+      "session_type": "morning",
+      "link_index": 246
+    },
     {
       "id": "product_afternoon_20251214_074941",
       "title": "OnePlus Buds 4 TWS Earbuds with Upto 55dB Real-time ANC, Adaptive Mode, Dual Drivers and DACs, 3D Audio, Upto 45hrs Musi",
