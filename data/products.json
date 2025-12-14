@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-12-14T18:38:41.361171+05:30",
-  "total_products": 611,
+  "last_updated": "2025-12-14T21:19:52.968877+05:30",
+  "total_products": 613,
   "products": [
+    {
+      "id": "product_night_20251214_154952",
+      "title": "MY ARMOR Microfiber Pillows Set 2, Soft Adjustable Pillow for Sleeping - 16 x 24 Inches -White",
+      "image": "https://m.media-amazon.com/images/I/813+9DJ+VaL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0BFNRKR8Z?tag=gadgetvill09f-21",
+      "price": "\u20b9439",
+      "rating": 4.2,
+      "category": "home",
+      "asin": "B0BFNRKR8Z",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-14T21:19:52.968842+05:30",
+      "session_type": "night",
+      "link_index": 248
+    },
+    {
+      "id": "product_night_20251214_154951",
+      "title": "Boldfit Bold Gym Shaker Bottle 700ml, Bottles For Protein Shake 100% Leakproof Guarantee Protein Shaker/Sipper, Ideal Fo",
+      "image": "https://m.media-amazon.com/images/I/61caaA5IlrL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B08TM2V4WT?tag=gadgetvill09f-21",
+      "price": "\u20b9194",
+      "rating": 4.2,
+      "category": "electronics",
+      "asin": "B08TM2V4WT",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-14T21:19:51.637461+05:30",
+      "session_type": "night",
+      "link_index": 248
+    },
     {
       "id": "product_morning_20251214_130841",
       "title": "DOMS HEXEL PEN BLUE 20 PCS BOX",
