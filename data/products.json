@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-12-14T10:27:19.744416+05:30",
-  "total_products": 607,
+  "last_updated": "2025-12-14T13:19:41.881538+05:30",
+  "total_products": 609,
   "products": [
+    {
+      "id": "product_afternoon_20251214_074941",
+      "title": "OnePlus Buds 4 TWS Earbuds with Upto 55dB Real-time ANC, Adaptive Mode, Dual Drivers and DACs, 3D Audio, Upto 45hrs Musi",
+      "image": "https://m.media-amazon.com/images/I/61VKXOPKdaL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FCMPJQ1J?tag=gadgetvill09f-21",
+      "price": "\u20b95,299",
+      "rating": 4.3,
+      "category": "electronics",
+      "asin": "B0FCMPJQ1J",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-14T13:19:41.881513+05:30",
+      "session_type": "afternoon",
+      "link_index": 244
+    },
+    {
+      "id": "product_afternoon_20251214_074939",
+      "title": "Kitchen Faucet Extender, Chrome Plated, 3-Mode Spray Head, Flexible Extension",
+      "image": "https://m.media-amazon.com/images/I/61Jksi2eZXL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FHWCZQBV?tag=gadgetvill09f-21",
+      "price": "\u20b9268",
+      "rating": 3.8,
+      "category": "home",
+      "asin": "B0FHWCZQBV",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-14T13:19:39.638663+05:30",
+      "session_type": "afternoon",
+      "link_index": 244
+    },
     {
       "id": "product_morning_20251214_045719",
       "title": "boAt Rockerz 245 v2 Pro, 30HRS Battery, ENx Tech, Fast Charge, Low Latency, Dual Pairing, Magnetic Ear Buds, IPX5, Type-",
