@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-12-15T10:30:51.191010+05:30",
-  "total_products": 615,
+  "last_updated": "2025-12-15T13:22:02.394331+05:30",
+  "total_products": 617,
   "products": [
+    {
+      "id": "product_afternoon_20251215_075202",
+      "title": "Boldfit Bold Gym Shaker Bottle 700ml, Bottles For Protein Shake 100% Leakproof Guarantee Protein Shaker/Sipper, Ideal Fo",
+      "image": "https://m.media-amazon.com/images/I/61caaA5IlrL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B08TM2V4WT?tag=gadgetvill09f-21",
+      "price": "\u20b9194",
+      "rating": 4.2,
+      "category": "electronics",
+      "asin": "B08TM2V4WT",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-15T13:22:02.394294+05:30",
+      "session_type": "afternoon",
+      "link_index": 252
+    },
+    {
+      "id": "product_afternoon_20251215_075200",
+      "title": "Dervin Non Polarized Oversized Sports Sunglasses for Men Women, Outdoor Cricket Cycling Hiking Fishing Sunglasses",
+      "image": "https://m.media-amazon.com/images/I/61xM8wDL7bL._AC_UY218_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DZ6L8JF3?tag=gadgetvill09f-21",
+      "price": "\u20b9499",
+      "rating": 4.0,
+      "category": "fashion",
+      "asin": "B0DZ6L8JF3",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-15T13:22:00.519994+05:30",
+      "session_type": "afternoon",
+      "link_index": 252
+    },
     {
       "id": "product_morning_20251215_050051",
       "title": "Amazon Brand - Presto! Disinfectant Toilet Cleaner, Original | 4 Litre | 1 L X 4 Packs | Kills 99.9% Germs | Removes Tou",
