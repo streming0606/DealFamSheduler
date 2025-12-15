@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-12-15T13:22:02.394331+05:30",
-  "total_products": 617,
+  "last_updated": "2025-12-15T18:56:10.055702+05:30",
+  "total_products": 619,
   "products": [
+    {
+      "id": "product_morning_20251215_132610",
+      "title": "Water Bottle with Time Markings, BOTTLED JOY 1 Gallon Sports Water Bottle with Handle Leakproof Reusable & BPA Free, Fli",
+      "image": "https://m.media-amazon.com/images/I/71a47gLbLHL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B099D8WX6G?tag=gadgetvill09f-21",
+      "price": "\u20b9579",
+      "rating": 4.1,
+      "category": "electronics",
+      "asin": "B099D8WX6G",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-15T18:56:10.055676+05:30",
+      "session_type": "morning",
+      "link_index": 254
+    },
+    {
+      "id": "product_morning_20251215_132607",
+      "title": "Portronics Conch Theta A in Ear 3.5mm Wired Earphones with In Line HD Mic, Powerful Audio, 14.2mm Dynamic Driver, Unique",
+      "image": "https://m.media-amazon.com/images/I/515OT+DhAuL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DDHLPQT3?tag=gadgetvill09f-21",
+      "price": "\u20b9229",
+      "rating": 4.0,
+      "category": "electronics",
+      "asin": "B0DDHLPQT3",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-15T18:56:07.951258+05:30",
+      "session_type": "morning",
+      "link_index": 254
+    },
     {
       "id": "product_afternoon_20251215_075202",
       "title": "Boldfit Bold Gym Shaker Bottle 700ml, Bottles For Protein Shake 100% Leakproof Guarantee Protein Shaker/Sipper, Ideal Fo",
