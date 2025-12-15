@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-12-15T18:56:10.055702+05:30",
-  "total_products": 619,
+  "last_updated": "2025-12-15T21:27:27.610104+05:30",
+  "total_products": 621,
   "products": [
+    {
+      "id": "product_night_20251215_155727",
+      "title": "RIANZ Polypropylene Big Water Bottle Sipper Shaker with Handle Leak-Proof BPA Free Reusable Gym Sports Outdoor Large 2.2",
+      "image": "https://m.media-amazon.com/images/I/61xI6VJwvbL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DF59LNPQ?tag=gadgetvill09f-21",
+      "price": "\u20b9969",
+      "rating": 3.7,
+      "category": "electronics",
+      "asin": "B0DF59LNPQ",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-15T21:27:27.610078+05:30",
+      "session_type": "night",
+      "link_index": 256
+    },
+    {
+      "id": "product_night_20251215_155725",
+      "title": "KRISHNA'S HERBAL & AYURVEDA Desi Cow Gomutra Ark 1000 Ml Liquid| Natural Detoxifier | 100% Pure & Natural Go Ark | India",
+      "image": "https://m.media-amazon.com/images/I/71iySQvDesL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07B49LQNN?tag=gadgetvill09f-21",
+      "price": "\u20b9206",
+      "rating": 4.3,
+      "category": "electronics",
+      "asin": "B07B49LQNN",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-15T21:27:25.387453+05:30",
+      "session_type": "night",
+      "link_index": 256
+    },
     {
       "id": "product_morning_20251215_132610",
       "title": "Water Bottle with Time Markings, BOTTLED JOY 1 Gallon Sports Water Bottle with Handle Leakproof Reusable & BPA Free, Fli",
