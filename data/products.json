@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-12-14T21:19:52.968877+05:30",
-  "total_products": 613,
+  "last_updated": "2025-12-15T10:30:51.191010+05:30",
+  "total_products": 615,
   "products": [
+    {
+      "id": "product_morning_20251215_050051",
+      "title": "Amazon Brand - Presto! Disinfectant Toilet Cleaner, Original | 4 Litre | 1 L X 4 Packs | Kills 99.9% Germs | Removes Tou",
+      "image": "https://m.media-amazon.com/images/I/71OScamuodL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07S2QXDTF?tag=gadgetvill09f-21",
+      "price": "\u20b9349",
+      "rating": 4.2,
+      "category": "health",
+      "asin": "B07S2QXDTF",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-15T10:30:51.190982+05:30",
+      "session_type": "morning",
+      "link_index": 250
+    },
+    {
+      "id": "product_morning_20251215_050048",
+      "title": "STRIFF MoRide 1 Mobile Holder for Bikes, Bike Smartphone Holder, Mobile Stand for Bike, Phone Holder for Bikes GPS nevig",
+      "image": "https://m.media-amazon.com/images/I/61e2ZV8jYNL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DT4HXKMB?tag=gadgetvill09f-21",
+      "price": "\u20b9199",
+      "rating": 4.2,
+      "category": "electronics",
+      "asin": "B0DT4HXKMB",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-15T10:30:48.943719+05:30",
+      "session_type": "morning",
+      "link_index": 250
+    },
     {
       "id": "product_night_20251214_154952",
       "title": "MY ARMOR Microfiber Pillows Set 2, Soft Adjustable Pillow for Sleeping - 16 x 24 Inches -White",
