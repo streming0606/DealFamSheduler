@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-12-16T10:28:36.063165+05:30",
-  "total_products": 623,
+  "last_updated": "2025-12-16T13:21:15.690868+05:30",
+  "total_products": 625,
   "products": [
+    {
+      "id": "product_afternoon_20251216_075115",
+      "title": "Amazon Product B0DDBKKWNT",
+      "image": "https://m.media-amazon.com/images/I/B0DDBKKWNT._AC_SL1500_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DDBKKWNT?tag=gadgetvill09f-21",
+      "price": "\u20b9Special Price",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B0DDBKKWNT",
+      "data_source": "fallback",
+      "posted_date": "2025-12-16T13:21:15.690843+05:30",
+      "session_type": "afternoon",
+      "link_index": 260
+    },
+    {
+      "id": "product_afternoon_20251216_075113",
+      "title": "Philips HP8100/46 Compact Hair Dryer| 2 Flexible heat setting| ThermoProtect prevents overhearting | 1000 Watts- Purple",
+      "image": "https://m.media-amazon.com/images/I/51FGbb3EbgL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B00KCD8NFY?tag=gadgetvill09f-21",
+      "price": "\u20b9799",
+      "rating": 4.2,
+      "category": "electronics",
+      "asin": "B00KCD8NFY",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-16T13:21:13.428193+05:30",
+      "session_type": "afternoon",
+      "link_index": 260
+    },
     {
       "id": "product_morning_20251216_045836",
       "title": "Amazon Basics Aero Tag for iOS | Apple Find My Network Tracker | Bluetooth 5.3 | No SIM Needed | Anti-Lost & Loud 80dB A",
