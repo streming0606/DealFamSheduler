@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-12-16T18:54:28.641721+05:30",
-  "total_products": 627,
+  "last_updated": "2025-12-16T21:23:47.046234+05:30",
+  "total_products": 629,
   "products": [
+    {
+      "id": "product_night_20251216_155347",
+      "title": "Kratos K9 Selfie Stick Tripod With Light, 67 inch /170CM Reinforced Tripod for Mobile Phone, Multi-Functional Bluetooth ",
+      "image": "https://m.media-amazon.com/images/I/617qw0QPA8L._AC_UY218_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0F63BY6LT?tag=gadgetvill09f-21",
+      "price": "\u20b9596",
+      "rating": 4.2,
+      "category": "electronics",
+      "asin": "B0F63BY6LT",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-16T21:23:47.046200+05:30",
+      "session_type": "night",
+      "link_index": 264
+    },
+    {
+      "id": "product_night_20251216_155344",
+      "title": "Duracell CR2032 Lithium Coin Battery, Pack of 5, Specialty Devices, Child Resistant Packaging, Electronic car Keys, Scal",
+      "image": "https://m.media-amazon.com/images/I/71o0p9eDFDL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B08Y1TQ8K7?tag=gadgetvill09f-21",
+      "price": "\u20b9153",
+      "rating": 4.4,
+      "category": "electronics",
+      "asin": "B08Y1TQ8K7",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-16T21:23:44.718981+05:30",
+      "session_type": "night",
+      "link_index": 264
+    },
     {
       "id": "product_morning_20251216_132428",
       "title": "APFEN\u00ae Type C to Lightning [MFi Certified] Fast Charging Cable Compatible with iPhone 14/14 Pro/ 14 Pro Max/ 13/13 Pro/ ",
