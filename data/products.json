@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-12-15T21:27:27.610104+05:30",
-  "total_products": 621,
+  "last_updated": "2025-12-16T10:28:36.063165+05:30",
+  "total_products": 623,
   "products": [
+    {
+      "id": "product_morning_20251216_045836",
+      "title": "Amazon Basics Aero Tag for iOS | Apple Find My Network Tracker | Bluetooth 5.3 | No SIM Needed | Anti-Lost & Loud 80dB A",
+      "image": "https://m.media-amazon.com/images/I/51S64nEmIJL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DTHZQT5C?tag=gadgetvill09f-21",
+      "price": "\u20b9699",
+      "rating": 4.1,
+      "category": "electronics",
+      "asin": "B0DTHZQT5C",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-16T10:28:36.063146+05:30",
+      "session_type": "morning",
+      "link_index": 258
+    },
+    {
+      "id": "product_morning_20251216_045835",
+      "title": "Trance 100% Waterproof Premium Cotton Feel Mattress Protector King Size 78x72 Inches | Breathable and Hypoallergenic Ult",
+      "image": "https://m.media-amazon.com/images/I/61Mx6KEz3QL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B01A57IV58?tag=gadgetvill09f-21",
+      "price": "\u20b9576",
+      "rating": 4.2,
+      "category": "home",
+      "asin": "B01A57IV58",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-16T10:28:35.020531+05:30",
+      "session_type": "morning",
+      "link_index": 258
+    },
     {
       "id": "product_night_20251215_155727",
       "title": "RIANZ Polypropylene Big Water Bottle Sipper Shaker with Handle Leak-Proof BPA Free Reusable Gym Sports Outdoor Large 2.2",
