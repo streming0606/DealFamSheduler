@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-12-16T21:23:47.046234+05:30",
-  "total_products": 629,
+  "last_updated": "2025-12-17T10:27:08.659400+05:30",
+  "total_products": 631,
   "products": [
+    {
+      "id": "product_morning_20251217_045708",
+      "title": "Olay Total Effects Day Cream |with Vitamin B5, Niacinamide, Green Tea, SPF 15 |Fights 7 signs of ageing for glowing, hyd",
+      "image": "https://m.media-amazon.com/images/I/616itGWD8YL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B00ENZT4M8?tag=gadgetvill09f-21",
+      "price": "\u20b9719",
+      "rating": 4.3,
+      "category": "health",
+      "asin": "B00ENZT4M8",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-17T10:27:08.659364+05:30",
+      "session_type": "morning",
+      "link_index": 266
+    },
+    {
+      "id": "product_morning_20251217_045706",
+      "title": "Wax Powder for Hair Removal for Women - 120 gm (Pack of 1) | Hair Removal Powder with Aloevera | Painless Herbal Wax Pow",
+      "image": "https://m.media-amazon.com/images/I/615GcyEeHDL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DGX9BF1L?tag=gadgetvill09f-21",
+      "price": "\u20b9244",
+      "rating": 4.2,
+      "category": "electronics",
+      "asin": "B0DGX9BF1L",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-17T10:27:06.652247+05:30",
+      "session_type": "morning",
+      "link_index": 266
+    },
     {
       "id": "product_night_20251216_155347",
       "title": "Kratos K9 Selfie Stick Tripod With Light, 67 inch /170CM Reinforced Tripod for Mobile Phone, Multi-Functional Bluetooth ",
