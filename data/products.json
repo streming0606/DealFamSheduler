@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-12-17T10:27:08.659400+05:30",
-  "total_products": 631,
+  "last_updated": "2025-12-17T13:21:16.318834+05:30",
+  "total_products": 633,
   "products": [
+    {
+      "id": "product_afternoon_20251217_075116",
+      "title": "WOW Life Science Omega-3 Fish Oil 1300 Mg Triple Strength 550Mg Epa 350Mg Dha,Burpless,Mercury Free,Ideal For Keto Diet,",
+      "image": "https://m.media-amazon.com/images/I/61K0nwBpK6L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0748HQW6C?tag=gadgetvill09f-21",
+      "price": "\u20b9799",
+      "rating": 4.2,
+      "category": "health",
+      "asin": "B0748HQW6C",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-17T13:21:16.318802+05:30",
+      "session_type": "afternoon",
+      "link_index": 268
+    },
+    {
+      "id": "product_afternoon_20251217_075114",
+      "title": "Kadam Pakka Rang Fabric Dye for Clothes Permanent | Shade No.27 Jeans Black Fabric Dye Colour for Clothes | Dye for Fade",
+      "image": "https://m.media-amazon.com/images/I/71SzI2NmygL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0C77QGH58?tag=gadgetvill09f-21",
+      "price": "\u20b9278",
+      "rating": 4.0,
+      "category": "fashion",
+      "asin": "B0C77QGH58",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-17T13:21:14.344831+05:30",
+      "session_type": "afternoon",
+      "link_index": 268
+    },
     {
       "id": "product_morning_20251217_045708",
       "title": "Olay Total Effects Day Cream |with Vitamin B5, Niacinamide, Green Tea, SPF 15 |Fights 7 signs of ageing for glowing, hyd",
