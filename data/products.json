@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-12-18T10:27:35.329056+05:30",
-  "total_products": 639,
+  "last_updated": "2025-12-18T13:20:51.346272+05:30",
+  "total_products": 641,
   "products": [
+    {
+      "id": "product_afternoon_20251218_075051",
+      "title": "Amazon Brand - Presto! 2 Ply Kitchen Tissue Rolls | 360 Pulls | 60 Kitchen Towels X 6 Rolls | Soft And Highly Absorbent ",
+      "image": "https://m.media-amazon.com/images/I/810kJ62hQQL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07GVVCQY6?tag=gadgetvill09f-21",
+      "price": "\u20b9299",
+      "rating": 4.4,
+      "category": "home",
+      "asin": "B07GVVCQY6",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-18T13:20:51.346240+05:30",
+      "session_type": "afternoon",
+      "link_index": 276
+    },
+    {
+      "id": "product_afternoon_20251218_075049",
+      "title": "Ant Esports NC230 RGB Gaming Notebook Cooler, 10\" - 17\" + Gaming Laptop Cooling Pad for PC + USB Powered Fan + Very Stab",
+      "image": "https://m.media-amazon.com/images/I/71hi6uFZeNL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0D9W55VLG?tag=gadgetvill09f-21",
+      "price": "\u20b9569",
+      "rating": 3.8,
+      "category": "electronics",
+      "asin": "B0D9W55VLG",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-18T13:20:49.402261+05:30",
+      "session_type": "afternoon",
+      "link_index": 276
+    },
     {
       "id": "product_morning_20251218_045735",
       "title": "Hallstatt 2025 Upgraded Long Handle Microfiber Feather Fan Ceiling Duster for Dust Cleaning with extendable Pole 100 Inc",
