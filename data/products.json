@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-12-18T18:52:35.096382+05:30",
-  "total_products": 643,
+  "last_updated": "2025-12-18T21:24:24.065620+05:30",
+  "total_products": 645,
   "products": [
+    {
+      "id": "product_night_20251218_155424",
+      "title": "Amazon Brand - Presto! Disinfectant Surface & Floor Cleaner | Citrus | 5 Litre | Kills 99.9% Germs | Suitable For Floor ",
+      "image": "https://m.media-amazon.com/images/I/71VLmQUevAL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07ZKQ8HXS?tag=gadgetvill09f-21",
+      "price": "\u20b9409",
+      "rating": 4.2,
+      "category": "home",
+      "asin": "B07ZKQ8HXS",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-18T21:24:24.065588+05:30",
+      "session_type": "night",
+      "link_index": 280
+    },
+    {
+      "id": "product_night_20251218_155421",
+      "title": "HIT Crawling Insect Killer \u2013 Cockroach Killer Spray | Instant Kill | Deep-Reach Nozzle | Fresh Fragrance, 400ml",
+      "image": "https://m.media-amazon.com/images/I/61BKO3MH48L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B00XORDU9E?tag=gadgetvill09f-21",
+      "price": "\u20b9146",
+      "rating": 4.3,
+      "category": "electronics",
+      "asin": "B00XORDU9E",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-18T21:24:21.863247+05:30",
+      "session_type": "night",
+      "link_index": 280
+    },
     {
       "id": "product_morning_20251218_132235",
       "title": "Scotch-Brite 1 Stainless Steel Scrubber (15g) and 1 Scrub pad Combo",
