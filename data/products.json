@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-12-18T13:20:51.346272+05:30",
-  "total_products": 641,
+  "last_updated": "2025-12-18T18:52:35.096382+05:30",
+  "total_products": 643,
   "products": [
+    {
+      "id": "product_morning_20251218_132235",
+      "title": "Scotch-Brite 1 Stainless Steel Scrubber (15g) and 1 Scrub pad Combo",
+      "image": "https://m.media-amazon.com/images/I/91qcBGW9zaL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B00WS7WDKS?tag=gadgetvill09f-21",
+      "price": "\u20b950",
+      "rating": 4.3,
+      "category": "electronics",
+      "asin": "B00WS7WDKS",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-18T18:52:35.096355+05:30",
+      "session_type": "morning",
+      "link_index": 278
+    },
+    {
+      "id": "product_morning_20251218_132232",
+      "title": "Nike Hypersport Bottle 20 Oz (Anthracite/Black/Black/Anthracite) - Rubber, 600 Ml",
+      "image": "https://m.media-amazon.com/images/I/51tiC3OyKfL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B09YHPSXKD?tag=gadgetvill09f-21",
+      "price": "\u20b9899",
+      "rating": 4.2,
+      "category": "electronics",
+      "asin": "B09YHPSXKD",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-18T18:52:32.745904+05:30",
+      "session_type": "morning",
+      "link_index": 278
+    },
     {
       "id": "product_afternoon_20251218_075051",
       "title": "Amazon Brand - Presto! 2 Ply Kitchen Tissue Rolls | 360 Pulls | 60 Kitchen Towels X 6 Rolls | Soft And Highly Absorbent ",
