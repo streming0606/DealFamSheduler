@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-12-19T18:50:09.574280+05:30",
-  "total_products": 651,
+  "last_updated": "2025-12-19T21:23:02.323102+05:30",
+  "total_products": 653,
   "products": [
+    {
+      "id": "product_night_20251219_155302",
+      "title": "Minimalist Skin Brightening Vitamin C 16% Face Serum for All Skin Type | Treats Uneven Skin Tone to boost radiance, Prot",
+      "image": "https://m.media-amazon.com/images/I/51ofuGjgVJL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B09VPNK8VP?tag=gadgetvill09f-21",
+      "price": "\u20b9Special Price",
+      "rating": 4.1,
+      "category": "health",
+      "asin": "B09VPNK8VP",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-19T21:23:02.323068+05:30",
+      "session_type": "night",
+      "link_index": 288
+    },
+    {
+      "id": "product_night_20251219_155259",
+      "title": "NIVEA MEN Dark Spot Reduction Face Wash 100 g | With Ginko and Ginseng Extracts for Clean, Healthy & Clear Skin in Summe",
+      "image": "https://m.media-amazon.com/images/I/41AgZj-OglL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B006LX9VPU?tag=gadgetvill09f-21",
+      "price": "\u20b9142.78",
+      "rating": 4.2,
+      "category": "health",
+      "asin": "B006LX9VPU",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-19T21:22:59.632712+05:30",
+      "session_type": "night",
+      "link_index": 288
+    },
     {
       "id": "product_morning_20251219_132009",
       "title": "Boldfit Shoe Bag for Travel Bag for Man & Women Shoe Cover for Storage at Home Gym Reusable Travelling Accessories Organ",
