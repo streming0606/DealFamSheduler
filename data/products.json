@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-12-18T21:24:24.065620+05:30",
-  "total_products": 645,
+  "last_updated": "2025-12-19T10:27:56.022738+05:30",
+  "total_products": 647,
   "products": [
+    {
+      "id": "product_morning_20251219_045756",
+      "title": "SPEECHGEARS\u2122 V-Pen\u2122 is a tool developed for the OMS (Oral Motors Skills) Program of SPEECHGEARS\u2122",
+      "image": "https://m.media-amazon.com/images/I/61ju9Wf3s+L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B09WVP5JNK?tag=gadgetvill09f-21",
+      "price": "\u20b92,601.10",
+      "rating": 4.0,
+      "category": "electronics",
+      "asin": "B09WVP5JNK",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-19T10:27:56.022712+05:30",
+      "session_type": "morning",
+      "link_index": 282
+    },
+    {
+      "id": "product_morning_20251219_045754",
+      "title": "Wakefit Hollow Fiber Sleeping Pillow | Height Adjustable | Soft & Fluffy Comfort | White & Grey | 27 x 16 Inch | Set of ",
+      "image": "https://m.media-amazon.com/images/I/51vGM0VK10L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07L6GZYDV?tag=gadgetvill09f-21",
+      "price": "\u20b9845",
+      "rating": 4.3,
+      "category": "home",
+      "asin": "B07L6GZYDV",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-19T10:27:54.461652+05:30",
+      "session_type": "morning",
+      "link_index": 282
+    },
     {
       "id": "product_night_20251218_155424",
       "title": "Amazon Brand - Presto! Disinfectant Surface & Floor Cleaner | Citrus | 5 Litre | Kills 99.9% Germs | Suitable For Floor ",
