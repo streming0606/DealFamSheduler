@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-12-19T10:27:56.022738+05:30",
-  "total_products": 647,
+  "last_updated": "2025-12-19T13:20:01.451725+05:30",
+  "total_products": 649,
   "products": [
+    {
+      "id": "product_afternoon_20251219_075001",
+      "title": "Bombay Shaving Company Beard Trimmer For Men, 2X Fast Charging, USB Type C, 2 Yr Warranty, 120Min runtime, Hair Trimmer,",
+      "image": "https://m.media-amazon.com/images/I/71cAYYJDZzL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B098P8NRRW?tag=gadgetvill09f-21",
+      "price": "\u20b9698",
+      "rating": 3.9,
+      "category": "electronics",
+      "asin": "B098P8NRRW",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-19T13:20:01.451696+05:30",
+      "session_type": "afternoon",
+      "link_index": 284
+    },
+    {
+      "id": "product_afternoon_20251219_074959",
+      "title": "hk vitals Skin Radiance Marine Collagen Supplement Powder (Orange, 200g) | Collagen Peptides with Vitamin C, E",
+      "image": "https://m.media-amazon.com/images/I/711fBRzUuML._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B09HHL3QL3?tag=gadgetvill09f-21",
+      "price": "\u20b9849",
+      "rating": 4.0,
+      "category": "health",
+      "asin": "B09HHL3QL3",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-19T13:19:59.494502+05:30",
+      "session_type": "afternoon",
+      "link_index": 284
+    },
     {
       "id": "product_morning_20251219_045756",
       "title": "SPEECHGEARS\u2122 V-Pen\u2122 is a tool developed for the OMS (Oral Motors Skills) Program of SPEECHGEARS\u2122",
