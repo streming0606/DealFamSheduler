@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-12-20T13:19:44.445973+05:30",
-  "total_products": 657,
+  "last_updated": "2025-12-20T18:37:40.569877+05:30",
+  "total_products": 659,
   "products": [
+    {
+      "id": "product_morning_20251220_130740",
+      "title": "Coffee Frother Electric Rechargeable Coffee Maker Machine for Home Electric Coffee Frother Machine & Milk Whisker with D",
+      "image": "https://m.media-amazon.com/images/I/61mbLfJYofL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DK99N95L?tag=gadgetvill09f-21",
+      "price": "\u20b9299",
+      "rating": 4.6,
+      "category": "home",
+      "asin": "B0DK99N95L",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-20T18:37:40.569844+05:30",
+      "session_type": "morning",
+      "link_index": 294
+    },
+    {
+      "id": "product_morning_20251220_130738",
+      "title": "JBL C100SI Wired In Ear Headphones With Mic, Pure Bass Sound, One Button Multi-Function Remote, Premium Metallic Finish,",
+      "image": "https://m.media-amazon.com/images/I/51Q8DUDT2eL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B01DEWVZ2C?tag=gadgetvill09f-21",
+      "price": "\u20b9599",
+      "rating": 4.0,
+      "category": "electronics",
+      "asin": "B01DEWVZ2C",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-20T18:37:38.446683+05:30",
+      "session_type": "morning",
+      "link_index": 294
+    },
     {
       "id": "product_afternoon_20251220_074944",
       "title": "realme Buds T310 True Wireless in-Ear Earbuds with 46dB Hybrid ANC, 360\u00b0 Spatial Audio, 12.4mm Dynamic Bass Driver, Upto",
