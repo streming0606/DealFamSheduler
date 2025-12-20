@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-12-19T21:23:02.323102+05:30",
-  "total_products": 653,
+  "last_updated": "2025-12-20T10:21:26.745015+05:30",
+  "total_products": 655,
   "products": [
+    {
+      "id": "product_morning_20251220_045126",
+      "title": "True Elements Chia Seeds 500g - Seeds for Weight Management | Rich in Calcium, Protein & Fibre | Beat the Heat | 100% Cl",
+      "image": "https://m.media-amazon.com/images/I/71m4yFMQCQL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FR9KVJWL?tag=gadgetvill09f-21",
+      "price": "\u20b9308",
+      "rating": 4.4,
+      "category": "electronics",
+      "asin": "B0FR9KVJWL",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-20T10:21:26.744980+05:30",
+      "session_type": "morning",
+      "link_index": 290
+    },
+    {
+      "id": "product_morning_20251220_045119",
+      "title": "Boldfit Plastic Gym Typhoon Shaker Bottle, Leakproof Guarantee Sipper Bottle Ideal for Protein, Preworkout and Bcaas, BP",
+      "image": "https://m.media-amazon.com/images/I/51NKPZx0a6L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B08JTMZRJW?tag=gadgetvill09f-21",
+      "price": "\u20b9179",
+      "rating": 4.1,
+      "category": "electronics",
+      "asin": "B08JTMZRJW",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-20T10:21:19.368996+05:30",
+      "session_type": "morning",
+      "link_index": 290
+    },
     {
       "id": "product_night_20251219_155302",
       "title": "Minimalist Skin Brightening Vitamin C 16% Face Serum for All Skin Type | Treats Uneven Skin Tone to boost radiance, Prot",
