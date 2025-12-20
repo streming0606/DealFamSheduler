@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-12-20T10:21:26.745015+05:30",
-  "total_products": 655,
+  "last_updated": "2025-12-20T13:19:44.445973+05:30",
+  "total_products": 657,
   "products": [
+    {
+      "id": "product_afternoon_20251220_074944",
+      "title": "realme Buds T310 True Wireless in-Ear Earbuds with 46dB Hybrid ANC, 360\u00b0 Spatial Audio, 12.4mm Dynamic Bass Driver, Upto",
+      "image": "https://m.media-amazon.com/images/I/61dj32WdrxL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DBGP48NW?tag=gadgetvill09f-21",
+      "price": "\u20b92,199",
+      "rating": 4.2,
+      "category": "electronics",
+      "asin": "B0DBGP48NW",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-20T13:19:44.445942+05:30",
+      "session_type": "afternoon",
+      "link_index": 292
+    },
+    {
+      "id": "product_afternoon_20251220_074942",
+      "title": "CamPure Camphor Cone (Original) Pack Of 2-100% Organic | Air Freshener For Car, Wardrobe, Office Cabin's, Drawers, Trave",
+      "image": "https://m.media-amazon.com/images/I/71MRGgRkZaL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07P71JV55?tag=gadgetvill09f-21",
+      "price": "\u20b9369",
+      "rating": 4.1,
+      "category": "electronics",
+      "asin": "B07P71JV55",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-20T13:19:42.283162+05:30",
+      "session_type": "afternoon",
+      "link_index": 292
+    },
     {
       "id": "product_morning_20251220_045126",
       "title": "True Elements Chia Seeds 500g - Seeds for Weight Management | Rich in Calcium, Protein & Fibre | Beat the Heat | 100% Cl",
