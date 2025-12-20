@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-12-20T18:37:40.569877+05:30",
-  "total_products": 659,
+  "last_updated": "2025-12-20T21:20:13.270657+05:30",
+  "total_products": 661,
   "products": [
+    {
+      "id": "product_night_20251220_155013",
+      "title": "POCO C71, Desert Gold (6GB, 128GB)",
+      "image": "https://m.media-amazon.com/images/I/610frsvhyBL._AC_UY218_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0F53RRM5B?tag=gadgetvill09f-21",
+      "price": "\u20b96,999",
+      "rating": 4.1,
+      "category": "electronics",
+      "asin": "B0F53RRM5B",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-20T21:20:13.270621+05:30",
+      "session_type": "night",
+      "link_index": 296
+    },
+    {
+      "id": "product_night_20251220_155011",
+      "title": "Parachute Advansed Deep Nourish Body Lotion for Women & Men, Dry Skin, 400ml | Pure Coconut Milk, 100% Natural, 72h Mois",
+      "image": "https://m.media-amazon.com/images/I/51atYFf5PZL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B00CBRJ34E?tag=gadgetvill09f-21",
+      "price": "\u20b9140",
+      "rating": 4.2,
+      "category": "electronics",
+      "asin": "B00CBRJ34E",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-20T21:20:11.416361+05:30",
+      "session_type": "night",
+      "link_index": 296
+    },
     {
       "id": "product_morning_20251220_130740",
       "title": "Coffee Frother Electric Rechargeable Coffee Maker Machine for Home Electric Coffee Frother Machine & Milk Whisker with D",
