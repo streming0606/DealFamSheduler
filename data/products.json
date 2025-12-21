@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-12-21T13:19:33.444112+05:30",
-  "total_products": 665,
+  "last_updated": "2025-12-21T18:44:44.907342+05:30",
+  "total_products": 667,
   "products": [
+    {
+      "id": "product_morning_20251221_131444",
+      "title": "Yonex Mavis 200i Nylon Shuttle Cock, Pack of 6 (Yellow)",
+      "image": "https://m.media-amazon.com/images/I/71XJ3j9NhaL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B01IEVIVAC?tag=gadgetvill09f-21",
+      "price": "\u20b9499",
+      "rating": 4.3,
+      "category": "electronics",
+      "asin": "B01IEVIVAC",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-21T18:44:44.907304+05:30",
+      "session_type": "morning",
+      "link_index": 302
+    },
+    {
+      "id": "product_morning_20251221_131442",
+      "title": "Omron AC Adapter for Blood Pressure Monitors - 240 Volts",
+      "image": "https://m.media-amazon.com/images/I/711hiG5n-SL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B007REBKZG?tag=gadgetvill09f-21",
+      "price": "\u20b9465",
+      "rating": 4.3,
+      "category": "electronics",
+      "asin": "B007REBKZG",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-21T18:44:42.592897+05:30",
+      "session_type": "morning",
+      "link_index": 302
+    },
     {
       "id": "product_afternoon_20251221_074933",
       "title": "Bolas Brazil Nuts 200g",
