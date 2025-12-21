@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-12-20T21:20:13.270657+05:30",
-  "total_products": 661,
+  "last_updated": "2025-12-21T10:27:41.138884+05:30",
+  "total_products": 663,
   "products": [
+    {
+      "id": "product_morning_20251221_045741",
+      "title": "1 Litre Gym Water Bottle with Sipper Lid | Leakproof Sports Bottle with Clear Litre Markings | Strong Lightweight Bottle",
+      "image": "https://m.media-amazon.com/images/I/51SVD7Rx+xL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CZ9R9W36?tag=gadgetvill09f-21",
+      "price": "\u20b9465",
+      "rating": 4.2,
+      "category": "electronics",
+      "asin": "B0CZ9R9W36",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-21T10:27:41.138859+05:30",
+      "session_type": "morning",
+      "link_index": 298
+    },
+    {
+      "id": "product_morning_20251221_045739",
+      "title": "Proberos\u00ae Hydration Vest Running Backpack, Lightweight Running Vest Hydration Vest for Outdoor Cycling, Marathoner Runni",
+      "image": "https://m.media-amazon.com/images/I/61mk4ugJHKL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0D8JCZDQ2?tag=gadgetvill09f-21",
+      "price": "\u20b91,298",
+      "rating": 3.9,
+      "category": "electronics",
+      "asin": "B0D8JCZDQ2",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-21T10:27:39.420948+05:30",
+      "session_type": "morning",
+      "link_index": 298
+    },
     {
       "id": "product_night_20251220_155013",
       "title": "POCO C71, Desert Gold (6GB, 128GB)",
