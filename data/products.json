@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-12-22T18:50:49.138020+05:30",
-  "total_products": 675,
+  "last_updated": "2025-12-22T21:22:48.759478+05:30",
+  "total_products": 677,
   "products": [
+    {
+      "id": "product_night_20251222_155248",
+      "title": "PVC Wall Hooks, Pack of 15, Transparent",
+      "image": "https://m.media-amazon.com/images/I/61ihAmUosAL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B09SLQPK3T?tag=gadgetvill09f-21",
+      "price": "\u20b9179",
+      "rating": 4.1,
+      "category": "electronics",
+      "asin": "B09SLQPK3T",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-22T21:22:48.759444+05:30",
+      "session_type": "night",
+      "link_index": 312
+    },
+    {
+      "id": "product_night_20251222_155246",
+      "title": "HealthyHey Nutrition Fish Oil Omega 3 60 Softgel For Women and Men | Triple Strength Fish Oil | Burpless, EPA 600 - DHA ",
+      "image": "https://m.media-amazon.com/images/I/61uRzM9EmBL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B075QHMZRQ?tag=gadgetvill09f-21",
+      "price": "\u20b9445",
+      "rating": 4.4,
+      "category": "health",
+      "asin": "B075QHMZRQ",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-22T21:22:46.395469+05:30",
+      "session_type": "night",
+      "link_index": 312
+    },
     {
       "id": "product_morning_20251222_132049",
       "title": "Dr Trust (USA) Non-Slip Orthopedic Coccyx Seat Cushion for Tailbone & Sciatica Pain Relief Hip Support",
