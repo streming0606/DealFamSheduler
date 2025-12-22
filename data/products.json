@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-12-21T21:20:20.614229+05:30",
-  "total_products": 669,
+  "last_updated": "2025-12-22T10:30:11.046933+05:30",
+  "total_products": 671,
   "products": [
+    {
+      "id": "product_morning_20251222_050011",
+      "title": "Fevicryl Acrylic Colours Sunflower Kit | 10 Colours x 15 ml | DIY Paint, Rich Pigment | Multicolour & Multi-surface | No",
+      "image": "https://m.media-amazon.com/images/I/51ZZ9aMQfoL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B00LXTFMRS?tag=gadgetvill09f-21",
+      "price": "\u20b9225",
+      "rating": 4.4,
+      "category": "electronics",
+      "asin": "B00LXTFMRS",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-22T10:30:11.046907+05:30",
+      "session_type": "morning",
+      "link_index": 306
+    },
+    {
+      "id": "product_morning_20251222_050008",
+      "title": "Speedex BIS Certified Stainless Steel Sports/Fridge Water Bottle 1 Ltr with Sipper Cap - 1000ml | For Home, Office, Gym,",
+      "image": "https://m.media-amazon.com/images/I/61DVGdGelnL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0D4TPR3MM?tag=gadgetvill09f-21",
+      "price": "\u20b9313",
+      "rating": 3.8,
+      "category": "fashion",
+      "asin": "B0D4TPR3MM",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-22T10:30:08.475643+05:30",
+      "session_type": "morning",
+      "link_index": 306
+    },
     {
       "id": "product_night_20251221_155020",
       "title": "Lotus Herbals Hand & Body Lotion, Moisturizer For Dry Skin | SPF 25 and PA+++| Protects From UVA/UVB Rays, Moisturizer f",
