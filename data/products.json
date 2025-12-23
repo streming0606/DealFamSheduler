@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-12-23T10:29:44.689814+05:30",
-  "total_products": 679,
+  "last_updated": "2025-12-23T13:21:24.027377+05:30",
+  "total_products": 681,
   "products": [
+    {
+      "id": "product_afternoon_20251223_075124",
+      "title": "boAt BassHeads 225 in-Ear Super Extra Bass Wired Headphones, with Mic (Black)",
+      "image": "https://m.media-amazon.com/images/I/61iSV4o+X-L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B01M9C51T9?tag=gadgetvill09f-21",
+      "price": "\u20b9499",
+      "rating": 4.0,
+      "category": "electronics",
+      "asin": "B01M9C51T9",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-23T13:21:24.027349+05:30",
+      "session_type": "afternoon",
+      "link_index": 316
+    },
+    {
+      "id": "product_afternoon_20251223_075122",
+      "title": "Royal Enfield Water Trail Backpack | Hydration Bag | Detachable 2L Hydration Pouch & Suction Pipe | Lightweight & Resili",
+      "image": "https://m.media-amazon.com/images/I/71j4QS-CD-L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FNCVW5WN?tag=gadgetvill09f-21",
+      "price": "\u20b92,499",
+      "rating": 4.2,
+      "category": "fashion",
+      "asin": "B0FNCVW5WN",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-23T13:21:22.398232+05:30",
+      "session_type": "afternoon",
+      "link_index": 316
+    },
     {
       "id": "product_morning_20251223_045944",
       "title": "Hyphen All I Need Sunscreen SPF 50 PA ++++ |Lightweight Sun Cream That Moisturizes & Leaves No White Cast| UVA & UVB Sun",
