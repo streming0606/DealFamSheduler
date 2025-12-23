@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-12-23T13:21:24.027377+05:30",
-  "total_products": 681,
+  "last_updated": "2025-12-23T18:52:30.641515+05:30",
+  "total_products": 683,
   "products": [
+    {
+      "id": "product_morning_20251223_132230",
+      "title": "CELLO Checkers PET Canister Set of 18 (300ml x 6, 650ml x 6, 1200 x 6), Transparent| Food grade | Stackable | For Grains",
+      "image": "https://m.media-amazon.com/images/I/71PjqF8xEFL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B01LYBZX6Y?tag=gadgetvill09f-21",
+      "price": "\u20b9549",
+      "rating": 4.4,
+      "category": "electronics",
+      "asin": "B01LYBZX6Y",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-23T18:52:30.641480+05:30",
+      "session_type": "morning",
+      "link_index": 318
+    },
+    {
+      "id": "product_morning_20251223_132224",
+      "title": "Leak Proof Stanley Straw Cover Cap - 9 Pcs Tumbler Straw Cap Spill Stopper Stanley Cup Accessories- Straw Cover, Leak St",
+      "image": "https://m.media-amazon.com/images/I/71ghJ-ZFgWL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FN8C7G54?tag=gadgetvill09f-21",
+      "price": "\u20b9239",
+      "rating": 3.6,
+      "category": "fashion",
+      "asin": "B0FN8C7G54",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-23T18:52:24.100246+05:30",
+      "session_type": "morning",
+      "link_index": 318
+    },
     {
       "id": "product_afternoon_20251223_075124",
       "title": "boAt BassHeads 225 in-Ear Super Extra Bass Wired Headphones, with Mic (Black)",
