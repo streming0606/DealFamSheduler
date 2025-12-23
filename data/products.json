@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-12-23T18:52:30.641515+05:30",
-  "total_products": 683,
+  "last_updated": "2025-12-23T21:23:09.901315+05:30",
+  "total_products": 685,
   "products": [
+    {
+      "id": "product_night_20251223_155309",
+      "title": "JAGGER JAG324 Heavy Stainless Steel Connection Pipe For Water Heater Geyser/Wash Basin/Toilet Flush, 1/2 Inch Thread Siz",
+      "image": "https://m.media-amazon.com/images/I/61BP5MgnswL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B08S4876QP?tag=gadgetvill09f-21",
+      "price": "\u20b9298",
+      "rating": 4.0,
+      "category": "health",
+      "asin": "B08S4876QP",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-23T21:23:09.901279+05:30",
+      "session_type": "night",
+      "link_index": 320
+    },
+    {
+      "id": "product_night_20251223_155307",
+      "title": "Khadi Pure Coldpressed Tulsi Oil, 30 ml",
+      "image": "https://m.media-amazon.com/images/I/71-V1AqLnkL._AC_UY218_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0F3FFZ9VL?tag=gadgetvill09f-21",
+      "price": "\u20b9189",
+      "rating": 4.3,
+      "category": "health",
+      "asin": "B0F3FFZ9VL",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-23T21:23:07.669323+05:30",
+      "session_type": "night",
+      "link_index": 320
+    },
     {
       "id": "product_morning_20251223_132230",
       "title": "CELLO Checkers PET Canister Set of 18 (300ml x 6, 650ml x 6, 1200 x 6), Transparent| Food grade | Stackable | For Grains",
