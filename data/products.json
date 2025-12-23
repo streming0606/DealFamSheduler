@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-12-22T21:22:48.759478+05:30",
-  "total_products": 677,
+  "last_updated": "2025-12-23T10:29:44.689814+05:30",
+  "total_products": 679,
   "products": [
+    {
+      "id": "product_morning_20251223_045944",
+      "title": "Hyphen All I Need Sunscreen SPF 50 PA ++++ |Lightweight Sun Cream That Moisturizes & Leaves No White Cast| UVA & UVB Sun",
+      "image": "https://m.media-amazon.com/images/I/41itn9vy03L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CGVGVT8P?tag=gadgetvill09f-21",
+      "price": "\u20b9421",
+      "rating": 4.2,
+      "category": "health",
+      "asin": "B0CGVGVT8P",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-23T10:29:44.689788+05:30",
+      "session_type": "morning",
+      "link_index": 314
+    },
+    {
+      "id": "product_morning_20251223_045937",
+      "title": "realme Buds Wireless 5 ANC in Ear Bluetooth Headphones,50dB ANC, 13.6mm Dynamic Bass Driver,360\u00b0 Spatial Audio,45ms Low ",
+      "image": "https://m.media-amazon.com/images/I/412-YzPRcPL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DNPWJLQC?tag=gadgetvill09f-21",
+      "price": "\u20b91,595",
+      "rating": 4.0,
+      "category": "electronics",
+      "asin": "B0DNPWJLQC",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-23T10:29:37.826407+05:30",
+      "session_type": "morning",
+      "link_index": 314
+    },
     {
       "id": "product_night_20251222_155248",
       "title": "PVC Wall Hooks, Pack of 15, Transparent",
