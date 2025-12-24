@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-12-24T10:29:21.991021+05:30",
-  "total_products": 687,
+  "last_updated": "2025-12-24T13:21:23.517173+05:30",
+  "total_products": 689,
   "products": [
+    {
+      "id": "product_afternoon_20251224_075123",
+      "title": "Proberos\u00ae 5L Hydration Backpack Vest with 2L Water Bladder, Quick Dry Nylon Mesh Pack for Men Women, Multi Pockets, Ultr",
+      "image": "https://m.media-amazon.com/images/I/619ICnUvAFL._AC_UY218_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0F4R7WD87?tag=gadgetvill09f-21",
+      "price": "\u20b91,619",
+      "rating": 4.0,
+      "category": "electronics",
+      "asin": "B0F4R7WD87",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-24T13:21:23.517148+05:30",
+      "session_type": "afternoon",
+      "link_index": 324
+    },
+    {
+      "id": "product_afternoon_20251224_075121",
+      "title": "ELECTOMANIA \u00ae 500ML Plastic Retractable Handheld Bidet Portable of Antislip, Bidet Angled Nozzle Spray with Travel Bag (",
+      "image": "https://m.media-amazon.com/images/I/61upNDLhFNL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B09GLTW99D?tag=gadgetvill09f-21",
+      "price": "\u20b9275",
+      "rating": 4.1,
+      "category": "fashion",
+      "asin": "B09GLTW99D",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-24T13:21:21.759080+05:30",
+      "session_type": "afternoon",
+      "link_index": 324
+    },
     {
       "id": "product_morning_20251224_045921",
       "title": "Karsaer Polarized Cycling Glasses Sports Sunglasses, UV400 Protection Baseball Running Glasses for Men Women Youth E1267",
