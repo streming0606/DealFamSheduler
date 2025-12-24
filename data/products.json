@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-12-23T21:23:09.901315+05:30",
-  "total_products": 685,
+  "last_updated": "2025-12-24T10:29:21.991021+05:30",
+  "total_products": 687,
   "products": [
+    {
+      "id": "product_morning_20251224_045921",
+      "title": "Karsaer Polarized Cycling Glasses Sports Sunglasses, UV400 Protection Baseball Running Glasses for Men Women Youth E1267",
+      "image": "https://m.media-amazon.com/images/I/51Vs9J5OfuL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DF57TVLM?tag=gadgetvill09f-21",
+      "price": "\u20b91,424",
+      "rating": 4.1,
+      "category": "fashion",
+      "asin": "B0DF57TVLM",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-24T10:29:21.990995+05:30",
+      "session_type": "morning",
+      "link_index": 322
+    },
+    {
+      "id": "product_morning_20251224_045919",
+      "title": "The Derma Co 1% Hyaluronic Sunscreen Aqua Gel SPF 50 PA++++ | Hydrating, Lightweight & Non-Greasy | No White Cast | Broa",
+      "image": "https://m.media-amazon.com/images/I/51kdVRMXpvL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0BVWDJTHF?tag=gadgetvill09f-21",
+      "price": "\u20b9551",
+      "rating": 4.2,
+      "category": "electronics",
+      "asin": "B0BVWDJTHF",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-24T10:29:19.858539+05:30",
+      "session_type": "morning",
+      "link_index": 322
+    },
     {
       "id": "product_night_20251223_155309",
       "title": "JAGGER JAG324 Heavy Stainless Steel Connection Pipe For Water Heater Geyser/Wash Basin/Toilet Flush, 1/2 Inch Thread Siz",
