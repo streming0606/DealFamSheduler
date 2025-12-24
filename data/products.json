@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-12-24T18:49:27.035573+05:30",
-  "total_products": 691,
+  "last_updated": "2025-12-24T21:21:48.911200+05:30",
+  "total_products": 693,
   "products": [
+    {
+      "id": "product_night_20251224_155148",
+      "title": "boAt Lunar Discovery w/ 1.39\" (3.5 cm) HD Display, Turn-by-Turn Navigation, DIY Watch Face Studio, Bluetooth Calling, Em",
+      "image": "https://m.media-amazon.com/images/I/71Iit7U1S+L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DFYL4635?tag=gadgetvill09f-21",
+      "price": "\u20b91,499",
+      "rating": 3.9,
+      "category": "fashion",
+      "asin": "B0DFYL4635",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-24T21:21:48.911168+05:30",
+      "session_type": "night",
+      "link_index": 328
+    },
+    {
+      "id": "product_night_20251224_155146",
+      "title": "Roughhouse 2.5L Gallon Water Bottle \u2013 Leak-Proof, BPA-Free Gym Jug with Carry Handle & Flip-Top | Stay Hydrated During W",
+      "image": "https://m.media-amazon.com/images/I/51BegLaD15L._AC_UY218_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0F3NT3258?tag=gadgetvill09f-21",
+      "price": "\u20b9499",
+      "rating": 4.7,
+      "category": "electronics",
+      "asin": "B0F3NT3258",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-24T21:21:46.308061+05:30",
+      "session_type": "night",
+      "link_index": 328
+    },
     {
       "id": "product_morning_20251224_131927",
       "title": "Venus (Made in India) Electronic Digital Personal Bathroom Weight Machine for Body Weight upto 180 kg Weighing Scale wit",
