@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-12-25T13:19:40.855523+05:30",
-  "total_products": 697,
+  "last_updated": "2025-12-25T18:49:13.411358+05:30",
+  "total_products": 699,
   "products": [
+    {
+      "id": "product_morning_20251225_131913",
+      "title": "Proberos\u00ae 10 Pcs Dual Hook S-Shape Carabiner Clip Keyring & Keychain with Dual Hooks, Multi-Purpose for Backpack, Campin",
+      "image": "https://m.media-amazon.com/images/I/61W2CySctJL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FCRR7WYF?tag=gadgetvill09f-21",
+      "price": "\u20b9275",
+      "rating": 4.4,
+      "category": "electronics",
+      "asin": "B0FCRR7WYF",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-25T18:49:13.411323+05:30",
+      "session_type": "morning",
+      "link_index": 334
+    },
+    {
+      "id": "product_morning_20251225_131911",
+      "title": "HASTHIP\u00ae Water Bottle Carrier Bag for Stanley 40/30 oz Tumbler with Phone Pocket Water Bottle Holder with Strap Neoprene",
+      "image": "https://m.media-amazon.com/images/I/61HrexpB5uL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0D9J4KTDC?tag=gadgetvill09f-21",
+      "price": "\u20b9582",
+      "rating": 4.3,
+      "category": "electronics",
+      "asin": "B0D9J4KTDC",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-25T18:49:11.300895+05:30",
+      "session_type": "morning",
+      "link_index": 334
+    },
     {
       "id": "product_afternoon_20251225_074940",
       "title": "Travessary Collection 'Kool Lapto Bag | Unisex Laptop Bag with 14\" Laptop Compartment, Trendy Yet Practical Design to Ke",
