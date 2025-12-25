@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-12-24T21:21:48.911200+05:30",
-  "total_products": 693,
+  "last_updated": "2025-12-25T10:29:26.038242+05:30",
+  "total_products": 695,
   "products": [
+    {
+      "id": "product_morning_20251225_045926",
+      "title": "VLCC Vitamin C Serum - 30ml | Ferulic Acid - Protects Skin, Reduces Fine Lines and Wrinkles | Hyaluronic Acid - Stimulat",
+      "image": "https://m.media-amazon.com/images/I/51+jJP1MyeL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B005YGD94O?tag=gadgetvill09f-21",
+      "price": "\u20b9574",
+      "rating": 4.6,
+      "category": "health",
+      "asin": "B005YGD94O",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-25T10:29:26.038215+05:30",
+      "session_type": "morning",
+      "link_index": 330
+    },
+    {
+      "id": "product_morning_20251225_045924",
+      "title": "VEGA PROFESSIONAL Pro Dry 2400W Hair Dryer for Salon Professionals and Styling at Home | Cool Shot Button and Combinatio",
+      "image": "https://m.media-amazon.com/images/I/610AQY78mxL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0BFHWGYGZ?tag=gadgetvill09f-21",
+      "price": "\u20b93,465",
+      "rating": 4.2,
+      "category": "home",
+      "asin": "B0BFHWGYGZ",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-25T10:29:24.553869+05:30",
+      "session_type": "morning",
+      "link_index": 330
+    },
     {
       "id": "product_night_20251224_155148",
       "title": "boAt Lunar Discovery w/ 1.39\" (3.5 cm) HD Display, Turn-by-Turn Navigation, DIY Watch Face Studio, Bluetooth Calling, Em",
