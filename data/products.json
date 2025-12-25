@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-12-25T18:49:13.411358+05:30",
-  "total_products": 699,
+  "last_updated": "2025-12-25T21:21:01.541994+05:30",
+  "total_products": 701,
   "products": [
+    {
+      "id": "product_night_20251225_155101",
+      "title": "Dual Tip Colorful Art Markers Sketch Pens 24 Colors With Carrying Case For Painting Sketching Calligraphy Drawing -Twin ",
+      "image": "https://m.media-amazon.com/images/I/812eD452vbL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CG28N5VQ?tag=gadgetvill09f-21",
+      "price": "\u20b9273",
+      "rating": 3.9,
+      "category": "electronics",
+      "asin": "B0CG28N5VQ",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-25T21:21:01.541959+05:30",
+      "session_type": "night",
+      "link_index": 336
+    },
+    {
+      "id": "product_night_20251225_155058",
+      "title": "rts Universal Travel Adapter, International All in One Worldwide Travel Adapter and Wall Charger with USB Ports with Mul",
+      "image": "https://m.media-amazon.com/images/I/611RCy1XjsL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B082WYMTWF?tag=gadgetvill09f-21",
+      "price": "\u20b9509",
+      "rating": 4.2,
+      "category": "electronics",
+      "asin": "B082WYMTWF",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-25T21:20:58.738085+05:30",
+      "session_type": "night",
+      "link_index": 336
+    },
     {
       "id": "product_morning_20251225_131913",
       "title": "Proberos\u00ae 10 Pcs Dual Hook S-Shape Carabiner Clip Keyring & Keychain with Dual Hooks, Multi-Purpose for Backpack, Campin",
