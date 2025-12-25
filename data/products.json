@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-12-25T10:29:26.038242+05:30",
-  "total_products": 695,
+  "last_updated": "2025-12-25T13:19:40.855523+05:30",
+  "total_products": 697,
   "products": [
+    {
+      "id": "product_afternoon_20251225_074940",
+      "title": "Travessary Collection 'Kool Lapto Bag | Unisex Laptop Bag with 14\" Laptop Compartment, Trendy Yet Practical Design to Ke",
+      "image": "https://m.media-amazon.com/images/I/61fetMMu2TL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CHJ2R6B3?tag=gadgetvill09f-21",
+      "price": "\u20b92,499",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B0CHJ2R6B3",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-25T13:19:40.855498+05:30",
+      "session_type": "afternoon",
+      "link_index": 332
+    },
+    {
+      "id": "product_afternoon_20251225_074939",
+      "title": "EFERMONE\u00ae Polarized Sport Sunglasses for Men with Laser Print Design | Blue Coated Mirror lens | UV400 goggles | Scratch",
+      "image": "https://m.media-amazon.com/images/I/61eHr8MR33L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0F9VB6NWV?tag=gadgetvill09f-21",
+      "price": "\u20b9454",
+      "rating": 4.3,
+      "category": "fashion",
+      "asin": "B0F9VB6NWV",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-25T13:19:39.238707+05:30",
+      "session_type": "afternoon",
+      "link_index": 332
+    },
     {
       "id": "product_morning_20251225_045926",
       "title": "VLCC Vitamin C Serum - 30ml | Ferulic Acid - Protects Skin, Reduces Fine Lines and Wrinkles | Hyaluronic Acid - Stimulat",
