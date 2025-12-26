@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-12-26T10:28:02.357906+05:30",
-  "total_products": 703,
+  "last_updated": "2025-12-26T13:20:14.019034+05:30",
+  "total_products": 705,
   "products": [
+    {
+      "id": "product_afternoon_20251226_075014",
+      "title": "Portronics Luxcell B 10K 10000 mAh 22.5W Fast Charging Power Bank, Ultra Slim Power Bank with Mach USB-A Output, Type C ",
+      "image": "https://m.media-amazon.com/images/I/61SRdzgwPTL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CQK537RQ?tag=gadgetvill09f-21",
+      "price": "\u20b9679",
+      "rating": 4.0,
+      "category": "electronics",
+      "asin": "B0CQK537RQ",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-26T13:20:14.019008+05:30",
+      "session_type": "afternoon",
+      "link_index": 340
+    },
+    {
+      "id": "product_afternoon_20251226_075011",
+      "title": "Mattel Uno Playing Card Game for 7 Yrs and Above for Adult,Set of 112 Cards, Multicolor",
+      "image": "https://m.media-amazon.com/images/I/81B+KiFpWnL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B00004TZY8?tag=gadgetvill09f-21",
+      "price": "\u20b9149",
+      "rating": 4.5,
+      "category": "electronics",
+      "asin": "B00004TZY8",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-26T13:20:11.735640+05:30",
+      "session_type": "afternoon",
+      "link_index": 340
+    },
     {
       "id": "product_morning_20251226_045802",
       "title": "Headway by rabitat Oslo Lid - Blue Compatible Lid for Oslo Series Bottles | Leak-Proof | BPA-Free | Durable Design",
