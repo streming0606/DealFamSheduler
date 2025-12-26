@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-12-26T13:20:14.019034+05:30",
-  "total_products": 705,
+  "last_updated": "2025-12-26T18:49:48.081065+05:30",
+  "total_products": 707,
   "products": [
+    {
+      "id": "product_morning_20251226_131948",
+      "title": "POCO M7 5G, Ocean Blue (6GB, 128GB)",
+      "image": "https://m.media-amazon.com/images/I/418EYFlH0xL._AC_UY218_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0F135PGDX?tag=gadgetvill09f-21",
+      "price": "\u20b99,299",
+      "rating": 4.2,
+      "category": "electronics",
+      "asin": "B0F135PGDX",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-26T18:49:48.081036+05:30",
+      "session_type": "morning",
+      "link_index": 342
+    },
+    {
+      "id": "product_morning_20251226_131946",
+      "title": "Ahamo Stanley Straw Cover Cap for Tumbler (8-Piece Set) | Reusable Silicone Straw Protectors with Dust-Proof Design | Co",
+      "image": "https://m.media-amazon.com/images/I/51JUsBF2v6L._AC_UY218_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0F4RDLQPZ?tag=gadgetvill09f-21",
+      "price": "\u20b9379",
+      "rating": 4.2,
+      "category": "fashion",
+      "asin": "B0F4RDLQPZ",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-26T18:49:46.760034+05:30",
+      "session_type": "morning",
+      "link_index": 342
+    },
     {
       "id": "product_afternoon_20251226_075014",
       "title": "Portronics Luxcell B 10K 10000 mAh 22.5W Fast Charging Power Bank, Ultra Slim Power Bank with Mach USB-A Output, Type C ",
