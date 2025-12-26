@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-12-25T21:21:01.541994+05:30",
-  "total_products": 701,
+  "last_updated": "2025-12-26T10:28:02.357906+05:30",
+  "total_products": 703,
   "products": [
+    {
+      "id": "product_morning_20251226_045802",
+      "title": "Headway by rabitat Oslo Lid - Blue Compatible Lid for Oslo Series Bottles | Leak-Proof | BPA-Free | Durable Design",
+      "image": "https://m.media-amazon.com/images/I/61aaJcVepdL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FGXMFRQ4?tag=gadgetvill09f-21",
+      "price": "\u20b9284",
+      "rating": 3.9,
+      "category": "electronics",
+      "asin": "B0FGXMFRQ4",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-26T10:28:02.357872+05:30",
+      "session_type": "morning",
+      "link_index": 338
+    },
+    {
+      "id": "product_morning_20251226_045800",
+      "title": "Krishna's Diabic Care Juice - 1000 ml | Blend of 11 herbs Methi, Amla, Karela, Jamun, Kutki, Guduchi & 5 other herbs to ",
+      "image": "https://m.media-amazon.com/images/I/71R+2p2nvSL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07B6NKPFT?tag=gadgetvill09f-21",
+      "price": "\u20b9459",
+      "rating": 4.2,
+      "category": "electronics",
+      "asin": "B07B6NKPFT",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-26T10:28:00.956993+05:30",
+      "session_type": "morning",
+      "link_index": 338
+    },
     {
       "id": "product_night_20251225_155101",
       "title": "Dual Tip Colorful Art Markers Sketch Pens 24 Colors With Carrying Case For Painting Sketching Calligraphy Drawing -Twin ",
