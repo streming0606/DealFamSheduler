@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-12-26T18:49:48.081065+05:30",
-  "total_products": 707,
+  "last_updated": "2025-12-26T21:21:25.006695+05:30",
+  "total_products": 709,
   "products": [
+    {
+      "id": "product_night_20251226_155125",
+      "title": "Mortein 45ml x 6 (Buy 4 Get 2 Free) Fits All Machines | SmartPlus Mosquito Repellent Refill | Mosquito Repellent & Kille",
+      "image": "https://m.media-amazon.com/images/I/61ki4G4AKkL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07YY9N6TY?tag=gadgetvill09f-21",
+      "price": "\u20b9274",
+      "rating": 4.0,
+      "category": "electronics",
+      "asin": "B07YY9N6TY",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-26T21:21:25.006668+05:30",
+      "session_type": "night",
+      "link_index": 344
+    },
+    {
+      "id": "product_night_20251226_155118",
+      "title": "Amazon Brand - Presto! 3 Ply Toilet Paper Roll | 1920 Pulls | 160 Pulls x 12 Rolls | Soft and Highly Absorbent | OBA-Fre",
+      "image": "https://m.media-amazon.com/images/I/81OeRr6p1VL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B097PTGNTF?tag=gadgetvill09f-21",
+      "price": "\u20b9289",
+      "rating": 4.2,
+      "category": "health",
+      "asin": "B097PTGNTF",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-26T21:21:18.060323+05:30",
+      "session_type": "night",
+      "link_index": 344
+    },
     {
       "id": "product_morning_20251226_131948",
       "title": "POCO M7 5G, Ocean Blue (6GB, 128GB)",
