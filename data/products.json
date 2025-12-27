@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-12-27T13:19:31.841795+05:30",
-  "total_products": 713,
+  "last_updated": "2025-12-27T18:45:35.951797+05:30",
+  "total_products": 715,
   "products": [
+    {
+      "id": "product_morning_20251227_131535",
+      "title": "Xacton Air Fryer Liners I Round Silicone Basket Baking Tray I Pot with Ear Handles I Nonstick Reusable Heat Resistant I ",
+      "image": "https://m.media-amazon.com/images/I/61CybqpGdiL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0C78FYXP7?tag=gadgetvill09f-21",
+      "price": "\u20b9279",
+      "rating": 4.2,
+      "category": "electronics",
+      "asin": "B0C78FYXP7",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-27T18:45:35.951768+05:30",
+      "session_type": "morning",
+      "link_index": 350
+    },
+    {
+      "id": "product_morning_20251227_131533",
+      "title": "PVC Makeup Bag Travel Toiletries Organizer Cosmetic Bags Wash Bag Pouch for Travel Kit Toiletry Bag Portable Organizer C",
+      "image": "https://m.media-amazon.com/images/I/6112s-KKKIL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DW9B8QL7?tag=gadgetvill09f-21",
+      "price": "\u20b9179",
+      "rating": 4.1,
+      "category": "fashion",
+      "asin": "B0DW9B8QL7",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-27T18:45:33.453248+05:30",
+      "session_type": "morning",
+      "link_index": 350
+    },
     {
       "id": "product_afternoon_20251227_074931",
       "title": "Fire-Boltt Ninja Call Pro Plus Bluetooth Calling Smart Watch, 1.83\u2033 HD Display, AI Voice Assistant, 100+ Sports Modes, I",
