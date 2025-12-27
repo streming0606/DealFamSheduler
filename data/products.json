@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-12-26T21:21:25.006695+05:30",
-  "total_products": 709,
+  "last_updated": "2025-12-27T10:25:48.023751+05:30",
+  "total_products": 711,
   "products": [
+    {
+      "id": "product_morning_20251227_045548",
+      "title": "Portronics Konnect X 60W Unbreakable Nylon Braided Cable, 2M Fast Charging Cable For iPhone 15 Series, iPad, Samsung Gal",
+      "image": "https://m.media-amazon.com/images/I/71hWHCvPCLL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CV45N68C?tag=gadgetvill09f-21",
+      "price": "\u20b9155",
+      "rating": 4.3,
+      "category": "electronics",
+      "asin": "B0CV45N68C",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-27T10:25:48.023717+05:30",
+      "session_type": "morning",
+      "link_index": 346
+    },
+    {
+      "id": "product_morning_20251227_045546",
+      "title": "SOFTSPUN Microfiber Cloth - 4 pcs - 40x40 cms - 340 GSM Grey! Thick Lint & Streak-Free Multipurpose Cloths - Automotive ",
+      "image": "https://m.media-amazon.com/images/I/81dsWgzXLrL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B077BFH786?tag=gadgetvill09f-21",
+      "price": "\u20b9265",
+      "rating": 4.3,
+      "category": "electronics",
+      "asin": "B077BFH786",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-27T10:25:46.583709+05:30",
+      "session_type": "morning",
+      "link_index": 346
+    },
     {
       "id": "product_night_20251226_155125",
       "title": "Mortein 45ml x 6 (Buy 4 Get 2 Free) Fits All Machines | SmartPlus Mosquito Repellent Refill | Mosquito Repellent & Kille",
