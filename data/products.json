@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-12-27T10:25:48.023751+05:30",
-  "total_products": 711,
+  "last_updated": "2025-12-27T13:19:31.841795+05:30",
+  "total_products": 713,
   "products": [
+    {
+      "id": "product_afternoon_20251227_074931",
+      "title": "Fire-Boltt Ninja Call Pro Plus Bluetooth Calling Smart Watch, 1.83\u2033 HD Display, AI Voice Assistant, 100+ Sports Modes, I",
+      "image": "https://m.media-amazon.com/images/I/61rmkmqD5VL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0BF57RN3K?tag=gadgetvill09f-21",
+      "price": "\u20b91,099",
+      "rating": 3.9,
+      "category": "fashion",
+      "asin": "B0BF57RN3K",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-27T13:19:31.841774+05:30",
+      "session_type": "afternoon",
+      "link_index": 348
+    },
+    {
+      "id": "product_afternoon_20251227_074929",
+      "title": "Finish Dishwasher Power Detergent - 1 Kg",
+      "image": "https://m.media-amazon.com/images/I/61hBhuS5DBL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FJYHX8L8?tag=gadgetvill09f-21",
+      "price": "\u20b9352",
+      "rating": 4.3,
+      "category": "electronics",
+      "asin": "B0FJYHX8L8",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-27T13:19:29.932824+05:30",
+      "session_type": "afternoon",
+      "link_index": 348
+    },
     {
       "id": "product_morning_20251227_045548",
       "title": "Portronics Konnect X 60W Unbreakable Nylon Braided Cable, 2M Fast Charging Cable For iPhone 15 Series, iPad, Samsung Gal",
