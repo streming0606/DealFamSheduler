@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-12-27T18:45:35.951797+05:30",
-  "total_products": 715,
+  "last_updated": "2025-12-27T21:20:08.864572+05:30",
+  "total_products": 717,
   "products": [
+    {
+      "id": "product_night_20251227_155008",
+      "title": "STRIFF Mpad Mouse Mat 230X190X3mm Gaming Mouse Pad, Non-Slip Rubber Base, Waterproof Surface, Premium-Textured, Compatib",
+      "image": "https://m.media-amazon.com/images/I/61zroMjd9FL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0B9LDCX89?tag=gadgetvill09f-21",
+      "price": "\u20b999",
+      "rating": 4.4,
+      "category": "electronics",
+      "asin": "B0B9LDCX89",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-27T21:20:08.864538+05:30",
+      "session_type": "night",
+      "link_index": 352
+    },
+    {
+      "id": "product_night_20251227_155006",
+      "title": "AWH ADWELL 2 PIECE Manual Hand Finger jaap Counter Digital Counting Machine Tasbeeh Counter for Prayer Islamic Beads Mus",
+      "image": "https://m.media-amazon.com/images/I/619whIQS+KL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B091JRBHKQ?tag=gadgetvill09f-21",
+      "price": "\u20b985",
+      "rating": 4.1,
+      "category": "electronics",
+      "asin": "B091JRBHKQ",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-27T21:20:06.852024+05:30",
+      "session_type": "night",
+      "link_index": 352
+    },
     {
       "id": "product_morning_20251227_131535",
       "title": "Xacton Air Fryer Liners I Round Silicone Basket Baking Tray I Pot with Ear Handles I Nonstick Reusable Heat Resistant I ",
