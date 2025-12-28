@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-12-27T21:20:08.864572+05:30",
-  "total_products": 717,
+  "last_updated": "2025-12-28T10:32:31.410349+05:30",
+  "total_products": 719,
   "products": [
+    {
+      "id": "product_morning_20251228_050231",
+      "title": "Pack of 1 Leak Proof Tumbler Lid Replacement With Straw Sipper Cap Replacement Flip Straw Lid For Tumbler Cap Compatible",
+      "image": "https://m.media-amazon.com/images/I/81dj-tss0nL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FLXJFTTP?tag=gadgetvill09f-21",
+      "price": "\u20b9239",
+      "rating": 4.0,
+      "category": "fashion",
+      "asin": "B0FLXJFTTP",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-28T10:32:31.410323+05:30",
+      "session_type": "morning",
+      "link_index": 354
+    },
+    {
+      "id": "product_morning_20251228_050229",
+      "title": "Ghar Soaps Sandalwood & Saffron Magic Soaps For Bath (300 Gms Pack Of 3) | Paraben Free | Chandan & Kesar Bath Soap | Ha",
+      "image": "https://m.media-amazon.com/images/I/718F+0RgtfL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B09S6M7JQJ?tag=gadgetvill09f-21",
+      "price": "\u20b9399",
+      "rating": 3.9,
+      "category": "health",
+      "asin": "B09S6M7JQJ",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-28T10:32:29.377716+05:30",
+      "session_type": "morning",
+      "link_index": 354
+    },
     {
       "id": "product_night_20251227_155008",
       "title": "STRIFF Mpad Mouse Mat 230X190X3mm Gaming Mouse Pad, Non-Slip Rubber Base, Waterproof Surface, Premium-Textured, Compatib",
