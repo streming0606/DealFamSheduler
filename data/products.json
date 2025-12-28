@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-12-28T10:32:31.410349+05:30",
-  "total_products": 719,
+  "last_updated": "2025-12-28T13:19:51.266987+05:30",
+  "total_products": 721,
   "products": [
+    {
+      "id": "product_afternoon_20251228_074951",
+      "title": "Amazon Brand - Solimo 2 Ply Kitchen Tissue/Towel Paper Roll 240 pulls | 60 pulls X 4 Rolls | soft and highly absorbent |",
+      "image": "https://m.media-amazon.com/images/I/61396xKmpnL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07MJF5THB?tag=gadgetvill09f-21",
+      "price": "\u20b9230",
+      "rating": 4.4,
+      "category": "home",
+      "asin": "B07MJF5THB",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-28T13:19:51.266960+05:30",
+      "session_type": "afternoon",
+      "link_index": 356
+    },
+    {
+      "id": "product_afternoon_20251228_074949",
+      "title": "GM 3060 Extension Board 10Amp Output 250 Volts with 2 Mtr Extension Cord & Surge Protector | Master Switch, Safety Shutt",
+      "image": "https://m.media-amazon.com/images/I/51IEZWXSkgL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B008XT42JU?tag=gadgetvill09f-21",
+      "price": "\u20b9399",
+      "rating": 4.4,
+      "category": "electronics",
+      "asin": "B008XT42JU",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-28T13:19:49.219742+05:30",
+      "session_type": "afternoon",
+      "link_index": 356
+    },
     {
       "id": "product_morning_20251228_050231",
       "title": "Pack of 1 Leak Proof Tumbler Lid Replacement With Straw Sipper Cap Replacement Flip Straw Lid For Tumbler Cap Compatible",
