@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-12-28T13:19:51.266987+05:30",
-  "total_products": 721,
+  "last_updated": "2025-12-28T18:46:46.609190+05:30",
+  "total_products": 723,
   "products": [
+    {
+      "id": "product_morning_20251228_131646",
+      "title": "Ambrane Magsafe Wireless 10000Mah Fast Charging USB Type-C Input Power Bank, Strong Magnet, 22.5W Output For iPhone 12 &",
+      "image": "https://m.media-amazon.com/images/I/61H84kDDNFL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0D9S87H53?tag=gadgetvill09f-21",
+      "price": "\u20b91,499",
+      "rating": 3.9,
+      "category": "electronics",
+      "asin": "B0D9S87H53",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-28T18:46:46.609157+05:30",
+      "session_type": "morning",
+      "link_index": 358
+    },
+    {
+      "id": "product_morning_20251228_131644",
+      "title": "boAt Rockerz 480, RGB LEDs,6 Light Modes, 40mm Drivers,Beast Mode, 60H Battery, ENx Tech, Stream Ad Free Music via App S",
+      "image": "https://m.media-amazon.com/images/I/61cIHzCDl6L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DGTTKCJX?tag=gadgetvill09f-21",
+      "price": "\u20b91,799",
+      "rating": 4.1,
+      "category": "electronics",
+      "asin": "B0DGTTKCJX",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-28T18:46:44.418771+05:30",
+      "session_type": "morning",
+      "link_index": 358
+    },
     {
       "id": "product_afternoon_20251228_074951",
       "title": "Amazon Brand - Solimo 2 Ply Kitchen Tissue/Towel Paper Roll 240 pulls | 60 pulls X 4 Rolls | soft and highly absorbent |",
