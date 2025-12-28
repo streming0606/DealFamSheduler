@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-12-28T18:46:46.609190+05:30",
-  "total_products": 723,
+  "last_updated": "2025-12-28T21:20:11.623968+05:30",
+  "total_products": 725,
   "products": [
+    {
+      "id": "product_night_20251228_155011",
+      "title": "Memory Foam Cervical Neck Pillow | 2 Years Warranty | Pain Relief Sleep, Improves Posture Spinal Alignment, Neck Pain Re",
+      "image": "https://m.media-amazon.com/images/I/51iOIPuNN5L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DXBCP7M4?tag=gadgetvill09f-21",
+      "price": "\u20b9599",
+      "rating": 4.0,
+      "category": "home",
+      "asin": "B0DXBCP7M4",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-28T21:20:11.623942+05:30",
+      "session_type": "night",
+      "link_index": 360
+    },
+    {
+      "id": "product_night_20251228_155009",
+      "title": "Duracell Alkaline AAA Battery, Pack of 20, Everyday Devices, Clock, Toy, Remote",
+      "image": "https://m.media-amazon.com/images/I/71yeC37b1eL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B096K5PSTC?tag=gadgetvill09f-21",
+      "price": "\u20b9342",
+      "rating": 4.4,
+      "category": "electronics",
+      "asin": "B096K5PSTC",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-28T21:20:09.345876+05:30",
+      "session_type": "night",
+      "link_index": 360
+    },
     {
       "id": "product_morning_20251228_131646",
       "title": "Ambrane Magsafe Wireless 10000Mah Fast Charging USB Type-C Input Power Bank, Strong Magnet, 22.5W Output For iPhone 12 &",
