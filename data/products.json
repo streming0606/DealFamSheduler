@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-12-28T21:20:11.623968+05:30",
-  "total_products": 725,
+  "last_updated": "2025-12-29T10:35:14.454357+05:30",
+  "total_products": 727,
   "products": [
+    {
+      "id": "product_morning_20251229_050514",
+      "title": "LAKS BUNDLE OF LOVE\u00ae - Gift bags - Paper Bags - Paper Bags For Return Gifts - Return gift bags - Gift bags Medium Size -",
+      "image": "https://m.media-amazon.com/images/I/81ig2jL2QRL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FSDN6X7C?tag=gadgetvill09f-21",
+      "price": "\u20b9499",
+      "rating": 4.5,
+      "category": "fashion",
+      "asin": "B0FSDN6X7C",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-29T10:35:14.454323+05:30",
+      "session_type": "morning",
+      "link_index": 362
+    },
+    {
+      "id": "product_morning_20251229_050512",
+      "title": "20 Liter Water Bottle Carry Handle (2 Pieces Pack), Note- Only 2 pcs Lifting Handles, No Bottle or Jar included.",
+      "image": "https://m.media-amazon.com/images/I/61PJ2o-18DL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0BD2DYZYY?tag=gadgetvill09f-21",
+      "price": "\u20b9275",
+      "rating": 4.1,
+      "category": "electronics",
+      "asin": "B0BD2DYZYY",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-29T10:35:12.586944+05:30",
+      "session_type": "morning",
+      "link_index": 362
+    },
     {
       "id": "product_night_20251228_155011",
       "title": "Memory Foam Cervical Neck Pillow | 2 Years Warranty | Pain Relief Sleep, Improves Posture Spinal Alignment, Neck Pain Re",
