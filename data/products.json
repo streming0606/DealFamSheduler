@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-12-29T13:22:18.516213+05:30",
-  "total_products": 729,
+  "last_updated": "2025-12-29T18:53:49.769850+05:30",
+  "total_products": 731,
   "products": [
+    {
+      "id": "product_morning_20251229_132349",
+      "title": "2Pcs 40oz Tumbler Lid Compatible for Stanley Cup | Dustproof Spill Proof Water Bottle Replacement Caps with Clean Brush ",
+      "image": "https://m.media-amazon.com/images/I/61hwC1HEHQL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FLXTKDJ6?tag=gadgetvill09f-21",
+      "price": "\u20b9409",
+      "rating": 3.7,
+      "category": "fashion",
+      "asin": "B0FLXTKDJ6",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-29T18:53:49.769814+05:30",
+      "session_type": "morning",
+      "link_index": 366
+    },
+    {
+      "id": "product_morning_20251229_132347",
+      "title": "1080P Mini with Low Light Vision, Mini Portable Security, Hidden-Camera with Audio and Video Recorder for Compatible Hom",
+      "image": "https://m.media-amazon.com/images/I/613PGm4oK2L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FTVL9NPS?tag=gadgetvill09f-21",
+      "price": "\u20b9798",
+      "rating": 1.7,
+      "category": "electronics",
+      "asin": "B0FTVL9NPS",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-29T18:53:47.120855+05:30",
+      "session_type": "morning",
+      "link_index": 366
+    },
     {
       "id": "product_afternoon_20251229_075218",
       "title": "3 Pieces 700ml Large Foldable Water Bottle Fully Collapsible Stock Bottle, Portable Water Bottle for Running Cycling Out",
