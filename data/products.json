@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-12-29T18:53:49.769850+05:30",
-  "total_products": 731,
+  "last_updated": "2025-12-29T21:23:31.297772+05:30",
+  "total_products": 733,
   "products": [
+    {
+      "id": "product_night_20251229_155331",
+      "title": "CP PLUS 64GB microSDXC Memory Card Grade UHS-3 Class 10, Up to 70 Mbps Reading & 30 Mbps Writing Speed with High Perform",
+      "image": "https://m.media-amazon.com/images/I/51WFifsHErL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CKQXW39Q?tag=gadgetvill09f-21",
+      "price": "\u20b9599",
+      "rating": 4.0,
+      "category": "electronics",
+      "asin": "B0CKQXW39Q",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-29T21:23:31.297737+05:30",
+      "session_type": "night",
+      "link_index": 368
+    },
+    {
+      "id": "product_night_20251229_155329",
+      "title": "Dettol Antiseptic Liquid for First Aid, Surface Disinfection and Personal Hygiene, 1300ml",
+      "image": "https://m.media-amazon.com/images/I/51r2AuwfwNL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FY6LR9GB?tag=gadgetvill09f-21",
+      "price": "\u20b9461",
+      "rating": 4.6,
+      "category": "health",
+      "asin": "B0FY6LR9GB",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-29T21:23:29.770379+05:30",
+      "session_type": "night",
+      "link_index": 368
+    },
     {
       "id": "product_morning_20251229_132349",
       "title": "2Pcs 40oz Tumbler Lid Compatible for Stanley Cup | Dustproof Spill Proof Water Bottle Replacement Caps with Clean Brush ",
