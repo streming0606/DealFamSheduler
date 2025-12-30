@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-12-30T13:21:10.045296+05:30",
-  "total_products": 737,
+  "last_updated": "2025-12-30T18:53:04.292556+05:30",
+  "total_products": 739,
   "products": [
+    {
+      "id": "product_morning_20251230_132304",
+      "title": "Lifelong LLYM92 Yoga mat for Women & Men EVA Material 4mm Grey Anti Slip for Gym Workout",
+      "image": "https://m.media-amazon.com/images/I/612K2lgbyIL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B09YJ475JC?tag=gadgetvill09f-21",
+      "price": "\u20b9269",
+      "rating": 4.0,
+      "category": "electronics",
+      "asin": "B09YJ475JC",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-30T18:53:04.292530+05:30",
+      "session_type": "morning",
+      "link_index": 374
+    },
+    {
+      "id": "product_morning_20251230_132302",
+      "title": "10 PCS Stainless Steel Carabiner Clip Spring-Snap Hook - Lotsun M4 1.57 Inch Heavy Duty Carabiner Clips for Keys Swing S",
+      "image": "https://m.media-amazon.com/images/I/61uqZphsprL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B08DTCM52N?tag=gadgetvill09f-21",
+      "price": "\u20b9185",
+      "rating": 4.5,
+      "category": "electronics",
+      "asin": "B08DTCM52N",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-30T18:53:02.180186+05:30",
+      "session_type": "morning",
+      "link_index": 374
+    },
     {
       "id": "product_afternoon_20251230_075110",
       "title": "boAt Rockerz 480, RGB LEDs,6 Light Modes, 40mm Drivers,Beast Mode, 60H Battery, ENx Tech, Stream Ad Free Music via App S",
