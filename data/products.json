@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-12-30T10:31:08.547521+05:30",
-  "total_products": 735,
+  "last_updated": "2025-12-30T13:21:10.045296+05:30",
+  "total_products": 737,
   "products": [
+    {
+      "id": "product_afternoon_20251230_075110",
+      "title": "boAt Rockerz 480, RGB LEDs,6 Light Modes, 40mm Drivers,Beast Mode, 60H Battery, ENx Tech, Stream Ad Free Music via App S",
+      "image": "https://m.media-amazon.com/images/I/711l4y8aNlL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DGTSRX3R?tag=gadgetvill09f-21",
+      "price": "\u20b91,799",
+      "rating": 4.1,
+      "category": "electronics",
+      "asin": "B0DGTSRX3R",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-30T13:21:10.045270+05:30",
+      "session_type": "afternoon",
+      "link_index": 372
+    },
+    {
+      "id": "product_afternoon_20251230_075106",
+      "title": "Orient electric Arc Plus 1kw |Immersion heater|power|100% shock proof body|Heavy copper element|With Bucket clip| ISI ce",
+      "image": "https://m.media-amazon.com/images/I/61JjdIoAtgL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0C82QQVV3?tag=gadgetvill09f-21",
+      "price": "\u20b9539",
+      "rating": 4.1,
+      "category": "electronics",
+      "asin": "B0C82QQVV3",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-30T13:21:06.135921+05:30",
+      "session_type": "afternoon",
+      "link_index": 372
+    },
     {
       "id": "product_morning_20251230_050108",
       "title": "3M Scotch Scissors | 6\" Multipurpose | Comfort Grip Handle and Stainless Steel Blades | Paper, Photos, Crafts",
