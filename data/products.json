@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-12-29T21:23:31.297772+05:30",
-  "total_products": 733,
+  "last_updated": "2025-12-30T10:31:08.547521+05:30",
+  "total_products": 735,
   "products": [
+    {
+      "id": "product_morning_20251230_050108",
+      "title": "3M Scotch Scissors | 6\" Multipurpose | Comfort Grip Handle and Stainless Steel Blades | Paper, Photos, Crafts",
+      "image": "https://m.media-amazon.com/images/I/61HaSwsqltL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B078KLYH4T?tag=gadgetvill09f-21",
+      "price": "\u20b9189",
+      "rating": 4.4,
+      "category": "electronics",
+      "asin": "B078KLYH4T",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-30T10:31:08.547487+05:30",
+      "session_type": "morning",
+      "link_index": 370
+    },
+    {
+      "id": "product_morning_20251230_050106",
+      "title": "Amazon Brand - Presto! Dishwash Gel Refill Pouch | Lemon | 2 Litre | Leaves No Residue And Foul Smell | Grease Cleaner F",
+      "image": "https://m.media-amazon.com/images/I/61OPhPT6nrL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B09VLQ9D27?tag=gadgetvill09f-21",
+      "price": "\u20b9235",
+      "rating": 4.3,
+      "category": "electronics",
+      "asin": "B09VLQ9D27",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-30T10:31:06.045880+05:30",
+      "session_type": "morning",
+      "link_index": 370
+    },
     {
       "id": "product_night_20251229_155331",
       "title": "CP PLUS 64GB microSDXC Memory Card Grade UHS-3 Class 10, Up to 70 Mbps Reading & 30 Mbps Writing Speed with High Perform",
