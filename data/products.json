@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-12-30T18:53:04.292556+05:30",
-  "total_products": 739,
+  "last_updated": "2025-12-30T21:23:12.071771+05:30",
+  "total_products": 741,
   "products": [
+    {
+      "id": "product_night_20251230_155312",
+      "title": "Samsung Galaxy M07 (Black, 4GB RAM, 64GB Storage) | MediaTek Helio G99 | IP54 Rating | 50MP Auto Focus Camera | 7.6mm Sl",
+      "image": "https://m.media-amazon.com/images/I/610lbucItmL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FN7QTRPY?tag=gadgetvill09f-21",
+      "price": "\u20b96,799",
+      "rating": 4.2,
+      "category": "electronics",
+      "asin": "B0FN7QTRPY",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-30T21:23:12.071741+05:30",
+      "session_type": "night",
+      "link_index": 376
+    },
+    {
+      "id": "product_night_20251230_155310",
+      "title": "Cockatoo AB01- Adjustable Sports Arm Band, Waterproof Anti Sweat PU Material, Black",
+      "image": "https://m.media-amazon.com/images/I/61IotKV8UbL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CVF54QBX?tag=gadgetvill09f-21",
+      "price": "\u20b9429",
+      "rating": 3.9,
+      "category": "home",
+      "asin": "B0CVF54QBX",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-30T21:23:10.118004+05:30",
+      "session_type": "night",
+      "link_index": 376
+    },
     {
       "id": "product_morning_20251230_132304",
       "title": "Lifelong LLYM92 Yoga mat for Women & Men EVA Material 4mm Grey Anti Slip for Gym Workout",
