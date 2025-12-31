@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-12-31T13:21:12.639072+05:30",
-  "total_products": 745,
+  "last_updated": "2025-12-31T18:49:53.663487+05:30",
+  "total_products": 747,
   "products": [
+    {
+      "id": "product_morning_20251231_131953",
+      "title": "Amazon Brand - Solimo Wax Tealight Candles (Set of 100, Unscented)",
+      "image": "https://m.media-amazon.com/images/I/61lR93HHNiL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0744P71Y9?tag=gadgetvill09f-21",
+      "price": "\u20b9349",
+      "rating": 4.2,
+      "category": "electronics",
+      "asin": "B0744P71Y9",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-31T18:49:53.663461+05:30",
+      "session_type": "morning",
+      "link_index": 382
+    },
+    {
+      "id": "product_morning_20251231_131951",
+      "title": "Sulfar Nonslip Bathroom Toilet Stool Prevent Constipation Toilet Footstool for Better Bowel Movements, White",
+      "image": "https://m.media-amazon.com/images/I/41ZiwbwRB5L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0C5TMCGX4?tag=gadgetvill09f-21",
+      "price": "\u20b9295",
+      "rating": 3.6,
+      "category": "health",
+      "asin": "B0C5TMCGX4",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-31T18:49:51.557631+05:30",
+      "session_type": "morning",
+      "link_index": 382
+    },
     {
       "id": "product_afternoon_20251231_075112",
       "title": "ALNA-TURA Polarized Sports Sunglasses for Men & Women - UV400 Protection, Wraparound Cycling & Running Glasses,Lightweig",
