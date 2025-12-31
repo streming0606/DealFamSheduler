@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-12-31T18:49:53.663487+05:30",
-  "total_products": 747,
+  "last_updated": "2025-12-31T21:21:13.729522+05:30",
+  "total_products": 749,
   "products": [
+    {
+      "id": "product_night_20251231_155113",
+      "title": "Complete Nutritional Drink Balanced with 50 Vital Nutrients | Nutrition Drink (400 g Chocolate Flavored)",
+      "image": "https://m.media-amazon.com/images/I/81BHQxR0L0L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B09NDLB36N?tag=gadgetvill09f-21",
+      "price": "\u20b9715",
+      "rating": 4.1,
+      "category": "electronics",
+      "asin": "B09NDLB36N",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-31T21:21:13.729495+05:30",
+      "session_type": "night",
+      "link_index": 384
+    },
+    {
+      "id": "product_night_20251231_155112",
+      "title": "Raida Hydration Bag with 2L BPA-Free Bladder | No Movement While Riding | Ultra-Lightweight | Multi-Compartment | Built ",
+      "image": "https://m.media-amazon.com/images/I/61sk1YTnXDL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B08XXGTTN7?tag=gadgetvill09f-21",
+      "price": "\u20b92,707",
+      "rating": 4.5,
+      "category": "fashion",
+      "asin": "B08XXGTTN7",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-31T21:21:12.324005+05:30",
+      "session_type": "night",
+      "link_index": 384
+    },
     {
       "id": "product_morning_20251231_131953",
       "title": "Amazon Brand - Solimo Wax Tealight Candles (Set of 100, Unscented)",
