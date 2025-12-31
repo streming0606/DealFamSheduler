@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-12-30T21:23:12.071771+05:30",
-  "total_products": 741,
+  "last_updated": "2025-12-31T10:29:58.889102+05:30",
+  "total_products": 743,
   "products": [
+    {
+      "id": "product_morning_20251231_045958",
+      "title": "UV Protected Sports Sunglasses for Women Men Multicolored Outdoor Sports Cricket, Cycling, Riding, Running, Baseball, Fi",
+      "image": "https://m.media-amazon.com/images/I/41uSvXK3JmL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0B69BH54V?tag=gadgetvill09f-21",
+      "price": "\u20b9247",
+      "rating": 4.1,
+      "category": "fashion",
+      "asin": "B0B69BH54V",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-31T10:29:58.889066+05:30",
+      "session_type": "morning",
+      "link_index": 378
+    },
+    {
+      "id": "product_morning_20251231_045957",
+      "title": "Amazon Basics 32GB MicroSDHC Memory Card with Adapter, Upto 98MB/s, IPX6, Temperature & Shock Resistant",
+      "image": "https://m.media-amazon.com/images/I/71fnwTYD6jL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0B9XV7KZX?tag=gadgetvill09f-21",
+      "price": "\u20b9459",
+      "rating": 4.1,
+      "category": "electronics",
+      "asin": "B0B9XV7KZX",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-31T10:29:57.250569+05:30",
+      "session_type": "morning",
+      "link_index": 378
+    },
     {
       "id": "product_night_20251230_155312",
       "title": "Samsung Galaxy M07 (Black, 4GB RAM, 64GB Storage) | MediaTek Helio G99 | IP54 Rating | 50MP Auto Focus Camera | 7.6mm Sl",
