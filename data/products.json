@@ -1,7 +1,35 @@
 {
-  "last_updated": "2025-12-31T10:29:58.889102+05:30",
-  "total_products": 743,
+  "last_updated": "2025-12-31T13:21:12.639072+05:30",
+  "total_products": 745,
   "products": [
+    {
+      "id": "product_afternoon_20251231_075112",
+      "title": "ALNA-TURA Polarized Sports Sunglasses for Men & Women - UV400 Protection, Wraparound Cycling & Running Glasses,Lightweig",
+      "image": "https://m.media-amazon.com/images/I/61T55zlQfzL._AC_UY218_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0F24KZKD2?tag=gadgetvill09f-21",
+      "price": "\u20b9299",
+      "rating": 3.5,
+      "category": "fashion",
+      "asin": "B0F24KZKD2",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-31T13:21:12.639045+05:30",
+      "session_type": "afternoon",
+      "link_index": 380
+    },
+    {
+      "id": "product_afternoon_20251231_075111",
+      "title": "PROBEROS\u00ae Sports Sunglasses Fashion Photochromic Riding Sunglasses Adaptive Cycling Glasses UV400 Protection Streamlined",
+      "image": "https://m.media-amazon.com/images/I/51-KSMKOF1L._AC_UY218_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FCLSXVCS?tag=gadgetvill09f-21",
+      "price": "\u20b9844",
+      "rating": 4.3,
+      "category": "fashion",
+      "asin": "B0FCLSXVCS",
+      "data_source": "serpapi",
+      "posted_date": "2025-12-31T13:21:11.121745+05:30",
+      "session_type": "afternoon",
+      "link_index": 380
+    },
     {
       "id": "product_morning_20251231_045958",
       "title": "UV Protected Sports Sunglasses for Women Men Multicolored Outdoor Sports Cricket, Cycling, Riding, Running, Baseball, Fi",
