@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-01-01T18:50:57.221481+05:30",
-  "total_products": 755,
+  "last_updated": "2026-01-01T21:21:42.094241+05:30",
+  "total_products": 757,
   "products": [
+    {
+      "id": "product_night_20260101_155142",
+      "title": "WishCare 10% AHA + 1% BHA Body Lotion for Men & Women - Body lotion for dry skin - Detans, Smooths Rough & Bumpy Skin 20",
+      "image": "https://m.media-amazon.com/images/I/41fJEx4izEL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0BG8X8XTC?tag=gadgetvill09f-21",
+      "price": "\u20b9399",
+      "rating": 4.4,
+      "category": "electronics",
+      "asin": "B0BG8X8XTC",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-01T21:21:42.094216+05:30",
+      "session_type": "night",
+      "link_index": 392
+    },
+    {
+      "id": "product_night_20260101_155139",
+      "title": "amazon basics Electric Egg Boiler | 350 Watt | Boils Upto 7 Eggs | Automatic Operation, 3 Boiling Modes | Overheat Prote",
+      "image": "https://m.media-amazon.com/images/I/71tIWqrBr6L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0BT1M24FN?tag=gadgetvill09f-21",
+      "price": "\u20b9409",
+      "rating": 4.1,
+      "category": "health",
+      "asin": "B0BT1M24FN",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-01T21:21:39.621997+05:30",
+      "session_type": "night",
+      "link_index": 392
+    },
     {
       "id": "product_morning_20260101_132057",
       "title": "Mattel Games \u200bUNO Show \u2018em No Mercy Card Game for Kids, Adults & Family Parties and Travel with Extra Cards, Special Rul",
