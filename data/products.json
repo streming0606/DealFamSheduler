@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-01-01T13:20:51.864975+05:30",
-  "total_products": 753,
+  "last_updated": "2026-01-01T18:50:57.221481+05:30",
+  "total_products": 755,
   "products": [
+    {
+      "id": "product_morning_20260101_132057",
+      "title": "Mattel Games \u200bUNO Show \u2018em No Mercy Card Game for Kids, Adults & Family Parties and Travel with Extra Cards, Special Rul",
+      "image": "https://m.media-amazon.com/images/I/61-FBLI+khL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CBNR2ML6?tag=gadgetvill09f-21",
+      "price": "\u20b9208",
+      "rating": 4.5,
+      "category": "electronics",
+      "asin": "B0CBNR2ML6",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-01T18:50:57.221449+05:30",
+      "session_type": "morning",
+      "link_index": 390
+    },
+    {
+      "id": "product_morning_20260101_132055",
+      "title": "Samsung Original 25W USB Type-C Travel Adaptor Without Cable for Google Pixel, Xiaomi, Motorola, iPhone, Samsung Galaxy ",
+      "image": "https://m.media-amazon.com/images/I/512UVkoMMEL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0D2R2MXXJ?tag=gadgetvill09f-21",
+      "price": "\u20b9929",
+      "rating": 4.4,
+      "category": "electronics",
+      "asin": "B0D2R2MXXJ",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-01T18:50:55.292028+05:30",
+      "session_type": "morning",
+      "link_index": 390
+    },
     {
       "id": "product_afternoon_20260101_075051",
       "title": "FABSPORTS protective goggles with detachable mask, Anti UV, Windproof, soft foam padded for comfort. Used for Motorcycle",
