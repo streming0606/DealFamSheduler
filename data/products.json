@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-01-01T10:34:05.509027+05:30",
-  "total_products": 751,
+  "last_updated": "2026-01-01T13:20:51.864975+05:30",
+  "total_products": 753,
   "products": [
+    {
+      "id": "product_afternoon_20260101_075051",
+      "title": "FABSPORTS protective goggles with detachable mask, Anti UV, Windproof, soft foam padded for comfort. Used for Motorcycle",
+      "image": "https://m.media-amazon.com/images/I/612UBg2BqBS._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B098KC975K?tag=gadgetvill09f-21",
+      "price": "\u20b9284",
+      "rating": 3.8,
+      "category": "electronics",
+      "asin": "B098KC975K",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-01T13:20:51.864948+05:30",
+      "session_type": "afternoon",
+      "link_index": 388
+    },
+    {
+      "id": "product_afternoon_20260101_075044",
+      "title": "Fire\u2011Boltt Phoenix Pro Round Smart Watch 1.39\u2033 Display with Bluetooth Calling,AI Voice Assistant,SpO2 & Heart Rate Monit",
+      "image": "https://m.media-amazon.com/images/I/717+Bu7jtLL._AC_UY218_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DTB2VQFZ?tag=gadgetvill09f-21",
+      "price": "\u20b91,499",
+      "rating": 3.8,
+      "category": "fashion",
+      "asin": "B0DTB2VQFZ",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-01T13:20:44.136642+05:30",
+      "session_type": "afternoon",
+      "link_index": 388
+    },
     {
       "id": "product_morning_20260101_050405",
       "title": "Amazon Product B0DV9JLF48",
