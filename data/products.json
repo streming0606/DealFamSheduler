@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-01-02T10:31:37.482902+05:30",
-  "total_products": 759,
+  "last_updated": "2026-01-02T13:21:29.353769+05:30",
+  "total_products": 761,
   "products": [
+    {
+      "id": "product_afternoon_20260102_075129",
+      "title": "WD-40 Multipurpose Spray, Rust Remover, Cleans Bike Chains, Hinge Lubricant, Loosens Jammed Parts, Degreaser, and Cleani",
+      "image": "https://m.media-amazon.com/images/I/51iXu11jMdL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07FCHCQCW?tag=gadgetvill09f-21",
+      "price": "\u20b9369",
+      "rating": 4.3,
+      "category": "electronics",
+      "asin": "B07FCHCQCW",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-02T13:21:29.353733+05:30",
+      "session_type": "afternoon",
+      "link_index": 396
+    },
+    {
+      "id": "product_afternoon_20260102_075127",
+      "title": "DOVEAZ\u00ae 1.5 L Sports Water Bottle (Gallon) \u2013 Unbreakable, Freezer-Safe, Leakproof Protein Shaker with Mixer Ball & Strai",
+      "image": "https://m.media-amazon.com/images/I/61t+KbxoCWL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07YDZGM9S?tag=gadgetvill09f-21",
+      "price": "\u20b9189",
+      "rating": 4.2,
+      "category": "electronics",
+      "asin": "B07YDZGM9S",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-02T13:21:27.660498+05:30",
+      "session_type": "afternoon",
+      "link_index": 396
+    },
     {
       "id": "product_morning_20260102_050137",
       "title": "Amazon Brand - Presto! Garbage Bags | Large | 90 Count | 15 Bags X 6 Rolls | 24 X 32 Inches | For Dry & Wet Waste | Blac",
