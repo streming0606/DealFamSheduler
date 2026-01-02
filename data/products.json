@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-01-01T21:21:42.094241+05:30",
-  "total_products": 757,
+  "last_updated": "2026-01-02T10:31:37.482902+05:30",
+  "total_products": 759,
   "products": [
+    {
+      "id": "product_morning_20260102_050137",
+      "title": "Amazon Brand - Presto! Garbage Bags | Large | 90 Count | 15 Bags X 6 Rolls | 24 X 32 Inches | For Dry & Wet Waste | Blac",
+      "image": "https://m.media-amazon.com/images/I/715j01W87oL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0821PYKVK?tag=gadgetvill09f-21",
+      "price": "\u20b9329",
+      "rating": 4.4,
+      "category": "fashion",
+      "asin": "B0821PYKVK",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-02T10:31:37.482881+05:30",
+      "session_type": "morning",
+      "link_index": 394
+    },
+    {
+      "id": "product_morning_20260102_050133",
+      "title": "Little's Junior Ring (Plastic,Multicolour)",
+      "image": "https://m.media-amazon.com/images/I/61XC4-QDkKL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B00ADZUNYK?tag=gadgetvill09f-21",
+      "price": "\u20b9158",
+      "rating": 4.3,
+      "category": "electronics",
+      "asin": "B00ADZUNYK",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-02T10:31:33.111569+05:30",
+      "session_type": "morning",
+      "link_index": 394
+    },
     {
       "id": "product_night_20260101_155142",
       "title": "WishCare 10% AHA + 1% BHA Body Lotion for Men & Women - Body lotion for dry skin - Detans, Smooths Rough & Bumpy Skin 20",
