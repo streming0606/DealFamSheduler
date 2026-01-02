@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-01-02T13:21:29.353769+05:30",
-  "total_products": 761,
+  "last_updated": "2026-01-02T18:49:41.855711+05:30",
+  "total_products": 763,
   "products": [
+    {
+      "id": "product_morning_20260102_131941",
+      "title": "boAt 2025 Launch Airdopes Plus 311,Glass Design,ENx Tech,50 H Battery, Fast Charge, Stream Ad Free Music via App Support",
+      "image": "https://m.media-amazon.com/images/I/61c3+AAop3L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DZXTVL6V?tag=gadgetvill09f-21",
+      "price": "\u20b9899",
+      "rating": 3.8,
+      "category": "electronics",
+      "asin": "B0DZXTVL6V",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-02T18:49:41.855674+05:30",
+      "session_type": "morning",
+      "link_index": 398
+    },
+    {
+      "id": "product_morning_20260102_131940",
+      "title": "pTron Bassbuds Spark in-Ear TWS Earbuds with Stereo Sound, 40Hrs Playtime, Stereo Calls, Bluetooth V5.3 Headphones with ",
+      "image": "https://m.media-amazon.com/images/I/51SedBxOvfL._AC_UY218_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0F62JBFBS?tag=gadgetvill09f-21",
+      "price": "\u20b9598",
+      "rating": 4.0,
+      "category": "electronics",
+      "asin": "B0F62JBFBS",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-02T18:49:40.365852+05:30",
+      "session_type": "morning",
+      "link_index": 398
+    },
     {
       "id": "product_afternoon_20260102_075129",
       "title": "WD-40 Multipurpose Spray, Rust Remover, Cleans Bike Chains, Hinge Lubricant, Loosens Jammed Parts, Degreaser, and Cleani",
