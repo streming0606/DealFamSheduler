@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-01-02T18:49:41.855711+05:30",
-  "total_products": 763,
+  "last_updated": "2026-01-02T21:23:01.553891+05:30",
+  "total_products": 765,
   "products": [
+    {
+      "id": "product_night_20260102_155301",
+      "title": "LUMONY CARE\u00ae Hot Water Bag Heating Bag Gel hot Water Bag hot bags for pain relief hot water bags electric hot pack heat ",
+      "image": "https://m.media-amazon.com/images/I/81aTvAO4bEL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0D9S1V9QY?tag=gadgetvill09f-21",
+      "price": "\u20b9224",
+      "rating": 4.0,
+      "category": "fashion",
+      "asin": "B0D9S1V9QY",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-02T21:23:01.553856+05:30",
+      "session_type": "night",
+      "link_index": 0
+    },
+    {
+      "id": "product_night_20260102_155300",
+      "title": "Insulated Neoprene Water Bottle Carrier Bag 1Pcs With Adjustable Shoulder Strap And Hand Strap Along With Detachable Buc",
+      "image": "https://m.media-amazon.com/images/I/71n6ZqmH1iL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CZY14TWZ?tag=gadgetvill09f-21",
+      "price": "\u20b9349",
+      "rating": 4.2,
+      "category": "fashion",
+      "asin": "B0CZY14TWZ",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-02T21:23:00.218254+05:30",
+      "session_type": "night",
+      "link_index": 0
+    },
     {
       "id": "product_morning_20260102_131941",
       "title": "boAt 2025 Launch Airdopes Plus 311,Glass Design,ENx Tech,50 H Battery, Fast Charge, Stream Ad Free Music via App Support",
