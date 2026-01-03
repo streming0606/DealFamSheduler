@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-01-03T13:19:52.970359+05:30",
-  "total_products": 769,
+  "last_updated": "2026-01-03T18:46:10.813354+05:30",
+  "total_products": 771,
   "products": [
+    {
+      "id": "product_morning_20260103_131610",
+      "title": "EDNITA Suction Phone Case, Phone Suction Sticker, Silicone Suction Phone Case for Hands-Free Mobile Accessory Holder Gri",
+      "image": "https://m.media-amazon.com/images/I/61agdnHzJWL._AC_UY218_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0F3VTDJRN?tag=gadgetvill09f-21",
+      "price": "\u20b998",
+      "rating": 3.5,
+      "category": "electronics",
+      "asin": "B0F3VTDJRN",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-03T18:46:10.813318+05:30",
+      "session_type": "morning",
+      "link_index": 6
+    },
+    {
+      "id": "product_morning_20260103_131608",
+      "title": "Wembley Rechargeable Karaoke Mic with Speaker for Singing | Wireless Mini Portable Bluetooth Speaker with Microphone & L",
+      "image": "https://m.media-amazon.com/images/I/61+rs1F+oAL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DRPCR5VK?tag=gadgetvill09f-21",
+      "price": "\u20b9532",
+      "rating": 4.0,
+      "category": "electronics",
+      "asin": "B0DRPCR5VK",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-03T18:46:08.562836+05:30",
+      "session_type": "morning",
+      "link_index": 6
+    },
     {
       "id": "product_afternoon_20260103_074952",
       "title": "Eveready Ultima Alkaline AA Battery, 400% Longer Lasting, Anti-Leak Turbolock Technology, Eco-Friendly Batteries for Hig",
