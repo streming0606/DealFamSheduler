@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-01-03T18:46:10.813354+05:30",
-  "total_products": 771,
+  "last_updated": "2026-01-03T21:20:40.831465+05:30",
+  "total_products": 773,
   "products": [
+    {
+      "id": "product_night_20260103_155040",
+      "title": "Loctite Mini Trio Power Gel Super Glue for Repairs - All Purpose Adhesive Compatible With China, Rubber, Wood, Metal, Pl",
+      "image": "https://m.media-amazon.com/images/I/71+RoVpKM0L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B00UTYAIHM?tag=gadgetvill09f-21",
+      "price": "\u20b9248",
+      "rating": 3.8,
+      "category": "electronics",
+      "asin": "B00UTYAIHM",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-03T21:20:40.831439+05:30",
+      "session_type": "night",
+      "link_index": 8
+    },
+    {
+      "id": "product_night_20260103_155039",
+      "title": "Water Can Lifter Handle \u2013 Durable Grip for 20L Bottles | Easy Lift & Carry Water Bottle Holder | Strong Water Can Handle",
+      "image": "https://m.media-amazon.com/images/I/51uB35vUM6L._AC_UY218_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FB4C557L?tag=gadgetvill09f-21",
+      "price": "\u20b999",
+      "rating": 3.9,
+      "category": "electronics",
+      "asin": "B0FB4C557L",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-03T21:20:39.040133+05:30",
+      "session_type": "night",
+      "link_index": 8
+    },
     {
       "id": "product_morning_20260103_131610",
       "title": "EDNITA Suction Phone Case, Phone Suction Sticker, Silicone Suction Phone Case for Hands-Free Mobile Accessory Holder Gri",
