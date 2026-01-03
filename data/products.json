@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-01-02T21:23:01.553891+05:30",
-  "total_products": 765,
+  "last_updated": "2026-01-03T10:26:30.228207+05:30",
+  "total_products": 767,
   "products": [
+    {
+      "id": "product_morning_20260103_045630",
+      "title": "Santoor Fresh Skin Aloe Vera & Lime Bathing Soap with Nourishing & Anti-Aging Properties| For Smooth & Soft and Younger-",
+      "image": "https://m.media-amazon.com/images/I/71LzyvRZJCL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B08K95SV28?tag=gadgetvill09f-21",
+      "price": "\u20b9198",
+      "rating": 4.3,
+      "category": "health",
+      "asin": "B08K95SV28",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-03T10:26:30.228181+05:30",
+      "session_type": "morning",
+      "link_index": 2
+    },
+    {
+      "id": "product_morning_20260103_045628",
+      "title": "AGARO Elite Lint Remover with Cord, for Woolen Sweaters, Blankets, Jackets/Burr Remover Pill Remover from Carpets, Curta",
+      "image": "https://m.media-amazon.com/images/I/71Vs-gtbVcL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DVZ5V64W?tag=gadgetvill09f-21",
+      "price": "\u20b9379",
+      "rating": 4.3,
+      "category": "fashion",
+      "asin": "B0DVZ5V64W",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-03T10:26:28.445111+05:30",
+      "session_type": "morning",
+      "link_index": 2
+    },
     {
       "id": "product_night_20260102_155301",
       "title": "LUMONY CARE\u00ae Hot Water Bag Heating Bag Gel hot Water Bag hot bags for pain relief hot water bags electric hot pack heat ",
