@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-01-04T18:47:09.076750+05:30",
-  "total_products": 779,
+  "last_updated": "2026-01-04T21:20:42.505091+05:30",
+  "total_products": 781,
   "products": [
+    {
+      "id": "product_night_20260104_155042",
+      "title": "Nutrabud Organics Himalayan Sea Buckthorn Berry Juice - 500 ml - Natural Source of Vitamin C, Omega 3 6 7 9, Antioxidant",
+      "image": "https://m.media-amazon.com/images/I/71v8yh6heCL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FHDWMHG5?tag=gadgetvill09f-21",
+      "price": "\u20b9371",
+      "rating": 4.3,
+      "category": "health",
+      "asin": "B0FHDWMHG5",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-04T21:20:42.505064+05:30",
+      "session_type": "night",
+      "link_index": 16
+    },
+    {
+      "id": "product_night_20260104_155037",
+      "title": "Allo Polyester Thermal Insulated Water Bottle Cover 750ml, 1L to 1.5 Litre - Waterproof Modern Carrier Bag with Adjustab",
+      "image": "https://m.media-amazon.com/images/I/51QZ07PYVqL._AC_UY218_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DTW7P8DS?tag=gadgetvill09f-21",
+      "price": "\u20b9299",
+      "rating": 4.0,
+      "category": "fashion",
+      "asin": "B0DTW7P8DS",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-04T21:20:37.851970+05:30",
+      "session_type": "night",
+      "link_index": 16
+    },
     {
       "id": "product_morning_20260104_131709",
       "title": "Ezee Garbage Bags - 48x54 cm (6 Rolls, 180 Bags, Medium)",
