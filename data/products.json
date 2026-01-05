@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-01-04T21:20:42.505091+05:30",
-  "total_products": 781,
+  "last_updated": "2026-01-05T10:51:34.550832+05:30",
+  "total_products": 783,
   "products": [
+    {
+      "id": "product_morning_20260105_052134",
+      "title": "Lotus Herbals YouthRx Anti Ageing Transforming Face Cream SPF 25 and PA+++ | Reduce Dark Spots and Blemishes | Preservat",
+      "image": "https://m.media-amazon.com/images/I/51FkuOUdOmL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B00WM0RGKS?tag=gadgetvill09f-21",
+      "price": "\u20b9588",
+      "rating": 4.3,
+      "category": "health",
+      "asin": "B00WM0RGKS",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-05T10:51:34.550803+05:30",
+      "session_type": "morning",
+      "link_index": 18
+    },
+    {
+      "id": "product_morning_20260105_052127",
+      "title": "EM5 Tropical Elixir Perfume for Women | Tropical, Sweet, Spicy Fragrance | Long Lasting Scent | Premium Gift for Her | 5",
+      "image": "https://m.media-amazon.com/images/I/61rqgoWvPOL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DY4XZQ8L?tag=gadgetvill09f-21",
+      "price": "\u20b9499",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B0DY4XZQ8L",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-05T10:51:27.987602+05:30",
+      "session_type": "morning",
+      "link_index": 18
+    },
     {
       "id": "product_night_20260104_155042",
       "title": "Nutrabud Organics Himalayan Sea Buckthorn Berry Juice - 500 ml - Natural Source of Vitamin C, Omega 3 6 7 9, Antioxidant",
