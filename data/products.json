@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-01-06T13:22:48.205742+05:30",
-  "total_products": 793,
+  "last_updated": "2026-01-06T18:53:21.977274+05:30",
+  "total_products": 795,
   "products": [
+    {
+      "id": "product_morning_20260106_132321",
+      "title": "JEWEL FARMER Black Chia Seeds Raw & Unroasted Superfood with Protein, Dietry Fiber & Omega 3 Healthy and Tasty Snacks (2",
+      "image": "https://m.media-amazon.com/images/I/71NFx6N+wpL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DXVFXQXZ?tag=gadgetvill09f-21",
+      "price": "\u20b9295",
+      "rating": 4.5,
+      "category": "health",
+      "asin": "B0DXVFXQXZ",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-06T18:53:21.977246+05:30",
+      "session_type": "morning",
+      "link_index": 30
+    },
+    {
+      "id": "product_morning_20260106_132320",
+      "title": "Pilgrim 25% AHA + 2% BHA + 5% PHA Peeling Solution 10ml For Face & Body |10-Minute Facial At Home|Gentle Exfoliating Ser",
+      "image": "https://m.media-amazon.com/images/I/51onvv+iZbL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FGDL8QCC?tag=gadgetvill09f-21",
+      "price": "\u20b9215",
+      "rating": 4.0,
+      "category": "home",
+      "asin": "B0FGDL8QCC",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-06T18:53:20.122097+05:30",
+      "session_type": "morning",
+      "link_index": 30
+    },
     {
       "id": "product_afternoon_20260106_075248",
       "title": "SIGNORA WARE Shake N Shake Stainless Steel Protein Shaker Bottle For Pre-Post Workout | Water Bottle | With Blending Whe",
