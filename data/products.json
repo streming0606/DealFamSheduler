@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-01-06T18:53:21.977274+05:30",
-  "total_products": 795,
+  "last_updated": "2026-01-06T21:24:52.080813+05:30",
+  "total_products": 797,
   "products": [
+    {
+      "id": "product_night_20260106_155452",
+      "title": "Wild Stone Ultra Sensual, Forest Spice and Musk Soaps for Bath, (Pack of 6, 100gm each) | Grade 1 soaps | Refreshing Bat",
+      "image": "https://m.media-amazon.com/images/I/617pZ8WsdXL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B08HDT835B?tag=gadgetvill09f-21",
+      "price": "\u20b9187",
+      "rating": 4.2,
+      "category": "health",
+      "asin": "B08HDT835B",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-06T21:24:52.080776+05:30",
+      "session_type": "night",
+      "link_index": 32
+    },
+    {
+      "id": "product_night_20260106_155450",
+      "title": "Sounce 3 in 1 Cleaning Set for Screen PC, Laptops, Monitors, Mobiles, LCD, LED, TV/Professional Quality/Prevents Static ",
+      "image": "https://m.media-amazon.com/images/I/71CFc-fYMBL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0BSLRB8NJ?tag=gadgetvill09f-21",
+      "price": "\u20b9149",
+      "rating": 4.2,
+      "category": "electronics",
+      "asin": "B0BSLRB8NJ",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-06T21:24:50.073678+05:30",
+      "session_type": "night",
+      "link_index": 32
+    },
     {
       "id": "product_morning_20260106_132321",
       "title": "JEWEL FARMER Black Chia Seeds Raw & Unroasted Superfood with Protein, Dietry Fiber & Omega 3 Healthy and Tasty Snacks (2",
