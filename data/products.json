@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-01-06T10:30:57.304659+05:30",
-  "total_products": 791,
+  "last_updated": "2026-01-06T13:22:48.205742+05:30",
+  "total_products": 793,
   "products": [
+    {
+      "id": "product_afternoon_20260106_075248",
+      "title": "SIGNORA WARE Shake N Shake Stainless Steel Protein Shaker Bottle For Pre-Post Workout | Water Bottle | With Blending Whe",
+      "image": "https://m.media-amazon.com/images/I/61vlKI-fYAL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07TPPMCC4?tag=gadgetvill09f-21",
+      "price": "\u20b9428",
+      "rating": 4.1,
+      "category": "electronics",
+      "asin": "B07TPPMCC4",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-06T13:22:48.205709+05:30",
+      "session_type": "afternoon",
+      "link_index": 28
+    },
+    {
+      "id": "product_afternoon_20260106_075245",
+      "title": "Khadi Omorose Musk Essential Oil With Self Dispensing Dropper Plug, 12 Ml",
+      "image": "https://m.media-amazon.com/images/I/81CIbvNzFIS._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B01N359M34?tag=gadgetvill09f-21",
+      "price": "\u20b9195",
+      "rating": 4.2,
+      "category": "health",
+      "asin": "B01N359M34",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-06T13:22:45.768630+05:30",
+      "session_type": "afternoon",
+      "link_index": 28
+    },
     {
       "id": "product_morning_20260106_050057",
       "title": "Lifelong PVC Hex Dumbbells Pack of 2 (5kg*2) Black Color for Home Gym Equipment Fitness Barbell|Gym Exercise|Home Workou",
