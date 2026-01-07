@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-01-06T21:24:52.080813+05:30",
-  "total_products": 797,
+  "last_updated": "2026-01-07T10:31:30.923798+05:30",
+  "total_products": 799,
   "products": [
+    {
+      "id": "product_morning_20260107_050130",
+      "title": "Karsaer Polarized Cycling Riding Glasses Sports Sunglasses Men Women for Hiking Baseball MTB Fishing Sunglasses B5094",
+      "image": "https://m.media-amazon.com/images/I/51YKIOj1lkL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0BXSDLS4K?tag=gadgetvill09f-21",
+      "price": "\u20b91,329",
+      "rating": 3.9,
+      "category": "fashion",
+      "asin": "B0BXSDLS4K",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-07T10:31:30.923771+05:30",
+      "session_type": "morning",
+      "link_index": 34
+    },
+    {
+      "id": "product_morning_20260107_050127",
+      "title": "Medimix Ayurvedic Anti Pimple Face Wash, 100ml (Pack of 3)",
+      "image": "https://m.media-amazon.com/images/I/81d-JV0xMEL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B072N2LXPK?tag=gadgetvill09f-21",
+      "price": "\u20b9292.50",
+      "rating": 4.2,
+      "category": "electronics",
+      "asin": "B072N2LXPK",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-07T10:31:27.728293+05:30",
+      "session_type": "morning",
+      "link_index": 34
+    },
     {
       "id": "product_night_20260106_155452",
       "title": "Wild Stone Ultra Sensual, Forest Spice and Musk Soaps for Bath, (Pack of 6, 100gm each) | Grade 1 soaps | Refreshing Bat",
