@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-01-07T18:54:58.860090+05:30",
-  "total_products": 803,
+  "last_updated": "2026-01-07T21:26:51.372585+05:30",
+  "total_products": 805,
   "products": [
+    {
+      "id": "product_night_20260107_155651",
+      "title": "Scotch-Brite Sponge Wipe Resusable Kitchen Cleaning foam Cellulose wood Sponge- Easy to use, Multi- color & Biodegradabl",
+      "image": "https://m.media-amazon.com/images/I/71XdLLUEo9L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B016VXORNA?tag=gadgetvill09f-21",
+      "price": "\u20b9330",
+      "rating": 4.5,
+      "category": "home",
+      "asin": "B016VXORNA",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-07T21:26:51.372557+05:30",
+      "session_type": "night",
+      "link_index": 40
+    },
+    {
+      "id": "product_night_20260107_155649",
+      "title": "Urban Born Vase for Living Room | Metal Vase for Home Decor | Flower vase Vintage Antique Decor | Table Copper Flower Va",
+      "image": "https://m.media-amazon.com/images/I/91PG929SrqL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B09J1541BW?tag=gadgetvill09f-21",
+      "price": "\u20b9599",
+      "rating": 4.2,
+      "category": "home",
+      "asin": "B09J1541BW",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-07T21:26:49.437089+05:30",
+      "session_type": "night",
+      "link_index": 40
+    },
     {
       "id": "product_morning_20260107_132458",
       "title": "GOTEO Water Bottle Carrier Bag for 1L Bottles | Sling Crossbody Bag with Water Bottle Holder Cover, Adjustable Shoulder ",
