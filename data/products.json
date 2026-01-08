@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-01-08T10:30:32.672618+05:30",
-  "total_products": 807,
+  "last_updated": "2026-01-08T13:21:46.128092+05:30",
+  "total_products": 809,
   "products": [
+    {
+      "id": "product_afternoon_20260108_075146",
+      "title": "Boat Airdopes Joy, 35Hrs Battery, Fast Charge, IWP Tech, Low Latency, 2Mic ENx, Type-C Port, v5.3 Bluetooth Earbuds, TWS",
+      "image": "https://m.media-amazon.com/images/I/512jrg8-68L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0C3ZYFZ77?tag=gadgetvill09f-21",
+      "price": "\u20b9999",
+      "rating": 3.8,
+      "category": "electronics",
+      "asin": "B0C3ZYFZ77",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-08T13:21:46.128060+05:30",
+      "session_type": "afternoon",
+      "link_index": 44
+    },
+    {
+      "id": "product_afternoon_20260108_075144",
+      "title": "Hit Anti Roach Gel - Cockroach Killer (20G) | Kitchen Safe | Odourless | Fast And Convenient, Pack Of 1",
+      "image": "https://m.media-amazon.com/images/I/71hhQA1kthL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B00YUNKKP8?tag=gadgetvill09f-21",
+      "price": "\u20b9189",
+      "rating": 4.0,
+      "category": "home",
+      "asin": "B00YUNKKP8",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-08T13:21:44.174921+05:30",
+      "session_type": "afternoon",
+      "link_index": 44
+    },
     {
       "id": "product_morning_20260108_050032",
       "title": "SOFTSPUN Microfiber Cloth - 4 pcs - 40x40 cms - 340 GSM Grey! Thick Lint & Streak-Free Multipurpose Cloths - Automotive ",
