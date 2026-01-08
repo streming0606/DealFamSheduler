@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-01-08T18:55:50.539307+05:30",
-  "total_products": 811,
+  "last_updated": "2026-01-08T21:27:34.630225+05:30",
+  "total_products": 813,
   "products": [
+    {
+      "id": "product_night_20260108_155734",
+      "title": "GM 3060 Extension Board 10Amp Output 250 Volts with 2 Mtr Extension Cord & Surge Protector | Master Switch, Safety Shutt",
+      "image": "https://m.media-amazon.com/images/I/51IEZWXSkgL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B008XT42JU?tag=gadgetvill09f-21",
+      "price": "\u20b9459",
+      "rating": 4.4,
+      "category": "electronics",
+      "asin": "B008XT42JU",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-08T21:27:34.630199+05:30",
+      "session_type": "night",
+      "link_index": 48
+    },
+    {
+      "id": "product_night_20260108_155733",
+      "title": "PrettyKrafts 45L Non Woven Wave Printed Round Foldable Large Laundry Bag/Basket With Handle, Freestanding Cloth Storage ",
+      "image": "https://m.media-amazon.com/images/I/71xiEY0q9lL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07WW1DTZF?tag=gadgetvill09f-21",
+      "price": "\u20b9159",
+      "rating": 3.9,
+      "category": "fashion",
+      "asin": "B07WW1DTZF",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-08T21:27:33.430763+05:30",
+      "session_type": "night",
+      "link_index": 48
+    },
     {
       "id": "product_morning_20260108_132550",
       "title": "SEA SOUL Anti-Ageing Peel Off Mask - 20g | With Bakuchiol & Niacinamide for Skin Brightening, Fine Line Reduction & Coll",
