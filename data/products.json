@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-01-08T21:27:34.630225+05:30",
-  "total_products": 813,
+  "last_updated": "2026-01-09T10:31:11.902654+05:30",
+  "total_products": 815,
   "products": [
+    {
+      "id": "product_morning_20260109_050111",
+      "title": "ORILEY 4 Pcs Round Plant Stand Galvanised Metal Flower Pot Holder Rust Resistant Gamla Support Corner Rack Outdoor Displ",
+      "image": "https://m.media-amazon.com/images/I/61t9NUZRGRL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0C7HFS963?tag=gadgetvill09f-21",
+      "price": "\u20b9299",
+      "rating": 4.1,
+      "category": "electronics",
+      "asin": "B0C7HFS963",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-09T10:31:11.902632+05:30",
+      "session_type": "morning",
+      "link_index": 50
+    },
+    {
+      "id": "product_morning_20260109_050110",
+      "title": "Amazon Brand - Solimo 3 Ply Toilet Paper Roll | 1920 Pulls | 160 Pulls X 12 Rolls | Soft And Highly Absorbent | 100% Nat",
+      "image": "https://m.media-amazon.com/images/I/71m-Gpu0spL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07GVZFN92?tag=gadgetvill09f-21",
+      "price": "\u20b9319",
+      "rating": 4.2,
+      "category": "health",
+      "asin": "B07GVZFN92",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-09T10:31:10.215748+05:30",
+      "session_type": "morning",
+      "link_index": 50
+    },
     {
       "id": "product_night_20260108_155734",
       "title": "GM 3060 Extension Board 10Amp Output 250 Volts with 2 Mtr Extension Cord & Surge Protector | Master Switch, Safety Shutt",
