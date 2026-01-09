@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-01-09T18:54:19.004328+05:30",
-  "total_products": 819,
+  "last_updated": "2026-01-09T21:25:21.799276+05:30",
+  "total_products": 821,
   "products": [
+    {
+      "id": "product_night_20260109_155521",
+      "title": "Anchor by Panasonic 6A 3 Pin Multiplug Travel Adapter with Universal Socket | 3 Pin Multi Plug Universal Socket (White)",
+      "image": "https://m.media-amazon.com/images/I/51JON7XePEL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07FZ18FMF?tag=gadgetvill09f-21",
+      "price": "\u20b9139",
+      "rating": 4.4,
+      "category": "electronics",
+      "asin": "B07FZ18FMF",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-09T21:25:21.799242+05:30",
+      "session_type": "night",
+      "link_index": 56
+    },
+    {
+      "id": "product_night_20260109_155519",
+      "title": "Shadow Securitronics Tom CAT No Entry Rat Repellent Spray for Cars Highly Effective with and Lasts 1 Year Leak Free Easy",
+      "image": "https://m.media-amazon.com/images/I/61vCOKHziLL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07KCCSJG8?tag=gadgetvill09f-21",
+      "price": "\u20b9449",
+      "rating": 4.1,
+      "category": "electronics",
+      "asin": "B07KCCSJG8",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-09T21:25:19.939623+05:30",
+      "session_type": "night",
+      "link_index": 56
+    },
     {
       "id": "product_morning_20260109_132419",
       "title": "Minimalist Anti-Acne Salicylic Acid 2% Face Wash For Oily & Acne Prone Skin | With LHA for Pore Cleansing, Oil Control &",
