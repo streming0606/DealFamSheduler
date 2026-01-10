@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-01-10T13:19:58.639948+05:30",
-  "total_products": 825,
+  "last_updated": "2026-01-10T18:46:37.293845+05:30",
+  "total_products": 827,
   "products": [
+    {
+      "id": "product_morning_20260110_131637",
+      "title": "Scotch-Brite Twin Bucket Spin Mop with Easy Wring & Rinse System, 360\u00b0 Adjustable Handle, High Absorbency Microfiber for",
+      "image": "https://m.media-amazon.com/images/I/61nCEDQ-ESL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07LDKFM2Y?tag=gadgetvill09f-21",
+      "price": "\u20b91,129",
+      "rating": 4.1,
+      "category": "home",
+      "asin": "B07LDKFM2Y",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-10T18:46:37.293811+05:30",
+      "session_type": "morning",
+      "link_index": 62
+    },
+    {
+      "id": "product_morning_20260110_131635",
+      "title": "NIVEA Cocoa Nourish 200ml Body Lotion with Deep Moisture Serum| 48 H Moisturization | With Cocoa Butter & Coconut Oil | ",
+      "image": "https://m.media-amazon.com/images/I/51VCw4lYmBL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B01GQ1EW3C?tag=gadgetvill09f-21",
+      "price": "\u20b9184",
+      "rating": 4.5,
+      "category": "health",
+      "asin": "B01GQ1EW3C",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-10T18:46:35.040408+05:30",
+      "session_type": "morning",
+      "link_index": 62
+    },
     {
       "id": "product_afternoon_20260110_074958",
       "title": "Amazon Brand - Presto! Garbage Bags | Extra Large XL | 30 x 37 in | 60 Count | 10 Bags x 6 Rolls | For Dry & Wet Waste |",
