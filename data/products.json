@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-01-09T21:25:21.799276+05:30",
-  "total_products": 821,
+  "last_updated": "2026-01-10T10:27:30.729653+05:30",
+  "total_products": 823,
   "products": [
+    {
+      "id": "product_morning_20260110_045730",
+      "title": "Amazon Brand - Presto! Bathroom Cleaner - 1 L (Lemon, Pack of 2)",
+      "image": "https://m.media-amazon.com/images/I/71tZKiTPWdL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07KTKPHRT?tag=gadgetvill09f-21",
+      "price": "\u20b9245",
+      "rating": 4.3,
+      "category": "electronics",
+      "asin": "B07KTKPHRT",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-10T10:27:30.729613+05:30",
+      "session_type": "morning",
+      "link_index": 58
+    },
+    {
+      "id": "product_morning_20260110_045729",
+      "title": "Windproof Wraparound Shield Sports Sunglasses for Men Women Stylish | UV Protected Durable Mirrored Cricket Driving Cycl",
+      "image": "https://m.media-amazon.com/images/I/418t4aJgFiL._AC_UY218_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0F779DTW9?tag=gadgetvill09f-21",
+      "price": "\u20b9399",
+      "rating": 3.6,
+      "category": "fashion",
+      "asin": "B0F779DTW9",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-10T10:27:29.431521+05:30",
+      "session_type": "morning",
+      "link_index": 58
+    },
     {
       "id": "product_night_20260109_155521",
       "title": "Anchor by Panasonic 6A 3 Pin Multiplug Travel Adapter with Universal Socket | 3 Pin Multi Plug Universal Socket (White)",
