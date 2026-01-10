@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-01-10T18:46:37.293845+05:30",
-  "total_products": 827,
+  "last_updated": "2026-01-10T21:20:24.374214+05:30",
+  "total_products": 829,
   "products": [
+    {
+      "id": "product_night_20260110_155024",
+      "title": "Good Knight Flash Liquid Vaporiser Pack Of 4 (45ml Each) | 2x Faster Than Before | Mosquito Repellent Refill | India s M",
+      "image": "https://m.media-amazon.com/images/I/61pLprNK8LL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07YX8M37J?tag=gadgetvill09f-21",
+      "price": "\u20b9231",
+      "rating": 4.3,
+      "category": "electronics",
+      "asin": "B07YX8M37J",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-10T21:20:24.374169+05:30",
+      "session_type": "night",
+      "link_index": 64
+    },
+    {
+      "id": "product_night_20260110_155022",
+      "title": "Panasonic CR-2032/5BE Lithium Coin Battery - Pack of 5",
+      "image": "https://m.media-amazon.com/images/I/71veSubNjuL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B00LVMTA2A?tag=gadgetvill09f-21",
+      "price": "\u20b9205",
+      "rating": 4.4,
+      "category": "electronics",
+      "asin": "B00LVMTA2A",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-10T21:20:22.064694+05:30",
+      "session_type": "night",
+      "link_index": 64
+    },
     {
       "id": "product_morning_20260110_131637",
       "title": "Scotch-Brite Twin Bucket Spin Mop with Easy Wring & Rinse System, 360\u00b0 Adjustable Handle, High Absorbency Microfiber for",
