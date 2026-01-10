@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-01-10T10:27:30.729653+05:30",
-  "total_products": 823,
+  "last_updated": "2026-01-10T13:19:58.639948+05:30",
+  "total_products": 825,
   "products": [
+    {
+      "id": "product_afternoon_20260110_074958",
+      "title": "Amazon Brand - Presto! Garbage Bags | Extra Large XL | 30 x 37 in | 60 Count | 10 Bags x 6 Rolls | For Dry & Wet Waste |",
+      "image": "https://m.media-amazon.com/images/I/71zevFygy8L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0821QGBDY?tag=gadgetvill09f-21",
+      "price": "\u20b9399",
+      "rating": 4.5,
+      "category": "fashion",
+      "asin": "B0821QGBDY",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-10T13:19:58.639920+05:30",
+      "session_type": "afternoon",
+      "link_index": 60
+    },
+    {
+      "id": "product_afternoon_20260110_074955",
+      "title": "OFIXO 50 Meters (500 Gram) Food Wrapping Roll - Premium Non-Stick Butter Wrapping. Food Wrapping, Re-heatable, Oven Safe",
+      "image": "https://m.media-amazon.com/images/I/71WEyaxdKcL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CP1Z95LS?tag=gadgetvill09f-21",
+      "price": "\u20b9166",
+      "rating": 4.2,
+      "category": "home",
+      "asin": "B0CP1Z95LS",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-10T13:19:55.881200+05:30",
+      "session_type": "afternoon",
+      "link_index": 60
+    },
     {
       "id": "product_morning_20260110_045730",
       "title": "Amazon Brand - Presto! Bathroom Cleaner - 1 L (Lemon, Pack of 2)",
