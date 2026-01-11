@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-01-11T10:33:26.724857+05:30",
-  "total_products": 831,
+  "last_updated": "2026-01-11T13:19:45.845140+05:30",
+  "total_products": 833,
   "products": [
+    {
+      "id": "product_afternoon_20260111_074945",
+      "title": "Shahnaz Husain Professional Power Nourishing Cream, Blueberry, 400 g",
+      "image": "https://m.media-amazon.com/images/I/51GBJxr9A0L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DN1RWNSQ?tag=gadgetvill09f-21",
+      "price": "\u20b91,040",
+      "rating": 4.2,
+      "category": "health",
+      "asin": "B0DN1RWNSQ",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-11T13:19:45.845113+05:30",
+      "session_type": "afternoon",
+      "link_index": 68
+    },
+    {
+      "id": "product_afternoon_20260111_074942",
+      "title": "iBuddy Cute Tumbler Accessories Straw Cover Cap & Keychain Charms for Stanley Sipper Accessories Tumbler Boot Cover, Str",
+      "image": "https://m.media-amazon.com/images/I/61NT7diN+KL._AC_UY218_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FBWX9YFG?tag=gadgetvill09f-21",
+      "price": "\u20b9499",
+      "rating": 3.4,
+      "category": "fashion",
+      "asin": "B0FBWX9YFG",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-11T13:19:42.884110+05:30",
+      "session_type": "afternoon",
+      "link_index": 68
+    },
     {
       "id": "product_morning_20260111_050326",
       "title": "Sounce Spiral Cable Protector, Chargers Cable Protector Data Cable Protective Sleeve, Headphone Saver, Charger Protectiv",
