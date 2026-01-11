@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-01-10T21:20:24.374214+05:30",
-  "total_products": 829,
+  "last_updated": "2026-01-11T10:33:26.724857+05:30",
+  "total_products": 831,
   "products": [
+    {
+      "id": "product_morning_20260111_050326",
+      "title": "Sounce Spiral Cable Protector, Chargers Cable Protector Data Cable Protective Sleeve, Headphone Saver, Charger Protectiv",
+      "image": "https://m.media-amazon.com/images/I/81JYSIagq5L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CLV4XQFK?tag=gadgetvill09f-21",
+      "price": "\u20b999",
+      "rating": 4.2,
+      "category": "electronics",
+      "asin": "B0CLV4XQFK",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-11T10:33:26.724820+05:30",
+      "session_type": "morning",
+      "link_index": 66
+    },
+    {
+      "id": "product_morning_20260111_050325",
+      "title": "WaterScience Replacement Cartridge for CLEO Shower and Tap Filter for Hard Water | Borewell/Tanker Water Cartridge | Har",
+      "image": "https://m.media-amazon.com/images/I/51L5n+umNeL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07Y24YFSP?tag=gadgetvill09f-21",
+      "price": "\u20b9795",
+      "rating": 4.1,
+      "category": "electronics",
+      "asin": "B07Y24YFSP",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-11T10:33:25.051959+05:30",
+      "session_type": "morning",
+      "link_index": 66
+    },
     {
       "id": "product_night_20260110_155024",
       "title": "Good Knight Flash Liquid Vaporiser Pack Of 4 (45ml Each) | 2x Faster Than Before | Mosquito Repellent Refill | India s M",
