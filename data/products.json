@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-01-11T18:47:11.250669+05:30",
-  "total_products": 835,
+  "last_updated": "2026-01-11T21:20:38.347093+05:30",
+  "total_products": 837,
   "products": [
+    {
+      "id": "product_night_20260111_155038",
+      "title": "Bella Vita Organic NicoLips Lip Balm & Lip Scrub | Lip Balm for Dark Lips | Anti Pigmentation for Dry, Chapped Lips | Re",
+      "image": "https://m.media-amazon.com/images/I/61LOBaFBd4L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07GSGJCVT?tag=gadgetvill09f-21",
+      "price": "\u20b9159",
+      "rating": 3.7,
+      "category": "electronics",
+      "asin": "B07GSGJCVT",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-11T21:20:38.347037+05:30",
+      "session_type": "night",
+      "link_index": 72
+    },
+    {
+      "id": "product_night_20260111_155036",
+      "title": "Amazon Product B0D8JBMZVK",
+      "image": "https://m.media-amazon.com/images/I/B0D8JBMZVK._AC_SL1500_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0D8JBMZVK?tag=gadgetvill09f-21",
+      "price": "\u20b9Special Price",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B0D8JBMZVK",
+      "data_source": "fallback",
+      "posted_date": "2026-01-11T21:20:36.618872+05:30",
+      "session_type": "night",
+      "link_index": 72
+    },
     {
       "id": "product_morning_20260111_131711",
       "title": "Tata 1mg Salmon Omega 3 Fish Oil Supplements 1000mg - 90 Capsules | Triglyceride form | 180mg EPA & 120mg DHA | High Abs",
