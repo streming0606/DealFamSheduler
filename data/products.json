@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-01-12T10:36:23.085693+05:30",
-  "total_products": 839,
+  "last_updated": "2026-01-12T13:23:56.831808+05:30",
+  "total_products": 841,
   "products": [
+    {
+      "id": "product_afternoon_20260112_075356",
+      "title": "Sounce 2 in 1 Bluetooth 5.0 Transmitter Receiver | 3.5mm Stereo Audio Adapter with Mic | Portable Design | Driverless Pl",
+      "image": "https://m.media-amazon.com/images/I/61fnnNEJceL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B096V8Y76N?tag=gadgetvill09f-21",
+      "price": "\u20b9239",
+      "rating": 3.8,
+      "category": "home",
+      "asin": "B096V8Y76N",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-12T13:23:56.831781+05:30",
+      "session_type": "afternoon",
+      "link_index": 76
+    },
+    {
+      "id": "product_afternoon_20260112_075355",
+      "title": "Nivia Radar Sippers Bottle for Sports Cycling, Gym & Running Bottle for Training, Exercise, & Fitness, with Portable, Li",
+      "image": "https://m.media-amazon.com/images/I/61OOsPggsBL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B00MM1TPRY?tag=gadgetvill09f-21",
+      "price": "\u20b9179",
+      "rating": 3.8,
+      "category": "home",
+      "asin": "B00MM1TPRY",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-12T13:23:55.259520+05:30",
+      "session_type": "afternoon",
+      "link_index": 76
+    },
     {
       "id": "product_morning_20260112_050623",
       "title": "AGARO Royal Milk, 3\u2011Speed Electric for Coffee with Whisk and, Mixer, Stand\u2011up Design, for Cream (Whisk Milk), Rechargeab",
