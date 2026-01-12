@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-01-12T18:58:20.828066+05:30",
-  "total_products": 843,
+  "last_updated": "2026-01-12T21:28:33.214484+05:30",
+  "total_products": 845,
   "products": [
+    {
+      "id": "product_night_20260112_155833",
+      "title": "Jewel Farmer Roasted Pumpkin Seeds Salted Crunch - Pumpkin Seeds for Eating | High in Protein & Zero Cholesterol Best Di",
+      "image": "https://m.media-amazon.com/images/I/71rND-GZJdL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DV9JLF48?tag=gadgetvill09f-21",
+      "price": "\u20b9270",
+      "rating": 4.3,
+      "category": "electronics",
+      "asin": "B0DV9JLF48",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-12T21:28:33.214422+05:30",
+      "session_type": "night",
+      "link_index": 80
+    },
+    {
+      "id": "product_night_20260112_155831",
+      "title": "Good Knight Power Activ+ Liquid Vaporiser Pack Of 6 (45ml Each) | 2x Faster Than Before | Mosquito Repellent Refill | In",
+      "image": "https://m.media-amazon.com/images/I/714k7aOFerL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07N7NK48S?tag=gadgetvill09f-21",
+      "price": "\u20b9385",
+      "rating": 4.3,
+      "category": "electronics",
+      "asin": "B07N7NK48S",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-12T21:28:31.941684+05:30",
+      "session_type": "night",
+      "link_index": 80
+    },
     {
       "id": "product_morning_20260112_132820",
       "title": "rts Universal Travel Adapter, International All in One Worldwide Travel Adapter and Wall Charger with USB Ports with Mul",
