@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-01-11T21:20:38.347093+05:30",
-  "total_products": 837,
+  "last_updated": "2026-01-12T10:36:23.085693+05:30",
+  "total_products": 839,
   "products": [
+    {
+      "id": "product_morning_20260112_050623",
+      "title": "AGARO Royal Milk, 3\u2011Speed Electric for Coffee with Whisk and, Mixer, Stand\u2011up Design, for Cream (Whisk Milk), Rechargeab",
+      "image": "https://m.media-amazon.com/images/I/612vcv+wVgL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CDKZ3D2K?tag=gadgetvill09f-21",
+      "price": "\u20b9569",
+      "rating": 4.3,
+      "category": "health",
+      "asin": "B0CDKZ3D2K",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-12T10:36:23.085656+05:30",
+      "session_type": "morning",
+      "link_index": 74
+    },
+    {
+      "id": "product_morning_20260112_050621",
+      "title": "Cubiker Engineered Wood Multipurpose Foldable Laptop Table with Cup Holder | Table Home Study Writing Table, Foldable an",
+      "image": "https://m.media-amazon.com/images/I/61RBn+M0j3L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0D53YGZNK?tag=gadgetvill09f-21",
+      "price": "\u20b9599",
+      "rating": 4.0,
+      "category": "electronics",
+      "asin": "B0D53YGZNK",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-12T10:36:21.088869+05:30",
+      "session_type": "morning",
+      "link_index": 74
+    },
     {
       "id": "product_night_20260111_155038",
       "title": "Bella Vita Organic NicoLips Lip Balm & Lip Scrub | Lip Balm for Dark Lips | Anti Pigmentation for Dry, Chapped Lips | Re",
