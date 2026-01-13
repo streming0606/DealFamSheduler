@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-01-12T21:28:33.214484+05:30",
-  "total_products": 845,
+  "last_updated": "2026-01-13T10:31:41.629875+05:30",
+  "total_products": 847,
   "products": [
+    {
+      "id": "product_morning_20260113_050141",
+      "title": "Zulaxy Photo Frame Hooks for Wall Without Drilling, 10 Pack Self Adhesive Hooks for Wall Heavy Duty Strong Nail Free for",
+      "image": "https://m.media-amazon.com/images/I/61WnmpLwAQL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CCM8L54V?tag=gadgetvill09f-21",
+      "price": "\u20b9275",
+      "rating": 4.0,
+      "category": "electronics",
+      "asin": "B0CCM8L54V",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-13T10:31:41.629846+05:30",
+      "session_type": "morning",
+      "link_index": 82
+    },
+    {
+      "id": "product_morning_20260113_050137",
+      "title": "Ambrane Multipurpose Tabletop Mobile Stand | Adjustable Angle & Height| Universal Holder for iPhone, Samsung, OnePlus & ",
+      "image": "https://m.media-amazon.com/images/I/7192Muh-sAL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B09ZPL5VYM?tag=gadgetvill09f-21",
+      "price": "\u20b9199",
+      "rating": 4.1,
+      "category": "electronics",
+      "asin": "B09ZPL5VYM",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-13T10:31:37.769914+05:30",
+      "session_type": "morning",
+      "link_index": 82
+    },
     {
       "id": "product_night_20260112_155833",
       "title": "Jewel Farmer Roasted Pumpkin Seeds Salted Crunch - Pumpkin Seeds for Eating | High in Protein & Zero Cholesterol Best Di",
