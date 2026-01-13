@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-01-13T13:22:19.906897+05:30",
-  "total_products": 849,
+  "last_updated": "2026-01-13T18:56:25.821700+05:30",
+  "total_products": 851,
   "products": [
+    {
+      "id": "product_morning_20260113_132625",
+      "title": "2 Pack Replacement Lids for 40oz Stanley Tumbler | Leak-Proof Splash Resistant Lid Compatible with Stanley Quencher H2.0",
+      "image": "https://m.media-amazon.com/images/I/61eTJ4j9QyL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FG3FGNQ1?tag=gadgetvill09f-21",
+      "price": "\u20b9439",
+      "rating": 4.5,
+      "category": "electronics",
+      "asin": "B0FG3FGNQ1",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-13T18:56:25.821663+05:30",
+      "session_type": "morning",
+      "link_index": 86
+    },
+    {
+      "id": "product_morning_20260113_132624",
+      "title": "Ezee Live Life Ezee Way Plastic Black Garbage Bags for Dustbin|90 Pcs|Medium 19 X 21 Inches|30 Pcs X Pack of 3, 3 count",
+      "image": "https://m.media-amazon.com/images/I/71erHCKJ3WL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B06VX8YR6Q?tag=gadgetvill09f-21",
+      "price": "\u20b9129",
+      "rating": 4.2,
+      "category": "fashion",
+      "asin": "B06VX8YR6Q",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-13T18:56:24.250283+05:30",
+      "session_type": "morning",
+      "link_index": 86
+    },
     {
       "id": "product_afternoon_20260113_075219",
       "title": "Lifelong Gallon Water Bottle 1.6Litre for Gym, Sports & Home | Gallon Bottles for Men & Women | Gym Water Bottle for Men",
