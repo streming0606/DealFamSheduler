@@ -1,72 +1,72 @@
-name: Update Blog Sitemap
+# name: Update Blog Sitemap
 
-on:
-  # Trigger when posts.json is modified
-  push:
-    paths:
-      - 'blog/data/posts.json'
-    branches:
-      - main
+# on:
+#   # Trigger when posts.json is modified
+#   push:
+#     paths:
+#       - 'blog/data/posts.json'
+#     branches:
+#       - main
 
-  # Trigger at 12 PM IST daily (6:30 AM UTC)
-  schedule:
-    - cron: '30 6 * * *'
+#   # Trigger at 12 PM IST daily (6:30 AM UTC)
+#   schedule:
+#     - cron: '30 6 * * *'
 
-  # Allow manual trigger
-  workflow_dispatch:
+#   # Allow manual trigger
+#   workflow_dispatch:
 
-jobs:
-  update-sitemap:
-    runs-on: ubuntu-latest
+# jobs:
+#   update-sitemap:
+#     runs-on: ubuntu-latest
     
-    permissions:
-      contents: write
+#     permissions:
+#       contents: write
     
-    steps:
-      # Step 1: Checkout repository
-      - name: Checkout repository
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-          token: ${{ secrets.GITHUB_TOKEN }}
+#     steps:
+#       # Step 1: Checkout repository
+#       - name: Checkout repository
+#         uses: actions/checkout@v4
+#         with:
+#           fetch-depth: 0
+#           token: ${{ secrets.GITHUB_TOKEN }}
 
-      # Step 2: Setup Node.js
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '18'
+#       # Step 2: Setup Node.js
+#       - name: Setup Node.js
+#         uses: actions/setup-node@v4
+#         with:
+#           node-version: '18'
 
-      # Step 3: Generate sitemap
-      - name: Generate Blog Sitemap
-        run: node blog/generate-sitemap.js
+#       # Step 3: Generate sitemap
+#       - name: Generate Blog Sitemap
+#         run: node blog/generate-sitemap.js
 
-      # Step 4: Check if sitemap changed
-      - name: Check if sitemap changed
-        id: sitemap-changed
-        run: |
-          if git diff --quiet blog/sitemap.xml; then
-            echo "changed=false" >> $GITHUB_OUTPUT
-            echo "Sitemap unchanged"
-          else
-            echo "changed=true" >> $GITHUB_OUTPUT
-            echo "Sitemap updated"
-          fi
+#       # Step 4: Check if sitemap changed
+#       - name: Check if sitemap changed
+#         id: sitemap-changed
+#         run: |
+#           if git diff --quiet blog/sitemap.xml; then
+#             echo "changed=false" >> $GITHUB_OUTPUT
+#             echo "Sitemap unchanged"
+#           else
+#             echo "changed=true" >> $GITHUB_OUTPUT
+#             echo "Sitemap updated"
+#           fi
 
-      # Step 5: Commit and push if changed
-      - name: Commit and push sitemap
-        if: steps.sitemap-changed.outputs.changed == 'true'
-        run: |
-          git config user.name "Blog Sitemap Bot"
-          git config user.email "bot@github.actions"
-          git add blog/sitemap.xml
-          git commit -m "🤖 Auto-update blog sitemap from posts.json"
-          git push
+#       # Step 5: Commit and push if changed
+#       - name: Commit and push sitemap
+#         if: steps.sitemap-changed.outputs.changed == 'true'
+#         run: |
+#           git config user.name "Blog Sitemap Bot"
+#           git config user.email "bot@github.actions"
+#           git add blog/sitemap.xml
+#           git commit -m "🤖 Auto-update blog sitemap from posts.json"
+#           git push
 
-      # Step 6: Log result
-      - name: Log result
-        run: |
-          if [ "${{ steps.sitemap-changed.outputs.changed }}" = "true" ]; then
-            echo "✅ Sitemap updated and committed successfully"
-          else
-            echo "ℹ️ Sitemap already up-to-date, no changes needed"
-          fi
+#       # Step 6: Log result
+#       - name: Log result
+#         run: |
+#           if [ "${{ steps.sitemap-changed.outputs.changed }}" = "true" ]; then
+#             echo "✅ Sitemap updated and committed successfully"
+#           else
+#             echo "ℹ️ Sitemap already up-to-date, no changes needed"
+#           fi
