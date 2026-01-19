@@ -1,46 +1,46 @@
-name: AI Blog Post Generator
+# name: AI Blog Post Generator
 
-on:
-  schedule:
-    # Runs at 11:00 AM IST (5:30 AM UTC)
-    - cron: '30 5 * * *'
-    # Runs at 2:00 PM IST (8:30 AM UTC)
-    - cron: '30 8 * * *'
-    # Runs at 7:00 PM IST (1:30 PM UTC)
-    - cron: '30 13 * * *'
-  workflow_dispatch:  # Manual trigger option
+# on:
+#   schedule:
+#     # Runs at 11:00 AM IST (5:30 AM UTC)
+#     - cron: '30 5 * * *'
+#     # Runs at 2:00 PM IST (8:30 AM UTC)
+#     - cron: '30 8 * * *'
+#     # Runs at 7:00 PM IST (1:30 PM UTC)
+#     - cron: '30 13 * * *'
+#   workflow_dispatch:  # Manual trigger option
 
-jobs:
-  generate-blog:
-    runs-on: ubuntu-latest
+# jobs:
+#   generate-blog:
+#     runs-on: ubuntu-latest
     
-    permissions:
-      contents: write
+#     permissions:
+#       contents: write
     
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+#     steps:
+#       - name: Checkout repository
+#         uses: actions/checkout@v4
         
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
+#       - name: Setup Node.js
+#         uses: actions/setup-node@v4
+#         with:
+#           node-version: '20'
           
-      - name: Install dependencies
-        run: |
-          cd .github/scripts
-          npm install
+#       - name: Install dependencies
+#         run: |
+#           cd .github/scripts
+#           npm install
           
-      - name: Generate blog post
-        env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-        run: |
-          cd .github/scripts
-          node generate-blog.js
+#       - name: Generate blog post
+#         env:
+#           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+#         run: |
+#           cd .github/scripts
+#           node generate-blog.js
           
-      - name: Commit and push changes
-        run: |
-          git config --global user.name 'Blog Bot'
-          git config --global user.email 'bot@thriftmaal.com'
-          git add blog/data/posts.json .github/scripts/topics.json || true
-          git diff --quiet && git diff --staged --quiet || (git commit -m "🤖 Auto-generated blog post [skip ci]" && git push)
+#       - name: Commit and push changes
+#         run: |
+#           git config --global user.name 'Blog Bot'
+#           git config --global user.email 'bot@thriftmaal.com'
+#           git add blog/data/posts.json .github/scripts/topics.json || true
+#           git diff --quiet && git diff --staged --quiet || (git commit -m "🤖 Auto-generated blog post [skip ci]" && git push)
