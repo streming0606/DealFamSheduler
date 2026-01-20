@@ -1,8 +1,35 @@
 {
-  "last_updated": "2026-01-13T18:56:25.821700+05:30",
-  "total_products": 851,
+  "last_updated": "2026-01-20T10:35:55.077883+05:30",
+  "total_products": 751,
   "products": [
-    
+    {
+      "id": "product_morning_20260120_050555",
+      "title": "INEFABLE Boat xtend Watch Charger & Boat Storm Watch Charger & Noise Colorfit Pro 2 Watch Charger Compatible with All Tw",
+      "image": "https://m.media-amazon.com/images/I/51YDYfczGVL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CL4X4X3H?tag=gadgetvill09f-21",
+      "price": "\u20b9134",
+      "rating": 3.3,
+      "category": "electronics",
+      "asin": "B0CL4X4X3H",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-20T10:35:55.077846+05:30",
+      "session_type": "morning",
+      "link_index": 88
+    },
+    {
+      "id": "product_morning_20260120_050553",
+      "title": "CHKOKKO Men Polyester Solid Quick Dry Sports Gym T-Shirt Breathable Moisture-Wicking Half Sleeve Round Crew Neck Regular",
+      "image": "https://m.media-amazon.com/images/I/41S-Vb59mbL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0B7MPG21Q?tag=gadgetvill09f-21",
+      "price": "\u20b9369",
+      "rating": 3.9,
+      "category": "fashion",
+      "asin": "B0B7MPG21Q",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-20T10:35:53.456327+05:30",
+      "session_type": "morning",
+      "link_index": 88
+    },
     {
       "id": "product_night_20251231_155113",
       "title": "Complete Nutritional Drink Balanced with 50 Vital Nutrients | Nutrition Drink (400 g Chocolate Flavored)",
