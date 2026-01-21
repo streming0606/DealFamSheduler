@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-01-21T10:35:07.437932+05:30",
-  "total_products": 759,
+  "last_updated": "2026-01-21T13:24:50.997743+05:30",
+  "total_products": 761,
   "products": [
+    {
+      "id": "product_afternoon_20260121_075450",
+      "title": "Noise Pulse 2 Max 1.85\" Display, Bluetooth Calling Smart Watch, 10 Days Battery, 550 NITS Brightness, Smart DND, 100 Spo",
+      "image": "https://m.media-amazon.com/images/I/610BF3kqBZL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0B6BPTFT5?tag=gadgetvill09f-21",
+      "price": "\u20b91,099",
+      "rating": 4.0,
+      "category": "fashion",
+      "asin": "B0B6BPTFT5",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-21T13:24:50.997710+05:30",
+      "session_type": "afternoon",
+      "link_index": 98
+    },
+    {
+      "id": "product_afternoon_20260121_075449",
+      "title": "Puma Men Cotton Printed Classic Fit Tees",
+      "image": "https://m.media-amazon.com/images/I/51QqAXfDSJL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DS64ZV33?tag=gadgetvill09f-21",
+      "price": "\u20b9599",
+      "rating": 3.6,
+      "category": "electronics",
+      "asin": "B0DS64ZV33",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-21T13:24:49.779720+05:30",
+      "session_type": "afternoon",
+      "link_index": 98
+    },
     {
       "id": "product_morning_20260121_050507",
       "title": "PROSHARX Half Sleeve Compression T-Shirt - Men's Athletic & Sports Tights for Fitness",
