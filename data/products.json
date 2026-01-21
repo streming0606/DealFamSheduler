@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-01-20T21:32:06.772862+05:30",
-  "total_products": 757,
+  "last_updated": "2026-01-21T10:35:07.437932+05:30",
+  "total_products": 759,
   "products": [
+    {
+      "id": "product_morning_20260121_050507",
+      "title": "PROSHARX Half Sleeve Compression T-Shirt - Men's Athletic & Sports Tights for Fitness",
+      "image": "https://m.media-amazon.com/images/I/61EbmbmgJOL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CLP12BMZ?tag=gadgetvill09f-21",
+      "price": "\u20b9380",
+      "rating": 4.0,
+      "category": "fashion",
+      "asin": "B0CLP12BMZ",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-21T10:35:07.437901+05:30",
+      "session_type": "morning",
+      "link_index": 96
+    },
+    {
+      "id": "product_morning_20260121_050505",
+      "title": "SELLASTIC Knee Massager Joint Pain Relief, 3 Adjustable Heat and Vibration for Arthritis, Elbow, Shoulder, LED Touch Scr",
+      "image": "https://m.media-amazon.com/images/I/611lCD9VReL._AC_UY218_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0F8VTTGPR?tag=gadgetvill09f-21",
+      "price": "\u20b93,453",
+      "rating": 4.3,
+      "category": "home",
+      "asin": "B0F8VTTGPR",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-21T10:35:05.964521+05:30",
+      "session_type": "morning",
+      "link_index": 96
+    },
     {
       "id": "product_morning_20260120_160206",
       "title": "CARESMITH Charge Go Massage Gun | Body Massager for Pain Relief | Massage Gun for Back Leg & Full Body | 4 Specialized H",
