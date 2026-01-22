@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-01-22T10:35:53.870481+05:30",
-  "total_products": 767,
+  "last_updated": "2026-01-22T13:23:41.186322+05:30",
+  "total_products": 769,
   "products": [
+    {
+      "id": "product_afternoon_20260122_075341",
+      "title": "Fitelo Smart BMI Weight Scale (Black) | 18+ Parameters, Body Fat & Muscle Mass | 100+ User Profiles | 2 Yr Warranty | La",
+      "image": "https://m.media-amazon.com/images/I/7195-rdxvlL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0GC5P9QCT?tag=gadgetvill09f-21",
+      "price": "\u20b9999",
+      "rating": 4.3,
+      "category": "electronics",
+      "asin": "B0GC5P9QCT",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-22T13:23:41.186286+05:30",
+      "session_type": "afternoon",
+      "link_index": 106
+    },
+    {
+      "id": "product_afternoon_20260122_075339",
+      "title": "Like Star 20MM Adjustable Soft Silicone Strap with Folding Magnetic Lock Compatible With Samsung Galaxy Watch 4/5/6/Pro",
+      "image": "https://m.media-amazon.com/images/I/61rc7qGhZEL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CW1R77RH?tag=gadgetvill09f-21",
+      "price": "\u20b9215",
+      "rating": 4.2,
+      "category": "fashion",
+      "asin": "B0CW1R77RH",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-22T13:23:39.419631+05:30",
+      "session_type": "afternoon",
+      "link_index": 106
+    },
     {
       "id": "product_morning_20260122_050553",
       "title": "Asbob 3 in 1 steamer for cold and cough, vaporizer steamer for cough,cold and facial, steam inhaler & vapourisers for ad",
