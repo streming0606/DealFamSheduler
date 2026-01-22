@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-01-21T21:33:14.614089+05:30",
-  "total_products": 765,
+  "last_updated": "2026-01-22T10:35:53.870481+05:30",
+  "total_products": 767,
   "products": [
+    {
+      "id": "product_morning_20260122_050553",
+      "title": "Asbob 3 in 1 steamer for cold and cough, vaporizer steamer for cough,cold and facial, steam inhaler & vapourisers for ad",
+      "image": "https://m.media-amazon.com/images/I/61SDLg0EOnL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07XTG2YSP?tag=gadgetvill09f-21",
+      "price": "\u20b9263",
+      "rating": 3.8,
+      "category": "electronics",
+      "asin": "B07XTG2YSP",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-22T10:35:53.870437+05:30",
+      "session_type": "morning",
+      "link_index": 104
+    },
+    {
+      "id": "product_morning_20260122_050551",
+      "title": "Boldfit Gym T Shirts for Men Workout Breathable T Shirt for Man Active Wear Sports Tshirt for Men Lightweight Gym Tshirt",
+      "image": "https://m.media-amazon.com/images/I/61oSqmNgHYL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CVX9VNVB?tag=gadgetvill09f-21",
+      "price": "\u20b9399",
+      "rating": 4.2,
+      "category": "fashion",
+      "asin": "B0CVX9VNVB",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-22T10:35:51.782361+05:30",
+      "session_type": "morning",
+      "link_index": 104
+    },
     {
       "id": "product_morning_20260121_160314",
       "title": "Boat New Launch Ultima Ember Smartwatch w/ 1.96\u201d (4.97 cm) AMOLED Display, Personalized Fitness Nudges, Functional Crown",
