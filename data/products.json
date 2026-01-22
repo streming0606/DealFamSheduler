@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-01-22T19:03:03.628908+05:30",
-  "total_products": 771,
+  "last_updated": "2026-01-22T21:31:23.523762+05:30",
+  "total_products": 773,
   "products": [
+    {
+      "id": "product_morning_20260122_160123",
+      "title": "ATICX Polyester Full Sleeve Compression High Turtle Neck Sports Jersey T Shirt for Men - Quick Dry Fit Gym Workout Top f",
+      "image": "https://m.media-amazon.com/images/I/41EtmBTFWFL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FYKM7KFC?tag=gadgetvill09f-21",
+      "price": "\u20b9449",
+      "rating": 4.0,
+      "category": "fashion",
+      "asin": "B0FYKM7KFC",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-22T21:31:23.523726+05:30",
+      "session_type": "morning",
+      "link_index": 110
+    },
+    {
+      "id": "product_morning_20260122_160121",
+      "title": "Sounce USB 3.0 Magnetic Watch Charger Cable Compatible for iOS Smartwatch, 3 ft Fast Wireless Charging Cord for Ultra 9 ",
+      "image": "https://m.media-amazon.com/images/I/41l9wxom2ZL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0D5MKZMGX?tag=gadgetvill09f-21",
+      "price": "\u20b9539",
+      "rating": 3.6,
+      "category": "electronics",
+      "asin": "B0D5MKZMGX",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-22T21:31:21.754469+05:30",
+      "session_type": "morning",
+      "link_index": 110
+    },
     {
       "id": "product_morning_20260122_133303",
       "title": "TECHONTO\u00ae 22mm Silicone Watch Strap with Folding Magnetic Lock Compatible with Samsung Galaxy Watch 3 (45mm), Galaxy Wat",
