@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-01-22T13:23:41.186322+05:30",
-  "total_products": 769,
+  "last_updated": "2026-01-22T19:03:03.628908+05:30",
+  "total_products": 771,
   "products": [
+    {
+      "id": "product_morning_20260122_133303",
+      "title": "TECHONTO\u00ae 22mm Silicone Watch Strap with Folding Magnetic Lock Compatible with Samsung Galaxy Watch 3 (45mm), Galaxy Wat",
+      "image": "https://m.media-amazon.com/images/I/51BMF1E0qwL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0C8ZCWKGF?tag=gadgetvill09f-21",
+      "price": "\u20b9219",
+      "rating": 4.2,
+      "category": "fashion",
+      "asin": "B0C8ZCWKGF",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-22T19:03:03.628871+05:30",
+      "session_type": "morning",
+      "link_index": 108
+    },
+    {
+      "id": "product_morning_20260122_133301",
+      "title": "Noise Pro 6 Max Smart Watch:Intelligent with Noise AI, Endless AI Watch Faces, AI Companion, 1.96\u201d AMOLED, Stainless Ste",
+      "image": "https://m.media-amazon.com/images/I/813A7QKDBRL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DMDKTQCN?tag=gadgetvill09f-21",
+      "price": "\u20b97,499",
+      "rating": 4.0,
+      "category": "fashion",
+      "asin": "B0DMDKTQCN",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-22T19:03:01.699225+05:30",
+      "session_type": "morning",
+      "link_index": 108
+    },
     {
       "id": "product_afternoon_20260122_075341",
       "title": "Fitelo Smart BMI Weight Scale (Black) | 18+ Parameters, Body Fat & Muscle Mass | 100+ User Profiles | 2 Yr Warranty | La",
