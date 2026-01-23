@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-01-23T13:21:26.683146+05:30",
-  "total_products": 777,
+  "last_updated": "2026-01-23T19:00:12.813287+05:30",
+  "total_products": 779,
   "products": [
+    {
+      "id": "product_morning_20260123_133012",
+      "title": "JUST RIDER Compression Top Full Sleeve Tights T-Shirt for Sports",
+      "image": "https://m.media-amazon.com/images/I/41YT1SF2IKL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CFLC9QY6?tag=gadgetvill09f-21",
+      "price": "\u20b9331",
+      "rating": 4.0,
+      "category": "fashion",
+      "asin": "B0CFLC9QY6",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-23T19:00:12.813258+05:30",
+      "session_type": "morning",
+      "link_index": 116
+    },
+    {
+      "id": "product_morning_20260123_133011",
+      "title": "Spigen Rugged Armor for Samsung Galaxy Watch 7 44mm Case - Matte Black",
+      "image": "https://m.media-amazon.com/images/I/61j00r0Eb+L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0D52H4ZV2?tag=gadgetvill09f-21",
+      "price": "\u20b9835",
+      "rating": 4.4,
+      "category": "fashion",
+      "asin": "B0D52H4ZV2",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-23T19:00:11.133239+05:30",
+      "session_type": "morning",
+      "link_index": 116
+    },
     {
       "id": "product_afternoon_20260123_075126",
       "title": "Louis Philippe Men's Slim Fit 24s Single-Tuck Pique Stylized Sleeve Print and Contrast Tipping Half Sleeve Solid Polo T-",
