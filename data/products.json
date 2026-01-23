@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-01-23T19:00:12.813287+05:30",
-  "total_products": 779,
+  "last_updated": "2026-01-23T21:28:43.497881+05:30",
+  "total_products": 781,
   "products": [
+    {
+      "id": "product_night_20260123_155843",
+      "title": "Fire-Boltt Brillia Smart Watch 2.02\u2033 Super AMOLED Display with Bluetooth Calling, Voice Assistant, SpO2 & Heart Rate Mon",
+      "image": "https://m.media-amazon.com/images/I/61eYwoRZdGL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0D2KK3DW4?tag=gadgetvill09f-21",
+      "price": "\u20b91,699",
+      "rating": 4.0,
+      "category": "fashion",
+      "asin": "B0D2KK3DW4",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-23T21:28:43.497850+05:30",
+      "session_type": "night",
+      "link_index": 118
+    },
+    {
+      "id": "product_night_20260123_155842",
+      "title": "Lux Cozi Men's Half Sleeve Soild Casual Regular Fit T-Shirt with Chest Pocket | Polo Tshirt for Men",
+      "image": "https://m.media-amazon.com/images/I/61Qrj5J9F-L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FC68RY3R?tag=gadgetvill09f-21",
+      "price": "\u20b9374",
+      "rating": 4.0,
+      "category": "fashion",
+      "asin": "B0FC68RY3R",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-23T21:28:42.036798+05:30",
+      "session_type": "night",
+      "link_index": 118
+    },
     {
       "id": "product_morning_20260123_133012",
       "title": "JUST RIDER Compression Top Full Sleeve Tights T-Shirt for Sports",
