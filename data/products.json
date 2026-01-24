@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-01-24T18:49:20.911569+05:30",
-  "total_products": 787,
+  "last_updated": "2026-01-24T21:21:52.947903+05:30",
+  "total_products": 789,
   "products": [
+    {
+      "id": "product_night_20260124_155152",
+      "title": "CHKOKKO Men's Polyester Regular Fit Round Neck Regular Dry Fit Gym Sports T-Shirt",
+      "image": "https://m.media-amazon.com/images/I/71Gxsa303jL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0BW5HRX6K?tag=gadgetvill09f-21",
+      "price": "\u20b9399",
+      "rating": 3.8,
+      "category": "fashion",
+      "asin": "B0BW5HRX6K",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-24T21:21:52.947873+05:30",
+      "session_type": "night",
+      "link_index": 126
+    },
+    {
+      "id": "product_night_20260124_155150",
+      "title": "Hot Water Bag (2 Litre) \u2013 Non-Electric Rubber Heating Bag for Pain Relief, Period Cramps, Body Aches & Cold Therapy | Re",
+      "image": "https://m.media-amazon.com/images/I/61rlxUMLONL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B08PFTYB2N?tag=gadgetvill09f-21",
+      "price": "\u20b9170",
+      "rating": 4.0,
+      "category": "fashion",
+      "asin": "B08PFTYB2N",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-24T21:21:50.890797+05:30",
+      "session_type": "night",
+      "link_index": 126
+    },
     {
       "id": "product_morning_20260124_131920",
       "title": "KAJARU Men's Polyester Blend T Shirt with Spread Collar Neck Line Zipper Closure Full Sleeves Solid Pattern Regular Fit ",
