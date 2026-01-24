@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-01-24T13:17:57.495511+05:30",
-  "total_products": 785,
+  "last_updated": "2026-01-24T18:49:20.911569+05:30",
+  "total_products": 787,
   "products": [
+    {
+      "id": "product_morning_20260124_131920",
+      "title": "KAJARU Men's Polyester Blend T Shirt with Spread Collar Neck Line Zipper Closure Full Sleeves Solid Pattern Regular Fit ",
+      "image": "https://m.media-amazon.com/images/I/81l69obPixL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FFMBJ1J2?tag=gadgetvill09f-21",
+      "price": "\u20b9349",
+      "rating": 4.2,
+      "category": "fashion",
+      "asin": "B0FFMBJ1J2",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-24T18:49:20.911536+05:30",
+      "session_type": "morning",
+      "link_index": 124
+    },
+    {
+      "id": "product_morning_20260124_131919",
+      "title": "The Modern Soul Men Polyester Blend Athletic Gym Tank Tops Sleeveless Sports Vest",
+      "image": "https://m.media-amazon.com/images/I/71l92vpbWlL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FBMDVYXP?tag=gadgetvill09f-21",
+      "price": "\u20b9429",
+      "rating": 4.0,
+      "category": "electronics",
+      "asin": "B0FBMDVYXP",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-24T18:49:19.694668+05:30",
+      "session_type": "morning",
+      "link_index": 124
+    },
     {
       "id": "product_afternoon_20260124_074757",
       "title": "The Man Company Long Lasting Deodorant Set for Man - 150ml (Pack of 4) | Blanc, Fire, Night & Oud | Body Spray Gift Set ",
