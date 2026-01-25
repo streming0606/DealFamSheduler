@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-01-25T18:50:34.125763+05:30",
-  "total_products": 795,
+  "last_updated": "2026-01-25T21:21:54.813990+05:30",
+  "total_products": 797,
   "products": [
+    {
+      "id": "product_night_20260125_155154",
+      "title": "Hallstatt 2025 Upgraded Long Handle Microfiber Feather Fan Ceiling Duster for Dust Cleaning with extendable Pole 100 Inc",
+      "image": "https://m.media-amazon.com/images/I/614BSL5MO9L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0C7CYBGMX?tag=gadgetvill09f-21",
+      "price": "\u20b9267",
+      "rating": 3.9,
+      "category": "electronics",
+      "asin": "B0C7CYBGMX",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-25T21:21:54.813965+05:30",
+      "session_type": "night",
+      "link_index": 134
+    },
+    {
+      "id": "product_night_20260125_155152",
+      "title": "Fulminare Heating Bag Electric, Heating Pad-Heat Pouch Hot Water Bottle Bag, Dual Insulation Silicon Hot Water Bag 6 Lay",
+      "image": "https://m.media-amazon.com/images/I/51VuxmwuodL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0BK8L1745?tag=gadgetvill09f-21",
+      "price": "\u20b9599",
+      "rating": 4.1,
+      "category": "fashion",
+      "asin": "B0BK8L1745",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-25T21:21:52.846975+05:30",
+      "session_type": "night",
+      "link_index": 134
+    },
     {
       "id": "product_morning_20260125_132034",
       "title": "JUGULAR Tank Tops Sleeveless T-Shirt for Men Gym Wear Vest Solid Stylish Round Neck Running for Sports Workout Fitness &",
