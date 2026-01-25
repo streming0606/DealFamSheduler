@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-01-24T21:21:52.947903+05:30",
-  "total_products": 789,
+  "last_updated": "2026-01-25T10:46:17.711601+05:30",
+  "total_products": 791,
   "products": [
+    {
+      "id": "product_morning_20260125_051617",
+      "title": "Wisely |Pack 3| For Noise NoiseFit Halo Smartwatch Screen Guard Nano Flexible Glass Full Screen Protector for Noise Nois",
+      "image": "https://m.media-amazon.com/images/I/71Klk8ka5GL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0C2DB3YYP?tag=gadgetvill09f-21",
+      "price": "\u20b9150",
+      "rating": 3.8,
+      "category": "fashion",
+      "asin": "B0C2DB3YYP",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-25T10:46:17.711569+05:30",
+      "session_type": "morning",
+      "link_index": 128
+    },
+    {
+      "id": "product_morning_20260125_051615",
+      "title": "Boldfit Tshirt for Man Regular fit Gym t Shirts for Men Workout Active wear t Shirt for Man Running Mens t-Shirts Runnin",
+      "image": "https://m.media-amazon.com/images/I/611lChGYIML._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0D5D1MDXB?tag=gadgetvill09f-21",
+      "price": "\u20b9499",
+      "rating": 4.4,
+      "category": "fashion",
+      "asin": "B0D5D1MDXB",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-25T10:46:15.069102+05:30",
+      "session_type": "morning",
+      "link_index": 128
+    },
     {
       "id": "product_night_20260124_155152",
       "title": "CHKOKKO Men's Polyester Regular Fit Round Neck Regular Dry Fit Gym Sports T-Shirt",
