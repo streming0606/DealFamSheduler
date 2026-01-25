@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-01-25T13:19:19.477416+05:30",
-  "total_products": 793,
+  "last_updated": "2026-01-25T18:50:34.125763+05:30",
+  "total_products": 795,
   "products": [
+    {
+      "id": "product_morning_20260125_132034",
+      "title": "JUGULAR Tank Tops Sleeveless T-Shirt for Men Gym Wear Vest Solid Stylish Round Neck Running for Sports Workout Fitness &",
+      "image": "https://m.media-amazon.com/images/I/31lXPM3maxL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FXMWQVBK?tag=gadgetvill09f-21",
+      "price": "\u20b9240",
+      "rating": 3.7,
+      "category": "fashion",
+      "asin": "B0FXMWQVBK",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-25T18:50:34.125733+05:30",
+      "session_type": "morning",
+      "link_index": 132
+    },
+    {
+      "id": "product_morning_20260125_132032",
+      "title": "Gym T Shirts for Men Workout | Sports Tshirt for Man | Running Mens T-Shirts | Polyester Men's T Shirt | Quick Dry fit T",
+      "image": "https://m.media-amazon.com/images/I/719AxDndK6L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FXXTPHCD?tag=gadgetvill09f-21",
+      "price": "\u20b9898",
+      "rating": 4.6,
+      "category": "fashion",
+      "asin": "B0FXXTPHCD",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-25T18:50:32.743556+05:30",
+      "session_type": "morning",
+      "link_index": 132
+    },
     {
       "id": "product_afternoon_20260125_074919",
       "title": "Robustt Heavy Duty Rubber Hand gloves - 1 Pair (Free Size, Multicolor) for Dishwashing, gardening, kitchen cleaning",
