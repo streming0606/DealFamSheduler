@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-01-26T13:23:32.377578+05:30",
-  "total_products": 801,
+  "last_updated": "2026-01-26T19:01:53.180074+05:30",
+  "total_products": 803,
   "products": [
+    {
+      "id": "product_morning_20260126_133153",
+      "title": "Noise Newly Launched Halo 2 Smart Watch 1st Ever Functional Rotating Dial (Axe-Cut Bezel), 1.43\" AMOLED, Stainless Steel",
+      "image": "https://m.media-amazon.com/images/I/7138OS3wvyL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0D6N5STXQ?tag=gadgetvill09f-21",
+      "price": "\u20b93,999",
+      "rating": 3.9,
+      "category": "fashion",
+      "asin": "B0D6N5STXQ",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-26T19:01:53.180038+05:30",
+      "session_type": "morning",
+      "link_index": 140
+    },
+    {
+      "id": "product_morning_20260126_133152",
+      "title": "Caresmith Revive Scalp Massager | 96 Silicon Kneading Points with Detachable Heads | Scalp, Body & Head Massager for Hai",
+      "image": "https://m.media-amazon.com/images/I/61QiQ0Df23L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B09ZV233RH?tag=gadgetvill09f-21",
+      "price": "\u20b9899",
+      "rating": 4.0,
+      "category": "electronics",
+      "asin": "B09ZV233RH",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-26T19:01:52.183555+05:30",
+      "session_type": "morning",
+      "link_index": 140
+    },
     {
       "id": "product_afternoon_20260126_075332",
       "title": "SG Century Model Cotton and Spandex Cricket Sleeve (Black, Large)",
