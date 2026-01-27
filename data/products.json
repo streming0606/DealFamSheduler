@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-01-27T10:35:12.540816+05:30",
-  "total_products": 807,
+  "last_updated": "2026-01-27T13:23:34.375933+05:30",
+  "total_products": 809,
   "products": [
+    {
+      "id": "product_afternoon_20260127_075334",
+      "title": "VEMIGON Tough Armour Cover Case Compatible with Apple Watch Series 9 8 7 45mm, Series 6 5 4 SE3 SE2 SE 44mm with Full Pr",
+      "image": "https://m.media-amazon.com/images/I/619Ep+SrfFL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B09Y4NZPJF?tag=gadgetvill09f-21",
+      "price": "\u20b9337",
+      "rating": 4.0,
+      "category": "fashion",
+      "asin": "B09Y4NZPJF",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-27T13:23:34.375899+05:30",
+      "session_type": "afternoon",
+      "link_index": 146
+    },
+    {
+      "id": "product_afternoon_20260127_075333",
+      "title": "Men's Waffle Tank Tops \u2013 Sleeveless Round Neck Polycotton Vest T-Shirts for Gym, Workout & Casual Wear(Pack of 2)",
+      "image": "https://m.media-amazon.com/images/I/61nc0Hd3mzL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FGVCSQH2?tag=gadgetvill09f-21",
+      "price": "\u20b9474",
+      "rating": 4.3,
+      "category": "fashion",
+      "asin": "B0FGVCSQH2",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-27T13:23:33.154841+05:30",
+      "session_type": "afternoon",
+      "link_index": 146
+    },
     {
       "id": "product_morning_20260127_050512",
       "title": "SG Century Sleeves (Black)",
