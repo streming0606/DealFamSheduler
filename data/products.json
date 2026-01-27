@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-01-26T21:29:57.149702+05:30",
-  "total_products": 805,
+  "last_updated": "2026-01-27T10:35:12.540816+05:30",
+  "total_products": 807,
   "products": [
+    {
+      "id": "product_morning_20260127_050512",
+      "title": "SG Century Sleeves (Black)",
+      "image": "https://m.media-amazon.com/images/I/518n2oLWj3L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B00KWYMGNI?tag=gadgetvill09f-21",
+      "price": "\u20b9229",
+      "rating": 4.2,
+      "category": "electronics",
+      "asin": "B00KWYMGNI",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-27T10:35:12.540774+05:30",
+      "session_type": "morning",
+      "link_index": 144
+    },
+    {
+      "id": "product_morning_20260127_050510",
+      "title": "Fire-Boltt Ninja Call Pro Max Bluetooth Calling Smart Watch, 2.01\" HD Display, 120+ Sports Modes, Health Suite, AI Voice",
+      "image": "https://m.media-amazon.com/images/I/61zBJcICfFL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0C496V772?tag=gadgetvill09f-21",
+      "price": "\u20b91,199",
+      "rating": 3.9,
+      "category": "fashion",
+      "asin": "B0C496V772",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-27T10:35:10.573284+05:30",
+      "session_type": "morning",
+      "link_index": 144
+    },
     {
       "id": "product_night_20260126_155957",
       "title": "INEFABLE 20mm SmartWatch Strap Nylon Soft Loop for Amazfit GTS 2 Mini, Amazfit Bip/Bip U/Pro/Lite, Bip S, Amazfit GTS/ 2",
