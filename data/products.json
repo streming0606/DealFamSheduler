@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-01-27T13:23:34.375933+05:30",
-  "total_products": 809,
+  "last_updated": "2026-01-27T19:03:09.649810+05:30",
+  "total_products": 811,
   "products": [
+    {
+      "id": "product_morning_20260127_133309",
+      "title": "Large Capacity Travel Cosmetic Bag With Handle And Divider - Multifunctional Makeup Bag For Easy Access, Waterproof- (-B",
+      "image": "https://m.media-amazon.com/images/I/51C+zhgxIWL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0D73Q5432?tag=gadgetvill09f-21",
+      "price": "\u20b9265",
+      "rating": 3.9,
+      "category": "fashion",
+      "asin": "B0D73Q5432",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-27T19:03:09.649771+05:30",
+      "session_type": "morning",
+      "link_index": 148
+    },
+    {
+      "id": "product_morning_20260127_133308",
+      "title": "VOLTURI Microfiber Feather Duster Bendable & Extendable Fan Cleaning Duster with 100 inches Expandable Pole Handle Washa",
+      "image": "https://m.media-amazon.com/images/I/71lqgVf5fAL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DMZWL16Z?tag=gadgetvill09f-21",
+      "price": "\u20b9236",
+      "rating": 3.9,
+      "category": "electronics",
+      "asin": "B0DMZWL16Z",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-27T19:03:08.139540+05:30",
+      "session_type": "morning",
+      "link_index": 148
+    },
     {
       "id": "product_afternoon_20260127_075334",
       "title": "VEMIGON Tough Armour Cover Case Compatible with Apple Watch Series 9 8 7 45mm, Series 6 5 4 SE3 SE2 SE 44mm with Full Pr",
