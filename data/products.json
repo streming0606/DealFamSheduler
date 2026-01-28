@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-01-28T13:23:17.578609+05:30",
-  "total_products": 817,
+  "last_updated": "2026-01-28T19:04:54.039976+05:30",
+  "total_products": 819,
   "products": [
+    {
+      "id": "product_morning_20260128_133454",
+      "title": "Shimmer Liquid Detergent - 5L Family Pack | French Lavender Fragrance | Front Load & Top Load Machine Wash & Bucket Wash",
+      "image": "https://m.media-amazon.com/images/I/71Bu6kmO4BL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0G2LLRV4B?tag=gadgetvill09f-21",
+      "price": "\u20b9249",
+      "rating": 4.0,
+      "category": "electronics",
+      "asin": "B0G2LLRV4B",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-28T19:04:54.039951+05:30",
+      "session_type": "morning",
+      "link_index": 156
+    },
+    {
+      "id": "product_morning_20260128_133452",
+      "title": "LUMONY CARE\u00ae Hot Water Bag Heating Bag Gel hot Water Bag hot bags for pain relief hot water bags electric hot pack heat ",
+      "image": "https://m.media-amazon.com/images/I/815qwRZR3uL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0D9S1V9QY?tag=gadgetvill09f-21",
+      "price": "\u20b9224",
+      "rating": 4.0,
+      "category": "fashion",
+      "asin": "B0D9S1V9QY",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-28T19:04:52.479437+05:30",
+      "session_type": "morning",
+      "link_index": 156
+    },
     {
       "id": "product_afternoon_20260128_075317",
       "title": "VEMIGON Hard PC Protective Case Compatible with Samsung Galaxy Fit 3 Smart Watch, Matte Slim Guard Bumper Cover with Bui",
