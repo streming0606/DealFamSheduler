@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-01-28T19:04:54.039976+05:30",
-  "total_products": 819,
+  "last_updated": "2026-01-28T21:34:15.450517+05:30",
+  "total_products": 821,
   "products": [
+    {
+      "id": "product_morning_20260128_160415",
+      "title": "Men's Round Neck Slim fit Gym & Active wear Sports T-Shirt for Workout & Casual Wear",
+      "image": "https://m.media-amazon.com/images/I/61emJSliP8L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B08WLQD4M4?tag=gadgetvill09f-21",
+      "price": "\u20b9744",
+      "rating": 4.1,
+      "category": "fashion",
+      "asin": "B08WLQD4M4",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-28T21:34:15.450488+05:30",
+      "session_type": "morning",
+      "link_index": 158
+    },
+    {
+      "id": "product_morning_20260128_160414",
+      "title": "Washing Machine Cleaner Tablet | Descaler For Washing Machine Front Load and Top Load | Washing Machine Cleaning Tablets",
+      "image": "https://m.media-amazon.com/images/I/81QJzvRcrcL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0BKPG3MSF?tag=gadgetvill09f-21",
+      "price": "\u20b9229",
+      "rating": 3.9,
+      "category": "electronics",
+      "asin": "B0BKPG3MSF",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-28T21:34:14.058527+05:30",
+      "session_type": "morning",
+      "link_index": 158
+    },
     {
       "id": "product_morning_20260128_133454",
       "title": "Shimmer Liquid Detergent - 5L Family Pack | French Lavender Fragrance | Front Load & Top Load Machine Wash & Bucket Wash",
