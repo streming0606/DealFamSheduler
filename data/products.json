@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-01-28T10:34:23.003731+05:30",
-  "total_products": 815,
+  "last_updated": "2026-01-28T13:23:17.578609+05:30",
+  "total_products": 817,
   "products": [
+    {
+      "id": "product_afternoon_20260128_075317",
+      "title": "VEMIGON Hard PC Protective Case Compatible with Samsung Galaxy Fit 3 Smart Watch, Matte Slim Guard Bumper Cover with Bui",
+      "image": "https://m.media-amazon.com/images/I/612+-zA6xKL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0D6TTMFFG?tag=gadgetvill09f-21",
+      "price": "\u20b9320",
+      "rating": 4.0,
+      "category": "fashion",
+      "asin": "B0D6TTMFFG",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-28T13:23:17.578573+05:30",
+      "session_type": "afternoon",
+      "link_index": 154
+    },
+    {
+      "id": "product_afternoon_20260128_075315",
+      "title": "Boldfit Hot & Cold Ice Pack Bag for Pain Relief \u2013 9 Inch Reusable Ice Pack for Knee, Back Pain, Injuries,Leakproof Desig",
+      "image": "https://m.media-amazon.com/images/I/81FPDV2lVaL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B09RH48BHY?tag=gadgetvill09f-21",
+      "price": "\u20b9249",
+      "rating": 4.3,
+      "category": "fashion",
+      "asin": "B09RH48BHY",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-28T13:23:15.740674+05:30",
+      "session_type": "afternoon",
+      "link_index": 154
+    },
     {
       "id": "product_morning_20260128_050423",
       "title": "Fire-Boltt Talk Round Smart Watch 1.39\u2033 TFT Display with Bluetooth Calling, Dual Button, Voice Assistance, SPO\u2082 & Heart ",
