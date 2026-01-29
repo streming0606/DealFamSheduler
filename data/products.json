@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-01-29T11:01:37.503999+05:30",
-  "total_products": 823,
+  "last_updated": "2026-01-29T13:33:55.942239+05:30",
+  "total_products": 825,
   "products": [
+    {
+      "id": "product_morning_20260129_080355",
+      "title": "JUST CARE Polyester Unisex Compression Top Full Sleeve Slim Fit Tights Plain for Gym, Running, Cycling, Swimming, Cricke",
+      "image": "https://m.media-amazon.com/images/I/51-RoS46e3S._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07ZB2FP7G?tag=gadgetvill09f-21",
+      "price": "\u20b9329",
+      "rating": 4.0,
+      "category": "electronics",
+      "asin": "B07ZB2FP7G",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-29T13:33:55.942204+05:30",
+      "session_type": "morning",
+      "link_index": 162
+    },
+    {
+      "id": "product_morning_20260129_080353",
+      "title": "PUER Liquid Detergent Intense Clean French Lavender 1800ml Refill Pouch for Front & Top Load Washing Machine | Plant Bas",
+      "image": "https://m.media-amazon.com/images/I/61ZdnKADddL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0BSLCKZGD?tag=gadgetvill09f-21",
+      "price": "\u20b9269",
+      "rating": 4.3,
+      "category": "electronics",
+      "asin": "B0BSLCKZGD",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-29T13:33:53.526410+05:30",
+      "session_type": "morning",
+      "link_index": 162
+    },
     {
       "id": "product_morning_20260129_053137",
       "title": "CrossBeats Armour Pro AI Premium Smart Watch for Man, Latest 1.43\u201d AMOLED Always on Display,5 ATM Waterproof,Compass,30-",
