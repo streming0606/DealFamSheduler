@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-01-29T13:33:55.942239+05:30",
-  "total_products": 825,
+  "last_updated": "2026-01-29T19:14:29.056113+05:30",
+  "total_products": 827,
   "products": [
+    {
+      "id": "product_morning_20260129_134429",
+      "title": "pTron Orbis Neo Smart Glasses w/Bluetooth V5.4, Open Ear Music, Handsfree Calls, Eye Protection, 7Hrs Playtime, Lightwei",
+      "image": "https://m.media-amazon.com/images/I/51FglCpb-PL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FKH9MFTG?tag=gadgetvill09f-21",
+      "price": "\u20b9999",
+      "rating": 3.6,
+      "category": "electronics",
+      "asin": "B0FKH9MFTG",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-29T19:14:29.056086+05:30",
+      "session_type": "morning",
+      "link_index": 164
+    },
+    {
+      "id": "product_morning_20260129_134427",
+      "title": "LEOTUDE Men\u2019s Regular Fit Printed T-Shirt | Cotton Blend | Half Sleeve | Round Neck | T-Shirt for Man - Black",
+      "image": "https://m.media-amazon.com/images/I/51lCrISVlYL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FSWW8465?tag=gadgetvill09f-21",
+      "price": "\u20b9279",
+      "rating": 5.0,
+      "category": "fashion",
+      "asin": "B0FSWW8465",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-29T19:14:27.719706+05:30",
+      "session_type": "morning",
+      "link_index": 164
+    },
     {
       "id": "product_morning_20260129_080355",
       "title": "JUST CARE Polyester Unisex Compression Top Full Sleeve Slim Fit Tights Plain for Gym, Running, Cycling, Swimming, Cricke",
