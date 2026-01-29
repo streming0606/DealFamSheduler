@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-01-28T21:34:15.450517+05:30",
-  "total_products": 821,
+  "last_updated": "2026-01-29T11:01:37.503999+05:30",
+  "total_products": 823,
   "products": [
+    {
+      "id": "product_morning_20260129_053137",
+      "title": "CrossBeats Armour Pro AI Premium Smart Watch for Man, Latest 1.43\u201d AMOLED Always on Display,5 ATM Waterproof,Compass,30-",
+      "image": "https://m.media-amazon.com/images/I/71zJRygiXvL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0G64PBQYB?tag=gadgetvill09f-21",
+      "price": "\u20b95,699",
+      "rating": 4.8,
+      "category": "fashion",
+      "asin": "B0G64PBQYB",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-29T11:01:37.503962+05:30",
+      "session_type": "morning",
+      "link_index": 160
+    },
+    {
+      "id": "product_morning_20260129_053136",
+      "title": "Noise Twist Round dial Smart Watch with Bluetooth Calling, 1.38\" TFT Display, up-to 7 Days Battery, 100+ Watch Faces, IP",
+      "image": "https://m.media-amazon.com/images/I/61-vRq2ulOL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0BJ72WZQ7?tag=gadgetvill09f-21",
+      "price": "\u20b91,499",
+      "rating": 4.0,
+      "category": "fashion",
+      "asin": "B0BJ72WZQ7",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-29T11:01:36.369876+05:30",
+      "session_type": "morning",
+      "link_index": 160
+    },
     {
       "id": "product_morning_20260128_160415",
       "title": "Men's Round Neck Slim fit Gym & Active wear Sports T-Shirt for Workout & Casual Wear",
