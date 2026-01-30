@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-01-30T11:05:10.726164+05:30",
-  "total_products": 831,
+  "last_updated": "2026-01-30T13:33:20.758219+05:30",
+  "total_products": 833,
   "products": [
+    {
+      "id": "product_morning_20260130_080320",
+      "title": "Men's Casual Polyester T- Shirt Short Sleeve Round Neck",
+      "image": "https://m.media-amazon.com/images/I/61oTkus2F2L._AC_UY218_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0F6NGS1V2?tag=gadgetvill09f-21",
+      "price": "\u20b9299",
+      "rating": 4.0,
+      "category": "fashion",
+      "asin": "B0F6NGS1V2",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-30T13:33:20.758192+05:30",
+      "session_type": "morning",
+      "link_index": 170
+    },
+    {
+      "id": "product_morning_20260130_080318",
+      "title": "Washing Machine Cleaner Balls, Reusable Tangle Free Clothes Cleaning Ball, Scrubbing Laundry Balls, Washing Balls Enhanc",
+      "image": "https://m.media-amazon.com/images/I/81aoMi-CGyL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DG7ZJQ8Y?tag=gadgetvill09f-21",
+      "price": "\u20b9199",
+      "rating": 4.0,
+      "category": "electronics",
+      "asin": "B0DG7ZJQ8Y",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-30T13:33:18.285963+05:30",
+      "session_type": "morning",
+      "link_index": 170
+    },
     {
       "id": "product_morning_20260130_053510",
       "title": "Carbamide Forte Storm Shaker for Gym Bottle 700ml | Protein Shaker Bottle | Cyclone Blender for Smooth Shakes | 100% Lea",
