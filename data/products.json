@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-01-30T13:33:20.758219+05:30",
-  "total_products": 833,
+  "last_updated": "2026-01-30T19:11:59.337794+05:30",
+  "total_products": 835,
   "products": [
+    {
+      "id": "product_morning_20260130_134159",
+      "title": "Virat 18 Jersey Red T-Shirt 2025(Kid's, Boy's& Men)",
+      "image": "https://m.media-amazon.com/images/I/51kg+KYUwpL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FZ3KGJBT?tag=gadgetvill09f-21",
+      "price": "\u20b9299",
+      "rating": 4.4,
+      "category": "fashion",
+      "asin": "B0FZ3KGJBT",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-30T19:11:59.337769+05:30",
+      "session_type": "morning",
+      "link_index": 172
+    },
+    {
+      "id": "product_morning_20260130_134157",
+      "title": "TECHNOSPORT Men's 100% Polyester Regular Fit Half Sleeve Printed Crew Neck T-Shirt with Techno Dry, Anti Microbial Prope",
+      "image": "https://m.media-amazon.com/images/I/51HElvdCiaL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DG56QK4M?tag=gadgetvill09f-21",
+      "price": "\u20b9357",
+      "rating": 4.3,
+      "category": "fashion",
+      "asin": "B0DG56QK4M",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-30T19:11:57.277896+05:30",
+      "session_type": "morning",
+      "link_index": 172
+    },
     {
       "id": "product_morning_20260130_080320",
       "title": "Men's Casual Polyester T- Shirt Short Sleeve Round Neck",
