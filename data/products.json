@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-01-29T21:52:35.388159+05:30",
-  "total_products": 829,
+  "last_updated": "2026-01-30T11:05:10.726164+05:30",
+  "total_products": 831,
   "products": [
+    {
+      "id": "product_morning_20260130_053510",
+      "title": "Carbamide Forte Storm Shaker for Gym Bottle 700ml | Protein Shaker Bottle | Cyclone Blender for Smooth Shakes | 100% Lea",
+      "image": "https://m.media-amazon.com/images/I/71FvndT4HyL._AC_UY218_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0F18WQRT5?tag=gadgetvill09f-21",
+      "price": "\u20b9199",
+      "rating": 4.0,
+      "category": "electronics",
+      "asin": "B0F18WQRT5",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-30T11:05:10.726126+05:30",
+      "session_type": "morning",
+      "link_index": 168
+    },
+    {
+      "id": "product_morning_20260130_053508",
+      "title": "Amazon Brand - Solimo Adult Bed Bath Wipes | Count 100 | 10 Wipes x 10 Packs | With Aloe Vera, Olive Oil & Vitamin E | A",
+      "image": "https://m.media-amazon.com/images/I/71lfn7qZuoL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CV73XDKV?tag=gadgetvill09f-21",
+      "price": "\u20b9Special Price",
+      "rating": 4.4,
+      "category": "health",
+      "asin": "B0CV73XDKV",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-30T11:05:08.893226+05:30",
+      "session_type": "morning",
+      "link_index": 168
+    },
     {
       "id": "product_morning_20260129_162235",
       "title": "Gulshan Tummy Tucker Vest for Men Tummy Control Undershirt Abs Abdomen Slim Stretchable Vest Compression Tank Top, Slimm",
