@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-01-30T21:35:00.619543+05:30",
-  "total_products": 837,
+  "last_updated": "2026-01-31T10:55:44.166423+05:30",
+  "total_products": 839,
   "products": [
+    {
+      "id": "product_morning_20260131_052544",
+      "title": "Yogabar Multigrain Energy Bars - Chocolate Chunk 20 Bars - Daily Protein Snack, High Energy & Nutrition Bars - with 8g P",
+      "image": "https://m.media-amazon.com/images/I/81DibCuUU7L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07DVRGPG2?tag=gadgetvill09f-21",
+      "price": "\u20b9349",
+      "rating": 4.1,
+      "category": "electronics",
+      "asin": "B07DVRGPG2",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-31T10:55:44.166387+05:30",
+      "session_type": "morning",
+      "link_index": 176
+    },
+    {
+      "id": "product_morning_20260131_052542",
+      "title": "4-in-1 Soft Silicone Bath Brush Set | Long Handle Back Scrubber + Body Scrubber + Scalp Massager + Face Massager | Super",
+      "image": "https://m.media-amazon.com/images/I/71a3Ho35wJL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0G1MW19HM?tag=gadgetvill09f-21",
+      "price": "\u20b9249",
+      "rating": 4.5,
+      "category": "electronics",
+      "asin": "B0G1MW19HM",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-31T10:55:42.377048+05:30",
+      "session_type": "morning",
+      "link_index": 176
+    },
     {
       "id": "product_morning_20260130_160500",
       "title": "Bouncefit M I D18 Round Fitness Band Smart Watch for Men, Women, Boys, Girls, Kids \u2013 Single Touch Interface, Water Resis",
