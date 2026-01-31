@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-01-31T10:55:44.166423+05:30",
-  "total_products": 839,
+  "last_updated": "2026-01-31T13:24:42.484996+05:30",
+  "total_products": 841,
   "products": [
+    {
+      "id": "product_afternoon_20260131_075442",
+      "title": "Puma Men Polyester Logo Training T-Shirt | Regular Fit Crew Neck Tee | Sweat Proof Fabric T-Shirt for Fitness and Gym | ",
+      "image": "https://m.media-amazon.com/images/I/51EsJpiuIoL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B089Z7PPSJ?tag=gadgetvill09f-21",
+      "price": "\u20b9524",
+      "rating": 3.9,
+      "category": "fashion",
+      "asin": "B089Z7PPSJ",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-31T13:24:42.484964+05:30",
+      "session_type": "afternoon",
+      "link_index": 178
+    },
+    {
+      "id": "product_afternoon_20260131_075440",
+      "title": "Amazon Brand - Presto! Non-Woven Reusable Kitchen Towel Roll | 50 Pulls | 100 Sheets (Pack of 2) | Size: 20 x 22 cm | Wh",
+      "image": "https://m.media-amazon.com/images/I/71eyZN5sF9L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DKFTXN9P?tag=gadgetvill09f-21",
+      "price": "\u20b9169",
+      "rating": 4.4,
+      "category": "home",
+      "asin": "B0DKFTXN9P",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-31T13:24:40.435195+05:30",
+      "session_type": "afternoon",
+      "link_index": 178
+    },
     {
       "id": "product_morning_20260131_052544",
       "title": "Yogabar Multigrain Energy Bars - Chocolate Chunk 20 Bars - Daily Protein Snack, High Energy & Nutrition Bars - with 8g P",
