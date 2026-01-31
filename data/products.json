@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-01-31T18:58:59.977135+05:30",
-  "total_products": 843,
+  "last_updated": "2026-01-31T21:25:57.718292+05:30",
+  "total_products": 845,
   "products": [
+    {
+      "id": "product_night_20260131_155557",
+      "title": "Amazon Brand - Presto! Disinfectant Toilet Cleaner | Original | 5 Litre | Kills 99.9% Germs",
+      "image": "https://m.media-amazon.com/images/I/81w-K6tj0pL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0842CPRCZ?tag=gadgetvill09f-21",
+      "price": "\u20b9299",
+      "rating": 4.2,
+      "category": "health",
+      "asin": "B0842CPRCZ",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-31T21:25:57.718240+05:30",
+      "session_type": "night",
+      "link_index": 182
+    },
+    {
+      "id": "product_night_20260131_155551",
+      "title": "Sounce Adjustable Xiaomi Mi Band 3/ Mi Band 4 Watch Silicone Strap Band Bracelet (Not Compatible with Mi Band 1/2)",
+      "image": "https://m.media-amazon.com/images/I/41MKtiYJjDL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0831KS5CP?tag=gadgetvill09f-21",
+      "price": "\u20b9129",
+      "rating": 4.0,
+      "category": "fashion",
+      "asin": "B0831KS5CP",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-31T21:25:51.923408+05:30",
+      "session_type": "night",
+      "link_index": 182
+    },
     {
       "id": "product_morning_20260131_132859",
       "title": "Amazon Brand - Solimo Adult Diapers Pant Style | Medium Size | 30 Count | Waist 24-45 Inch (60-115 cm) | Fast Absorption",
