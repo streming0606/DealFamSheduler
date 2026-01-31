@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-01-31T13:24:42.484996+05:30",
-  "total_products": 841,
+  "last_updated": "2026-01-31T18:58:59.977135+05:30",
+  "total_products": 843,
   "products": [
+    {
+      "id": "product_morning_20260131_132859",
+      "title": "Amazon Brand - Solimo Adult Diapers Pant Style | Medium Size | 30 Count | Waist 24-45 Inch (60-115 cm) | Fast Absorption",
+      "image": "https://m.media-amazon.com/images/I/71mPS7W5GXL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0C8TGGRLS?tag=gadgetvill09f-21",
+      "price": "\u20b9599",
+      "rating": 3.8,
+      "category": "electronics",
+      "asin": "B0C8TGGRLS",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-31T18:58:59.977099+05:30",
+      "session_type": "morning",
+      "link_index": 180
+    },
+    {
+      "id": "product_morning_20260131_132857",
+      "title": "Irusu Monster VR Headset for Mobiles - Virtual Reality Glasses with 40 MM HD Lens,Built in Touch Button and Controller f",
+      "image": "https://m.media-amazon.com/images/I/61-tgcn-R3L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B01JLAQGNY?tag=gadgetvill09f-21",
+      "price": "\u20b92,499",
+      "rating": 3.4,
+      "category": "electronics",
+      "asin": "B01JLAQGNY",
+      "data_source": "serpapi",
+      "posted_date": "2026-01-31T18:58:57.783748+05:30",
+      "session_type": "morning",
+      "link_index": 180
+    },
     {
       "id": "product_afternoon_20260131_075442",
       "title": "Puma Men Polyester Logo Training T-Shirt | Regular Fit Crew Neck Tee | Sweat Proof Fabric T-Shirt for Fitness and Gym | ",
