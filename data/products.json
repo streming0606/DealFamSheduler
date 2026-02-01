@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-02-01T13:29:41.454275+05:30",
-  "total_products": 849,
+  "last_updated": "2026-02-01T19:00:21.884313+05:30",
+  "total_products": 851,
   "products": [
+    {
+      "id": "product_morning_20260201_133021",
+      "title": "Boldfit Men Polyester Solid Regular Fit Vest",
+      "image": "https://m.media-amazon.com/images/I/71CjXWPeziL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0D83XKMS8?tag=gadgetvill09f-21",
+      "price": "\u20b9359",
+      "rating": 4.2,
+      "category": "electronics",
+      "asin": "B0D83XKMS8",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-01T19:00:21.884287+05:30",
+      "session_type": "morning",
+      "link_index": 188
+    },
+    {
+      "id": "product_morning_20260201_133020",
+      "title": "HSR Sweat Shapewear Vest Belt for Men, Polymer Shapewear, Workout for Weight Loss Waist Body Slimming, Trainer",
+      "image": "https://m.media-amazon.com/images/I/71HvNH-XTIL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B08BC25MH8?tag=gadgetvill09f-21",
+      "price": "\u20b9331",
+      "rating": 3.8,
+      "category": "electronics",
+      "asin": "B08BC25MH8",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-01T19:00:20.492949+05:30",
+      "session_type": "morning",
+      "link_index": 188
+    },
     {
       "id": "product_afternoon_20260201_075941",
       "title": "Noise Newly Launched Quad Call 1.81\" Display, Bluetooth Calling Smart Watch, AI Voice Assistance, 160+Hrs Battery Life, ",
