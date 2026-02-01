@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-01-31T21:25:57.718292+05:30",
-  "total_products": 845,
+  "last_updated": "2026-02-01T11:18:00.920324+05:30",
+  "total_products": 847,
   "products": [
+    {
+      "id": "product_morning_20260201_054800",
+      "title": "Lotto Men Melt Baseball Jersey",
+      "image": "https://m.media-amazon.com/images/I/61JJCU-1uJL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0G6YSP453?tag=gadgetvill09f-21",
+      "price": "\u20b91,299",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B0G6YSP453",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-01T11:18:00.920294+05:30",
+      "session_type": "morning",
+      "link_index": 184
+    },
+    {
+      "id": "product_morning_20260201_054759",
+      "title": "AIR-ROMA Aroma Diffuser Oil Combo of 6 (Lemon Grass, Japanese Rose, Madurai Jasmine, Apple Spice, English Ocean and Ging",
+      "image": "https://m.media-amazon.com/images/I/71IZpQ5zhAL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07NL9QMP7?tag=gadgetvill09f-21",
+      "price": "\u20b9409",
+      "rating": 4.2,
+      "category": "health",
+      "asin": "B07NL9QMP7",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-01T11:17:59.316269+05:30",
+      "session_type": "morning",
+      "link_index": 184
+    },
     {
       "id": "product_night_20260131_155557",
       "title": "Amazon Brand - Presto! Disinfectant Toilet Cleaner | Original | 5 Litre | Kills 99.9% Germs",
