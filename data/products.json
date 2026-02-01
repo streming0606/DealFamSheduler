@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-02-01T11:18:00.920324+05:30",
-  "total_products": 847,
+  "last_updated": "2026-02-01T13:29:41.454275+05:30",
+  "total_products": 849,
   "products": [
+    {
+      "id": "product_afternoon_20260201_075941",
+      "title": "Noise Newly Launched Quad Call 1.81\" Display, Bluetooth Calling Smart Watch, AI Voice Assistance, 160+Hrs Battery Life, ",
+      "image": "https://m.media-amazon.com/images/I/61zHGn-mfdL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0BW4F5PY3?tag=gadgetvill09f-21",
+      "price": "\u20b9999",
+      "rating": 4.0,
+      "category": "fashion",
+      "asin": "B0BW4F5PY3",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-01T13:29:41.454250+05:30",
+      "session_type": "afternoon",
+      "link_index": 186
+    },
+    {
+      "id": "product_afternoon_20260201_075939",
+      "title": "Noise Champ 2 Kids Smart Watch with Habit Building (handwash, Brushing, etc), IP68 Waterproof, Activity Tracker, in-Buil",
+      "image": "https://m.media-amazon.com/images/I/61J-OddQDeL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0B46DZ376?tag=gadgetvill09f-21",
+      "price": "\u20b91,999",
+      "rating": 3.6,
+      "category": "fashion",
+      "asin": "B0B46DZ376",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-01T13:29:39.451065+05:30",
+      "session_type": "afternoon",
+      "link_index": 186
+    },
     {
       "id": "product_morning_20260201_054800",
       "title": "Lotto Men Melt Baseball Jersey",
