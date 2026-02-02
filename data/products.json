@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-02-02T19:18:07.696511+05:30",
-  "total_products": 859,
+  "last_updated": "2026-02-02T21:34:58.793476+05:30",
+  "total_products": 861,
   "products": [
+    {
+      "id": "product_morning_20260202_160458",
+      "title": "Mens Waffle Tank Tops Sleeveless Round Neck Polycotton T-Shirt for Gym, Running and Outdoor",
+      "image": "https://m.media-amazon.com/images/I/51I-E-d3EpL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DJGKYSRQ?tag=gadgetvill09f-21",
+      "price": "\u20b9295",
+      "rating": 3.9,
+      "category": "fashion",
+      "asin": "B0DJGKYSRQ",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-02T21:34:58.793448+05:30",
+      "session_type": "morning",
+      "link_index": 198
+    },
+    {
+      "id": "product_morning_20260202_160455",
+      "title": "Free Size Posture Corrector For Men And Women Back Support Belt Back Pain Back Straight And Shoulder Support Belt (Unive",
+      "image": "https://m.media-amazon.com/images/I/818cEdqxSJL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0BDZPWY73?tag=gadgetvill09f-21",
+      "price": "\u20b9468",
+      "rating": 3.9,
+      "category": "electronics",
+      "asin": "B0BDZPWY73",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-02T21:34:55.802847+05:30",
+      "session_type": "morning",
+      "link_index": 198
+    },
     {
       "id": "product_morning_20260202_134807",
       "title": "CHKOKKO Men's Polyester Regular Fit Solid Sports T-Shirt",
