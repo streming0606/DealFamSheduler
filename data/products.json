@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-02-02T11:19:57.743239+05:30",
-  "total_products": 855,
+  "last_updated": "2026-02-02T13:35:56.456011+05:30",
+  "total_products": 857,
   "products": [
+    {
+      "id": "product_morning_20260202_080556",
+      "title": "Fire-Boltt Legacy Luxury Round Smart Watch 1.43\u2033 Super AMOLED,Bluetooth Calling,Wireless Charging,Voice Assistant,SpO\u2082 &",
+      "image": "https://m.media-amazon.com/images/I/61owhwUCFtL._AC_UY218_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0F993RN8H?tag=gadgetvill09f-21",
+      "price": "\u20b92,099",
+      "rating": 3.9,
+      "category": "fashion",
+      "asin": "B0F993RN8H",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-02T13:35:56.455984+05:30",
+      "session_type": "morning",
+      "link_index": 194
+    },
+    {
+      "id": "product_morning_20260202_080553",
+      "title": "Reebok Men\u2019s ColourBurst Vector Performance T-Shirt, Moisture Wicking Activewear Tee with Bold Graphic Design",
+      "image": "https://m.media-amazon.com/images/I/71NLKthwtJL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0D6NF9X54?tag=gadgetvill09f-21",
+      "price": "\u20b9939",
+      "rating": 3.6,
+      "category": "fashion",
+      "asin": "B0D6NF9X54",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-02T13:35:53.824679+05:30",
+      "session_type": "morning",
+      "link_index": 194
+    },
     {
       "id": "product_morning_20260202_054957",
       "title": "Period Cramp Relief Massager | Portable Cordless Menstrual Pain Massage with 3 Heat Modes & 3 Massage Modes | Bigger Fro",
