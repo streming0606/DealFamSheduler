@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-02-02T13:35:56.456011+05:30",
-  "total_products": 857,
+  "last_updated": "2026-02-02T19:18:07.696511+05:30",
+  "total_products": 859,
   "products": [
+    {
+      "id": "product_morning_20260202_134807",
+      "title": "CHKOKKO Men's Polyester Regular Fit Solid Sports T-Shirt",
+      "image": "https://m.media-amazon.com/images/I/51tABkJywaL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0B1B3RQMY?tag=gadgetvill09f-21",
+      "price": "\u20b9397",
+      "rating": 3.9,
+      "category": "fashion",
+      "asin": "B0B1B3RQMY",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-02T19:18:07.696482+05:30",
+      "session_type": "morning",
+      "link_index": 196
+    },
+    {
+      "id": "product_morning_20260202_134806",
+      "title": "ESR for Apple Watch Ultra 3/2/1 Case with Screen Protector 49mm (2025/2024/2023/2022), Military Grade Protection, Alumin",
+      "image": "https://m.media-amazon.com/images/I/71WJ1T3NbvL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0D14KWMTL?tag=gadgetvill09f-21",
+      "price": "\u20b91,699",
+      "rating": 4.4,
+      "category": "fashion",
+      "asin": "B0D14KWMTL",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-02T19:18:06.204383+05:30",
+      "session_type": "morning",
+      "link_index": 196
+    },
     {
       "id": "product_morning_20260202_080556",
       "title": "Fire-Boltt Legacy Luxury Round Smart Watch 1.43\u2033 Super AMOLED,Bluetooth Calling,Wireless Charging,Voice Assistant,SpO\u2082 &",
