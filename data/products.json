@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-02-03T19:19:12.414597+05:30",
-  "total_products": 867,
+  "last_updated": "2026-02-03T22:04:38.353217+05:30",
+  "total_products": 869,
   "products": [
+    {
+      "id": "product_morning_20260203_163438",
+      "title": "Amazon Brand - Solimo Classic Disposable Underpads | Large Size | Count 40 | 90 X 60 cm | High Absorbancy | Super Soft |",
+      "image": "https://m.media-amazon.com/images/I/81sERhP5l1L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CV7DHBML?tag=gadgetvill09f-21",
+      "price": "\u20b9618",
+      "rating": 4.1,
+      "category": "electronics",
+      "asin": "B0CV7DHBML",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-03T22:04:38.353178+05:30",
+      "session_type": "morning",
+      "link_index": 206
+    },
+    {
+      "id": "product_morning_20260203_163436",
+      "title": "POPIO Acrylic Screen Guard Protector Compatible for Apple watch Series 10, Series 11 46mm (Transparent) with Edge to Edg",
+      "image": "https://m.media-amazon.com/images/I/61Kskj11H+L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DM8CDK4S?tag=gadgetvill09f-21",
+      "price": "\u20b9249",
+      "rating": 3.5,
+      "category": "fashion",
+      "asin": "B0DM8CDK4S",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-03T22:04:36.490463+05:30",
+      "session_type": "morning",
+      "link_index": 206
+    },
     {
       "id": "product_morning_20260203_134912",
       "title": "SHREY Cricket Match T Shirt 2.0 Long Sleeves Off White",
