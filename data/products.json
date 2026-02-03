@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-02-02T21:34:58.793476+05:30",
-  "total_products": 861,
+  "last_updated": "2026-02-03T11:08:03.165943+05:30",
+  "total_products": 863,
   "products": [
+    {
+      "id": "product_morning_20260203_053803",
+      "title": "Puma Men Polyester Solid Regular Fit T-Shirt",
+      "image": "https://m.media-amazon.com/images/I/5149+tSB7yL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FGJ63TYN?tag=gadgetvill09f-21",
+      "price": "\u20b9809",
+      "rating": 4.4,
+      "category": "fashion",
+      "asin": "B0FGJ63TYN",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-03T11:08:03.165911+05:30",
+      "session_type": "morning",
+      "link_index": 200
+    },
+    {
+      "id": "product_morning_20260203_053801",
+      "title": "Amazon Brand - Presto! Dishwash Bar | 200 Gram | 12 count | 4 Bars Each X 3 Pack | Removes Tough Grease | Odour-Free Fre",
+      "image": "https://m.media-amazon.com/images/I/61nrsCuAZGL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DM69Y4LC?tag=gadgetvill09f-21",
+      "price": "\u20b9226",
+      "rating": 4.2,
+      "category": "electronics",
+      "asin": "B0DM69Y4LC",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-03T11:08:01.393805+05:30",
+      "session_type": "morning",
+      "link_index": 200
+    },
     {
       "id": "product_morning_20260202_160458",
       "title": "Mens Waffle Tank Tops Sleeveless Round Neck Polycotton T-Shirt for Gym, Running and Outdoor",
