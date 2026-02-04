@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-02-04T13:35:59.748737+05:30",
-  "total_products": 873,
+  "last_updated": "2026-02-04T19:19:12.678718+05:30",
+  "total_products": 875,
   "products": [
+    {
+      "id": "product_morning_20260204_134912",
+      "title": "NRIP Premium Walnut Kernels California 200g (Pack of 1) | Walnuts without Shell | Akhrot Giri | Dry Fruits, Healthy Snac",
+      "image": "https://m.media-amazon.com/images/I/81GhdJGmHHL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B09WDYWBKN?tag=gadgetvill09f-21",
+      "price": "\u20b9Special Price",
+      "rating": 4.0,
+      "category": "health",
+      "asin": "B09WDYWBKN",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-04T19:19:12.678691+05:30",
+      "session_type": "morning",
+      "link_index": 212
+    },
+    {
+      "id": "product_morning_20260204_134911",
+      "title": "Sports Soccer Football Jersey Regular Fit Half Sleeve Round Neck T-Shirt for Kids, Boys & Men",
+      "image": "https://m.media-amazon.com/images/I/51aNUOdiS+L._AC_UY218_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0F6T59JH8?tag=gadgetvill09f-21",
+      "price": "\u20b9282",
+      "rating": 3.8,
+      "category": "fashion",
+      "asin": "B0F6T59JH8",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-04T19:19:11.097981+05:30",
+      "session_type": "morning",
+      "link_index": 212
+    },
     {
       "id": "product_morning_20260204_080559",
       "title": "CrossBeats Everest 2.0 2025 Smart Watch for Men 1.43\" True AMOLED, Always ON Display Bluetooth Calling Rugged Outdoor wi",
