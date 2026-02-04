@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-02-04T11:05:28.338743+05:30",
-  "total_products": 871,
+  "last_updated": "2026-02-04T13:35:59.748737+05:30",
+  "total_products": 873,
   "products": [
+    {
+      "id": "product_morning_20260204_080559",
+      "title": "CrossBeats Everest 2.0 2025 Smart Watch for Men 1.43\" True AMOLED, Always ON Display Bluetooth Calling Rugged Outdoor wi",
+      "image": "https://m.media-amazon.com/images/I/71S8pzCYTlL._AC_UY218_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0F8GP4FL1?tag=gadgetvill09f-21",
+      "price": "\u20b93,499",
+      "rating": 4.2,
+      "category": "fashion",
+      "asin": "B0F8GP4FL1",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-04T13:35:59.748718+05:30",
+      "session_type": "morning",
+      "link_index": 210
+    },
+    {
+      "id": "product_morning_20260204_080558",
+      "title": "Borges Extra Virgin Olive Oil - 250 ml |Unrefined & Cold Pressed Oil|Packed in Spain |75% MUFA | Rich in Antioxidants | ",
+      "image": "https://m.media-amazon.com/images/I/51bhndJ2sBL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B005CFLX4U?tag=gadgetvill09f-21",
+      "price": "\u20b9289",
+      "rating": 4.5,
+      "category": "health",
+      "asin": "B005CFLX4U",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-04T13:35:58.590963+05:30",
+      "session_type": "morning",
+      "link_index": 210
+    },
     {
       "id": "product_morning_20260204_053528",
       "title": "SG Club Full Sleeves Cricket Shirt",
