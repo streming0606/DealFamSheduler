@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-02-03T22:04:38.353217+05:30",
-  "total_products": 869,
+  "last_updated": "2026-02-04T11:05:28.338743+05:30",
+  "total_products": 871,
   "products": [
+    {
+      "id": "product_morning_20260204_053528",
+      "title": "SG Club Full Sleeves Cricket Shirt",
+      "image": "https://m.media-amazon.com/images/I/81Lu4xfiaqL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B00L7KY3CI?tag=gadgetvill09f-21",
+      "price": "\u20b9529",
+      "rating": 4.2,
+      "category": "fashion",
+      "asin": "B00L7KY3CI",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-04T11:05:28.338710+05:30",
+      "session_type": "morning",
+      "link_index": 208
+    },
+    {
+      "id": "product_morning_20260204_053527",
+      "title": "Amazon Brand - Presto! Phenyl Floor Cleaner | 5 Litre | Suitable For Hospitals, Homes, Offices | 10X Cleaning Power | Fi",
+      "image": "https://m.media-amazon.com/images/I/61kTE42N+mL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CV79F1TM?tag=gadgetvill09f-21",
+      "price": "\u20b9272",
+      "rating": 4.0,
+      "category": "home",
+      "asin": "B0CV79F1TM",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-04T11:05:27.156470+05:30",
+      "session_type": "morning",
+      "link_index": 208
+    },
     {
       "id": "product_morning_20260203_163438",
       "title": "Amazon Brand - Solimo Classic Disposable Underpads | Large Size | Count 40 | 90 X 60 cm | High Absorbancy | Super Soft |",
