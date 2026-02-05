@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-02-05T11:12:08.918643+05:30",
-  "total_products": 879,
+  "last_updated": "2026-02-05T13:37:03.514528+05:30",
+  "total_products": 881,
   "products": [
+    {
+      "id": "product_morning_20260205_080703",
+      "title": "Spartan Silica Gel - 5 Gram Desiccant Pouch of 80 pcs Pack (5gm/80 Packets) | Silica Gel Pouches for Moisture Absorbers ",
+      "image": "https://m.media-amazon.com/images/I/61AOW-jTe8L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0179V3H5W?tag=gadgetvill09f-21",
+      "price": "\u20b9115",
+      "rating": 4.0,
+      "category": "electronics",
+      "asin": "B0179V3H5W",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-05T13:37:03.514494+05:30",
+      "session_type": "morning",
+      "link_index": 218
+    },
+    {
+      "id": "product_morning_20260205_080701",
+      "title": "Sounce Magnetic USB Charger for Samsung Galaxy Watch \u2013 Fast Charging Cable for Galaxy Watch 6/6 Classic, 5/5 Pro, 4/4 Cl",
+      "image": "https://m.media-amazon.com/images/I/61s0atesmkL._AC_UY218_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0F1Y46WQC?tag=gadgetvill09f-21",
+      "price": "\u20b9499",
+      "rating": 3.9,
+      "category": "electronics",
+      "asin": "B0F1Y46WQC",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-05T13:37:01.700703+05:30",
+      "session_type": "morning",
+      "link_index": 218
+    },
     {
       "id": "product_morning_20260205_054208",
       "title": "Pain Relief Gel - Pack of 2 (50 g Each) | Soothing Cold Therapy for Muscle Recovery & Pain Relief | Easy Application, Fa",
