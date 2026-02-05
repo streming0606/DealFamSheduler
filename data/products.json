@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-02-04T21:58:15.325100+05:30",
-  "total_products": 877,
+  "last_updated": "2026-02-05T11:12:08.918643+05:30",
+  "total_products": 879,
   "products": [
+    {
+      "id": "product_morning_20260205_054208",
+      "title": "Pain Relief Gel - Pack of 2 (50 g Each) | Soothing Cold Therapy for Muscle Recovery & Pain Relief | Easy Application, Fa",
+      "image": "https://m.media-amazon.com/images/I/71AhYVz778L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0D6NFFKWX?tag=gadgetvill09f-21",
+      "price": "\u20b9249",
+      "rating": 3.9,
+      "category": "electronics",
+      "asin": "B0D6NFFKWX",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-05T11:12:08.918604+05:30",
+      "session_type": "morning",
+      "link_index": 216
+    },
+    {
+      "id": "product_morning_20260205_054207",
+      "title": "Jockey AM95 Men's Super Combed Cotton Rich Solid Round Neck Full Sleeve T-Shirt",
+      "image": "https://m.media-amazon.com/images/I/71gWw88OQwL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0G2X6CGXV?tag=gadgetvill09f-21",
+      "price": "\u20b9719",
+      "rating": 4.2,
+      "category": "fashion",
+      "asin": "B0G2X6CGXV",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-05T11:12:07.399602+05:30",
+      "session_type": "morning",
+      "link_index": 216
+    },
     {
       "id": "product_morning_20260204_162815",
       "title": "Weird Wolf Electric Mosquito Bat | Rechargeable Mosquito Killer Racket with Built-in Plug | Lithium Battery | Durable & ",
