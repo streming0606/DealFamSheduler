@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-02-05T13:37:03.514528+05:30",
-  "total_products": 881,
+  "last_updated": "2026-02-05T19:21:27.863171+05:30",
+  "total_products": 883,
   "products": [
+    {
+      "id": "product_morning_20260205_135127",
+      "title": "THE BLAZZE Men's Gym Tank Tops",
+      "image": "https://m.media-amazon.com/images/I/61azLiGFBGL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07KG44HFD?tag=gadgetvill09f-21",
+      "price": "\u20b9299",
+      "rating": 3.6,
+      "category": "electronics",
+      "asin": "B07KG44HFD",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-05T19:21:27.863134+05:30",
+      "session_type": "morning",
+      "link_index": 220
+    },
+    {
+      "id": "product_morning_20260205_135125",
+      "title": "GOBOULT Newly Launched Soniq Over Ear Bluetooth Headphones with 70H Playtime, 40mm Bass Drivers, Zen\u2122 ENC Mic, Type-C Fa",
+      "image": "https://m.media-amazon.com/images/I/71CzM6hiu6L._AC_UY218_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0F9YWD4Z3?tag=gadgetvill09f-21",
+      "price": "\u20b91,999",
+      "rating": 3.9,
+      "category": "electronics",
+      "asin": "B0F9YWD4Z3",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-05T19:21:25.960892+05:30",
+      "session_type": "morning",
+      "link_index": 220
+    },
     {
       "id": "product_morning_20260205_080703",
       "title": "Spartan Silica Gel - 5 Gram Desiccant Pouch of 80 pcs Pack (5gm/80 Packets) | Silica Gel Pouches for Moisture Absorbers ",
