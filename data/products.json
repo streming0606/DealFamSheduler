@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-02-05T19:21:27.863171+05:30",
-  "total_products": 883,
+  "last_updated": "2026-02-05T21:57:12.027227+05:30",
+  "total_products": 885,
   "products": [
+    {
+      "id": "product_morning_20260205_162712",
+      "title": "Boat Wave Call Smart Watch for Men & Women, Bluetooth Calling, 1.69\" (4.2 cm) Display w/ 550 NITS, 150+ Watch Faces, Mul",
+      "image": "https://m.media-amazon.com/images/I/61q+89CDU4L._AC_UY218_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0F3DGNP36?tag=gadgetvill09f-21",
+      "price": "\u20b91,349",
+      "rating": 3.9,
+      "category": "fashion",
+      "asin": "B0F3DGNP36",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-05T21:57:12.027191+05:30",
+      "session_type": "morning",
+      "link_index": 222
+    },
+    {
+      "id": "product_morning_20260205_162709",
+      "title": "QSSIY Floor Cleaner 5L Lavender | Concentrated for Home Tiles, Marble, Wood | Streak-Free, Hand-Safe, Made in India",
+      "image": "https://m.media-amazon.com/images/I/61ZcmGXSfoL._AC_UY218_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DPL66976?tag=gadgetvill09f-21",
+      "price": "\u20b9265",
+      "rating": 3.7,
+      "category": "home",
+      "asin": "B0DPL66976",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-05T21:57:09.827167+05:30",
+      "session_type": "morning",
+      "link_index": 222
+    },
     {
       "id": "product_morning_20260205_135127",
       "title": "THE BLAZZE Men's Gym Tank Tops",
