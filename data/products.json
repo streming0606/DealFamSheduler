@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-02-05T21:57:12.027227+05:30",
-  "total_products": 885,
+  "last_updated": "2026-02-06T11:11:42.024388+05:30",
+  "total_products": 887,
   "products": [
+    {
+      "id": "product_morning_20260206_054142",
+      "title": "Spigen Rugged Armor Pro for Apple Watch SE3 Series 44mm Case with Strap Band, Series 9/8/7 45mm, SE2/6/SE/5/4 44mm Prote",
+      "image": "https://m.media-amazon.com/images/I/61mJkw14hLL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07HSSDV4S?tag=gadgetvill09f-21",
+      "price": "\u20b91,699",
+      "rating": 4.1,
+      "category": "fashion",
+      "asin": "B07HSSDV4S",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-06T11:11:42.024358+05:30",
+      "session_type": "morning",
+      "link_index": 224
+    },
+    {
+      "id": "product_morning_20260206_054134",
+      "title": "GHAR SOAPS Kojic Acid 2% Soap with Niacinamide | For Pigmentation, Sun damage, Brightening Underarm & Reduces Dark Spot ",
+      "image": "https://m.media-amazon.com/images/I/61a+QFC9loL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CXR5NKQT?tag=gadgetvill09f-21",
+      "price": "\u20b9399",
+      "rating": 3.8,
+      "category": "health",
+      "asin": "B0CXR5NKQT",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-06T11:11:34.166243+05:30",
+      "session_type": "morning",
+      "link_index": 224
+    },
     {
       "id": "product_morning_20260205_162712",
       "title": "Boat Wave Call Smart Watch for Men & Women, Bluetooth Calling, 1.69\" (4.2 cm) Display w/ 550 NITS, 150+ Watch Faces, Mul",
