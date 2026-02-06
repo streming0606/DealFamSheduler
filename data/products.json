@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-02-06T11:11:42.024388+05:30",
-  "total_products": 887,
+  "last_updated": "2026-02-06T13:36:52.965607+05:30",
+  "total_products": 889,
   "products": [
+    {
+      "id": "product_morning_20260206_080652",
+      "title": "Huawei Band 10 Smartwatch with AI-Powered Fitness Monitoring, Pro-Level Sleep Analysis, Emotional Wellbeing Assistant,St",
+      "image": "https://m.media-amazon.com/images/I/41abF4vT-OL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DWFQCY3V?tag=gadgetvill09f-21",
+      "price": "\u20b93,799",
+      "rating": 3.8,
+      "category": "fashion",
+      "asin": "B0DWFQCY3V",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-06T13:36:52.965580+05:30",
+      "session_type": "morning",
+      "link_index": 226
+    },
+    {
+      "id": "product_morning_20260206_080646",
+      "title": "Noise Halo Plus 1.46\" Super AMOLED Display Elite Smart Watch, Bluetooth Calling, Stainless Steel Build, Always on Displa",
+      "image": "https://m.media-amazon.com/images/I/71g09REHnkL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0C4Q5HNMH?tag=gadgetvill09f-21",
+      "price": "\u20b92,999",
+      "rating": 4.1,
+      "category": "fashion",
+      "asin": "B0C4Q5HNMH",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-06T13:36:46.089516+05:30",
+      "session_type": "morning",
+      "link_index": 226
+    },
     {
       "id": "product_morning_20260206_054142",
       "title": "Spigen Rugged Armor Pro for Apple Watch SE3 Series 44mm Case with Strap Band, Series 9/8/7 45mm, SE2/6/SE/5/4 44mm Prote",
