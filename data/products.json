@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-02-06T13:36:52.965607+05:30",
-  "total_products": 889,
+  "last_updated": "2026-02-06T19:17:20.667798+05:30",
+  "total_products": 891,
   "products": [
+    {
+      "id": "product_morning_20260206_134720",
+      "title": "LUMONY\u00ae Hot Water Bag (2 litre) Non Electric Rubber Heating Bottle, Heat Pouch, Heat Bag for Body Pain relief, Cramps, H",
+      "image": "https://m.media-amazon.com/images/I/61qBciUoFGL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B079NVVYVC?tag=gadgetvill09f-21",
+      "price": "\u20b9199",
+      "rating": 4.1,
+      "category": "fashion",
+      "asin": "B079NVVYVC",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-06T19:17:20.667763+05:30",
+      "session_type": "morning",
+      "link_index": 228
+    },
+    {
+      "id": "product_morning_20260206_134719",
+      "title": "CHKOKKO Men's Polyester Regular Fit Sports Gym Full Sleeves T-Shirt",
+      "image": "https://m.media-amazon.com/images/I/51wl0j05q8L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07XKHF42T?tag=gadgetvill09f-21",
+      "price": "\u20b9390",
+      "rating": 4.0,
+      "category": "fashion",
+      "asin": "B07XKHF42T",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-06T19:17:19.223131+05:30",
+      "session_type": "morning",
+      "link_index": 228
+    },
     {
       "id": "product_morning_20260206_080652",
       "title": "Huawei Band 10 Smartwatch with AI-Powered Fitness Monitoring, Pro-Level Sleep Analysis, Emotional Wellbeing Assistant,St",
