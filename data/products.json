@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-02-07T13:26:58.724277+05:30",
-  "total_products": 897,
+  "last_updated": "2026-02-07T19:01:04.356479+05:30",
+  "total_products": 899,
   "products": [
+    {
+      "id": "product_morning_20260207_133104",
+      "title": "sekyo S2 Pro Kids Smartwatch for Boys & Girls, Calling Smart Watch for Kids with Location Tracker, Camera, SOS & Safe Zo",
+      "image": "https://m.media-amazon.com/images/I/51V9ilSpT0L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B084HBX63N?tag=gadgetvill09f-21",
+      "price": "\u20b92,990",
+      "rating": 3.6,
+      "category": "electronics",
+      "asin": "B084HBX63N",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-07T19:01:04.356445+05:30",
+      "session_type": "morning",
+      "link_index": 236
+    },
+    {
+      "id": "product_morning_20260207_133102",
+      "title": "Louis Philippe Men's Slim Fit Premium High-End 24s Pique in Superior Cotton Cut & Sew Design Color Block Shoulder Half S",
+      "image": "https://m.media-amazon.com/images/I/513cxRfvH-L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0D4VQBKQ4?tag=gadgetvill09f-21",
+      "price": "\u20b91,159",
+      "rating": 4.1,
+      "category": "electronics",
+      "asin": "B0D4VQBKQ4",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-07T19:01:02.685301+05:30",
+      "session_type": "morning",
+      "link_index": 236
+    },
     {
       "id": "product_afternoon_20260207_075658",
       "title": "Invisible Ear Lobe Support for Earrings Earlobe Tapes and Stickers Earring Supporter for Heavy Earrings Support Patches ",
