@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-02-07T11:00:25.848615+05:30",
-  "total_products": 895,
+  "last_updated": "2026-02-07T13:26:58.724277+05:30",
+  "total_products": 897,
   "products": [
+    {
+      "id": "product_afternoon_20260207_075658",
+      "title": "Invisible Ear Lobe Support for Earrings Earlobe Tapes and Stickers Earring Supporter for Heavy Earrings Support Patches ",
+      "image": "https://m.media-amazon.com/images/I/71JrYt4UChL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CT31ZW2L?tag=gadgetvill09f-21",
+      "price": "\u20b9179",
+      "rating": 4.1,
+      "category": "electronics",
+      "asin": "B0CT31ZW2L",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-07T13:26:58.724238+05:30",
+      "session_type": "afternoon",
+      "link_index": 234
+    },
+    {
+      "id": "product_afternoon_20260207_075656",
+      "title": "Caresmith Eon Premium Electric Hot Water Bag | Dual Insulation Silicon Technology Heating Pad | 6 Layers of Protection (",
+      "image": "https://m.media-amazon.com/images/I/617IK9PytcL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07SDBY15G?tag=gadgetvill09f-21",
+      "price": "\u20b9899",
+      "rating": 4.1,
+      "category": "fashion",
+      "asin": "B07SDBY15G",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-07T13:26:56.544594+05:30",
+      "session_type": "afternoon",
+      "link_index": 234
+    },
     {
       "id": "product_morning_20260207_053025",
       "title": "Friends Classic Disposable Underpads Large Size, Soft & Super Absorbency - 60x90 cm (Pack of 3)",
