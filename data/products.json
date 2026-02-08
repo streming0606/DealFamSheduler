@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-02-08T19:02:03.063228+05:30",
-  "total_products": 907,
+  "last_updated": "2026-02-08T21:29:20.112832+05:30",
+  "total_products": 909,
   "products": [
+    {
+      "id": "product_night_20260208_155920",
+      "title": "Bouncefit M I D116 Fitness Band Smart Watch for Men, Women, Boys, Girls, Kids \u2013 Single Touch Interface, Water Resistant,",
+      "image": "https://m.media-amazon.com/images/I/61xvs-2sD0L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0D95TMQ3M?tag=gadgetvill09f-21",
+      "price": "\u20b9398",
+      "rating": 3.5,
+      "category": "fashion",
+      "asin": "B0D95TMQ3M",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-08T21:29:20.112806+05:30",
+      "session_type": "night",
+      "link_index": 246
+    },
+    {
+      "id": "product_night_20260208_155915",
+      "title": "Lapster USB all types smartwatch charger cable for Boat Xtend,boat storm, W26 W26+ W26m W55+, Noise ColorFit Pulse, Colo",
+      "image": "https://m.media-amazon.com/images/I/51c3oYvNwIL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B09WJCRHKV?tag=gadgetvill09f-21",
+      "price": "\u20b9149",
+      "rating": 3.5,
+      "category": "electronics",
+      "asin": "B09WJCRHKV",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-08T21:29:15.865744+05:30",
+      "session_type": "night",
+      "link_index": 246
+    },
     {
       "id": "product_morning_20260208_133203",
       "title": "Yogabar ProClean Whey Protein Performance Blend 2 lbs | 25g Protein per Serve | Zero-Calorie Sweetener Whey Protein Powd",
