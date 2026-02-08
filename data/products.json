@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-02-07T21:27:46.604642+05:30",
-  "total_products": 901,
+  "last_updated": "2026-02-08T11:19:26.775402+05:30",
+  "total_products": 903,
   "products": [
+    {
+      "id": "product_morning_20260208_054926",
+      "title": "HUMBLE Stainless Steel 19mm Chain Strap with Magnetic Buckle Compatible with Noise Colorfit Pro 2, Boat Storm Smart Watc",
+      "image": "https://m.media-amazon.com/images/I/71yzwdL8f0L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0B631B363?tag=gadgetvill09f-21",
+      "price": "\u20b9199",
+      "rating": 3.6,
+      "category": "electronics",
+      "asin": "B0B631B363",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-08T11:19:26.775371+05:30",
+      "session_type": "morning",
+      "link_index": 240
+    },
+    {
+      "id": "product_morning_20260208_054924",
+      "title": "Lillypupp Pregnancy Announcement Gift for Grandparents to be | Baby Coming Soon Bodysuit | Reveal idea for Grandma, Gran",
+      "image": "https://m.media-amazon.com/images/I/71L4gDcFHFL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0D4ZBL425?tag=gadgetvill09f-21",
+      "price": "\u20b9352",
+      "rating": 4.5,
+      "category": "electronics",
+      "asin": "B0D4ZBL425",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-08T11:19:24.847759+05:30",
+      "session_type": "morning",
+      "link_index": 240
+    },
     {
       "id": "product_night_20260207_155746",
       "title": "Nike Mens Slim Fit Pro T-Shirt",
