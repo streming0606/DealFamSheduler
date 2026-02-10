@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-02-09T19:30:20.219702+05:30",
-  "total_products": 915,
+  "last_updated": "2026-02-10T11:31:22.137430+05:30",
+  "total_products": 917,
   "products": [
+    {
+      "id": "product_morning_20260210_060122",
+      "title": "Bevzilla 24 Coffee Sachets & Frother | 24 X 2 Gram Sachets | 6 Pouches Each Flavour | Caf\u00e9 Coffee Kit | Classic, Hazelnu",
+      "image": "https://m.media-amazon.com/images/I/61CTOQimHBL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0C59G2SQD?tag=gadgetvill09f-21",
+      "price": "\u20b9242",
+      "rating": 3.9,
+      "category": "electronics",
+      "asin": "B0C59G2SQD",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-10T11:31:22.137397+05:30",
+      "session_type": "morning",
+      "link_index": 254
+    },
+    {
+      "id": "product_morning_20260210_060120",
+      "title": "AUSK Vest for Men || Gym Sports Men Tshirt || Summer wear Regular Fit T-Shirt for Men",
+      "image": "https://m.media-amazon.com/images/I/71GrG2nIc+L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0D3335L53?tag=gadgetvill09f-21",
+      "price": "\u20b9195",
+      "rating": 3.8,
+      "category": "fashion",
+      "asin": "B0D3335L53",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-10T11:31:20.781292+05:30",
+      "session_type": "morning",
+      "link_index": 254
+    },
     {
       "id": "product_morning_20260209_140020",
       "title": "Tough Armour Case Compatible for Apple Watch Series 11 46mm (2025), Series 10 46mm (2024), Military Grade Protective Cov",
