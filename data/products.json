@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-02-10T19:37:36.803148+05:30",
-  "total_products": 921,
+  "last_updated": "2026-02-10T22:13:57.634425+05:30",
+  "total_products": 923,
   "products": [
+    {
+      "id": "product_morning_20260210_164357",
+      "title": "Dika Sports Custom Add Name and Number Jersey for Men Cricket t-Shirt | 2 Year to 5XL",
+      "image": "https://m.media-amazon.com/images/I/61SIpPHrNHL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DFTZ8M4R?tag=gadgetvill09f-21",
+      "price": "\u20b9449",
+      "rating": 4.0,
+      "category": "fashion",
+      "asin": "B0DFTZ8M4R",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-10T22:13:57.634398+05:30",
+      "session_type": "morning",
+      "link_index": 260
+    },
+    {
+      "id": "product_morning_20260210_164355",
+      "title": "Dika Sports Custom Jersey for Kids Cricket t-Shirt Sale Cricket t Shirts for menyonex t Shirts | 2 Year to 5XL",
+      "image": "https://m.media-amazon.com/images/I/51ZKoON3dSL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FCYJ5SRR?tag=gadgetvill09f-21",
+      "price": "\u20b9473",
+      "rating": 4.2,
+      "category": "fashion",
+      "asin": "B0FCYJ5SRR",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-10T22:13:55.505074+05:30",
+      "session_type": "morning",
+      "link_index": 260
+    },
     {
       "id": "product_morning_20260210_140736",
       "title": "Noise Pulse 4 Max Smart Watch with AI Create (India's 1st Ever with Unlimited Watch Faces), AI Search, 1.96\" AMOLED Disp",
