@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-02-10T13:57:46.222659+05:30",
-  "total_products": 919,
+  "last_updated": "2026-02-10T19:37:36.803148+05:30",
+  "total_products": 921,
   "products": [
+    {
+      "id": "product_morning_20260210_140736",
+      "title": "Noise Pulse 4 Max Smart Watch with AI Create (India's 1st Ever with Unlimited Watch Faces), AI Search, 1.96\" AMOLED Disp",
+      "image": "https://m.media-amazon.com/images/I/61Iw0g8zYYL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0D6GK2871?tag=gadgetvill09f-21",
+      "price": "\u20b92,999",
+      "rating": 4.0,
+      "category": "fashion",
+      "asin": "B0D6GK2871",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-10T19:37:36.803119+05:30",
+      "session_type": "morning",
+      "link_index": 258
+    },
+    {
+      "id": "product_morning_20260210_140734",
+      "title": "Herbal Pain Relief Patches - 20 Knee Pain Patches (Specially Designed for Knee Joints) | 100% Safe & Natural Knee Pain R",
+      "image": "https://m.media-amazon.com/images/I/81FQcPe4S8L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FD7MLYRP?tag=gadgetvill09f-21",
+      "price": "\u20b9348",
+      "rating": 4.5,
+      "category": "electronics",
+      "asin": "B0FD7MLYRP",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-10T19:37:34.959756+05:30",
+      "session_type": "morning",
+      "link_index": 258
+    },
     {
       "id": "product_morning_20260210_082746",
       "title": "Ghar Soaps Sandalwood & Saffron Magic Soaps For Bath (300 Gms Pack Of 3) | Paraben Free | Chandan & Kesar Bath Soap | Ha",
