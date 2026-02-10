@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-02-10T11:31:22.137430+05:30",
-  "total_products": 917,
+  "last_updated": "2026-02-10T13:57:46.222659+05:30",
+  "total_products": 919,
   "products": [
+    {
+      "id": "product_morning_20260210_082746",
+      "title": "Ghar Soaps Sandalwood & Saffron Magic Soaps For Bath (300 Gms Pack Of 3) | Paraben Free | Chandan & Kesar Bath Soap | Ha",
+      "image": "https://m.media-amazon.com/images/I/718F+0RgtfL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B09S6M7JQJ?tag=gadgetvill09f-21",
+      "price": "\u20b9299",
+      "rating": 3.9,
+      "category": "health",
+      "asin": "B09S6M7JQJ",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-10T13:57:46.222627+05:30",
+      "session_type": "morning",
+      "link_index": 256
+    },
+    {
+      "id": "product_morning_20260210_082744",
+      "title": "KUKLAR Wash Bag Pouch for Travel Kit Toiletry Bag Nylon Cosmetic Bag Make Up Box for Brushes, Accessories with Handle, L",
+      "image": "https://m.media-amazon.com/images/I/61+73kPJsrL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DG2DRF7X?tag=gadgetvill09f-21",
+      "price": "\u20b9185",
+      "rating": 3.9,
+      "category": "fashion",
+      "asin": "B0DG2DRF7X",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-10T13:57:44.359566+05:30",
+      "session_type": "morning",
+      "link_index": 256
+    },
     {
       "id": "product_morning_20260210_060122",
       "title": "Bevzilla 24 Coffee Sachets & Frother | 24 X 2 Gram Sachets | 6 Pouches Each Flavour | Caf\u00e9 Coffee Kit | Classic, Hazelnu",
