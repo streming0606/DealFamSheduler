@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-02-12T11:21:18.671774+05:30",
-  "total_products": 933,
+  "last_updated": "2026-02-12T13:54:36.323392+05:30",
+  "total_products": 935,
   "products": [
+    {
+      "id": "product_morning_20260212_082436",
+      "title": "MARVIK Smart Watch for Kids, Men, Boys, Girls, and Women, D20 Plus 2025, Latest for Android and iOS Phones, IP68 Waterpr",
+      "image": "https://m.media-amazon.com/images/I/51Q74o0dcYL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DS13WMCT?tag=gadgetvill09f-21",
+      "price": "\u20b9399",
+      "rating": 2.9,
+      "category": "electronics",
+      "asin": "B0DS13WMCT",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-12T13:54:36.323367+05:30",
+      "session_type": "morning",
+      "link_index": 272
+    },
+    {
+      "id": "product_morning_20260212_082434",
+      "title": "Rani Peach Float, Each 180g Pack of 12 (Imported)",
+      "image": "https://m.media-amazon.com/images/I/615LidZQaoL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FNCPKFP6?tag=gadgetvill09f-21",
+      "price": "\u20b9899",
+      "rating": 1.0,
+      "category": "electronics",
+      "asin": "B0FNCPKFP6",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-12T13:54:34.615302+05:30",
+      "session_type": "morning",
+      "link_index": 272
+    },
     {
       "id": "product_morning_20260212_055118",
       "title": "GROOTS Bee Venom foot patch Detox Foot patches Pain Relief Detox patch Cleansing Toxin Remover Foot Pads Detoxify Stress",
