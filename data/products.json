@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-02-12T19:26:58.816025+05:30",
-  "total_products": 937,
+  "last_updated": "2026-02-12T22:10:00.718177+05:30",
+  "total_products": 939,
   "products": [
+    {
+      "id": "product_morning_20260212_164000",
+      "title": "Lapster compatible for amazfit charger cable with GTS 2 Mini, GTS 2e, GTS 2, GTR 2, GTR 2e, GTR 2 eSIM, BIP U, BIP U Pro",
+      "image": "https://m.media-amazon.com/images/I/51T3qn9UBtS._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0B4BBZ9XD?tag=gadgetvill09f-21",
+      "price": "\u20b9149",
+      "rating": 3.4,
+      "category": "electronics",
+      "asin": "B0B4BBZ9XD",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-12T22:10:00.718136+05:30",
+      "session_type": "morning",
+      "link_index": 276
+    },
+    {
+      "id": "product_morning_20260212_163959",
+      "title": "NINQ Full Sleeve Compression T-Shirt - Athletic Base Layer Tights for Fitness",
+      "image": "https://m.media-amazon.com/images/I/51n4+ddZ63L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CZRHF22Y?tag=gadgetvill09f-21",
+      "price": "\u20b9326",
+      "rating": 4.0,
+      "category": "fashion",
+      "asin": "B0CZRHF22Y",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-12T22:09:59.286711+05:30",
+      "session_type": "morning",
+      "link_index": 276
+    },
     {
       "id": "product_morning_20260212_135658",
       "title": "Boldfit Weight Machine for Home Digital Weighing Machine for Human Body with LCD Display Max Weight Capacity 180Kgs (Bat",
