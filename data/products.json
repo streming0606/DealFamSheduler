@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-02-11T22:13:17.498106+05:30",
-  "total_products": 931,
+  "last_updated": "2026-02-12T11:21:18.671774+05:30",
+  "total_products": 933,
   "products": [
+    {
+      "id": "product_morning_20260212_055118",
+      "title": "GROOTS Bee Venom foot patch Detox Foot patches Pain Relief Detox patch Cleansing Toxin Remover Foot Pads Detoxify Stress",
+      "image": "https://m.media-amazon.com/images/I/618O7yKOKvL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0C7445FN9?tag=gadgetvill09f-21",
+      "price": "\u20b9291",
+      "rating": 3.9,
+      "category": "electronics",
+      "asin": "B0C7445FN9",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-12T11:21:18.671748+05:30",
+      "session_type": "morning",
+      "link_index": 270
+    },
+    {
+      "id": "product_morning_20260212_055116",
+      "title": "Dika Sports Custom Number and Number Cricket Sports Jersey Tshirt for Men | 2 Year to 5XL",
+      "image": "https://m.media-amazon.com/images/I/41pnLxoh3bL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FT8Q92KK?tag=gadgetvill09f-21",
+      "price": "\u20b9473",
+      "rating": 4.0,
+      "category": "fashion",
+      "asin": "B0FT8Q92KK",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-12T11:21:16.320204+05:30",
+      "session_type": "morning",
+      "link_index": 270
+    },
     {
       "id": "product_morning_20260211_164317",
       "title": "CHKOKKO Men Polyester Solid Active Sports Wear Polo Half Sleeve Gym T-Shirt with Button-Down Collar Quick Dry Breathable",
