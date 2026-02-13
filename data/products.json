@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-02-12T22:10:00.718177+05:30",
-  "total_products": 939,
+  "last_updated": "2026-02-13T11:17:11.063284+05:30",
+  "total_products": 941,
   "products": [
+    {
+      "id": "product_morning_20260213_054711",
+      "title": "BULLAR Men's Polyester Blend Compression T-Shirt, Half Sleeve Athletic Sports Tight, Crew Neck, Slim Fit, Black, for Fit",
+      "image": "https://m.media-amazon.com/images/I/71XRrgeoO2L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0G351G3CM?tag=gadgetvill09f-21",
+      "price": "\u20b9379",
+      "rating": 4.6,
+      "category": "fashion",
+      "asin": "B0G351G3CM",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-13T11:17:11.063257+05:30",
+      "session_type": "morning",
+      "link_index": 278
+    },
+    {
+      "id": "product_morning_20260213_054708",
+      "title": "Dr. Sheth's Ceramide & Vitamin C Oil-Free Sunscreen SPF 50+ PA++++ |In-Vivo Tested | For Healthy & Bright Skin | Lightwe",
+      "image": "https://m.media-amazon.com/images/I/61IbP+Jom8L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DVB9CGDS?tag=gadgetvill09f-21",
+      "price": "\u20b9386",
+      "rating": 4.2,
+      "category": "health",
+      "asin": "B0DVB9CGDS",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-13T11:17:08.531759+05:30",
+      "session_type": "morning",
+      "link_index": 278
+    },
     {
       "id": "product_morning_20260212_164000",
       "title": "Lapster compatible for amazfit charger cable with GTS 2 Mini, GTS 2e, GTS 2, GTR 2, GTR 2e, GTR 2 eSIM, BIP U, BIP U Pro",
