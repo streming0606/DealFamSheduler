@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-02-13T13:55:32.283749+05:30",
-  "total_products": 943,
+  "last_updated": "2026-02-13T19:17:57.913696+05:30",
+  "total_products": 945,
   "products": [
+    {
+      "id": "product_morning_20260213_134757",
+      "title": "Noise ColorFit Pulse 3 with 1.96\" Biggest Display Bluetooth Calling Smart Watch, Premium Build, Auto Sport Detection & 1",
+      "image": "https://m.media-amazon.com/images/I/61DEUVd9PwL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CQRQK8L8?tag=gadgetvill09f-21",
+      "price": "\u20b91,099",
+      "rating": 4.0,
+      "category": "fashion",
+      "asin": "B0CQRQK8L8",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-13T19:17:57.913659+05:30",
+      "session_type": "morning",
+      "link_index": 282
+    },
+    {
+      "id": "product_morning_20260213_134756",
+      "title": "Boat Lunar Discovery w/ 1.39\" (3.5 cm) HD Display, Turn-by-Turn Navigation, DIY Watch Face Studio, Bluetooth Calling, Em",
+      "image": "https://m.media-amazon.com/images/I/71gUAu2MwZL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DFYKMR8T?tag=gadgetvill09f-21",
+      "price": "\u20b91,299",
+      "rating": 3.9,
+      "category": "fashion",
+      "asin": "B0DFYKMR8T",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-13T19:17:56.725983+05:30",
+      "session_type": "morning",
+      "link_index": 282
+    },
     {
       "id": "product_morning_20260213_082532",
       "title": "CHKOKKO Tank Tops Sleeveless T-Shirt for Men Gym Wear Vest Graphic Printed Stylish Round Neck Running Sando for Sports W",
