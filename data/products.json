@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-02-13T11:17:11.063284+05:30",
-  "total_products": 941,
+  "last_updated": "2026-02-13T13:55:32.283749+05:30",
+  "total_products": 943,
   "products": [
+    {
+      "id": "product_morning_20260213_082532",
+      "title": "CHKOKKO Tank Tops Sleeveless T-Shirt for Men Gym Wear Vest Graphic Printed Stylish Round Neck Running Sando for Sports W",
+      "image": "https://m.media-amazon.com/images/I/41+suMTY3zL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CWVGGMJ8?tag=gadgetvill09f-21",
+      "price": "\u20b9314",
+      "rating": 3.9,
+      "category": "fashion",
+      "asin": "B0CWVGGMJ8",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-13T13:55:32.283715+05:30",
+      "session_type": "morning",
+      "link_index": 280
+    },
+    {
+      "id": "product_morning_20260213_082530",
+      "title": "Aromahpure Fragrance Oil | 15 ml | Lavender Aroma Oil for Home Fragrance | Best for Aromatherapy | Helps in Meditation |",
+      "image": "https://m.media-amazon.com/images/I/71ywxqy5KNL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0BZZHW9QB?tag=gadgetvill09f-21",
+      "price": "\u20b9179",
+      "rating": 4.0,
+      "category": "home",
+      "asin": "B0BZZHW9QB",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-13T13:55:30.604471+05:30",
+      "session_type": "morning",
+      "link_index": 280
+    },
     {
       "id": "product_morning_20260213_054711",
       "title": "BULLAR Men's Polyester Blend Compression T-Shirt, Half Sleeve Athletic Sports Tight, Crew Neck, Slim Fit, Black, for Fit",
