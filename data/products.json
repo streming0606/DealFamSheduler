@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-02-13T21:56:49.364002+05:30",
-  "total_products": 947,
+  "last_updated": "2026-02-14T11:03:40.540121+05:30",
+  "total_products": 949,
   "products": [
+    {
+      "id": "product_morning_20260214_053340",
+      "title": "Noise Diva 2 Fashion Smart Watch for Women - Sleekest Dial, 36mm AMOLED Display, Snug Fit, Improved Female Cycle Tracker",
+      "image": "https://m.media-amazon.com/images/I/81Qujc-qLGL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0D7QK57R7?tag=gadgetvill09f-21",
+      "price": "\u20b93,999",
+      "rating": 4.1,
+      "category": "fashion",
+      "asin": "B0D7QK57R7",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-14T11:03:40.540094+05:30",
+      "session_type": "morning",
+      "link_index": 286
+    },
+    {
+      "id": "product_morning_20260214_053338",
+      "title": "ADRO Tshirt for Men | Printed T Shirt for Men | 100% Cotton Regular Fit T-Shirt |Printed T Shirt",
+      "image": "https://m.media-amazon.com/images/I/519cECQlGoL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0D7LZT852?tag=gadgetvill09f-21",
+      "price": "\u20b9499",
+      "rating": 4.0,
+      "category": "fashion",
+      "asin": "B0D7LZT852",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-14T11:03:38.853650+05:30",
+      "session_type": "morning",
+      "link_index": 286
+    },
     {
       "id": "product_morning_20260213_162649",
       "title": "Boldfit Spider Gym Shaker Bottle, Shakers for Protein Shake with 2 Storage Compartment Gym protein shaker for workout",
