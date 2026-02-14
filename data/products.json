@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-02-14T11:03:40.540121+05:30",
-  "total_products": 949,
+  "last_updated": "2026-02-14T13:28:36.373730+05:30",
+  "total_products": 951,
   "products": [
+    {
+      "id": "product_afternoon_20260214_075836",
+      "title": "Noise ColorFit Pro 5 Max 1.96\" AMOLED Display Smart Watch, BT Calling, Post Training Workout Analysis, VO2 Max, Rapid He",
+      "image": "https://m.media-amazon.com/images/I/71JlraIYaPL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CFYKRMWS?tag=gadgetvill09f-21",
+      "price": "\u20b92,499",
+      "rating": 4.0,
+      "category": "fashion",
+      "asin": "B0CFYKRMWS",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-14T13:28:36.373702+05:30",
+      "session_type": "afternoon",
+      "link_index": 288
+    },
+    {
+      "id": "product_afternoon_20260214_075835",
+      "title": "Peter England Men's Regular Fit Insignia Half Sleeve Polo T-Shirt | Cotton Rich | Premium Pique Weave",
+      "image": "https://m.media-amazon.com/images/I/81V9Cw7P4tL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B09XMV6125?tag=gadgetvill09f-21",
+      "price": "\u20b9605",
+      "rating": 4.0,
+      "category": "fashion",
+      "asin": "B09XMV6125",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-14T13:28:35.069493+05:30",
+      "session_type": "afternoon",
+      "link_index": 288
+    },
     {
       "id": "product_morning_20260214_053340",
       "title": "Noise Diva 2 Fashion Smart Watch for Women - Sleekest Dial, 36mm AMOLED Display, Snug Fit, Improved Female Cycle Tracker",
