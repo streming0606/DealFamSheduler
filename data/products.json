@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-02-14T13:28:36.373730+05:30",
-  "total_products": 951,
+  "last_updated": "2026-02-14T19:01:13.921252+05:30",
+  "total_products": 953,
   "products": [
+    {
+      "id": "product_morning_20260214_133113",
+      "title": "AGARO COSMIC LITE Sonic Electric Tooth Brush For Adults With 5 Modes, 2 Brush Heads & Rechargeable With 4 Hours Charge L",
+      "image": "https://m.media-amazon.com/images/I/51k-u2jecAL._AC_UY218_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DTF6JY8R?tag=gadgetvill09f-21",
+      "price": "\u20b9449",
+      "rating": 4.1,
+      "category": "electronics",
+      "asin": "B0DTF6JY8R",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-14T19:01:13.921219+05:30",
+      "session_type": "morning",
+      "link_index": 290
+    },
+    {
+      "id": "product_morning_20260214_133112",
+      "title": "Fire-Boltt Phoenix Pro Round Smart Watch 1.39\u2033 HD Display with Bluetooth Calling, AI Voice Assistant, SpO2 & Heart Rate ",
+      "image": "https://m.media-amazon.com/images/I/61Cx3vx0mLL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DY7YPBJL?tag=gadgetvill09f-21",
+      "price": "\u20b91,299",
+      "rating": 3.8,
+      "category": "fashion",
+      "asin": "B0DY7YPBJL",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-14T19:01:12.150949+05:30",
+      "session_type": "morning",
+      "link_index": 290
+    },
     {
       "id": "product_afternoon_20260214_075836",
       "title": "Noise ColorFit Pro 5 Max 1.96\" AMOLED Display Smart Watch, BT Calling, Post Training Workout Analysis, VO2 Max, Rapid He",
