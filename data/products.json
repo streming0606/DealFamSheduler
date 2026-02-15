@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-02-14T21:27:57.931217+05:30",
-  "total_products": 955,
+  "last_updated": "2026-02-15T11:13:23.569818+05:30",
+  "total_products": 957,
   "products": [
+    {
+      "id": "product_morning_20260215_054323",
+      "title": "Liberty Eco Adult Diaper Pants, Medium (M) Size, 20 Count, Waist Size (61-115cm | 24-45 inches), Unisex, High Absorbency",
+      "image": "https://m.media-amazon.com/images/I/616nfLrzH3L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07S7R4JFK?tag=gadgetvill09f-21",
+      "price": "\u20b9392",
+      "rating": 4.1,
+      "category": "electronics",
+      "asin": "B07S7R4JFK",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-15T11:13:23.569792+05:30",
+      "session_type": "morning",
+      "link_index": 294
+    },
+    {
+      "id": "product_morning_20260215_054317",
+      "title": "Macroman M-Series Men's Regular Lounger",
+      "image": "https://m.media-amazon.com/images/I/515YHXto8jL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CHVQRPYM?tag=gadgetvill09f-21",
+      "price": "\u20b9799",
+      "rating": 3.7,
+      "category": "electronics",
+      "asin": "B0CHVQRPYM",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-15T11:13:17.055326+05:30",
+      "session_type": "morning",
+      "link_index": 294
+    },
     {
       "id": "product_night_20260214_155757",
       "title": "Quada Compression Men's Skin Tight Shorts for Gym, Running, Cycling, Swimming, Basketball, Cricket, Yoga, Football, Tenn",
