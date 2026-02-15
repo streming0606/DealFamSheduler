@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-02-15T11:13:23.569818+05:30",
-  "total_products": 957,
+  "last_updated": "2026-02-15T13:30:04.497269+05:30",
+  "total_products": 959,
   "products": [
+    {
+      "id": "product_afternoon_20260215_080004",
+      "title": "pTron Orbis Era Smart Glasses with Bluetooth V5.4, Open Ear Music, Handsfree Calls, Protects Eye from Blue Light Emitted",
+      "image": "https://m.media-amazon.com/images/I/51e5DPLNpRL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FXB2BLW1?tag=gadgetvill09f-21",
+      "price": "\u20b91,499",
+      "rating": 4.0,
+      "category": "electronics",
+      "asin": "B0FXB2BLW1",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-15T13:30:04.497215+05:30",
+      "session_type": "afternoon",
+      "link_index": 296
+    },
+    {
+      "id": "product_afternoon_20260215_080003",
+      "title": "ATICX Slim Fit Polyester Sports T-Shirt for Men - Round Neck Quick Dry Fit Half Sleeve Breathable Stylish Gym & Workout ",
+      "image": "https://m.media-amazon.com/images/I/51euN4aKcjL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FN1WWB21?tag=gadgetvill09f-21",
+      "price": "\u20b9474",
+      "rating": 3.9,
+      "category": "fashion",
+      "asin": "B0FN1WWB21",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-15T13:30:03.232389+05:30",
+      "session_type": "afternoon",
+      "link_index": 296
+    },
     {
       "id": "product_morning_20260215_054323",
       "title": "Liberty Eco Adult Diaper Pants, Medium (M) Size, 20 Count, Waist Size (61-115cm | 24-45 inches), Unisex, High Absorbency",
