@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-02-15T19:02:33.017919+05:30",
-  "total_products": 961,
+  "last_updated": "2026-02-15T21:27:41.223604+05:30",
+  "total_products": 963,
   "products": [
+    {
+      "id": "product_night_20260215_155741",
+      "title": "Spigen Eliteshield EZ Fit Screen Protector EPU Film for Apple Watch 11 (46mm) / 10 (46mm) [2 Pack]",
+      "image": "https://m.media-amazon.com/images/I/61+dLtDceVL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0D9MNL7CX?tag=gadgetvill09f-21",
+      "price": "\u20b9999",
+      "rating": 3.6,
+      "category": "fashion",
+      "asin": "B0D9MNL7CX",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-15T21:27:41.223570+05:30",
+      "session_type": "night",
+      "link_index": 0
+    },
+    {
+      "id": "product_night_20260215_155739",
+      "title": "Boldfit Tshirt for Man Regular fit Gym t Shirts for Men Workout Active wear t Shirt for Man Running Mens t-Shirts Runnin",
+      "image": "https://m.media-amazon.com/images/I/6187vimevSL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0D93N3DWM?tag=gadgetvill09f-21",
+      "price": "\u20b9512",
+      "rating": 4.2,
+      "category": "fashion",
+      "asin": "B0D93N3DWM",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-15T21:27:40.000024+05:30",
+      "session_type": "night",
+      "link_index": 0
+    },
     {
       "id": "product_morning_20260215_133233",
       "title": "Pokonut Ayurvedic Stretch Mark Cream | Improves appearance of Fresh and Mature Stretch Marks | Infused with Hyaluronic A",
