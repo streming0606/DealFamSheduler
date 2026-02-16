@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-02-16T13:55:52.350671+05:30",
-  "total_products": 967,
+  "last_updated": "2026-02-16T19:21:45.245988+05:30",
+  "total_products": 969,
   "products": [
+    {
+      "id": "product_morning_20260216_135145",
+      "title": "Compression Vest Tank Body Shaper Without Sleeve for Men - Gym Shirt for Men Men Shapewear - Keep Dry Tight Skin Fit - B",
+      "image": "https://m.media-amazon.com/images/I/61NzbOOE5xL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DJD9P5X5?tag=gadgetvill09f-21",
+      "price": "\u20b9474",
+      "rating": 4.6,
+      "category": "fashion",
+      "asin": "B0DJD9P5X5",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-16T19:21:45.245956+05:30",
+      "session_type": "morning",
+      "link_index": 6
+    },
+    {
+      "id": "product_morning_20260216_135143",
+      "title": "INEFABLE 20mm SmartWatch Strap Compatible With Amazfit GTS 2 Mini, Bip U/Pro/Lite, GTS/2e, Samsung Galaxy Watch 4/5 and ",
+      "image": "https://m.media-amazon.com/images/I/41olFlvbK3L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0C71RQHMW?tag=gadgetvill09f-21",
+      "price": "\u20b9146",
+      "rating": 3.8,
+      "category": "fashion",
+      "asin": "B0C71RQHMW",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-16T19:21:43.017670+05:30",
+      "session_type": "morning",
+      "link_index": 6
+    },
     {
       "id": "product_morning_20260216_082552",
       "title": "Reebok Men\u2019s Cotton T-Shirt, Regular Fit Casual T-Shirt, Round Neck Half Sleeve Tee",
