@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-02-16T11:23:49.577320+05:30",
-  "total_products": 965,
+  "last_updated": "2026-02-16T13:55:52.350671+05:30",
+  "total_products": 967,
   "products": [
+    {
+      "id": "product_morning_20260216_082552",
+      "title": "Reebok Men\u2019s Cotton T-Shirt, Regular Fit Casual T-Shirt, Round Neck Half Sleeve Tee",
+      "image": "https://m.media-amazon.com/images/I/61bzQgtboSL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0D6NDXYQM?tag=gadgetvill09f-21",
+      "price": "\u20b9629",
+      "rating": 4.0,
+      "category": "fashion",
+      "asin": "B0D6NDXYQM",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-16T13:55:52.350637+05:30",
+      "session_type": "morning",
+      "link_index": 4
+    },
+    {
+      "id": "product_morning_20260216_082545",
+      "title": "Soft Velvet Electric Rechargeable hot Water Heating Bag/Hot Bottle Pouch Pad with Auto Cut for Pain Relief and Body Warm",
+      "image": "https://m.media-amazon.com/images/I/71IqyPaOrvL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CNY17TTZ?tag=gadgetvill09f-21",
+      "price": "\u20b9199",
+      "rating": 4.3,
+      "category": "fashion",
+      "asin": "B0CNY17TTZ",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-16T13:55:45.632671+05:30",
+      "session_type": "morning",
+      "link_index": 4
+    },
     {
       "id": "product_morning_20260216_055349",
       "title": "Wisely Protective Case Cover Compatible For Samsung Galaxy Fit 3 Smart Watch Full Screen Protector Soft Case HD Clear, T",
