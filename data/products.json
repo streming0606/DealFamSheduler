@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-02-16T19:21:45.245988+05:30",
-  "total_products": 969,
+  "last_updated": "2026-02-16T21:54:48.946894+05:30",
+  "total_products": 971,
   "products": [
+    {
+      "id": "product_morning_20260216_162448",
+      "title": "ELECTOMANIA \u00ae 500ML Plastic Retractable Handheld Bidet Portable of Antislip, Bidet Angled Nozzle Spray with Travel Bag (",
+      "image": "https://m.media-amazon.com/images/I/61upNDLhFNL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B09GLTW99D?tag=gadgetvill09f-21",
+      "price": "\u20b9319",
+      "rating": 4.1,
+      "category": "fashion",
+      "asin": "B09GLTW99D",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-16T21:54:48.946865+05:30",
+      "session_type": "morning",
+      "link_index": 8
+    },
+    {
+      "id": "product_morning_20260216_162441",
+      "title": "Robustt Heavy Duty Rubber Hand gloves - 1 Pair (Free Size, Black) for Dishwashing, gardening, kitchen cleaning",
+      "image": "https://m.media-amazon.com/images/I/61eFAoqoLhL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FB8VFDXZ?tag=gadgetvill09f-21",
+      "price": "\u20b999",
+      "rating": 4.1,
+      "category": "home",
+      "asin": "B0FB8VFDXZ",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-16T21:54:41.486208+05:30",
+      "session_type": "morning",
+      "link_index": 8
+    },
     {
       "id": "product_morning_20260216_135145",
       "title": "Compression Vest Tank Body Shaper Without Sleeve for Men - Gym Shirt for Men Men Shapewear - Keep Dry Tight Skin Fit - B",
