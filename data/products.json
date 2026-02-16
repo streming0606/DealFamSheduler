@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-02-15T21:27:41.223604+05:30",
-  "total_products": 963,
+  "last_updated": "2026-02-16T11:23:49.577320+05:30",
+  "total_products": 965,
   "products": [
+    {
+      "id": "product_morning_20260216_055349",
+      "title": "Wisely Protective Case Cover Compatible For Samsung Galaxy Fit 3 Smart Watch Full Screen Protector Soft Case HD Clear, T",
+      "image": "https://m.media-amazon.com/images/I/61zt2zUFFfL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0D3XPQJHL?tag=gadgetvill09f-21",
+      "price": "\u20b9199",
+      "rating": 3.6,
+      "category": "fashion",
+      "asin": "B0D3XPQJHL",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-16T11:23:49.577293+05:30",
+      "session_type": "morning",
+      "link_index": 2
+    },
+    {
+      "id": "product_morning_20260216_055348",
+      "title": "Carbamide Forte Vitamin D3 60000",
+      "image": "https://m.media-amazon.com/images/I/7145idj2xDL._AC_UY218_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0F2HZJ24W?tag=gadgetvill09f-21",
+      "price": "\u20b9424",
+      "rating": 4.6,
+      "category": "health",
+      "asin": "B0F2HZJ24W",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-16T11:23:48.111079+05:30",
+      "session_type": "morning",
+      "link_index": 2
+    },
     {
       "id": "product_night_20260215_155741",
       "title": "Spigen Eliteshield EZ Fit Screen Protector EPU Film for Apple Watch 11 (46mm) / 10 (46mm) [2 Pack]",
