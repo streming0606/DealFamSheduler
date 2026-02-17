@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-02-17T19:22:37.235497+05:30",
-  "total_products": 977,
+  "last_updated": "2026-02-17T22:09:04.302947+05:30",
+  "total_products": 979,
   "products": [
+    {
+      "id": "product_morning_20260217_163904",
+      "title": "Amazon Product B0G5F8Y8NT",
+      "image": "https://m.media-amazon.com/images/I/B0G5F8Y8NT._AC_SL1500_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0G5F8Y8NT?tag=gadgetvill09f-21",
+      "price": "\u20b9Special Price",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B0G5F8Y8NT",
+      "data_source": "fallback",
+      "posted_date": "2026-02-17T22:09:04.302913+05:30",
+      "session_type": "morning",
+      "link_index": 16
+    },
+    {
+      "id": "product_morning_20260217_163902",
+      "title": "GameSir Premium Luxurious Gen 9 Smartwatch, HD Display Gold Metal Strap & Activity Tracker, Bluetooth Calling, Customiza",
+      "image": "https://m.media-amazon.com/images/I/71qL-Y5ML4L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0D318L7L6?tag=gadgetvill09f-21",
+      "price": "\u20b91,299",
+      "rating": 3.9,
+      "category": "fashion",
+      "asin": "B0D318L7L6",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-17T22:09:02.025832+05:30",
+      "session_type": "morning",
+      "link_index": 16
+    },
     {
       "id": "product_morning_20260217_135237",
       "title": "Boat Ultima Prime smartwatch with 1.43\u201d AMOLED Display, AOD, Personalized Fitness Nudges, Functional Crown,100+ Sports M",
