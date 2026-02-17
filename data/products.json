@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-02-17T11:16:17.320050+05:30",
-  "total_products": 973,
+  "last_updated": "2026-02-17T13:56:05.754088+05:30",
+  "total_products": 975,
   "products": [
+    {
+      "id": "product_morning_20260217_082605",
+      "title": "Fire-Boltt Axiom Round Smart Watch 1.43\u2033 Super AMOLED Display with Always\u2011On Mode, Bluetooth Calling, Rotating Crown, SP",
+      "image": "https://m.media-amazon.com/images/I/71H3hvGcR1L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FP2FXTYC?tag=gadgetvill09f-21",
+      "price": "\u20b91,999",
+      "rating": 3.9,
+      "category": "fashion",
+      "asin": "B0FP2FXTYC",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-17T13:56:05.754061+05:30",
+      "session_type": "morning",
+      "link_index": 12
+    },
+    {
+      "id": "product_morning_20260217_082603",
+      "title": "Sounce Silicone 19mm Replacement Band Strap with Metal Buckle Compatible with Fire-Boltt, boAt, Noise, Amazfit",
+      "image": "https://m.media-amazon.com/images/I/416Ada5LkZL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B09TPNW436?tag=gadgetvill09f-21",
+      "price": "\u20b9149",
+      "rating": 3.8,
+      "category": "electronics",
+      "asin": "B09TPNW436",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-17T13:56:03.275351+05:30",
+      "session_type": "morning",
+      "link_index": 12
+    },
     {
       "id": "product_morning_20260217_054617",
       "title": "CrossBeats Diva 1.28\u201d Stylish Smart Watch for Women with Stone Studded Bezel| Amoled Display | Female Health Tracker | 1",
