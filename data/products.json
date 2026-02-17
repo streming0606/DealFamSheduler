@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-02-17T13:56:05.754088+05:30",
-  "total_products": 975,
+  "last_updated": "2026-02-17T19:22:37.235497+05:30",
+  "total_products": 977,
   "products": [
+    {
+      "id": "product_morning_20260217_135237",
+      "title": "Boat Ultima Prime smartwatch with 1.43\u201d AMOLED Display, AOD, Personalized Fitness Nudges, Functional Crown,100+ Sports M",
+      "image": "https://m.media-amazon.com/images/I/71lLOUgda9L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DSFQ2RLV?tag=gadgetvill09f-21",
+      "price": "\u20b92,199",
+      "rating": 4.0,
+      "category": "fashion",
+      "asin": "B0DSFQ2RLV",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-17T19:22:37.235465+05:30",
+      "session_type": "morning",
+      "link_index": 14
+    },
+    {
+      "id": "product_morning_20260217_135235",
+      "title": "HUMBLE 2 Pin Magnetic Charging Cable Compatible with boAt Storm, boAt Xtend, W26, W26+ Smartwatch | Fast USB Charger for",
+      "image": "https://m.media-amazon.com/images/I/61NyyIJ1mrL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0G48V9KGF?tag=gadgetvill09f-21",
+      "price": "\u20b9148",
+      "rating": 4.2,
+      "category": "electronics",
+      "asin": "B0G48V9KGF",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-17T19:22:35.040312+05:30",
+      "session_type": "morning",
+      "link_index": 14
+    },
     {
       "id": "product_morning_20260217_082605",
       "title": "Fire-Boltt Axiom Round Smart Watch 1.43\u2033 Super AMOLED Display with Always\u2011On Mode, Bluetooth Calling, Rotating Crown, SP",
