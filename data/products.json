@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-02-16T21:54:48.946894+05:30",
-  "total_products": 971,
+  "last_updated": "2026-02-17T11:16:17.320050+05:30",
+  "total_products": 973,
   "products": [
+    {
+      "id": "product_morning_20260217_054617",
+      "title": "CrossBeats Diva 1.28\u201d Stylish Smart Watch for Women with Stone Studded Bezel| Amoled Display | Female Health Tracker | 1",
+      "image": "https://m.media-amazon.com/images/I/715SJSOIX5L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CJ598VYJ?tag=gadgetvill09f-21",
+      "price": "\u20b93,499",
+      "rating": 4.2,
+      "category": "fashion",
+      "asin": "B0CJ598VYJ",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-17T11:16:17.320014+05:30",
+      "session_type": "morning",
+      "link_index": 10
+    },
+    {
+      "id": "product_morning_20260217_054615",
+      "title": "FUAARK Men's Half Sleeve Compression T-Shirt - Athletic Base Layer for Fitness",
+      "image": "https://m.media-amazon.com/images/I/514b9O2aZNL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0B51RHVXM?tag=gadgetvill09f-21",
+      "price": "\u20b9923",
+      "rating": 4.1,
+      "category": "fashion",
+      "asin": "B0B51RHVXM",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-17T11:16:15.612309+05:30",
+      "session_type": "morning",
+      "link_index": 10
+    },
     {
       "id": "product_morning_20260216_162448",
       "title": "ELECTOMANIA \u00ae 500ML Plastic Retractable Handheld Bidet Portable of Antislip, Bidet Angled Nozzle Spray with Travel Bag (",
