@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-02-17T22:09:04.302947+05:30",
-  "total_products": 979,
+  "last_updated": "2026-02-18T11:17:32.840809+05:30",
+  "total_products": 981,
   "products": [
+    {
+      "id": "product_morning_20260218_054732",
+      "title": "DAMENSCH Neo-Cotton Round Neck Vest for Man, Anti-Bacterial, Shape Retaining Vest, 100% Cotton Banyan for Men, Buttery S",
+      "image": "https://m.media-amazon.com/images/I/71ZXgfR4ZAL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0BHXKJVWP?tag=gadgetvill09f-21",
+      "price": "\u20b9301",
+      "rating": 4.2,
+      "category": "electronics",
+      "asin": "B0BHXKJVWP",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-18T11:17:32.840782+05:30",
+      "session_type": "morning",
+      "link_index": 18
+    },
+    {
+      "id": "product_morning_20260218_054731",
+      "title": "Rushwak 3 in 1 Long Handle Bathroom Cleaning Brush with Wiper, 180\u00b0 Rotate for Floor/Toilet Cleaning (Multicolor)",
+      "image": "https://m.media-amazon.com/images/I/61NBNJXmGYL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0BNJFB321?tag=gadgetvill09f-21",
+      "price": "\u20b9399",
+      "rating": 3.6,
+      "category": "health",
+      "asin": "B0BNJFB321",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-18T11:17:31.293054+05:30",
+      "session_type": "morning",
+      "link_index": 18
+    },
     {
       "id": "product_morning_20260217_163904",
       "title": "Amazon Product B0G5F8Y8NT",
