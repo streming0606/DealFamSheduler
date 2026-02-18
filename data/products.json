@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-02-18T19:23:57.076503+05:30",
-  "total_products": 985,
+  "last_updated": "2026-02-18T22:13:54.488233+05:30",
+  "total_products": 987,
   "products": [
+    {
+      "id": "product_morning_20260218_164354",
+      "title": "Sounce Silicone 22mm Replacement Band Strap with Metal Buckle Compatible with Fire-Boltt, Boat, Noise, Amazfit, beatXp &",
+      "image": "https://m.media-amazon.com/images/I/512JHEYZTnL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0B9YD9PH4?tag=gadgetvill09f-21",
+      "price": "\u20b9299",
+      "rating": 3.9,
+      "category": "electronics",
+      "asin": "B0B9YD9PH4",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-18T22:13:54.488206+05:30",
+      "session_type": "morning",
+      "link_index": 24
+    },
+    {
+      "id": "product_morning_20260218_164353",
+      "title": "Carbamide Forte Cod Liver Oil Capsules Omega 3 Supplement | Sea cod Liver Oil, Omega 3 FishOil Capsules 300mg | Omega3 F",
+      "image": "https://m.media-amazon.com/images/I/71gzCxLz8ZL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FL26QTW9?tag=gadgetvill09f-21",
+      "price": "\u20b9275",
+      "rating": 4.3,
+      "category": "fashion",
+      "asin": "B0FL26QTW9",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-18T22:13:53.529469+05:30",
+      "session_type": "morning",
+      "link_index": 24
+    },
     {
       "id": "product_morning_20260218_135357",
       "title": "GOBOULT Fluid X Headphones Bluetooth Wireless with 60H Playtime, 40mm Drivers, Zen ENC Mic, Type-C Charging, Combat Gami",
