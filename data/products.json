@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-02-18T11:17:32.840809+05:30",
-  "total_products": 981,
+  "last_updated": "2026-02-18T13:54:51.543792+05:30",
+  "total_products": 983,
   "products": [
+    {
+      "id": "product_morning_20260218_082451",
+      "title": "Sounce USB Magnetic Charging Cable for BoAt Xtend/Xtend Pro/Storm/Storm 1.3\" Curved Display/Xplorer/Wave Connect/Wave Be",
+      "image": "https://m.media-amazon.com/images/I/71Dr1UOkcaL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CX9DBYTQ?tag=gadgetvill09f-21",
+      "price": "\u20b9149",
+      "rating": 3.4,
+      "category": "electronics",
+      "asin": "B0CX9DBYTQ",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-18T13:54:51.543760+05:30",
+      "session_type": "morning",
+      "link_index": 20
+    },
+    {
+      "id": "product_morning_20260218_082450",
+      "title": "PLETHEON Posture Corrector Belt for Men & Women \u2013 Adjustable Back Brace for Spine Alignment, Shoulder & Upper Back Pain ",
+      "image": "https://m.media-amazon.com/images/I/71JNltfS7uL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CBMTNKPZ?tag=gadgetvill09f-21",
+      "price": "\u20b9236",
+      "rating": 3.7,
+      "category": "home",
+      "asin": "B0CBMTNKPZ",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-18T13:54:50.412320+05:30",
+      "session_type": "morning",
+      "link_index": 20
+    },
     {
       "id": "product_morning_20260218_054732",
       "title": "DAMENSCH Neo-Cotton Round Neck Vest for Man, Anti-Bacterial, Shape Retaining Vest, 100% Cotton Banyan for Men, Buttery S",
