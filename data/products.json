@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-02-19T11:15:31.963971+05:30",
-  "total_products": 989,
+  "last_updated": "2026-02-19T13:54:57.273576+05:30",
+  "total_products": 991,
   "products": [
+    {
+      "id": "product_morning_20260219_082457",
+      "title": "AUSK Men Vest || Gym Tshirt for Men || Karma Printed Sleeveless Regular Fit T Shirt for Mens",
+      "image": "https://m.media-amazon.com/images/I/71sfmqKrOPL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0D32QKW25?tag=gadgetvill09f-21",
+      "price": "\u20b9195",
+      "rating": 3.8,
+      "category": "fashion",
+      "asin": "B0D32QKW25",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-19T13:54:57.273541+05:30",
+      "session_type": "morning",
+      "link_index": 28
+    },
+    {
+      "id": "product_morning_20260219_082455",
+      "title": "Bouncefit M I D116 Fitness Band Smart Watch for Men, Women, Boys, Girls, Kids \u2013 Single Touch Interface, Water Resistant,",
+      "image": "https://m.media-amazon.com/images/I/61Q2aOIpXZL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0D26YL3VP?tag=gadgetvill09f-21",
+      "price": "\u20b9398",
+      "rating": 3.3,
+      "category": "fashion",
+      "asin": "B0D26YL3VP",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-19T13:54:55.777062+05:30",
+      "session_type": "morning",
+      "link_index": 28
+    },
     {
       "id": "product_morning_20260219_054531",
       "title": "PROSHARX Full Sleeve Compression T-Shirt - Athletic Base Layer Tights for Fitness",
