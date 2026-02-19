@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-02-18T22:13:54.488233+05:30",
-  "total_products": 987,
+  "last_updated": "2026-02-19T11:15:31.963971+05:30",
+  "total_products": 989,
   "products": [
+    {
+      "id": "product_morning_20260219_054531",
+      "title": "PROSHARX Full Sleeve Compression T-Shirt - Athletic Base Layer Tights for Fitness",
+      "image": "https://m.media-amazon.com/images/I/41fTQjFlpPL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CL34SFVV?tag=gadgetvill09f-21",
+      "price": "\u20b9398",
+      "rating": 3.9,
+      "category": "fashion",
+      "asin": "B0CL34SFVV",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-19T11:15:31.963936+05:30",
+      "session_type": "morning",
+      "link_index": 26
+    },
+    {
+      "id": "product_morning_20260219_054530",
+      "title": "Boat Storm Call 3 w/TBT Navigation, Daily Activity Tracker, DIY Watch Face Studio,700+ Active Modes, 1.83\" (4.6 cm) HD D",
+      "image": "https://m.media-amazon.com/images/I/61A9rFdBjtL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0D5LRGSCR?tag=gadgetvill09f-21",
+      "price": "\u20b91,499",
+      "rating": 4.0,
+      "category": "fashion",
+      "asin": "B0D5LRGSCR",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-19T11:15:30.172968+05:30",
+      "session_type": "morning",
+      "link_index": 26
+    },
     {
       "id": "product_morning_20260218_164354",
       "title": "Sounce Silicone 22mm Replacement Band Strap with Metal Buckle Compatible with Fire-Boltt, Boat, Noise, Amazfit, beatXp &",
