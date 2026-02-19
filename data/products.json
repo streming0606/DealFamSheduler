@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-02-19T13:54:57.273576+05:30",
-  "total_products": 991,
+  "last_updated": "2026-02-19T19:26:01.124521+05:30",
+  "total_products": 993,
   "products": [
+    {
+      "id": "product_morning_20260219_135601",
+      "title": "NINQ Mens Skinny Fit Gym T-Shirt \u2013 Dry Fit Gym Wear for Training, Running, Fitness Workouts, Sports, Athletic Performanc",
+      "image": "https://m.media-amazon.com/images/I/611LPlsgNnL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FZKQ7WJ3?tag=gadgetvill09f-21",
+      "price": "\u20b9476",
+      "rating": 4.2,
+      "category": "fashion",
+      "asin": "B0FZKQ7WJ3",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-19T19:26:01.124484+05:30",
+      "session_type": "morning",
+      "link_index": 30
+    },
+    {
+      "id": "product_morning_20260219_135559",
+      "title": "Fire-Boltt Ninja Call Pro Max Ultra Bluetooth Calling Smart Watch, 2.01\" HD Display, 120+ Sports Modes, Health Suite, AI",
+      "image": "https://m.media-amazon.com/images/I/81SlBXOvF3L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DKC1XQL3?tag=gadgetvill09f-21",
+      "price": "\u20b91,199",
+      "rating": 3.9,
+      "category": "fashion",
+      "asin": "B0DKC1XQL3",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-19T19:25:59.234162+05:30",
+      "session_type": "morning",
+      "link_index": 30
+    },
     {
       "id": "product_morning_20260219_082457",
       "title": "AUSK Men Vest || Gym Tshirt for Men || Karma Printed Sleeveless Regular Fit T Shirt for Mens",
