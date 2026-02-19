@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-02-19T19:26:01.124521+05:30",
-  "total_products": 993,
+  "last_updated": "2026-02-19T22:04:10.810667+05:30",
+  "total_products": 995,
   "products": [
+    {
+      "id": "product_morning_20260219_163410",
+      "title": "Bonkaso Spin Mop with Stainless Steel Wringer & Big Wheels | 360\u00b0 Rotating Mop, Adjustable Handle | Easy Floor Cleaning ",
+      "image": "https://m.media-amazon.com/images/I/71Ly0wXwvRL._AC_UY218_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0F942RR2N?tag=gadgetvill09f-21",
+      "price": "\u20b91,108",
+      "rating": 3.9,
+      "category": "home",
+      "asin": "B0F942RR2N",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-19T22:04:10.810638+05:30",
+      "session_type": "morning",
+      "link_index": 32
+    },
+    {
+      "id": "product_morning_20260219_163408",
+      "title": "ATICX Men's Polyester Sports Sleeveless T Shirt - Gym Vest, Workout Sando, Training Tank Top, Cut Sleeves Quick Dry Tee ",
+      "image": "https://m.media-amazon.com/images/I/51fXg4frmxL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CZJB3L6R?tag=gadgetvill09f-21",
+      "price": "\u20b9474",
+      "rating": 4.1,
+      "category": "fashion",
+      "asin": "B0CZJB3L6R",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-19T22:04:08.783831+05:30",
+      "session_type": "morning",
+      "link_index": 32
+    },
     {
       "id": "product_morning_20260219_135601",
       "title": "NINQ Mens Skinny Fit Gym T-Shirt \u2013 Dry Fit Gym Wear for Training, Running, Fitness Workouts, Sports, Athletic Performanc",
