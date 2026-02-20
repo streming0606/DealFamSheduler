@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-02-20T11:11:30.189641+05:30",
-  "total_products": 997,
+  "last_updated": "2026-02-20T13:36:58.674941+05:30",
+  "total_products": 999,
   "products": [
+    {
+      "id": "product_morning_20260220_080658",
+      "title": "Amazon Brand - Symbol Men's Color Block Active Regular Fit Sports T-Shirt | Round Neck | Sleeveless (Available in Plus S",
+      "image": "https://m.media-amazon.com/images/I/71uncgJqR2L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0C94GX2B3?tag=gadgetvill09f-21",
+      "price": "\u20b9329",
+      "rating": 4.1,
+      "category": "fashion",
+      "asin": "B0C94GX2B3",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-20T13:36:58.674916+05:30",
+      "session_type": "morning",
+      "link_index": 36
+    },
+    {
+      "id": "product_morning_20260220_080656",
+      "title": "Spigen Rugged Armor Pro for Samsung Galaxy Watch 7 44mm Case with Strap Band - Matte Black",
+      "image": "https://m.media-amazon.com/images/I/61w+uO9YLtL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0D5JLTMHB?tag=gadgetvill09f-21",
+      "price": "\u20b91,699",
+      "rating": 4.2,
+      "category": "fashion",
+      "asin": "B0D5JLTMHB",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-20T13:36:56.341856+05:30",
+      "session_type": "morning",
+      "link_index": 36
+    },
     {
       "id": "product_morning_20260220_054130",
       "title": "Van Heusen Men's Cotton Solid Regular Fit Collar Polo T-Shirt",
