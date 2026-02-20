@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-02-19T22:04:10.810667+05:30",
-  "total_products": 995,
+  "last_updated": "2026-02-20T11:11:30.189641+05:30",
+  "total_products": 997,
   "products": [
+    {
+      "id": "product_morning_20260220_054130",
+      "title": "Van Heusen Men's Cotton Solid Regular Fit Collar Polo T-Shirt",
+      "image": "https://m.media-amazon.com/images/I/51U504AJ2YL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DF7D2Z49?tag=gadgetvill09f-21",
+      "price": "\u20b9699",
+      "rating": 4.0,
+      "category": "fashion",
+      "asin": "B0DF7D2Z49",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-20T11:11:30.189608+05:30",
+      "session_type": "morning",
+      "link_index": 34
+    },
+    {
+      "id": "product_morning_20260220_054127",
+      "title": "STRIFF 180\u00b0 Adjustable Single Monitor Stand Arm Desk Mount | Ergonomic Gas Spring VESA Bracket (75x75mm & 100x100mm) for",
+      "image": "https://m.media-amazon.com/images/I/51mJfumvOpL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0G34F4VH6?tag=gadgetvill09f-21",
+      "price": "\u20b91,499",
+      "rating": 3.9,
+      "category": "home",
+      "asin": "B0G34F4VH6",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-20T11:11:27.739088+05:30",
+      "session_type": "morning",
+      "link_index": 34
+    },
     {
       "id": "product_morning_20260219_163410",
       "title": "Bonkaso Spin Mop with Stainless Steel Wringer & Big Wheels | 360\u00b0 Rotating Mop, Adjustable Handle | Easy Floor Cleaning ",
