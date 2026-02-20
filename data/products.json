@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-02-20T13:36:58.674941+05:30",
-  "total_products": 999,
+  "last_updated": "2026-02-20T19:16:14.089160+05:30",
+  "total_products": 1001,
   "products": [
+    {
+      "id": "product_morning_20260220_134614",
+      "title": "AGARO Scalp Massager, Stress Relief & Relaxation, Handheld & Portable, Rechargeable Electric Head Kneading Massager, 3 S",
+      "image": "https://m.media-amazon.com/images/I/71otwFwpvQL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CN3FXH55?tag=gadgetvill09f-21",
+      "price": "\u20b91,079",
+      "rating": 3.9,
+      "category": "home",
+      "asin": "B0CN3FXH55",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-20T19:16:14.089119+05:30",
+      "session_type": "morning",
+      "link_index": 38
+    },
+    {
+      "id": "product_morning_20260220_134611",
+      "title": "Little's Soft Cleansing Baby Wipes with Aloe Vera, Jojoba Oil and Vitamin E (80 wipes) pack of 3",
+      "image": "https://m.media-amazon.com/images/I/71N1T3aB9KL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B004X7545M?tag=gadgetvill09f-21",
+      "price": "\u20b9209",
+      "rating": 4.4,
+      "category": "health",
+      "asin": "B004X7545M",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-20T19:16:11.543104+05:30",
+      "session_type": "morning",
+      "link_index": 38
+    },
     {
       "id": "product_morning_20260220_080658",
       "title": "Amazon Brand - Symbol Men's Color Block Active Regular Fit Sports T-Shirt | Round Neck | Sleeveless (Available in Plus S",
