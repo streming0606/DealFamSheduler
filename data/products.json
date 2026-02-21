@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-02-21T13:26:29.908885+05:30",
-  "total_products": 1007,
+  "last_updated": "2026-02-21T18:59:27.886916+05:30",
+  "total_products": 1009,
   "products": [
+    {
+      "id": "product_morning_20260221_132927",
+      "title": "Lifelong LLGM109 Percussion Massage Gun for Pain Relief, Deep Tissue, 6 Speeds & 7 Massage Heads, Cordless, Quiet Operat",
+      "image": "https://m.media-amazon.com/images/I/51djzsG+dqL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0C9DX5RFY?tag=gadgetvill09f-21",
+      "price": "\u20b91,029",
+      "rating": 3.9,
+      "category": "electronics",
+      "asin": "B0C9DX5RFY",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-21T18:59:27.886881+05:30",
+      "session_type": "morning",
+      "link_index": 46
+    },
+    {
+      "id": "product_morning_20260221_132926",
+      "title": "Dragon Jersey Polo Shirt with Gradient Design, Short Sleeve Collared Sports Shirt with Dragon Print",
+      "image": "https://m.media-amazon.com/images/I/61LjlQn5YjL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0G49TFPVJ?tag=gadgetvill09f-21",
+      "price": "\u20b9449",
+      "rating": 4.7,
+      "category": "fashion",
+      "asin": "B0G49TFPVJ",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-21T18:59:26.797495+05:30",
+      "session_type": "morning",
+      "link_index": 46
+    },
     {
       "id": "product_afternoon_20260221_075629",
       "title": "3-in-1 Compact Powder| High Tech Oil Control Losse Powder | Lightweight Compact Powder For All Skin Types (104 HAZEL)",
