@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-02-21T18:59:27.886916+05:30",
-  "total_products": 1009,
+  "last_updated": "2026-02-21T21:28:08.112704+05:30",
+  "total_products": 1011,
   "products": [
+    {
+      "id": "product_night_20260221_155808",
+      "title": "AUSK Men Tshirt || Mens Sports T-Shirts (Color-)",
+      "image": "https://m.media-amazon.com/images/I/616bDUoOBjL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0D5MLQMNR?tag=gadgetvill09f-21",
+      "price": "\u20b9263",
+      "rating": 3.4,
+      "category": "fashion",
+      "asin": "B0D5MLQMNR",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-21T21:28:08.112674+05:30",
+      "session_type": "night",
+      "link_index": 48
+    },
+    {
+      "id": "product_night_20260221_155806",
+      "title": "NoiseFit Halo 1.43\" AMOLED Display, Bluetooth Calling Round Dial Smart Watch, Premium Metallic Build, Always on Display,",
+      "image": "https://m.media-amazon.com/images/I/71aTghUQfqL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0BN1ZG1QZ?tag=gadgetvill09f-21",
+      "price": "\u20b92,699",
+      "rating": 4.0,
+      "category": "fashion",
+      "asin": "B0BN1ZG1QZ",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-21T21:28:06.492627+05:30",
+      "session_type": "night",
+      "link_index": 48
+    },
     {
       "id": "product_morning_20260221_132927",
       "title": "Lifelong LLGM109 Percussion Massage Gun for Pain Relief, Deep Tissue, 6 Speeds & 7 Massage Heads, Cordless, Quiet Operat",
