@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-02-21T11:00:17.124801+05:30",
-  "total_products": 1005,
+  "last_updated": "2026-02-21T13:26:29.908885+05:30",
+  "total_products": 1007,
   "products": [
+    {
+      "id": "product_afternoon_20260221_075629",
+      "title": "3-in-1 Compact Powder| High Tech Oil Control Losse Powder | Lightweight Compact Powder For All Skin Types (104 HAZEL)",
+      "image": "https://m.media-amazon.com/images/I/61V+8LtLg-L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DT3YNMBX?tag=gadgetvill09f-21",
+      "price": "\u20b9327",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "health",
+      "asin": "B0DT3YNMBX",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-21T13:26:29.908846+05:30",
+      "session_type": "afternoon",
+      "link_index": 44
+    },
+    {
+      "id": "product_afternoon_20260221_075627",
+      "title": "Gel Heel cups Silicon Heel Pad for Heel Ankle Pain, Heel Spur Shoe Support Pad for Men and Women Shock Cushion Pad for H",
+      "image": "https://m.media-amazon.com/images/I/61wFv3nqghL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0D63L638V?tag=gadgetvill09f-21",
+      "price": "\u20b9439",
+      "rating": 3.9,
+      "category": "electronics",
+      "asin": "B0D63L638V",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-21T13:26:27.660763+05:30",
+      "session_type": "afternoon",
+      "link_index": 44
+    },
     {
       "id": "product_morning_20260221_053017",
       "title": "Vaseline Deep Moisture Body Lotion |For Dry Skin|Cushion Soft Skin| With Ceramides Hyaluron Moisture Fillers 600ml",
