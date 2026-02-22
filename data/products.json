@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-02-22T19:01:12.157569+05:30",
-  "total_products": 1017,
+  "last_updated": "2026-02-22T21:28:20.549201+05:30",
+  "total_products": 1019,
   "products": [
+    {
+      "id": "product_night_20260222_155820",
+      "title": "Smartwatch USB All Type Charging Charger Compatible with Boat, Fire Boltt, Noise, Dizo, beatXP, Fast-Track & All 2 Pin C",
+      "image": "https://m.media-amazon.com/images/I/41y3iOau5CL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DXD6868T?tag=gadgetvill09f-21",
+      "price": "\u20b9159",
+      "rating": 3.1,
+      "category": "electronics",
+      "asin": "B0DXD6868T",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-22T21:28:20.549166+05:30",
+      "session_type": "night",
+      "link_index": 56
+    },
+    {
+      "id": "product_night_20260222_155818",
+      "title": "INEFABLE Oneplus Band Strap and Oppo Band Strap Soft Silicone Adjustable Band Strap - Device Not Included - Pack of 1",
+      "image": "https://m.media-amazon.com/images/I/51tMomieCtL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0BPYQZL29?tag=gadgetvill09f-21",
+      "price": "\u20b9149",
+      "rating": 3.9,
+      "category": "home",
+      "asin": "B0BPYQZL29",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-22T21:28:18.560458+05:30",
+      "session_type": "night",
+      "link_index": 56
+    },
     {
       "id": "product_morning_20260222_133112",
       "title": "Qssiy Liquid Laundry Detergent 5L Can, Lavender, Concentrated Stain Remover for Hand & Machine Wash (Front/Top Load, HE)",
