@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-02-22T13:28:45.510401+05:30",
-  "total_products": 1015,
+  "last_updated": "2026-02-22T19:01:12.157569+05:30",
+  "total_products": 1017,
   "products": [
+    {
+      "id": "product_morning_20260222_133112",
+      "title": "Qssiy Liquid Laundry Detergent 5L Can, Lavender, Concentrated Stain Remover for Hand & Machine Wash (Front/Top Load, HE)",
+      "image": "https://m.media-amazon.com/images/I/51V4CpTfnFL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DN9YBZSB?tag=gadgetvill09f-21",
+      "price": "\u20b9299",
+      "rating": 3.8,
+      "category": "electronics",
+      "asin": "B0DN9YBZSB",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-22T19:01:12.157529+05:30",
+      "session_type": "morning",
+      "link_index": 54
+    },
+    {
+      "id": "product_morning_20260222_133111",
+      "title": "Bouncefit D20 Y68 Fitness Band Smart Watch for Men, Women, Boys, Girls, Kids \u2013 Single Touch Interface, Water Resistant, ",
+      "image": "https://m.media-amazon.com/images/I/51rW3mp1PoL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0C6F1GT12?tag=gadgetvill09f-21",
+      "price": "\u20b9398",
+      "rating": 3.4,
+      "category": "fashion",
+      "asin": "B0C6F1GT12",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-22T19:01:11.170930+05:30",
+      "session_type": "morning",
+      "link_index": 54
+    },
     {
       "id": "product_afternoon_20260222_075845",
       "title": "Cult Smart Body Fat Scale, US FDA Approved, 20+ Parameters, BMI, 10 members, Bluetooth Weight Machine, Body Fat Analyzer",
