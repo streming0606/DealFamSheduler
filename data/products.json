@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-02-21T21:28:08.112704+05:30",
-  "total_products": 1011,
+  "last_updated": "2026-02-22T11:09:33.255461+05:30",
+  "total_products": 1013,
   "products": [
+    {
+      "id": "product_morning_20260222_053933",
+      "title": "Noise ColorFit Ultra 3 Bluetooth Calling Smart Watch with Biggest 1.96\" AMOLED Display, Premium Metallic Build, Function",
+      "image": "https://m.media-amazon.com/images/I/71Vx928Yx2L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0BVR4DSGB?tag=gadgetvill09f-21",
+      "price": "\u20b92,599",
+      "rating": 4.1,
+      "category": "fashion",
+      "asin": "B0BVR4DSGB",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-22T11:09:33.255430+05:30",
+      "session_type": "morning",
+      "link_index": 50
+    },
+    {
+      "id": "product_morning_20260222_053925",
+      "title": "Man Sweat Shaper and Sliming Vest for Weight Loss, Exercises and Fitness Fat Burning Shaper for Man & Women",
+      "image": "https://m.media-amazon.com/images/I/61eUB5Lk1FL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DR311TP1?tag=gadgetvill09f-21",
+      "price": "\u20b9417",
+      "rating": 4.0,
+      "category": "electronics",
+      "asin": "B0DR311TP1",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-22T11:09:25.807316+05:30",
+      "session_type": "morning",
+      "link_index": 50
+    },
     {
       "id": "product_night_20260221_155808",
       "title": "AUSK Men Tshirt || Mens Sports T-Shirts (Color-)",
