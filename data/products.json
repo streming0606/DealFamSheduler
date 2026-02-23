@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-02-22T21:28:20.549201+05:30",
-  "total_products": 1019,
+  "last_updated": "2026-02-23T11:21:58.818687+05:30",
+  "total_products": 1021,
   "products": [
+    {
+      "id": "product_morning_20260223_055158",
+      "title": "Noise Junior Explorer 2 Smart Watch for Kids with 4G SIM Compatible, 2-Way Video & Voice Calling, Geofencing, Real Time ",
+      "image": "https://m.media-amazon.com/images/I/711MS2ss5pL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FC69CWZ1?tag=gadgetvill09f-21",
+      "price": "\u20b95,999",
+      "rating": 4.0,
+      "category": "fashion",
+      "asin": "B0FC69CWZ1",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-23T11:21:58.818651+05:30",
+      "session_type": "morning",
+      "link_index": 58
+    },
+    {
+      "id": "product_morning_20260223_055156",
+      "title": "Hot Water Bag BLACK OLIVE\u00ae Heating Gel Bag For Pain Relief Electric Hot Pack Electric Heating Pad For Menstrual/Period C",
+      "image": "https://m.media-amazon.com/images/I/61Ug+gSj6fL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CY5J9JFX?tag=gadgetvill09f-21",
+      "price": "\u20b9259",
+      "rating": 3.9,
+      "category": "fashion",
+      "asin": "B0CY5J9JFX",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-23T11:21:56.393574+05:30",
+      "session_type": "morning",
+      "link_index": 58
+    },
     {
       "id": "product_night_20260222_155820",
       "title": "Smartwatch USB All Type Charging Charger Compatible with Boat, Fire Boltt, Noise, Dizo, beatXP, Fast-Track & All 2 Pin C",
