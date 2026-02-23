@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-02-23T19:24:08.793377+05:30",
-  "total_products": 1025,
+  "last_updated": "2026-02-23T22:07:01.843575+05:30",
+  "total_products": 1027,
   "products": [
+    {
+      "id": "product_morning_20260223_163701",
+      "title": "Venus (Made in India) Electronic Digital Personal Bathroom Weight Machine for Body Weight upto 180 kg Weighing Scale wit",
+      "image": "https://m.media-amazon.com/images/I/41PQxw47B0L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B09VKR22LV?tag=gadgetvill09f-21",
+      "price": "\u20b9485",
+      "rating": 4.0,
+      "category": "electronics",
+      "asin": "B09VKR22LV",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-23T22:07:01.843546+05:30",
+      "session_type": "morning",
+      "link_index": 64
+    },
+    {
+      "id": "product_morning_20260223_163659",
+      "title": "Lux Cozi Men's Gym Vest",
+      "image": "https://m.media-amazon.com/images/I/618feFia-7L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0BG5TZCLV?tag=gadgetvill09f-21",
+      "price": "\u20b9378",
+      "rating": 3.8,
+      "category": "electronics",
+      "asin": "B0BG5TZCLV",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-23T22:06:59.772045+05:30",
+      "session_type": "morning",
+      "link_index": 64
+    },
     {
       "id": "product_morning_20260223_135408",
       "title": "AGARO Oral Irrigator, Portable, Cordless & Rechargeable, 4 Cleaning Modes, IPX7 Waterproof with 200ml Water Tank, Flossi",
