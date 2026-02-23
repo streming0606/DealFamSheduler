@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-02-23T11:21:58.818687+05:30",
-  "total_products": 1021,
+  "last_updated": "2026-02-23T13:56:29.316675+05:30",
+  "total_products": 1023,
   "products": [
+    {
+      "id": "product_morning_20260223_082629",
+      "title": "The Modern Soul Men Cotton Blend Athletic Gym Tank Tops Sleeveless Sports Vest",
+      "image": "https://m.media-amazon.com/images/I/61W88UDw5PL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FBMDKGT3?tag=gadgetvill09f-21",
+      "price": "\u20b9299",
+      "rating": 3.5,
+      "category": "electronics",
+      "asin": "B0FBMDKGT3",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-23T13:56:29.316647+05:30",
+      "session_type": "morning",
+      "link_index": 60
+    },
+    {
+      "id": "product_morning_20260223_082625",
+      "title": "U.S. Polo ASSN. Mens Regular Fit Pure OEE05 Cotton T-Shirt",
+      "image": "https://m.media-amazon.com/images/I/61zHPJeMAbL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DN114WGC?tag=gadgetvill09f-21",
+      "price": "\u20b91,032",
+      "rating": 4.0,
+      "category": "fashion",
+      "asin": "B0DN114WGC",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-23T13:56:25.339648+05:30",
+      "session_type": "morning",
+      "link_index": 60
+    },
     {
       "id": "product_morning_20260223_055158",
       "title": "Noise Junior Explorer 2 Smart Watch for Kids with 4G SIM Compatible, 2-Way Video & Voice Calling, Geofencing, Real Time ",
