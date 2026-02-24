@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-02-24T19:27:09.831896+05:30",
-  "total_products": 1033,
+  "last_updated": "2026-02-24T22:15:48.322007+05:30",
+  "total_products": 1035,
   "products": [
+    {
+      "id": "product_morning_20260224_164548",
+      "title": "Men's Cool Dry Short Sleeve Compression Shirts, Sports Baselayer T-Shirts Tops, Athletic Workout Shirt",
+      "image": "https://m.media-amazon.com/images/I/615J0H4BdsL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CL4BMSVH?tag=gadgetvill09f-21",
+      "price": "\u20b9598.99",
+      "rating": 3.9,
+      "category": "fashion",
+      "asin": "B0CL4BMSVH",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-24T22:15:48.321973+05:30",
+      "session_type": "morning",
+      "link_index": 72
+    },
+    {
+      "id": "product_morning_20260224_164546",
+      "title": "Boat Wave Call 3 Smartwatch 1.83\u201d HD Display with Animated Watch Faces; BT Calling, Functional Crown, Multiple Sports Mo",
+      "image": "https://m.media-amazon.com/images/I/71UdDIKDlEL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FLF44GTQ?tag=gadgetvill09f-21",
+      "price": "\u20b91,399",
+      "rating": 4.1,
+      "category": "fashion",
+      "asin": "B0FLF44GTQ",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-24T22:15:46.786194+05:30",
+      "session_type": "morning",
+      "link_index": 72
+    },
     {
       "id": "product_morning_20260224_135709",
       "title": "UCRAVO 2025 Upgraded Fan Cleaning Mop Microfiber Duster with Extension Pole(Stainless Steel), Extra Long 100 inches, wit",
