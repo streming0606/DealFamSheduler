@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-02-24T11:15:40.218943+05:30",
-  "total_products": 1029,
+  "last_updated": "2026-02-24T13:56:22.164424+05:30",
+  "total_products": 1031,
   "products": [
+    {
+      "id": "product_morning_20260224_082622",
+      "title": "Amazon Product B0DT9T945X",
+      "image": "https://m.media-amazon.com/images/I/B0DT9T945X._AC_SL1500_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DT9T945X?tag=gadgetvill09f-21",
+      "price": "\u20b9Special Price",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B0DT9T945X",
+      "data_source": "fallback",
+      "posted_date": "2026-02-24T13:56:22.164389+05:30",
+      "session_type": "morning",
+      "link_index": 68
+    },
+    {
+      "id": "product_morning_20260224_082620",
+      "title": "Lymio Polo T Shirt for Men || T Shirt for Man || Collar T Shirt Style Men (Packs Also Available) (Polo-18-21)",
+      "image": "https://m.media-amazon.com/images/I/71g2n6GtKvL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CZ47F1MY?tag=gadgetvill09f-21",
+      "price": "\u20b9399",
+      "rating": 3.3,
+      "category": "fashion",
+      "asin": "B0CZ47F1MY",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-24T13:56:20.916133+05:30",
+      "session_type": "morning",
+      "link_index": 68
+    },
     {
       "id": "product_morning_20260224_054540",
       "title": "Redmi Watch 5 Active, 2\" Display, Metal Body, 18 Day Battery, Bluetooth Calling, Advanced AI Noise Cancellation, Alexa, ",
