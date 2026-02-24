@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-02-23T22:07:01.843575+05:30",
-  "total_products": 1027,
+  "last_updated": "2026-02-24T11:15:40.218943+05:30",
+  "total_products": 1029,
   "products": [
+    {
+      "id": "product_morning_20260224_054540",
+      "title": "Redmi Watch 5 Active, 2\" Display, Metal Body, 18 Day Battery, Bluetooth Calling, Advanced AI Noise Cancellation, Alexa, ",
+      "image": "https://m.media-amazon.com/images/I/6172ejBpFfL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DCZWDF1S?tag=gadgetvill09f-21",
+      "price": "\u20b91,999",
+      "rating": 4.1,
+      "category": "fashion",
+      "asin": "B0DCZWDF1S",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-24T11:15:40.218908+05:30",
+      "session_type": "morning",
+      "link_index": 66
+    },
+    {
+      "id": "product_morning_20260224_054538",
+      "title": "AUSK Men Tshirt || Mens Full Sleeve Sports Regular Fit T-Shirts (Color-)",
+      "image": "https://m.media-amazon.com/images/I/718SsROPyeL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0D5MKMDLP?tag=gadgetvill09f-21",
+      "price": "\u20b9272",
+      "rating": 3.6,
+      "category": "fashion",
+      "asin": "B0D5MKMDLP",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-24T11:15:38.510514+05:30",
+      "session_type": "morning",
+      "link_index": 66
+    },
     {
       "id": "product_morning_20260223_163701",
       "title": "Venus (Made in India) Electronic Digital Personal Bathroom Weight Machine for Body Weight upto 180 kg Weighing Scale wit",
