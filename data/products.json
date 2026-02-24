@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-02-24T13:56:22.164424+05:30",
-  "total_products": 1031,
+  "last_updated": "2026-02-24T19:27:09.831896+05:30",
+  "total_products": 1033,
   "products": [
+    {
+      "id": "product_morning_20260224_135709",
+      "title": "UCRAVO 2025 Upgraded Fan Cleaning Mop Microfiber Duster with Extension Pole(Stainless Steel), Extra Long 100 inches, wit",
+      "image": "https://m.media-amazon.com/images/I/61uG5z8r8qL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0B4RRW133?tag=gadgetvill09f-21",
+      "price": "\u20b9197",
+      "rating": 3.8,
+      "category": "electronics",
+      "asin": "B0B4RRW133",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-24T19:27:09.831849+05:30",
+      "session_type": "morning",
+      "link_index": 70
+    },
+    {
+      "id": "product_morning_20260224_135707",
+      "title": "Khamrah (8ML) | Decented From Original Perfume | Long Lasting Perfume For Men & Women | Eau De Parfum",
+      "image": "https://m.media-amazon.com/images/I/61IwY7lqGKL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0G2CD5DSM?tag=gadgetvill09f-21",
+      "price": "\u20b9399",
+      "rating": 3.5,
+      "category": "electronics",
+      "asin": "B0G2CD5DSM",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-24T19:27:07.507137+05:30",
+      "session_type": "morning",
+      "link_index": 70
+    },
     {
       "id": "product_morning_20260224_082622",
       "title": "Amazon Product B0DT9T945X",
