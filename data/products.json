@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-02-24T22:15:48.322007+05:30",
-  "total_products": 1035,
+  "last_updated": "2026-02-25T11:17:03.268643+05:30",
+  "total_products": 1037,
   "products": [
+    {
+      "id": "product_morning_20260225_054703",
+      "title": "INEFABLE 22mm SmartWatch Band Strap Nylon Soft Loop for ColorFit Pro 4/Pro 4 Max/Ultra/Ultra 2, Amazfit GTR 47mm/ GTR 2E",
+      "image": "https://m.media-amazon.com/images/I/41MK1+fD1QL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CL4N8GCZ?tag=gadgetvill09f-21",
+      "price": "\u20b9199",
+      "rating": 4.0,
+      "category": "fashion",
+      "asin": "B0CL4N8GCZ",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-25T11:17:03.268617+05:30",
+      "session_type": "morning",
+      "link_index": 74
+    },
+    {
+      "id": "product_morning_20260225_054701",
+      "title": "NEVER QUIT Men Compression Half Sleeves Round Neck T-Shirt Pack of 1/2 for Gym and Sports Wear",
+      "image": "https://m.media-amazon.com/images/I/61u-CMBevAL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DWMLNKL4?tag=gadgetvill09f-21",
+      "price": "\u20b9284",
+      "rating": 4.3,
+      "category": "fashion",
+      "asin": "B0DWMLNKL4",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-25T11:17:01.361986+05:30",
+      "session_type": "morning",
+      "link_index": 74
+    },
     {
       "id": "product_morning_20260224_164548",
       "title": "Men's Cool Dry Short Sleeve Compression Shirts, Sports Baselayer T-Shirts Tops, Athletic Workout Shirt",
