@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-02-25T11:17:03.268643+05:30",
-  "total_products": 1037,
+  "last_updated": "2026-02-25T13:56:38.634439+05:30",
+  "total_products": 1039,
   "products": [
+    {
+      "id": "product_morning_20260225_082638",
+      "title": "Fast Magnetic Wireless Charger Compatible with T800 Ultra & Series 8 and T900 Ultra Smartwatch (Charger ONLY) (Compatibl",
+      "image": "https://m.media-amazon.com/images/I/51ED1+RUMFL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0D4ZGM5CS?tag=gadgetvill09f-21",
+      "price": "\u20b9155",
+      "rating": 3.5,
+      "category": "electronics",
+      "asin": "B0D4ZGM5CS",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-25T13:56:38.634419+05:30",
+      "session_type": "morning",
+      "link_index": 76
+    },
+    {
+      "id": "product_morning_20260225_082636",
+      "title": "adidas Men's 100% Cotton Regular Fit T-Shirt",
+      "image": "https://m.media-amazon.com/images/I/51xnb7qWnbL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0BJ9J2TNB?tag=gadgetvill09f-21",
+      "price": "\u20b9538.99",
+      "rating": 4.2,
+      "category": "fashion",
+      "asin": "B0BJ9J2TNB",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-25T13:56:36.286451+05:30",
+      "session_type": "morning",
+      "link_index": 76
+    },
     {
       "id": "product_morning_20260225_054703",
       "title": "INEFABLE 22mm SmartWatch Band Strap Nylon Soft Loop for ColorFit Pro 4/Pro 4 Max/Ultra/Ultra 2, Amazfit GTR 47mm/ GTR 2E",
