@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-02-25T13:56:38.634439+05:30",
-  "total_products": 1039,
+  "last_updated": "2026-02-25T19:26:14.859719+05:30",
+  "total_products": 1041,
   "products": [
+    {
+      "id": "product_morning_20260225_135614",
+      "title": "Amazon Brand - Presto! Active Wash Detergent Liquid | Tough on Stains| Gentle on Fabrics | Colour-Safe (5L)",
+      "image": "https://m.media-amazon.com/images/I/61PHn1lxiUL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0D6Y9ZTQN?tag=gadgetvill09f-21",
+      "price": "\u20b9459",
+      "rating": 4.0,
+      "category": "electronics",
+      "asin": "B0D6Y9ZTQN",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-25T19:26:14.859679+05:30",
+      "session_type": "morning",
+      "link_index": 78
+    },
+    {
+      "id": "product_morning_20260225_135612",
+      "title": "INEFABLE 22mm SmartWatch Strap with Stainless Steel Buckle Compatible with ColorFit Pro 4/Pro 4 Max/Ultra/Ultra 2, Amazf",
+      "image": "https://m.media-amazon.com/images/I/41olFlvbK3L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0C71RCZ5T?tag=gadgetvill09f-21",
+      "price": "\u20b9146",
+      "rating": 3.8,
+      "category": "fashion",
+      "asin": "B0C71RCZ5T",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-25T19:26:12.455677+05:30",
+      "session_type": "morning",
+      "link_index": 78
+    },
     {
       "id": "product_morning_20260225_082638",
       "title": "Fast Magnetic Wireless Charger Compatible with T800 Ultra & Series 8 and T900 Ultra Smartwatch (Charger ONLY) (Compatibl",
