@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-02-25T19:26:14.859719+05:30",
-  "total_products": 1041,
+  "last_updated": "2026-02-25T22:18:37.703161+05:30",
+  "total_products": 1043,
   "products": [
+    {
+      "id": "product_morning_20260225_164837",
+      "title": "LUMONY CARE\u00ae Hot Water Bag Ice Bag for Pain Relief 9Inch Ice Pack Bag for Pain Relief Cold Water Bags for First Aid Spor",
+      "image": "https://m.media-amazon.com/images/I/81-g-0Hl4rL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07BCF5FCB?tag=gadgetvill09f-21",
+      "price": "\u20b9199",
+      "rating": 4.2,
+      "category": "fashion",
+      "asin": "B07BCF5FCB",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-25T22:18:37.703128+05:30",
+      "session_type": "morning",
+      "link_index": 80
+    },
+    {
+      "id": "product_morning_20260225_164835",
+      "title": "PUER Fabric Conditioner Morning Bliss 1800ml Refill Pouch for Front & Top Load Washing Machine | Plant Based & Eco Frien",
+      "image": "https://m.media-amazon.com/images/I/61gZxj9jbgL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0BSL94DCB?tag=gadgetvill09f-21",
+      "price": "\u20b9269",
+      "rating": 4.2,
+      "category": "electronics",
+      "asin": "B0BSL94DCB",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-25T22:18:35.606435+05:30",
+      "session_type": "morning",
+      "link_index": 80
+    },
     {
       "id": "product_morning_20260225_135614",
       "title": "Amazon Brand - Presto! Active Wash Detergent Liquid | Tough on Stains| Gentle on Fabrics | Colour-Safe (5L)",
