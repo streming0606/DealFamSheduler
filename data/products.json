@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-02-26T19:26:21.693062+05:30",
-  "total_products": 1049,
+  "last_updated": "2026-02-26T22:08:50.266787+05:30",
+  "total_products": 1051,
   "products": [
+    {
+      "id": "product_morning_20260226_163850",
+      "title": "INEFABLE Universal Watch Charger - Compatible with Boat Xtend, Boat Storm & Noise Colorfit Pro 2 - Two Pin Watches - Cab",
+      "image": "https://m.media-amazon.com/images/I/51YDYfczGVL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CL4X4X3H?tag=gadgetvill09f-21",
+      "price": "\u20b9149",
+      "rating": 3.4,
+      "category": "electronics",
+      "asin": "B0CL4X4X3H",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-26T22:08:50.266761+05:30",
+      "session_type": "morning",
+      "link_index": 88
+    },
+    {
+      "id": "product_morning_20260226_163849",
+      "title": "PARADIGM PICTURES 300 Gemstone Tree 12 Inch - Seven Chakra Crystals Bonsai Money Tree for Good Luck, Home Decor, Healing",
+      "image": "https://m.media-amazon.com/images/I/71vloYfB3kL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0B7MPG21Q?tag=gadgetvill09f-21",
+      "price": "\u20b9399",
+      "rating": 4.2,
+      "category": "home",
+      "asin": "B0B7MPG21Q",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-26T22:08:49.111579+05:30",
+      "session_type": "morning",
+      "link_index": 88
+    },
     {
       "id": "product_morning_20260226_135621",
       "title": "DAFFODIL 2 Ply Facial Tissue Carton Box Car Tissue Pack of 5 (100 Pulls Per Box, 200 Sheets)",
