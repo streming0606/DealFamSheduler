@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-02-25T22:18:37.703161+05:30",
-  "total_products": 1043,
+  "last_updated": "2026-02-26T11:14:48.170318+05:30",
+  "total_products": 1045,
   "products": [
+    {
+      "id": "product_morning_20260226_054448",
+      "title": "Spigen EZ Fit Tempered Glass Screen Protector Guard For Apple Watch Ultra 3/2 / 1 (49mm) [2 Pack]",
+      "image": "https://m.media-amazon.com/images/I/610qcR1zPHL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0BCXFZVH8?tag=gadgetvill09f-21",
+      "price": "\u20b9999",
+      "rating": 4.2,
+      "category": "fashion",
+      "asin": "B0BCXFZVH8",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-26T11:14:48.170285+05:30",
+      "session_type": "morning",
+      "link_index": 82
+    },
+    {
+      "id": "product_morning_20260226_054440",
+      "title": "Noise Vortex Plus 1.46 AMOLED Display, AoD, BT Calling, Sleek Metal Finish, 7 Days Battery Life, All New OS with 100+ Wa",
+      "image": "https://m.media-amazon.com/images/I/61QiBo-sPTL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CG1Y3336?tag=gadgetvill09f-21",
+      "price": "\u20b92,199",
+      "rating": 4.0,
+      "category": "electronics",
+      "asin": "B0CG1Y3336",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-26T11:14:40.915848+05:30",
+      "session_type": "morning",
+      "link_index": 82
+    },
     {
       "id": "product_morning_20260225_164837",
       "title": "LUMONY CARE\u00ae Hot Water Bag Ice Bag for Pain Relief 9Inch Ice Pack Bag for Pain Relief Cold Water Bags for First Aid Spor",
