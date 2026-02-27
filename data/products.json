@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-02-26T22:08:50.266787+05:30",
-  "total_products": 1051,
+  "last_updated": "2026-02-27T11:10:39.640192+05:30",
+  "total_products": 1053,
   "products": [
+    {
+      "id": "product_morning_20260227_054039",
+      "title": "Dika Sports Custom Number and Number Cricket Sports Jersey Tshirt for Men | 2 Year to 5XL",
+      "image": "https://m.media-amazon.com/images/I/51rVXK2pepL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FT8VSC22?tag=gadgetvill09f-21",
+      "price": "\u20b9Special Price",
+      "rating": 4.0,
+      "category": "fashion",
+      "asin": "B0FT8VSC22",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-27T11:10:39.640152+05:30",
+      "session_type": "morning",
+      "link_index": 90
+    },
+    {
+      "id": "product_morning_20260227_054032",
+      "title": "Jockey MV16 Men's Lightweight Microfiber Solid Round Neck Active Wear T-Shirt with Breathable Mesh",
+      "image": "https://m.media-amazon.com/images/I/71eUe6mPodL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0D6MJ6X8K?tag=gadgetvill09f-21",
+      "price": "\u20b9799",
+      "rating": 4.1,
+      "category": "fashion",
+      "asin": "B0D6MJ6X8K",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-27T11:10:32.635025+05:30",
+      "session_type": "morning",
+      "link_index": 90
+    },
     {
       "id": "product_morning_20260226_163850",
       "title": "INEFABLE Universal Watch Charger - Compatible with Boat Xtend, Boat Storm & Noise Colorfit Pro 2 - Two Pin Watches - Cab",
