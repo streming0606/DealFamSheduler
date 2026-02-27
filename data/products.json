@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-02-27T13:36:14.151113+05:30",
-  "total_products": 1055,
+  "last_updated": "2026-02-27T19:14:49.162155+05:30",
+  "total_products": 1057,
   "products": [
+    {
+      "id": "product_morning_20260227_134449",
+      "title": "CARESMITH Charge Go Massage Gun | Body Massager for Pain Relief | Massage Gun for Back Leg & Full Body | 4 Specialized H",
+      "image": "https://m.media-amazon.com/images/I/71Yju2RgxXL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DQ1BX28X?tag=gadgetvill09f-21",
+      "price": "\u20b9899",
+      "rating": 4.2,
+      "category": "electronics",
+      "asin": "B0DQ1BX28X",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-27T19:14:49.162119+05:30",
+      "session_type": "morning",
+      "link_index": 94
+    },
+    {
+      "id": "product_morning_20260227_134447",
+      "title": "Boldfit Men Sports T-Shirts",
+      "image": "https://m.media-amazon.com/images/I/61QbV+QE2VL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0D5CXZ2F5?tag=gadgetvill09f-21",
+      "price": "\u20b9349",
+      "rating": 4.2,
+      "category": "fashion",
+      "asin": "B0D5CXZ2F5",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-27T19:14:47.226584+05:30",
+      "session_type": "morning",
+      "link_index": 94
+    },
     {
       "id": "product_morning_20260227_080614",
       "title": "Dika Sports Custom jerseyCricket t-Shirt Breathable Cricket Jersey Printed | 2 Year to 5XL",
