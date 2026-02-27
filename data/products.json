@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-02-27T11:10:39.640192+05:30",
-  "total_products": 1053,
+  "last_updated": "2026-02-27T13:36:14.151113+05:30",
+  "total_products": 1055,
   "products": [
+    {
+      "id": "product_morning_20260227_080614",
+      "title": "Dika Sports Custom jerseyCricket t-Shirt Breathable Cricket Jersey Printed | 2 Year to 5XL",
+      "image": "https://m.media-amazon.com/images/I/51LpBuRt8YL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DCKCMR9K?tag=gadgetvill09f-21",
+      "price": "\u20b9Special Price",
+      "rating": 3.9,
+      "category": "fashion",
+      "asin": "B0DCKCMR9K",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-27T13:36:14.151078+05:30",
+      "session_type": "morning",
+      "link_index": 92
+    },
+    {
+      "id": "product_morning_20260227_080612",
+      "title": "Boldfit Gym Regular Fit T Shirt for Men Round Neck Active Tshirt for Men Quick Dry Active Wear T Shirts for Man Dry Fit ",
+      "image": "https://m.media-amazon.com/images/I/71z9K9hB5PL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DHS5CXKM?tag=gadgetvill09f-21",
+      "price": "\u20b9499",
+      "rating": 4.1,
+      "category": "fashion",
+      "asin": "B0DHS5CXKM",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-27T13:36:12.364955+05:30",
+      "session_type": "morning",
+      "link_index": 92
+    },
     {
       "id": "product_morning_20260227_054039",
       "title": "Dika Sports Custom Number and Number Cricket Sports Jersey Tshirt for Men | 2 Year to 5XL",
