@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-02-28T10:49:54.650317+05:30",
-  "total_products": 1061,
+  "last_updated": "2026-02-28T13:22:18.846500+05:30",
+  "total_products": 1063,
   "products": [
+    {
+      "id": "product_afternoon_20260228_075218",
+      "title": "Urban yog MakeMeeBold 3-in-1 Hot Air Brush| 1.5-inch Barrel | Hair Dryer Hair Straightener Volumizer Blow Dryer Styling ",
+      "image": "https://m.media-amazon.com/images/I/71CrksKGuCL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0BZ4WQLZV?tag=gadgetvill09f-21",
+      "price": "\u20b92,499",
+      "rating": 4.1,
+      "category": "electronics",
+      "asin": "B0BZ4WQLZV",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-28T13:22:18.846474+05:30",
+      "session_type": "afternoon",
+      "link_index": 100
+    },
+    {
+      "id": "product_afternoon_20260228_075216",
+      "title": "Boat Wanderer Smart, Kids Watch, 2-Way Video & Phone Call, GPS Tracker, Emergency SOS, Geo Fencing, 4G Sim Compatible, P",
+      "image": "https://m.media-amazon.com/images/I/61E5zSGLOnL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0D83GKG6B?tag=gadgetvill09f-21",
+      "price": "\u20b95,999",
+      "rating": 3.4,
+      "category": "electronics",
+      "asin": "B0D83GKG6B",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-28T13:22:16.921994+05:30",
+      "session_type": "afternoon",
+      "link_index": 100
+    },
     {
       "id": "product_morning_20260228_051954",
       "title": "Noise Pulse 2 Max 1.85\" Display, Bluetooth Calling Smart Watch, 10 Days Battery, 550 NITS Brightness, Smart DND, 100 Spo",
