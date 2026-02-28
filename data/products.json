@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-02-27T21:49:47.765984+05:30",
-  "total_products": 1059,
+  "last_updated": "2026-02-28T10:49:54.650317+05:30",
+  "total_products": 1061,
   "products": [
+    {
+      "id": "product_morning_20260228_051954",
+      "title": "Noise Pulse 2 Max 1.85\" Display, Bluetooth Calling Smart Watch, 10 Days Battery, 550 NITS Brightness, Smart DND, 100 Spo",
+      "image": "https://m.media-amazon.com/images/I/610BF3kqBZL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0B6BPTFT5?tag=gadgetvill09f-21",
+      "price": "\u20b91,399",
+      "rating": 4.0,
+      "category": "fashion",
+      "asin": "B0B6BPTFT5",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-28T10:49:54.650291+05:30",
+      "session_type": "morning",
+      "link_index": 98
+    },
+    {
+      "id": "product_morning_20260228_051953",
+      "title": "Freecultr Men's Underwear Micromodal Airsoft Trunk \u2013 Ultra Soft, Sweat Proof, Non-Itch, No Chafing, Anti Bacterial Fabri",
+      "image": "https://m.media-amazon.com/images/I/61FETtDK9yL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DS64ZV33?tag=gadgetvill09f-21",
+      "price": "\u20b9699",
+      "rating": 3.9,
+      "category": "electronics",
+      "asin": "B0DS64ZV33",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-28T10:49:53.247093+05:30",
+      "session_type": "morning",
+      "link_index": 98
+    },
     {
       "id": "product_morning_20260227_161947",
       "title": "PROSHARX Half Sleeve Compression T-Shirt - Men's Athletic & Sports Tights for Fitness",
