@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-02-28T13:22:18.846500+05:30",
-  "total_products": 1063,
+  "last_updated": "2026-02-28T18:53:51.673804+05:30",
+  "total_products": 1065,
   "products": [
+    {
+      "id": "product_morning_20260228_132351",
+      "title": "Boat Ultima Ember smartwatch with 1.96\u201d AMOLED Display, AOD, Personalized Fitness Nudges, Functional Crown,100+ Sports M",
+      "image": "https://m.media-amazon.com/images/I/71St5sqS6CL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DSFS2H6Y?tag=gadgetvill09f-21",
+      "price": "\u20b92,199",
+      "rating": 3.9,
+      "category": "fashion",
+      "asin": "B0DSFS2H6Y",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-28T18:53:51.673778+05:30",
+      "session_type": "morning",
+      "link_index": 102
+    },
+    {
+      "id": "product_morning_20260228_132350",
+      "title": "Cult Impact Pro Gun Whole_Body Massager, 4500Mah Battery, 6 Speed Intensities, Deep Tissue Pain Relief, Multicolour",
+      "image": "https://m.media-amazon.com/images/I/41piHQ6iPyL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DQVFZFJL?tag=gadgetvill09f-21",
+      "price": "\u20b91,899",
+      "rating": 4.2,
+      "category": "electronics",
+      "asin": "B0DQVFZFJL",
+      "data_source": "serpapi",
+      "posted_date": "2026-02-28T18:53:50.341999+05:30",
+      "session_type": "morning",
+      "link_index": 102
+    },
     {
       "id": "product_afternoon_20260228_075218",
       "title": "Urban yog MakeMeeBold 3-in-1 Hot Air Brush| 1.5-inch Barrel | Hair Dryer Hair Straightener Volumizer Blow Dryer Styling ",
