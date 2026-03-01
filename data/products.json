@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-03-01T11:10:10.566371+05:30",
-  "total_products": 1069,
+  "last_updated": "2026-03-01T13:25:58.809008+05:30",
+  "total_products": 1071,
   "products": [
+    {
+      "id": "product_afternoon_20260301_075558",
+      "title": "TECHONTO\u00ae 22mm Silicone Watch Strap with Folding Magnetic Lock Compatible with Samsung Galaxy Watch 3 (45mm), Galaxy Wat",
+      "image": "https://m.media-amazon.com/images/I/51BMF1E0qwL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0C8ZCWKGF?tag=gadgetvill09f-21",
+      "price": "\u20b9290",
+      "rating": 4.2,
+      "category": "fashion",
+      "asin": "B0C8ZCWKGF",
+      "data_source": "serpapi",
+      "posted_date": "2026-03-01T13:25:58.808972+05:30",
+      "session_type": "afternoon",
+      "link_index": 108
+    },
+    {
+      "id": "product_afternoon_20260301_075555",
+      "title": "Noise Pro 6 Max Smart Watch:Intelligent with Noise AI, Endless AI Watch Faces, AI Companion, 1.96\u201d AMOLED, Stainless Ste",
+      "image": "https://m.media-amazon.com/images/I/813A7QKDBRL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DMDKTQCN?tag=gadgetvill09f-21",
+      "price": "\u20b97,999",
+      "rating": 4.0,
+      "category": "fashion",
+      "asin": "B0DMDKTQCN",
+      "data_source": "serpapi",
+      "posted_date": "2026-03-01T13:25:55.713822+05:30",
+      "session_type": "afternoon",
+      "link_index": 108
+    },
     {
       "id": "product_morning_20260301_054010",
       "title": "Smart BMI Weight Scale | Track 18+ Body Parameters, Body Fat & Muscle Mass | 100+ User Profiles | 2 Yr Warranty | Large ",
