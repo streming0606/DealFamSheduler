@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-03-01T18:56:57.314178+05:30",
-  "total_products": 1073,
+  "last_updated": "2026-03-01T21:24:48.072162+05:30",
+  "total_products": 1075,
   "products": [
+    {
+      "id": "product_night_20260301_155448",
+      "title": "JUST RIDER Half Sleeve Compression T-Shirt - Men's Athletic & Sports Tights for Fitness Compression T Shirt for Men Gym",
+      "image": "https://m.media-amazon.com/images/I/51RpbrmVe5L._AC_UY218_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DZC7F9P9?tag=gadgetvill09f-21",
+      "price": "\u20b9415",
+      "rating": 4.1,
+      "category": "fashion",
+      "asin": "B0DZC7F9P9",
+      "data_source": "serpapi",
+      "posted_date": "2026-03-01T21:24:48.072136+05:30",
+      "session_type": "night",
+      "link_index": 112
+    },
+    {
+      "id": "product_night_20260301_155441",
+      "title": "Ross Electric Hot Water Bag & Heating Pad | Rechargeable Gel Hot Bag for Pain Relief, Back Pain, Cramps, Muscle Aches & ",
+      "image": "https://m.media-amazon.com/images/I/71wmBgrwO5L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DP6FY6KJ?tag=gadgetvill09f-21",
+      "price": "\u20b9199",
+      "rating": 4.0,
+      "category": "fashion",
+      "asin": "B0DP6FY6KJ",
+      "data_source": "serpapi",
+      "posted_date": "2026-03-01T21:24:41.351155+05:30",
+      "session_type": "night",
+      "link_index": 112
+    },
     {
       "id": "product_morning_20260301_132657",
       "title": "Amazon Product B0FYKM7KFC",
