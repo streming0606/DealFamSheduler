@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-03-01T13:25:58.809008+05:30",
-  "total_products": 1071,
+  "last_updated": "2026-03-01T18:56:57.314178+05:30",
+  "total_products": 1073,
   "products": [
+    {
+      "id": "product_morning_20260301_132657",
+      "title": "Amazon Product B0FYKM7KFC",
+      "image": "https://m.media-amazon.com/images/I/B0FYKM7KFC._AC_SL1500_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FYKM7KFC?tag=gadgetvill09f-21",
+      "price": "\u20b9Special Price",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B0FYKM7KFC",
+      "data_source": "fallback",
+      "posted_date": "2026-03-01T18:56:57.314124+05:30",
+      "session_type": "morning",
+      "link_index": 110
+    },
+    {
+      "id": "product_morning_20260301_132652",
+      "title": "Sounce USB 3.0 Magnetic Watch Charger Cable Compatible for iOS Smartwatch, 3 ft Fast Wireless Charging Cord for Ultra 9 ",
+      "image": "https://m.media-amazon.com/images/I/41l9wxom2ZL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0D5MKZMGX?tag=gadgetvill09f-21",
+      "price": "\u20b9599",
+      "rating": 3.6,
+      "category": "electronics",
+      "asin": "B0D5MKZMGX",
+      "data_source": "serpapi",
+      "posted_date": "2026-03-01T18:56:52.306486+05:30",
+      "session_type": "morning",
+      "link_index": 110
+    },
     {
       "id": "product_afternoon_20260301_075558",
       "title": "TECHONTO\u00ae 22mm Silicone Watch Strap with Folding Magnetic Lock Compatible with Samsung Galaxy Watch 3 (45mm), Galaxy Wat",
