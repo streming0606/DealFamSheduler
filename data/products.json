@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-03-02T19:15:41.378758+05:30",
-  "total_products": 1081,
+  "last_updated": "2026-03-02T21:54:10.294111+05:30",
+  "total_products": 1083,
   "products": [
+    {
+      "id": "product_morning_20260302_162410",
+      "title": "YONEX Essentia 3 Round Neck T-Shirt 2968- Sustainable Performance | TruDry Moisture-Wicking | Cool, Dry and Comfortable ",
+      "image": "https://m.media-amazon.com/images/I/711cwEsw8rL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0G1Z33N5V?tag=gadgetvill09f-21",
+      "price": "\u20b9895",
+      "rating": 4.5,
+      "category": "fashion",
+      "asin": "B0G1Z33N5V",
+      "data_source": "serpapi",
+      "posted_date": "2026-03-02T21:54:10.294074+05:30",
+      "session_type": "morning",
+      "link_index": 120
+    },
+    {
+      "id": "product_morning_20260302_162408",
+      "title": "Amazon Brand - Presto! Non-Woven Kitchen Towel Roll | 80 Pulls (Pack of 2) | Size: 23 x 21 cm | Wavy Pattern (Red & Blue",
+      "image": "https://m.media-amazon.com/images/I/71wkziBQHvL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DKF2N6RQ?tag=gadgetvill09f-21",
+      "price": "\u20b9258",
+      "rating": 4.3,
+      "category": "home",
+      "asin": "B0DKF2N6RQ",
+      "data_source": "serpapi",
+      "posted_date": "2026-03-02T21:54:08.396311+05:30",
+      "session_type": "morning",
+      "link_index": 120
+    },
     {
       "id": "product_morning_20260302_134541",
       "title": "Fire-Boltt Brillia Smart Watch 2.02\u2033 Super AMOLED Display with Bluetooth Calling, Voice Assistant, SpO2 & Heart Rate Mon",
