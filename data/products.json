@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-03-01T21:24:48.072162+05:30",
-  "total_products": 1075,
+  "last_updated": "2026-03-02T11:10:05.489497+05:30",
+  "total_products": 1077,
   "products": [
+    {
+      "id": "product_morning_20260302_054005",
+      "title": "Louis Philippe Men's Slim Fit 24s Single-Tuck Pique Stylized Sleeve Print and Contrast Tipping Half Sleeve Solid Polo T-",
+      "image": "https://m.media-amazon.com/images/I/617S6pgI76L._AC_UY218_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0F1NCWP97?tag=gadgetvill09f-21",
+      "price": "\u20b9885",
+      "rating": 4.1,
+      "category": "electronics",
+      "asin": "B0F1NCWP97",
+      "data_source": "serpapi",
+      "posted_date": "2026-03-02T11:10:05.489465+05:30",
+      "session_type": "morning",
+      "link_index": 114
+    },
+    {
+      "id": "product_morning_20260302_054003",
+      "title": "ATICX Men's Polyester Sports Sleeveless T Shirt - Gym Vest, Workout Sando, Training Tank Top, Cut Sleeves Quick Dry Tee ",
+      "image": "https://m.media-amazon.com/images/I/51CCYBB6T1L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CZJ93J96?tag=gadgetvill09f-21",
+      "price": "\u20b9474",
+      "rating": 4.1,
+      "category": "fashion",
+      "asin": "B0CZJ93J96",
+      "data_source": "serpapi",
+      "posted_date": "2026-03-02T11:10:03.783541+05:30",
+      "session_type": "morning",
+      "link_index": 114
+    },
     {
       "id": "product_night_20260301_155448",
       "title": "JUST RIDER Half Sleeve Compression T-Shirt - Men's Athletic & Sports Tights for Fitness Compression T Shirt for Men Gym",
