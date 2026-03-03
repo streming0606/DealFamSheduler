@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-03-03T19:15:00.914221+05:30",
-  "total_products": 1089,
+  "last_updated": "2026-03-03T21:58:05.371354+05:30",
+  "total_products": 1091,
   "products": [
+    {
+      "id": "product_morning_20260303_162805",
+      "title": "Origami So Soft 2 Ply Facial Tissue Pack | Ultra Soft, Skin Friendly & Highly Absorbent Face Tissues | Multipurpose Car,",
+      "image": "https://m.media-amazon.com/images/I/518waTTDQYL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0C2DB3YYP?tag=gadgetvill09f-21",
+      "price": "\u20b9189",
+      "rating": 4.4,
+      "category": "electronics",
+      "asin": "B0C2DB3YYP",
+      "data_source": "serpapi",
+      "posted_date": "2026-03-03T21:58:05.371318+05:30",
+      "session_type": "morning",
+      "link_index": 128
+    },
+    {
+      "id": "product_morning_20260303_162801",
+      "title": "Boldfit Tshirt for Man Regular fit Gym t Shirts for Men Workout Active wear t Shirt for Man Running Mens t-Shirts Runnin",
+      "image": "https://m.media-amazon.com/images/I/611lChGYIML._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0D5D1MDXB?tag=gadgetvill09f-21",
+      "price": "\u20b9454",
+      "rating": 4.3,
+      "category": "fashion",
+      "asin": "B0D5D1MDXB",
+      "data_source": "serpapi",
+      "posted_date": "2026-03-03T21:58:01.850605+05:30",
+      "session_type": "morning",
+      "link_index": 128
+    },
     {
       "id": "product_morning_20260303_134500",
       "title": "CHKOKKO Men's Polyester Regular Fit Round Neck Regular Dry Fit Gym Sports T-Shirt",
