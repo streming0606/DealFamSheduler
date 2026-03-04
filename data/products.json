@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-03-03T21:58:05.371354+05:30",
-  "total_products": 1091,
+  "last_updated": "2026-03-04T11:03:03.560523+05:30",
+  "total_products": 1093,
   "products": [
+    {
+      "id": "product_morning_20260304_053303",
+      "title": "Robustt Heavy Duty Rubber Hand gloves - 1 Pair (Free Size, Multicolor) for Dishwashing, gardening, kitchen cleaning",
+      "image": "https://m.media-amazon.com/images/I/71kw7Pk0pAL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FB8VST2G?tag=gadgetvill09f-21",
+      "price": "\u20b999",
+      "rating": 4.2,
+      "category": "home",
+      "asin": "B0FB8VST2G",
+      "data_source": "serpapi",
+      "posted_date": "2026-03-04T11:03:03.560497+05:30",
+      "session_type": "morning",
+      "link_index": 130
+    },
+    {
+      "id": "product_morning_20260304_053301",
+      "title": "SG Club Half Sleeve Cricket Shirt (White)",
+      "image": "https://m.media-amazon.com/images/I/81Ty-FNv-ZL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B00L7KYA0I?tag=gadgetvill09f-21",
+      "price": "\u20b9489",
+      "rating": 4.2,
+      "category": "fashion",
+      "asin": "B00L7KYA0I",
+      "data_source": "serpapi",
+      "posted_date": "2026-03-04T11:03:01.948723+05:30",
+      "session_type": "morning",
+      "link_index": 130
+    },
     {
       "id": "product_morning_20260303_162805",
       "title": "Origami So Soft 2 Ply Facial Tissue Pack | Ultra Soft, Skin Friendly & Highly Absorbent Face Tissues | Multipurpose Car,",
