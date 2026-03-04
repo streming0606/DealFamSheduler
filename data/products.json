@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-03-04T19:12:40.961797+05:30",
-  "total_products": 1097,
+  "last_updated": "2026-03-04T21:53:54.632942+05:30",
+  "total_products": 1099,
   "products": [
+    {
+      "id": "product_morning_20260304_162354",
+      "title": "Derma Roller 0.5mm for Hair & Beard Growth \u2013 540 Titanium Micro Needles for Hair Regrowth, Beard Growth, Acne Scar Reduc",
+      "image": "https://m.media-amazon.com/images/I/61hUE4U9yfL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FF3J7XCH?tag=gadgetvill09f-21",
+      "price": "\u20b9115",
+      "rating": 4.0,
+      "category": "electronics",
+      "asin": "B0FF3J7XCH",
+      "data_source": "serpapi",
+      "posted_date": "2026-03-04T21:53:54.632906+05:30",
+      "session_type": "morning",
+      "link_index": 136
+    },
+    {
+      "id": "product_morning_20260304_162351",
+      "title": "Inkholic Collar Neck Full Sleeves Jersey IN2900F",
+      "image": "https://m.media-amazon.com/images/I/81orphgMXyL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CRRWHXNJ?tag=gadgetvill09f-21",
+      "price": "\u20b9449",
+      "rating": 4.2,
+      "category": "electronics",
+      "asin": "B0CRRWHXNJ",
+      "data_source": "serpapi",
+      "posted_date": "2026-03-04T21:53:51.729278+05:30",
+      "session_type": "morning",
+      "link_index": 136
+    },
     {
       "id": "product_morning_20260304_134240",
       "title": "Hallstatt 2026 Upgraded Long Handle Microfiber Feather Fan Ceiling Duster for Dust Cleaning with extendable Pole 100 Inc",
