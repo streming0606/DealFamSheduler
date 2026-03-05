@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-03-05T13:34:39.744810+05:30",
-  "total_products": 1103,
+  "last_updated": "2026-03-05T19:17:41.966012+05:30",
+  "total_products": 1105,
   "products": [
+    {
+      "id": "product_morning_20260305_134741",
+      "title": "INEFABLE 20mm SmartWatch Strap Nylon Soft Loop for Amazfit GTS 2 Mini, Amazfit Bip/Bip U/Pro/Lite, Bip S, Amazfit GTS/ 2",
+      "image": "https://m.media-amazon.com/images/I/41MK1+fD1QL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CL4NX9FG?tag=gadgetvill09f-21",
+      "price": "\u20b9189",
+      "rating": 4.0,
+      "category": "fashion",
+      "asin": "B0CL4NX9FG",
+      "data_source": "serpapi",
+      "posted_date": "2026-03-05T19:17:41.965985+05:30",
+      "session_type": "morning",
+      "link_index": 142
+    },
+    {
+      "id": "product_morning_20260305_134739",
+      "title": "Real Football Customizable Jersey 2023 for Men & Boys",
+      "image": "https://m.media-amazon.com/images/I/512ykVPJpTL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FTSZL2RX?tag=gadgetvill09f-21",
+      "price": "\u20b9599",
+      "rating": 4.0,
+      "category": "electronics",
+      "asin": "B0FTSZL2RX",
+      "data_source": "serpapi",
+      "posted_date": "2026-03-05T19:17:39.976614+05:30",
+      "session_type": "morning",
+      "link_index": 142
+    },
     {
       "id": "product_morning_20260305_080439",
       "title": "Noise Newly Launched Halo 2 Smart Watch 1st Ever Functional Rotating Dial (Axe-Cut Bezel), 1.43\" AMOLED, Stainless Steel",
