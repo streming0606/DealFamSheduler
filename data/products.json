@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-03-06T13:31:45.867100+05:30",
-  "total_products": 1111,
+  "last_updated": "2026-03-06T19:10:24.978465+05:30",
+  "total_products": 1113,
   "products": [
+    {
+      "id": "product_morning_20260306_134024",
+      "title": "QUADA Polyester Compression Swimming T Shirt Slim Fit Shirt Full Sleevs for Men",
+      "image": "https://m.media-amazon.com/images/I/51fbEVpi+ZL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07THV7MPB?tag=gadgetvill09f-21",
+      "price": "\u20b9339",
+      "rating": 4.0,
+      "category": "fashion",
+      "asin": "B07THV7MPB",
+      "data_source": "serpapi",
+      "posted_date": "2026-03-06T19:10:24.978437+05:30",
+      "session_type": "morning",
+      "link_index": 150
+    },
+    {
+      "id": "product_morning_20260306_134023",
+      "title": "Fire-Boltt Phoenix Ultra Smart Watch 1.39\" HD Display, Bluetooth Calling, AI Voice Assistant, 120 Sports Modes, IP67 Wat",
+      "image": "https://m.media-amazon.com/images/I/819DWQLgjKL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0BY2PWDFQ?tag=gadgetvill09f-21",
+      "price": "\u20b91,299",
+      "rating": 3.9,
+      "category": "fashion",
+      "asin": "B0BY2PWDFQ",
+      "data_source": "serpapi",
+      "posted_date": "2026-03-06T19:10:23.234770+05:30",
+      "session_type": "morning",
+      "link_index": 150
+    },
     {
       "id": "product_morning_20260306_080145",
       "title": "Large Capacity Travel Cosmetic Bag With Handle And Divider - Multifunctional Makeup Bag For Easy Access, Waterproof- (-B",
