@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-03-06T19:10:24.978465+05:30",
-  "total_products": 1113,
+  "last_updated": "2026-03-06T21:35:43.277379+05:30",
+  "total_products": 1115,
   "products": [
+    {
+      "id": "product_morning_20260306_160543",
+      "title": "Fire-Boltt Talk Round Smart Watch 1.39\u2033 TFT Display with Bluetooth Calling, Dual Button, Voice Assistance, SPO\u2082 & Heart ",
+      "image": "https://m.media-amazon.com/images/I/61Vk-Npjs-L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0BY2QJJ8J?tag=gadgetvill09f-21",
+      "price": "\u20b91,099",
+      "rating": 3.9,
+      "category": "fashion",
+      "asin": "B0BY2QJJ8J",
+      "data_source": "serpapi",
+      "posted_date": "2026-03-06T21:35:43.277340+05:30",
+      "session_type": "morning",
+      "link_index": 152
+    },
+    {
+      "id": "product_morning_20260306_160536",
+      "title": "KareIn Bed Bath Wipes, Adult Wet Wipes, 60 Wipes, Anti-Bacterial, Ready to Use Cleansing Towels, Refreshing Sponge Bath ",
+      "image": "https://m.media-amazon.com/images/I/7162s1aTkDL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0BN7W1MZ2?tag=gadgetvill09f-21",
+      "price": "\u20b9214",
+      "rating": 4.4,
+      "category": "electronics",
+      "asin": "B0BN7W1MZ2",
+      "data_source": "serpapi",
+      "posted_date": "2026-03-06T21:35:36.543799+05:30",
+      "session_type": "morning",
+      "link_index": 152
+    },
     {
       "id": "product_morning_20260306_134024",
       "title": "QUADA Polyester Compression Swimming T Shirt Slim Fit Shirt Full Sleevs for Men",
