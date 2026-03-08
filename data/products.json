@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-03-08T13:25:14.346273+05:30",
-  "total_products": 1127,
+  "last_updated": "2026-03-08T18:57:36.247876+05:30",
+  "total_products": 1129,
   "products": [
+    {
+      "id": "product_morning_20260308_132736",
+      "title": "Gulshan Tummy Tucker Vest for Men Tummy Control Undershirt Abs Abdomen Slim Stretchable Vest Compression Tank Top, Slimm",
+      "image": "https://m.media-amazon.com/images/I/41uhL+jPCuL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CYSQMK1V?tag=gadgetvill09f-21",
+      "price": "\u20b9444",
+      "rating": 3.8,
+      "category": "fashion",
+      "asin": "B0CYSQMK1V",
+      "data_source": "serpapi",
+      "posted_date": "2026-03-08T18:57:36.247839+05:30",
+      "session_type": "morning",
+      "link_index": 166
+    },
+    {
+      "id": "product_morning_20260308_132734",
+      "title": "Heer Blank, Fantasy 69, Role Play, Roll-On Perfume Combo Set for Men and Women | Unisex Fragrance Collection | Assorted ",
+      "image": "https://m.media-amazon.com/images/I/518IHdzTu8L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0BMVT1R78?tag=gadgetvill09f-21",
+      "price": "\u20b92,199",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B0BMVT1R78",
+      "data_source": "serpapi",
+      "posted_date": "2026-03-08T18:57:34.950230+05:30",
+      "session_type": "morning",
+      "link_index": 166
+    },
     {
       "id": "product_afternoon_20260308_075514",
       "title": "pTron Orbis Neo Smart Glasses w/Bluetooth V5.4, Open Ear Music, Handsfree Calls, Eye Protection, 7Hrs Playtime, Lightwei",
