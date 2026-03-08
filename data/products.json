@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-03-08T18:57:36.247876+05:30",
-  "total_products": 1129,
+  "last_updated": "2026-03-08T21:25:44.856394+05:30",
+  "total_products": 1131,
   "products": [
+    {
+      "id": "product_night_20260308_155544",
+      "title": "Carbamide Forte Storm Shaker for Gym Bottle 700ml | Protein Shaker Bottle | 100% Leakproof, BPA Free, Durable Gym Shaker",
+      "image": "https://m.media-amazon.com/images/I/71zyYrQDssL._AC_UY218_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0F18WQRT5?tag=gadgetvill09f-21",
+      "price": "\u20b9199",
+      "rating": 3.9,
+      "category": "electronics",
+      "asin": "B0F18WQRT5",
+      "data_source": "serpapi",
+      "posted_date": "2026-03-08T21:25:44.856367+05:30",
+      "session_type": "night",
+      "link_index": 168
+    },
+    {
+      "id": "product_night_20260308_155542",
+      "title": "Amazon Product B0CV73XDKV",
+      "image": "https://m.media-amazon.com/images/I/B0CV73XDKV._AC_SL1500_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CV73XDKV?tag=gadgetvill09f-21",
+      "price": "\u20b9Special Price",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B0CV73XDKV",
+      "data_source": "fallback",
+      "posted_date": "2026-03-08T21:25:42.890142+05:30",
+      "session_type": "night",
+      "link_index": 168
+    },
     {
       "id": "product_morning_20260308_132736",
       "title": "Gulshan Tummy Tucker Vest for Men Tummy Control Undershirt Abs Abdomen Slim Stretchable Vest Compression Tank Top, Slimm",
