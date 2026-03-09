@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-03-08T21:25:44.856394+05:30",
-  "total_products": 1131,
+  "last_updated": "2026-03-09T11:14:30.691307+05:30",
+  "total_products": 1133,
   "products": [
+    {
+      "id": "product_morning_20260309_054430",
+      "title": "Amazon Product B0F6NGS1V2",
+      "image": "https://m.media-amazon.com/images/I/B0F6NGS1V2._AC_SL1500_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0F6NGS1V2?tag=gadgetvill09f-21",
+      "price": "\u20b9Special Price",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B0F6NGS1V2",
+      "data_source": "fallback",
+      "posted_date": "2026-03-09T11:14:30.691274+05:30",
+      "session_type": "morning",
+      "link_index": 170
+    },
+    {
+      "id": "product_morning_20260309_054429",
+      "title": "Washing Machine Cleaner Balls, Reusable Tangle Free Clothes Cleaning Ball, Scrubbing Laundry Balls, Washing Balls Enhanc",
+      "image": "https://m.media-amazon.com/images/I/81aoMi-CGyL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DG7ZJQ8Y?tag=gadgetvill09f-21",
+      "price": "\u20b9199",
+      "rating": 4.0,
+      "category": "electronics",
+      "asin": "B0DG7ZJQ8Y",
+      "data_source": "serpapi",
+      "posted_date": "2026-03-09T11:14:29.758106+05:30",
+      "session_type": "morning",
+      "link_index": 170
+    },
     {
       "id": "product_night_20260308_155544",
       "title": "Carbamide Forte Storm Shaker for Gym Bottle 700ml | Protein Shaker Bottle | 100% Leakproof, BPA Free, Durable Gym Shaker",
