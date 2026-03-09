@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-03-09T19:21:10.301994+05:30",
-  "total_products": 1137,
+  "last_updated": "2026-03-09T22:09:50.238151+05:30",
+  "total_products": 1139,
   "products": [
+    {
+      "id": "product_morning_20260309_163950",
+      "title": "GOLD LEAF Wooden Stationery Pen Stand With Photo Frame, Multicolor, Pack Of 6",
+      "image": "https://m.media-amazon.com/images/I/718lp1GPllL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07DVRGPG2?tag=gadgetvill09f-21",
+      "price": "\u20b9569",
+      "rating": 4.2,
+      "category": "electronics",
+      "asin": "B07DVRGPG2",
+      "data_source": "serpapi",
+      "posted_date": "2026-03-09T22:09:50.238114+05:30",
+      "session_type": "morning",
+      "link_index": 176
+    },
+    {
+      "id": "product_morning_20260309_163948",
+      "title": "4-in-1 Soft Silicone Bath Brush Set | Long Handle Back Scrubber + Body Scrubber + Scalp Massager + Face Massager | Super",
+      "image": "https://m.media-amazon.com/images/I/71a3Ho35wJL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0G1MW19HM?tag=gadgetvill09f-21",
+      "price": "\u20b9240",
+      "rating": 4.4,
+      "category": "electronics",
+      "asin": "B0G1MW19HM",
+      "data_source": "serpapi",
+      "posted_date": "2026-03-09T22:09:48.019601+05:30",
+      "session_type": "morning",
+      "link_index": 176
+    },
     {
       "id": "product_morning_20260309_135110",
       "title": "Bouncefit M I D18 Round Fitness Band Smart Watch for Men, Women, Boys, Girls, Kids \u2013 Single Touch Interface, Water Resis",
