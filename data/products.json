@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-03-09T11:14:30.691307+05:30",
-  "total_products": 1133,
+  "last_updated": "2026-03-09T13:35:52.208111+05:30",
+  "total_products": 1135,
   "products": [
+    {
+      "id": "product_morning_20260309_080552",
+      "title": "Virat 18 Jersey Red T-Shirt 2025(Kid's, Boy's& Men)",
+      "image": "https://m.media-amazon.com/images/I/51kg+KYUwpL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FZ3KGJBT?tag=gadgetvill09f-21",
+      "price": "\u20b9299",
+      "rating": 3.7,
+      "category": "fashion",
+      "asin": "B0FZ3KGJBT",
+      "data_source": "serpapi",
+      "posted_date": "2026-03-09T13:35:52.208076+05:30",
+      "session_type": "morning",
+      "link_index": 172
+    },
+    {
+      "id": "product_morning_20260309_080550",
+      "title": "TECHNOSPORT Men's 100% Polyester Regular Fit Half Sleeve Printed Crew Neck T-Shirt with Techno Dry, Anti Microbial Prope",
+      "image": "https://m.media-amazon.com/images/I/51HElvdCiaL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DG56QK4M?tag=gadgetvill09f-21",
+      "price": "\u20b9377",
+      "rating": 4.3,
+      "category": "fashion",
+      "asin": "B0DG56QK4M",
+      "data_source": "serpapi",
+      "posted_date": "2026-03-09T13:35:50.496220+05:30",
+      "session_type": "morning",
+      "link_index": 172
+    },
     {
       "id": "product_morning_20260309_054430",
       "title": "Amazon Product B0F6NGS1V2",
