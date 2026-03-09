@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-03-09T13:35:52.208111+05:30",
-  "total_products": 1135,
+  "last_updated": "2026-03-09T19:21:10.301994+05:30",
+  "total_products": 1137,
   "products": [
+    {
+      "id": "product_morning_20260309_135110",
+      "title": "Bouncefit M I D18 Round Fitness Band Smart Watch for Men, Women, Boys, Girls, Kids \u2013 Single Touch Interface, Water Resis",
+      "image": "https://m.media-amazon.com/images/I/61Cwg96VKjL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FJ76MNXR?tag=gadgetvill09f-21",
+      "price": "\u20b9598",
+      "rating": 3.5,
+      "category": "fashion",
+      "asin": "B0FJ76MNXR",
+      "data_source": "serpapi",
+      "posted_date": "2026-03-09T19:21:10.301959+05:30",
+      "session_type": "morning",
+      "link_index": 174
+    },
+    {
+      "id": "product_morning_20260309_135108",
+      "title": "Upix Smartwatch Charging Cable | Safe, Fast Charging for Fire-Boltt, Noise, Dizo, beatXP & 2 Pin Charger Watches (with 4",
+      "image": "https://m.media-amazon.com/images/I/517PBtE07uL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DTPD3H9C?tag=gadgetvill09f-21",
+      "price": "\u20b9174",
+      "rating": 3.5,
+      "category": "electronics",
+      "asin": "B0DTPD3H9C",
+      "data_source": "serpapi",
+      "posted_date": "2026-03-09T19:21:08.291477+05:30",
+      "session_type": "morning",
+      "link_index": 174
+    },
     {
       "id": "product_morning_20260309_080552",
       "title": "Virat 18 Jersey Red T-Shirt 2025(Kid's, Boy's& Men)",
