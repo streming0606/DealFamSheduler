@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-03-09T22:09:50.238151+05:30",
-  "total_products": 1139,
+  "last_updated": "2026-03-10T11:05:30.734463+05:30",
+  "total_products": 1141,
   "products": [
+    {
+      "id": "product_morning_20260310_053530",
+      "title": "Puma Men Polyester Logo Training T-Shirt | Regular Fit Crew Neck Tee | Sweat Proof Fabric T-Shirt for Fitness and Gym | ",
+      "image": "https://m.media-amazon.com/images/I/51+H1-LqUoL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B089Z7PPSJ?tag=gadgetvill09f-21",
+      "price": "\u20b9599",
+      "rating": 4.0,
+      "category": "fashion",
+      "asin": "B089Z7PPSJ",
+      "data_source": "serpapi",
+      "posted_date": "2026-03-10T11:05:30.734432+05:30",
+      "session_type": "morning",
+      "link_index": 178
+    },
+    {
+      "id": "product_morning_20260310_053529",
+      "title": "Amazon Brand - Presto! Non-Woven Reusable Kitchen Towel Roll | 50 Pulls | 100 Sheets (Pack of 2) | Size: 20 x 22 cm | Wh",
+      "image": "https://m.media-amazon.com/images/I/71eyZN5sF9L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DKFTXN9P?tag=gadgetvill09f-21",
+      "price": "\u20b9169",
+      "rating": 4.4,
+      "category": "home",
+      "asin": "B0DKFTXN9P",
+      "data_source": "serpapi",
+      "posted_date": "2026-03-10T11:05:29.697685+05:30",
+      "session_type": "morning",
+      "link_index": 178
+    },
     {
       "id": "product_morning_20260309_163950",
       "title": "GOLD LEAF Wooden Stationery Pen Stand With Photo Frame, Multicolor, Pack Of 6",
