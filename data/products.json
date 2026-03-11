@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-03-11T11:07:20.732538+05:30",
-  "total_products": 1149,
+  "last_updated": "2026-03-11T13:34:55.551287+05:30",
+  "total_products": 1151,
   "products": [
+    {
+      "id": "product_morning_20260311_080455",
+      "title": "Boldfit Men Polyester Solid Regular Fit Vest",
+      "image": "https://m.media-amazon.com/images/I/71BtDhQxvLL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0D83XKMS8?tag=gadgetvill09f-21",
+      "price": "\u20b9299",
+      "rating": 4.2,
+      "category": "electronics",
+      "asin": "B0D83XKMS8",
+      "data_source": "serpapi",
+      "posted_date": "2026-03-11T13:34:55.551248+05:30",
+      "session_type": "morning",
+      "link_index": 188
+    },
+    {
+      "id": "product_morning_20260311_080454",
+      "title": "Wooden Happy Birthday Music Box | UV Printed Antique Gift Box | Cute Birthday Gift for Girls, Friends, Sister, Wife | Un",
+      "image": "https://m.media-amazon.com/images/I/71jASI74bXL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B08BC25MH8?tag=gadgetvill09f-21",
+      "price": "\u20b9407",
+      "rating": 5.0,
+      "category": "electronics",
+      "asin": "B08BC25MH8",
+      "data_source": "serpapi",
+      "posted_date": "2026-03-11T13:34:54.216547+05:30",
+      "session_type": "morning",
+      "link_index": 188
+    },
     {
       "id": "product_morning_20260311_053720",
       "title": "Noise Newly Launched Quad Call 1.81\" Display, Bluetooth Calling Smart Watch, AI Voice Assistance, 160+Hrs Battery Life, ",
