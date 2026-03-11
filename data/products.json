@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-03-11T19:21:04.719566+05:30",
-  "total_products": 1153,
+  "last_updated": "2026-03-11T22:03:00.125751+05:30",
+  "total_products": 1155,
   "products": [
+    {
+      "id": "product_morning_20260311_163300",
+      "title": "Period Cramp Relief Massager | Portable Cordless Menstrual Pain Massage with 3 Heat Modes & 3 Massage Modes | Bigger Fro",
+      "image": "https://m.media-amazon.com/images/I/61gIW4Izb4L._AC_UY218_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0F32Y7471?tag=gadgetvill09f-21",
+      "price": "\u20b91,495",
+      "rating": 4.5,
+      "category": "home",
+      "asin": "B0F32Y7471",
+      "data_source": "serpapi",
+      "posted_date": "2026-03-11T22:03:00.125723+05:30",
+      "session_type": "morning",
+      "link_index": 192
+    },
+    {
+      "id": "product_morning_20260311_163255",
+      "title": "Puma Men's Basic Essential No. 1 Logo Heather Polyester Solid Regular Fit Tees for Training and Gym",
+      "image": "https://m.media-amazon.com/images/I/61+LC1iZs3L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DN5T53D1?tag=gadgetvill09f-21",
+      "price": "\u20b9899",
+      "rating": 4.5,
+      "category": "electronics",
+      "asin": "B0DN5T53D1",
+      "data_source": "serpapi",
+      "posted_date": "2026-03-11T22:02:55.394276+05:30",
+      "session_type": "morning",
+      "link_index": 192
+    },
     {
       "id": "product_morning_20260311_135104",
       "title": "Knee Massager for Joint Pain Relief with Heat, Rechargeable Red Light Vibration Knee Arthritis Massage Physiotherapy Mac",
