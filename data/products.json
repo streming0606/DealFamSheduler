@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-03-10T22:09:31.402121+05:30",
-  "total_products": 1147,
+  "last_updated": "2026-03-11T11:07:20.732538+05:30",
+  "total_products": 1149,
   "products": [
+    {
+      "id": "product_morning_20260311_053720",
+      "title": "Noise Newly Launched Quad Call 1.81\" Display, Bluetooth Calling Smart Watch, AI Voice Assistance, 160+Hrs Battery Life, ",
+      "image": "https://m.media-amazon.com/images/I/61zHGn-mfdL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0BW4F5PY3?tag=gadgetvill09f-21",
+      "price": "\u20b91,099",
+      "rating": 4.0,
+      "category": "fashion",
+      "asin": "B0BW4F5PY3",
+      "data_source": "serpapi",
+      "posted_date": "2026-03-11T11:07:20.732503+05:30",
+      "session_type": "morning",
+      "link_index": 186
+    },
+    {
+      "id": "product_morning_20260311_053719",
+      "title": "Amazon Product B0B46DZ376",
+      "image": "https://m.media-amazon.com/images/I/B0B46DZ376._AC_SL1500_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0B46DZ376?tag=gadgetvill09f-21",
+      "price": "\u20b9Special Price",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B0B46DZ376",
+      "data_source": "fallback",
+      "posted_date": "2026-03-11T11:07:19.118542+05:30",
+      "session_type": "morning",
+      "link_index": 186
+    },
     {
       "id": "product_morning_20260310_163931",
       "title": "Lotto Men Melt Baseball Jersey",
