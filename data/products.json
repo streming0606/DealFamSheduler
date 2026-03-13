@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-03-12T22:12:11.143039+05:30",
-  "total_products": 1163,
+  "last_updated": "2026-03-13T11:07:12.690757+05:30",
+  "total_products": 1165,
   "products": [
+    {
+      "id": "product_morning_20260313_053712",
+      "title": "Fire-Boltt Ninja Call Pro Plus Bluetooth Calling Smart Watch, 1.83\u2033 HD Display, AI Voice Assistant, 120+ Sports Modes, I",
+      "image": "https://m.media-amazon.com/images/I/61rmkmqD5VL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0BF57RN3K?tag=gadgetvill09f-21",
+      "price": "\u20b9999",
+      "rating": 3.9,
+      "category": "fashion",
+      "asin": "B0BF57RN3K",
+      "data_source": "serpapi",
+      "posted_date": "2026-03-13T11:07:12.690729+05:30",
+      "session_type": "morning",
+      "link_index": 202
+    },
+    {
+      "id": "product_morning_20260313_053711",
+      "title": "KareIn Bed Bath Wipes, Adult Wet Wipes, 120 Wipes, Anti-Bacterial, Ready to Use Cleansing Towels, Refreshing Sponge Bath",
+      "image": "https://m.media-amazon.com/images/I/71pgBM85lDL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0BN7WWTNT?tag=gadgetvill09f-21",
+      "price": "\u20b9399",
+      "rating": 4.4,
+      "category": "electronics",
+      "asin": "B0BN7WWTNT",
+      "data_source": "serpapi",
+      "posted_date": "2026-03-13T11:07:11.053650+05:30",
+      "session_type": "morning",
+      "link_index": 202
+    },
     {
       "id": "product_morning_20260312_164211",
       "title": "Puma Men Polyester Solid Regular Fit T-Shirt",
