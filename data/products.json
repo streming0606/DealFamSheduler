@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-03-13T11:07:12.690757+05:30",
-  "total_products": 1165,
+  "last_updated": "2026-03-13T13:35:41.831250+05:30",
+  "total_products": 1167,
   "products": [
+    {
+      "id": "product_morning_20260313_080541",
+      "title": "Able Classic Black with Red Strip Stitched Water Repellent Car Body Cover with Mirror Pockets and Driver Door Zipper Com",
+      "image": "https://m.media-amazon.com/images/I/41s7JmP5EDL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DCN2QX15?tag=gadgetvill09f-21",
+      "price": "\u20b92,026",
+      "rating": 3.5,
+      "category": "electronics",
+      "asin": "B0DCN2QX15",
+      "data_source": "serpapi",
+      "posted_date": "2026-03-13T13:35:41.831223+05:30",
+      "session_type": "morning",
+      "link_index": 204
+    },
+    {
+      "id": "product_morning_20260313_080538",
+      "title": "Fire-Boltt Ninja Call Pro Bluetooth Calling Smart Watch,1.69\u201d HD Display,AI Outfit Watch Face, 2 Looks in 1 Watch, Extra",
+      "image": "https://m.media-amazon.com/images/I/61CFe3H+15L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0B855X6W2?tag=gadgetvill09f-21",
+      "price": "\u20b91,099",
+      "rating": 3.9,
+      "category": "fashion",
+      "asin": "B0B855X6W2",
+      "data_source": "serpapi",
+      "posted_date": "2026-03-13T13:35:38.828039+05:30",
+      "session_type": "morning",
+      "link_index": 204
+    },
     {
       "id": "product_morning_20260313_053712",
       "title": "Fire-Boltt Ninja Call Pro Plus Bluetooth Calling Smart Watch, 1.83\u2033 HD Display, AI Voice Assistant, 120+ Sports Modes, I",
