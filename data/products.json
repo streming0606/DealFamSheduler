@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-03-14T13:28:56.254117+05:30",
-  "total_products": 1175,
+  "last_updated": "2026-03-14T19:02:31.715985+05:30",
+  "total_products": 1177,
   "products": [
+    {
+      "id": "product_morning_20260314_133231",
+      "title": "Weird Wolf Electric Mosquito Bat | Rechargeable Mosquito Killer Racket with Built-in Plug | Lithium Battery | Durable & ",
+      "image": "https://m.media-amazon.com/images/I/81S3ss-nd-L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DRL8F24W?tag=gadgetvill09f-21",
+      "price": "\u20b9399",
+      "rating": 4.2,
+      "category": "electronics",
+      "asin": "B0DRL8F24W",
+      "data_source": "serpapi",
+      "posted_date": "2026-03-14T19:02:31.715957+05:30",
+      "session_type": "morning",
+      "link_index": 214
+    },
+    {
+      "id": "product_morning_20260314_133230",
+      "title": "Amazon Brand - Presto! Active Wash Detergent Liquid | 10 Litre | Tough On Stains | Gentle On Fabrics | Machine And Hand ",
+      "image": "https://m.media-amazon.com/images/I/61vFMCJxqmL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DLGXX585?tag=gadgetvill09f-21",
+      "price": "\u20b9825",
+      "rating": 4.2,
+      "category": "electronics",
+      "asin": "B0DLGXX585",
+      "data_source": "serpapi",
+      "posted_date": "2026-03-14T19:02:30.476719+05:30",
+      "session_type": "morning",
+      "link_index": 214
+    },
     {
       "id": "product_afternoon_20260314_075856",
       "title": "NRIP Premium Walnut Kernels California 200g (Pack of 1) | Walnuts without Shell | Akhrot Giri | Dry Fruits, Healthy Snac",
