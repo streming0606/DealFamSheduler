@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-03-14T19:02:31.715985+05:30",
-  "total_products": 1177,
+  "last_updated": "2026-03-14T21:28:19.205411+05:30",
+  "total_products": 1179,
   "products": [
+    {
+      "id": "product_night_20260314_155819",
+      "title": "Steelbird SBA-20 Strange ISI Certified Flip-Up Graphic Helmet for Men with Inner Silver Sunshield",
+      "image": "https://m.media-amazon.com/images/I/71nl1C8k0VL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0D6NFFKWX?tag=gadgetvill09f-21",
+      "price": "\u20b92,270",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B0D6NFFKWX",
+      "data_source": "serpapi",
+      "posted_date": "2026-03-14T21:28:19.205354+05:30",
+      "session_type": "night",
+      "link_index": 216
+    },
+    {
+      "id": "product_night_20260314_155817",
+      "title": "Jockey AM95 Men's Super Combed Cotton Rich Solid Round Neck Full Sleeve T-Shirt",
+      "image": "https://m.media-amazon.com/images/I/71gWw88OQwL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0G2X6CGXV?tag=gadgetvill09f-21",
+      "price": "\u20b9779",
+      "rating": 4.2,
+      "category": "fashion",
+      "asin": "B0G2X6CGXV",
+      "data_source": "serpapi",
+      "posted_date": "2026-03-14T21:28:17.547887+05:30",
+      "session_type": "night",
+      "link_index": 216
+    },
     {
       "id": "product_morning_20260314_133231",
       "title": "Weird Wolf Electric Mosquito Bat | Rechargeable Mosquito Killer Racket with Built-in Plug | Lithium Battery | Durable & ",
