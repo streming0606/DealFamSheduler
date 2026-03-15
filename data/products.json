@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-03-15T11:24:11.404597+05:30",
-  "total_products": 1181,
+  "last_updated": "2026-03-15T13:33:28.292297+05:30",
+  "total_products": 1183,
   "products": [
+    {
+      "id": "product_morning_20260315_080328",
+      "title": "THE BLAZZE Men's Gym Tank Tops",
+      "image": "https://m.media-amazon.com/images/I/61azLiGFBGL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07KG44HFD?tag=gadgetvill09f-21",
+      "price": "\u20b9391.02",
+      "rating": 3.6,
+      "category": "electronics",
+      "asin": "B07KG44HFD",
+      "data_source": "serpapi",
+      "posted_date": "2026-03-15T13:33:28.292263+05:30",
+      "session_type": "morning",
+      "link_index": 220
+    },
+    {
+      "id": "product_morning_20260315_080326",
+      "title": "GOBOULT x Mustang Torq Wireless in Ear Earbuds with 60H Playtime, App Support, Quad Mic ENC, 45ms Low Latency, 13mm Driv",
+      "image": "https://m.media-amazon.com/images/I/71rbNPgK-RL._AC_UY218_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0F9YWD4Z3?tag=gadgetvill09f-21",
+      "price": "\u20b91,699",
+      "rating": 4.0,
+      "category": "electronics",
+      "asin": "B0F9YWD4Z3",
+      "data_source": "serpapi",
+      "posted_date": "2026-03-15T13:33:26.484920+05:30",
+      "session_type": "morning",
+      "link_index": 220
+    },
     {
       "id": "product_morning_20260315_055411",
       "title": "Spartan Silica Gel - 5 Gram Desiccant Pouch of 80 pcs Pack (5gm/80 Packets) | Silica Gel Pouches for Moisture Absorbers ",
