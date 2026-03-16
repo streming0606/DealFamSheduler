@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-03-16T19:35:40.697566+05:30",
-  "total_products": 1193,
+  "last_updated": "2026-03-16T22:12:43.558976+05:30",
+  "total_products": 1195,
   "products": [
+    {
+      "id": "product_morning_20260316_164243",
+      "title": "Friends Classic Large Disposable Underpads for Adults (60x90 cm) | 30 Count | Highly Absorbent | Unisex | Cottony Soft |",
+      "image": "https://m.media-amazon.com/images/I/81sUzP07O2L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07T84C5NB?tag=gadgetvill09f-21",
+      "price": "\u20b9449",
+      "rating": 4.2,
+      "category": "electronics",
+      "asin": "B07T84C5NB",
+      "data_source": "serpapi",
+      "posted_date": "2026-03-16T22:12:43.558947+05:30",
+      "session_type": "morning",
+      "link_index": 232
+    },
+    {
+      "id": "product_morning_20260316_164240",
+      "title": "Redmi Watch 5 Lite, 1.96\" Amoled, Advanced in-Built GPS, 5 ATM, 18 Day Battery, Bluetooth Calling with AI Noise Reductio",
+      "image": "https://m.media-amazon.com/images/I/71qq-p26D4L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DH2SPVZC?tag=gadgetvill09f-21",
+      "price": "\u20b93,499",
+      "rating": 4.0,
+      "category": "fashion",
+      "asin": "B0DH2SPVZC",
+      "data_source": "serpapi",
+      "posted_date": "2026-03-16T22:12:40.121658+05:30",
+      "session_type": "morning",
+      "link_index": 232
+    },
     {
       "id": "product_morning_20260316_140540",
       "title": "imoo Kids Phone Watch Z1 \u2013 Smart Watch with GPS Tracker, 4G Video & Voice Calls, Advanced Parental Controls, Durable Qua",
