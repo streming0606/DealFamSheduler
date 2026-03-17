@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-03-16T22:12:43.558976+05:30",
-  "total_products": 1195,
+  "last_updated": "2026-03-17T11:15:15.143411+05:30",
+  "total_products": 1197,
   "products": [
+    {
+      "id": "product_morning_20260317_054515",
+      "title": "Invisible Ear Lobe Support for Earrings Earlobe Tapes and Stickers Earring Supporter for Heavy Earrings Support Patches ",
+      "image": "https://m.media-amazon.com/images/I/71JrYt4UChL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CT31ZW2L?tag=gadgetvill09f-21",
+      "price": "\u20b9199",
+      "rating": 4.1,
+      "category": "electronics",
+      "asin": "B0CT31ZW2L",
+      "data_source": "serpapi",
+      "posted_date": "2026-03-17T11:15:15.143386+05:30",
+      "session_type": "morning",
+      "link_index": 234
+    },
+    {
+      "id": "product_morning_20260317_054513",
+      "title": "Caresmith Eon Premium Electric Hot Water Bag for Pain Relief | Dual Insulation Silicon Technology Heating Pad for Pain R",
+      "image": "https://m.media-amazon.com/images/I/617IK9PytcL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07SDBY15G?tag=gadgetvill09f-21",
+      "price": "\u20b9899",
+      "rating": 4.2,
+      "category": "fashion",
+      "asin": "B07SDBY15G",
+      "data_source": "serpapi",
+      "posted_date": "2026-03-17T11:15:13.191959+05:30",
+      "session_type": "morning",
+      "link_index": 234
+    },
     {
       "id": "product_morning_20260316_164243",
       "title": "Friends Classic Large Disposable Underpads for Adults (60x90 cm) | 30 Count | Highly Absorbent | Unisex | Cottony Soft |",
