@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-03-17T19:35:28.955348+05:30",
-  "total_products": 1201,
+  "last_updated": "2026-03-17T22:14:57.973721+05:30",
+  "total_products": 1203,
   "products": [
+    {
+      "id": "product_morning_20260317_164457",
+      "title": "HUMBLE Stainless Steel 19mm Chain Strap with Magnetic Buckle Compatible with Noise Colorfit Pro 2, Boat Storm Smart Watc",
+      "image": "https://m.media-amazon.com/images/I/71yzwdL8f0L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0B631B363?tag=gadgetvill09f-21",
+      "price": "\u20b9199",
+      "rating": 3.6,
+      "category": "electronics",
+      "asin": "B0B631B363",
+      "data_source": "serpapi",
+      "posted_date": "2026-03-17T22:14:57.973695+05:30",
+      "session_type": "morning",
+      "link_index": 240
+    },
+    {
+      "id": "product_morning_20260317_164456",
+      "title": "Amazon Product B0D4ZBL425",
+      "image": "https://m.media-amazon.com/images/I/B0D4ZBL425._AC_SL1500_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0D4ZBL425?tag=gadgetvill09f-21",
+      "price": "\u20b9Special Price",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B0D4ZBL425",
+      "data_source": "fallback",
+      "posted_date": "2026-03-17T22:14:56.777266+05:30",
+      "session_type": "morning",
+      "link_index": 240
+    },
     {
       "id": "product_morning_20260317_140528",
       "title": "Amazon Product B0CWNXRDZJ",
