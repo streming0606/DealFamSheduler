@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-03-17T22:14:57.973721+05:30",
-  "total_products": 1203,
+  "last_updated": "2026-03-18T11:18:30.837594+05:30",
+  "total_products": 1205,
   "products": [
+    {
+      "id": "product_morning_20260318_054830",
+      "title": "Lifelong ActiveFlex Weighing Scale (Fight Lazy Series LLWS45- Active Black)|Digital Weight Machine for Body Weight|Thick",
+      "image": "https://m.media-amazon.com/images/I/711oiLMRGNL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B09Y6BYJ8B?tag=gadgetvill09f-21",
+      "price": "\u20b9399",
+      "rating": 4.1,
+      "category": "electronics",
+      "asin": "B09Y6BYJ8B",
+      "data_source": "serpapi",
+      "posted_date": "2026-03-18T11:18:30.837565+05:30",
+      "session_type": "morning",
+      "link_index": 242
+    },
+    {
+      "id": "product_morning_20260318_054828",
+      "title": "Noise ColorFit Charger for TWIST/Pulse 2 Max/Pulse Go Buzz/Halo/Halo Plus/Pulse Grand/Quad Call/ColorFit Pro 4/Pro 4 Alp",
+      "image": "https://m.media-amazon.com/images/I/61bl-xXVMbL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B09HN6QB25?tag=gadgetvill09f-21",
+      "price": "\u20b9149",
+      "rating": 3.9,
+      "category": "electronics",
+      "asin": "B09HN6QB25",
+      "data_source": "serpapi",
+      "posted_date": "2026-03-18T11:18:28.846876+05:30",
+      "session_type": "morning",
+      "link_index": 242
+    },
     {
       "id": "product_morning_20260317_164457",
       "title": "HUMBLE Stainless Steel 19mm Chain Strap with Magnetic Buckle Compatible with Noise Colorfit Pro 2, Boat Storm Smart Watc",
