@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-03-18T19:35:31.157953+05:30",
-  "total_products": 1209,
+  "last_updated": "2026-03-18T22:12:54.113152+05:30",
+  "total_products": 1211,
   "products": [
+    {
+      "id": "product_morning_20260318_164254",
+      "title": "POPIO Military-Grade Gorilla Tempered Glass Screen Protector for Samsung Galaxy Watch 4/5 / 6/7 (44mm) (1.4\" inch), Pack",
+      "image": "https://m.media-amazon.com/images/I/615rc0mLgCL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B09MKJN2NB?tag=gadgetvill09f-21",
+      "price": "\u20b9298.99",
+      "rating": 4.1,
+      "category": "fashion",
+      "asin": "B09MKJN2NB",
+      "data_source": "serpapi",
+      "posted_date": "2026-03-18T22:12:54.113097+05:30",
+      "session_type": "morning",
+      "link_index": 248
+    },
+    {
+      "id": "product_morning_20260318_164252",
+      "title": "Dettol Icy Cool Body Wash and Shower Gel Pump for Men | Goodness of Salicylic Acid | Menthol Freshness | 500ml",
+      "image": "https://m.media-amazon.com/images/I/61IdIff11nL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CRR82SVB?tag=gadgetvill09f-21",
+      "price": "\u20b9213",
+      "rating": 4.3,
+      "category": "electronics",
+      "asin": "B0CRR82SVB",
+      "data_source": "serpapi",
+      "posted_date": "2026-03-18T22:12:52.357683+05:30",
+      "session_type": "morning",
+      "link_index": 248
+    },
     {
       "id": "product_morning_20260318_140531",
       "title": "Bouncefit M I D116 Fitness Band Smart Watch for Men, Women, Boys, Girls, Kids \u2013 Single Touch Interface, Water Resistant,",
