@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-03-18T22:12:54.113152+05:30",
-  "total_products": 1211,
+  "last_updated": "2026-03-19T11:15:34.327671+05:30",
+  "total_products": 1213,
   "products": [
+    {
+      "id": "product_morning_20260319_054534",
+      "title": "22 mm Silicone Magnetic Watch Straps Belt Band Compatible with Noise ColorFit Ultra/Ultra 2, Pro 3, Active/GPS, Buzz, Co",
+      "image": "https://m.media-amazon.com/images/I/51VG2X+ckbL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0C1Y19GTZ?tag=gadgetvill09f-21",
+      "price": "\u20b9239",
+      "rating": 4.2,
+      "category": "fashion",
+      "asin": "B0C1Y19GTZ",
+      "data_source": "serpapi",
+      "posted_date": "2026-03-19T11:15:34.327641+05:30",
+      "session_type": "morning",
+      "link_index": 250
+    },
+    {
+      "id": "product_morning_20260319_054533",
+      "title": "HealthyHey Nutrition Fish Oil Capsules Omega 3 60 Softgel For Women and Men | Triple Strength Fish Oil | Burpless, EPA 6",
+      "image": "https://m.media-amazon.com/images/I/61fGpWPiHqL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B075QHMZRQ?tag=gadgetvill09f-21",
+      "price": "\u20b9533",
+      "rating": 4.4,
+      "category": "fashion",
+      "asin": "B075QHMZRQ",
+      "data_source": "serpapi",
+      "posted_date": "2026-03-19T11:15:33.309951+05:30",
+      "session_type": "morning",
+      "link_index": 250
+    },
     {
       "id": "product_morning_20260318_164254",
       "title": "POPIO Military-Grade Gorilla Tempered Glass Screen Protector for Samsung Galaxy Watch 4/5 / 6/7 (44mm) (1.4\" inch), Pack",
