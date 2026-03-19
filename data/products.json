@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-03-19T11:15:34.327671+05:30",
-  "total_products": 1213,
+  "last_updated": "2026-03-19T13:36:54.310889+05:30",
+  "total_products": 1215,
   "products": [
+    {
+      "id": "product_morning_20260319_080654",
+      "title": "Tough Armour Case Compatible for Apple Watch Series 11 46mm (2025), Series 10 46mm (2024), Military Grade Protective Cov",
+      "image": "https://m.media-amazon.com/images/I/61R6vRJvtoL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DKVLFR7X?tag=gadgetvill09f-21",
+      "price": "\u20b9278",
+      "rating": 4.3,
+      "category": "fashion",
+      "asin": "B0DKVLFR7X",
+      "data_source": "serpapi",
+      "posted_date": "2026-03-19T13:36:54.310863+05:30",
+      "session_type": "morning",
+      "link_index": 252
+    },
+    {
+      "id": "product_morning_20260319_080652",
+      "title": "NEVER QUIT Gym Supporter for Men | Ideal for Workout and Running, Cricket, Tennis, Sports| Compression Brief Abdomen Sup",
+      "image": "https://m.media-amazon.com/images/I/616odR2gnQL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0BQ6N21QT?tag=gadgetvill09f-21",
+      "price": "\u20b9199",
+      "rating": 3.7,
+      "category": "electronics",
+      "asin": "B0BQ6N21QT",
+      "data_source": "serpapi",
+      "posted_date": "2026-03-19T13:36:52.670503+05:30",
+      "session_type": "morning",
+      "link_index": 252
+    },
     {
       "id": "product_morning_20260319_054534",
       "title": "22 mm Silicone Magnetic Watch Straps Belt Band Compatible with Noise ColorFit Ultra/Ultra 2, Pro 3, Active/GPS, Buzz, Co",
