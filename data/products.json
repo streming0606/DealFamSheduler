@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-03-20T11:09:22.827491+05:30",
-  "total_products": 1221,
+  "last_updated": "2026-03-20T13:36:01.940049+05:30",
+  "total_products": 1223,
   "products": [
+    {
+      "id": "product_morning_20260320_080601",
+      "title": "Dika Sports Custom Add Name and Number Jersey for Men Cricket t-Shirt | 2 Year to 5XL",
+      "image": "https://m.media-amazon.com/images/I/61SIpPHrNHL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DFTZ8M4R?tag=gadgetvill09f-21",
+      "price": "\u20b9449",
+      "rating": 4.1,
+      "category": "fashion",
+      "asin": "B0DFTZ8M4R",
+      "data_source": "serpapi",
+      "posted_date": "2026-03-20T13:36:01.940022+05:30",
+      "session_type": "morning",
+      "link_index": 260
+    },
+    {
+      "id": "product_morning_20260320_080559",
+      "title": "Dika Sports Custom Jersey for Kids Cricket t-Shirt Sale Cricket t Shirts for menyonex t Shirts | 2 Year to 5XL",
+      "image": "https://m.media-amazon.com/images/I/51ZKoON3dSL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FCYJ5SRR?tag=gadgetvill09f-21",
+      "price": "\u20b9473",
+      "rating": 4.2,
+      "category": "fashion",
+      "asin": "B0FCYJ5SRR",
+      "data_source": "serpapi",
+      "posted_date": "2026-03-20T13:35:59.692376+05:30",
+      "session_type": "morning",
+      "link_index": 260
+    },
     {
       "id": "product_morning_20260320_053922",
       "title": "Little eXtra Wood Cane TV Unit for Living Room | Handcrafted Wooden Sideboard with Doors & Open Storage Shelves | Modern",
