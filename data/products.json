@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-03-20T13:36:01.940049+05:30",
-  "total_products": 1223,
+  "last_updated": "2026-03-20T19:16:34.311995+05:30",
+  "total_products": 1225,
   "products": [
+    {
+      "id": "product_morning_20260320_134634",
+      "title": "Meyaar Magnetic Loop for Apple Watch Band 46mm 42mm 44mm 45mm 49mm Women Men,Magnet Stainless Steel Mesh Metal Strap for",
+      "image": "https://m.media-amazon.com/images/I/61a-BpQ7ErL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DHJDBG19?tag=gadgetvill09f-21",
+      "price": "\u20b9299",
+      "rating": 3.5,
+      "category": "fashion",
+      "asin": "B0DHJDBG19",
+      "data_source": "serpapi",
+      "posted_date": "2026-03-20T19:16:34.311958+05:30",
+      "session_type": "morning",
+      "link_index": 262
+    },
+    {
+      "id": "product_morning_20260320_134629",
+      "title": "Amazon Product B0CV7ZTKT5",
+      "image": "https://m.media-amazon.com/images/I/B0CV7ZTKT5._AC_SL1500_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CV7ZTKT5?tag=gadgetvill09f-21",
+      "price": "\u20b9Special Price",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B0CV7ZTKT5",
+      "data_source": "fallback",
+      "posted_date": "2026-03-20T19:16:29.544421+05:30",
+      "session_type": "morning",
+      "link_index": 262
+    },
     {
       "id": "product_morning_20260320_080601",
       "title": "Dika Sports Custom Add Name and Number Jersey for Men Cricket t-Shirt | 2 Year to 5XL",
