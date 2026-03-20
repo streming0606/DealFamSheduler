@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-03-20T19:16:34.311995+05:30",
-  "total_products": 1225,
+  "last_updated": "2026-03-20T21:54:45.814706+05:30",
+  "total_products": 1227,
   "products": [
+    {
+      "id": "product_morning_20260320_162445",
+      "title": "Boldfit Eye Mask for Sleeping with Adjustable Strap Super Soft Sleeping Mask Blind Fold for Comfortable Sleep Travelling",
+      "image": "https://m.media-amazon.com/images/I/71LILE7OI6L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0BQM83QVL?tag=gadgetvill09f-21",
+      "price": "\u20b9199",
+      "rating": 4.1,
+      "category": "home",
+      "asin": "B0BQM83QVL",
+      "data_source": "serpapi",
+      "posted_date": "2026-03-20T21:54:45.814671+05:30",
+      "session_type": "morning",
+      "link_index": 264
+    },
+    {
+      "id": "product_morning_20260320_162444",
+      "title": "Fire\u2011Boltt Rise Smart Watch 1.85\u2033 HD Display with Bluetooth Calling, AI Voice Assistant, Rotating Crown,SpO2 & Heart Rat",
+      "image": "https://m.media-amazon.com/images/I/61IGSSfF-JL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CMF25TKG?tag=gadgetvill09f-21",
+      "price": "\u20b91,199",
+      "rating": 3.9,
+      "category": "fashion",
+      "asin": "B0CMF25TKG",
+      "data_source": "serpapi",
+      "posted_date": "2026-03-20T21:54:44.374051+05:30",
+      "session_type": "morning",
+      "link_index": 264
+    },
     {
       "id": "product_morning_20260320_134634",
       "title": "Meyaar Magnetic Loop for Apple Watch Band 46mm 42mm 44mm 45mm 49mm Women Men,Magnet Stainless Steel Mesh Metal Strap for",
