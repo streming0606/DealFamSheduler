@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-03-19T22:10:31.179961+05:30",
-  "total_products": 1219,
+  "last_updated": "2026-03-20T11:09:22.827491+05:30",
+  "total_products": 1221,
   "products": [
+    {
+      "id": "product_morning_20260320_053922",
+      "title": "Little eXtra Wood Cane TV Unit for Living Room | Handcrafted Wooden Sideboard with Doors & Open Storage Shelves | Modern",
+      "image": "https://m.media-amazon.com/images/I/61lJtpMbaHL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0D6GK2871?tag=gadgetvill09f-21",
+      "price": "\u20b9Special Price",
+      "rating": 5.0,
+      "category": "electronics",
+      "asin": "B0D6GK2871",
+      "data_source": "serpapi",
+      "posted_date": "2026-03-20T11:09:22.827456+05:30",
+      "session_type": "morning",
+      "link_index": 258
+    },
+    {
+      "id": "product_morning_20260320_053920",
+      "title": "Herbal Pain Relief Patches - 20 Knee Pain Patches (Specially Designed for Knee Joints) | 100% Safe & Natural Knee Pain R",
+      "image": "https://m.media-amazon.com/images/I/81FQcPe4S8L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FD7MLYRP?tag=gadgetvill09f-21",
+      "price": "\u20b9347",
+      "rating": 4.5,
+      "category": "electronics",
+      "asin": "B0FD7MLYRP",
+      "data_source": "serpapi",
+      "posted_date": "2026-03-20T11:09:20.084295+05:30",
+      "session_type": "morning",
+      "link_index": 258
+    },
     {
       "id": "product_morning_20260319_164031",
       "title": "Ghar Soaps Sandalwood & Saffron Magic Soaps For Bath (300 Gms Pack Of 3) | Paraben Free | Chandan & Kesar Bath Soap | Ha",
