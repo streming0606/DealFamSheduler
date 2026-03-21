@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-03-20T21:54:45.814706+05:30",
-  "total_products": 1227,
+  "last_updated": "2026-03-21T11:00:05.396527+05:30",
+  "total_products": 1229,
   "products": [
+    {
+      "id": "product_morning_20260321_053005",
+      "title": "Boat Wave Sigma 3 w/Turn-by-Turn Navigation, 2.01\" HD Display, Bluetooth Calling, Crest+ OS, QR Tray, Watch Face Studio,",
+      "image": "https://m.media-amazon.com/images/I/71XeKHAtrUL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CVWZNBYW?tag=gadgetvill09f-21",
+      "price": "\u20b91,119",
+      "rating": 3.7,
+      "category": "fashion",
+      "asin": "B0CVWZNBYW",
+      "data_source": "serpapi",
+      "posted_date": "2026-03-21T11:00:05.396490+05:30",
+      "session_type": "morning",
+      "link_index": 266
+    },
+    {
+      "id": "product_morning_20260321_053003",
+      "title": "Amazon Product B0FHGZMCV3",
+      "image": "https://m.media-amazon.com/images/I/B0FHGZMCV3._AC_SL1500_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FHGZMCV3?tag=gadgetvill09f-21",
+      "price": "\u20b9Special Price",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B0FHGZMCV3",
+      "data_source": "fallback",
+      "posted_date": "2026-03-21T11:00:03.937335+05:30",
+      "session_type": "morning",
+      "link_index": 266
+    },
     {
       "id": "product_morning_20260320_162445",
       "title": "Boldfit Eye Mask for Sleeping with Adjustable Strap Super Soft Sleeping Mask Blind Fold for Comfortable Sleep Travelling",
