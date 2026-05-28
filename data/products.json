@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-03-21T11:00:05.396527+05:30",
-  "total_products": 1229,
+  "last_updated": "2026-05-28T18:15:16.718949+05:30",
+  "total_products": 1226,
   "products": [
+    {
+      "id": "product_evening_20260528_124516",
+      "title": "AUSK Oversized T-Shirt for Womens || Graphic Front Printed Loose fit Womens Tshirt",
+      "image": "https://m.media-amazon.com/images/I/71kSq+PxfkL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FDB38DLN?tag=gadgetvill09f-21",
+      "price": "\u20b9246",
+      "rating": 3.8,
+      "category": "fashion",
+      "asin": "B0FDB38DLN",
+      "data_source": "serpapi",
+      "posted_date": "2026-05-28T18:15:16.718918+05:30",
+      "session_type": "evening",
+      "link_index": 1
+    },
+    {
+      "id": "product_evening_20260528_124515",
+      "title": "Mens Half Sleeves Polo Neck T-Shirt, Casual Summer Wear T-Shirt for Men, Formal Half Zipper T-Shirts for Boys, Stylish E",
+      "image": "https://m.media-amazon.com/images/I/61fKEBK67KL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0GJ6N6H57?tag=gadgetvill09f-21",
+      "price": "\u20b9267",
+      "rating": 4.0,
+      "category": "fashion",
+      "asin": "B0GJ6N6H57",
+      "data_source": "serpapi",
+      "posted_date": "2026-05-28T18:15:15.443241+05:30",
+      "session_type": "evening",
+      "link_index": 1
+    },
     {
       "id": "product_morning_20260321_053005",
       "title": "Boat Wave Sigma 3 w/Turn-by-Turn Navigation, 2.01\" HD Display, Bluetooth Calling, Crest+ OS, QR Tray, Watch Face Studio,",
@@ -16,7 +44,6 @@
       "session_type": "morning",
       "link_index": 266
     },
-    
     {
       "id": "product_morning_20260320_162445",
       "title": "Boldfit Eye Mask for Sleeping with Adjustable Strap Super Soft Sleeping Mask Blind Fold for Comfortable Sleep Travelling",
@@ -59,7 +86,6 @@
       "session_type": "morning",
       "link_index": 262
     },
-  
     {
       "id": "product_morning_20260320_080601",
       "title": "Dika Sports Custom Add Name and Number Jersey for Men Cricket t-Shirt | 2 Year to 5XL",
@@ -326,7 +352,6 @@
       "session_type": "morning",
       "link_index": 242
     },
-  
     {
       "id": "product_morning_20260317_164457",
       "title": "HUMBLE Stainless Steel 19mm Chain Strap with Magnetic Buckle Compatible with Noise Colorfit Pro 2, Boat Storm Smart Watc",
@@ -341,8 +366,6 @@
       "session_type": "morning",
       "link_index": 240
     },
-    
-   
     {
       "id": "product_morning_20260317_140527",
       "title": "INTIMIFY Kumkumadi Tailam For Face, Kumkumadi Face Oil For Glowing Skin, Face Serum For Wrinkles, Whitening, Lightening ",
