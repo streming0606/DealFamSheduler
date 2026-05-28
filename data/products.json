@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-05-28T18:15:16.718949+05:30",
-  "total_products": 1226,
+  "last_updated": "2026-05-28T23:57:15.444280+05:30",
+  "total_products": 1228,
   "products": [
+    {
+      "id": "product_morning_20260528_182715",
+      "title": "GOODWISH Girl's Premium Pure Cotton Co-Ord Set | Sleeveless Button Vest Top & Shorts Set | Summer Casual Outfit for Kids",
+      "image": "https://m.media-amazon.com/images/I/615N3YQdh8L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0GVG59N9K?tag=gadgetvill09f-21",
+      "price": "\u20b9389",
+      "rating": 4.1,
+      "category": "electronics",
+      "asin": "B0GVG59N9K",
+      "data_source": "serpapi",
+      "posted_date": "2026-05-28T23:57:15.444241+05:30",
+      "session_type": "morning",
+      "link_index": 3
+    },
+    {
+      "id": "product_morning_20260528_182714",
+      "title": "Boldfit Men\u2019s Sleeveless Vest (Baniyan), Cotton Stretch Quick Dry Moisture Wicking Undershirt, Breathable Gym Innerwear ",
+      "image": "https://m.media-amazon.com/images/I/617HVMg9ZCL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0C93Q3M2B?tag=gadgetvill09f-21",
+      "price": "\u20b9249",
+      "rating": 4.1,
+      "category": "fashion",
+      "asin": "B0C93Q3M2B",
+      "data_source": "serpapi",
+      "posted_date": "2026-05-28T23:57:14.216565+05:30",
+      "session_type": "morning",
+      "link_index": 3
+    },
     {
       "id": "product_evening_20260528_124516",
       "title": "AUSK Oversized T-Shirt for Womens || Graphic Front Printed Loose fit Womens Tshirt",
