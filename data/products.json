@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-05-29T13:58:51.059021+05:30",
-  "total_products": 1230,
+  "last_updated": "2026-05-29T16:28:36.042287+05:30",
+  "total_products": 1232,
   "products": [
+    {
+      "id": "product_morning_20260529_105836",
+      "title": "London Hills Men\u2019s Waffle Textured T-Shirt | Solid Regular Fit Round Neck Half Sleeve Casual Wear Tee | Soft, Breathable",
+      "image": "https://m.media-amazon.com/images/I/617k+Tg0IrL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0GBXRQWQ8?tag=gadgetvill09f-21",
+      "price": "\u20b9251",
+      "rating": 4.0,
+      "category": "fashion",
+      "asin": "B0GBXRQWQ8",
+      "data_source": "serpapi",
+      "posted_date": "2026-05-29T16:28:36.042259+05:30",
+      "session_type": "morning",
+      "link_index": 7
+    },
+    {
+      "id": "product_morning_20260529_105833",
+      "title": "GOODWISH Girls 2-Piece Outfit Set \u2013 Sleeveless Heart Print Crop Top and Pleated Skirt \u2013 Cute Matching Summer Set for Tod",
+      "image": "https://m.media-amazon.com/images/I/610z6RJea5L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0G6LRKHB4?tag=gadgetvill09f-21",
+      "price": "\u20b9389",
+      "rating": 4.0,
+      "category": "electronics",
+      "asin": "B0G6LRKHB4",
+      "data_source": "serpapi",
+      "posted_date": "2026-05-29T16:28:33.784435+05:30",
+      "session_type": "morning",
+      "link_index": 7
+    },
     {
       "id": "product_morning_20260529_082851",
       "title": "Presents New Born Baby Summer Wear Printed Baby Clothes 5Pcs Sets 100% Cotton Boys Girls Unisex Cotton/Summer or Flannel",
