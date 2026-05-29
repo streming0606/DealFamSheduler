@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-05-28T23:57:15.444280+05:30",
-  "total_products": 1228,
+  "last_updated": "2026-05-29T13:58:51.059021+05:30",
+  "total_products": 1230,
   "products": [
+    {
+      "id": "product_morning_20260529_082851",
+      "title": "Presents New Born Baby Summer Wear Printed Baby Clothes 5Pcs Sets 100% Cotton Boys Girls Unisex Cotton/Summer or Flannel",
+      "image": "https://m.media-amazon.com/images/I/71eg598sT7L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B08WWWCYTF?tag=gadgetvill09f-21",
+      "price": "\u20b9278.07",
+      "rating": 3.8,
+      "category": "electronics",
+      "asin": "B08WWWCYTF",
+      "data_source": "serpapi",
+      "posted_date": "2026-05-29T13:58:51.058977+05:30",
+      "session_type": "morning",
+      "link_index": 5
+    },
+    {
+      "id": "product_morning_20260529_082849",
+      "title": "GRECIILOOKS Men's Lycra Cargo Track Pants \u2013 Loose Fit Joggers for Men | Korean Style Travel & Lounge Wear with Pockets (",
+      "image": "https://m.media-amazon.com/images/I/51sTMxOlN1L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CXPWH84N?tag=gadgetvill09f-21",
+      "price": "\u20b9459",
+      "rating": 3.9,
+      "category": "electronics",
+      "asin": "B0CXPWH84N",
+      "data_source": "serpapi",
+      "posted_date": "2026-05-29T13:58:49.549560+05:30",
+      "session_type": "morning",
+      "link_index": 5
+    },
     {
       "id": "product_morning_20260528_182715",
       "title": "GOODWISH Girl's Premium Pure Cotton Co-Ord Set | Sleeveless Button Vest Top & Shorts Set | Summer Casual Outfit for Kids",
