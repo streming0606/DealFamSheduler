@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-05-29T16:28:36.042287+05:30",
-  "total_products": 1232,
+  "last_updated": "2026-05-29T21:56:48.634855+05:30",
+  "total_products": 1234,
   "products": [
+    {
+      "id": "product_morning_20260529_162648",
+      "title": "Leriya Fashion Men's Rayon Regular Fit Casual Shirt | Stylish | Printed| Formal|Solid Short Sleeve | Trendy | Summer-But",
+      "image": "https://m.media-amazon.com/images/I/712HMJxTDNL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0BYZ4HZLX?tag=gadgetvill09f-21",
+      "price": "\u20b9413",
+      "rating": 3.7,
+      "category": "fashion",
+      "asin": "B0BYZ4HZLX",
+      "data_source": "serpapi",
+      "posted_date": "2026-05-29T21:56:48.634829+05:30",
+      "session_type": "morning",
+      "link_index": 9
+    },
+    {
+      "id": "product_morning_20260529_162647",
+      "title": "Zombom Cotton Polyester Blend Solid Casual Regular Fit Mandarin/Chinese Collor Short Kurta for Men",
+      "image": "https://m.media-amazon.com/images/I/71nEy2iSx-L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0D3XNFPGY?tag=gadgetvill09f-21",
+      "price": "\u20b9420",
+      "rating": 3.7,
+      "category": "electronics",
+      "asin": "B0D3XNFPGY",
+      "data_source": "serpapi",
+      "posted_date": "2026-05-29T21:56:47.051387+05:30",
+      "session_type": "morning",
+      "link_index": 9
+    },
     {
       "id": "product_morning_20260529_105836",
       "title": "London Hills Men\u2019s Waffle Textured T-Shirt | Solid Regular Fit Round Neck Half Sleeve Casual Wear Tee | Soft, Breathable",
