@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-05-30T19:46:50.237644+05:30",
-  "total_products": 1242,
+  "last_updated": "2026-05-30T22:13:25.811260+05:30",
+  "total_products": 1244,
   "products": [
+    {
+      "id": "product_morning_20260530_164325",
+      "title": "Leriya Fashion Men's Casual Rayon Relaxed Fit Shirt Button Down Summer Shirts for Men | Stylish Printed | Short Sleeve |",
+      "image": "https://m.media-amazon.com/images/I/61SmsCyfZOL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0BWJTW12M?tag=gadgetvill09f-21",
+      "price": "\u20b9377",
+      "rating": 3.7,
+      "category": "fashion",
+      "asin": "B0BWJTW12M",
+      "data_source": "serpapi",
+      "posted_date": "2026-05-30T22:13:25.811222+05:30",
+      "session_type": "morning",
+      "link_index": 19
+    },
+    {
+      "id": "product_morning_20260530_164324",
+      "title": "NexaFlair Men's Regular Fit Solid Pattern Laffer Cotton Shirt with Long Sleeve Collared Neck Standard Length and Button ",
+      "image": "https://m.media-amazon.com/images/I/81qh45dSlgL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DXCZ8FCH?tag=gadgetvill09f-21",
+      "price": "\u20b9395",
+      "rating": 3.1,
+      "category": "fashion",
+      "asin": "B0DXCZ8FCH",
+      "data_source": "serpapi",
+      "posted_date": "2026-05-30T22:13:24.026435+05:30",
+      "session_type": "morning",
+      "link_index": 19
+    },
     {
       "id": "product_morning_20260530_141650",
       "title": "Leriya Fashion High Waist Trousers for Women \u2013 Flared Korean Style Formal Pants | Elegant Workwear for Office, College &",
