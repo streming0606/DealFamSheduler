@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-05-30T15:02:57.481147+05:30",
-  "total_products": 1240,
+  "last_updated": "2026-05-30T19:46:50.237644+05:30",
+  "total_products": 1242,
   "products": [
+    {
+      "id": "product_morning_20260530_141650",
+      "title": "Leriya Fashion High Waist Trousers for Women \u2013 Flared Korean Style Formal Pants | Elegant Workwear for Office, College &",
+      "image": "https://m.media-amazon.com/images/I/51mjObfT15L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DQV8K74V?tag=gadgetvill09f-21",
+      "price": "\u20b9459",
+      "rating": 4.0,
+      "category": "electronics",
+      "asin": "B0DQV8K74V",
+      "data_source": "serpapi",
+      "posted_date": "2026-05-30T19:46:50.237613+05:30",
+      "session_type": "morning",
+      "link_index": 17
+    },
+    {
+      "id": "product_morning_20260530_141648",
+      "title": "Kvetoo Mens Dry Fit Gym T Shirt Quick Dry Sweat Proof Breathable Workout Tee Muscle Fit Athletic Sports T Shirt for Gym ",
+      "image": "https://m.media-amazon.com/images/I/51Gk1UcuLQL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0GTTLHN89?tag=gadgetvill09f-21",
+      "price": "\u20b9349",
+      "rating": 4.5,
+      "category": "fashion",
+      "asin": "B0GTTLHN89",
+      "data_source": "serpapi",
+      "posted_date": "2026-05-30T19:46:48.276422+05:30",
+      "session_type": "morning",
+      "link_index": 17
+    },
     {
       "id": "product_morning_20260530_093257",
       "title": "DEELMO Men's Casual Button Down Shirts Long Sleeve Linen Shirt Fashion Textured Beach Summer Shirt",
