@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-05-29T23:51:30.226260+05:30",
-  "total_products": 1236,
+  "last_updated": "2026-05-30T13:01:32.246206+05:30",
+  "total_products": 1238,
   "products": [
+    {
+      "id": "product_afternoon_20260530_073132",
+      "title": "Boldfit Shorts for Men Training Gym Shorts for Men Workout Lightweight Running Short for Man Badminton Short for Boys Br",
+      "image": "https://m.media-amazon.com/images/I/61dINsGfswL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0D83VVZDJ?tag=gadgetvill09f-21",
+      "price": "\u20b9449",
+      "rating": 4.1,
+      "category": "electronics",
+      "asin": "B0D83VVZDJ",
+      "data_source": "serpapi",
+      "posted_date": "2026-05-30T13:01:32.246168+05:30",
+      "session_type": "afternoon",
+      "link_index": 13
+    },
+    {
+      "id": "product_afternoon_20260530_073130",
+      "title": "JUARI BE A GENTLEMAN Men's Sleeveless Tank Top \u2013 Premium Cotton Blend Muscle Fit Gym Vest | Casual Summer Workout Shirt ",
+      "image": "https://m.media-amazon.com/images/I/61cEsEH8eoL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FB8ZQ95Z?tag=gadgetvill09f-21",
+      "price": "\u20b9284",
+      "rating": 4.1,
+      "category": "fashion",
+      "asin": "B0FB8ZQ95Z",
+      "data_source": "serpapi",
+      "posted_date": "2026-05-30T13:01:30.396577+05:30",
+      "session_type": "afternoon",
+      "link_index": 13
+    },
     {
       "id": "product_morning_20260529_182130",
       "title": "DEELMO Men's Cotton Blend Mandarin Collar Self One Design Full Sleeve Casual Short Kurta",
