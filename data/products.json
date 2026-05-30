@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-05-30T13:01:32.246206+05:30",
-  "total_products": 1238,
+  "last_updated": "2026-05-30T15:02:57.481147+05:30",
+  "total_products": 1240,
   "products": [
+    {
+      "id": "product_morning_20260530_093257",
+      "title": "DEELMO Men's Casual Button Down Shirts Long Sleeve Linen Shirt Fashion Textured Beach Summer Shirt",
+      "image": "https://m.media-amazon.com/images/I/61s-ohqlfLL._AC_UY218_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0F4NJ2445?tag=gadgetvill09f-21",
+      "price": "\u20b9420",
+      "rating": 4.1,
+      "category": "fashion",
+      "asin": "B0F4NJ2445",
+      "data_source": "serpapi",
+      "posted_date": "2026-05-30T15:02:57.481087+05:30",
+      "session_type": "morning",
+      "link_index": 15
+    },
+    {
+      "id": "product_morning_20260530_093256",
+      "title": "Leriya Fashion Shirt for Man Polycotton Regular Fit | Mens Casual Shirts | Shirt for Man| Shirts for Mens Stylish |Half ",
+      "image": "https://m.media-amazon.com/images/I/71njqjSdKSL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DMSY9C5N?tag=gadgetvill09f-21",
+      "price": "\u20b9Special Price",
+      "rating": 4.0,
+      "category": "fashion",
+      "asin": "B0DMSY9C5N",
+      "data_source": "serpapi",
+      "posted_date": "2026-05-30T15:02:56.403656+05:30",
+      "session_type": "morning",
+      "link_index": 15
+    },
     {
       "id": "product_afternoon_20260530_073132",
       "title": "Boldfit Shorts for Men Training Gym Shorts for Men Workout Lightweight Running Short for Man Badminton Short for Boys Br",
