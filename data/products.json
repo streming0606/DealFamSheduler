@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-05-31T19:51:02.938521+05:30",
-  "total_products": 1250,
+  "last_updated": "2026-05-31T22:16:20.336877+05:30",
+  "total_products": 1252,
   "products": [
+    {
+      "id": "product_morning_20260531_164620",
+      "title": "FINIVO FASHION Men's Casual Button Down Shirts Long Sleeve Cotton Linen Shirt Fashion Textured Beach Summer Shirts|Regul",
+      "image": "https://m.media-amazon.com/images/I/51A--HMRXRL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DFWWN1C7?tag=gadgetvill09f-21",
+      "price": "\u20b9439",
+      "rating": 3.9,
+      "category": "fashion",
+      "asin": "B0DFWWN1C7",
+      "data_source": "serpapi",
+      "posted_date": "2026-05-31T22:16:20.336843+05:30",
+      "session_type": "morning",
+      "link_index": 27
+    },
+    {
+      "id": "product_morning_20260531_164617",
+      "title": "CB-COLEBROOK Men's Casual Button Down Shirts Long Sleeve Linen Shirt Fashion Textured Beach Summer Shirts| Men Stylish S",
+      "image": "https://m.media-amazon.com/images/I/71dF+pDGxIL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0D77NHDNF?tag=gadgetvill09f-21",
+      "price": "\u20b9449",
+      "rating": 3.8,
+      "category": "fashion",
+      "asin": "B0D77NHDNF",
+      "data_source": "serpapi",
+      "posted_date": "2026-05-31T22:16:17.966255+05:30",
+      "session_type": "morning",
+      "link_index": 27
+    },
     {
       "id": "product_morning_20260531_142102",
       "title": "NexaFlair Men's Regular Fit Solid Pattern Laffer Cotton Shirt with Long Sleeve Collared Neck Standard Length and Button ",
