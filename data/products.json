@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-05-30T22:13:25.811260+05:30",
-  "total_products": 1244,
+  "last_updated": "2026-05-31T13:28:54.045163+05:30",
+  "total_products": 1246,
   "products": [
+    {
+      "id": "product_afternoon_20260531_075854",
+      "title": "Lymio Track Pant for Men || Pocket with Track Pant || Elastic Jogger Pant (Packs Also Available) (TP-06-08)",
+      "image": "https://m.media-amazon.com/images/I/610IIi6wHuL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CPVPWZBT?tag=gadgetvill09f-21",
+      "price": "\u20b9399",
+      "rating": 3.8,
+      "category": "electronics",
+      "asin": "B0CPVPWZBT",
+      "data_source": "serpapi",
+      "posted_date": "2026-05-31T13:28:54.045132+05:30",
+      "session_type": "afternoon",
+      "link_index": 21
+    },
+    {
+      "id": "product_afternoon_20260531_075852",
+      "title": "GRECIILOOKS Men Cotton Shirt | Casual Shirt | Stylish Shirt | Textu Shirt | Regular Fit | Formal Shirt | Solid Slim Fit",
+      "image": "https://m.media-amazon.com/images/I/61YUn9D7POL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CXMD2XLF?tag=gadgetvill09f-21",
+      "price": "\u20b9469",
+      "rating": 4.0,
+      "category": "fashion",
+      "asin": "B0CXMD2XLF",
+      "data_source": "serpapi",
+      "posted_date": "2026-05-31T13:28:52.812509+05:30",
+      "session_type": "afternoon",
+      "link_index": 21
+    },
     {
       "id": "product_morning_20260530_164325",
       "title": "Leriya Fashion Men's Casual Rayon Relaxed Fit Shirt Button Down Summer Shirts for Men | Stylish Printed | Short Sleeve |",
