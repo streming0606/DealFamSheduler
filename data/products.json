@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-05-31T13:28:54.045163+05:30",
-  "total_products": 1246,
+  "last_updated": "2026-05-31T15:32:58.667294+05:30",
+  "total_products": 1248,
   "products": [
+    {
+      "id": "product_morning_20260531_100258",
+      "title": "Leriya Fashion Cotton T-Shirt for Men \u2013 Soft Breathable Fabric | Regular Fit Half Sleeve Collar Tee for Summer Casual We",
+      "image": "https://m.media-amazon.com/images/I/61GYK6ekP+L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FC2CSDT4?tag=gadgetvill09f-21",
+      "price": "\u20b9426",
+      "rating": 4.0,
+      "category": "fashion",
+      "asin": "B0FC2CSDT4",
+      "data_source": "serpapi",
+      "posted_date": "2026-05-31T15:32:58.667255+05:30",
+      "session_type": "morning",
+      "link_index": 23
+    },
+    {
+      "id": "product_morning_20260531_100256",
+      "title": "Men\u2019s Oversized Cotton Printed T-Shirt, Formal Round-Neck T-Shirt for Men, Graphic Print Tshirts for Boy, Casual Tshirt ",
+      "image": "https://m.media-amazon.com/images/I/612IDaibdPL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0GJDQDGJ4?tag=gadgetvill09f-21",
+      "price": "\u20b9267",
+      "rating": 3.6,
+      "category": "fashion",
+      "asin": "B0GJDQDGJ4",
+      "data_source": "serpapi",
+      "posted_date": "2026-05-31T15:32:56.553610+05:30",
+      "session_type": "morning",
+      "link_index": 23
+    },
     {
       "id": "product_afternoon_20260531_075854",
       "title": "Lymio Track Pant for Men || Pocket with Track Pant || Elastic Jogger Pant (Packs Also Available) (TP-06-08)",
