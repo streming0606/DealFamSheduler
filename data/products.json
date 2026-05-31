@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-05-31T15:32:58.667294+05:30",
-  "total_products": 1248,
+  "last_updated": "2026-05-31T19:51:02.938521+05:30",
+  "total_products": 1250,
   "products": [
+    {
+      "id": "product_morning_20260531_142102",
+      "title": "NexaFlair Men's Regular Fit Solid Pattern Laffer Cotton Shirt with Long Sleeve Collared Neck Standard Length and Button ",
+      "image": "https://m.media-amazon.com/images/I/81I4F9xgijL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DXCYNMCX?tag=gadgetvill09f-21",
+      "price": "\u20b9420",
+      "rating": 3.1,
+      "category": "fashion",
+      "asin": "B0DXCYNMCX",
+      "data_source": "serpapi",
+      "posted_date": "2026-05-31T19:51:02.938488+05:30",
+      "session_type": "morning",
+      "link_index": 25
+    },
+    {
+      "id": "product_morning_20260531_142100",
+      "title": "Leriya Fashion Shirt for Man | Mens Casual Shirts | Shirt for Man| Shirts for Mens Stylish |Half Sleeve Button Down Text",
+      "image": "https://m.media-amazon.com/images/I/51B-ZQZg5AL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FPD3W9QD?tag=gadgetvill09f-21",
+      "price": "\u20b9469",
+      "rating": 4.1,
+      "category": "fashion",
+      "asin": "B0FPD3W9QD",
+      "data_source": "serpapi",
+      "posted_date": "2026-05-31T19:51:00.178346+05:30",
+      "session_type": "morning",
+      "link_index": 25
+    },
     {
       "id": "product_morning_20260531_100258",
       "title": "Leriya Fashion Cotton T-Shirt for Men \u2013 Soft Breathable Fabric | Regular Fit Half Sleeve Collar Tee for Summer Casual We",
