@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-06-01T15:35:50.651501+05:30",
-  "total_products": 1254,
+  "last_updated": "2026-06-01T18:47:55.364370+05:30",
+  "total_products": 1256,
   "products": [
+    {
+      "id": "product_morning_20260601_131755",
+      "title": "fashionable baby Boys Co ord Dress Set | Stylish Kids Clothing for Party, Wedding & Casual Wear | Regular Fit | 2-Piece ",
+      "image": "https://m.media-amazon.com/images/I/41smUl33D3L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0G4BVJK6F?tag=gadgetvill09f-21",
+      "price": "\u20b9230.51",
+      "rating": 3.8,
+      "category": "fashion",
+      "asin": "B0G4BVJK6F",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-01T18:47:55.364332+05:30",
+      "session_type": "morning",
+      "link_index": 31
+    },
+    {
+      "id": "product_morning_20260601_131746",
+      "title": "Vogaan Men's T-Shirt and Shorts Set | Top & Shorts Night Suits Set | Night Wear for Men",
+      "image": "https://m.media-amazon.com/images/I/71NqdiLq8jL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DK5HWJ3H?tag=gadgetvill09f-21",
+      "price": "\u20b9449",
+      "rating": 3.9,
+      "category": "fashion",
+      "asin": "B0DK5HWJ3H",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-01T18:47:46.693626+05:30",
+      "session_type": "morning",
+      "link_index": 31
+    },
     {
       "id": "product_morning_20260601_100550",
       "title": "Toonyport Boys Summer 3 Packs Of T-shirts and Shorts Combo Set (Multicolors)",
