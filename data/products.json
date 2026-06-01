@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-05-31T22:16:20.336877+05:30",
-  "total_products": 1252,
+  "last_updated": "2026-06-01T15:35:50.651501+05:30",
+  "total_products": 1254,
   "products": [
+    {
+      "id": "product_morning_20260601_100550",
+      "title": "Toonyport Boys Summer 3 Packs Of T-shirts and Shorts Combo Set (Multicolors)",
+      "image": "https://m.media-amazon.com/images/I/71or+A8hVFL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0D8THZHZ7?tag=gadgetvill09f-21",
+      "price": "\u20b9455",
+      "rating": 4.1,
+      "category": "fashion",
+      "asin": "B0D8THZHZ7",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-01T15:35:50.651460+05:30",
+      "session_type": "morning",
+      "link_index": 29
+    },
+    {
+      "id": "product_morning_20260601_100544",
+      "title": "Kids Clothes for Girls of Two-Piece Set, Short Sleeve Top with Bow Detail, Side Stripe Pants, Summer Dress for Girls",
+      "image": "https://m.media-amazon.com/images/I/41Vc4gndnnL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0GQN5PZN9?tag=gadgetvill09f-21",
+      "price": "\u20b9445",
+      "rating": 3.6,
+      "category": "fashion",
+      "asin": "B0GQN5PZN9",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-01T15:35:44.962319+05:30",
+      "session_type": "morning",
+      "link_index": 29
+    },
     {
       "id": "product_morning_20260531_164620",
       "title": "FINIVO FASHION Men's Casual Button Down Shirts Long Sleeve Cotton Linen Shirt Fashion Textured Beach Summer Shirts|Regul",
