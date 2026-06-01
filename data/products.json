@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-06-01T18:47:55.364370+05:30",
-  "total_products": 1256,
+  "last_updated": "2026-06-01T23:55:31.433266+05:30",
+  "total_products": 1258,
   "products": [
+    {
+      "id": "product_morning_20260601_182531",
+      "title": "T-Shirt for Men Zip Neck Texture Self Design Cotton Blend Mens Tshirts",
+      "image": "https://m.media-amazon.com/images/I/51MC8jIsPEL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0G4LZKFM1?tag=gadgetvill09f-21",
+      "price": "\u20b9267",
+      "rating": 3.7,
+      "category": "fashion",
+      "asin": "B0G4LZKFM1",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-01T23:55:31.433227+05:30",
+      "session_type": "morning",
+      "link_index": 33
+    },
+    {
+      "id": "product_morning_20260601_182530",
+      "title": "dockstreet Men's/Unisex || Open Bottom || Stretchable || Drawstring Bottom Drawstring Pure Cotton Stretchable Baggy Jogg",
+      "image": "https://m.media-amazon.com/images/I/511BKzNk+gL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0G285W998?tag=gadgetvill09f-21",
+      "price": "\u20b9352.47",
+      "rating": 3.6,
+      "category": "fashion",
+      "asin": "B0G285W998",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-01T23:55:30.084368+05:30",
+      "session_type": "morning",
+      "link_index": 33
+    },
     {
       "id": "product_morning_20260601_131755",
       "title": "fashionable baby Boys Co ord Dress Set | Stylish Kids Clothing for Party, Wedding & Casual Wear | Regular Fit | 2-Piece ",
