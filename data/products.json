@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-06-02T22:36:07.126095+05:30",
-  "total_products": 1266,
+  "last_updated": "2026-06-03T00:33:55.047585+05:30",
+  "total_products": 1268,
   "products": [
+    {
+      "id": "product_morning_20260602_190355",
+      "title": "Amazon Product B0H26Z7V67",
+      "image": "https://m.media-amazon.com/images/I/B0H26Z7V67._AC_SL1500_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0H26Z7V67?tag=gadgetvill09f-21",
+      "price": "\u20b9Special Price",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B0H26Z7V67",
+      "data_source": "fallback",
+      "posted_date": "2026-06-03T00:33:55.047547+05:30",
+      "session_type": "morning",
+      "link_index": 43
+    },
+    {
+      "id": "product_morning_20260602_190354",
+      "title": "Baby Boy and Baby Girl's Cartoon Print Sleevelees Soft Cotton Casual Vest Jhabla T-Shirt with Shorts Dress for Summer We",
+      "image": "https://m.media-amazon.com/images/I/81YvIQfvKZL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0C55NM72Y?tag=gadgetvill09f-21",
+      "price": "\u20b9380",
+      "rating": 4.2,
+      "category": "fashion",
+      "asin": "B0C55NM72Y",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-03T00:33:54.230397+05:30",
+      "session_type": "morning",
+      "link_index": 43
+    },
     {
       "id": "product_morning_20260602_170607",
       "title": "TAGDO Men's Cotton Casual Premium Linen Blend Pants | Lightweight & Breathable Fabric | Elastic Waist with Button | Loos",
