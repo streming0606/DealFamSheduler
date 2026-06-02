@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-06-02T17:22:15.411470+05:30",
-  "total_products": 1264,
+  "last_updated": "2026-06-02T22:36:07.126095+05:30",
+  "total_products": 1266,
   "products": [
+    {
+      "id": "product_morning_20260602_170607",
+      "title": "TAGDO Men's Cotton Casual Premium Linen Blend Pants | Lightweight & Breathable Fabric | Elastic Waist with Button | Loos",
+      "image": "https://m.media-amazon.com/images/I/61ew+B19kGL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0GDDPP963?tag=gadgetvill09f-21",
+      "price": "\u20b9505",
+      "rating": 4.0,
+      "category": "electronics",
+      "asin": "B0GDDPP963",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-02T22:36:07.126062+05:30",
+      "session_type": "morning",
+      "link_index": 41
+    },
+    {
+      "id": "product_morning_20260602_170606",
+      "title": "Bellstone Men\u2019s Cotton Blend Solid Regular Fit Full Sleeve Short Kurtas | Men's Trendy Short Kurta | Ethnic Stylish Casu",
+      "image": "https://m.media-amazon.com/images/I/71u-xPW2saL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CJJP189D?tag=gadgetvill09f-21",
+      "price": "\u20b9426",
+      "rating": 3.6,
+      "category": "electronics",
+      "asin": "B0CJJP189D",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-02T22:36:06.307468+05:30",
+      "session_type": "morning",
+      "link_index": 41
+    },
     {
       "id": "product_morning_20260602_115215",
       "title": "Pivl Men's Summer Full Sleeves Henley t Shirt \u2013 Lightweight, Stylish & Breathable|| Summer Wear",
