@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-06-02T01:35:27.840749+05:30",
-  "total_products": 1260,
+  "last_updated": "2026-06-02T14:27:39.255303+05:30",
+  "total_products": 1262,
   "products": [
+    {
+      "id": "product_morning_20260602_085739",
+      "title": "London Hills Men\u2019s Loose Fit Half Sleeve Vertical Striped Polo T-Shirt with Zip Collar | Premium Polyester Fabric | T Sh",
+      "image": "https://m.media-amazon.com/images/I/71V11glXQFL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0GMX48CM3?tag=gadgetvill09f-21",
+      "price": "\u20b9374",
+      "rating": 4.0,
+      "category": "fashion",
+      "asin": "B0GMX48CM3",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-02T14:27:39.255240+05:30",
+      "session_type": "morning",
+      "link_index": 37
+    },
+    {
+      "id": "product_morning_20260602_085736",
+      "title": "Leriya Fashion Mini Dress for Women | One Piece Dresses for Womens |Mini Dresses Rayon for Women Stylish |Summer Casual ",
+      "image": "https://m.media-amazon.com/images/I/71FnJpw5J2L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CT3GM8TS?tag=gadgetvill09f-21",
+      "price": "\u20b9405",
+      "rating": 3.8,
+      "category": "fashion",
+      "asin": "B0CT3GM8TS",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-02T14:27:36.671035+05:30",
+      "session_type": "morning",
+      "link_index": 37
+    },
     {
       "id": "product_morning_20260601_200527",
       "title": "Gufrina Women's Pink Floral Printed Button Down Western Shirt with Collared Neck and Half Sleeves in Relaxed Fit Style",
