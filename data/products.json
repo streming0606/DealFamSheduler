@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-06-03T00:33:55.047585+05:30",
-  "total_products": 1268,
+  "last_updated": "2026-06-03T14:47:13.755946+05:30",
+  "total_products": 1270,
   "products": [
+    {
+      "id": "product_morning_20260603_091713",
+      "title": "LEOTUDE Oversized Full Sleeve Cottonblend Graphic Printed Round Neck Drop Shoulder Tshirt for Man (Color Mustard)",
+      "image": "https://m.media-amazon.com/images/I/615EMy4vdmL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FQ5LHWK3?tag=gadgetvill09f-21",
+      "price": "\u20b9313",
+      "rating": 3.8,
+      "category": "fashion",
+      "asin": "B0FQ5LHWK3",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-03T14:47:13.755907+05:30",
+      "session_type": "morning",
+      "link_index": 45
+    },
+    {
+      "id": "product_morning_20260603_091712",
+      "title": "DEELMO Men's Casual Button Down Shirts Long Sleeve Linen Shirt Fashion Textured Beach Summer Shirt",
+      "image": "https://m.media-amazon.com/images/I/71hrhIJkXqL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0D4MCHF7G?tag=gadgetvill09f-21",
+      "price": "\u20b9461",
+      "rating": 4.1,
+      "category": "fashion",
+      "asin": "B0D4MCHF7G",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-03T14:47:12.220549+05:30",
+      "session_type": "morning",
+      "link_index": 45
+    },
     {
       "id": "product_morning_20260602_190355",
       "title": "Amazon Product B0H26Z7V67",
