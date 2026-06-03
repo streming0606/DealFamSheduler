@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-06-03T17:55:03.923791+05:30",
-  "total_products": 1272,
+  "last_updated": "2026-06-03T23:03:15.106648+05:30",
+  "total_products": 1274,
   "products": [
+    {
+      "id": "product_morning_20260603_173315",
+      "title": "SMOWKLY Women Korean Shorts Pajama Set Cotton Blend Nightwear Set Top & Shorts Sleepwear Lounge Wear Soft Comfortable Ni",
+      "image": "https://m.media-amazon.com/images/I/51eCCvkz5DL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0D53GDXMR?tag=gadgetvill09f-21",
+      "price": "\u20b9538",
+      "rating": 3.8,
+      "category": "home",
+      "asin": "B0D53GDXMR",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-03T23:03:15.106612+05:30",
+      "session_type": "morning",
+      "link_index": 49
+    },
+    {
+      "id": "product_morning_20260603_173312",
+      "title": "NexaFlair Men's Regular Fit Solid Pattern Laffer Cotton Shirt with Long Sleeve Collared Neck Standard Length and Button ",
+      "image": "https://m.media-amazon.com/images/I/71CtcyHOcwL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FBX2VN3B?tag=gadgetvill09f-21",
+      "price": "\u20b9468",
+      "rating": 3.1,
+      "category": "fashion",
+      "asin": "B0FBX2VN3B",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-03T23:03:12.898272+05:30",
+      "session_type": "morning",
+      "link_index": 49
+    },
     {
       "id": "product_evening_20260603_122503",
       "title": "Veirdo\u00ae Pure Cotton Regular Fit Round Neck Front Chest Typographic Logo Printed Raglan Full Sleeve T-Shirt for Men (Colo",
