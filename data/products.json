@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-06-03T23:03:15.106648+05:30",
-  "total_products": 1274,
+  "last_updated": "2026-06-04T01:06:49.321882+05:30",
+  "total_products": 1276,
   "products": [
+    {
+      "id": "product_morning_20260603_193649",
+      "title": "First Kick Presents New Born Baby Summer Wear Baby Clothes 5Pcs Sets 100% Cotton Baby Boys Girls Unisex Baby Cotton/Summ",
+      "image": "https://m.media-amazon.com/images/I/61S4+YtnqtL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0D9SHRKB7?tag=gadgetvill09f-21",
+      "price": "\u20b9399",
+      "rating": 4.4,
+      "category": "electronics",
+      "asin": "B0D9SHRKB7",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-04T01:06:49.321852+05:30",
+      "session_type": "morning",
+      "link_index": 51
+    },
+    {
+      "id": "product_morning_20260603_193647",
+      "title": "Boldfit Men's Polyester Regular Fit Vest - Multipurpose Sando for Gym, Running, Outdoor - Sleeveless Undershirt, Round N",
+      "image": "https://m.media-amazon.com/images/I/61+viMimcCL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0D358SDFQ?tag=gadgetvill09f-21",
+      "price": "\u20b9335",
+      "rating": 4.2,
+      "category": "fashion",
+      "asin": "B0D358SDFQ",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-04T01:06:47.841623+05:30",
+      "session_type": "morning",
+      "link_index": 51
+    },
     {
       "id": "product_morning_20260603_173315",
       "title": "SMOWKLY Women Korean Shorts Pajama Set Cotton Blend Nightwear Set Top & Shorts Sleepwear Lounge Wear Soft Comfortable Ni",
