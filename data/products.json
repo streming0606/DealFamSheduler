@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-06-03T14:47:13.755946+05:30",
-  "total_products": 1270,
+  "last_updated": "2026-06-03T17:55:03.923791+05:30",
+  "total_products": 1272,
   "products": [
+    {
+      "id": "product_evening_20260603_122503",
+      "title": "Veirdo\u00ae Pure Cotton Regular Fit Round Neck Front Chest Typographic Logo Printed Raglan Full Sleeve T-Shirt for Men (Colo",
+      "image": "https://m.media-amazon.com/images/I/61hlJYSDnpL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0G155XTXP?tag=gadgetvill09f-21",
+      "price": "\u20b9386",
+      "rating": 3.8,
+      "category": "fashion",
+      "asin": "B0G155XTXP",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-03T17:55:03.923762+05:30",
+      "session_type": "evening",
+      "link_index": 47
+    },
+    {
+      "id": "product_evening_20260603_122502",
+      "title": "Lymio Track Pant for Men || Stylish Look Disign Track Pant || Loose Fit Track Pant (Packs Also Available) (TP-93-95)",
+      "image": "https://m.media-amazon.com/images/I/51G9QEm8UyL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0G6DSYZF4?tag=gadgetvill09f-21",
+      "price": "\u20b9449",
+      "rating": 4.0,
+      "category": "electronics",
+      "asin": "B0G6DSYZF4",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-03T17:55:02.579004+05:30",
+      "session_type": "evening",
+      "link_index": 47
+    },
     {
       "id": "product_morning_20260603_091713",
       "title": "LEOTUDE Oversized Full Sleeve Cottonblend Graphic Printed Round Neck Drop Shoulder Tshirt for Man (Color Mustard)",
