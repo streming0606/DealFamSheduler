@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-06-04T21:33:18.069777+05:30",
-  "total_products": 1282,
+  "last_updated": "2026-06-04T23:30:54.439795+05:30",
+  "total_products": 1284,
   "products": [
+    {
+      "id": "product_morning_20260604_180054",
+      "title": "Leriya Fashion Cotton T-Shirt for Men \u2013 Soft Breathable Fabric | Regular Fit Half Sleeve Collar Tee for Summer Casual We",
+      "image": "https://m.media-amazon.com/images/I/71LLwVdmsfL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CVKXXYLG?tag=gadgetvill09f-21",
+      "price": "\u20b9449",
+      "rating": 4.0,
+      "category": "fashion",
+      "asin": "B0CVKXXYLG",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-04T23:30:54.439770+05:30",
+      "session_type": "morning",
+      "link_index": 59
+    },
+    {
+      "id": "product_morning_20260604_180047",
+      "title": "DEELMO Men's Casual Button Down Shirts Long Sleeve Linen Shirt Fashion Textured Beach Summer Shirt",
+      "image": "https://m.media-amazon.com/images/I/71extP2w9IL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0D4M9MVCK?tag=gadgetvill09f-21",
+      "price": "\u20b9498",
+      "rating": 4.1,
+      "category": "fashion",
+      "asin": "B0D4M9MVCK",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-04T23:30:47.867774+05:30",
+      "session_type": "morning",
+      "link_index": 59
+    },
     {
       "id": "product_morning_20260604_160318",
       "title": "CHKOKKO Sleeveless T Shirts Gym Vest for Men Oversized Workout Solid Tank Top for Man Running Lightweight Breathable Cas",
