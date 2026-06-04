@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-06-04T14:10:41.156675+05:30",
-  "total_products": 1278,
+  "last_updated": "2026-06-04T16:21:11.288685+05:30",
+  "total_products": 1280,
   "products": [
+    {
+      "id": "product_morning_20260604_105111",
+      "title": "JUARI BE A GENTLEMAN Men's Sleeveless Tank Top \u2013 Premium Cotton Blend Muscle Fit Gym Vest | Casual Summer Workout Shirt ",
+      "image": "https://m.media-amazon.com/images/I/61-70N5PfBL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FB94B32T?tag=gadgetvill09f-21",
+      "price": "\u20b9298.99",
+      "rating": 4.1,
+      "category": "fashion",
+      "asin": "B0FB94B32T",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-04T16:21:11.288654+05:30",
+      "session_type": "morning",
+      "link_index": 55
+    },
+    {
+      "id": "product_morning_20260604_105108",
+      "title": "JUARI BE A GENTLEMAN Men's Sleeveless Tank Top \u2013 Premium Cotton Blend Muscle Fit Gym Vest | Casual Summer Workout Shirt ",
+      "image": "https://m.media-amazon.com/images/I/61TK7ZBO1nL._AC_UY218_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FB8XS53V?tag=gadgetvill09f-21",
+      "price": "\u20b9298.99",
+      "rating": 4.1,
+      "category": "fashion",
+      "asin": "B0FB8XS53V",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-04T16:21:08.433355+05:30",
+      "session_type": "morning",
+      "link_index": 55
+    },
     {
       "id": "product_morning_20260604_084041",
       "title": "LuvLap Baby Girl 100% Cotton Sleevless Girls Frock Pack of 3",
