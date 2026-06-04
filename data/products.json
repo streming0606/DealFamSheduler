@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-06-04T01:06:49.321882+05:30",
-  "total_products": 1276,
+  "last_updated": "2026-06-04T14:10:41.156675+05:30",
+  "total_products": 1278,
   "products": [
+    {
+      "id": "product_morning_20260604_084041",
+      "title": "LuvLap Baby Girl 100% Cotton Sleevless Girls Frock Pack of 3",
+      "image": "https://m.media-amazon.com/images/I/81MRuJ-3FsL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DPWMYFVS?tag=gadgetvill09f-21",
+      "price": "\u20b9489",
+      "rating": 4.4,
+      "category": "electronics",
+      "asin": "B0DPWMYFVS",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-04T14:10:41.156643+05:30",
+      "session_type": "morning",
+      "link_index": 53
+    },
+    {
+      "id": "product_morning_20260604_084039",
+      "title": "Veirdo\u00ae Pure Cotton Round Neck Regular Fit Solid Full Sleeve T-Shirt for Men & Boys (Available in Black, Cork, Green, Ma",
+      "image": "https://m.media-amazon.com/images/I/51QaiaSMIAL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0G6TDWH4V?tag=gadgetvill09f-21",
+      "price": "\u20b9399",
+      "rating": 4.0,
+      "category": "fashion",
+      "asin": "B0G6TDWH4V",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-04T14:10:39.865725+05:30",
+      "session_type": "morning",
+      "link_index": 53
+    },
     {
       "id": "product_morning_20260603_193649",
       "title": "First Kick Presents New Born Baby Summer Wear Baby Clothes 5Pcs Sets 100% Cotton Baby Boys Girls Unisex Baby Cotton/Summ",
