@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-06-04T16:21:11.288685+05:30",
-  "total_products": 1280,
+  "last_updated": "2026-06-04T21:33:18.069777+05:30",
+  "total_products": 1282,
   "products": [
+    {
+      "id": "product_morning_20260604_160318",
+      "title": "CHKOKKO Sleeveless T Shirts Gym Vest for Men Oversized Workout Solid Tank Top for Man Running Lightweight Breathable Cas",
+      "image": "https://m.media-amazon.com/images/I/61Ce5bBmDsL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0GWMJV2DD?tag=gadgetvill09f-21",
+      "price": "\u20b9328",
+      "rating": 3.6,
+      "category": "fashion",
+      "asin": "B0GWMJV2DD",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-04T21:33:18.069733+05:30",
+      "session_type": "morning",
+      "link_index": 57
+    },
+    {
+      "id": "product_morning_20260604_160315",
+      "title": "Gufrina Women\u2019s Light Rose Floral Printed Button Down Shirt with Mandarin Collar and Relaxed Fit 3/4 Sleeves",
+      "image": "https://m.media-amazon.com/images/I/71+8o4O1WCL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FNX3LJS6?tag=gadgetvill09f-21",
+      "price": "\u20b9448",
+      "rating": 3.8,
+      "category": "fashion",
+      "asin": "B0FNX3LJS6",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-04T21:33:15.846720+05:30",
+      "session_type": "morning",
+      "link_index": 57
+    },
     {
       "id": "product_morning_20260604_105111",
       "title": "JUARI BE A GENTLEMAN Men's Sleeveless Tank Top \u2013 Premium Cotton Blend Muscle Fit Gym Vest | Casual Summer Workout Shirt ",
