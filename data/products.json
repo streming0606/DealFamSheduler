@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-06-05T14:03:08.891374+05:30",
-  "total_products": 1286,
+  "last_updated": "2026-06-05T16:29:46.518912+05:30",
+  "total_products": 1288,
   "products": [
+    {
+      "id": "product_morning_20260605_105946",
+      "title": "Kids Clothes for Girls of Two-Piece Set, Sleeveless Button Front Vest with Wide Leg Pants Set, Cotton Textured Fabric, S",
+      "image": "https://m.media-amazon.com/images/I/41BpHRYmGqL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0GQMYZ71M?tag=gadgetvill09f-21",
+      "price": "\u20b9469",
+      "rating": 3.8,
+      "category": "electronics",
+      "asin": "B0GQMYZ71M",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-05T16:29:46.518874+05:30",
+      "session_type": "morning",
+      "link_index": 63
+    },
+    {
+      "id": "product_morning_20260605_105945",
+      "title": "Lymio Shirt for Men| Men's Shirt Abstract Printed Button Down \u2013 Slim Fit Casual Wear | Short Sleeve & Breathable | Trend",
+      "image": "https://m.media-amazon.com/images/I/81thHw9c7qL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DWS91WBX?tag=gadgetvill09f-21",
+      "price": "\u20b9448",
+      "rating": 3.6,
+      "category": "fashion",
+      "asin": "B0DWS91WBX",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-05T16:29:45.625831+05:30",
+      "session_type": "morning",
+      "link_index": 63
+    },
     {
       "id": "product_morning_20260605_083308",
       "title": "GLASGO Men's Premium T-Shirt | Stylish Polo Tee for Men | Casual & Comfortable Fit 75% Cotton, 25% Blend Regular Fit | T",
