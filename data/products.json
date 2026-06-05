@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-06-05T16:29:46.518912+05:30",
-  "total_products": 1288,
+  "last_updated": "2026-06-05T21:08:17.795149+05:30",
+  "total_products": 1290,
   "products": [
+    {
+      "id": "product_night_20260605_153817",
+      "title": "LEOTUDE Men's Half Sleeve Round Neck Cottonblend Graphic Print Oversized Tshirt for Man",
+      "image": "https://m.media-amazon.com/images/I/61WYx598KKL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FHDHSFYY?tag=gadgetvill09f-21",
+      "price": "\u20b9268",
+      "rating": 3.9,
+      "category": "fashion",
+      "asin": "B0FHDHSFYY",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-05T21:08:17.795123+05:30",
+      "session_type": "night",
+      "link_index": 65
+    },
+    {
+      "id": "product_night_20260605_153816",
+      "title": "SoHot Pure 100% Cotton Oversized Loose Baggy Fit Round Neck with Drop Shoulder Half Sleeves Boyfriend T-Shirt Combo for ",
+      "image": "https://m.media-amazon.com/images/I/41+AStmTtzL._AC_UY218_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FC2F5JDZ?tag=gadgetvill09f-21",
+      "price": "\u20b9299",
+      "rating": 2.5,
+      "category": "fashion",
+      "asin": "B0FC2F5JDZ",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-05T21:08:16.444117+05:30",
+      "session_type": "night",
+      "link_index": 65
+    },
     {
       "id": "product_morning_20260605_105946",
       "title": "Kids Clothes for Girls of Two-Piece Set, Sleeveless Button Front Vest with Wide Leg Pants Set, Cotton Textured Fabric, S",
