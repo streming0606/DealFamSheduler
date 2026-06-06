@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-06-06T15:17:40.036672+05:30",
-  "total_products": 1296,
+  "last_updated": "2026-06-06T19:48:30.314034+05:30",
+  "total_products": 1298,
   "products": [
+    {
+      "id": "product_morning_20260606_141830",
+      "title": "Boldfit Men's Polyester Regular Fit Vest - Multipurpose Sando for Gym, Running, Outdoor - Sleeveless Undershirt, Round N",
+      "image": "https://m.media-amazon.com/images/I/61+viMimcCL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0D3585RVZ?tag=gadgetvill09f-21",
+      "price": "\u20b9335",
+      "rating": 4.2,
+      "category": "fashion",
+      "asin": "B0D3585RVZ",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-06T19:48:30.314002+05:30",
+      "session_type": "morning",
+      "link_index": 73
+    },
+    {
+      "id": "product_morning_20260606_141829",
+      "title": "ANNI Designer Women\u2019s Rayon Viscose Straight Solid Kurta with Palazzo Set | Sleeveless Ethnic Wear | Comfortable Two Pie",
+      "image": "https://m.media-amazon.com/images/I/51jOoX3aoQL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0G4964K8M?tag=gadgetvill09f-21",
+      "price": "\u20b9519",
+      "rating": 4.0,
+      "category": "home",
+      "asin": "B0G4964K8M",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-06T19:48:29.648287+05:30",
+      "session_type": "morning",
+      "link_index": 73
+    },
     {
       "id": "product_morning_20260606_094740",
       "title": "Leriya Fashion Men\u2019s Tropical Printed Shirt | Hawaiian Beach Wear Summer Shirt for Men | Lightweight Breathable Casual H",
