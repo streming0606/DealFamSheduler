@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-06-06T19:48:30.314034+05:30",
-  "total_products": 1298,
+  "last_updated": "2026-06-06T22:17:09.180568+05:30",
+  "total_products": 1300,
   "products": [
+    {
+      "id": "product_morning_20260606_164709",
+      "title": "ARIEL Baby Boys & Baby girls Cotton Printed Round Neck Half Sleeve T-shirt & Short Latest Summer Clothing Sets",
+      "image": "https://m.media-amazon.com/images/I/81F4lPxzF8L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0BZCT9V8Q?tag=gadgetvill09f-21",
+      "price": "\u20b9258",
+      "rating": 4.3,
+      "category": "fashion",
+      "asin": "B0BZCT9V8Q",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-06T22:17:09.180530+05:30",
+      "session_type": "morning",
+      "link_index": 75
+    },
+    {
+      "id": "product_morning_20260606_164707",
+      "title": "Q - RIOUS Women's Wide Leg Drawstring Relaxed Fit Trouser",
+      "image": "https://m.media-amazon.com/images/I/614cLwK6tEL._AC_UY218_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0F6NV4L5T?tag=gadgetvill09f-21",
+      "price": "\u20b9368.10",
+      "rating": 4.0,
+      "category": "electronics",
+      "asin": "B0F6NV4L5T",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-06T22:17:07.177785+05:30",
+      "session_type": "morning",
+      "link_index": 75
+    },
     {
       "id": "product_morning_20260606_141830",
       "title": "Boldfit Men's Polyester Regular Fit Vest - Multipurpose Sando for Gym, Running, Outdoor - Sleeveless Undershirt, Round N",
