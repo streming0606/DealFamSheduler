@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-06-05T23:01:48.577105+05:30",
-  "total_products": 1292,
+  "last_updated": "2026-06-06T13:06:16.025306+05:30",
+  "total_products": 1294,
   "products": [
+    {
+      "id": "product_afternoon_20260606_073616",
+      "title": "AUSK Vest for Men || Gym Sports Men Tshirt || Summer wear Regular Fit T-Shirt for Men",
+      "image": "https://m.media-amazon.com/images/I/7172vI35rWL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0D332DMV7?tag=gadgetvill09f-21",
+      "price": "\u20b9175",
+      "rating": 3.9,
+      "category": "fashion",
+      "asin": "B0D332DMV7",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-06T13:06:16.025271+05:30",
+      "session_type": "afternoon",
+      "link_index": 69
+    },
+    {
+      "id": "product_afternoon_20260606_073614",
+      "title": "GRECIILOOKS Women Poly Lycra Blend Stylish Korean Tops Oversized Shirts, Crop Tanks & Trendy Summer Wear | Casual Street",
+      "image": "https://m.media-amazon.com/images/I/61-cGR-Kw6L._AC_UY218_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0F8BPLJLQ?tag=gadgetvill09f-21",
+      "price": "\u20b9499",
+      "rating": 4.3,
+      "category": "fashion",
+      "asin": "B0F8BPLJLQ",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-06T13:06:14.160062+05:30",
+      "session_type": "afternoon",
+      "link_index": 69
+    },
     {
       "id": "product_morning_20260605_173148",
       "title": "NETCLICK Men's Printed Sleeveless Waffle Tank Top Vest | Lightweight Gym & Casual Wear | Breathable Summer Undershirt",
