@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-06-06T22:17:09.180568+05:30",
-  "total_products": 1300,
+  "last_updated": "2026-06-07T13:45:58.505481+05:30",
+  "total_products": 1302,
   "products": [
+    {
+      "id": "product_morning_20260607_081558",
+      "title": "SMOWKLY Men's Premium Cotton Blend Pyjama Set | Stylish Round Neck T-Shirt and Shorts | Casual Night Suit Wear Set for M",
+      "image": "https://m.media-amazon.com/images/I/51WZmH2JBwL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CRDT1WKY?tag=gadgetvill09f-21",
+      "price": "\u20b9494",
+      "rating": 3.8,
+      "category": "fashion",
+      "asin": "B0CRDT1WKY",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-07T13:45:58.505455+05:30",
+      "session_type": "morning",
+      "link_index": 77
+    },
+    {
+      "id": "product_morning_20260607_081551",
+      "title": "Leriya Fashion Tshirt for Man | T Shirt for Mans | Mens TShirt's | Collarless T- Shirt for Mens | Half Sleeve Tshirt for",
+      "image": "https://m.media-amazon.com/images/I/51BoIX5pDuL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DCSFK7S6?tag=gadgetvill09f-21",
+      "price": "\u20b9449",
+      "rating": 4.0,
+      "category": "fashion",
+      "asin": "B0DCSFK7S6",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-07T13:45:51.927842+05:30",
+      "session_type": "morning",
+      "link_index": 77
+    },
     {
       "id": "product_morning_20260606_164709",
       "title": "ARIEL Baby Boys & Baby girls Cotton Printed Round Neck Half Sleeve T-shirt & Short Latest Summer Clothing Sets",
