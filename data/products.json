@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-06-07T13:45:58.505481+05:30",
-  "total_products": 1302,
+  "last_updated": "2026-06-07T15:46:39.100166+05:30",
+  "total_products": 1304,
   "products": [
+    {
+      "id": "product_morning_20260607_101639",
+      "title": "Motion Sensor Light for Home (Pack 2) with USB Charging Wireless Self Adhesive LED Body Induction Lamp Sensor Light for ",
+      "image": "https://m.media-amazon.com/images/I/31eaGzqIUYL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0H26YBWMV?tag=gadgetvill09f-21",
+      "price": "\u20b9249",
+      "rating": 1.0,
+      "category": "home",
+      "asin": "B0H26YBWMV",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-07T15:46:39.100137+05:30",
+      "session_type": "morning",
+      "link_index": 79
+    },
+    {
+      "id": "product_morning_20260607_101637",
+      "title": "Zombom Men's Cotton Polyester Blend Solid Regular Fit Full Sleeve Printed Short Kurta | Ethnic, Lightweight Summer Kurta",
+      "image": "https://m.media-amazon.com/images/I/71a-pM2gh-L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FGJZL9ZQ?tag=gadgetvill09f-21",
+      "price": "\u20b9494",
+      "rating": 4.0,
+      "category": "electronics",
+      "asin": "B0FGJZL9ZQ",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-07T15:46:37.711423+05:30",
+      "session_type": "morning",
+      "link_index": 79
+    },
     {
       "id": "product_morning_20260607_081558",
       "title": "SMOWKLY Men's Premium Cotton Blend Pyjama Set | Stylish Round Neck T-Shirt and Shorts | Casual Night Suit Wear Set for M",
