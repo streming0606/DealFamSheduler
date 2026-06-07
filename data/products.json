@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-06-07T15:46:39.100166+05:30",
-  "total_products": 1304,
+  "last_updated": "2026-06-07T20:01:28.170402+05:30",
+  "total_products": 1306,
   "products": [
+    {
+      "id": "product_morning_20260607_143128",
+      "title": "KYDA KIDS\u00ae Boys 100% Pure Combed Cotton Co-ord Clothing Set Premium Printed T-Shirt & Shorts | Relaxed Fit Summer Outfit",
+      "image": "https://m.media-amazon.com/images/I/61-iMwEnBWL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CXTBCMZS?tag=gadgetvill09f-21",
+      "price": "\u20b9449",
+      "rating": 4.3,
+      "category": "fashion",
+      "asin": "B0CXTBCMZS",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-07T20:01:28.170369+05:30",
+      "session_type": "morning",
+      "link_index": 81
+    },
+    {
+      "id": "product_morning_20260607_143127",
+      "title": "TAGDO\u00ae Men's Solid Shirt | Shirt for Man | Mens Casual Shirts (5182)",
+      "image": "https://m.media-amazon.com/images/I/61VX-Y1mWvL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0D2NTFWNN?tag=gadgetvill09f-21",
+      "price": "\u20b9399",
+      "rating": 3.8,
+      "category": "fashion",
+      "asin": "B0D2NTFWNN",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-07T20:01:27.274496+05:30",
+      "session_type": "morning",
+      "link_index": 81
+    },
     {
       "id": "product_morning_20260607_101639",
       "title": "Motion Sensor Light for Home (Pack 2) with USB Charging Wireless Self Adhesive LED Body Induction Lamp Sensor Light for ",
