@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-06-07T20:01:28.170402+05:30",
-  "total_products": 1306,
+  "last_updated": "2026-06-07T22:27:40.905634+05:30",
+  "total_products": 1308,
   "products": [
+    {
+      "id": "product_morning_20260607_165740",
+      "title": "Boldfit Arm Sleeves for Men & Women UV & Sun Protection Hand Cover Sleeves for Boys & Girls for Running, Bike Riding & O",
+      "image": "https://m.media-amazon.com/images/I/41qa1fa6ezL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FQJYQHRP?tag=gadgetvill09f-21",
+      "price": "\u20b9199",
+      "rating": 3.6,
+      "category": "electronics",
+      "asin": "B0FQJYQHRP",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-07T22:27:40.905597+05:30",
+      "session_type": "morning",
+      "link_index": 83
+    },
+    {
+      "id": "product_morning_20260607_165740",
+      "title": "Toy Imagine Magnetic Building Blocks for Kids | Construction STEM Building Toys for Kids 2\u20135 Years | Safe Magnetic Block",
+      "image": "https://m.media-amazon.com/images/I/61yqiJ4BVTL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0GNHJZKYM?tag=gadgetvill09f-21",
+      "price": "\u20b9484",
+      "rating": 4.0,
+      "category": "electronics",
+      "asin": "B0GNHJZKYM",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-07T22:27:40.144009+05:30",
+      "session_type": "morning",
+      "link_index": 83
+    },
     {
       "id": "product_morning_20260607_143128",
       "title": "KYDA KIDS\u00ae Boys 100% Pure Combed Cotton Co-ord Clothing Set Premium Printed T-Shirt & Shorts | Relaxed Fit Summer Outfit",
