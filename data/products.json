@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-06-08T14:43:55.917745+05:30",
-  "total_products": 1310,
+  "last_updated": "2026-06-08T17:46:50.605011+05:30",
+  "total_products": 1312,
   "products": [
+    {
+      "id": "product_evening_20260608_121650",
+      "title": "Men's Slim-Fit Stretch Hooded Henley Shirt with Drawstring - Solid Color, Breathable Knit Fabric for Summer",
+      "image": "https://m.media-amazon.com/images/I/41YQGZzNPfL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DYF3M2WF?tag=gadgetvill09f-21",
+      "price": "\u20b9349",
+      "rating": 3.4,
+      "category": "fashion",
+      "asin": "B0DYF3M2WF",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-08T17:46:50.604974+05:30",
+      "session_type": "evening",
+      "link_index": 87
+    },
+    {
+      "id": "product_evening_20260608_121648",
+      "title": "Bollyclues Men\u2019s Premium Pure Cotton Casual Shorts | Elastic Waist Drawstring Shorts for Men | Lightweight Summer Shorts",
+      "image": "https://m.media-amazon.com/images/I/71Tn7K2z3SL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0GTYYDMX8?tag=gadgetvill09f-21",
+      "price": "\u20b9379",
+      "rating": 5.0,
+      "category": "electronics",
+      "asin": "B0GTYYDMX8",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-08T17:46:48.624761+05:30",
+      "session_type": "evening",
+      "link_index": 87
+    },
     {
       "id": "product_morning_20260608_091355",
       "title": "ANNI DESIGNER Women's Ethnic Co-Ord Set | Kurta Pant Set | Kurta Palazzo Set | Stylish Cotton Suit Set for Women, Festiv",
