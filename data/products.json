@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-06-08T22:08:26.142350+05:30",
-  "total_products": 1314,
+  "last_updated": "2026-06-08T23:44:11.559397+05:30",
+  "total_products": 1316,
   "products": [
+    {
+      "id": "product_morning_20260608_181411",
+      "title": "Welspun Bath Mat | Large Anti-Skid Bath Mat | High Durability & Stain Resistant | Easy Care | 1 Piece Bath Rug | 50 x 80",
+      "image": "https://m.media-amazon.com/images/I/81atJS07xZL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0GKV2R7T7?tag=gadgetvill09f-21",
+      "price": "\u20b9449",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B0GKV2R7T7",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-08T23:44:11.559366+05:30",
+      "session_type": "morning",
+      "link_index": 91
+    },
+    {
+      "id": "product_morning_20260608_181410",
+      "title": "Leriya Fashion Dress for Women | Western One Piece Dress for Women Short & Long | Half Sleeve Casual Summer Dresses for ",
+      "image": "https://m.media-amazon.com/images/I/71rA91nZS8L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0GDMG4CG1?tag=gadgetvill09f-21",
+      "price": "\u20b9499",
+      "rating": 3.6,
+      "category": "fashion",
+      "asin": "B0GDMG4CG1",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-08T23:44:10.366905+05:30",
+      "session_type": "morning",
+      "link_index": 91
+    },
     {
       "id": "product_morning_20260608_163826",
       "title": "DIVISIVE Men's Plain Cotton Blend Linen Slim Fit Kurta Pyjama Set",
