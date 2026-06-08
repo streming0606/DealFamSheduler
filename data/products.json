@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-06-08T17:46:50.605011+05:30",
-  "total_products": 1312,
+  "last_updated": "2026-06-08T22:08:26.142350+05:30",
+  "total_products": 1314,
   "products": [
+    {
+      "id": "product_morning_20260608_163826",
+      "title": "DIVISIVE Men's Plain Cotton Blend Linen Slim Fit Kurta Pyjama Set",
+      "image": "https://m.media-amazon.com/images/I/61vrprljQkL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CV9NN535?tag=gadgetvill09f-21",
+      "price": "\u20b9384",
+      "rating": 3.8,
+      "category": "electronics",
+      "asin": "B0CV9NN535",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-08T22:08:26.142323+05:30",
+      "session_type": "morning",
+      "link_index": 89
+    },
+    {
+      "id": "product_morning_20260608_163822",
+      "title": "AUSK Men Tshirt || Mens Sports T-Shirts (Color-)",
+      "image": "https://m.media-amazon.com/images/I/616bDUoOBjL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0D5MLQMNR?tag=gadgetvill09f-21",
+      "price": "\u20b9231",
+      "rating": 3.4,
+      "category": "fashion",
+      "asin": "B0D5MLQMNR",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-08T22:08:22.748737+05:30",
+      "session_type": "morning",
+      "link_index": 89
+    },
     {
       "id": "product_evening_20260608_121650",
       "title": "Men's Slim-Fit Stretch Hooded Henley Shirt with Drawstring - Solid Color, Breathable Knit Fabric for Summer",
