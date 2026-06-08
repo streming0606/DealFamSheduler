@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-06-07T22:27:40.905634+05:30",
-  "total_products": 1308,
+  "last_updated": "2026-06-08T14:43:55.917745+05:30",
+  "total_products": 1310,
   "products": [
+    {
+      "id": "product_morning_20260608_091355",
+      "title": "ANNI DESIGNER Women's Ethnic Co-Ord Set | Kurta Pant Set | Kurta Palazzo Set | Stylish Cotton Suit Set for Women, Festiv",
+      "image": "https://m.media-amazon.com/images/I/51yquppLtaL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FHKRVX3B?tag=gadgetvill09f-21",
+      "price": "\u20b9509",
+      "rating": 3.9,
+      "category": "electronics",
+      "asin": "B0FHKRVX3B",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-08T14:43:55.917702+05:30",
+      "session_type": "morning",
+      "link_index": 85
+    },
+    {
+      "id": "product_morning_20260608_091354",
+      "title": "GRECIILOOKS Men's Loose Mid Rise Casual Trousers Pants | Regular | Sports Stylish Track Pant | Sweatpants (Available in ",
+      "image": "https://m.media-amazon.com/images/I/61Unh+jAqUL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DGDB5PF1?tag=gadgetvill09f-21",
+      "price": "\u20b9479",
+      "rating": 3.8,
+      "category": "electronics",
+      "asin": "B0DGDB5PF1",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-08T14:43:54.586773+05:30",
+      "session_type": "morning",
+      "link_index": 85
+    },
     {
       "id": "product_morning_20260607_165740",
       "title": "Boldfit Arm Sleeves for Men & Women UV & Sun Protection Hand Cover Sleeves for Boys & Girls for Running, Bike Riding & O",
