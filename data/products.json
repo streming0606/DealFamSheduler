@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-06-09T13:50:29.453070+05:30",
-  "total_products": 1318,
+  "last_updated": "2026-06-09T16:17:56.784179+05:30",
+  "total_products": 1320,
   "products": [
+    {
+      "id": "product_morning_20260609_104756",
+      "title": "BONUM Baby's Boy's Girl's 100% Cotton Button Shirt with Pyjama Pant Set of 3 New Born Baby Clothes",
+      "image": "https://m.media-amazon.com/images/I/61q+P4kAcLL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CTXPCWLL?tag=gadgetvill09f-21",
+      "price": "\u20b9349",
+      "rating": 4.0,
+      "category": "fashion",
+      "asin": "B0CTXPCWLL",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-09T16:17:56.784146+05:30",
+      "session_type": "morning",
+      "link_index": 95
+    },
+    {
+      "id": "product_morning_20260609_104750",
+      "title": "LEOTUDE Oversized Drop Shoulder Half Sleeve Cottonblend Printed Round Neck Drop Shoulder Tshirt for Man (Color Navy Blue",
+      "image": "https://m.media-amazon.com/images/I/61k2nKUXSdL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FQBYGJ54?tag=gadgetvill09f-21",
+      "price": "\u20b9298",
+      "rating": 4.1,
+      "category": "fashion",
+      "asin": "B0FQBYGJ54",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-09T16:17:50.114487+05:30",
+      "session_type": "morning",
+      "link_index": 95
+    },
     {
       "id": "product_morning_20260609_082029",
       "title": "Googo Gaaga Boy's Cotton Dino Printed T-shirt With Shorts Sets of baby boys clothing Sets",
