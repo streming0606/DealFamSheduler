@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-06-09T21:12:55.147970+05:30",
-  "total_products": 1322,
+  "last_updated": "2026-06-09T23:07:12.616224+05:30",
+  "total_products": 1324,
   "products": [
+    {
+      "id": "product_morning_20260609_173712",
+      "title": "Desi Mantra Raw Forest Honey 1kg Wild Bee Honey Pure Natural Unprocessed Immunity Boosting Ayurvedic Chemical Free Honey",
+      "image": "https://m.media-amazon.com/images/I/61pk9oha-8L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0GTPGMFTL?tag=gadgetvill09f-21",
+      "price": "\u20b9749",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B0GTPGMFTL",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-09T23:07:12.616186+05:30",
+      "session_type": "morning",
+      "link_index": 99
+    },
+    {
+      "id": "product_morning_20260609_173710",
+      "title": "GRECIILOOKS Lycra Track Pants for Men \u2013 Stretchable Loose Fit Gym Joggers | Korean Style Workout | Loose Mid Rise Trouse",
+      "image": "https://m.media-amazon.com/images/I/61-xzEW+ZRL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0D2XY9M1B?tag=gadgetvill09f-21",
+      "price": "\u20b9479",
+      "rating": 3.8,
+      "category": "electronics",
+      "asin": "B0D2XY9M1B",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-09T23:07:10.048422+05:30",
+      "session_type": "morning",
+      "link_index": 99
+    },
     {
       "id": "product_night_20260609_154255",
       "title": "Veirdo\u00ae Pure Cotton Oversized Loose Baggy Fit Drop Shoulder Round Neck All Over Paisley Bandana Printed Half Sleeves T-S",
