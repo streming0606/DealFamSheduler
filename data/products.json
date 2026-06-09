@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-06-08T23:44:11.559397+05:30",
-  "total_products": 1316,
+  "last_updated": "2026-06-09T13:50:29.453070+05:30",
+  "total_products": 1318,
   "products": [
+    {
+      "id": "product_morning_20260609_082029",
+      "title": "Googo Gaaga Boy's Cotton Dino Printed T-shirt With Shorts Sets of baby boys clothing Sets",
+      "image": "https://m.media-amazon.com/images/I/51a0QHAi7jL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0B5VFX1Y9?tag=gadgetvill09f-21",
+      "price": "\u20b9439",
+      "rating": 4.2,
+      "category": "fashion",
+      "asin": "B0B5VFX1Y9",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-09T13:50:29.453043+05:30",
+      "session_type": "morning",
+      "link_index": 93
+    },
+    {
+      "id": "product_morning_20260609_082028",
+      "title": "Mack Jonney Regular Fit Men Trackpants(Pack of 1-MACK631778)",
+      "image": "https://m.media-amazon.com/images/I/71kTipSXqDL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07CPY1P7W?tag=gadgetvill09f-21",
+      "price": "\u20b9389",
+      "rating": 3.7,
+      "category": "electronics",
+      "asin": "B07CPY1P7W",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-09T13:50:28.058259+05:30",
+      "session_type": "morning",
+      "link_index": 93
+    },
     {
       "id": "product_morning_20260608_181411",
       "title": "Welspun Bath Mat | Large Anti-Skid Bath Mat | High Durability & Stain Resistant | Easy Care | 1 Piece Bath Rug | 50 x 80",
