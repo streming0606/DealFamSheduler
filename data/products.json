@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-06-10T21:54:46.980787+05:30",
-  "total_products": 1330,
+  "last_updated": "2026-06-10T23:48:44.214884+05:30",
+  "total_products": 1332,
   "products": [
+    {
+      "id": "product_morning_20260610_181844",
+      "title": "KYDA KIDS\u00ae 100% Pure Cotton Girls Printed Crop Top and Skirt with Attached Inner shorts Co-ords Set",
+      "image": "https://m.media-amazon.com/images/I/51V6r9cs5qL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DCW3P816?tag=gadgetvill09f-21",
+      "price": "\u20b9489",
+      "rating": 4.1,
+      "category": "electronics",
+      "asin": "B0DCW3P816",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-10T23:48:44.214846+05:30",
+      "session_type": "morning",
+      "link_index": 107
+    },
+    {
+      "id": "product_morning_20260610_181842",
+      "title": "Amazon Product B0GNHJZKYM",
+      "image": "https://m.media-amazon.com/images/I/B0GNHJZKYM._AC_SL1500_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0GNHJZKYM?tag=gadgetvill09f-21",
+      "price": "\u20b9Special Price",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B0GNHJZKYM",
+      "data_source": "fallback",
+      "posted_date": "2026-06-10T23:48:42.038263+05:30",
+      "session_type": "morning",
+      "link_index": 107
+    },
     {
       "id": "product_morning_20260610_162446",
       "title": "London Hills Men\u2019s Loose Fit Half Sleeve Vertical Striped Polo T-Shirt with Zip Collar | Premium Polyester Fabric | T Sh",
