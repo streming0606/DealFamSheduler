@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-06-09T23:07:12.616224+05:30",
-  "total_products": 1324,
+  "last_updated": "2026-06-10T14:05:20.705839+05:30",
+  "total_products": 1326,
   "products": [
+    {
+      "id": "product_morning_20260610_083520",
+      "title": "MAVI's original Sauerkraut & kimchi Combo | original Sauerkraut and Vegan Kimchi | Artisanal Probiotic Pickle | 100% Nat",
+      "image": "https://m.media-amazon.com/images/I/81Apt1J974L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0GTMNJSLB?tag=gadgetvill09f-21",
+      "price": "\u20b9500",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B0GTMNJSLB",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-10T14:05:20.705819+05:30",
+      "session_type": "morning",
+      "link_index": 101
+    },
+    {
+      "id": "product_morning_20260610_083518",
+      "title": "Amazon Product B0GTMHWHBY",
+      "image": "https://m.media-amazon.com/images/I/B0GTMHWHBY._AC_SL1500_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0GTMHWHBY?tag=gadgetvill09f-21",
+      "price": "\u20b9Special Price",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B0GTMHWHBY",
+      "data_source": "fallback",
+      "posted_date": "2026-06-10T14:05:18.956219+05:30",
+      "session_type": "morning",
+      "link_index": 101
+    },
     {
       "id": "product_morning_20260609_173712",
       "title": "Desi Mantra Raw Forest Honey 1kg Wild Bee Honey Pure Natural Unprocessed Immunity Boosting Ayurvedic Chemical Free Honey",
