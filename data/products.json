@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-06-10T14:05:20.705839+05:30",
-  "total_products": 1326,
+  "last_updated": "2026-06-10T16:55:52.964686+05:30",
+  "total_products": 1328,
   "products": [
+    {
+      "id": "product_morning_20260610_112552",
+      "title": "Amazon Product B0D1RB8LNP",
+      "image": "https://m.media-amazon.com/images/I/B0D1RB8LNP._AC_SL1500_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0D1RB8LNP?tag=gadgetvill09f-21",
+      "price": "\u20b9Special Price",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B0D1RB8LNP",
+      "data_source": "fallback",
+      "posted_date": "2026-06-10T16:55:52.964652+05:30",
+      "session_type": "morning",
+      "link_index": 103
+    },
+    {
+      "id": "product_morning_20260610_112552",
+      "title": "LATEST CHIKAN Men's Casual Mandarian Collar T Shirts Short Sleeve Bubble Textured Short Kurta Fashion Beach Summer Kurta",
+      "image": "https://m.media-amazon.com/images/I/616kVwEw32L._AC_UY218_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0F9WRWGWJ?tag=gadgetvill09f-21",
+      "price": "\u20b9359",
+      "rating": 3.8,
+      "category": "fashion",
+      "asin": "B0F9WRWGWJ",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-10T16:55:52.295237+05:30",
+      "session_type": "morning",
+      "link_index": 103
+    },
     {
       "id": "product_morning_20260610_083520",
       "title": "MAVI's original Sauerkraut & kimchi Combo | original Sauerkraut and Vegan Kimchi | Artisanal Probiotic Pickle | 100% Nat",
