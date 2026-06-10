@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-06-10T16:55:52.964686+05:30",
-  "total_products": 1328,
+  "last_updated": "2026-06-10T21:54:46.980787+05:30",
+  "total_products": 1330,
   "products": [
+    {
+      "id": "product_morning_20260610_162446",
+      "title": "London Hills Men\u2019s Loose Fit Half Sleeve Vertical Striped Polo T-Shirt with Zip Collar | Premium Polyester Fabric | T Sh",
+      "image": "https://m.media-amazon.com/images/I/71V11glXQFL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0GMX48CM3?tag=gadgetvill09f-21",
+      "price": "\u20b9399",
+      "rating": 4.0,
+      "category": "fashion",
+      "asin": "B0GMX48CM3",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-10T21:54:46.980747+05:30",
+      "session_type": "morning",
+      "link_index": 105
+    },
+    {
+      "id": "product_morning_20260610_162445",
+      "title": "Amazon Product B0GTMNJZND",
+      "image": "https://m.media-amazon.com/images/I/B0GTMNJZND._AC_SL1500_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0GTMNJZND?tag=gadgetvill09f-21",
+      "price": "\u20b9Special Price",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B0GTMNJZND",
+      "data_source": "fallback",
+      "posted_date": "2026-06-10T21:54:45.836154+05:30",
+      "session_type": "morning",
+      "link_index": 105
+    },
     {
       "id": "product_morning_20260610_112552",
       "title": "Amazon Product B0D1RB8LNP",
