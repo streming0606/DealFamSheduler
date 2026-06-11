@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-06-11T22:09:30.392771+05:30",
-  "total_products": 1338,
+  "last_updated": "2026-06-12T00:07:11.786564+05:30",
+  "total_products": 1340,
   "products": [
+    {
+      "id": "product_morning_20260611_183711",
+      "title": "Mens Activewear Polo T Shirt Quick Dry Breathable Sports Tee Stretch Gym Running Polo Lightweight Summer Performance T S",
+      "image": "https://m.media-amazon.com/images/I/51ddF+POggL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0GTHLMMVV?tag=gadgetvill09f-21",
+      "price": "\u20b9449",
+      "rating": 4.8,
+      "category": "fashion",
+      "asin": "B0GTHLMMVV",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-12T00:07:11.786538+05:30",
+      "session_type": "morning",
+      "link_index": 115
+    },
+    {
+      "id": "product_morning_20260611_183709",
+      "title": "Amazon Product B0GSGCCN8X",
+      "image": "https://m.media-amazon.com/images/I/B0GSGCCN8X._AC_SL1500_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0GSGCCN8X?tag=gadgetvill09f-21",
+      "price": "\u20b9Special Price",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B0GSGCCN8X",
+      "data_source": "fallback",
+      "posted_date": "2026-06-12T00:07:09.988780+05:30",
+      "session_type": "morning",
+      "link_index": 115
+    },
     {
       "id": "product_morning_20260611_163930",
       "title": "TQH Sleeveless Hoodie for Men | Gym T Shirts for Men Workout | Tank Top Man | Sleeveless T Shirt for Man | Hooded Gym Ve",
