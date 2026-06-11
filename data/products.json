@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-06-11T14:34:37.637472+05:30",
-  "total_products": 1334,
+  "last_updated": "2026-06-11T17:29:32.252782+05:30",
+  "total_products": 1336,
   "products": [
+    {
+      "id": "product_morning_20260611_115932",
+      "title": "Leriya Fashion Mini Dress for Women | One Piece Dresses for Womens |Mini Dresses Rayon for Women Stylish |Summer Casual ",
+      "image": "https://m.media-amazon.com/images/I/716Ib3RkLGL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CT3GM8TS?tag=gadgetvill09f-21",
+      "price": "\u20b9448",
+      "rating": 3.8,
+      "category": "fashion",
+      "asin": "B0CT3GM8TS",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-11T17:29:32.252752+05:30",
+      "session_type": "morning",
+      "link_index": 111
+    },
+    {
+      "id": "product_morning_20260611_115930",
+      "title": "NEON ROCK Men Women Stylish Dori Cap Stylish Premium Cotton Hat Cap for Summer, Winter, Spring, Autumn and All Activitie",
+      "image": "https://m.media-amazon.com/images/I/511-E9b6WhL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0BG2S5CXV?tag=gadgetvill09f-21",
+      "price": "\u20b9499",
+      "rating": 3.6,
+      "category": "fashion",
+      "asin": "B0BG2S5CXV",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-11T17:29:30.244501+05:30",
+      "session_type": "morning",
+      "link_index": 111
+    },
     {
       "id": "product_morning_20260611_090437",
       "title": "TAGDO\u00ae Men's Solid Shirt | Shirt for Man | Mens Casual Shirts (5182)",
