@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-06-10T23:48:44.214884+05:30",
-  "total_products": 1332,
+  "last_updated": "2026-06-11T14:34:37.637472+05:30",
+  "total_products": 1334,
   "products": [
+    {
+      "id": "product_morning_20260611_090437",
+      "title": "TAGDO\u00ae Men's Solid Shirt | Shirt for Man | Mens Casual Shirts (5182)",
+      "image": "https://m.media-amazon.com/images/I/61VX-Y1mWvL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0D2NTFWNN?tag=gadgetvill09f-21",
+      "price": "\u20b9399",
+      "rating": 3.8,
+      "category": "fashion",
+      "asin": "B0D2NTFWNN",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-11T14:34:37.637408+05:30",
+      "session_type": "morning",
+      "link_index": 109
+    },
+    {
+      "id": "product_morning_20260611_090436",
+      "title": "OMALI Baby Girl Dress Toddler Dress Sleeveless Infant Casual Dress Clothes Baby Girls Clothing Dress Orange Colour Orang",
+      "image": "https://m.media-amazon.com/images/I/51sGK3cFd5L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0C3ZY6YWZ?tag=gadgetvill09f-21",
+      "price": "\u20b9425",
+      "rating": 3.7,
+      "category": "fashion",
+      "asin": "B0C3ZY6YWZ",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-11T14:34:36.164882+05:30",
+      "session_type": "morning",
+      "link_index": 109
+    },
     {
       "id": "product_morning_20260610_181844",
       "title": "KYDA KIDS\u00ae 100% Pure Cotton Girls Printed Crop Top and Skirt with Attached Inner shorts Co-ords Set",
