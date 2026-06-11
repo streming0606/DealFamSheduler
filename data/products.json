@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-06-11T17:29:32.252782+05:30",
-  "total_products": 1336,
+  "last_updated": "2026-06-11T22:09:30.392771+05:30",
+  "total_products": 1338,
   "products": [
+    {
+      "id": "product_morning_20260611_163930",
+      "title": "TQH Sleeveless Hoodie for Men | Gym T Shirts for Men Workout | Tank Top Man | Sleeveless T Shirt for Man | Hooded Gym Ve",
+      "image": "https://m.media-amazon.com/images/I/71zpI-UdqTL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CGPTK38Z?tag=gadgetvill09f-21",
+      "price": "\u20b9399",
+      "rating": 3.8,
+      "category": "fashion",
+      "asin": "B0CGPTK38Z",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-11T22:09:30.392743+05:30",
+      "session_type": "morning",
+      "link_index": 113
+    },
+    {
+      "id": "product_morning_20260611_163929",
+      "title": "First Kick Presents New Born Baby Summer Wear Baby Clothes 5Pcs Sets 100% Cotton Baby Boys Girls Unisex Baby Cotton/Summ",
+      "image": "https://m.media-amazon.com/images/I/61S4+YtnqtL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0D9SHRKB7?tag=gadgetvill09f-21",
+      "price": "\u20b9399",
+      "rating": 4.3,
+      "category": "electronics",
+      "asin": "B0D9SHRKB7",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-11T22:09:29.029522+05:30",
+      "session_type": "morning",
+      "link_index": 113
+    },
     {
       "id": "product_morning_20260611_115932",
       "title": "Leriya Fashion Mini Dress for Women | One Piece Dresses for Womens |Mini Dresses Rayon for Women Stylish |Summer Casual ",
