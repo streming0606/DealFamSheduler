@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-06-12T21:20:58.946204+05:30",
-  "total_products": 1346,
+  "last_updated": "2026-06-12T23:22:56.036076+05:30",
+  "total_products": 1348,
   "products": [
+    {
+      "id": "product_morning_20260612_175256",
+      "title": "Aquieen ABS Multi- Function Hand Shower (3 Function Classic with Filter)",
+      "image": "https://m.media-amazon.com/images/I/41oibLUUSDL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0GTP88TGD?tag=gadgetvill09f-21",
+      "price": "\u20b9690",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B0GTP88TGD",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-12T23:22:56.036049+05:30",
+      "session_type": "morning",
+      "link_index": 123
+    },
+    {
+      "id": "product_morning_20260612_175252",
+      "title": "Amazon Product B0GTP2KX7C",
+      "image": "https://m.media-amazon.com/images/I/B0GTP2KX7C._AC_SL1500_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0GTP2KX7C?tag=gadgetvill09f-21",
+      "price": "\u20b9Special Price",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B0GTP2KX7C",
+      "data_source": "fallback",
+      "posted_date": "2026-06-12T23:22:52.011464+05:30",
+      "session_type": "morning",
+      "link_index": 123
+    },
     {
       "id": "product_night_20260612_155058",
       "title": "Luxury-Patchwork-Short-Sleeve-Polo-Shirt Black Khakhi| S, M, L, XL, 2XL",
