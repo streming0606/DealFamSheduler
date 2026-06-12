@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-06-12T16:58:56.040294+05:30",
-  "total_products": 1344,
+  "last_updated": "2026-06-12T21:20:58.946204+05:30",
+  "total_products": 1346,
   "products": [
+    {
+      "id": "product_night_20260612_155058",
+      "title": "Luxury-Patchwork-Short-Sleeve-Polo-Shirt Black Khakhi| S, M, L, XL, 2XL",
+      "image": "https://m.media-amazon.com/images/I/41yXzzYS-wL._AC_UY218_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0F7HQDT1B?tag=gadgetvill09f-21",
+      "price": "\u20b9399",
+      "rating": 5.0,
+      "category": "fashion",
+      "asin": "B0F7HQDT1B",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-12T21:20:58.946176+05:30",
+      "session_type": "night",
+      "link_index": 121
+    },
+    {
+      "id": "product_night_20260612_155057",
+      "title": "Amazon Product B0GTMN29XN",
+      "image": "https://m.media-amazon.com/images/I/B0GTMN29XN._AC_SL1500_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0GTMN29XN?tag=gadgetvill09f-21",
+      "price": "\u20b9Special Price",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B0GTMN29XN",
+      "data_source": "fallback",
+      "posted_date": "2026-06-12T21:20:57.950923+05:30",
+      "session_type": "night",
+      "link_index": 121
+    },
     {
       "id": "product_morning_20260612_112856",
       "title": "Mens Activewear Polo T Shirt Quick Dry Breathable Sports Tee Stretch Gym Running Polo Lightweight Summer Performance T S",
