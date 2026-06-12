@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-06-12T14:18:08.288003+05:30",
-  "total_products": 1342,
+  "last_updated": "2026-06-12T16:58:56.040294+05:30",
+  "total_products": 1344,
   "products": [
+    {
+      "id": "product_morning_20260612_112856",
+      "title": "Mens Activewear Polo T Shirt Quick Dry Breathable Sports Tee Stretch Gym Running Polo Lightweight Summer Performance T S",
+      "image": "https://m.media-amazon.com/images/I/61RREYBSO2L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0GTHVHC6C?tag=gadgetvill09f-21",
+      "price": "\u20b9449",
+      "rating": 4.8,
+      "category": "fashion",
+      "asin": "B0GTHVHC6C",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-12T16:58:56.040260+05:30",
+      "session_type": "morning",
+      "link_index": 119
+    },
+    {
+      "id": "product_morning_20260612_112854",
+      "title": "Amazon Product B0GTPSR6N2",
+      "image": "https://m.media-amazon.com/images/I/B0GTPSR6N2._AC_SL1500_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0GTPSR6N2?tag=gadgetvill09f-21",
+      "price": "\u20b9Special Price",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B0GTPSR6N2",
+      "data_source": "fallback",
+      "posted_date": "2026-06-12T16:58:54.643155+05:30",
+      "session_type": "morning",
+      "link_index": 119
+    },
     {
       "id": "product_morning_20260612_084808",
       "title": "Appel Touch Men's Cotton Blend Formal Shirt Half Sleeves",
