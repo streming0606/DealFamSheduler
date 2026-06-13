@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-06-13T13:33:57.429711+05:30",
-  "total_products": 1350,
+  "last_updated": "2026-06-13T15:46:28.320025+05:30",
+  "total_products": 1352,
   "products": [
+    {
+      "id": "product_morning_20260613_101628",
+      "title": "Half Sleeve Double Pocket Black| S, M, L, XL, 2XL",
+      "image": "https://m.media-amazon.com/images/I/31cEnWAGj5L._AC_UY218_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0F7HSPCWC?tag=gadgetvill09f-21",
+      "price": "\u20b9399",
+      "rating": 1.0,
+      "category": "electronics",
+      "asin": "B0F7HSPCWC",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-13T15:46:28.319996+05:30",
+      "session_type": "morning",
+      "link_index": 127
+    },
+    {
+      "id": "product_morning_20260613_101626",
+      "title": "Urban Scottish 100% Comfortable Men's Lounge Pants, Leisure-Wear withn Elastic Waist-Band & Regular Fit, Machine Washabl",
+      "image": "https://m.media-amazon.com/images/I/8155OAIbruS._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B097Y7MBPH?tag=gadgetvill09f-21",
+      "price": "\u20b9448",
+      "rating": 3.9,
+      "category": "home",
+      "asin": "B097Y7MBPH",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-13T15:46:26.440677+05:30",
+      "session_type": "morning",
+      "link_index": 127
+    },
     {
       "id": "product_morning_20260613_080357",
       "title": "FN3 Loosefit Side Stripe Trackpants for Men || Lower Trackpants",
