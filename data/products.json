@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-06-13T15:46:28.320025+05:30",
-  "total_products": 1352,
+  "last_updated": "2026-06-13T20:22:01.205020+05:30",
+  "total_products": 1354,
   "products": [
+    {
+      "id": "product_morning_20260613_145201",
+      "title": "Urban Scottish Ultra-Comfortable Men's Boxer Pants (Pack of 2), 100% Cotton With Stylish Print, Soft & Stretchy Elastic ",
+      "image": "https://m.media-amazon.com/images/I/71hYe5-YM0L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0C4L9PYHK?tag=gadgetvill09f-21",
+      "price": "\u20b9439",
+      "rating": 4.0,
+      "category": "home",
+      "asin": "B0C4L9PYHK",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-13T20:22:01.204993+05:30",
+      "session_type": "morning",
+      "link_index": 129
+    },
+    {
+      "id": "product_morning_20260613_145158",
+      "title": "Latest Chikan Men Button Down Shirt",
+      "image": "https://m.media-amazon.com/images/I/51FWGn-ly3S._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0994H9GN6?tag=gadgetvill09f-21",
+      "price": "\u20b9356",
+      "rating": 4.1,
+      "category": "fashion",
+      "asin": "B0994H9GN6",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-13T20:21:58.596459+05:30",
+      "session_type": "morning",
+      "link_index": 129
+    },
     {
       "id": "product_morning_20260613_101628",
       "title": "Half Sleeve Double Pocket Black| S, M, L, XL, 2XL",
