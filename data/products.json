@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-06-12T23:22:56.036076+05:30",
-  "total_products": 1348,
+  "last_updated": "2026-06-13T13:33:57.429711+05:30",
+  "total_products": 1350,
   "products": [
+    {
+      "id": "product_morning_20260613_080357",
+      "title": "FN3 Loosefit Side Stripe Trackpants for Men || Lower Trackpants",
+      "image": "https://m.media-amazon.com/images/I/317k95leGdL._AC_UY218_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0F6LVGN7L?tag=gadgetvill09f-21",
+      "price": "\u20b9425",
+      "rating": 3.6,
+      "category": "electronics",
+      "asin": "B0F6LVGN7L",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-13T13:33:57.429678+05:30",
+      "session_type": "morning",
+      "link_index": 125
+    },
+    {
+      "id": "product_morning_20260613_080356",
+      "title": "Amazon Product B0GTMHBR8S",
+      "image": "https://m.media-amazon.com/images/I/B0GTMHBR8S._AC_SL1500_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0GTMHBR8S?tag=gadgetvill09f-21",
+      "price": "\u20b9Special Price",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B0GTMHBR8S",
+      "data_source": "fallback",
+      "posted_date": "2026-06-13T13:33:56.527539+05:30",
+      "session_type": "morning",
+      "link_index": 125
+    },
     {
       "id": "product_morning_20260612_175256",
       "title": "Aquieen ABS Multi- Function Hand Shower (3 Function Classic with Filter)",
