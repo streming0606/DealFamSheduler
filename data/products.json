@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-06-13T20:22:01.205020+05:30",
-  "total_products": 1354,
+  "last_updated": "2026-06-13T22:33:07.891057+05:30",
+  "total_products": 1356,
   "products": [
+    {
+      "id": "product_morning_20260613_170307",
+      "title": "Urban Scottish Men's Lounge Pants 100% Cotton Men's Lounge Night Pant Comfortable Leisure-Wear Lower with an Elastic Wai",
+      "image": "https://m.media-amazon.com/images/I/61k6j9CNSZL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CC55BHYH?tag=gadgetvill09f-21",
+      "price": "\u20b9448",
+      "rating": 3.9,
+      "category": "home",
+      "asin": "B0CC55BHYH",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-13T22:33:07.891013+05:30",
+      "session_type": "morning",
+      "link_index": 131
+    },
+    {
+      "id": "product_morning_20260613_170304",
+      "title": "PRASTHAN Cotton Ankle Socks for Men | Cotton Sports Socks for Men | Soft Ankle Length Sock with Breathable Mesh & Arch S",
+      "image": "https://m.media-amazon.com/images/I/51ep0LPhC7L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0GTJ6JKNY?tag=gadgetvill09f-21",
+      "price": "\u20b9749",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B0GTJ6JKNY",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-13T22:33:04.313969+05:30",
+      "session_type": "morning",
+      "link_index": 131
+    },
     {
       "id": "product_morning_20260613_145201",
       "title": "Urban Scottish Ultra-Comfortable Men's Boxer Pants (Pack of 2), 100% Cotton With Stylish Print, Soft & Stretchy Elastic ",
