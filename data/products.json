@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-06-14T14:03:39.151723+05:30",
-  "total_products": 1358,
+  "last_updated": "2026-06-14T16:09:49.880905+05:30",
+  "total_products": 1360,
   "products": [
+    {
+      "id": "product_morning_20260614_103949",
+      "title": "DEVICE OF URBAN INFOTECH Dual Microphone Stand with 5 Panel Isolation Shield Vocal Reflection Filter for Mic with 2 Mic ",
+      "image": "https://m.media-amazon.com/images/I/514PGne5ecL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0GTPH48K7?tag=gadgetvill09f-21",
+      "price": "\u20b93,299",
+      "rating": 3.6,
+      "category": "electronics",
+      "asin": "B0GTPH48K7",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-14T16:09:49.880879+05:30",
+      "session_type": "morning",
+      "link_index": 135
+    },
+    {
+      "id": "product_morning_20260614_103948",
+      "title": "RodZen Men's Cotton Round Neck Printed Oversized Loose Fit T-Shirt",
+      "image": "https://m.media-amazon.com/images/I/61HLbccNTBL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DRGGKWX9?tag=gadgetvill09f-21",
+      "price": "\u20b9399",
+      "rating": 3.8,
+      "category": "fashion",
+      "asin": "B0DRGGKWX9",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-14T16:09:48.369126+05:30",
+      "session_type": "morning",
+      "link_index": 135
+    },
     {
       "id": "product_morning_20260614_083339",
       "title": "London Hills Men\u2019s Sports Running Shorts Lightweight Quick Dry Gym Workout Training Shorts with Zipper Side Pockets Elas",
