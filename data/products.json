@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-06-13T22:33:07.891057+05:30",
-  "total_products": 1356,
+  "last_updated": "2026-06-14T14:03:39.151723+05:30",
+  "total_products": 1358,
   "products": [
+    {
+      "id": "product_morning_20260614_083339",
+      "title": "London Hills Men\u2019s Sports Running Shorts Lightweight Quick Dry Gym Workout Training Shorts with Zipper Side Pockets Elas",
+      "image": "https://m.media-amazon.com/images/I/71IQchQVXkL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0GKHB43VR?tag=gadgetvill09f-21",
+      "price": "\u20b9499",
+      "rating": 3.1,
+      "category": "electronics",
+      "asin": "B0GKHB43VR",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-14T14:03:39.151686+05:30",
+      "session_type": "morning",
+      "link_index": 133
+    },
+    {
+      "id": "product_morning_20260614_083337",
+      "title": "NINQ Mens 2 Pack Polyester Yoga Short Men Summer Running Gym Sports Shorts with Pockets Shorts for Men (in, Alpha, M, Re",
+      "image": "https://m.media-amazon.com/images/I/719pQ80+wNL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0D9Y18G12?tag=gadgetvill09f-21",
+      "price": "\u20b9449",
+      "rating": 3.9,
+      "category": "electronics",
+      "asin": "B0D9Y18G12",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-14T14:03:37.375699+05:30",
+      "session_type": "morning",
+      "link_index": 133
+    },
     {
       "id": "product_morning_20260613_170307",
       "title": "Urban Scottish Men's Lounge Pants 100% Cotton Men's Lounge Night Pant Comfortable Leisure-Wear Lower with an Elastic Wai",
