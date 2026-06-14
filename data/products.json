@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-06-14T16:09:49.880905+05:30",
-  "total_products": 1360,
+  "last_updated": "2026-06-14T20:27:17.376572+05:30",
+  "total_products": 1362,
   "products": [
+    {
+      "id": "product_morning_20260614_145717",
+      "title": "Silicone Air Fryer Liners (2 Square + 1 Round) 3 Pack Reusable Silicone Airfryer Liners Tray | Replacement for Disposabl",
+      "image": "https://m.media-amazon.com/images/I/51cPjuHpd6L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B08JV755SK?tag=gadgetvill09f-21",
+      "price": "\u20b9289",
+      "rating": 4.5,
+      "category": "electronics",
+      "asin": "B08JV755SK",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-14T20:27:17.376538+05:30",
+      "session_type": "morning",
+      "link_index": 2
+    },
+    {
+      "id": "product_morning_20260614_145714",
+      "title": "XECH Portable Electric Kettle 300ml | Mini Electric Kettles for Hot Water | Small Travel Kettle with In-Built Cable | Bo",
+      "image": "https://m.media-amazon.com/images/I/61ZN4xKyyNL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0G12MZVB3?tag=gadgetvill09f-21",
+      "price": "\u20b9979",
+      "rating": 4.3,
+      "category": "electronics",
+      "asin": "B0G12MZVB3",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-14T20:27:14.996162+05:30",
+      "session_type": "morning",
+      "link_index": 2
+    },
     {
       "id": "product_morning_20260614_103949",
       "title": "DEVICE OF URBAN INFOTECH Dual Microphone Stand with 5 Panel Isolation Shield Vocal Reflection Filter for Mic with 2 Mic ",
