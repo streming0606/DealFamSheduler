@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-06-14T20:27:17.376572+05:30",
-  "total_products": 1362,
+  "last_updated": "2026-06-14T22:32:07.299117+05:30",
+  "total_products": 1364,
   "products": [
+    {
+      "id": "product_morning_20260614_170207",
+      "title": "Prestige Pressure Regulator Weight Whistle for Prestige Brand Pressure Cookers Only, SS 23mm",
+      "image": "https://m.media-amazon.com/images/I/41Bj7bvKpEL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DYQDYP3Q?tag=gadgetvill09f-21",
+      "price": "\u20b9299",
+      "rating": 4.1,
+      "category": "electronics",
+      "asin": "B0DYQDYP3Q",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-14T22:32:07.299086+05:30",
+      "session_type": "morning",
+      "link_index": 4
+    },
+    {
+      "id": "product_morning_20260614_170205",
+      "title": "Sujata CHUTNEY JAR SMALL (Black)",
+      "image": "https://m.media-amazon.com/images/I/61bTpW5OvfL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CPVVC2VW?tag=gadgetvill09f-21",
+      "price": "\u20b9669",
+      "rating": 4.1,
+      "category": "electronics",
+      "asin": "B0CPVVC2VW",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-14T22:32:05.802687+05:30",
+      "session_type": "morning",
+      "link_index": 4
+    },
     {
       "id": "product_morning_20260614_145717",
       "title": "Silicone Air Fryer Liners (2 Square + 1 Round) 3 Pack Reusable Silicone Airfryer Liners Tray | Replacement for Disposabl",
