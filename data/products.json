@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-06-16T17:59:49.208429+05:30",
-  "total_products": 1376,
+  "last_updated": "2026-06-16T23:06:05.242239+05:30",
+  "total_products": 1378,
   "products": [
+    {
+      "id": "product_morning_20260616_173605",
+      "title": "Borosil NutriGrip Blue Portable Blender | 40W Low-Noise DC Motor | 300ml Unbreakable PC Jar | USB Rechargeable | Turbo 6",
+      "image": "https://m.media-amazon.com/images/I/61USOWF3NmL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FNR531F9?tag=gadgetvill09f-21",
+      "price": "\u20b91,769",
+      "rating": 3.5,
+      "category": "home",
+      "asin": "B0FNR531F9",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-16T23:06:05.242199+05:30",
+      "session_type": "morning",
+      "link_index": 18
+    },
+    {
+      "id": "product_morning_20260616_173604",
+      "title": "ATOM ALISTON K1 Series Digital Kitchen Weighing Scale 10 kg, Electronic Weight Machine with LCD Display for Baking, Cook",
+      "image": "https://m.media-amazon.com/images/I/71775fRr+gL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B083C6XMKQ?tag=gadgetvill09f-21",
+      "price": "\u20b9249",
+      "rating": 4.2,
+      "category": "home",
+      "asin": "B083C6XMKQ",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-16T23:06:04.219729+05:30",
+      "session_type": "morning",
+      "link_index": 18
+    },
     {
       "id": "product_evening_20260616_122949",
       "title": "Cookwell Multipurpose Cook Kettle 600W (Green Steel)",
