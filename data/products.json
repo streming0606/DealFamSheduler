@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-06-16T23:06:05.242239+05:30",
-  "total_products": 1378,
+  "last_updated": "2026-06-17T00:52:57.555481+05:30",
+  "total_products": 1380,
   "products": [
+    {
+      "id": "product_morning_20260616_192257",
+      "title": "Stainless Steel Nima Mixer Grinder Multifunctional Electric Mini Blender Miksi Baby Food Coffee Chutney Masala Spice",
+      "image": "https://m.media-amazon.com/images/I/71R5KdIaDPL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0GXZC2KJH?tag=gadgetvill09f-21",
+      "price": "\u20b9199",
+      "rating": 2.5,
+      "category": "electronics",
+      "asin": "B0GXZC2KJH",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-17T00:52:57.555453+05:30",
+      "session_type": "morning",
+      "link_index": 20
+    },
+    {
+      "id": "product_morning_20260616_192256",
+      "title": "Wonderchef Roti Magic, Fully Automatic Electric Roti Maker Machine for Homemade Hot Fresh Rotis, Dough Kneading, Rolling",
+      "image": "https://m.media-amazon.com/images/I/51UwqmXYn-L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0GZGMNRHD?tag=gadgetvill09f-21",
+      "price": "\u20b959,999",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "home",
+      "asin": "B0GZGMNRHD",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-17T00:52:56.438809+05:30",
+      "session_type": "morning",
+      "link_index": 20
+    },
     {
       "id": "product_morning_20260616_173605",
       "title": "Borosil NutriGrip Blue Portable Blender | 40W Low-Noise DC Motor | 300ml Unbreakable PC Jar | USB Rechargeable | Turbo 6",
