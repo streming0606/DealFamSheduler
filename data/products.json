@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-06-17T00:52:57.555481+05:30",
-  "total_products": 1380,
+  "last_updated": "2026-06-17T14:52:10.057681+05:30",
+  "total_products": 1382,
   "products": [
+    {
+      "id": "product_morning_20260617_092210",
+      "title": "Aluminum Tandoor Bati Maker Baking Oven, 25 x 25 x 35 cm, Gas Tandoor, Barbecue Grill Food Steamer Cookware Set - Silver",
+      "image": "https://m.media-amazon.com/images/I/41gVNEk0XoS._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B08WJ977SX?tag=gadgetvill09f-21",
+      "price": "\u20b9899",
+      "rating": 2.7,
+      "category": "electronics",
+      "asin": "B08WJ977SX",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-17T14:52:10.057641+05:30",
+      "session_type": "morning",
+      "link_index": 22
+    },
+    {
+      "id": "product_morning_20260617_092207",
+      "title": "Orpat HHB-100E WOB 250-Watt Hand Blender (White)",
+      "image": "https://m.media-amazon.com/images/I/31k3k6GUQXL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B00A7PLVU6?tag=gadgetvill09f-21",
+      "price": "\u20b9799",
+      "rating": 4.2,
+      "category": "electronics",
+      "asin": "B00A7PLVU6",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-17T14:52:07.682154+05:30",
+      "session_type": "morning",
+      "link_index": 22
+    },
     {
       "id": "product_morning_20260616_192257",
       "title": "Stainless Steel Nima Mixer Grinder Multifunctional Electric Mini Blender Miksi Baby Food Coffee Chutney Masala Spice",
