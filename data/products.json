@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-06-18T14:36:21.452649+05:30",
-  "total_products": 1390,
+  "last_updated": "2026-06-18T17:09:24.870703+05:30",
+  "total_products": 1392,
   "products": [
+    {
+      "id": "product_morning_20260618_113924",
+      "title": "Mini Waffle Maker Machine 3 In 1 Waffle Iron Home Appliances Kitchen Easy To Clean, 4 Inch, Perfect For Breakfast,Desser",
+      "image": "https://m.media-amazon.com/images/I/71x7wx833VL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0GWR7HLTY?tag=gadgetvill09f-21",
+      "price": "\u20b9698",
+      "rating": 4.2,
+      "category": "home",
+      "asin": "B0GWR7HLTY",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-18T17:09:24.870675+05:30",
+      "session_type": "morning",
+      "link_index": 32
+    },
+    {
+      "id": "product_morning_20260618_113923",
+      "title": "Sujata MG03 Mixer Grinder |1000 Watts Double Ball Bearing Motor|24000 RPM|Non-Stop 90 Mins Running|4 Jars including 1750",
+      "image": "https://m.media-amazon.com/images/I/51ijYwwz7LL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0G319XS3M?tag=gadgetvill09f-21",
+      "price": "\u20b97,589.99",
+      "rating": 4.4,
+      "category": "electronics",
+      "asin": "B0G319XS3M",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-18T17:09:23.032612+05:30",
+      "session_type": "morning",
+      "link_index": 32
+    },
     {
       "id": "product_morning_20260618_090621",
       "title": "AGARO Greek Yogurt Maker & Curd Strainer, 1100ml BPA-Free Yogurt Strainer with Fine Mesh Filter, Whey Separator for Home",
