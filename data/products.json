@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-06-18T21:33:08.802427+05:30",
-  "total_products": 1394,
+  "last_updated": "2026-06-18T23:47:37.028187+05:30",
+  "total_products": 1396,
   "products": [
+    {
+      "id": "product_morning_20260618_181737",
+      "title": "Milton Rapid Electric Kettle 1.8L | 1500 Watts | Stainless Steel Hot Water portable Electric Kettle for Home, Office | A",
+      "image": "https://m.media-amazon.com/images/I/51lYFOP2mUL._AC_UY218_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0F54GKQ38?tag=gadgetvill09f-21",
+      "price": "\u20b9649",
+      "rating": 3.9,
+      "category": "home",
+      "asin": "B0F54GKQ38",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-18T23:47:37.028148+05:30",
+      "session_type": "morning",
+      "link_index": 36
+    },
+    {
+      "id": "product_morning_20260618_181735",
+      "title": "Bajaj Original 300ML GX7/8 PX71M Chutney Grinding Jar \u2013 Compatible with 50+ Bajaj & MR Mixer Grinder Models",
+      "image": "https://m.media-amazon.com/images/I/41gs79F8AVL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FPMBB7G8?tag=gadgetvill09f-21",
+      "price": "\u20b9424",
+      "rating": 4.2,
+      "category": "electronics",
+      "asin": "B0FPMBB7G8",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-18T23:47:35.204578+05:30",
+      "session_type": "morning",
+      "link_index": 36
+    },
     {
       "id": "product_morning_20260618_160308",
       "title": "Stash-Pro Mini Metal Grinder with Keychain (Green) | Pocket Size Spice & Dry Herb Crusher | 2-Piece Twist Design | 3cm D",
