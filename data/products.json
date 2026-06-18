@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-06-17T23:35:17.407431+05:30",
-  "total_products": 1388,
+  "last_updated": "2026-06-18T14:36:21.452649+05:30",
+  "total_products": 1390,
   "products": [
+    {
+      "id": "product_morning_20260618_090621",
+      "title": "AGARO Greek Yogurt Maker & Curd Strainer, 1100ml BPA-Free Yogurt Strainer with Fine Mesh Filter, Whey Separator for Home",
+      "image": "https://m.media-amazon.com/images/I/61IRWwpHaQL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0G6JQ92JS?tag=gadgetvill09f-21",
+      "price": "\u20b9599",
+      "rating": 4.4,
+      "category": "home",
+      "asin": "B0G6JQ92JS",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-18T14:36:21.452622+05:30",
+      "session_type": "morning",
+      "link_index": 30
+    },
+    {
+      "id": "product_morning_20260618_090619",
+      "title": "Longway Super Pro Juicer Mixer Grinder | Up to 750W Max Output Powerful Motor | 4 Jars for Grinding, Mixing, Juicing | 2",
+      "image": "https://m.media-amazon.com/images/I/71uHKg5F3DL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0GWCRPGDB?tag=gadgetvill09f-21",
+      "price": "\u20b91,599",
+      "rating": 4.0,
+      "category": "electronics",
+      "asin": "B0GWCRPGDB",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-18T14:36:19.139722+05:30",
+      "session_type": "morning",
+      "link_index": 30
+    },
     {
       "id": "product_morning_20260617_180517",
       "title": "Milton Xpress Egg Boiler | Automatic Power Off | Egg Cooker & Steamer for Boiling Up to 7 Eggs | 3 Boiling Modes | 360 W",
