@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-06-19T21:21:23.867194+05:30",
-  "total_products": 1402,
+  "last_updated": "2026-06-19T23:01:52.818486+05:30",
+  "total_products": 1404,
   "products": [
+    {
+      "id": "product_morning_20260619_173152",
+      "title": "INALSA Air Fryer Oven|16L, 1800W|Stainless Steel Body12-in-1 Functions,Fry,Bake,Grill,Dehydrate,Roast& Reheat|10 Preset|",
+      "image": "https://m.media-amazon.com/images/I/61MSKt0XILL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DWN8CQ74?tag=gadgetvill09f-21",
+      "price": "\u20b911,397",
+      "rating": 4.0,
+      "category": "electronics",
+      "asin": "B0DWN8CQ74",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-19T23:01:52.818444+05:30",
+      "session_type": "morning",
+      "link_index": 44
+    },
+    {
+      "id": "product_morning_20260619_173151",
+      "title": "Gadgetronics Smart Coffee Scale with Timer, Rechargeable Digital Scale for Coffee Weighing, 0.1g - 3 kg, LED Touchscreen",
+      "image": "https://m.media-amazon.com/images/I/615ApVC7LpL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FM42B1YH?tag=gadgetvill09f-21",
+      "price": "\u20b9999",
+      "rating": 4.1,
+      "category": "electronics",
+      "asin": "B0FM42B1YH",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-19T23:01:51.436649+05:30",
+      "session_type": "morning",
+      "link_index": 44
+    },
     {
       "id": "product_night_20260619_155123",
       "title": "QUIX Portable Mini Blender 500ml for Smoothies Cold Coffee & Juices | USB-C Rechargeable Juicer Mixer Grinder with 230W ",
