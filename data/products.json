@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-06-19T17:23:26.294950+05:30",
-  "total_products": 1400,
+  "last_updated": "2026-06-19T21:21:23.867194+05:30",
+  "total_products": 1402,
   "products": [
+    {
+      "id": "product_night_20260619_155123",
+      "title": "QUIX Portable Mini Blender 500ml for Smoothies Cold Coffee & Juices | USB-C Rechargeable Juicer Mixer Grinder with 230W ",
+      "image": "https://m.media-amazon.com/images/I/719wN5256IL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FK5QY3PH?tag=gadgetvill09f-21",
+      "price": "\u20b91,949",
+      "rating": 4.2,
+      "category": "home",
+      "asin": "B0FK5QY3PH",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-19T21:21:23.867158+05:30",
+      "session_type": "night",
+      "link_index": 42
+    },
+    {
+      "id": "product_night_20260619_155121",
+      "title": "Smart Deal Hub Electric Egg Boiler, 7 Egg Capacity, One-Touch Operation, Stainless Steel Heating Plate, Transparent Lid,",
+      "image": "https://m.media-amazon.com/images/I/51jgCAGJkyL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0GTR7YMMC?tag=gadgetvill09f-21",
+      "price": "\u20b9265",
+      "rating": 4.4,
+      "category": "fashion",
+      "asin": "B0GTR7YMMC",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-19T21:21:21.496849+05:30",
+      "session_type": "night",
+      "link_index": 42
+    },
     {
       "id": "product_morning_20260619_115326",
       "title": "iBELL WHISK350 Electric Hand Mixer - 350W with 5 Speed Control, Stainless Steel Beaters & Dough Hooks for Baking, Whippi",
