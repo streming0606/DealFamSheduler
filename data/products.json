@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-06-20T20:25:03.816462+05:30",
-  "total_products": 1410,
+  "last_updated": "2026-06-20T22:37:53.878744+05:30",
+  "total_products": 1412,
   "products": [
+    {
+      "id": "product_morning_20260620_170753",
+      "title": "Miss Chase Women's Wine Red Round Neck Sleeveless Solid Semi Sheer Detailing Paneled Bodycon Knee-Long Dress",
+      "image": "https://m.media-amazon.com/images/I/81grmje9jiL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07L95NHC7?tag=gadgetvill09f-21",
+      "price": "\u20b9799",
+      "rating": 3.9,
+      "category": "fashion",
+      "asin": "B07L95NHC7",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-20T22:37:53.878716+05:30",
+      "session_type": "morning",
+      "link_index": 52
+    },
+    {
+      "id": "product_morning_20260620_170751",
+      "title": "Amazon Brand - Myx Women Printed Cotton Regular Fit Kurta (Available in Plus Sizes)",
+      "image": "https://m.media-amazon.com/images/I/81row7S2oxL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07MQF5B13?tag=gadgetvill09f-21",
+      "price": "\u20b9649",
+      "rating": 3.7,
+      "category": "electronics",
+      "asin": "B07MQF5B13",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-20T22:37:51.218875+05:30",
+      "session_type": "morning",
+      "link_index": 52
+    },
     {
       "id": "product_morning_20260620_145503",
       "title": "Amazon Brand - Symbol Women Cotton Stretch Regular Fit Round Neck Half Sleeve T-Shirt | Pack of 2 (Available in Plus Siz",
