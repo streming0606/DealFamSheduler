@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-06-20T13:35:53.874364+05:30",
-  "total_products": 1406,
+  "last_updated": "2026-06-20T15:50:29.456226+05:30",
+  "total_products": 1408,
   "products": [
+    {
+      "id": "product_morning_20260620_102029",
+      "title": "Jewellery Scale | Weight Scale | Digital Weight Machine | weight machine for gold | Electronic weighing for Jewellery 0.",
+      "image": "https://m.media-amazon.com/images/I/61PV87EA8GL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0GFG7D71K?tag=gadgetvill09f-21",
+      "price": "\u20b9295",
+      "rating": 4.1,
+      "category": "electronics",
+      "asin": "B0GFG7D71K",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-20T15:50:29.456189+05:30",
+      "session_type": "morning",
+      "link_index": 48
+    },
+    {
+      "id": "product_morning_20260620_102026",
+      "title": "SOLARA Cold Press Juicer for Home With Automatic Fruit Cutting, Masticating Juicer Machine (10% More Juice), All-in-One ",
+      "image": "https://m.media-amazon.com/images/I/71FGVoiNiRL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FN7ZGQRM?tag=gadgetvill09f-21",
+      "price": "\u20b97,999",
+      "rating": 4.0,
+      "category": "home",
+      "asin": "B0FN7ZGQRM",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-20T15:50:26.210905+05:30",
+      "session_type": "morning",
+      "link_index": 48
+    },
     {
       "id": "product_morning_20260620_080553",
       "title": "Milton Euroline Go Electro Stainless Steel Electric Kettle 1.2L, 1350 Watts, Portable Electric Kettle for Home, Office, ",
