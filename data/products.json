@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-06-20T22:37:53.878744+05:30",
-  "total_products": 1412,
+  "last_updated": "2026-06-21T14:17:58.291697+05:30",
+  "total_products": 1414,
   "products": [
+    {
+      "id": "product_morning_20260621_084758",
+      "title": "BIBA Women Kurta Pants Set",
+      "image": "https://m.media-amazon.com/images/I/61VUzcjjElL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07MS2WSDF?tag=gadgetvill09f-21",
+      "price": "\u20b9Special Price",
+      "rating": 3.2,
+      "category": "electronics",
+      "asin": "B07MS2WSDF",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-21T14:17:58.291626+05:30",
+      "session_type": "morning",
+      "link_index": 54
+    },
+    {
+      "id": "product_morning_20260621_084754",
+      "title": "Womens Premium Tummy Tucker, Body Shaper, Seamless Shapewear for Bodycon Dresses, Belly Control, High Waist & Full Body ",
+      "image": "https://m.media-amazon.com/images/I/51N5Z0MmCxL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0H33R3834?tag=gadgetvill09f-21",
+      "price": "\u20b9599",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "fashion",
+      "asin": "B0H33R3834",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-21T14:17:54.645489+05:30",
+      "session_type": "morning",
+      "link_index": 54
+    },
     {
       "id": "product_morning_20260620_170753",
       "title": "Miss Chase Women's Wine Red Round Neck Sleeveless Solid Semi Sheer Detailing Paneled Bodycon Knee-Long Dress",
