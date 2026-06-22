@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-06-22T15:55:27.110398+05:30",
-  "total_products": 1422,
+  "last_updated": "2026-06-22T18:48:16.048138+05:30",
+  "total_products": 1424,
   "products": [
+    {
+      "id": "product_morning_20260622_131816",
+      "title": "Aurelia Women's Straight Pants",
+      "image": "https://m.media-amazon.com/images/I/71oTUTsV32L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07LC1WRMX?tag=gadgetvill09f-21",
+      "price": "\u20b9899",
+      "rating": 4.2,
+      "category": "electronics",
+      "asin": "B07LC1WRMX",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-22T18:48:16.048107+05:30",
+      "session_type": "morning",
+      "link_index": 64
+    },
+    {
+      "id": "product_morning_20260622_131812",
+      "title": "W for Woman W Cotton Blend Strechable Slim Pants for Women | Cotton Blend Slim Pants for Women | Trousers for Women",
+      "image": "https://m.media-amazon.com/images/I/71+aoTGL02L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07M8VP44R?tag=gadgetvill09f-21",
+      "price": "\u20b9999",
+      "rating": 3.8,
+      "category": "electronics",
+      "asin": "B07M8VP44R",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-22T18:48:12.981311+05:30",
+      "session_type": "morning",
+      "link_index": 64
+    },
     {
       "id": "product_morning_20260622_102527",
       "title": "Aurelia Womens Solid Churidars",
