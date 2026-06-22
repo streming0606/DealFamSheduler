@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-06-22T18:48:16.048138+05:30",
-  "total_products": 1424,
+  "last_updated": "2026-06-22T22:47:14.946098+05:30",
+  "total_products": 1426,
   "products": [
+    {
+      "id": "product_morning_20260622_171714",
+      "title": "Miss Chase Women's Denim Flared Pants",
+      "image": "https://m.media-amazon.com/images/I/81YIKNf7t1L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07L94Z9SL?tag=gadgetvill09f-21",
+      "price": "\u20b9799",
+      "rating": 3.8,
+      "category": "electronics",
+      "asin": "B07L94Z9SL",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-22T22:47:14.946058+05:30",
+      "session_type": "morning",
+      "link_index": 66
+    },
+    {
+      "id": "product_morning_20260622_171711",
+      "title": "W for Woman Women's Pale Beige Knitted Tapered Fit Churidar",
+      "image": "https://m.media-amazon.com/images/I/81nIPDkHewL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07LDQ5N69?tag=gadgetvill09f-21",
+      "price": "\u20b9899",
+      "rating": 3.9,
+      "category": "electronics",
+      "asin": "B07LDQ5N69",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-22T22:47:11.705963+05:30",
+      "session_type": "morning",
+      "link_index": 66
+    },
     {
       "id": "product_morning_20260622_131816",
       "title": "Aurelia Women's Straight Pants",
