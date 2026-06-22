@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-06-21T22:40:47.030131+05:30",
-  "total_products": 1420,
+  "last_updated": "2026-06-22T15:55:27.110398+05:30",
+  "total_products": 1422,
   "products": [
+    {
+      "id": "product_morning_20260622_102527",
+      "title": "Aurelia Womens Solid Churidars",
+      "image": "https://m.media-amazon.com/images/I/51Hj2FKjOML._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07LC5QR53?tag=gadgetvill09f-21",
+      "price": "\u20b9420",
+      "rating": 3.6,
+      "category": "electronics",
+      "asin": "B07LC5QR53",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-22T15:55:27.110358+05:30",
+      "session_type": "morning",
+      "link_index": 62
+    },
+    {
+      "id": "product_morning_20260622_102525",
+      "title": "Amazon Product B0GSVP8JFG",
+      "image": "https://m.media-amazon.com/images/I/B0GSVP8JFG._AC_SL1500_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0GSVP8JFG?tag=gadgetvill09f-21",
+      "price": "\u20b9Special Price",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B0GSVP8JFG",
+      "data_source": "fallback",
+      "posted_date": "2026-06-22T15:55:25.758872+05:30",
+      "session_type": "morning",
+      "link_index": 62
+    },
     {
       "id": "product_morning_20260621_171047",
       "title": "W for Woman Women's Slim Pants",
