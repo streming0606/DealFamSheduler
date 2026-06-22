@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-06-22T22:47:14.946098+05:30",
-  "total_products": 1426,
+  "last_updated": "2026-06-23T00:29:35.594472+05:30",
+  "total_products": 1428,
   "products": [
+    {
+      "id": "product_morning_20260622_185935",
+      "title": "Amazon Brand - Myx Women Cotton Printed A-line Short Kurti (Available in Plus Sizes)",
+      "image": "https://m.media-amazon.com/images/I/81KTGOTzc+L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07MM5C44V?tag=gadgetvill09f-21",
+      "price": "\u20b9399",
+      "rating": 4.0,
+      "category": "electronics",
+      "asin": "B07MM5C44V",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-23T00:29:35.594440+05:30",
+      "session_type": "morning",
+      "link_index": 68
+    },
+    {
+      "id": "product_morning_20260622_185934",
+      "title": "Miss Chase Women's Black Skinny High Rise Side Slit Solid Ankle Length Stretchable Denim Jeans",
+      "image": "https://m.media-amazon.com/images/I/7162UxcRSOL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07L969HV6?tag=gadgetvill09f-21",
+      "price": "\u20b9799",
+      "rating": 3.6,
+      "category": "fashion",
+      "asin": "B07L969HV6",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-23T00:29:34.694331+05:30",
+      "session_type": "morning",
+      "link_index": 68
+    },
     {
       "id": "product_morning_20260622_171714",
       "title": "Miss Chase Women's Denim Flared Pants",
