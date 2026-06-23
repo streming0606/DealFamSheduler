@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-06-23T13:49:31.586522+05:30",
-  "total_products": 1430,
+  "last_updated": "2026-06-23T16:19:23.181240+05:30",
+  "total_products": 1432,
   "products": [
+    {
+      "id": "product_morning_20260623_104923",
+      "title": "W for Woman Womens Blended Slub Dupatta (Silver_Free Size)",
+      "image": "https://m.media-amazon.com/images/I/71C1QDyEJzL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07LDKP5M9?tag=gadgetvill09f-21",
+      "price": "\u20b9Special Price",
+      "rating": 3.8,
+      "category": "electronics",
+      "asin": "B07LDKP5M9",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-23T16:19:23.181195+05:30",
+      "session_type": "morning",
+      "link_index": 72
+    },
+    {
+      "id": "product_morning_20260623_104917",
+      "title": "Miss Chase Women's Denim Bodycon Dress",
+      "image": "https://m.media-amazon.com/images/I/81dshbE9ryL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07MT4HK9B?tag=gadgetvill09f-21",
+      "price": "\u20b9799",
+      "rating": 3.9,
+      "category": "fashion",
+      "asin": "B07MT4HK9B",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-23T16:19:17.526188+05:30",
+      "session_type": "morning",
+      "link_index": 72
+    },
     {
       "id": "product_morning_20260623_081931",
       "title": "W for Woman Women High Rise Cotton Blend Strechable Slim Pants | Cotton Blend Slim Pants | Trousers",
