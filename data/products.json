@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-06-24T20:51:34.242739+05:30",
-  "total_products": 1442,
+  "last_updated": "2026-06-24T23:01:49.420502+05:30",
+  "total_products": 1444,
   "products": [
+    {
+      "id": "product_morning_20260624_173149",
+      "title": "Miss Chase Women's Skinny High Rise Cropped Length Fringe Detailing Stretchable Denim Jeans",
+      "image": "https://m.media-amazon.com/images/I/7129dGh6bFL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07MT4SY5F?tag=gadgetvill09f-21",
+      "price": "\u20b9799",
+      "rating": 3.8,
+      "category": "fashion",
+      "asin": "B07MT4SY5F",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-24T23:01:49.420468+05:30",
+      "session_type": "morning",
+      "link_index": 84
+    },
+    {
+      "id": "product_morning_20260624_173148",
+      "title": "W for Woman Women Regular Fit Rayon Pants",
+      "image": "https://m.media-amazon.com/images/I/71zw7vkRdwL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07MMW5137?tag=gadgetvill09f-21",
+      "price": "\u20b91,145",
+      "rating": 3.3,
+      "category": "electronics",
+      "asin": "B07MMW5137",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-24T23:01:48.340116+05:30",
+      "session_type": "morning",
+      "link_index": 84
+    },
     {
       "id": "product_night_20260624_152134",
       "title": "W for Woman Women High Rise Strechable Slim Pants | Trousers",
