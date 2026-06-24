@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-06-24T13:33:07.246702+05:30",
-  "total_products": 1438,
+  "last_updated": "2026-06-24T16:05:10.437513+05:30",
+  "total_products": 1440,
   "products": [
+    {
+      "id": "product_morning_20260624_103510",
+      "title": "Amazon Product B07MPR39MB",
+      "image": "https://m.media-amazon.com/images/I/B07MPR39MB._AC_SL1500_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07MPR39MB?tag=gadgetvill09f-21",
+      "price": "\u20b9Special Price",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B07MPR39MB",
+      "data_source": "fallback",
+      "posted_date": "2026-06-24T16:05:10.437485+05:30",
+      "session_type": "morning",
+      "link_index": 80
+    },
+    {
+      "id": "product_morning_20260624_103509",
+      "title": "Miss Chase Women's Polo Neck Rolled Up Full Sleeve Denim Solid Buttoned A-Line Mini Dress",
+      "image": "https://m.media-amazon.com/images/I/41oJgh47u+L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07MJQPX4D?tag=gadgetvill09f-21",
+      "price": "\u20b9899",
+      "rating": 3.7,
+      "category": "fashion",
+      "asin": "B07MJQPX4D",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-24T16:05:09.440542+05:30",
+      "session_type": "morning",
+      "link_index": 80
+    },
     {
       "id": "product_morning_20260624_080307",
       "title": "Miss Chase Women Miss Chase Women's Super Skinny Fit High Rise Denim Jeans(MCAW18DEN02-55-115-34,Blue,34)",
