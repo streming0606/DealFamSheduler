@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-06-25T15:59:01.288594+05:30",
-  "total_products": 1448,
+  "last_updated": "2026-06-25T21:01:16.030480+05:30",
+  "total_products": 1450,
   "products": [
+    {
+      "id": "product_night_20260625_153116",
+      "title": "Wishful Women's Regular fit Top (19FESP10246-110916_Grey 10)",
+      "image": "https://m.media-amazon.com/images/I/81frtjzJd2L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07M92SHPC?tag=gadgetvill09f-21",
+      "price": "\u20b98,885",
+      "rating": 4.6,
+      "category": "electronics",
+      "asin": "B07M92SHPC",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-25T21:01:16.030451+05:30",
+      "session_type": "night",
+      "link_index": 90
+    },
+    {
+      "id": "product_night_20260625_153114",
+      "title": "Miss Chase Women's Light Blue Pearl Detailing Denim Jeggings Jeans",
+      "image": "https://m.media-amazon.com/images/I/81CyPaJ7DHL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07MG4XY91?tag=gadgetvill09f-21",
+      "price": "\u20b9955.01",
+      "rating": 2.5,
+      "category": "fashion",
+      "asin": "B07MG4XY91",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-25T21:01:14.481170+05:30",
+      "session_type": "night",
+      "link_index": 90
+    },
     {
       "id": "product_morning_20260625_102901",
       "title": "W for Woman Women's High Rise Regular Bottom",
