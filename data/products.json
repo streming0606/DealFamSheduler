@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-06-26T16:08:23.303578+05:30",
-  "total_products": 1456,
+  "last_updated": "2026-06-26T20:44:30.159326+05:30",
+  "total_products": 1458,
   "products": [
+    {
+      "id": "product_night_20260626_151430",
+      "title": "Rangriti Womens Mandarin Collar Solid Kurta",
+      "image": "https://m.media-amazon.com/images/I/51n4iPl1kyL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07NFGMZRC?tag=gadgetvill09f-21",
+      "price": "\u20b9914",
+      "rating": 4.0,
+      "category": "electronics",
+      "asin": "B07NFGMZRC",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-26T20:44:30.159288+05:30",
+      "session_type": "night",
+      "link_index": 98
+    },
+    {
+      "id": "product_night_20260626_151428",
+      "title": "Miss Chase Women's Maroon Solid Skinny High Waist Jeggings",
+      "image": "https://m.media-amazon.com/images/I/71sMHNU8kTL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07L94DCPX?tag=gadgetvill09f-21",
+      "price": "\u20b9691.96",
+      "rating": 3.7,
+      "category": "electronics",
+      "asin": "B07L94DCPX",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-26T20:44:28.062963+05:30",
+      "session_type": "night",
+      "link_index": 98
+    },
     {
       "id": "product_morning_20260626_103823",
       "title": "Romantic Couple Showpiece for Bedroom Decorations, Living Room Decor, Couple Gift Item,Gifts for Husband Girlfriend Boyf",
