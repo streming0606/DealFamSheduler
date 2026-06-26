@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-06-26T13:49:06.796881+05:30",
-  "total_products": 1454,
+  "last_updated": "2026-06-26T16:08:23.303578+05:30",
+  "total_products": 1456,
   "products": [
+    {
+      "id": "product_morning_20260626_103823",
+      "title": "Romantic Couple Showpiece for Bedroom Decorations, Living Room Decor, Couple Gift Item,Gifts for Husband Girlfriend Boyf",
+      "image": "https://m.media-amazon.com/images/I/41qcAZt9jfL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07NFG4VWM?tag=gadgetvill09f-21",
+      "price": "\u20b91,099",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "home",
+      "asin": "B07NFG4VWM",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-26T16:08:23.303543+05:30",
+      "session_type": "morning",
+      "link_index": 96
+    },
+    {
+      "id": "product_morning_20260626_103821",
+      "title": "Aurelia Women's Regular Straight Pants",
+      "image": "https://m.media-amazon.com/images/I/51G8zSlR31L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07LC7YLYR?tag=gadgetvill09f-21",
+      "price": "\u20b9845",
+      "rating": 3.4,
+      "category": "electronics",
+      "asin": "B07LC7YLYR",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-26T16:08:21.339977+05:30",
+      "session_type": "morning",
+      "link_index": 96
+    },
     {
       "id": "product_morning_20260626_081906",
       "title": "Aurelia Women's High Rise Regular Fit Cotton Patialas (19CRA60043-600451_Gold_Free Size)",
