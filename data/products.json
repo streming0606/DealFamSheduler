@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-06-25T23:04:23.748477+05:30",
-  "total_products": 1452,
+  "last_updated": "2026-06-26T13:49:06.796881+05:30",
+  "total_products": 1454,
   "products": [
+    {
+      "id": "product_morning_20260626_081906",
+      "title": "Aurelia Women's High Rise Regular Fit Cotton Patialas (19CRA60043-600451_Gold_Free Size)",
+      "image": "https://m.media-amazon.com/images/I/71BUjZTl1dL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07LC6K7FV?tag=gadgetvill09f-21",
+      "price": "\u20b9608",
+      "rating": 3.8,
+      "category": "electronics",
+      "asin": "B07LC6K7FV",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-26T13:49:06.796840+05:30",
+      "session_type": "morning",
+      "link_index": 94
+    },
+    {
+      "id": "product_morning_20260626_081904",
+      "title": "Rangriti Ecru Straight Cotton Kurta for Women",
+      "image": "https://m.media-amazon.com/images/I/51ii6anqMjL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07NFH68QS?tag=gadgetvill09f-21",
+      "price": "\u20b9854",
+      "rating": 4.0,
+      "category": "electronics",
+      "asin": "B07NFH68QS",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-26T13:49:04.169695+05:30",
+      "session_type": "morning",
+      "link_index": 94
+    },
     {
       "id": "product_morning_20260625_173423",
       "title": "CATAN Mayfair Games 5th Edition For 8 Years And Up, Pack Of 1, Multicolor",
