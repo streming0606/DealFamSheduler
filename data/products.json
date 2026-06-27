@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-06-27T19:45:28.078483+05:30",
-  "total_products": 1466,
+  "last_updated": "2026-06-27T22:16:31.436040+05:30",
+  "total_products": 1468,
   "products": [
+    {
+      "id": "product_morning_20260627_164631",
+      "title": "7 season's Cotton Short Scarf Cum Mask Universal Size/Usable for vehicle Driver for sunlight UV protection/White Printed",
+      "image": "https://m.media-amazon.com/images/I/81e3U1V4nEL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0C1STLPPC?tag=gadgetvill09f-21",
+      "price": "\u20b9282.98",
+      "rating": 4.2,
+      "category": "electronics",
+      "asin": "B0C1STLPPC",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-27T22:16:31.436003+05:30",
+      "session_type": "morning",
+      "link_index": 108
+    },
+    {
+      "id": "product_morning_20260627_164629",
+      "title": "2 Pieces Makeup Hair Band, Women Beauty Accessories Headband for Face Wash and Wig Wearers, Secure Attachment Head Set f",
+      "image": "https://m.media-amazon.com/images/I/71cM3FVMjoL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0GSD3VPR4?tag=gadgetvill09f-21",
+      "price": "\u20b9259",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "health",
+      "asin": "B0GSD3VPR4",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-27T22:16:29.005260+05:30",
+      "session_type": "morning",
+      "link_index": 108
+    },
     {
       "id": "product_morning_20260627_141528",
       "title": "SWAGR 5 Pairs Women Cotton Socks Ankle Length Socks, Multicolor, Pack of 5, Free Size",
