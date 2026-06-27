@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-06-26T22:53:41.469657+05:30",
-  "total_products": 1460,
+  "last_updated": "2026-06-27T13:09:03.722146+05:30",
+  "total_products": 1462,
   "products": [
+    {
+      "id": "product_afternoon_20260627_073903",
+      "title": "MASTER 6 Pair Pure Cotton Premium No Show Ankle Socks, Pack of 6, Mesh Breathable Cotton, Assorted Pastel For Women Stre",
+      "image": "https://m.media-amazon.com/images/I/61qjOkVqL8L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0H2FSVMB1?tag=gadgetvill09f-21",
+      "price": "\u20b9349",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B0H2FSVMB1",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-27T13:09:03.722108+05:30",
+      "session_type": "afternoon",
+      "link_index": 102
+    },
+    {
+      "id": "product_afternoon_20260627_073901",
+      "title": "Shining Diva Fashion Leather Belts For Women And Girls 4 Pcs Combo Stylish Waist Belt For Dresses Jeans (16071Lb), Multi",
+      "image": "https://m.media-amazon.com/images/I/71341kFaWaL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DB7SKZGT?tag=gadgetvill09f-21",
+      "price": "\u20b9559",
+      "rating": 3.8,
+      "category": "fashion",
+      "asin": "B0DB7SKZGT",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-27T13:09:01.983651+05:30",
+      "session_type": "afternoon",
+      "link_index": 102
+    },
     {
       "id": "product_morning_20260626_172341",
       "title": "XFYT Premium Workout Gym Sports Hairband | Soft Elegant Sweat Absorbent Stylish Stretchable Wide Headband for Men & Wome",
