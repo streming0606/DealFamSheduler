@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-06-28T13:34:53.755863+05:30",
-  "total_products": 1470,
+  "last_updated": "2026-06-28T15:45:49.496680+05:30",
+  "total_products": 1472,
   "products": [
+    {
+      "id": "product_morning_20260628_101549",
+      "title": "CRIYALE 3 Pcs - Spa Facial Headband for Women Makeup Head Wrap Towel Terry Cloth Sport Headband | Non-Slip Stretchable A",
+      "image": "https://m.media-amazon.com/images/I/713anx0fHDL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0C9LYP9KS?tag=gadgetvill09f-21",
+      "price": "\u20b9179",
+      "rating": 3.6,
+      "category": "electronics",
+      "asin": "B0C9LYP9KS",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-28T15:45:49.496640+05:30",
+      "session_type": "morning",
+      "link_index": 112
+    },
+    {
+      "id": "product_morning_20260628_101548",
+      "title": "Supersox Ankle Length Cotton Socks for Woman | Premium Soft Fabric | Anti-Odour & Anti-Bacterial | Solid Multicolor Past",
+      "image": "https://m.media-amazon.com/images/I/61869NBimOL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CTTF599H?tag=gadgetvill09f-21",
+      "price": "\u20b9359",
+      "rating": 4.4,
+      "category": "electronics",
+      "asin": "B0CTTF599H",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-28T15:45:48.086621+05:30",
+      "session_type": "morning",
+      "link_index": 112
+    },
     {
       "id": "product_morning_20260628_080453",
       "title": "Shining Diva Fashion 2 Pcs Combo Belts for Women and Girls Stylish Waist Belt for Dresses Jeans Saree",
