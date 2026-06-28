@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-06-27T22:16:31.436040+05:30",
-  "total_products": 1468,
+  "last_updated": "2026-06-28T13:34:53.755863+05:30",
+  "total_products": 1470,
   "products": [
+    {
+      "id": "product_morning_20260628_080453",
+      "title": "Shining Diva Fashion 2 Pcs Combo Belts for Women and Girls Stylish Waist Belt for Dresses Jeans Saree",
+      "image": "https://m.media-amazon.com/images/I/41c5RYLa0wL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DBJ49VZ2?tag=gadgetvill09f-21",
+      "price": "\u20b9399",
+      "rating": 4.3,
+      "category": "fashion",
+      "asin": "B0DBJ49VZ2",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-28T13:34:53.755827+05:30",
+      "session_type": "morning",
+      "link_index": 110
+    },
+    {
+      "id": "product_morning_20260628_080452",
+      "title": "Black And Brown Combo Women Casual Black Artificial Leather Belt,Belt for Jeans, Colour Black, Party & Casual Wear Ladie",
+      "image": "https://m.media-amazon.com/images/I/61I-qAqmnaL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0BWY869Y6?tag=gadgetvill09f-21",
+      "price": "\u20b9249",
+      "rating": 3.9,
+      "category": "fashion",
+      "asin": "B0BWY869Y6",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-28T13:34:52.558337+05:30",
+      "session_type": "morning",
+      "link_index": 110
+    },
     {
       "id": "product_morning_20260627_164631",
       "title": "7 season's Cotton Short Scarf Cum Mask Universal Size/Usable for vehicle Driver for sunlight UV protection/White Printed",
