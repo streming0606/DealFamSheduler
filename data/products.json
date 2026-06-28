@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-06-28T19:55:33.329502+05:30",
-  "total_products": 1474,
+  "last_updated": "2026-06-28T22:17:55.116312+05:30",
+  "total_products": 1476,
   "products": [
+    {
+      "id": "product_morning_20260628_164755",
+      "title": "Women's Chiffon Stole (Multicolour)",
+      "image": "https://m.media-amazon.com/images/I/61XT+iiLHrL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B08PPCDT7R?tag=gadgetvill09f-21",
+      "price": "\u20b9199",
+      "rating": 4.1,
+      "category": "electronics",
+      "asin": "B08PPCDT7R",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-28T22:17:55.116257+05:30",
+      "session_type": "morning",
+      "link_index": 116
+    },
+    {
+      "id": "product_morning_20260628_164753",
+      "title": "Woolen Socks For Women For Winters | Soft Thermal Warm Fur Inside | With Thumb Toe Design (Pack of 4) Assorted Colous (C",
+      "image": "https://m.media-amazon.com/images/I/51Wm8EC7N+L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DQ4R7XWK?tag=gadgetvill09f-21",
+      "price": "\u20b9299",
+      "rating": 4.1,
+      "category": "electronics",
+      "asin": "B0DQ4R7XWK",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-28T22:17:53.759456+05:30",
+      "session_type": "morning",
+      "link_index": 116
+    },
     {
       "id": "product_morning_20260628_142533",
       "title": "Toxen Invisible Buckle-less Jeans Belt with Ring Adjustable Buckle Free Waist Belt Elastic Belt for Jeans Pants Skirt fo",
