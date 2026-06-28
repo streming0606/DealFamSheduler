@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-06-28T15:45:49.496680+05:30",
-  "total_products": 1472,
+  "last_updated": "2026-06-28T19:55:33.329502+05:30",
+  "total_products": 1474,
   "products": [
+    {
+      "id": "product_morning_20260628_142533",
+      "title": "Toxen Invisible Buckle-less Jeans Belt with Ring Adjustable Buckle Free Waist Belt Elastic Belt for Jeans Pants Skirt fo",
+      "image": "https://m.media-amazon.com/images/I/71VXp1jm6DL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CYLMQ7DY?tag=gadgetvill09f-21",
+      "price": "\u20b9179",
+      "rating": 4.0,
+      "category": "fashion",
+      "asin": "B0CYLMQ7DY",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-28T19:55:33.329469+05:30",
+      "session_type": "morning",
+      "link_index": 114
+    },
+    {
+      "id": "product_morning_20260628_142531",
+      "title": "CUSHIO Memory Foam Pillow | Size 22\"x14\"x4\" (Set of 2) Orthopedic & Cervical Pillow for Relieving Neck & Shoulder Pain w",
+      "image": "https://m.media-amazon.com/images/I/610YFkD-ugL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CXPJX4DG?tag=gadgetvill09f-21",
+      "price": "\u20b91,899",
+      "rating": 4.2,
+      "category": "home",
+      "asin": "B0CXPJX4DG",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-28T19:55:31.644715+05:30",
+      "session_type": "morning",
+      "link_index": 114
+    },
     {
       "id": "product_morning_20260628_101549",
       "title": "CRIYALE 3 Pcs - Spa Facial Headband for Women Makeup Head Wrap Towel Terry Cloth Sport Headband | Non-Slip Stretchable A",
