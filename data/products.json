@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-06-29T21:56:20.705763+05:30",
-  "total_products": 1482,
+  "last_updated": "2026-06-29T23:30:02.724307+05:30",
+  "total_products": 1484,
   "products": [
+    {
+      "id": "product_morning_20260629_180002",
+      "title": "ANVIK Women Check Handkerchief - Cotton Hanky, Face TowelHanky for Kids Boys Girls for School (Pack of 6 Pc)",
+      "image": "https://m.media-amazon.com/images/I/41UwEQq110L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0C6F5ZFTZ?tag=gadgetvill09f-21",
+      "price": "\u20b9268",
+      "rating": 4.3,
+      "category": "electronics",
+      "asin": "B0C6F5ZFTZ",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-29T23:30:02.724275+05:30",
+      "session_type": "morning",
+      "link_index": 124
+    },
+    {
+      "id": "product_morning_20260629_180001",
+      "title": "Premium Multicolor Fancy Scarf Lightweight & Comfortable for All Seasons (22x72inch)",
+      "image": "https://m.media-amazon.com/images/I/51eaP+DSy8L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0C9HWQMN2?tag=gadgetvill09f-21",
+      "price": "\u20b9199",
+      "rating": 4.4,
+      "category": "home",
+      "asin": "B0C9HWQMN2",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-29T23:30:01.288071+05:30",
+      "session_type": "morning",
+      "link_index": 124
+    },
     {
       "id": "product_morning_20260629_162620",
       "title": "Toxen Invisible Buckle-less Jeans Belt with Ring Adjustable Buckle Free Waist Belt Elastic Belt for Jeans Pants Skirts W",
