@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-06-30T20:46:52.690869+05:30",
-  "total_products": 1490,
+  "last_updated": "2026-06-30T22:59:16.276187+05:30",
+  "total_products": 1492,
   "products": [
+    {
+      "id": "product_morning_20260630_172916",
+      "title": "Women's Super Soft Velvet Slipper Socks - Fuzzy, Cozy, Anti-Slip for Winter Home Use (Multicolor, Free Size Pack of 2)",
+      "image": "https://m.media-amazon.com/images/I/41y5CgpNPvL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CG4DMVRM?tag=gadgetvill09f-21",
+      "price": "\u20b9179",
+      "rating": 3.7,
+      "category": "home",
+      "asin": "B0CG4DMVRM",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-30T22:59:16.276160+05:30",
+      "session_type": "morning",
+      "link_index": 132
+    },
+    {
+      "id": "product_morning_20260630_172915",
+      "title": "PALAY\u00ae Waist Belt for Women Metal Concho Hip Belt for women Saree Waist Belt Adjustable Boho Western Fashion Saree Belt ",
+      "image": "https://m.media-amazon.com/images/I/71Ot5pQ2FKL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CYSZ854R?tag=gadgetvill09f-21",
+      "price": "\u20b9294",
+      "rating": 4.4,
+      "category": "home",
+      "asin": "B0CYSZ854R",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-30T22:59:15.447325+05:30",
+      "session_type": "morning",
+      "link_index": 132
+    },
     {
       "id": "product_night_20260630_151652",
       "title": "Khillayox Cotton Small Size Women's Handkerchief/Rumal/Hankey 400 GSM Extra Soft and Super Absorbent Face Towels for Gir",
