@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-06-30T16:14:29.381652+05:30",
-  "total_products": 1488,
+  "last_updated": "2026-06-30T20:46:52.690869+05:30",
+  "total_products": 1490,
   "products": [
+    {
+      "id": "product_night_20260630_151652",
+      "title": "Khillayox Cotton Small Size Women's Handkerchief/Rumal/Hankey 400 GSM Extra Soft and Super Absorbent Face Towels for Gir",
+      "image": "https://m.media-amazon.com/images/I/91Ams4-96EL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0BXP8VXJ9?tag=gadgetvill09f-21",
+      "price": "\u20b9170",
+      "rating": 4.2,
+      "category": "electronics",
+      "asin": "B0BXP8VXJ9",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-30T20:46:52.690832+05:30",
+      "session_type": "night",
+      "link_index": 130
+    },
+    {
+      "id": "product_night_20260630_151651",
+      "title": "VAMA Fashions Traditional embroidery cloth Saree Waist Belt stretchable Kamarpatta kamarband for Women (zardosi belt for",
+      "image": "https://m.media-amazon.com/images/I/81SdNv5mNiL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B09XDCTK7W?tag=gadgetvill09f-21",
+      "price": "\u20b9388",
+      "rating": 4.2,
+      "category": "electronics",
+      "asin": "B09XDCTK7W",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-30T20:46:51.129174+05:30",
+      "session_type": "night",
+      "link_index": 130
+    },
     {
       "id": "product_morning_20260630_104429",
       "title": "Women's Big Brim Sun Hat - Floppy Foldable Straw Hat With Bowknot for Summer Beach",
