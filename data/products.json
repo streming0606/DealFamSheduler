@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-06-29T23:30:02.724307+05:30",
-  "total_products": 1484,
+  "last_updated": "2026-06-30T13:49:07.399271+05:30",
+  "total_products": 1486,
   "products": [
+    {
+      "id": "product_morning_20260630_081907",
+      "title": "Brendo Ultra-Thin Transparent Skin Color Ankle Length No Show Women/Girl Socks Low Cut Pack of 6",
+      "image": "https://m.media-amazon.com/images/I/41YPNO8KNOL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0C71DXT9K?tag=gadgetvill09f-21",
+      "price": "\u20b9195",
+      "rating": 4.1,
+      "category": "electronics",
+      "asin": "B0C71DXT9K",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-30T13:49:07.399242+05:30",
+      "session_type": "morning",
+      "link_index": 126
+    },
+    {
+      "id": "product_morning_20260630_081904",
+      "title": "TRAZO Women's Calf Length Designer Knitted Multicolor, Multi-Purpose Socks | Socks for Women (Pack of 3)",
+      "image": "https://m.media-amazon.com/images/I/81d4Ei5oe8L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CK5RNXG7?tag=gadgetvill09f-21",
+      "price": "\u20b9189",
+      "rating": 4.2,
+      "category": "electronics",
+      "asin": "B0CK5RNXG7",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-30T13:49:04.539754+05:30",
+      "session_type": "morning",
+      "link_index": 126
+    },
     {
       "id": "product_morning_20260629_180002",
       "title": "ANVIK Women Check Handkerchief - Cotton Hanky, Face TowelHanky for Kids Boys Girls for School (Pack of 6 Pc)",
