@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-06-30T13:49:07.399271+05:30",
-  "total_products": 1486,
+  "last_updated": "2026-06-30T16:14:29.381652+05:30",
+  "total_products": 1488,
   "products": [
+    {
+      "id": "product_morning_20260630_104429",
+      "title": "Women's Big Brim Sun Hat - Floppy Foldable Straw Hat With Bowknot for Summer Beach",
+      "image": "https://m.media-amazon.com/images/I/71SxqyJ2H-L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0793RSGFX?tag=gadgetvill09f-21",
+      "price": "\u20b9379",
+      "rating": 4.4,
+      "category": "electronics",
+      "asin": "B0793RSGFX",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-30T16:14:29.381615+05:30",
+      "session_type": "morning",
+      "link_index": 128
+    },
+    {
+      "id": "product_morning_20260630_104425",
+      "title": "SYGA Women's PU Leather Retro Pin Buckle Waist Belt, Stylish Vintage Design, Adjustable Classic Belt for Jeans, Dresses ",
+      "image": "https://m.media-amazon.com/images/I/61kRS1Vm+BL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B09NP3FQHN?tag=gadgetvill09f-21",
+      "price": "\u20b9289.24",
+      "rating": 3.9,
+      "category": "fashion",
+      "asin": "B09NP3FQHN",
+      "data_source": "serpapi",
+      "posted_date": "2026-06-30T16:14:25.841748+05:30",
+      "session_type": "morning",
+      "link_index": 128
+    },
     {
       "id": "product_morning_20260630_081907",
       "title": "Brendo Ultra-Thin Transparent Skin Color Ankle Length No Show Women/Girl Socks Low Cut Pack of 6",
