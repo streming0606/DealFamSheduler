@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-07-01T16:26:48.910038+05:30",
-  "total_products": 1496,
+  "last_updated": "2026-07-01T20:52:34.093384+05:30",
+  "total_products": 1498,
   "products": [
+    {
+      "id": "product_night_20260701_152234",
+      "title": "Supersox Ankle Office Socks for Women | Premium Cotton | Anti-Odour & Anti-Bacterial | Breathable Casual Socks for Daily",
+      "image": "https://m.media-amazon.com/images/I/61knFMhfLqL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B01MUD52RM?tag=gadgetvill09f-21",
+      "price": "\u20b9386",
+      "rating": 4.3,
+      "category": "electronics",
+      "asin": "B01MUD52RM",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-01T20:52:34.093345+05:30",
+      "session_type": "night",
+      "link_index": 138
+    },
+    {
+      "id": "product_night_20260701_152232",
+      "title": "Supersox Ankle Socks for Women Made With Premium Cotton. Stylish Striped Design with Extra Softness, Anti Odour & Anti B",
+      "image": "https://m.media-amazon.com/images/I/81hnS3Ye7jL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07JNP2L3R?tag=gadgetvill09f-21",
+      "price": "\u20b9269",
+      "rating": 4.2,
+      "category": "electronics",
+      "asin": "B07JNP2L3R",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-01T20:52:32.329452+05:30",
+      "session_type": "night",
+      "link_index": 138
+    },
     {
       "id": "product_morning_20260701_105648",
       "title": "ZORO Leather Stretchable Woven Fabric Belt For Men & Women,Fits On Upto 40 Inches Waist Size,Hole Free Design",
