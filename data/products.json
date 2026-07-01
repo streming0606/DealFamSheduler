@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-07-01T14:09:44.550686+05:30",
-  "total_products": 1494,
+  "last_updated": "2026-07-01T16:26:48.910038+05:30",
+  "total_products": 1496,
   "products": [
+    {
+      "id": "product_morning_20260701_105648",
+      "title": "ZORO Leather Stretchable Woven Fabric Belt For Men & Women,Fits On Upto 40 Inches Waist Size,Hole Free Design",
+      "image": "https://m.media-amazon.com/images/I/71EM40QBjSL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B084WQ8QTW?tag=gadgetvill09f-21",
+      "price": "\u20b9259",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B084WQ8QTW",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-01T16:26:48.910001+05:30",
+      "session_type": "morning",
+      "link_index": 136
+    },
+    {
+      "id": "product_morning_20260701_105646",
+      "title": "Shining Diva Fashion 2pcs Combo Waist Belts for Women and Girls | Stylish Belts for Dresses Jeans Saree | Celebrity Insp",
+      "image": "https://m.media-amazon.com/images/I/615MhjpH6dL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CZLQRT9B?tag=gadgetvill09f-21",
+      "price": "\u20b9399",
+      "rating": 4.3,
+      "category": "fashion",
+      "asin": "B0CZLQRT9B",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-01T16:26:46.043660+05:30",
+      "session_type": "morning",
+      "link_index": 136
+    },
     {
       "id": "product_morning_20260701_083944",
       "title": "7 season's Cotton Scarf Cum Mask Universal Size/Usable for vehicle Driver for sunlight UV protection White Printed Desig",
