@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-07-01T20:52:34.093384+05:30",
-  "total_products": 1498,
+  "last_updated": "2026-07-01T23:02:44.180891+05:30",
+  "total_products": 1500,
   "products": [
+    {
+      "id": "product_morning_20260701_173244",
+      "title": "Fitness Mantra\u00ae Sports Winters Cap & Muffler for Men & Women| Beanie Cap| 1 Set| (Black)",
+      "image": "https://m.media-amazon.com/images/I/61H0MFrsWQL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CQ7VNMJY?tag=gadgetvill09f-21",
+      "price": "\u20b999",
+      "rating": 3.8,
+      "category": "fashion",
+      "asin": "B0CQ7VNMJY",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-01T23:02:44.180859+05:30",
+      "session_type": "morning",
+      "link_index": 140
+    },
+    {
+      "id": "product_morning_20260701_173242",
+      "title": "AMAREE Premium Soft & Comfortable Socks \u2013 Breathable, Durable & Everyday Wearr - Free Size Multicolor (Pack Of - 10)",
+      "image": "https://m.media-amazon.com/images/I/71cAQFVDWcL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DYJFY2SW?tag=gadgetvill09f-21",
+      "price": "\u20b9359.03",
+      "rating": 4.1,
+      "category": "home",
+      "asin": "B0DYJFY2SW",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-01T23:02:42.525498+05:30",
+      "session_type": "morning",
+      "link_index": 140
+    },
     {
       "id": "product_night_20260701_152234",
       "title": "Supersox Ankle Office Socks for Women | Premium Cotton | Anti-Odour & Anti-Bacterial | Breathable Casual Socks for Daily",
