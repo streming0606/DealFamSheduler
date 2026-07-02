@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-07-01T23:02:44.180891+05:30",
-  "total_products": 1500,
+  "last_updated": "2026-07-02T13:26:01.362441+05:30",
+  "total_products": 1502,
   "products": [
+    {
+      "id": "product_afternoon_20260702_075601",
+      "title": "NICSY New Desigen Girls Women\u2019s Comfort Ankle Length Socks No Show Low Cut Socks Multicolor (Free Size Pair Pack)",
+      "image": "https://m.media-amazon.com/images/I/61qpJAperlL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0D1R82ZX5?tag=gadgetvill09f-21",
+      "price": "\u20b9299",
+      "rating": 3.9,
+      "category": "electronics",
+      "asin": "B0D1R82ZX5",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-02T13:26:01.362411+05:30",
+      "session_type": "afternoon",
+      "link_index": 142
+    },
+    {
+      "id": "product_afternoon_20260702_075600",
+      "title": "Boldfit Winter ear muffs for men ear muffs for women, ears cover for winter Behind The Head Style Winters Earmuffs for M",
+      "image": "https://m.media-amazon.com/images/I/71++Qxjo2gL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DPGBNW6N?tag=gadgetvill09f-21",
+      "price": "\u20b9199",
+      "rating": 4.0,
+      "category": "electronics",
+      "asin": "B0DPGBNW6N",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-02T13:26:00.359254+05:30",
+      "session_type": "afternoon",
+      "link_index": 142
+    },
     {
       "id": "product_morning_20260701_173244",
       "title": "Fitness Mantra\u00ae Sports Winters Cap & Muffler for Men & Women| Beanie Cap| 1 Set| (Black)",
