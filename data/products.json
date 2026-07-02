@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-07-02T20:26:22.151278+05:30",
-  "total_products": 1506,
+  "last_updated": "2026-07-02T22:49:42.149250+05:30",
+  "total_products": 1508,
   "products": [
+    {
+      "id": "product_morning_20260702_171942",
+      "title": "ReDesign Apparels Silicone Performance Headband For Men And Women- Running, Cycling, Yoga, Tennis, Badminton & Other Spo",
+      "image": "https://m.media-amazon.com/images/I/51hVLfeNXyL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B08CGWQVX7?tag=gadgetvill09f-21",
+      "price": "\u20b9212",
+      "rating": 4.0,
+      "category": "electronics",
+      "asin": "B08CGWQVX7",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-02T22:49:42.149211+05:30",
+      "session_type": "morning",
+      "link_index": 148
+    },
+    {
+      "id": "product_morning_20260702_171939",
+      "title": "Summer Medium Brim Floppy Beach Straw Hats for Women",
+      "image": "https://m.media-amazon.com/images/I/61ay+9w62dL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CZXS7RZQ?tag=gadgetvill09f-21",
+      "price": "\u20b9284",
+      "rating": 4.2,
+      "category": "electronics",
+      "asin": "B0CZXS7RZQ",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-02T22:49:39.794868+05:30",
+      "session_type": "morning",
+      "link_index": 148
+    },
     {
       "id": "product_morning_20260702_145622",
       "title": "Lifelong Unisex Warm Woolen Headband | Earwarmer Earmuffs Earcap Earcover | Winter Accessories for Men and Women | Soft ",
