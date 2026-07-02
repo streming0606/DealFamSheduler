@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-07-02T13:26:01.362441+05:30",
-  "total_products": 1502,
+  "last_updated": "2026-07-02T15:50:26.404604+05:30",
+  "total_products": 1504,
   "products": [
+    {
+      "id": "product_morning_20260702_102026",
+      "title": "Shining Diva Fashion Leather Belts For Women And Girls 3 Pcs Combo Stylish Waist Belt For Dresses Jeans (16069Lb), Multi",
+      "image": "https://m.media-amazon.com/images/I/714QnzT442L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DB841LL2?tag=gadgetvill09f-21",
+      "price": "\u20b9414",
+      "rating": 3.9,
+      "category": "fashion",
+      "asin": "B0DB841LL2",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-02T15:50:26.404575+05:30",
+      "session_type": "morning",
+      "link_index": 144
+    },
+    {
+      "id": "product_morning_20260702_102024",
+      "title": "Supersox Formal Crew Length Socks for Women | Combed Cotton | Breathable, Anti-Odour & Moisture Absorbent | Soft & Comfo",
+      "image": "https://m.media-amazon.com/images/I/61b4iWTSp6L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B01N36DO8L?tag=gadgetvill09f-21",
+      "price": "\u20b9299",
+      "rating": 4.3,
+      "category": "electronics",
+      "asin": "B01N36DO8L",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-02T15:50:24.652487+05:30",
+      "session_type": "morning",
+      "link_index": 144
+    },
     {
       "id": "product_afternoon_20260702_075601",
       "title": "NICSY New Desigen Girls Women\u2019s Comfort Ankle Length Socks No Show Low Cut Socks Multicolor (Free Size Pair Pack)",
