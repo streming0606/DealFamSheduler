@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-07-03T13:20:03.125413+05:30",
-  "total_products": 1510,
+  "last_updated": "2026-07-03T15:47:36.827422+05:30",
+  "total_products": 1512,
   "products": [
+    {
+      "id": "product_morning_20260703_101736",
+      "title": "KYDA KIDS\u00ae Boys 100% Pure Combed Cotton Co-ord Clothing Set Premium Printed T-Shirt & Shorts | Relaxed Fit Summer Outfit",
+      "image": "https://m.media-amazon.com/images/I/61-iMwEnBWL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CXTBCMZS?tag=gadgetvill09f-21",
+      "price": "\u20b9459",
+      "rating": 4.3,
+      "category": "fashion",
+      "asin": "B0CXTBCMZS",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-03T15:47:36.827376+05:30",
+      "session_type": "morning",
+      "link_index": 152
+    },
+    {
+      "id": "product_morning_20260703_101733",
+      "title": "Baby GO Baby Boys & Baby Girls 100% Cotton Full Sleeve Front Open T-Shirt Pack of 3 | Soft Breathable Infant Clothing wi",
+      "image": "https://m.media-amazon.com/images/I/51JPEoGNf3L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0C4LFV2ZC?tag=gadgetvill09f-21",
+      "price": "\u20b9419",
+      "rating": 4.4,
+      "category": "fashion",
+      "asin": "B0C4LFV2ZC",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-03T15:47:33.936566+05:30",
+      "session_type": "morning",
+      "link_index": 152
+    },
     {
       "id": "product_afternoon_20260703_075003",
       "title": "PRASTHAN Cotton Ankle Socks for Men | Cotton Sports Socks for Men | Soft Ankle Length Sock with Breathable Mesh & Arch S",
