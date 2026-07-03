@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-07-03T15:47:36.827422+05:30",
-  "total_products": 1512,
+  "last_updated": "2026-07-03T20:26:15.688295+05:30",
+  "total_products": 1514,
   "products": [
+    {
+      "id": "product_morning_20260703_145615",
+      "title": "BABY GO Baby Boys & Baby Girls Cotton Clothing Set | Full Sleeve T-Shirt & Pants | Newborn Infant Outfit | Soft Night Su",
+      "image": "https://m.media-amazon.com/images/I/61WscuUh8fL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B08JYL2LZC?tag=gadgetvill09f-21",
+      "price": "\u20b9419",
+      "rating": 4.1,
+      "category": "fashion",
+      "asin": "B08JYL2LZC",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-03T20:26:15.688231+05:30",
+      "session_type": "morning",
+      "link_index": 154
+    },
+    {
+      "id": "product_morning_20260703_145612",
+      "title": "Leriya Fashion Printed Maxi Dress for Women | Trendy Long One Piece Summer Outfit | Lightweight Flared Dress for Casual ",
+      "image": "https://m.media-amazon.com/images/I/61lRq-3l2JL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0D2DM5WW1?tag=gadgetvill09f-21",
+      "price": "\u20b9549",
+      "rating": 3.8,
+      "category": "fashion",
+      "asin": "B0D2DM5WW1",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-03T20:26:12.474384+05:30",
+      "session_type": "morning",
+      "link_index": 154
+    },
     {
       "id": "product_morning_20260703_101736",
       "title": "KYDA KIDS\u00ae Boys 100% Pure Combed Cotton Co-ord Clothing Set Premium Printed T-Shirt & Shorts | Relaxed Fit Summer Outfit",
