@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-07-04T19:41:23.909631+05:30",
-  "total_products": 1522,
+  "last_updated": "2026-07-04T22:11:17.170979+05:30",
+  "total_products": 1524,
   "products": [
+    {
+      "id": "product_morning_20260704_164117",
+      "title": "Women Leggings",
+      "image": "https://m.media-amazon.com/images/I/61Ps5TPopRL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0D26491X6?tag=gadgetvill09f-21",
+      "price": "\u20b9399",
+      "rating": 4.6,
+      "category": "electronics",
+      "asin": "B0D26491X6",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-04T22:11:17.170915+05:30",
+      "session_type": "morning",
+      "link_index": 164
+    },
+    {
+      "id": "product_morning_20260704_164115",
+      "title": "Upgraded Epsom Salt for Foot Soak & Bath 1.3 KG - Relieves Aches & Pain | Natural Epsom Salt for Bath, Detox & Relaxatio",
+      "image": "https://m.media-amazon.com/images/I/71OKWXcoiFL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0GTPFSJF3?tag=gadgetvill09f-21",
+      "price": "\u20b9282",
+      "rating": 4.3,
+      "category": "electronics",
+      "asin": "B0GTPFSJF3",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-04T22:11:15.625640+05:30",
+      "session_type": "morning",
+      "link_index": 164
+    },
     {
       "id": "product_morning_20260704_141123",
       "title": "Amazon Brand - Anarva Unisex Cotton Baseball Cap Combo Pack of 2",
