@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-07-03T22:33:44.987399+05:30",
-  "total_products": 1516,
+  "last_updated": "2026-07-04T12:58:29.426159+05:30",
+  "total_products": 1518,
   "products": [
+    {
+      "id": "product_afternoon_20260704_072829",
+      "title": "London Hills Women's Cotton Loose Casual Round Neck Solid, Drop Shoulder T-Shirt Pack of 2",
+      "image": "https://m.media-amazon.com/images/I/81JtC+jkWTL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CLH8JJH7?tag=gadgetvill09f-21",
+      "price": "\u20b9359",
+      "rating": 4.0,
+      "category": "fashion",
+      "asin": "B0CLH8JJH7",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-04T12:58:29.426134+05:30",
+      "session_type": "afternoon",
+      "link_index": 158
+    },
+    {
+      "id": "product_afternoon_20260704_072823",
+      "title": "RodZen\u00ae Oversized Baggy Fit Half Sleeves Round Neck Solid Cotton Blend Combo T-Shirt for Women (Pack of 2)",
+      "image": "https://m.media-amazon.com/images/I/61ED3LG75DL._AC_UY218_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0F2T8KKLC?tag=gadgetvill09f-21",
+      "price": "\u20b9399",
+      "rating": 3.9,
+      "category": "fashion",
+      "asin": "B0F2T8KKLC",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-04T12:58:23.003414+05:30",
+      "session_type": "afternoon",
+      "link_index": 158
+    },
     {
       "id": "product_morning_20260703_170344",
       "title": "A.T.U.N. (ALL THINGS UBER NICE) Baby Girls One Shoulder Printed Crop Top with Skirt & Matching Headband Set | 3 Piece Ou",
