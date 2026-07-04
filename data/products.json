@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-07-04T15:21:51.636759+05:30",
-  "total_products": 1520,
+  "last_updated": "2026-07-04T19:41:23.909631+05:30",
+  "total_products": 1522,
   "products": [
+    {
+      "id": "product_morning_20260704_141123",
+      "title": "Amazon Brand - Anarva Unisex Cotton Baseball Cap Combo Pack of 2",
+      "image": "https://m.media-amazon.com/images/I/51zl75FPWZL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FH9NJYDZ?tag=gadgetvill09f-21",
+      "price": "\u20b9352",
+      "rating": 3.4,
+      "category": "fashion",
+      "asin": "B0FH9NJYDZ",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-04T19:41:23.909593+05:30",
+      "session_type": "morning",
+      "link_index": 162
+    },
+    {
+      "id": "product_morning_20260704_141122",
+      "title": "Gufrina Women's Short Sleeve Collar Neck Dress - Geometric Print Button-Down Midi Dress with Tie-Up Belt",
+      "image": "https://m.media-amazon.com/images/I/71QvcPfqGaL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DBHRYNBQ?tag=gadgetvill09f-21",
+      "price": "\u20b9479",
+      "rating": 3.8,
+      "category": "fashion",
+      "asin": "B0DBHRYNBQ",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-04T19:41:22.202217+05:30",
+      "session_type": "morning",
+      "link_index": 162
+    },
     {
       "id": "product_morning_20260704_095151",
       "title": "London Hills Women's Cotton Regular Fit T-Shirt",
