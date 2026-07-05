@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-07-05T13:18:00.513397+05:30",
-  "total_products": 1526,
+  "last_updated": "2026-07-05T15:26:13.569599+05:30",
+  "total_products": 1528,
   "products": [
+    {
+      "id": "product_morning_20260705_095613",
+      "title": "The Souled Store Tropical Summer Women and Girls Sleeveless Square Neck Multicolor All Over Printed Viscose Blend Bralet",
+      "image": "https://m.media-amazon.com/images/I/61lz0oO-tYL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0D9H4RJYV?tag=gadgetvill09f-21",
+      "price": "\u20b9449",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B0D9H4RJYV",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-05T15:26:13.569561+05:30",
+      "session_type": "morning",
+      "link_index": 168
+    },
+    {
+      "id": "product_morning_20260705_095612",
+      "title": "Amazon Product B0GTMJ4VRD",
+      "image": "https://m.media-amazon.com/images/I/B0GTMJ4VRD._AC_SL1500_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0GTMJ4VRD?tag=gadgetvill09f-21",
+      "price": "\u20b9Special Price",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B0GTMJ4VRD",
+      "data_source": "fallback",
+      "posted_date": "2026-07-05T15:26:12.515649+05:30",
+      "session_type": "morning",
+      "link_index": 168
+    },
     {
       "id": "product_afternoon_20260705_074800",
       "title": "THE ARCHER Men's Cotton Printed Vest (Pack of 2)",
