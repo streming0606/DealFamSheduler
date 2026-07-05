@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-07-05T15:26:13.569599+05:30",
-  "total_products": 1528,
+  "last_updated": "2026-07-05T19:49:11.192941+05:30",
+  "total_products": 1530,
   "products": [
+    {
+      "id": "product_morning_20260705_141911",
+      "title": "Scott International Men's Polo Tshirt - Solid,Branded, Trending, Summer Wear Tshirt- Half Sleeve, Polyester,Regular Fit,",
+      "image": "https://m.media-amazon.com/images/I/61CWcbpfdSL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0BF5PF1CL?tag=gadgetvill09f-21",
+      "price": "\u20b9399",
+      "rating": 3.5,
+      "category": "fashion",
+      "asin": "B0BF5PF1CL",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-05T19:49:11.192901+05:30",
+      "session_type": "morning",
+      "link_index": 170
+    },
+    {
+      "id": "product_morning_20260705_141910",
+      "title": "BULLMER Regular Fit Cotton Blend Summer Shorts for Men - Pack of 1 | Printed Shorts for Men Onion",
+      "image": "https://m.media-amazon.com/images/I/61h6+YSSmJL._AC_UY218_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0F2NBBTYM?tag=gadgetvill09f-21",
+      "price": "\u20b9369",
+      "rating": 4.4,
+      "category": "electronics",
+      "asin": "B0F2NBBTYM",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-05T19:49:10.413536+05:30",
+      "session_type": "morning",
+      "link_index": 170
+    },
     {
       "id": "product_morning_20260705_095613",
       "title": "The Souled Store Tropical Summer Women and Girls Sleeveless Square Neck Multicolor All Over Printed Viscose Blend Bralet",
