@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-07-05T22:13:49.506874+05:30",
-  "total_products": 1532,
+  "last_updated": "2026-07-06T14:19:41.026454+05:30",
+  "total_products": 1534,
   "products": [
+    {
+      "id": "product_morning_20260706_084941",
+      "title": "The Modern Soul Cotton Blend Loose Fit Trackpant for Men | Lower for Man",
+      "image": "https://m.media-amazon.com/images/I/61OHIRPubWL._AC_UY218_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0F5HZYWV3?tag=gadgetvill09f-21",
+      "price": "\u20b9449",
+      "rating": 3.6,
+      "category": "electronics",
+      "asin": "B0F5HZYWV3",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-06T14:19:41.026418+05:30",
+      "session_type": "morning",
+      "link_index": 174
+    },
+    {
+      "id": "product_morning_20260706_084939",
+      "title": "TQH Men Dri Fit Polyester Half Sleeve Round Neck Multicolor T-Shirts - Pack of 3",
+      "image": "https://m.media-amazon.com/images/I/611yoGWpb6L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0846MY9MF?tag=gadgetvill09f-21",
+      "price": "\u20b9423",
+      "rating": 4.0,
+      "category": "fashion",
+      "asin": "B0846MY9MF",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-06T14:19:39.516159+05:30",
+      "session_type": "morning",
+      "link_index": 174
+    },
     {
       "id": "product_morning_20260705_164349",
       "title": "Alan Jones Clothing Men's Casual Bermuda Shorts | French Terry | Placement Print | Regular Fit | Side Pockets | Drawstri",
