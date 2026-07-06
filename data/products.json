@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-07-06T21:33:48.547390+05:30",
-  "total_products": 1538,
+  "last_updated": "2026-07-06T23:29:16.147089+05:30",
+  "total_products": 1540,
   "products": [
+    {
+      "id": "product_morning_20260706_175916",
+      "title": "THIIYA KIDS Boys Cotton Co-Ord Set | Printed T-Shirt & Shorts | Soft Comfortable Summer Wear for Kids",
+      "image": "https://m.media-amazon.com/images/I/61wKL-vcZhL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0GKGG9VCH?tag=gadgetvill09f-21",
+      "price": "\u20b9429",
+      "rating": 2.5,
+      "category": "fashion",
+      "asin": "B0GKGG9VCH",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-06T23:29:16.147055+05:30",
+      "session_type": "morning",
+      "link_index": 180
+    },
+    {
+      "id": "product_morning_20260706_175914",
+      "title": "Amazon Product B0C4FMJNFT",
+      "image": "https://m.media-amazon.com/images/I/B0C4FMJNFT._AC_SL1500_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0C4FMJNFT?tag=gadgetvill09f-21",
+      "price": "\u20b9Special Price",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B0C4FMJNFT",
+      "data_source": "fallback",
+      "posted_date": "2026-07-06T23:29:14.228462+05:30",
+      "session_type": "morning",
+      "link_index": 180
+    },
     {
       "id": "product_morning_20260706_160348",
       "title": "AXIMO Premium Men's Summer Shorts Soft Breathable Fabric Casual Wear with Elastic Waistband Adjustable Drawstring 2 Zipp",
