@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-07-06T14:19:41.026454+05:30",
-  "total_products": 1534,
+  "last_updated": "2026-07-06T17:20:06.484766+05:30",
+  "total_products": 1536,
   "products": [
+    {
+      "id": "product_morning_20260706_115006",
+      "title": "DESNUDA Printed Vest baniyan Cotton Inner wear for Baby Summer wear Sleeveless Undershirts for Kids Sando ganji Tank-Top",
+      "image": "https://m.media-amazon.com/images/I/61M3IQ0AYiL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0D93SSV3S?tag=gadgetvill09f-21",
+      "price": "\u20b9360",
+      "rating": 3.7,
+      "category": "fashion",
+      "asin": "B0D93SSV3S",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-06T17:20:06.484704+05:30",
+      "session_type": "morning",
+      "link_index": 176
+    },
+    {
+      "id": "product_morning_20260706_115004",
+      "title": "Men Solid Casual Track Pant Regular Fit Lower with Zippers Pocket",
+      "image": "https://m.media-amazon.com/images/I/519GWAncQzL._AC_UY218_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0F27YBZ36?tag=gadgetvill09f-21",
+      "price": "\u20b9449",
+      "rating": 5.0,
+      "category": "electronics",
+      "asin": "B0F27YBZ36",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-06T17:20:04.134405+05:30",
+      "session_type": "morning",
+      "link_index": 176
+    },
     {
       "id": "product_morning_20260706_084941",
       "title": "The Modern Soul Cotton Blend Loose Fit Trackpant for Men | Lower for Man",
