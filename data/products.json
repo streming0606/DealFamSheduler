@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-07-07T16:09:56.026106+05:30",
-  "total_products": 1544,
+  "last_updated": "2026-07-07T21:02:30.830673+05:30",
+  "total_products": 1546,
   "products": [
+    {
+      "id": "product_night_20260707_153230",
+      "title": "Amazon Product B0FGD9446S",
+      "image": "https://m.media-amazon.com/images/I/B0FGD9446S._AC_SL1500_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FGD9446S?tag=gadgetvill09f-21",
+      "price": "\u20b9Special Price",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B0FGD9446S",
+      "data_source": "fallback",
+      "posted_date": "2026-07-07T21:02:30.830632+05:30",
+      "session_type": "night",
+      "link_index": 186
+    },
+    {
+      "id": "product_night_20260707_153229",
+      "title": "CocoMoco Human Body Parts Puzzle for Kids - Giant Shape Cut Wooden Jigsaw Puzzle - 60+ Pieces - STEM Educational Toys Bi",
+      "image": "https://m.media-amazon.com/images/I/81HewbuZGiL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0D83Z9GYN?tag=gadgetvill09f-21",
+      "price": "\u20b91,299",
+      "rating": 4.4,
+      "category": "electronics",
+      "asin": "B0D83Z9GYN",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-07T21:02:29.685839+05:30",
+      "session_type": "night",
+      "link_index": 186
+    },
     {
       "id": "product_morning_20260707_103956",
       "title": "Emporium Elite Luxury HUB Traders Men\u2019s Sleeveless Sando for Men Printed Vest That adds a Trendy Vibe to Your Casual Loo",
