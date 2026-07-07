@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-07-07T21:02:30.830673+05:30",
-  "total_products": 1546,
+  "last_updated": "2026-07-07T23:14:06.965130+05:30",
+  "total_products": 1548,
   "products": [
+    {
+      "id": "product_morning_20260707_174406",
+      "title": "Amazon Product B08T7G1QFR",
+      "image": "https://m.media-amazon.com/images/I/B08T7G1QFR._AC_SL1500_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B08T7G1QFR?tag=gadgetvill09f-21",
+      "price": "\u20b9Special Price",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B08T7G1QFR",
+      "data_source": "fallback",
+      "posted_date": "2026-07-07T23:14:06.965091+05:30",
+      "session_type": "morning",
+      "link_index": 188
+    },
+    {
+      "id": "product_morning_20260707_174400",
+      "title": "Glito Regular Fit Super Stretchable Denim Track Pant for Men",
+      "image": "https://m.media-amazon.com/images/I/31+vuv6766L._AC_UY218_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0F74J7YRH?tag=gadgetvill09f-21",
+      "price": "\u20b9449",
+      "rating": 4.1,
+      "category": "electronics",
+      "asin": "B0F74J7YRH",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-07T23:14:00.039954+05:30",
+      "session_type": "morning",
+      "link_index": 188
+    },
     {
       "id": "product_night_20260707_153230",
       "title": "Amazon Product B0FGD9446S",
