@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-07-07T13:32:24.953673+05:30",
-  "total_products": 1542,
+  "last_updated": "2026-07-07T16:09:56.026106+05:30",
+  "total_products": 1544,
   "products": [
+    {
+      "id": "product_morning_20260707_103956",
+      "title": "Emporium Elite Luxury HUB Traders Men\u2019s Sleeveless Sando for Men Printed Vest That adds a Trendy Vibe to Your Casual Loo",
+      "image": "https://m.media-amazon.com/images/I/51e8-LzxQ0L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FQXB1ZD8?tag=gadgetvill09f-21",
+      "price": "\u20b9398",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B0FQXB1ZD8",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-07T16:09:56.026069+05:30",
+      "session_type": "morning",
+      "link_index": 184
+    },
+    {
+      "id": "product_morning_20260707_103953",
+      "title": "GoSriKi Viscose Printed Straight Kurta with Pant for Women | Viscose Blue | Sleeveless | High Neck | Ethnic Wear Casual ",
+      "image": "https://m.media-amazon.com/images/I/61Y-+atB5CL._AC_UY218_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0F92F9LYV?tag=gadgetvill09f-21",
+      "price": "\u20b9499",
+      "rating": 3.9,
+      "category": "electronics",
+      "asin": "B0F92F9LYV",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-07T16:09:53.949372+05:30",
+      "session_type": "morning",
+      "link_index": 184
+    },
     {
       "id": "product_morning_20260707_080224",
       "title": "RynoGear Men's Lightweight Dryfit Track Pant with Zip Pockets || Track Pants for Man",
