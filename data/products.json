@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-07-08T12:44:06.108359+05:30",
-  "total_products": 1550,
+  "last_updated": "2026-07-08T15:28:44.096093+05:30",
+  "total_products": 1552,
   "products": [
+    {
+      "id": "product_morning_20260708_095844",
+      "title": "Amazon Brand - Symbol Boys 100% Cotton Solid Casual Shirt | Half Sleeves | Regular Fit | Age 2-14 Years",
+      "image": "https://m.media-amazon.com/images/I/71A860i5sNL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07QZSG45J?tag=gadgetvill09f-21",
+      "price": "\u20b9499",
+      "rating": 4.0,
+      "category": "fashion",
+      "asin": "B07QZSG45J",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-08T15:28:44.096059+05:30",
+      "session_type": "morning",
+      "link_index": 192
+    },
+    {
+      "id": "product_morning_20260708_095842",
+      "title": "Googo Gaaga Boy's Cotton full Sleeves Printed Sweatshirt and Pant Set in Multi Color",
+      "image": "https://m.media-amazon.com/images/I/61oDfBVWYPL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B084JTHJ1G?tag=gadgetvill09f-21",
+      "price": "\u20b9499",
+      "rating": 3.9,
+      "category": "fashion",
+      "asin": "B084JTHJ1G",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-08T15:28:42.510898+05:30",
+      "session_type": "morning",
+      "link_index": 192
+    },
     {
       "id": "product_afternoon_20260708_071406",
       "title": "Q - RIOUS Women's Wide Leg High Waisted Baggy Lounge Sweat Pants Drawstring Athletic Flared Joggers with Pockets",
