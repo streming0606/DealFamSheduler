@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-07-08T20:28:45.307100+05:30",
-  "total_products": 1554,
+  "last_updated": "2026-07-08T22:38:38.401252+05:30",
+  "total_products": 1556,
   "products": [
+    {
+      "id": "product_morning_20260708_170838",
+      "title": "Vastraa Fusion Unisex Woolen Kullu/Himachali Cap (Pack of 1)",
+      "image": "https://m.media-amazon.com/images/I/61bAHwfilZL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07R6N59DQ?tag=gadgetvill09f-21",
+      "price": "\u20b9378",
+      "rating": 4.2,
+      "category": "fashion",
+      "asin": "B07R6N59DQ",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-08T22:38:38.401219+05:30",
+      "session_type": "morning",
+      "link_index": 196
+    },
+    {
+      "id": "product_morning_20260708_170836",
+      "title": "Body Cupid Epic Memories Perfume Gift Set for Women|Swoon, Forever, Wanderlust & Magical|Long-Lasting, Enchanting & Time",
+      "image": "https://m.media-amazon.com/images/I/61knNC2YAML._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0B8STFW2B?tag=gadgetvill09f-21",
+      "price": "\u20b9719",
+      "rating": 4.2,
+      "category": "electronics",
+      "asin": "B0B8STFW2B",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-08T22:38:36.539547+05:30",
+      "session_type": "morning",
+      "link_index": 196
+    },
     {
       "id": "product_morning_20260708_145845",
       "title": "BULLMER Men's Regular Fit Polyester Track Pant",
