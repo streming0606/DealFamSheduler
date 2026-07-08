@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-07-07T23:14:06.965130+05:30",
-  "total_products": 1548,
+  "last_updated": "2026-07-08T12:44:06.108359+05:30",
+  "total_products": 1550,
   "products": [
+    {
+      "id": "product_afternoon_20260708_071406",
+      "title": "Q - RIOUS Women's Wide Leg High Waisted Baggy Lounge Sweat Pants Drawstring Athletic Flared Joggers with Pockets",
+      "image": "https://m.media-amazon.com/images/I/51mTwBylVyL._AC_UY218_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0F3JFKHBH?tag=gadgetvill09f-21",
+      "price": "\u20b9392",
+      "rating": 4.0,
+      "category": "fashion",
+      "asin": "B0F3JFKHBH",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-08T12:44:06.108292+05:30",
+      "session_type": "afternoon",
+      "link_index": 190
+    },
+    {
+      "id": "product_afternoon_20260708_071404",
+      "title": "TQH Sleeveless T Shirts for Men | Vest for Men | Tank Top Man | Sando for Man | Men's Sleeveless Gym Vest Round Neck Sol",
+      "image": "https://m.media-amazon.com/images/I/71PMvvAZOIL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0B7F19XPV?tag=gadgetvill09f-21",
+      "price": "\u20b9363",
+      "rating": 3.9,
+      "category": "fashion",
+      "asin": "B0B7F19XPV",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-08T12:44:04.289953+05:30",
+      "session_type": "afternoon",
+      "link_index": 190
+    },
     {
       "id": "product_morning_20260707_174406",
       "title": "Amazon Product B08T7G1QFR",
