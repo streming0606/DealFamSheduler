@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-07-09T16:10:24.099464+05:30",
-  "total_products": 1560,
+  "last_updated": "2026-07-09T21:14:14.257600+05:30",
+  "total_products": 1562,
   "products": [
+    {
+      "id": "product_night_20260709_154414",
+      "title": "The Tie Hub Net Cap Print Unisex Casual Trucker Baseball Cap Half Net Mesh with Snapback Closure Unisex, Free Size",
+      "image": "https://m.media-amazon.com/images/I/61BiuX9b6xL._AC_UY218_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0F88DJRCQ?tag=gadgetvill09f-21",
+      "price": "\u20b9499",
+      "rating": 2.0,
+      "category": "fashion",
+      "asin": "B0F88DJRCQ",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-09T21:14:14.257559+05:30",
+      "session_type": "night",
+      "link_index": 202
+    },
+    {
+      "id": "product_night_20260709_154412",
+      "title": "The Mom Store Boys Cotton casual Set for Baby/Kids | 100% Cotton | Summer Wear | Casual Wear |",
+      "image": "https://m.media-amazon.com/images/I/41GaX8PChFL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0B39CY7RG?tag=gadgetvill09f-21",
+      "price": "\u20b9359",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B0B39CY7RG",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-09T21:14:12.653158+05:30",
+      "session_type": "night",
+      "link_index": 202
+    },
     {
       "id": "product_morning_20260709_104024",
       "title": "Madhu Nivarak Churan by Sagar & Kaka Pharmacy Pvt. Ltd. (3X Pink)",
