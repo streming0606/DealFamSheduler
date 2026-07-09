@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-07-09T13:35:38.543573+05:30",
-  "total_products": 1558,
+  "last_updated": "2026-07-09T16:10:24.099464+05:30",
+  "total_products": 1560,
   "products": [
+    {
+      "id": "product_morning_20260709_104024",
+      "title": "Madhu Nivarak Churan by Sagar & Kaka Pharmacy Pvt. Ltd. (3X Pink)",
+      "image": "https://m.media-amazon.com/images/I/41gAeG5c6WL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0D4D7JQZ7?tag=gadgetvill09f-21",
+      "price": "\u20b92,100",
+      "rating": 3.8,
+      "category": "electronics",
+      "asin": "B0D4D7JQZ7",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-09T16:10:24.099425+05:30",
+      "session_type": "morning",
+      "link_index": 200
+    },
+    {
+      "id": "product_morning_20260709_104022",
+      "title": "KYDA KIDS\u00ae Girls 100% Cotton Bio Washed Printed T-Shirt and Shorts Co-ords Clothing Set | Premium Soft & Breathable Summ",
+      "image": "https://m.media-amazon.com/images/I/61XGlqpUIML._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CX1STSN3?tag=gadgetvill09f-21",
+      "price": "\u20b9519",
+      "rating": 4.5,
+      "category": "fashion",
+      "asin": "B0CX1STSN3",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-09T16:10:22.679996+05:30",
+      "session_type": "morning",
+      "link_index": 200
+    },
     {
       "id": "product_morning_20260709_080538",
       "title": "Amazon Brand - Solimo Adult Diapers Tape Style | Medium Size | 30 Count | Waist 28-45 Inch (71-114 cm) | Fast Absorption",
