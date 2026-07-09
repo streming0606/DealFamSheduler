@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-07-09T21:14:14.257600+05:30",
-  "total_products": 1562,
+  "last_updated": "2026-07-09T23:02:12.290231+05:30",
+  "total_products": 1564,
   "products": [
+    {
+      "id": "product_morning_20260709_173212",
+      "title": "GODFREY Mens Round Neck Half Sleeve Cotton T-Shirt",
+      "image": "https://m.media-amazon.com/images/I/71+Nn1NBCKS._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B09413RSR1?tag=gadgetvill09f-21",
+      "price": "\u20b9Special Price",
+      "rating": 4.0,
+      "category": "fashion",
+      "asin": "B09413RSR1",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-09T23:02:12.290197+05:30",
+      "session_type": "morning",
+      "link_index": 204
+    },
+    {
+      "id": "product_morning_20260709_173210",
+      "title": "Trampoline Kids Shorts Pack of 5 for Boys & Girls | Vibrant Multipack Summer Wear | Soft Cotton Blend | Comfy Fit for Da",
+      "image": "https://m.media-amazon.com/images/I/61sAYSmcrbL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DXPWPP4R?tag=gadgetvill09f-21",
+      "price": "\u20b9479",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B0DXPWPP4R",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-09T23:02:10.763665+05:30",
+      "session_type": "morning",
+      "link_index": 204
+    },
     {
       "id": "product_night_20260709_154414",
       "title": "The Tie Hub Net Cap Print Unisex Casual Trucker Baseball Cap Half Net Mesh with Snapback Closure Unisex, Free Size",
