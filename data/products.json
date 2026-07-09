@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-07-08T22:38:38.401252+05:30",
-  "total_products": 1556,
+  "last_updated": "2026-07-09T13:35:38.543573+05:30",
+  "total_products": 1558,
   "products": [
+    {
+      "id": "product_morning_20260709_080538",
+      "title": "Amazon Brand - Solimo Adult Diapers Tape Style | Medium Size | 30 Count | Waist 28-45 Inch (71-114 cm) | Fast Absorption",
+      "image": "https://m.media-amazon.com/images/I/71f+m2728pL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0BWNLFJ59?tag=gadgetvill09f-21",
+      "price": "\u20b9665",
+      "rating": 4.1,
+      "category": "electronics",
+      "asin": "B0BWNLFJ59",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-09T13:35:38.543534+05:30",
+      "session_type": "morning",
+      "link_index": 198
+    },
+    {
+      "id": "product_morning_20260709_080536",
+      "title": "Jump Rope,Adjustable Jump Ropes,Skipping Rope Tangle-Free Rapid Speed with Ball Bearings for Women Men Kids,Exercise & S",
+      "image": "https://m.media-amazon.com/images/I/71gsnuO2xoL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0GV7PN554?tag=gadgetvill09f-21",
+      "price": "\u20b9229",
+      "rating": 5.0,
+      "category": "home",
+      "asin": "B0GV7PN554",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-09T13:35:36.875006+05:30",
+      "session_type": "morning",
+      "link_index": 198
+    },
     {
       "id": "product_morning_20260708_170838",
       "title": "Vastraa Fusion Unisex Woolen Kullu/Himachali Cap (Pack of 1)",
