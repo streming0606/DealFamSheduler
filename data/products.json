@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-07-09T23:02:12.290231+05:30",
-  "total_products": 1564,
+  "last_updated": "2026-07-10T13:32:37.532542+05:30",
+  "total_products": 1566,
   "products": [
+    {
+      "id": "product_morning_20260710_080237",
+      "title": "Tee Mafia Unisex Celtic Basketball T-Shirts| Kyrie T-Shirt| Polyster",
+      "image": "https://m.media-amazon.com/images/I/41KTM-rqF9S._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B093BZCZJ2?tag=gadgetvill09f-21",
+      "price": "\u20b9399",
+      "rating": 2.3,
+      "category": "fashion",
+      "asin": "B093BZCZJ2",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-10T13:32:37.532501+05:30",
+      "session_type": "morning",
+      "link_index": 206
+    },
+    {
+      "id": "product_morning_20260710_080235",
+      "title": "DSK Studio Women\u2019s Solid Cotton Long Maxi Dress",
+      "image": "https://m.media-amazon.com/images/I/41rIQdQLLLL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0H2M5WDSB?tag=gadgetvill09f-21",
+      "price": "\u20b9449",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "fashion",
+      "asin": "B0H2M5WDSB",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-10T13:32:35.813070+05:30",
+      "session_type": "morning",
+      "link_index": 206
+    },
     {
       "id": "product_morning_20260709_173212",
       "title": "GODFREY Mens Round Neck Half Sleeve Cotton T-Shirt",
