@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-07-10T20:46:38.569132+05:30",
-  "total_products": 1570,
+  "last_updated": "2026-07-10T22:56:57.710693+05:30",
+  "total_products": 1572,
   "products": [
+    {
+      "id": "product_morning_20260710_172657",
+      "title": "DSK Studio Women\u2019s Solid Cotton Long Maxi Dress",
+      "image": "https://m.media-amazon.com/images/I/51QsIymhgVL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0H2M1RWZ2?tag=gadgetvill09f-21",
+      "price": "\u20b9449",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "fashion",
+      "asin": "B0H2M1RWZ2",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-10T22:56:57.710667+05:30",
+      "session_type": "morning",
+      "link_index": 212
+    },
+    {
+      "id": "product_morning_20260710_172654",
+      "title": "TQH Camouflage Men Checkered Track Pants",
+      "image": "https://m.media-amazon.com/images/I/81crKmVYgTL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0D1QZD1VR?tag=gadgetvill09f-21",
+      "price": "\u20b9449",
+      "rating": 4.0,
+      "category": "electronics",
+      "asin": "B0D1QZD1VR",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-10T22:56:54.443068+05:30",
+      "session_type": "morning",
+      "link_index": 212
+    },
     {
       "id": "product_night_20260710_151638",
       "title": "Trampoline Kids Shorts Pack of 5 for Boys & Girls | Vibrant Multipack Summer Wear | Soft Cotton Blend | Comfy Fit for Da",
