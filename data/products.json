@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-07-10T13:32:37.532542+05:30",
-  "total_products": 1566,
+  "last_updated": "2026-07-10T16:07:56.155957+05:30",
+  "total_products": 1568,
   "products": [
+    {
+      "id": "product_morning_20260710_103756",
+      "title": "RodZen Trendy Front and Back Printed Oversized Round Neck T-Shirt for Women",
+      "image": "https://m.media-amazon.com/images/I/61WH2korkYL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DDXVQSL7?tag=gadgetvill09f-21",
+      "price": "\u20b9378",
+      "rating": 4.2,
+      "category": "fashion",
+      "asin": "B0DDXVQSL7",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-10T16:07:56.155922+05:30",
+      "session_type": "morning",
+      "link_index": 208
+    },
+    {
+      "id": "product_morning_20260710_103752",
+      "title": "SVHF Polycotton Toddler Safari Print Shirt & Shorts Set | Light Green & Brown Cotton Blend Outfit for Baby Boys | Summer",
+      "image": "https://m.media-amazon.com/images/I/41fI7s1EI2L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FLXTS4SD?tag=gadgetvill09f-21",
+      "price": "\u20b9449",
+      "rating": 5.0,
+      "category": "fashion",
+      "asin": "B0FLXTS4SD",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-10T16:07:52.485426+05:30",
+      "session_type": "morning",
+      "link_index": 208
+    },
     {
       "id": "product_morning_20260710_080237",
       "title": "Tee Mafia Unisex Celtic Basketball T-Shirts| Kyrie T-Shirt| Polyster",
