@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-07-10T22:56:57.710693+05:30",
-  "total_products": 1572,
+  "last_updated": "2026-07-11T12:27:47.409833+05:30",
+  "total_products": 1574,
   "products": [
+    {
+      "id": "product_morning_20260711_065747",
+      "title": "Pigeon Tesla Electric Kettle 1.5 L, 1300 Watt, Stainless Steel Body with Auto Shut-off Feature Used for Boiling Water - ",
+      "image": "https://m.media-amazon.com/images/I/7119R7jdX0L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0G1BS4QF4?tag=gadgetvill09f-21",
+      "price": "\u20b9659",
+      "rating": 4.0,
+      "category": "health",
+      "asin": "B0G1BS4QF4",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-11T12:27:47.409807+05:30",
+      "session_type": "morning",
+      "link_index": 0
+    },
+    {
+      "id": "product_morning_20260711_065745",
+      "title": "GRECIILOOKS Men's Polycotton Shirt |Stylish Casual Regular Fit Shirts | Textured Half Sleeve | Slim Fit | Business & Mee",
+      "image": "https://m.media-amazon.com/images/I/71ROidI7t8L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CLZXLPFJ?tag=gadgetvill09f-21",
+      "price": "\u20b9379",
+      "rating": 3.9,
+      "category": "fashion",
+      "asin": "B0CLZXLPFJ",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-11T12:27:45.177016+05:30",
+      "session_type": "morning",
+      "link_index": 0
+    },
     {
       "id": "product_morning_20260710_172657",
       "title": "DSK Studio Women\u2019s Solid Cotton Long Maxi Dress",
