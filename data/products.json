@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-07-12T12:45:02.830512+05:30",
-  "total_products": 1582,
+  "last_updated": "2026-07-12T14:59:44.039979+05:30",
+  "total_products": 1584,
   "products": [
+    {
+      "id": "product_morning_20260712_092944",
+      "title": "Cadlec CookEase 2000W Induction Cooktop | 8 Cooking Modes, Auto Shut-Off, Over-Heat Protection, LED Display, BIS Approve",
+      "image": "https://m.media-amazon.com/images/I/71UpjvAGchL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FHQB7HXR?tag=gadgetvill09f-21",
+      "price": "\u20b91,999",
+      "rating": 4.0,
+      "category": "electronics",
+      "asin": "B0FHQB7HXR",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-12T14:59:44.039952+05:30",
+      "session_type": "morning",
+      "link_index": 10
+    },
+    {
+      "id": "product_morning_20260712_092941",
+      "title": "Qlect Premium Automatic Electric Water Dispenser Pump for 20 Litre Bottle Portable Water Pump Dispenser for Home, Office",
+      "image": "https://m.media-amazon.com/images/I/61S35bKSeEL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0G52VRVC8?tag=gadgetvill09f-21",
+      "price": "\u20b9298",
+      "rating": 4.0,
+      "category": "home",
+      "asin": "B0G52VRVC8",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-12T14:59:41.134412+05:30",
+      "session_type": "morning",
+      "link_index": 10
+    },
     {
       "id": "product_afternoon_20260712_071502",
       "title": "PRIMESKY\u00ae Coffee Frother Electric Blender Wand 3 Speed Modes Rechargable Mini Handheld Milk Frother with Stainless Steel",
