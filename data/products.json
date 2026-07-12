@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-07-11T22:04:39.753497+05:30",
-  "total_products": 1580,
+  "last_updated": "2026-07-12T12:45:02.830512+05:30",
+  "total_products": 1582,
   "products": [
+    {
+      "id": "product_afternoon_20260712_071502",
+      "title": "PRIMESKY\u00ae Coffee Frother Electric Blender Wand 3 Speed Modes Rechargable Mini Handheld Milk Frother with Stainless Steel",
+      "image": "https://m.media-amazon.com/images/I/61iEtk9gLdL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FP948JMW?tag=gadgetvill09f-21",
+      "price": "\u20b9199",
+      "rating": 4.1,
+      "category": "electronics",
+      "asin": "B0FP948JMW",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-12T12:45:02.830477+05:30",
+      "session_type": "afternoon",
+      "link_index": 8
+    },
+    {
+      "id": "product_afternoon_20260712_071501",
+      "title": "Sujata Supermix Mixer Grinder | 900 Watts Double Ball Bearing Motor | 22000 RPM | Non-Stop 90 Mins Running | 3 Jars incl",
+      "image": "https://m.media-amazon.com/images/I/51SkYlvQX4L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0G319JRWC?tag=gadgetvill09f-21",
+      "price": "\u20b96,290",
+      "rating": 4.5,
+      "category": "electronics",
+      "asin": "B0G319JRWC",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-12T12:45:01.617930+05:30",
+      "session_type": "afternoon",
+      "link_index": 8
+    },
     {
       "id": "product_morning_20260711_163439",
       "title": "Holstein Housewares Mini Waffle Maker Machine 3 in 1 Waffle Iron Home Appliances Kitchen Easy to Clean, 4 Inch, Perfect ",
