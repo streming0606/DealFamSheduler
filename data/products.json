@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-07-12T19:39:42.337138+05:30",
-  "total_products": 1586,
+  "last_updated": "2026-07-12T22:04:59.568172+05:30",
+  "total_products": 1588,
   "products": [
+    {
+      "id": "product_morning_20260712_163459",
+      "title": "Etekcity Portable Nail Drill Professional Portable 380ML 6 Blade J-u-!-c-e-r with Home Outdoor USB Rechargeable Mini Han",
+      "image": "https://m.media-amazon.com/images/I/71VwgnuCtWL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0GCNMYJ7H?tag=gadgetvill09f-21",
+      "price": "\u20b9399",
+      "rating": 3.9,
+      "category": "home",
+      "asin": "B0GCNMYJ7H",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-12T22:04:59.568135+05:30",
+      "session_type": "morning",
+      "link_index": 14
+    },
+    {
+      "id": "product_morning_20260712_163457",
+      "title": "Pigeon By Stovekraft Pure | Grinder Juicer Blender Smoothie Maker All-in-1 Machine | 300 Watt | 1 Jars- Multiuse Jar 500",
+      "image": "https://m.media-amazon.com/images/I/61jYtzL8zzL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FCFLX7WD?tag=gadgetvill09f-21",
+      "price": "\u20b91,249",
+      "rating": 3.6,
+      "category": "electronics",
+      "asin": "B0FCFLX7WD",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-12T22:04:57.764913+05:30",
+      "session_type": "morning",
+      "link_index": 14
+    },
     {
       "id": "product_morning_20260712_140942",
       "title": "S S KITCHEN SINK Handmade kitchen sink Matte Finish Stainless Steel Single Bowl Modular Kitchen Sink (24X18X10 Inch) Hea",
