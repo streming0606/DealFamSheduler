@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-07-12T22:04:59.568172+05:30",
-  "total_products": 1588,
+  "last_updated": "2026-07-13T13:22:33.137992+05:30",
+  "total_products": 1590,
   "products": [
+    {
+      "id": "product_afternoon_20260713_075233",
+      "title": "Cookwell Multipurpose Cook Kettle 600W (Green Steel)",
+      "image": "https://m.media-amazon.com/images/I/817qqLKJ6ZL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0GWF4S9KF?tag=gadgetvill09f-21",
+      "price": "\u20b91,199",
+      "rating": 4.0,
+      "category": "electronics",
+      "asin": "B0GWF4S9KF",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-13T13:22:33.137961+05:30",
+      "session_type": "afternoon",
+      "link_index": 16
+    },
+    {
+      "id": "product_afternoon_20260713_075231",
+      "title": "Qlect Portable Blender Electric Juicers Fruit Mixers USB Rechargeable Smoothie Mini Personal Juicer 6 Blades 3Gears With",
+      "image": "https://m.media-amazon.com/images/I/41Sb3p-NPBL._AC_UY218_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0F9YGHHXG?tag=gadgetvill09f-21",
+      "price": "\u20b9698",
+      "rating": 3.4,
+      "category": "home",
+      "asin": "B0F9YGHHXG",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-13T13:22:31.704344+05:30",
+      "session_type": "afternoon",
+      "link_index": 16
+    },
     {
       "id": "product_morning_20260712_163459",
       "title": "Etekcity Portable Nail Drill Professional Portable 380ML 6 Blade J-u-!-c-e-r with Home Outdoor USB Rechargeable Mini Han",
