@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-07-14T14:59:16.106342+05:30",
-  "total_products": 1600,
+  "last_updated": "2026-07-14T19:56:14.831307+05:30",
+  "total_products": 1602,
   "products": [
+    {
+      "id": "product_morning_20260714_142614",
+      "title": "Milton Xpress Egg Boiler | Automatic Power Off | Egg Cooker & Steamer for Boiling Up to 7 Eggs | 3 Boiling Modes | 360 W",
+      "image": "https://m.media-amazon.com/images/I/619RCyUhgcL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FKB9WFLJ?tag=gadgetvill09f-21",
+      "price": "\u20b9749",
+      "rating": 4.0,
+      "category": "health",
+      "asin": "B0FKB9WFLJ",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-14T19:56:14.831270+05:30",
+      "session_type": "morning",
+      "link_index": 28
+    },
+    {
+      "id": "product_morning_20260714_142613",
+      "title": "Ninja Stainless Steel Blast Portable Cordless Blender (BC151INBK) 530ml USB-C Rechargeable Crushes Ice & Frozen Fruit BP",
+      "image": "https://m.media-amazon.com/images/I/61BltT9ZT5L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FWY929XM?tag=gadgetvill09f-21",
+      "price": "\u20b95,299",
+      "rating": 4.1,
+      "category": "home",
+      "asin": "B0FWY929XM",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-14T19:56:13.323415+05:30",
+      "session_type": "morning",
+      "link_index": 28
+    },
     {
       "id": "product_morning_20260714_092916",
       "title": "GILTON Plastic Egg Boiler Electric Automatic Off 7 Egg Poacher For Steaming,Cooking Also Boiling & Frying (Multi Color)",
