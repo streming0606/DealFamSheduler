@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-07-13T23:05:56.904588+05:30",
-  "total_products": 1596,
+  "last_updated": "2026-07-14T12:26:51.931858+05:30",
+  "total_products": 1598,
   "products": [
+    {
+      "id": "product_morning_20260714_065651",
+      "title": "Fitkit by Cult Digital Kitchen Food Scale,10kg Limit, LCD Display, Tare & Unit Conversion, Ideal for Kitchen & Diet Trac",
+      "image": "https://m.media-amazon.com/images/I/41f5dF2PVjL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0GS95NCTT?tag=gadgetvill09f-21",
+      "price": "\u20b9399",
+      "rating": 4.3,
+      "category": "home",
+      "asin": "B0GS95NCTT",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-14T12:26:51.931795+05:30",
+      "session_type": "morning",
+      "link_index": 24
+    },
+    {
+      "id": "product_morning_20260714_065650",
+      "title": "Btag SF-400 Digital Kitchen Weighing Scale | 10Kg x 1g Precision | 1 year (6+6 months) warranty | Food Scale with LCD Di",
+      "image": "https://m.media-amazon.com/images/I/51WMzZq09cL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0D8Y9FNF3?tag=gadgetvill09f-21",
+      "price": "\u20b9219",
+      "rating": 4.0,
+      "category": "home",
+      "asin": "B0D8Y9FNF3",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-14T12:26:50.308108+05:30",
+      "session_type": "morning",
+      "link_index": 24
+    },
     {
       "id": "product_morning_20260713_173556",
       "title": "Aluminum Tandoor Bati Maker Baking Oven, 25 x 25 x 35 cm, Gas Tandoor, Barbecue Grill Food Steamer Cookware Set - Silver",
