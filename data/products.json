@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-07-15T19:55:18.931399+05:30",
-  "total_products": 1610,
+  "last_updated": "2026-07-15T22:25:04.772047+05:30",
+  "total_products": 1612,
   "products": [
+    {
+      "id": "product_morning_20260715_165504",
+      "title": "Cellecor Multi-Cook Kettle CMK13 Magic Chef With Steamer, Egg Tray, Idli Stand, Poacher Tray, Steel Tray, Multi Cooker E",
+      "image": "https://m.media-amazon.com/images/I/61nC7eGx95L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FPG9GQPL?tag=gadgetvill09f-21",
+      "price": "\u20b91,499",
+      "rating": 4.1,
+      "category": "electronics",
+      "asin": "B0FPG9GQPL",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-15T22:25:04.772010+05:30",
+      "session_type": "morning",
+      "link_index": 38
+    },
+    {
+      "id": "product_morning_20260715_165503",
+      "title": "Toy O'Fun Portable 450ml Juicer Blender, 6-Blade USB Rechargeable Personal Mixer Bottle with Built-In Jar, Smoothie & Pr",
+      "image": "https://m.media-amazon.com/images/I/71hMxsKnhaL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0GXVC81S8?tag=gadgetvill09f-21",
+      "price": "\u20b9299",
+      "rating": 2.7,
+      "category": "home",
+      "asin": "B0GXVC81S8",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-15T22:25:03.436568+05:30",
+      "session_type": "morning",
+      "link_index": 38
+    },
     {
       "id": "product_morning_20260715_142518",
       "title": "Milton Rapid Electric Kettle 1.8L | 1500 Watts | Stainless Steel Hot Water portable Electric Kettle for Home, Office | A",
