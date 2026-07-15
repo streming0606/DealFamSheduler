@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-07-15T12:28:55.578849+05:30",
-  "total_products": 1606,
+  "last_updated": "2026-07-15T15:02:59.452565+05:30",
+  "total_products": 1608,
   "products": [
+    {
+      "id": "product_morning_20260715_093259",
+      "title": "Stash-Pro Mini Metal Grinder with Keychain (Green) | Pocket Size Spice & Dry Herb Crusher | 2-Piece Twist Design | 3cm D",
+      "image": "https://m.media-amazon.com/images/I/41T2HpP6Y7L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0GF6WKSQM?tag=gadgetvill09f-21",
+      "price": "\u20b9379",
+      "rating": 4.4,
+      "category": "electronics",
+      "asin": "B0GF6WKSQM",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-15T15:02:59.452522+05:30",
+      "session_type": "morning",
+      "link_index": 34
+    },
+    {
+      "id": "product_morning_20260715_093257",
+      "title": "XECH Ice Cream Maker Machine for Home | Cordless Rechargeable Softy Ice Cream Machine for Kids & Family | Birthday Gift ",
+      "image": "https://m.media-amazon.com/images/I/51vckruwS0L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FD9R3LJY?tag=gadgetvill09f-21",
+      "price": "\u20b91,499",
+      "rating": 3.4,
+      "category": "home",
+      "asin": "B0FD9R3LJY",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-15T15:02:57.042883+05:30",
+      "session_type": "morning",
+      "link_index": 34
+    },
     {
       "id": "product_morning_20260715_065855",
       "title": "Mini Waffle Maker Machine 3 In 1 Waffle Iron Home Appliances Kitchen Easy To Clean, 4 Inch, Perfect For Breakfast,Desser",
