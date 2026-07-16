@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-07-15T22:25:04.772047+05:30",
-  "total_products": 1612,
+  "last_updated": "2026-07-16T12:38:00.077156+05:30",
+  "total_products": 1614,
   "products": [
+    {
+      "id": "product_afternoon_20260716_070800",
+      "title": "iBELL WHISK350 Electric Hand Mixer - 350W with 5 Speed Control, Stainless Steel Beaters & Dough Hooks for Baking, Whippi",
+      "image": "https://m.media-amazon.com/images/I/61KW3rGrmWL._AC_UY218_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0F6JRKNLN?tag=gadgetvill09f-21",
+      "price": "\u20b91,150",
+      "rating": 4.4,
+      "category": "electronics",
+      "asin": "B0F6JRKNLN",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-16T12:38:00.077137+05:30",
+      "session_type": "afternoon",
+      "link_index": 40
+    },
+    {
+      "id": "product_afternoon_20260716_070758",
+      "title": "Kaff Digital Air Fryer 5L, 1500W Oil Free Air Fryer for Home with Visible Window, 5 Preset Cooking Modes, LED Touch Cont",
+      "image": "https://m.media-amazon.com/images/I/61ZzMikkZ9L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DFWSJNF8?tag=gadgetvill09f-21",
+      "price": "\u20b96,586",
+      "rating": 4.8,
+      "category": "home",
+      "asin": "B0DFWSJNF8",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-16T12:37:58.604371+05:30",
+      "session_type": "afternoon",
+      "link_index": 40
+    },
     {
       "id": "product_morning_20260715_165504",
       "title": "Cellecor Multi-Cook Kettle CMK13 Magic Chef With Steamer, Egg Tray, Idli Stand, Poacher Tray, Steel Tray, Multi Cooker E",
