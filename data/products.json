@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-07-16T12:38:00.077156+05:30",
-  "total_products": 1614,
+  "last_updated": "2026-07-16T15:19:14.316781+05:30",
+  "total_products": 1616,
   "products": [
+    {
+      "id": "product_morning_20260716_094914",
+      "title": "QUIX Portable Mini Blender 500ml for Smoothies Cold Coffee & Juices | USB-C Rechargeable Juicer Mixer Grinder with 230W ",
+      "image": "https://m.media-amazon.com/images/I/719wN5256IL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FK5QY3PH?tag=gadgetvill09f-21",
+      "price": "\u20b91,949",
+      "rating": 4.0,
+      "category": "home",
+      "asin": "B0FK5QY3PH",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-16T15:19:14.316754+05:30",
+      "session_type": "morning",
+      "link_index": 42
+    },
+    {
+      "id": "product_morning_20260716_094912",
+      "title": "Marvel By Kidsville Official Avengers Merchandise Boys Half Sleeves Round Neck Graphic Printed Regular Fit Pure Cotton T",
+      "image": "https://m.media-amazon.com/images/I/81FgRVnHljL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0GTR7YMMC?tag=gadgetvill09f-21",
+      "price": "\u20b9809",
+      "rating": 4.3,
+      "category": "electronics",
+      "asin": "B0GTR7YMMC",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-16T15:19:12.374035+05:30",
+      "session_type": "morning",
+      "link_index": 42
+    },
     {
       "id": "product_afternoon_20260716_070800",
       "title": "iBELL WHISK350 Electric Hand Mixer - 350W with 5 Speed Control, Stainless Steel Beaters & Dough Hooks for Baking, Whippi",
