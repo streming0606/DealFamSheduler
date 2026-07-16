@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-07-16T20:05:41.593837+05:30",
-  "total_products": 1618,
+  "last_updated": "2026-07-16T22:23:10.087522+05:30",
+  "total_products": 1620,
   "products": [
+    {
+      "id": "product_morning_20260716_165310",
+      "title": "Milton Euroline Go Electro Stainless Steel Electric Kettle 1.2L, 1350 Watts, Portable Electric Kettle for Home, Office, ",
+      "image": "https://m.media-amazon.com/images/I/612jrIe9zEL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B092SX1C6Y?tag=gadgetvill09f-21",
+      "price": "\u20b9699",
+      "rating": 4.1,
+      "category": "home",
+      "asin": "B092SX1C6Y",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-16T22:23:10.087485+05:30",
+      "session_type": "morning",
+      "link_index": 46
+    },
+    {
+      "id": "product_morning_20260716_165307",
+      "title": "MILTON Pro cook Premium Non-Stick Sandwich Griller | Compatible with Gas Stoves | Sandwich Griller and Toaster | Heat-Re",
+      "image": "https://m.media-amazon.com/images/I/61Zhio+aYuL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0BVRHJ4N7?tag=gadgetvill09f-21",
+      "price": "\u20b9380",
+      "rating": 4.2,
+      "category": "electronics",
+      "asin": "B0BVRHJ4N7",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-16T22:23:07.512113+05:30",
+      "session_type": "morning",
+      "link_index": 46
+    },
     {
       "id": "product_morning_20260716_143541",
       "title": "INALSA Air Fryer Oven|16L, 1800W|Stainless Steel Body12-in-1 Functions,Fry,Bake,Grill,Dehydrate,Roast& Reheat|10 Preset|",
