@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-07-17T12:32:01.739178+05:30",
-  "total_products": 1622,
+  "last_updated": "2026-07-17T14:59:52.685850+05:30",
+  "total_products": 1624,
   "products": [
+    {
+      "id": "product_morning_20260717_092952",
+      "title": "Amazon Brand - Symbol Women Cotton Stretch Regular Fit Round Neck Half Sleeve T-Shirt (Available in Plus Sizes)",
+      "image": "https://m.media-amazon.com/images/I/71VhziPGj4L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07MFV9MM8?tag=gadgetvill09f-21",
+      "price": "\u20b9449",
+      "rating": 4.2,
+      "category": "fashion",
+      "asin": "B07MFV9MM8",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-17T14:59:52.685818+05:30",
+      "session_type": "morning",
+      "link_index": 50
+    },
+    {
+      "id": "product_morning_20260717_092950",
+      "title": "Pigeon Kessel Multipurpose Kettle (12173) 1.2 litres with Stainless Steel Body, used for boiling Water and milk, Tea, Co",
+      "image": "https://m.media-amazon.com/images/I/41JJWFk14hL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B01I1LDZGA?tag=gadgetvill09f-21",
+      "price": "\u20b9837",
+      "rating": 3.8,
+      "category": "health",
+      "asin": "B01I1LDZGA",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-17T14:59:50.477984+05:30",
+      "session_type": "morning",
+      "link_index": 50
+    },
     {
       "id": "product_afternoon_20260717_070201",
       "title": "Jewellery Scale | Weight Scale | Digital Weight Machine | weight machine for gold | Electronic weighing for Jewellery 0.",
