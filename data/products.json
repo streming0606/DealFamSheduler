@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-07-18T12:02:40.786136+05:30",
-  "total_products": 1630,
+  "last_updated": "2026-07-18T14:40:52.542234+05:30",
+  "total_products": 1632,
   "products": [
+    {
+      "id": "product_morning_20260718_091052",
+      "title": "Miss Chase Women's Skinny High Rise Regular/Cropped Length Stretchable Denim Jeans",
+      "image": "https://m.media-amazon.com/images/I/71d1KdumCtL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07LG743FS?tag=gadgetvill09f-21",
+      "price": "\u20b9799",
+      "rating": 3.9,
+      "category": "fashion",
+      "asin": "B07LG743FS",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-18T14:40:52.542205+05:30",
+      "session_type": "morning",
+      "link_index": 58
+    },
+    {
+      "id": "product_morning_20260718_091050",
+      "title": "U.S. Polo Assn. Women's Regular fit Top",
+      "image": "https://m.media-amazon.com/images/I/61+ajdOdihL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07KYJ7STF?tag=gadgetvill09f-21",
+      "price": "\u20b9899",
+      "rating": 4.5,
+      "category": "electronics",
+      "asin": "B07KYJ7STF",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-18T14:40:50.696679+05:30",
+      "session_type": "morning",
+      "link_index": 58
+    },
     {
       "id": "product_morning_20260718_063240",
       "title": "Miss Chase Women's Round Neck Half Sleeves Cotton Lace and Pearl Detailing",
