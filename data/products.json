@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-07-18T19:33:00.999655+05:30",
-  "total_products": 1634,
+  "last_updated": "2026-07-18T22:06:17.522795+05:30",
+  "total_products": 1636,
   "products": [
+    {
+      "id": "product_morning_20260718_163617",
+      "title": "Aurelia Womens Solid Churidars",
+      "image": "https://m.media-amazon.com/images/I/51Hj2FKjOML._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07LC5QR53?tag=gadgetvill09f-21",
+      "price": "\u20b9420",
+      "rating": 3.6,
+      "category": "electronics",
+      "asin": "B07LC5QR53",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-18T22:06:17.522755+05:30",
+      "session_type": "morning",
+      "link_index": 62
+    },
+    {
+      "id": "product_morning_20260718_163615",
+      "title": "betterhood Pain Relief & Recovery Patches (2 X Pack of 5) | Cryogel Therapy for Back Pain, Neck Pain, Muscle Pain, Cramp",
+      "image": "https://m.media-amazon.com/images/I/71sbyxDj9uL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0GSVP8JFG?tag=gadgetvill09f-21",
+      "price": "\u20b9699",
+      "rating": 3.9,
+      "category": "electronics",
+      "asin": "B0GSVP8JFG",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-18T22:06:15.880896+05:30",
+      "session_type": "morning",
+      "link_index": 62
+    },
     {
       "id": "product_morning_20260718_140300",
       "title": "W for Woman Women's Slim Pants",
