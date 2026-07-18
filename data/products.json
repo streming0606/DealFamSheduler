@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-07-17T22:16:47.255762+05:30",
-  "total_products": 1628,
+  "last_updated": "2026-07-18T12:02:40.786136+05:30",
+  "total_products": 1630,
   "products": [
+    {
+      "id": "product_morning_20260718_063240",
+      "title": "Miss Chase Women's Round Neck Half Sleeves Cotton Lace and Pearl Detailing",
+      "image": "https://m.media-amazon.com/images/I/814hw5t9OeL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07L95R6MJ?tag=gadgetvill09f-21",
+      "price": "\u20b9605",
+      "rating": 4.0,
+      "category": "electronics",
+      "asin": "B07L95R6MJ",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-18T12:02:40.786099+05:30",
+      "session_type": "morning",
+      "link_index": 56
+    },
+    {
+      "id": "product_morning_20260718_063238",
+      "title": "Miss Chase Women's Navy Blue Skinny Fit High Rise Shaded Regular Length Stretchable Denim Jeans",
+      "image": "https://m.media-amazon.com/images/I/712MF9MI81L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07MM8GC55?tag=gadgetvill09f-21",
+      "price": "\u20b9799",
+      "rating": 4.0,
+      "category": "fashion",
+      "asin": "B07MM8GC55",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-18T12:02:38.514015+05:30",
+      "session_type": "morning",
+      "link_index": 56
+    },
     {
       "id": "product_morning_20260717_164647",
       "title": "BIBA Women Kurta Pants Set",
