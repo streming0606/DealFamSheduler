@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-07-18T14:40:52.542234+05:30",
-  "total_products": 1632,
+  "last_updated": "2026-07-18T19:33:00.999655+05:30",
+  "total_products": 1634,
   "products": [
+    {
+      "id": "product_morning_20260718_140300",
+      "title": "W for Woman Women's Slim Pants",
+      "image": "https://m.media-amazon.com/images/I/71tWjp1hKrL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07M8L5WM6?tag=gadgetvill09f-21",
+      "price": "\u20b9705",
+      "rating": 3.9,
+      "category": "electronics",
+      "asin": "B07M8L5WM6",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-18T19:33:00.999622+05:30",
+      "session_type": "morning",
+      "link_index": 60
+    },
+    {
+      "id": "product_morning_20260718_140258",
+      "title": "Miss Chase Women's Denim Strapless Dress",
+      "image": "https://m.media-amazon.com/images/I/81ddvYtH1yL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07MPNX84S?tag=gadgetvill09f-21",
+      "price": "\u20b9873.54",
+      "rating": 3.0,
+      "category": "fashion",
+      "asin": "B07MPNX84S",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-18T19:32:58.239781+05:30",
+      "session_type": "morning",
+      "link_index": 60
+    },
     {
       "id": "product_morning_20260718_091052",
       "title": "Miss Chase Women's Skinny High Rise Regular/Cropped Length Stretchable Denim Jeans",
