@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-07-19T19:37:30.886746+05:30",
-  "total_products": 1642,
+  "last_updated": "2026-07-19T22:05:26.840303+05:30",
+  "total_products": 1644,
   "products": [
+    {
+      "id": "product_morning_20260719_163526",
+      "title": "W for Woman Women High Rise Cotton Blend Strechable Slim Pants | Cotton Blend Slim Pants | Trousers",
+      "image": "https://m.media-amazon.com/images/I/51O2jP+7RUL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07M89KJQV?tag=gadgetvill09f-21",
+      "price": "\u20b9619",
+      "rating": 3.8,
+      "category": "electronics",
+      "asin": "B07M89KJQV",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-19T22:05:26.840264+05:30",
+      "session_type": "morning",
+      "link_index": 70
+    },
+    {
+      "id": "product_morning_20260719_163524",
+      "title": "Miss Chase Women's Black Slim Fit Mid Rise Cropped Stretchable Denim Jeans",
+      "image": "https://m.media-amazon.com/images/I/61xXCLsFzHL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07MT442JV?tag=gadgetvill09f-21",
+      "price": "\u20b9799",
+      "rating": 3.8,
+      "category": "fashion",
+      "asin": "B07MT442JV",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-19T22:05:24.292684+05:30",
+      "session_type": "morning",
+      "link_index": 70
+    },
     {
       "id": "product_morning_20260719_140730",
       "title": "Amazon Brand - Myx Women Cotton Printed A-line Short Kurti (Available in Plus Sizes)",
