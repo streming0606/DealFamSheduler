@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-07-20T20:21:45.544748+05:30",
-  "total_products": 1650,
+  "last_updated": "2026-07-20T22:39:02.874048+05:30",
+  "total_products": 1652,
   "products": [
+    {
+      "id": "product_morning_20260720_170902",
+      "title": "Miss Chase Women Miss Chase Women's Super Skinny Fit High Rise Denim Jeans(MCAW18DEN02-55-115-34,Blue,34)",
+      "image": "https://m.media-amazon.com/images/I/81g6h93UyCL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07L9663BC?tag=gadgetvill09f-21",
+      "price": "\u20b9799",
+      "rating": 3.4,
+      "category": "fashion",
+      "asin": "B07L9663BC",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-20T22:39:02.874021+05:30",
+      "session_type": "morning",
+      "link_index": 78
+    },
+    {
+      "id": "product_morning_20260720_170900",
+      "title": "Aurelia Womens 2 Pocket Solid Pants",
+      "image": "https://m.media-amazon.com/images/I/51tUcVAAywL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07LC1T5MH?tag=gadgetvill09f-21",
+      "price": "\u20b9845",
+      "rating": 4.0,
+      "category": "electronics",
+      "asin": "B07LC1T5MH",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-20T22:39:00.513072+05:30",
+      "session_type": "morning",
+      "link_index": 78
+    },
     {
       "id": "product_morning_20260720_145145",
       "title": "Aurelia Women's Cotton Kurta",
