@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-07-20T13:14:27.511095+05:30",
-  "total_products": 1646,
+  "last_updated": "2026-07-20T15:59:34.767771+05:30",
+  "total_products": 1648,
   "products": [
+    {
+      "id": "product_morning_20260720_102934",
+      "title": "W for Woman Women's Rayon Straight Fit Straight Kurta",
+      "image": "https://m.media-amazon.com/images/I/81FaMcaSn+L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07FLBY576?tag=gadgetvill09f-21",
+      "price": "\u20b9886",
+      "rating": 3.8,
+      "category": "electronics",
+      "asin": "B07FLBY576",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-20T15:59:34.767742+05:30",
+      "session_type": "morning",
+      "link_index": 74
+    },
+    {
+      "id": "product_morning_20260720_102931",
+      "title": "Aurelia Womens Round Neck Printed Kurta",
+      "image": "https://m.media-amazon.com/images/I/81ZY9xkXWbL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07LC7NJW5?tag=gadgetvill09f-21",
+      "price": "\u20b9608",
+      "rating": 3.4,
+      "category": "electronics",
+      "asin": "B07LC7NJW5",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-20T15:59:31.423923+05:30",
+      "session_type": "morning",
+      "link_index": 74
+    },
     {
       "id": "product_afternoon_20260720_074427",
       "title": "W for Woman Womens Blended Slub Dupatta (Silver_Free Size)",
