@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-07-20T15:59:34.767771+05:30",
-  "total_products": 1648,
+  "last_updated": "2026-07-20T20:21:45.544748+05:30",
+  "total_products": 1650,
   "products": [
+    {
+      "id": "product_morning_20260720_145145",
+      "title": "Aurelia Women's Cotton Kurta",
+      "image": "https://m.media-amazon.com/images/I/81nNJqkFFrL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07LC7NWR4?tag=gadgetvill09f-21",
+      "price": "\u20b9985",
+      "rating": 3.8,
+      "category": "electronics",
+      "asin": "B07LC7NWR4",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-20T20:21:45.544722+05:30",
+      "session_type": "morning",
+      "link_index": 76
+    },
+    {
+      "id": "product_morning_20260720_145144",
+      "title": "Marks & Spencer Linen Blend Women's Solid High Rise Regular Fit Trouser",
+      "image": "https://m.media-amazon.com/images/I/71rRfKpNeqL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07NDBBJK8?tag=gadgetvill09f-21",
+      "price": "\u20b91,399",
+      "rating": 3.8,
+      "category": "electronics",
+      "asin": "B07NDBBJK8",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-20T20:21:44.252191+05:30",
+      "session_type": "morning",
+      "link_index": 76
+    },
     {
       "id": "product_morning_20260720_102934",
       "title": "W for Woman Women's Rayon Straight Fit Straight Kurta",
