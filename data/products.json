@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-07-21T12:48:38.361391+05:30",
-  "total_products": 1654,
+  "last_updated": "2026-07-21T15:37:28.974190+05:30",
+  "total_products": 1656,
   "products": [
+    {
+      "id": "product_morning_20260721_100728",
+      "title": "W for Woman Women High Rise Strechable Slim Pants | Trousers",
+      "image": "https://m.media-amazon.com/images/I/61R-puAD2lL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07MN4K1Q1?tag=gadgetvill09f-21",
+      "price": "\u20b9520",
+      "rating": 3.6,
+      "category": "electronics",
+      "asin": "B07MN4K1Q1",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-21T15:37:28.974155+05:30",
+      "session_type": "morning",
+      "link_index": 82
+    },
+    {
+      "id": "product_morning_20260721_100727",
+      "title": "Miss Chase Women's Designer Wine Red Fringed Halter Neck Sleeveless Solid Maxi Front Slit Dress",
+      "image": "https://m.media-amazon.com/images/I/71y7tZPdZML._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07MX9CR79?tag=gadgetvill09f-21",
+      "price": "\u20b9799",
+      "rating": 4.3,
+      "category": "fashion",
+      "asin": "B07MX9CR79",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-21T15:37:27.261937+05:30",
+      "session_type": "morning",
+      "link_index": 82
+    },
     {
       "id": "product_afternoon_20260721_071838",
       "title": "THE GIFT STUDIO.COM | Midnight Stash Premium Snack Gift Hamper | Smoked Almonds, Roasted & Salted Cashews, Cashew Brittl",
