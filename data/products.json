@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-07-22T12:49:53.542857+05:30",
-  "total_products": 1662,
+  "last_updated": "2026-07-22T15:36:11.331703+05:30",
+  "total_products": 1664,
   "products": [
+    {
+      "id": "product_morning_20260722_100611",
+      "title": "Wishful Women's Regular fit Top (19FESP10246-110916_Grey 10)",
+      "image": "https://m.media-amazon.com/images/I/81frtjzJd2L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07M92SHPC?tag=gadgetvill09f-21",
+      "price": "\u20b98,885",
+      "rating": 4.6,
+      "category": "electronics",
+      "asin": "B07M92SHPC",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-22T15:36:11.331677+05:30",
+      "session_type": "morning",
+      "link_index": 90
+    },
+    {
+      "id": "product_morning_20260722_100608",
+      "title": "Miss Chase Women's Light Blue Pearl Detailing Denim Jeggings Jeans",
+      "image": "https://m.media-amazon.com/images/I/81CyPaJ7DHL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07MG4XY91?tag=gadgetvill09f-21",
+      "price": "\u20b9955.01",
+      "rating": 2.5,
+      "category": "fashion",
+      "asin": "B07MG4XY91",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-22T15:36:08.882296+05:30",
+      "session_type": "morning",
+      "link_index": 90
+    },
     {
       "id": "product_afternoon_20260722_071953",
       "title": "Sunderlook Shoe Rack Plastic for Home- Shoe Stand, Chappal Stand, Professional Multipurpose Foldable Standing Comfort Ru",
