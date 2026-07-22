@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-07-21T22:31:05.313906+05:30",
-  "total_products": 1660,
+  "last_updated": "2026-07-22T12:49:53.542857+05:30",
+  "total_products": 1662,
   "products": [
+    {
+      "id": "product_afternoon_20260722_071953",
+      "title": "Sunderlook Shoe Rack Plastic for Home- Shoe Stand, Chappal Stand, Professional Multipurpose Foldable Standing Comfort Ru",
+      "image": "https://m.media-amazon.com/images/I/712HeLudm4L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07LDPW6NY?tag=gadgetvill09f-21",
+      "price": "\u20b93,019",
+      "rating": 4.3,
+      "category": "home",
+      "asin": "B07LDPW6NY",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-22T12:49:53.542812+05:30",
+      "session_type": "afternoon",
+      "link_index": 88
+    },
+    {
+      "id": "product_afternoon_20260722_071950",
+      "title": "Marks & Spencer Linen Blend Women's Solid High Rise Regular Fit Trouser",
+      "image": "https://m.media-amazon.com/images/I/71Iw6-NEGkL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07NDBCTCF?tag=gadgetvill09f-21",
+      "price": "\u20b91,764",
+      "rating": 3.8,
+      "category": "electronics",
+      "asin": "B07NDBCTCF",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-22T12:49:50.803583+05:30",
+      "session_type": "afternoon",
+      "link_index": 88
+    },
     {
       "id": "product_morning_20260721_170105",
       "title": "Aurelia Womens 2 Pocket Slub Pants",
