@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-07-22T15:36:11.331703+05:30",
-  "total_products": 1664,
+  "last_updated": "2026-07-22T20:06:41.240381+05:30",
+  "total_products": 1666,
   "products": [
+    {
+      "id": "product_morning_20260722_143641",
+      "title": "Animal Hand Puppet for Kids - Educational Storytelling Interactive Plush Animal Hand Puppet for Learning (4-8 inches) (P",
+      "image": "https://m.media-amazon.com/images/I/712gOyavs-L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07NFH9SWZ?tag=gadgetvill09f-21",
+      "price": "\u20b9300",
+      "rating": 3.7,
+      "category": "electronics",
+      "asin": "B07NFH9SWZ",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-22T20:06:41.240347+05:30",
+      "session_type": "morning",
+      "link_index": 92
+    },
+    {
+      "id": "product_morning_20260722_143638",
+      "title": "Miss Chase Women Georgette Solid Round Neck Full Sleeves Hooded Boxy Crop Dress Sweatshirt",
+      "image": "https://m.media-amazon.com/images/I/71POjNLlW6L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07MX2L6HG?tag=gadgetvill09f-21",
+      "price": "\u20b9799",
+      "rating": 4.0,
+      "category": "fashion",
+      "asin": "B07MX2L6HG",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-22T20:06:38.234304+05:30",
+      "session_type": "morning",
+      "link_index": 92
+    },
     {
       "id": "product_morning_20260722_100611",
       "title": "Wishful Women's Regular fit Top (19FESP10246-110916_Grey 10)",
