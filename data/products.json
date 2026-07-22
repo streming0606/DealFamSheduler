@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-07-22T20:06:41.240381+05:30",
-  "total_products": 1666,
+  "last_updated": "2026-07-22T22:31:20.406926+05:30",
+  "total_products": 1668,
   "products": [
+    {
+      "id": "product_morning_20260722_170120",
+      "title": "Aurelia Women's High Rise Regular Fit Cotton Patialas (19CRA60043-600451_Gold_Free Size)",
+      "image": "https://m.media-amazon.com/images/I/71BUjZTl1dL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07LC6K7FV?tag=gadgetvill09f-21",
+      "price": "\u20b9608",
+      "rating": 3.8,
+      "category": "electronics",
+      "asin": "B07LC6K7FV",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-22T22:31:20.406890+05:30",
+      "session_type": "morning",
+      "link_index": 94
+    },
+    {
+      "id": "product_morning_20260722_170117",
+      "title": "Rangriti Ecru Straight Cotton Kurta for Women",
+      "image": "https://m.media-amazon.com/images/I/51ii6anqMjL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07NFH68QS?tag=gadgetvill09f-21",
+      "price": "\u20b91,099",
+      "rating": 4.0,
+      "category": "electronics",
+      "asin": "B07NFH68QS",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-22T22:31:17.713545+05:30",
+      "session_type": "morning",
+      "link_index": 94
+    },
     {
       "id": "product_morning_20260722_143641",
       "title": "Animal Hand Puppet for Kids - Educational Storytelling Interactive Plush Animal Hand Puppet for Learning (4-8 inches) (P",
