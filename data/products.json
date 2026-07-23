@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-07-23T12:46:29.760173+05:30",
-  "total_products": 1670,
+  "last_updated": "2026-07-23T15:34:47.911217+05:30",
+  "total_products": 1672,
   "products": [
+    {
+      "id": "product_morning_20260723_100447",
+      "title": "Rangriti Womens Mandarin Collar Solid Kurta",
+      "image": "https://m.media-amazon.com/images/I/51n4iPl1kyL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07NFGMZRC?tag=gadgetvill09f-21",
+      "price": "\u20b9916",
+      "rating": 4.0,
+      "category": "electronics",
+      "asin": "B07NFGMZRC",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-23T15:34:47.911189+05:30",
+      "session_type": "morning",
+      "link_index": 98
+    },
+    {
+      "id": "product_morning_20260723_100445",
+      "title": "Miss Chase Women's Maroon Solid Skinny High Waist Jeggings",
+      "image": "https://m.media-amazon.com/images/I/71sMHNU8kTL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07L94DCPX?tag=gadgetvill09f-21",
+      "price": "\u20b9691.96",
+      "rating": 3.7,
+      "category": "electronics",
+      "asin": "B07L94DCPX",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-23T15:34:45.071133+05:30",
+      "session_type": "morning",
+      "link_index": 98
+    },
     {
       "id": "product_afternoon_20260723_071629",
       "title": "Freecultr Unisex Bamboo Bandana \u2013 Antimicrobial, Ultra-Soft, and Comfortable. Breathable Multipurpose Headband and Face ",
