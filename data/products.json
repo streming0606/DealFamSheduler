@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-07-23T15:34:47.911217+05:30",
-  "total_products": 1672,
+  "last_updated": "2026-07-23T20:22:01.589852+05:30",
+  "total_products": 1674,
   "products": [
+    {
+      "id": "product_morning_20260723_145201",
+      "title": "XFYT Premium Workout Gym Sports Hairband | Soft Elegant Sweat Absorbent Stylish Stretchable Wide Headband for Men & Wome",
+      "image": "https://m.media-amazon.com/images/I/61FM2CkjPRL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0GDTQ8D1L?tag=gadgetvill09f-21",
+      "price": "\u20b9299",
+      "rating": 4.3,
+      "category": "electronics",
+      "asin": "B0GDTQ8D1L",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-23T20:22:01.589816+05:30",
+      "session_type": "morning",
+      "link_index": 100
+    },
+    {
+      "id": "product_morning_20260723_145159",
+      "title": "Aurelia Womens Round Neck Printed Kurta",
+      "image": "https://m.media-amazon.com/images/I/61lk3h-DnhL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07LC6WCVX?tag=gadgetvill09f-21",
+      "price": "\u20b9780",
+      "rating": 3.7,
+      "category": "electronics",
+      "asin": "B07LC6WCVX",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-23T20:21:59.577989+05:30",
+      "session_type": "morning",
+      "link_index": 100
+    },
     {
       "id": "product_morning_20260723_100447",
       "title": "Rangriti Womens Mandarin Collar Solid Kurta",
