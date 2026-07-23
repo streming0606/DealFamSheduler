@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-07-22T22:31:20.406926+05:30",
-  "total_products": 1668,
+  "last_updated": "2026-07-23T12:46:29.760173+05:30",
+  "total_products": 1670,
   "products": [
+    {
+      "id": "product_afternoon_20260723_071629",
+      "title": "Freecultr Unisex Bamboo Bandana \u2013 Antimicrobial, Ultra-Soft, and Comfortable. Breathable Multipurpose Headband and Face ",
+      "image": "https://m.media-amazon.com/images/I/71xVqFRVYKL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07NFG4VWM?tag=gadgetvill09f-21",
+      "price": "\u20b9218",
+      "rating": 4.1,
+      "category": "home",
+      "asin": "B07NFG4VWM",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-23T12:46:29.760142+05:30",
+      "session_type": "afternoon",
+      "link_index": 96
+    },
+    {
+      "id": "product_afternoon_20260723_071628",
+      "title": "Aurelia Women's Regular Straight Pants",
+      "image": "https://m.media-amazon.com/images/I/51G8zSlR31L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07LC7YLYR?tag=gadgetvill09f-21",
+      "price": "\u20b9899",
+      "rating": 3.4,
+      "category": "electronics",
+      "asin": "B07LC7YLYR",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-23T12:46:28.430594+05:30",
+      "session_type": "afternoon",
+      "link_index": 96
+    },
     {
       "id": "product_morning_20260722_170120",
       "title": "Aurelia Women's High Rise Regular Fit Cotton Patialas (19CRA60043-600451_Gold_Free Size)",
