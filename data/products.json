@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-07-23T22:33:54.797581+05:30",
-  "total_products": 1676,
+  "last_updated": "2026-07-24T12:46:00.679966+05:30",
+  "total_products": 1678,
   "products": [
+    {
+      "id": "product_afternoon_20260724_071600",
+      "title": "Boldfit Winter Cap for Women Woolen with Mufflers Ladies Knitted for Girls Cap, Stylish for Winter Wear Scarf",
+      "image": "https://m.media-amazon.com/images/I/61fSC7W-5dL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CQM1K53K?tag=gadgetvill09f-21",
+      "price": "\u20b9249",
+      "rating": 4.1,
+      "category": "fashion",
+      "asin": "B0CQM1K53K",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-24T12:46:00.679941+05:30",
+      "session_type": "afternoon",
+      "link_index": 104
+    },
+    {
+      "id": "product_afternoon_20260724_071558",
+      "title": "Mack Jonney Cotton Regular Fit Navy Women Beanie Cap(Pack of 1)-MACK635779, Free Size",
+      "image": "https://m.media-amazon.com/images/I/81xxiz1uV2L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B079Z75Q7D?tag=gadgetvill09f-21",
+      "price": "\u20b9169",
+      "rating": 4.0,
+      "category": "fashion",
+      "asin": "B079Z75Q7D",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-24T12:45:58.252571+05:30",
+      "session_type": "afternoon",
+      "link_index": 104
+    },
     {
       "id": "product_morning_20260723_170354",
       "title": "MASTER 6 Pair Pure Cotton Premium No Show Ankle Socks, Pack of 6, Mesh Breathable Cotton, Assorted Pastel For Women Stre",
