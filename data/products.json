@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-07-24T12:46:00.679966+05:30",
-  "total_products": 1678,
+  "last_updated": "2026-07-24T15:29:26.937546+05:30",
+  "total_products": 1680,
   "products": [
+    {
+      "id": "product_morning_20260724_095926",
+      "title": "SWAGR 5 Pairs Women Cotton Socks Ankle Length Socks, Multicolor, Pack of 5, Free Size",
+      "image": "https://m.media-amazon.com/images/I/91eqecON8jL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0C2C6D1CP?tag=gadgetvill09f-21",
+      "price": "\u20b9129",
+      "rating": 4.2,
+      "category": "electronics",
+      "asin": "B0C2C6D1CP",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-24T15:29:26.937519+05:30",
+      "session_type": "morning",
+      "link_index": 106
+    },
+    {
+      "id": "product_morning_20260724_095925",
+      "title": "SWAGR Ankle Socks for Men & Women, Multicolor, Pack of 5, Free Size",
+      "image": "https://m.media-amazon.com/images/I/91Wl5xcJ+GL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0BWPGC2PR?tag=gadgetvill09f-21",
+      "price": "\u20b9115",
+      "rating": 3.8,
+      "category": "electronics",
+      "asin": "B0BWPGC2PR",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-24T15:29:25.100813+05:30",
+      "session_type": "morning",
+      "link_index": 106
+    },
     {
       "id": "product_afternoon_20260724_071600",
       "title": "Boldfit Winter Cap for Women Woolen with Mufflers Ladies Knitted for Girls Cap, Stylish for Winter Wear Scarf",
