@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-07-25T12:31:47.358298+05:30",
-  "total_products": 1686,
+  "last_updated": "2026-07-25T14:51:05.889146+05:30",
+  "total_products": 1688,
   "products": [
+    {
+      "id": "product_morning_20260725_092105",
+      "title": "Toxen Invisible Buckle-less Jeans Belt with Ring Adjustable Buckle Free Waist Belt Elastic Belt for Jeans Pants Skirt fo",
+      "image": "https://m.media-amazon.com/images/I/71VXp1jm6DL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CYLMQ7DY?tag=gadgetvill09f-21",
+      "price": "\u20b9179",
+      "rating": 3.9,
+      "category": "fashion",
+      "asin": "B0CYLMQ7DY",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-25T14:51:05.889107+05:30",
+      "session_type": "morning",
+      "link_index": 114
+    },
+    {
+      "id": "product_morning_20260725_092104",
+      "title": "DEBIK Leg Traction Brace | Orthopedic Leg Support for Injury Recovery & Pain Relief | Adjustable, Lightweight & Comforta",
+      "image": "https://m.media-amazon.com/images/I/51paTtEgvxL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CXPJX4DG?tag=gadgetvill09f-21",
+      "price": "\u20b9499",
+      "rating": 2.0,
+      "category": "home",
+      "asin": "B0CXPJX4DG",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-25T14:51:04.300066+05:30",
+      "session_type": "morning",
+      "link_index": 114
+    },
     {
       "id": "product_afternoon_20260725_070147",
       "title": "CRIYALE 3 Pcs - Spa Facial Headband for Women Makeup Head Wrap Towel Terry Cloth Sport Headband | Non-Slip Stretchable A",
