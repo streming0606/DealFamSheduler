@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-07-25T19:43:52.040107+05:30",
-  "total_products": 1690,
+  "last_updated": "2026-07-25T22:04:52.605577+05:30",
+  "total_products": 1692,
   "products": [
+    {
+      "id": "product_morning_20260725_163452",
+      "title": "Xs and Os Women Pantyhose High Waist Stockings Tights",
+      "image": "https://m.media-amazon.com/images/I/61BPnuLDnGL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0BW9TWV21?tag=gadgetvill09f-21",
+      "price": "\u20b9299",
+      "rating": 3.5,
+      "category": "electronics",
+      "asin": "B0BW9TWV21",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-25T22:04:52.605544+05:30",
+      "session_type": "morning",
+      "link_index": 118
+    },
+    {
+      "id": "product_morning_20260725_163450",
+      "title": "Boldfit Gym Headband for Men and Women - Sports Headband for Workout & Running, Breathable, Non-Slip & Quick Drying Head",
+      "image": "https://m.media-amazon.com/images/I/71nBw7m1daL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B09B2BRGPQ?tag=gadgetvill09f-21",
+      "price": "\u20b9199",
+      "rating": 3.9,
+      "category": "electronics",
+      "asin": "B09B2BRGPQ",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-25T22:04:50.916056+05:30",
+      "session_type": "morning",
+      "link_index": 118
+    },
     {
       "id": "product_morning_20260725_141352",
       "title": "Women's Chiffon Stole (Multicolour)",
