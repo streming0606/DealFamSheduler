@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-07-28T12:52:17.940785+05:30",
-  "total_products": 1710,
+  "last_updated": "2026-07-28T15:44:21.094197+05:30",
+  "total_products": 1712,
   "products": [
+    {
+      "id": "product_morning_20260728_101421",
+      "title": "Supersox Ankle Length Casual Socks for Woman | Premium Cotton | Anti-Odour & Anti-Bacterial | Breathable Casual Socks fo",
+      "image": "https://m.media-amazon.com/images/I/61knFMhfLqL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B01MUD52RM?tag=gadgetvill09f-21",
+      "price": "\u20b9429",
+      "rating": 4.3,
+      "category": "electronics",
+      "asin": "B01MUD52RM",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-28T15:44:21.094165+05:30",
+      "session_type": "morning",
+      "link_index": 138
+    },
+    {
+      "id": "product_morning_20260728_101418",
+      "title": "Supersox Ankle Socks for Women Made With Premium Cotton. Stylish Striped Design with Extra Softness, Anti Odour & Anti B",
+      "image": "https://m.media-amazon.com/images/I/81hnS3Ye7jL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B07JNP2L3R?tag=gadgetvill09f-21",
+      "price": "\u20b9268",
+      "rating": 4.2,
+      "category": "electronics",
+      "asin": "B07JNP2L3R",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-28T15:44:18.937355+05:30",
+      "session_type": "morning",
+      "link_index": 138
+    },
     {
       "id": "product_afternoon_20260728_072217",
       "title": "ZORO Braided Stretchable Belt for Men",
