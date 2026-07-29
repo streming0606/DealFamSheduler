@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-07-29T12:59:48.177937+05:30",
-  "total_products": 1718,
+  "last_updated": "2026-07-29T15:46:51.421930+05:30",
+  "total_products": 1720,
   "products": [
+    {
+      "id": "product_morning_20260729_101651",
+      "title": "Lifelong Unisex Warm Woolen Headband | Earwarmer Earmuffs Earcap Earcover | Winter Accessories for Men and Women | Soft ",
+      "image": "https://m.media-amazon.com/images/I/71SzVi-kB6L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FNXBSFNC?tag=gadgetvill09f-21",
+      "price": "\u20b9199",
+      "rating": 4.0,
+      "category": "fashion",
+      "asin": "B0FNXBSFNC",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-29T15:46:51.421903+05:30",
+      "session_type": "morning",
+      "link_index": 146
+    },
+    {
+      "id": "product_morning_20260729_101648",
+      "title": "Hair Drama Co. Elastic Bandana Head Scarf for Women | Silk Satin Head Wrap Bandana Scarves | Boho Style Statement Headba",
+      "image": "https://m.media-amazon.com/images/I/61Ba1LzEhKL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FF55BMZT?tag=gadgetvill09f-21",
+      "price": "\u20b9298",
+      "rating": 3.6,
+      "category": "electronics",
+      "asin": "B0FF55BMZT",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-29T15:46:48.833825+05:30",
+      "session_type": "morning",
+      "link_index": 146
+    },
     {
       "id": "product_afternoon_20260729_072948",
       "title": "Shining Diva Fashion Leather Belts For Women And Girls 3 Pcs Combo Stylish Waist Belt For Dresses Jeans (16069Lb), Multi",
