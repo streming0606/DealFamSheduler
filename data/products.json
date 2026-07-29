@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-07-29T20:32:41.186293+05:30",
-  "total_products": 1722,
+  "last_updated": "2026-07-29T22:27:49.830528+05:30",
+  "total_products": 1724,
   "products": [
+    {
+      "id": "product_morning_20260729_165749",
+      "title": "PRASTHAN Cotton Ankle Socks for Men | Cotton Sports Socks for Men | Soft Ankle Length Sock with Breathable Mesh & Arch S",
+      "image": "https://m.media-amazon.com/images/I/61+Z3ny0jwL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0GTJ3GW92?tag=gadgetvill09f-21",
+      "price": "\u20b9599",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B0GTJ3GW92",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-29T22:27:49.830501+05:30",
+      "session_type": "morning",
+      "link_index": 150
+    },
+    {
+      "id": "product_morning_20260729_165747",
+      "title": "Cotton Long Scarf Cum Mask Scarves Usable for Vehicle Driver | White Printed Design Fabric | Universal Size | Soft & Bre",
+      "image": "https://m.media-amazon.com/images/I/61KfXC3rEiL._AC_UY218_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0F2Z3GYXL?tag=gadgetvill09f-21",
+      "price": "\u20b9422",
+      "rating": 4.3,
+      "category": "electronics",
+      "asin": "B0F2Z3GYXL",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-29T22:27:47.925972+05:30",
+      "session_type": "morning",
+      "link_index": 150
+    },
     {
       "id": "product_night_20260729_150241",
       "title": "ReDesign Apparels Silicone Performance Headband For Men And Women- Running, Cycling, Yoga, Tennis, Badminton & Other Spo",
