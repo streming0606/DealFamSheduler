@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-07-30T15:33:24.801505+05:30",
-  "total_products": 1728,
+  "last_updated": "2026-07-30T20:22:41.903511+05:30",
+  "total_products": 1730,
   "products": [
+    {
+      "id": "product_morning_20260730_145241",
+      "title": "A.T.U.N. (ALL THINGS UBER NICE) Baby Girls One Shoulder Printed Crop Top with Skirt & Matching Headband Set | 3 Piece Ou",
+      "image": "https://m.media-amazon.com/images/I/51hvPWyEo3L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FTFZRBJQ?tag=gadgetvill09f-21",
+      "price": "\u20b9439",
+      "rating": 3.5,
+      "category": "electronics",
+      "asin": "B0FTFZRBJQ",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-30T20:22:41.903478+05:30",
+      "session_type": "morning",
+      "link_index": 156
+    },
+    {
+      "id": "product_morning_20260730_145239",
+      "title": "AMAZON BRAND - ANARVA Unisex Cotton Baseball Cap Pack of 3 \u2013 Adjustable Strap Back Hat for Men & Women | Breathable Casu",
+      "image": "https://m.media-amazon.com/images/I/512XUuPnhxL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FHB3X2TG?tag=gadgetvill09f-21",
+      "price": "\u20b9499",
+      "rating": 3.8,
+      "category": "fashion",
+      "asin": "B0FHB3X2TG",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-30T20:22:39.961359+05:30",
+      "session_type": "morning",
+      "link_index": 156
+    },
     {
       "id": "product_morning_20260730_100324",
       "title": "BABYGO Unisex Baby Clothing Set",
