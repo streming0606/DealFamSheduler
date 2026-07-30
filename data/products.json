@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-07-30T12:49:26.699756+05:30",
-  "total_products": 1726,
+  "last_updated": "2026-07-30T15:33:24.801505+05:30",
+  "total_products": 1728,
   "products": [
+    {
+      "id": "product_morning_20260730_100324",
+      "title": "BABYGO Unisex Baby Clothing Set",
+      "image": "https://m.media-amazon.com/images/I/61WscuUh8fL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B08JYL2LZC?tag=gadgetvill09f-21",
+      "price": "\u20b9374",
+      "rating": 4.0,
+      "category": "fashion",
+      "asin": "B08JYL2LZC",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-30T15:33:24.801466+05:30",
+      "session_type": "morning",
+      "link_index": 154
+    },
+    {
+      "id": "product_morning_20260730_100319",
+      "title": "Leriya Fashion Printed Maxi Dress for Women | Trendy Long One Piece Summer Outfit | Lightweight Flared Dress for Casual ",
+      "image": "https://m.media-amazon.com/images/I/61lRq-3l2JL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0D2DM5WW1?tag=gadgetvill09f-21",
+      "price": "\u20b9499",
+      "rating": 3.8,
+      "category": "fashion",
+      "asin": "B0D2DM5WW1",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-30T15:33:19.006083+05:30",
+      "session_type": "morning",
+      "link_index": 154
+    },
     {
       "id": "product_afternoon_20260730_071926",
       "title": "KYDA KIDS\u00ae Boys 100% Pure Combed Cotton Co-ord Clothing Set Premium Printed T-Shirt & Shorts | Relaxed Fit Summer Outfit",
