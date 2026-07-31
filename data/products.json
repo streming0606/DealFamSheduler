@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-07-31T13:03:09.615464+05:30",
-  "total_products": 1734,
+  "last_updated": "2026-07-31T15:45:39.649803+05:30",
+  "total_products": 1736,
   "products": [
+    {
+      "id": "product_morning_20260731_101539",
+      "title": "African Net Bath Sponge | Long Loofah Body Scrubber & Exfoliating Towel | Shower Sponge for Men & Women | Bathing Scrubb",
+      "image": "https://m.media-amazon.com/images/I/811hDBy6o3L._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0FH9NJYDZ?tag=gadgetvill09f-21",
+      "price": "\u20b999",
+      "rating": 5.0,
+      "category": "electronics",
+      "asin": "B0FH9NJYDZ",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-31T15:45:39.649767+05:30",
+      "session_type": "morning",
+      "link_index": 162
+    },
+    {
+      "id": "product_morning_20260731_101537",
+      "title": "Gufrina Women's Short Sleeve Collar Neck Dress - Geometric Print Button-Down Midi Dress with Tie-Up Belt",
+      "image": "https://m.media-amazon.com/images/I/71QvcPfqGaL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0DBHRYNBQ?tag=gadgetvill09f-21",
+      "price": "\u20b9495",
+      "rating": 3.8,
+      "category": "fashion",
+      "asin": "B0DBHRYNBQ",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-31T15:45:37.662849+05:30",
+      "session_type": "morning",
+      "link_index": 162
+    },
     {
       "id": "product_afternoon_20260731_073309",
       "title": "London Hills Women's Cotton Regular Fit T-Shirt",
