@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-07-31T20:35:22.796650+05:30",
-  "total_products": 2,
+  "last_updated": "2026-07-31T22:41:23.446341+05:30",
+  "total_products": 4,
   "products": [
+    {
+      "id": "product_morning_20260731_171123",
+      "title": "THE ARCHER Men's Cotton Printed Vest (Pack of 2)",
+      "image": "https://m.media-amazon.com/images/I/811ZlGDf9tL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B09YD25RTQ?tag=gadgetvill09f-21",
+      "price": "\u20b9369",
+      "rating": 4.0,
+      "category": "electronics",
+      "asin": "B09YD25RTQ",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-31T22:41:23.446313+05:30",
+      "session_type": "morning",
+      "link_index": 166
+    },
+    {
+      "id": "product_morning_20260731_171119",
+      "title": "Men Shirt | Black Textured Casual | Regular Fit | Half Sleeve | Mandarin/Chinese Collar | Cotton Blend Fabric | Lightwei",
+      "image": "https://m.media-amazon.com/images/I/71Afc9gQInL._AC_UY218_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0F7HWQF2D?tag=gadgetvill09f-21",
+      "price": "\u20b9379",
+      "rating": 3.6,
+      "category": "fashion",
+      "asin": "B0F7HWQF2D",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-31T22:41:19.265727+05:30",
+      "session_type": "morning",
+      "link_index": 166
+    },
     {
       "id": "product_night_20260731_150522",
       "title": "Women Leggings",
