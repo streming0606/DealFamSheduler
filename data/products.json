@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-07-30T22:38:05.342859+05:30",
-  "total_products": 1732,
+  "last_updated": "2026-07-31T13:03:09.615464+05:30",
+  "total_products": 1734,
   "products": [
+    {
+      "id": "product_afternoon_20260731_073309",
+      "title": "London Hills Women's Cotton Regular Fit T-Shirt",
+      "image": "https://m.media-amazon.com/images/I/81BoZBRyFXL._AC_UL320_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0CHS33Q4G?tag=gadgetvill09f-21",
+      "price": "\u20b9449",
+      "rating": 4.0,
+      "category": "fashion",
+      "asin": "B0CHS33Q4G",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-31T13:03:09.615435+05:30",
+      "session_type": "afternoon",
+      "link_index": 160
+    },
+    {
+      "id": "product_afternoon_20260731_073304",
+      "title": "Lil\u2019 Shark Cotton Muslin Baby Jabla Vest Set | Sleeveless Jablas | Button-Down Vests for Newborn Boys & Girls| Summer We",
+      "image": "https://m.media-amazon.com/images/I/61ibUyl914L._AC_UY218_.jpg",
+      "affiliate_link": "https://www.amazon.in/dp/B0F4RD66YV?tag=gadgetvill09f-21",
+      "price": "\u20b9368",
+      "rating": "\u2b50\u2b50\u2b50\u2b50\u2606",
+      "category": "electronics",
+      "asin": "B0F4RD66YV",
+      "data_source": "serpapi",
+      "posted_date": "2026-07-31T13:03:04.282109+05:30",
+      "session_type": "afternoon",
+      "link_index": 160
+    },
     {
       "id": "product_morning_20260730_170805",
       "title": "London Hills Women's Cotton Loose Casual Round Neck Solid, Drop Shoulder T-Shirt Pack of 2",
